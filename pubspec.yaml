@@ -1,0 +1,296 @@
+name: bps_cilacap
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+2
+
+environment:
+  sdk: ">=2.19.0 <4.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+
+dependencies:
+  carousel_slider: ^4.1.1
+  circle_bottom_navigation_bar: ^1.0.0
+  cupertino_icons: ^1.0.2
+  dropdown_button2: ^1.7.2
+  flutter:
+    sdk: flutter
+  flutter_social_button: any  
+  upgrader: ^5.0.0
+  new_version_plus: ^0.0.9
+  url_launcher: ^6.1.2
+  expansion_tile_card: ^2.0.0
+  #url_launcher: ^6.1.5
+  bulleted_list: ^0.0.1+0.1a
+  webview_flutter: ^3.0.4
+  http: ^0.13.6
+  bottom_sheet: ^3.1.2
+  pie_chart: ^5.3.2
+  charts_flutter: ^0.12.0
+  intl: ^0.17.0
+  syncfusion_flutter_charts: ^20.4.53
+  horizontal_data_table: ^4.3.1
+  linked_scroll_controller: ^0.2.0
+  #flutter_downloader: ^1.10.5
+  #flutter_inappwebview: ^6.0.0
+  permission_handler: ^10.3.0
+  flutter_speed_dial: ^7.0.0
+  font_awesome_flutter: ^10.4.0
+  social_media_flutter: ^0.0.2
+  youtube_player_flutter: ^8.1.2
+  
+  
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  
+dev_dependencies:
+  cmd: ^0.0.8
+  flutter_launcher_icons: "^0.10.0"
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  remove_alpha_ios: true
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    # Splashscreen
+     - assets/images/SplashscreenSiCANTIK.png
+    
+    # Homescreen
+     - assets/images/inflasi.png
+     - assets/images/ketimpangan.png
+     - assets/images/ketimpangan_clp.png
+     - assets/images/pengangguran.png
+     - assets/images/pertumbuhan_ekonomi.png
+     - assets/images/ketenagakerjaan.png
+     - assets/images/kemiskinan.png
+     - assets/images/pendidikan.png
+     - assets/images/perumahan.png
+     - assets/images/pertanian.png
+     - assets/images/ipm.png
+     - assets/images/pdrb.png
+     - assets/images/jumlah_penduduk.png
+     - assets/images/hasil_st.png
+     - assets/images/hasil_sp.png
+     - assets/images/logo_se2026.png
+     - assets/images/logo.png
+     - assets/images/gedung.jpg
+     - assets/images/logo_berakhlak.png
+    
+    
+    #  Drawer
+     - assets/images/drawer/infografis_icon.png
+     - assets/images/drawer/gis_icon.png
+     - assets/images/drawer/tabel_icon.png
+     - assets/images/drawer/publikasi_icon.png
+     - assets/images/drawer/brs_icon.png
+     - assets/images/drawer/srt_icon.png
+     - assets/images/drawer/konsepdefinisi_icon.png
+     - assets/images/drawer/about_icon.png
+     - assets/images/drawer/keluar_icon.png
+     - assets/images/drawer/selengkapnya_icon.png
+
+    #  Sensus
+     - assets/images/sensus/sensus.png
+     - assets/images/sensus/sensus_tani_23.png
+     - assets/images/sensus/sp_2020.png
+     - assets/images/sensus/sp_2020_lf.png
+     - assets/images/sensus/st_2023.png
+     - assets/images/sensus/st_2023_urban.png
+     - assets/images/sensus/st_2023_milen.png
+     - assets/images/sensus/st_2023_pg_lahan.png
+     - assets/images/sensus/st_2023_pg_gurem.png
+
+     - assets/images/sensus/st_2023_padi.png
+     - assets/images/sensus/st_2023_horti.png
+     - assets/images/sensus/st_2023_kebun.png
+     - assets/images/sensus/st_2023_ternak.png
+     - assets/images/sensus/st_2023_ikan.png
+     - assets/images/sensus/st_2023_hutan.png
+     - assets/images/sensus/st_2023_jasa.png
+
+     - assets/images/sensus/cilacap_1.png
+     - assets/images/sensus/cilacap_2.png
+     - assets/images/sensus/cilacap_3.png
+     - assets/images/sensus/cilacap_4.png
+     - assets/images/sensus/cilacap_5.png
+     - assets/images/sensus/cilacap_6.png
+     - assets/images/sensus/cilacap_7.png
+     - assets/images/sensus/cilacap_8.png
+     - assets/images/sensus/cilacap_9.png
+     - assets/images/sensus/cilacap_10.png
+     - assets/images/sensus/st_2023_sapi.png
+     - assets/images/sensus/st_2023_kerbau.png
+
+     - assets/images/sensus/jateng_1.png
+     - assets/images/sensus/jateng_2.png
+     - assets/images/sensus/jateng_3.png
+     - assets/images/sensus/jateng_4.png
+     - assets/images/sensus/jateng_5.png
+     - assets/images/sensus/jateng_6.png
+     - assets/images/sensus/jateng_7.png
+     - assets/images/sensus/jateng_8.png
+     - assets/images/sensus/jateng_9.png
+     - assets/images/sensus/jateng_10.png
+
+     - assets/images/sensus/indo_1.png
+     - assets/images/sensus/indo_2.png
+     - assets/images/sensus/indo_3.png
+     - assets/images/sensus/indo_4.png
+     - assets/images/sensus/indo_5.png
+     - assets/images/sensus/indo_6.png
+     - assets/images/sensus/indo_7.png
+     - assets/images/sensus/indo_8.png
+     - assets/images/sensus/indo_9.png
+     - assets/images/sensus/indo_10.png
+
+    # Sensus Ekonomi
+     - assets/images/sensus_ekonomi/sensus_ekonomi_2016.jpg
+     - assets/images/sensus_ekonomi/sensus_ekonomi_2016.png
+     - assets/images/sensus_ekonomi/sensus_ekonomi_2026_1.png 
+
+    # Slider SE
+     - assets/images/slider/ujicoba_se2026_1.png
+     - assets/images/slider/ujicoba_se2026_2.png
+     - assets/images/slider/ujicoba_se2026_3.png
+     - assets/images/slider/ujicoba_se2026_4.png
+     - assets/images/slider/ujicoba_se2026_5.png
+     - assets/images/slider/ujicoba_se2026_6.png
+      
+
+    
+    # Long Form
+     - assets/images/sensus/longform_sp2020_fertilitas.png
+     - assets/images/sensus/longform_sp2020_mortalitas.png
+     - assets/images/sensus/longform_sp2020_mobilitas.png
+     - assets/images/sensus/longform_sp2020_naker.png
+     - assets/images/sensus/longform_sp2020_pendidikan.png
+     - assets/images/sensus/longform_sp2020_perumahan.png
+
+
+    # homescreen menu
+     - assets/images/homecontent/inflasi_icon.png
+     - assets/images/homecontent/jumlah_penduduk_icon.png
+     - assets/images/homecontent/kemiskinan_icon.png
+     - assets/images/homecontent/ketenagakerjaan_icon.png
+     - assets/images/homecontent/ketimpangan_icon.png
+     - assets/images/homecontent/pengangguran_icon.png
+     - assets/images/homecontent/pertumbuhan_ekonomi_icon.png
+     - assets/images/homecontent/pendidikan_icon.png
+     - assets/images/homecontent/perumahan_icon.png
+     - assets/images/homecontent/ppid_icon.png
+     - assets/images/homecontent/web_icon.png
+    # Medsos
+     - assets/images/medsos/fb.png
+     - assets/images/medsos/ig.png
+     - assets/images/medsos/youtube.png
+     - assets/images/medsos/tiktok.png
+     - assets/images/medsos/twitter.png
+     - assets/images/medsos/whatsapp.png
+     - assets/images/medsos/phone.png
+    
+    
+
+    #  Carousel
+     - assets/images/carousel/inflasi_bulanan_icon.png
+     - assets/images/carousel/ipm_carousel_icon.png
+     - assets/images/carousel/hasil_sp_icon.png
+     - assets/images/carousel/ketimpangan_icon.png
+     - assets/images/carousel/pertumbuhan_icon.png
+     - assets/images/carousel/kemiskinan_icon.png
+     
+    #  Modal
+     - assets/images/modal/inflasi_modal_1.jpeg
+     - assets/images/modal/inflasi_modal_2.jpeg
+     - assets/images/modal/inflasi_modal_3.jpeg
+     - assets/images/modal/inflasi_modal_4.jpeg
+     - assets/images/modal/apm_modal.jpeg
+     - assets/images/modal/apk_modal.jpeg
+     - assets/images/modal/aps_modal.jpeg
+     - assets/images/modal/amh_modal.jpeg
+     - assets/images/modal/ketimpangan_modal.jpeg
+
+    # Logo Daerah
+     - assets/images/daerah/logo_cilacap.png
+     - assets/images/daerah/logo_jateng.png
+     - assets/images/daerah/peta_cilacap.png
+    
+    # Tentang Aplikasi
+     - assets/images/logobps.png
+     - assets/images/logotimdev.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: BottNavIcon
+      fonts:
+       - asset: fonts/BottNavIcon.ttf
+    - family:  BackIcons
+      fonts:
+       - asset: fonts/BackIcons.ttf
+    - family: AboutIcons
+      fonts:
+       - asset: fonts/AboutIcons.ttf
+    - family:  MoreIcons
+      fonts:
+       - asset: fonts/MoreIcons.ttf
+    - family: SuezOne
+      fonts :
+       - asset: fonts/SuezOne-Regular.ttf
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
