@@ -665,7 +665,7 @@ class _SensusEkonomiContentState extends State<SensusEkonomiContent> {
                                   width: screenWidth * 0.89,
                                   //height: screenHeight * 0.24,
                                   child: const Text(
-                                    "Enjoy The Song Brother",
+                                    "Enjoy The Song Bapak/Ibu",
                                     textAlign: TextAlign.justify,
                                     style: TextStyle(
                                         fontFamily: 'Robo',
