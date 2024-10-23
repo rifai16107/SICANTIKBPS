@@ -1,6 +1,6 @@
 # Si CANTIK (Diseminasi Cilacap Dalam Angka Statistik)
 
-Sebuah projek Kerja Praktek mahasiswa STMIK Komputama Majenang di Badan Pusat Statistik Kabupaten Cilacap yang terdiri dari anggota :
+Sebuah projek Kerja Praktek mahasiswa STMIK Komputama Majenang di Badan Pusat Statistik Kabupaten Cilacap di bawah bimbingan Achmad Rifai (Prakom Muda BPS Cilacap) dengan anggota :
 1. Imam Fahrudin (UI/UX Designer)
 2. Puji Apriyanto (Front-end Developer)
 3. Amarulloh M Khoeri (Back-end Developer)
