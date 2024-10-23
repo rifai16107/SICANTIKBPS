@@ -709,7 +709,7 @@ class _SensusEkonomiContentState extends State<SensusEkonomiContent> {
                                 Container(
                                   alignment: Alignment.topCenter,
                                   padding: const EdgeInsets.only(
-                                      left: 5, top: 5, bottom: 2, right: 0),
+                                      left: 5, top: 0, bottom: 2, right: 0),
                                   width: screenWidth * 0.89,
                                   //height: screenHeight * 0.24,
                                   child: const Text(
