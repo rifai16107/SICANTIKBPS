@@ -694,7 +694,7 @@ class _SensusEkonomiContentState extends State<SensusEkonomiContent> {
                                     style: TextStyle(
                                         fontFamily: 'Robo',
                                         fontWeight: FontWeight.normal,
-                                        fontSize: 13),
+                                        fontSize: 12),
                                   ),
                                 ),
                               ],
@@ -713,17 +713,17 @@ class _SensusEkonomiContentState extends State<SensusEkonomiContent> {
                                   width: screenWidth * 0.89,
                                   //height: screenHeight * 0.24,
                                   child: const Text(
-                                    "If You want to repeat song)....",
+                                    "If You want to repeat song....",
                                     textAlign: TextAlign.justify,
                                     style: TextStyle(
                                         fontFamily: 'Robo',
                                         fontWeight: FontWeight.normal,
-                                        fontSize: 13),
+                                        fontSize: 12),
                                   ),
                                 ),
                               ],
                             ),
-                          ),    
+                          ),
                           const Divider(
                             height: 25,
                             color: Colors.transparent,
