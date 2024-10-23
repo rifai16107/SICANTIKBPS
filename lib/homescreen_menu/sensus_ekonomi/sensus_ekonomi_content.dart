@@ -689,8 +689,31 @@ class _SensusEkonomiContentState extends State<SensusEkonomiContent> {
                                   width: screenWidth * 0.89,
                                   //height: screenHeight * 0.24,
                                   child: const Text(
-                                    "Move slider to the start and click play button again (to repeat song)....",
-                                    textAlign: TextAlign.justify,
+                                    "Move slider to the start and click play button again."
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        fontFamily: 'Robo',
+                                        fontWeight: FontWeight.normal,
+                                        fontSize: 13),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ), Container(
+                            width: screenWidth * 0.90,
+                            //height: screenHeight * 0.24,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                Container(
+                                  alignment: Alignment.topCenter,
+                                  padding: const EdgeInsets.only(
+                                      left: 5, top: 2, bottom: 2, right: 0),
+                                  width: screenWidth * 0.89,
+                                  //height: screenHeight * 0.24,
+                                  child: const Text(
+                                    "If You want to repeat song.",
+                                    textAlign: TextAlign.center,
                                     style: TextStyle(
                                         fontFamily: 'Robo',
                                         fontWeight: FontWeight.normal,
