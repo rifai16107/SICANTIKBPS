@@ -713,7 +713,7 @@ class _SensusEkonomiContentState extends State<SensusEkonomiContent> {
                                   width: screenWidth * 0.89,
                                   //height: screenHeight * 0.24,
                                   child: const Text(
-                                    "If You want to repeat the song....",
+                                    "If You want to repeat the theme song of SE....",
                                     textAlign: TextAlign.justify,
                                     style: TextStyle(
                                         fontFamily: 'Robo',
