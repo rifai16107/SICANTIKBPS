@@ -201,7 +201,7 @@ class _GrafikSensusCilacapWilState extends State<GrafikSensusCilacapWil> {
                         numberFormat: NumberFormat.decimalPattern('vi_VN'),
                         majorGridLines: const MajorGridLines(width: 1),
                         minimum: 0,
-                        maximum: 200000,
+                        maximum: 210000,
                         interval: 50000),
                     zoomPanBehavior: ZoomPanBehavior(
                         enableDoubleTapZooming: true,

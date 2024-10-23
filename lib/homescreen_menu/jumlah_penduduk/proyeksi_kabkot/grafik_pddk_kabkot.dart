@@ -325,7 +325,8 @@ class _GrafikPddkKabkotState extends State<GrafikPddkKabkot> {
                               '${args.text}K', args.textStyle);
                           //return ChartAxisLabel(args.text, args.textStyle);
                         },
-                        numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                        //numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                        numberFormat: NumberFormat("###,###.##", "vi_VN"),
                         majorGridLines: const MajorGridLines(width: 1),
                         minimum: 0,
                         maximum: 2800,
@@ -344,7 +345,7 @@ class _GrafikPddkKabkotState extends State<GrafikPddkKabkot> {
                             // Renders the data label
                             isVisible: true,
                             textStyle: TextStyle(fontSize: 10)),
-                        name: 'Jumlah Penduduk (Jiwa)',
+                        name: 'Jumlah Penduduk (ribuan Jiwa)',
                         color: const Color.fromRGBO(9, 0, 136, 1),
                       ),
                     ]),
