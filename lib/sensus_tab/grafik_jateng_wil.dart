@@ -261,7 +261,7 @@ class _GrafikSensusJatengWilState extends State<GrafikSensusJatengWil> {
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         title: AxisTitle(
-                            text: 'Jumlah Penduduk (ribuan)',
+                            text: 'Jumlah Penduduk',
                             textStyle: const TextStyle(
                               color: Color.fromARGB(255, 10, 10, 10),
                               fontFamily: 'Roboto',
@@ -278,7 +278,8 @@ class _GrafikSensusJatengWilState extends State<GrafikSensusJatengWil> {
                               '${args.text}K', args.textStyle);
                           //return ChartAxisLabel(args.text, args.textStyle);
                         },
-                        numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                        //numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                        numberFormat: NumberFormat("###,###.##", "vi_VN"),
                         majorGridLines: const MajorGridLines(width: 1),
                         minimum: 0,
                         maximum: 2800,
