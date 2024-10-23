@@ -196,8 +196,17 @@ class _GrafikSensusCilacapWilState extends State<GrafikSensusCilacapWil> {
                         ),
                         toggleSeriesVisibility: true,
                         overflowMode: LegendItemOverflowMode.wrap,
-                        position: LegendPosition.bottom),
+                        position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
+                        title: AxisTitle(
+                            text: 'Jumlah Penduduk',
+                            textStyle: const TextStyle(
+                              color: Color.fromARGB(255, 10, 10, 10),
+                              fontFamily: 'Roboto',
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 11,
+                            )),
                         numberFormat: NumberFormat.decimalPattern('vi_VN'),
                         majorGridLines: const MajorGridLines(width: 1),
                         minimum: 0,
