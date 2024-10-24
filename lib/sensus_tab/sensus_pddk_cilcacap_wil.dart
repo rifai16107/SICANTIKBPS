@@ -101,7 +101,7 @@ class FixedColumnWidget extends StatelessWidget {
   const FixedColumnWidget({super.key});
   @override
   Widget build(BuildContext context) {
-    //double screenWidth = MediaQuery.of(context).size.width;
+    double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return DataTable(
       columnSpacing: 5,
@@ -117,11 +117,11 @@ class FixedColumnWidget extends StatelessWidget {
           ),
         ),
       ),
-      columns: const [
+      columns: [
         DataColumn(
             label: SizedBox(
-                width: 100,
-                child: Text(
+                width: screenWidth * 0.20,
+                child: const Text(
                   textAlign: TextAlign.center,
                   '   Kecamatan',
                   //maxLines: 2,
@@ -423,11 +423,11 @@ class ScrollableColumnWidget extends StatelessWidget {
                   headingRowColor: MaterialStateColor.resolveWith(
                     (states) => const Color.fromRGBO(34, 150, 243, 1),
                   ),
-                  columns: const [
+                  columns: [
                     DataColumn(
                         label: SizedBox(
-                          width: 60,
-                          child: Text(
+                          width: screenWidth * 0.20,
+                          child: const Text(
                             'Lk',
                             //maxLines: 2,
                             //overflow: TextOverflow.ellipsis,
@@ -437,8 +437,8 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: 60,
-                          child: Text(
+                          width: screenWidth * 0.20,
+                          child: const Text(
                             'Pr',
                             //maxLines: 2,
                             //overflow: TextOverflow.ellipsis,
@@ -448,8 +448,8 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: 60,
-                          child: Text(
+                          width: screenWidth * 0.20,
+                          child: const Text(
                             'Total',
                             //maxLines: 2,
                             //overflow: TextOverflow.ellipsis,

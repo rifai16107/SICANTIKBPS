@@ -346,7 +346,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                   columns: [
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.18,
+                          width: screenWidth * 0.20,
                           child: const Text(
                             'Lk',
                             //maxLines: 2,
@@ -357,7 +357,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.18,
+                          width: screenWidth * 0.20,
                           child: const Text(
                             'Pr',
                             //maxLines: 2,
@@ -368,7 +368,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.18,
+                          width: screenWidth * 0.20,
                           child: const Text(
                             'Total',
                             //maxLines: 2,
