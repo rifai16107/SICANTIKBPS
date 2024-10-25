@@ -4913,7 +4913,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                               //32 Kota Salatiga
                               Container(
                                 width: screenWidth * 1.0,
-                                height: screenHeight * 0.032,
+                                height: screenHeight * 0.047,
                                 color: Colors.grey.shade200,
                                 child: Row(
                                   children: [
@@ -5177,7 +5177,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                               //34 Kota Pekalongan
                               Container(
                                 width: screenWidth * 1.0,
-                                height: screenHeight * 0.05,
+                                height: screenHeight * 0.048,
                                 color: Colors.grey.shade200,
                                 child: Row(
                                   children: [
