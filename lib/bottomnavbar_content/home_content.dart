@@ -74,11 +74,12 @@ class _HomeContentState extends State<HomeContent> {
       body: Column(
         children: <Widget>[
           //animasi atas
-          Flexible(
-            fit: FlexFit.tight,
-            flex: 22,
+          SizedBox(
+            height: 0.17*screenHeight, 
+            //flex: 25,
             child: Container(
               margin: const EdgeInsets.only(top: 0, bottom: 0),
+              //height: 0.15*screenHeight,
               height: screenHeight * 0.16,
               width: double.infinity,
               child: Column(
@@ -91,6 +92,7 @@ class _HomeContentState extends State<HomeContent> {
                         autoPlay: true,
                         enlargeCenterPage: true,
                         //autoPlayCurve: Curves.decelerate,
+                        //height:105,
                         height: screenHeight * 0.16,
                         //autoPlayInterval: const Duration(seconds: 5),
                         //autoPlayAnimationDuration: const Duration(milliseconds: 700),
@@ -108,11 +110,14 @@ class _HomeContentState extends State<HomeContent> {
             height: 0,
           ),
           const Divider(
-            height: 5,
+            height: 2,
             color: Colors.transparent,
           ),
           Expanded(
-            flex: 80,
+            //flex: 80,
+           child:Container (
+             margin: const EdgeInsets.only(bottom: 2),
+             height: 0.85*screenHeight, 
             child: Scrollbar(
               thickness: 5,
               thumbVisibility: true,
@@ -1319,7 +1324,7 @@ class _HomeContentState extends State<HomeContent> {
               ),
             ),
           )
-        ],
+      )],
       ),
     );
   }

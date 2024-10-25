@@ -471,7 +471,8 @@ class _LongformContentState extends State<LongformContent> {
                                               ),
                                               Container(
                                                 width: screenWidth * 0.90,
-                                                height: screenHeight * 0.19,
+                                                height: 120,
+                                                //height: screenHeight * 0.19,
                                                 color: Colors.transparent,
                                                 child: Row(
                                                   children: [
@@ -485,8 +486,8 @@ class _LongformContentState extends State<LongformContent> {
                                                               bottom: 5,
                                                               right: 5),
                                                       width: screenWidth * 0.24,
-                                                      height:
-                                                          screenHeight * 0.16,
+                                                      height: 100,
+                                                      //height: screenHeight * 0.16,
                                                       child: ElevatedButton(
                                                         style: ElevatedButton
                                                             .styleFrom(
@@ -533,7 +534,7 @@ class _LongformContentState extends State<LongformContent> {
                                                       padding:
                                                           const EdgeInsets.only(
                                                               left: 0,
-                                                              top: 15,
+                                                              top: 10,
                                                               right: 5),
                                                       width: screenWidth * 0.65,
                                                       height:
@@ -713,7 +714,8 @@ class _LongformContentState extends State<LongformContent> {
                                               ),
                                               Container(
                                                 width: screenWidth * 0.90,
-                                                height: screenHeight * 0.17,
+                                                height: 120,
+                                                //height: screenHeight * 0.17,
                                                 color: Colors.transparent,
                                                 child: Row(
                                                   children: [
@@ -723,12 +725,12 @@ class _LongformContentState extends State<LongformContent> {
                                                       padding:
                                                           const EdgeInsets.only(
                                                               left: 5,
-                                                              top: 5,
+                                                              top: 10,
                                                               bottom: 5,
                                                               right: 5),
                                                       width: screenWidth * 0.65,
-                                                      height:
-                                                          screenHeight * 0.16,
+                                                      height: 100,
+                                                      //height: screenHeight * 0.16,
                                                       child: RichText(
                                                         textAlign:
                                                             TextAlign.justify,
@@ -822,8 +824,8 @@ class _LongformContentState extends State<LongformContent> {
                                                               bottom: 5,
                                                               right: 5),
                                                       width: screenWidth * 0.24,
-                                                      height:
-                                                          screenHeight * 0.16,
+                                                      height: 100,
+                                                      //height: screenHeight * 0.16,
                                                       child: ElevatedButton(
                                                         style: ElevatedButton
                                                             .styleFrom(
@@ -956,7 +958,8 @@ class _LongformContentState extends State<LongformContent> {
                                               ),
                                               Container(
                                                 width: screenWidth * 0.90,
-                                                height: screenHeight * 0.18,
+                                                height: 120,
+                                                //height: screenHeight * 0.18,
                                                 color: Colors.transparent,
                                                 child: Row(
                                                   children: [
@@ -970,8 +973,8 @@ class _LongformContentState extends State<LongformContent> {
                                                               bottom: 5,
                                                               right: 5),
                                                       width: screenWidth * 0.24,
-                                                      height:
-                                                          screenHeight * 0.16,
+                                                      height: 100,
+                                                      //height:screenHeight * 0.16,
                                                       child: ElevatedButton(
                                                         style: ElevatedButton
                                                             .styleFrom(
@@ -1022,8 +1025,8 @@ class _LongformContentState extends State<LongformContent> {
                                                               bottom: 10,
                                                               right: 5),
                                                       width: screenWidth * 0.65,
-                                                      height:
-                                                          screenHeight * 0.20,
+                                                      height: 120,
+                                                      //height: screenHeight * 0.20,
                                                       child: RichText(
                                                         textAlign:
                                                             TextAlign.justify,
@@ -1263,7 +1266,8 @@ class _LongformContentState extends State<LongformContent> {
                                               ),
                                               Container(
                                                 width: screenWidth * 0.90,
-                                                height: screenHeight * 0.22,
+                                                height: 120,
+                                                //height: screenHeight * 0.22,
                                                 color: Colors.transparent,
                                                 child: Row(
                                                   children: [
@@ -1273,12 +1277,12 @@ class _LongformContentState extends State<LongformContent> {
                                                       padding:
                                                           const EdgeInsets.only(
                                                               left: 5,
-                                                              top: 20,
+                                                              top: 10,
                                                               bottom: 5,
                                                               right: 0),
                                                       width: screenWidth * 0.65,
-                                                      height:
-                                                          screenHeight * 0.22,
+                                                      height: 120,
+                                                      //height: screenHeight * 0.22,
                                                       child: RichText(
                                                         textAlign:
                                                             TextAlign.justify,
@@ -1369,12 +1373,12 @@ class _LongformContentState extends State<LongformContent> {
                                                       padding:
                                                           const EdgeInsets.only(
                                                               left: 5,
-                                                              top: 5,
+                                                              top: 0,
                                                               bottom: 5,
                                                               right: 5),
                                                       width: screenWidth * 0.24,
-                                                      height:
-                                                          screenHeight * 0.16,
+                                                      height: 100,
+                                                      //height: screenHeight * 0.16,
                                                       child: ElevatedButton(
                                                         style: ElevatedButton
                                                             .styleFrom(
@@ -1511,7 +1515,8 @@ class _LongformContentState extends State<LongformContent> {
                                               ),
                                               Container(
                                                 width: screenWidth * 0.90,
-                                                height: screenHeight * 0.21,
+                                                height: 120,
+                                                //height: screenHeight * 0.21,
                                                 color: Colors.transparent,
                                                 child: Row(
                                                   children: [
@@ -1521,12 +1526,12 @@ class _LongformContentState extends State<LongformContent> {
                                                       padding:
                                                           const EdgeInsets.only(
                                                               left: 5,
-                                                              top: 0,
+                                                              top: 5,
                                                               bottom: 5,
                                                               right: 5),
                                                       width: screenWidth * 0.24,
-                                                      height:
-                                                          screenHeight * 0.16,
+                                                      height: 100,
+                                                      //height: screenHeight * 0.16,
                                                       child: ElevatedButton(
                                                         style: ElevatedButton
                                                             .styleFrom(
@@ -1572,13 +1577,13 @@ class _LongformContentState extends State<LongformContent> {
                                                           Alignment.topCenter,
                                                       padding:
                                                           const EdgeInsets.only(
-                                                              left: 0,
-                                                              top: 12,
-                                                              bottom: 0,
+                                                              left: 5,
+                                                              top: 10,
+                                                              bottom: 5,
                                                               right: 5),
                                                       width: screenWidth * 0.65,
-                                                      height:
-                                                          screenHeight * 0.21,
+                                                      height: 120,
+                                                      //height: screenHeight * 0.21,
                                                       child: RichText(
                                                         textAlign:
                                                             TextAlign.justify,

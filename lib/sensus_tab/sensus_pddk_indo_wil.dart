@@ -119,10 +119,10 @@ class FixedColumnWidget extends StatelessWidget {
       columns: [
         DataColumn(
             label: SizedBox(
-                width: screenWidth * 0.20,
+                width: screenWidth * 0.25,
                 child: const Text(
                   textAlign: TextAlign.center,
-                  '   Provinsi',
+                  'Provinsi',
                   //maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(

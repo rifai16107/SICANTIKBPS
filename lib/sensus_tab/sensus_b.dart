@@ -67,7 +67,7 @@ class _SensusBState extends State<SensusB> {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      height: screenHeight * 0.08,
+                      height: 65,
                       margin: const EdgeInsets.only(bottom: 2),
                       color: Colors.transparent,
                       child: Center(

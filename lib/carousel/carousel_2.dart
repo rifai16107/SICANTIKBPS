@@ -35,7 +35,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                   color: const Color.fromARGB(255, 231, 232, 233),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                margin: const EdgeInsets.only(top: 2, bottom: 2),
+                margin: const EdgeInsets.only(top: 0, bottom: 0),
                 width: screenWidth,
                 height: screenHeight,
                 child: Row(
