@@ -17,7 +17,7 @@ class PendidikanKabkot extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 0.082 * screenHeight,
+          toolbarHeight: 0.085 * screenHeight,
           flexibleSpace: Center(
             child: Column(
               children: const [
@@ -139,12 +139,15 @@ class FixedColumnWidget extends StatelessWidget {
         ),
       ),
       columns: const [
-        DataColumn(label: Text(textAlign: TextAlign.left, 'Kabupaten/Kota',
-                        style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 13,
-              color: Colors.white,
-            ))),
+        DataColumn(
+            label: Text(
+                textAlign: TextAlign.left,
+                'Kabupaten/Kota',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 13,
+                  color: Colors.white,
+                ))),
       ],
       rows: const [
         DataRow(cells: [
@@ -675,7 +678,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             //fontSize: 15),
                           ),
                         ),
-                        numeric: true), 
+                        numeric: true),
                     DataColumn(
                         label: SizedBox(
                           width: 80,
@@ -690,7 +693,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             //fontSize: 15),
                           ),
                         ),
-                        numeric: true),       
+                        numeric: true),
                   ],
                   rows: List<DataRow>.generate(
                     snapshot.data!.length,

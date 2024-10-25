@@ -2538,7 +2538,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                               Container(
                                 width: screenWidth * 1.0,
                                 height: screenHeight * 0.032,
-                               color: Colors.grey.shade200,
+                                color: Colors.grey.shade200,
                                 child: Row(
                                   children: [
                                     SizedBox(
@@ -5457,9 +5457,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                           kabkota36,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                              color:Colors.white,
+                                              color: Colors.white,
                                               fontSize: 13,
-                                              fontWeight: FontWeight.bold),
+                                              fontWeight: FontWeight.normal),
                                         ),
                                       ),
                                     ),
@@ -5472,9 +5472,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                           Format.convertTo(asfr1519_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                              color:Colors.white,
+                                              color: Colors.white,
                                               fontSize: 12,
-                                              fontWeight: FontWeight.bold),
+                                              fontWeight: FontWeight.normal),
                                         ),
                                       ),
                                     ),
@@ -5487,9 +5487,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                           Format.convertTo(asfr2024_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                              color:Colors.white,
+                                              color: Colors.white,
                                               fontSize: 12,
-                                              fontWeight: FontWeight.bold),
+                                              fontWeight: FontWeight.normal),
                                         ),
                                       ),
                                     ),
@@ -5505,9 +5505,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                           Format.convertTo(asfr2529_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                              color:Colors.white,
+                                              color: Colors.white,
                                               fontSize: 12,
-                                              fontWeight: FontWeight.bold),
+                                              fontWeight: FontWeight.normal),
                                         ),
                                       ),
                                     ),
@@ -5523,9 +5523,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                           Format.convertTo(asfr3034_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                              color:Colors.white,
+                                              color: Colors.white,
                                               fontSize: 12,
-                                              fontWeight: FontWeight.bold),
+                                              fontWeight: FontWeight.normal),
                                         ),
                                       ),
                                     ),
@@ -5538,9 +5538,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                           Format.convertTo(asfr3539_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                              color:Colors.white,
+                                              color: Colors.white,
                                               fontSize: 12,
-                                              fontWeight: FontWeight.bold),
+                                              fontWeight: FontWeight.normal),
                                         ),
                                       ),
                                     ),
@@ -5553,9 +5553,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                           Format.convertTo(asfr4044_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                              color:Colors.white,
+                                              color: Colors.white,
                                               fontSize: 12,
-                                              fontWeight: FontWeight.bold),
+                                              fontWeight: FontWeight.normal),
                                         ),
                                       ),
                                     ),
@@ -5568,9 +5568,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                           Format.convertTo(asfr4549_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                              color:Colors.white,
+                                              color: Colors.white,
                                               fontSize: 12,
-                                              fontWeight: FontWeight.bold),
+                                              fontWeight: FontWeight.normal),
                                         ),
                                       ),
                                     ),
@@ -5592,7 +5592,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                       fontWeight: FontWeight.bold),
                                 ),
                               ),
-                            Column(
+                              Column(
                                 children: [
                                   Container(
                                     padding: const EdgeInsets.all(5),
@@ -5627,10 +5627,9 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                                         textAlign: TextAlign.justify),
                                   ),
                                 ],
-                              ),  
+                              ),
                             ],
                           ),
-                          
                         ),
                       ),
                     ],

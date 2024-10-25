@@ -1,8 +1,13 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:bps_cilacap/homescreen_menu/pengangguran_content.dart';
+import 'package:bps_cilacap/homescreen_menu/sp2020_lf/longform_indikator/fertilitas_content.dart';
+import 'package:bps_cilacap/homescreen_menu/sp2020_lf/longform_indikator/mortalitas_content.dart';
+import 'package:bps_cilacap/homescreen_menu/sp2020_lf/longform_indikator/mobilitas_content.dart';
+import 'package:bps_cilacap/homescreen_menu/sp2020_lf/longform_indikator/pendidikan_content.dart';
+import 'package:bps_cilacap/homescreen_menu/sp2020_lf/longform_indikator/perumahan_content.dart';
 import 'package:bps_cilacap/restAPI/repository_longform.dart';
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
+import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 
 class LongformContent extends StatefulWidget {
@@ -349,11 +354,10 @@ class _LongformContentState extends State<LongformContent> {
                     //Mobilitas
                     double lifetimeClp =
                         double.parse(isilongform[index = 12].clp);
-                    double risenlfClp =
-                        double.parse(isilongform[index = 18].clp);
+                    double risenClp = double.parse(isilongform[index = 18].clp);
                     double lifetimeJateng =
                         double.parse(isilongform[index = 12].jateng);
-                    double risenlfJateng =
+                    double risenJateng =
                         double.parse(isilongform[index = 18].jateng);
 
                     //Pendidikan
@@ -372,9 +376,9 @@ class _LongformContentState extends State<LongformContent> {
 
                     //Perumahan
                     double ketahananBangunanclp =
-                        double.parse(isilongform[index = 33].clp);
+                        double.parse(isilongform[index = 60].clp);
                     double ketahananBangunanjateng =
-                        double.parse(isilongform[index = 33].jateng);
+                        double.parse(isilongform[index = 60].jateng);
 
                     return Scaffold(
                         body: Column(
@@ -398,7 +402,7 @@ class _LongformContentState extends State<LongformContent> {
                           width: screenWidth,
                           child: const Center(
                             child: Text(
-                              '(Sentuh icon gambar atau tombol "Selengkapnya..." ")',
+                              '(Sentuh icon gambar atau tombol "Selengkapnya...")',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   color: Color.fromRGBO(15, 121, 153, 1),
@@ -514,7 +518,7 @@ class _LongformContentState extends State<LongformContent> {
                                                               context,
                                                               MaterialPageRoute(
                                                             builder: (context) {
-                                                              return const pengangguranContent();
+                                                              return const fertilitasContent();
                                                             },
                                                           ));
                                                         },
@@ -545,13 +549,13 @@ class _LongformContentState extends State<LongformContent> {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .normal,
-                                                                fontSize: 13),
+                                                                fontSize: 12),
                                                             children: <
                                                                 TextSpan>[
                                                               TextSpan(
-                                                                  text: tfrlfClp
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format
+                                                                      .convertTo(
+                                                                          tfrlfClp, 2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -573,7 +577,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                       '. Sementara itu TFR Jawa Tengah tercatat lebih rendah dibanding TFR Kabupaten Cilacap yaitu sebesar ',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          13,
+                                                                          12,
                                                                       fontFamily:
                                                                           'Roboto',
                                                                       color: Colors
@@ -582,9 +586,9 @@ class _LongformContentState extends State<LongformContent> {
                                                                           FontWeight
                                                                               .normal)),
                                                               TextSpan(
-                                                                  text: tfrlfJateng
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      tfrlfJateng,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -640,7 +644,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                 MaterialPageRoute(
                                                               builder:
                                                                   (context) {
-                                                                return const pengangguranContent();
+                                                                return const fertilitasContent();
                                                               },
                                                             ));
                                                           },
@@ -723,13 +727,13 @@ class _LongformContentState extends State<LongformContent> {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .normal,
-                                                                fontSize: 13),
+                                                                fontSize: 12),
                                                             children: <
                                                                 TextSpan>[
                                                               TextSpan(
-                                                                  text: imrlfClp
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format
+                                                                      .convertTo(
+                                                                          imrlfClp, 2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -751,7 +755,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                       '. Angka ini lebih tinggi dibandingkan dengan angka IMR Jawa Tengah yang tercatat sebesar ',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          13,
+                                                                          12,
                                                                       fontFamily:
                                                                           'Roboto',
                                                                       color: Colors
@@ -760,9 +764,9 @@ class _LongformContentState extends State<LongformContent> {
                                                                           FontWeight
                                                                               .normal)),
                                                               TextSpan(
-                                                                  text: imrlfJateng
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      imrlfJateng,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -825,7 +829,7 @@ class _LongformContentState extends State<LongformContent> {
                                                               context,
                                                               MaterialPageRoute(
                                                             builder: (context) {
-                                                              return const pengangguranContent();
+                                                              return const mortalitasContent();
                                                             },
                                                           ));
                                                         },
@@ -869,7 +873,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                 MaterialPageRoute(
                                                               builder:
                                                                   (context) {
-                                                                return const pengangguranContent();
+                                                                return const mortalitasContent();
                                                               },
                                                             ));
                                                           },
@@ -972,7 +976,7 @@ class _LongformContentState extends State<LongformContent> {
                                                               context,
                                                               MaterialPageRoute(
                                                             builder: (context) {
-                                                              return const pengangguranContent();
+                                                              return const mobilitasContent();
                                                             },
                                                           ));
                                                         },
@@ -1003,13 +1007,13 @@ class _LongformContentState extends State<LongformContent> {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .normal,
-                                                                fontSize: 13),
+                                                                fontSize: 12),
                                                             children: <
                                                                 TextSpan>[
                                                               TextSpan(
-                                                                  text: risenlfClp
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format
+                                                                      .convertTo(
+                                                                          risenClp, 2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -1039,9 +1043,9 @@ class _LongformContentState extends State<LongformContent> {
                                                                           FontWeight
                                                                               .normal)),
                                                               TextSpan(
-                                                                  text: lifetimeClp
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      lifetimeClp,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -1063,7 +1067,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                       '. Sementara itu migrasi risen dan migrasi seumur hidup Provinsi Jawa Tengah masing-masing sebesar ',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          13,
+                                                                          12,
                                                                       fontFamily:
                                                                           'Roboto',
                                                                       color: Colors
@@ -1072,9 +1076,9 @@ class _LongformContentState extends State<LongformContent> {
                                                                           FontWeight
                                                                               .normal)),
                                                               TextSpan(
-                                                                  text: risenlfJateng
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      risenJateng,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -1104,9 +1108,9 @@ class _LongformContentState extends State<LongformContent> {
                                                                           FontWeight
                                                                               .normal)),
                                                               TextSpan(
-                                                                  text: lifetimeJateng
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      lifetimeJateng,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -1162,7 +1166,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                 MaterialPageRoute(
                                                               builder:
                                                                   (context) {
-                                                                return const pengangguranContent();
+                                                                return const mobilitasContent();
                                                               },
                                                             ));
                                                           },
@@ -1232,7 +1236,7 @@ class _LongformContentState extends State<LongformContent> {
                                                               right: 0),
                                                       width: screenWidth * 0.65,
                                                       height:
-                                                          screenHeight * 0.15,
+                                                          screenHeight * 0.16,
                                                       child: RichText(
                                                         textAlign:
                                                             TextAlign.justify,
@@ -1245,13 +1249,13 @@ class _LongformContentState extends State<LongformContent> {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .normal,
-                                                                fontSize: 13),
+                                                                fontSize: 12),
                                                             children: <
                                                                 TextSpan>[
                                                               TextSpan(
-                                                                  text: minsltaClp
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      minsltaClp,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -1273,7 +1277,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                       ' persen, lebih rendah dibandingkan angka Prov. Jawa Tengah yang tercatat sebesar ',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          13,
+                                                                          12,
                                                                       fontFamily:
                                                                           'Roboto',
                                                                       color: Colors
@@ -1282,9 +1286,9 @@ class _LongformContentState extends State<LongformContent> {
                                                                           FontWeight
                                                                               .normal)),
                                                               TextSpan(
-                                                                  text: minsltaJateng
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      minsltaJateng,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -1306,7 +1310,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                       ' persen.',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          13,
+                                                                          12,
                                                                       fontFamily:
                                                                           'Roboto',
                                                                       color: Colors
@@ -1327,7 +1331,7 @@ class _LongformContentState extends State<LongformContent> {
                                                               right: 0),
                                                       width: screenWidth * 0.24,
                                                       height:
-                                                          screenHeight * 0.15,
+                                                          screenHeight * 0.16,
                                                       child: ElevatedButton(
                                                         style: ElevatedButton
                                                             .styleFrom(
@@ -1360,7 +1364,7 @@ class _LongformContentState extends State<LongformContent> {
                                                               context,
                                                               MaterialPageRoute(
                                                             builder: (context) {
-                                                              return const pengangguranContent();
+                                                              return const pendidikanContent();
                                                             },
                                                           ));
                                                         },
@@ -1373,7 +1377,7 @@ class _LongformContentState extends State<LongformContent> {
                                               ),
                                               // Tombol Selengkapnya
                                               const Divider(
-                                                height: 8,
+                                                height: 5,
                                                 color: Colors.transparent,
                                               ),
                                               SizedBox(
@@ -1408,7 +1412,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                 MaterialPageRoute(
                                                               builder:
                                                                   (context) {
-                                                                return const pengangguranContent();
+                                                                return const pendidikanContent();
                                                               },
                                                             ));
                                                           },
@@ -1456,7 +1460,7 @@ class _LongformContentState extends State<LongformContent> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               const Text(
-                                                " INDIKATOR PERUMAHAN",
+                                                " KETAHAHAN BANGUNAN",
                                                 style: TextStyle(
                                                     color: Colors.black,
                                                     fontWeight: FontWeight.bold,
@@ -1511,7 +1515,7 @@ class _LongformContentState extends State<LongformContent> {
                                                               context,
                                                               MaterialPageRoute(
                                                             builder: (context) {
-                                                              return const pengangguranContent();
+                                                              return const perumahanContent();
                                                             },
                                                           ));
                                                         },
@@ -1529,7 +1533,7 @@ class _LongformContentState extends State<LongformContent> {
                                                               right: 5),
                                                       width: screenWidth * 0.65,
                                                       height:
-                                                          screenHeight * 0.15,
+                                                          screenHeight * 0.16,
                                                       child: RichText(
                                                         textAlign:
                                                             TextAlign.justify,
@@ -1541,13 +1545,13 @@ class _LongformContentState extends State<LongformContent> {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .normal,
-                                                                fontSize: 13),
+                                                                fontSize: 12),
                                                             children: <
                                                                 TextSpan>[
                                                               TextSpan(
-                                                                  text: ketahananBangunanclp
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      ketahananBangunanclp,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -1566,10 +1570,10 @@ class _LongformContentState extends State<LongformContent> {
                                                                               .bold)),
                                                               const TextSpan(
                                                                   text:
-                                                                      ' persen rumah tangga di Kabupaten Cilacap bangunan tempat tinggalnya telah memenuuhi syarat ketahanan bangunan. Sementara di Jawa Tengah persentase yang memenuhi syarat ketahanan bangunan mencapai ',
+                                                                      ' persen rumah tangga di Kabupaten Cilacap bangunan tempat tinggalnya telah memenuhi syarat ketahanan bangunan. Sementara di Jawa Tengah persentase yang memenuhi syarat ketahanan bangunan mencapai ',
                                                                   style: TextStyle(
                                                                       fontSize:
-                                                                          13,
+                                                                          12,
                                                                       fontFamily:
                                                                           'Roboto',
                                                                       color: Colors
@@ -1578,9 +1582,9 @@ class _LongformContentState extends State<LongformContent> {
                                                                           FontWeight
                                                                               .normal)),
                                                               TextSpan(
-                                                                  text: ketahananBangunanjateng
-                                                                      .toStringAsFixed(
-                                                                          2),
+                                                                  text: Format.convertTo(
+                                                                      ketahananBangunanjateng,
+                                                                      2),
                                                                   style: const TextStyle(
                                                                       fontFamily:
                                                                           'Nexa',
@@ -1599,20 +1603,14 @@ class _LongformContentState extends State<LongformContent> {
                                                                               .bold)),
                                                               const TextSpan(
                                                                   text:
-                                                                      ' persen',
+                                                                      ' persen.',
                                                                   style: TextStyle(
-                                                                      fontFamily:
-                                                                          'Nexa',
-                                                                      color: Color.fromARGB(
-                                                                          255,
-                                                                          26,
-                                                                          11,
-                                                                          230),
                                                                       fontSize:
-                                                                          13,
-                                                                      fontStyle:
-                                                                          FontStyle
-                                                                              .italic,
+                                                                          12,
+                                                                      fontFamily:
+                                                                          'Roboto',
+                                                                      color: Colors
+                                                                          .black,
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .normal)),
@@ -1624,7 +1622,7 @@ class _LongformContentState extends State<LongformContent> {
                                               ),
                                               // Tombol Selengkapnya
                                               const Divider(
-                                                height: 8,
+                                                height: 5,
                                                 color: Colors.transparent,
                                               ),
                                               SizedBox(
@@ -1659,7 +1657,7 @@ class _LongformContentState extends State<LongformContent> {
                                                                 MaterialPageRoute(
                                                               builder:
                                                                   (context) {
-                                                                return const pengangguranContent();
+                                                                return const perumahanContent();
                                                               },
                                                             ));
                                                           },

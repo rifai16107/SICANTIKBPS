@@ -133,12 +133,15 @@ class FixedColumnWidget extends StatelessWidget {
         ),
       ),
       columns: const [
-        DataColumn(label: Text(textAlign: TextAlign.left, 'Kabupaten/Kota',
-                        style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 13,
-              color: Colors.white,
-            ))),
+        DataColumn(
+            label: Text(
+                textAlign: TextAlign.left,
+                'Kabupaten/Kota',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 13,
+                  color: Colors.white,
+                ))),
       ],
       rows: const [
         DataRow(cells: [
@@ -567,7 +570,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: 75,
+                          width: 80,
                           child: Text(
                             'Parket/Vinil/Karpet/Ubin/Tegel/Teraso',
                             maxLines: 4,
@@ -654,7 +657,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             //fontSize: 15),
                           ),
                         ),
-                        numeric: true),       
+                        numeric: true),
                   ],
                   rows: List<DataRow>.generate(
                     snapshot.data!.length,
@@ -694,7 +697,9 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    double.tryParse(data.parket_vinil_karpet_ubin), 0)),
+                                    double.tryParse(
+                                        data.parket_vinil_karpet_ubin),
+                                    0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
