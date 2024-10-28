@@ -205,6 +205,10 @@ class _GrafikPppKabkotState extends State<GrafikPppKabkot> {
                     legend: Legend(
                         // Visibility of legend
                         isVisible: true,
+                        textStyle: const TextStyle(
+                        fontSize: 11,
+                        ),
+                        toggleSeriesVisibility: true,
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         title: AxisTitle(

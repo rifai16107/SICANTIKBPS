@@ -263,9 +263,9 @@ class _GrafikGiniKabkotState extends State<GrafikGiniKabkot> {
                     legend: Legend(
                         // Visibility of legend
                         isVisible: true,
-                        //textStyle: const TextStyle(
-                        //fontSize: 11,
-                        //),
+                        textStyle: const TextStyle(
+                        fontSize: 11,
+                        ),
                         toggleSeriesVisibility: true,
                         //overflowMode: LegendItemOverflowMode.wrap,
                         position: LegendPosition.top),

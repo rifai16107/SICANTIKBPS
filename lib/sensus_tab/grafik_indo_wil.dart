@@ -254,6 +254,10 @@ class _GrafikSensusIndoWilState extends State<GrafikSensusIndoWil> {
                     legend: Legend(
                         // Visibility of legend
                         isVisible: true,
+                        textStyle: const TextStyle(
+                        fontSize: 11,
+                        ),
+                        toggleSeriesVisibility: true,
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         title: AxisTitle(

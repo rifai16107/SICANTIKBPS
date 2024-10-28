@@ -185,6 +185,10 @@ class _GrafikIpgjkKabkotState extends State<GrafikIpgjkKabkot> {
                         legend: Legend(
                             // Visibility of legend
                             isVisible: true,
+                            textStyle: const TextStyle(
+                            fontSize: 11,
+                            ),
+                            toggleSeriesVisibility: true,
                             position: LegendPosition.top),
                         primaryYAxis: NumericAxis(
                             majorGridLines: const MajorGridLines(width: 1),

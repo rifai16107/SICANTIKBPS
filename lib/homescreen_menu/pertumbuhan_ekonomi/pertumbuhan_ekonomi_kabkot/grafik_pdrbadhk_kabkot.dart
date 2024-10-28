@@ -244,7 +244,11 @@ class _GrafikPdrbadhkKabkotState extends State<GrafikPdrbadhkKabkot> {
                         )),
                     legend: Legend(
                         // Visibility of legend
-                        isVisible: true,
+                        isVisible: false,
+                        textStyle: const TextStyle(
+                        fontSize: 11,
+                        ),
+                        toggleSeriesVisibility: true,
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         title: AxisTitle(

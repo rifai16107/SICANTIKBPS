@@ -206,6 +206,10 @@ class _GrafikGkmKabKotState extends State<GrafikGkmKabKot> {
                     legend: Legend(
                         // Visibility of legend
                         isVisible: true,
+                        textStyle: const TextStyle(
+                        fontSize: 11,
+                        ),
+                        toggleSeriesVisibility: true,
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         numberFormat: NumberFormat.decimalPattern('vi_VN'),

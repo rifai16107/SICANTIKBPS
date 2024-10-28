@@ -43,7 +43,7 @@ class _BodyGrafikMiskinKabKot extends State<BodyGrafikMiskinKabKot> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.15,
+                height: screenHeight * 1.20,
                 width: screenWidth,
                 child: Column(
                   children: [
