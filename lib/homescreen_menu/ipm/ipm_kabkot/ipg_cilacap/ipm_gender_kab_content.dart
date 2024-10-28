@@ -45,7 +45,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               List isiipm = snapshot.data as List;
-              return PageView.builder(
+              return ListView.builder(
                 itemCount: 1,
                 itemBuilder: (context, index) {
                   String tahun5 = isiipm[index = 4].created_at[0] +
@@ -183,7 +183,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                   double ipgN1 = double.parse(isiipm[index = 4].ipg);
 
                   return Container(
-                      height: screenHeight * 1.2,
+                      height: screenHeight,
                       color: Colors.transparent,
                       child: Column(
                         children: [

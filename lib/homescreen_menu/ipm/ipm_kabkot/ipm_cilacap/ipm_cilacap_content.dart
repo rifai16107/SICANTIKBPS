@@ -44,7 +44,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               List isiipm = snapshot.data as List;
-              return PageView.builder(
+              return ListView.builder(
                 itemCount: 1,
                 itemBuilder: (context, index) {
                   String tahun5 = isiipm[index = 4].created_at[0] +
@@ -112,7 +112,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                   double ipmlf5 = double.parse(isiipm[index = 4].ipm_lfsp2020);
 
                   return Container(
-                      height: 2000,
+                      height: screenHeight,
                       color: Colors.transparent,
                       child: Column(
                         children: [

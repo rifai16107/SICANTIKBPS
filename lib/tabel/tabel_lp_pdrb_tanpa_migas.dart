@@ -1422,7 +1422,7 @@ class _TabelLPPdrbTanpaMigasState extends State<TabelLPPdrbTanpaMigas> {
                     ),
                     Container(
                         padding: const EdgeInsets.symmetric(
-                            vertical: 60, horizontal: 2),
+                            vertical: 65, horizontal: 2),
                         child: const Text(
                           "     ",
                           style: TextStyle(fontWeight: FontWeight.bold),

@@ -186,7 +186,7 @@ class _PdrbLapUsTanpaMigasState extends State<PdrbLapUsTanpaMigas> {
                         textAlign: TextAlign.center,
                       )),
                   SizedBox(
-                    height: screenHeight,
+                    height: screenHeight*0.95,
                     width: screenWidth,
                     child: Column(
                       children: [

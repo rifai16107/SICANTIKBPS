@@ -1203,7 +1203,7 @@ class _HomeContentState extends State<HomeContent> {
                                               height: screenHeight * 0.06,
                                             ),
                                             SizedBox(
-                                              width: screenWidth * 0.06,
+                                              width: screenWidth * 0.05,
                                             ),
                                           ]),
                                     ),
@@ -1227,7 +1227,7 @@ class _HomeContentState extends State<HomeContent> {
                                               height: screenHeight * 0.06,
                                             ),
                                             SizedBox(
-                                              width: screenWidth * 0.06,
+                                              width: screenWidth * 0.05,
                                             ),
                                           ]),
                                     ),
@@ -1251,7 +1251,7 @@ class _HomeContentState extends State<HomeContent> {
                                               height: screenHeight * 0.06,
                                             ),
                                             SizedBox(
-                                              width: screenWidth * 0.06,
+                                              width: screenWidth * 0.05,
                                             ),
                                           ]),
                                     ),
@@ -1275,7 +1275,7 @@ class _HomeContentState extends State<HomeContent> {
                                               height: screenHeight * 0.06,
                                             ),
                                             SizedBox(
-                                              width: screenWidth * 0.06,
+                                              width: screenWidth * 0.05,
                                             ),
                                           ]),
                                     ),
@@ -1299,7 +1299,7 @@ class _HomeContentState extends State<HomeContent> {
                                               height: screenHeight * 0.06,
                                             ),
                                             const SizedBox(
-                                              width: 0,
+                                              width: 0.02,
                                             ),
                                           ]),
                                     ),

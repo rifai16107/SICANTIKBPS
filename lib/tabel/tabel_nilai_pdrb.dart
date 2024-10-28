@@ -80,8 +80,8 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                 return Column(
                   children: [
                     Container(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 10, horizontal: 2),
+                        padding: const EdgeInsets.only(
+                            left:1, right:1,top:10, bottom: 5),
                         child: Text(
                           "Nilai PDRB Kabupaten Cilacap Atas Dasar Harga Berlaku (ADHB) Menurut Lapangan Usaha (Juta Rp), $th1-$th5",
                           style: const TextStyle(fontWeight: FontWeight.bold),
@@ -329,10 +329,11 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                     ),
                     const Divider(
                       color: Color.fromARGB(235, 71, 65, 65),
+                      thickness: 1,
                     ),
                     Container(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 20, horizontal: 2),
+                        padding: const EdgeInsets.only(
+                            left:1, right:1,top:10, bottom: 5),
                         child: Text(
                           "Nilai PDRB Kabupaten Cilacap Atas Dasar Harga Konstan (ADHK) Menurut Lapangan Usaha (Juta Rp), $th1-$th5",
                           style: const TextStyle(fontWeight: FontWeight.bold),
@@ -582,6 +583,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                     ),
                     const Divider(
                       color: Color.fromARGB(235, 71, 65, 65),
+                      thickness: 1,
                     ),
                   ],
                 );

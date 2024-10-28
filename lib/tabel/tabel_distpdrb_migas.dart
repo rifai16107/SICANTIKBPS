@@ -1420,6 +1420,14 @@ class _TabelDistPdrbMigasState extends State<TabelDistPdrbMigas> {
                         ],
                       ),
                     ),
+                    Container(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 65, horizontal: 2),
+                        child: const Text(
+                          "     ",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        )),
                   ],
                 );
               },

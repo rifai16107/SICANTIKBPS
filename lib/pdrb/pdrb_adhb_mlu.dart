@@ -186,7 +186,7 @@ class _PdrbLapUsState extends State<PdrbLapUs> {
                         textAlign: TextAlign.center,
                       )),
                   SizedBox(
-                    height: screenHeight,
+                    height: screenHeight*0.95,
                     width: screenWidth,
                     child: Column(
                       children: [
