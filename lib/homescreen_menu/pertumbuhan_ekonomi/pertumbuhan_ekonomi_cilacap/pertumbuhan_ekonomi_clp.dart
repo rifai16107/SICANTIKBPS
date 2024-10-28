@@ -52,7 +52,7 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   List isipdrb = snapshot.data as List;
-                  return PageView.builder(
+                  return ListView.builder(
                     itemCount: 1,
                     itemBuilder: (context, index) {
                       String thA = isipdrb[index = 0].tahun[0] +
