@@ -59,7 +59,7 @@ class _UpdateDialogState extends State<UpdateDialog> {
       children: [
         Container(
           height: screenHeight / 12,
-          width: screenWidth / 1.3,
+          width: screenWidth / 1.4,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(20),
@@ -77,7 +77,7 @@ class _UpdateDialogState extends State<UpdateDialog> {
         ),
         Container(
           height: screenHeight / 2,
-          width: screenWidth / 1.3,
+          width: screenWidth / 1.4,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(20),
