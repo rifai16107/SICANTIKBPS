@@ -302,7 +302,7 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                             flex: 2,
                             child: Container(
                               padding: const EdgeInsets.only(
-                                  left: 0, top: 3, bottom: 3),
+                                  left: 10, top: 3, bottom: 3),
                               child: const Text(
                                 "Pertumbuhan        Ekonomi",
                                 textAlign: TextAlign.center,
@@ -335,9 +335,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -351,9 +350,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -367,13 +365,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe1, 2),
                                         textAlign: TextAlign.right,
@@ -394,9 +391,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -409,9 +405,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -424,12 +419,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe2, 2),
                                         textAlign: TextAlign.right,
@@ -450,9 +444,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -466,9 +459,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -482,13 +474,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe3, 2),
                                         textAlign: TextAlign.right,
@@ -509,9 +500,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -524,9 +514,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -539,12 +528,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe4, 2),
                                         textAlign: TextAlign.right,
@@ -565,9 +553,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -581,9 +568,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -597,13 +583,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe5, 2),
                                         textAlign: TextAlign.right,
@@ -624,9 +609,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -639,9 +623,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -655,18 +638,19 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe6, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                          fontWeight: FontWeight.normal,
+                                          fontSize: 13,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -681,9 +665,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -697,9 +680,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -713,13 +695,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe7, 2),
                                         textAlign: TextAlign.right,
@@ -740,9 +721,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -756,9 +736,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -772,13 +751,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe8, 2),
                                         textAlign: TextAlign.right,
@@ -799,9 +777,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -815,9 +792,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -831,13 +807,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe9, 2),
                                         textAlign: TextAlign.right,
@@ -858,9 +833,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -874,9 +848,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -890,13 +863,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe10, 2),
                                         textAlign: TextAlign.right,
@@ -918,9 +890,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -934,9 +905,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -950,13 +920,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe11, 2),
                                         textAlign: TextAlign.right,
@@ -977,9 +946,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -993,9 +961,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1009,13 +976,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe12, 2),
                                         textAlign: TextAlign.right,
@@ -1036,9 +1002,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1052,9 +1017,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1068,13 +1032,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe13, 2),
                                         textAlign: TextAlign.right,
@@ -1095,9 +1058,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1111,9 +1073,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1127,13 +1088,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe14, 2),
                                         textAlign: TextAlign.right,
@@ -1154,9 +1114,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1170,9 +1129,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1186,13 +1144,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe15, 2),
                                         textAlign: TextAlign.right,
@@ -1213,9 +1170,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1229,9 +1185,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1245,13 +1200,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe16, 2),
                                         textAlign: TextAlign.right,
@@ -1272,9 +1226,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1288,9 +1241,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1304,13 +1256,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe17, 2),
                                         textAlign: TextAlign.right,
@@ -1331,9 +1282,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1347,9 +1297,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1363,13 +1312,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe18, 2),
                                         textAlign: TextAlign.right,
@@ -1390,9 +1338,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1406,9 +1353,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1422,13 +1368,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe19, 2),
                                         textAlign: TextAlign.right,
@@ -1449,9 +1394,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1465,9 +1409,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1481,13 +1424,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe20, 2),
                                         textAlign: TextAlign.right,
@@ -1508,9 +1450,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1524,9 +1465,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1540,13 +1480,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe21, 2),
                                         textAlign: TextAlign.right,
@@ -1567,9 +1506,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1583,9 +1521,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
@@ -1599,13 +1536,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe22, 2),
                                         textAlign: TextAlign.right,
@@ -1626,9 +1562,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1642,9 +1577,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
@@ -1658,13 +1592,12 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe23, 2),
                                         textAlign: TextAlign.right,
@@ -1685,9 +1618,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1700,9 +1632,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1715,12 +1646,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe24, 2),
                                         textAlign: TextAlign.right,
@@ -1741,9 +1671,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1756,9 +1685,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1771,12 +1699,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe25, 2),
                                         textAlign: TextAlign.right,
@@ -1797,9 +1724,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1812,9 +1738,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1827,12 +1752,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe26, 2),
                                         textAlign: TextAlign.right,
@@ -1853,9 +1777,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1868,9 +1791,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1883,12 +1805,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe27, 2),
                                         textAlign: TextAlign.right,
@@ -1909,9 +1830,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1924,9 +1844,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1939,12 +1858,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe28, 2),
                                         textAlign: TextAlign.right,
@@ -1965,9 +1883,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1980,9 +1897,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -1995,12 +1911,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe29, 2),
                                         textAlign: TextAlign.right,
@@ -2021,12 +1936,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 0, top: 1, bottom: 1),
                                       child: Text(
                                         kab30,
                                         textAlign: TextAlign.left,
@@ -2036,9 +1950,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2051,12 +1964,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe30, 2),
                                         textAlign: TextAlign.right,
@@ -2077,9 +1989,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2092,9 +2003,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2107,12 +2017,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe31, 2),
                                         textAlign: TextAlign.right,
@@ -2133,9 +2042,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2148,9 +2056,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2163,12 +2070,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe32, 2),
                                         textAlign: TextAlign.right,
@@ -2189,9 +2095,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2204,9 +2109,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2219,12 +2123,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe33, 2),
                                         textAlign: TextAlign.right,
@@ -2245,12 +2148,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 0, top: 1, bottom: 1),
                                       child: Text(
                                         kab34,
                                         textAlign: TextAlign.left,
@@ -2260,9 +2162,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2275,12 +2176,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe34, 2),
                                         textAlign: TextAlign.right,
@@ -2301,9 +2201,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.transparent,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.30 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2316,9 +2215,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.40 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 1, bottom: 1),
@@ -2331,12 +2229,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 1, bottom: 1),
+                                          right: 10, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pe35, 2),
                                         textAlign: TextAlign.right,
@@ -2357,9 +2254,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               color: Colors.green,
                               child: Row(
                                 children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
+                                  SizedBox(
+                                    width: 0.34 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 3, bottom: 3),
@@ -2373,9 +2269,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.36 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
                                           right: 10, top: 3, bottom: 3),
@@ -2389,12 +2284,11 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                       ),
                                     ),
                                   ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
+                                  SizedBox(
+                                    width: 0.25 * screenWidth,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 30, top: 3, bottom: 3),
+                                          right: 10, top: 3, bottom: 3),
                                       child: Text(
                                         Format.convertTo(pe36, 2),
                                         textAlign: TextAlign.right,
