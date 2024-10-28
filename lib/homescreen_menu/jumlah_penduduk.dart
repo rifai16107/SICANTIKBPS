@@ -248,7 +248,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                             },
                             child: SizedBox(
                                 width: screenWidth,
-                                height: screenHeight * 0.07,
+                                height: screenHeight * 0.08,
                                 child: Row(
                                   children: const [
                                     Flexible(
