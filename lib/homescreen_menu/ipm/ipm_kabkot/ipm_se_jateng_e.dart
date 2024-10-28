@@ -4429,7 +4429,7 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
                   child: CircularProgressIndicator(strokeWidth: 3));
             }
           }),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniStartFloat,
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
       floatingActionButton: SpeedDial(
           icon: Icons.bar_chart_outlined,
           visible: true,
@@ -4438,7 +4438,8 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
           activeIcon: Icons.close,
           buttonSize: const Size(45, 45),
           curve: Curves.elasticInOut,
-          direction: SpeedDialDirection.right,
+          direction: SpeedDialDirection.up,
+
           //animatedIconTheme: const IconThemeData(size: 25),
           //animatedIcon: AnimatedIcons.list_view,
           closeManually: false,
@@ -4455,7 +4456,10 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
               },
               label: 'IPM',
               labelBackgroundColor: Colors.black,
-              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+              labelStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 10,
+              ),
             ),
             SpeedDialChild(
               backgroundColor: Colors.greenAccent,

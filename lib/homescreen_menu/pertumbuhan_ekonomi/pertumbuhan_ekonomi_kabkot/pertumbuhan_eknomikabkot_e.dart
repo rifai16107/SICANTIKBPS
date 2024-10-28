@@ -2517,7 +2517,7 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                         child: const BodyGrafikPdrbadhkKabkot(),
                         direction: AxisDirection.left));
               },
-              label: 'PDRB ADHK Kab/Kota',
+              label: 'PDRB ADHK',
               labelBackgroundColor: Colors.black,
               labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
             ),
@@ -2531,7 +2531,7 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                         child: const BodyGrafikPertumbEkonomiKabkot(),
                         direction: AxisDirection.left));
               },
-              label: 'Pertumbuhan Ekonomi Kab/Kota',
+              label: 'Pertumbuhan Ekonomi',
               labelBackgroundColor: Colors.black,
               labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
             ),

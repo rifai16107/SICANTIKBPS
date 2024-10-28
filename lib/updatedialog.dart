@@ -76,7 +76,7 @@ class _UpdateDialogState extends State<UpdateDialog> {
           ),
         ),
         Container(
-          height: screenHeight / 2.5,
+          height: screenHeight / 2,
           width: screenWidth / 1.5,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
@@ -144,6 +144,9 @@ class _UpdateDialogState extends State<UpdateDialog> {
                               ),
                             ],
                           ),
+                        ),
+                        const SizedBox(
+                          height: 6,
                         ),
                         Expanded(
                           flex: 2,
