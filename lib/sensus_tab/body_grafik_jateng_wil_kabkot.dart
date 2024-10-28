@@ -44,7 +44,7 @@ class _BodyGrafikSensusJatengWil extends State<BodyGrafikSensusJatengWil> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.10,
+                height: screenHeight * 1.15,
                 width: screenWidth * 0.95,
                 child: Column(
                   children: [

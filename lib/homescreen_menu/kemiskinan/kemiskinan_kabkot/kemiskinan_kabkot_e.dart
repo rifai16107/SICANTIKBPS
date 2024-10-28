@@ -617,3770 +617,3770 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                 );
 
                 return Scaffold(
-                  body: Column(
-                children: <Widget>[
-                  //Flexible(
-                  //fit: FlexFit.tight,
-                  //flex: 5,
-                  Container(
-                    width: screenWidth * 1.0,
-                    height: screenHeight * 0.08,
-                    color: Colors.green,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 4,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                right: 3, top: 10, bottom: 10),
-                            child: const Text(
-                              "Kabupaten/Kota",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 3,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 10, top: 10, bottom: 10),
-                            child: const Text(
-                              "Pddk Miskin",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 10, bottom: 10),
-                            child: const Text(
-                              "P0",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 5, top: 10, bottom: 10),
-                            child: const Text(
-                              "GK",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 10, top: 10, bottom: 10),
-                            child: const Text(
-                              "P1",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 5, top: 10, bottom: 10),
-                            child: const Text(
-                              "P2",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  //),
-                  Expanded(
-                    //flex:16,
-                    child: SingleChildScrollView(
-                      //child: Flexible(
-                      //flex: 20,
-                      //fit: FlexFit.tight,
-                      //child: SizedBox(
-                      //width: screenWidth,
-                      //height: screenHeight,
-                      child: Column(
+                    body: Column(
+                  children: <Widget>[
+                    //Flexible(
+                    //fit: FlexFit.tight,
+                    //flex: 5,
+                    Container(
+                      width: screenWidth * 1.0,
+                      height: screenHeight * 0.08,
+                      color: Colors.green,
+                      child: Row(
                         children: [
-                          // Cilacap
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota1,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk1, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_1, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk1, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_1, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_1, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 4,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  right: 3, top: 10, bottom: 10),
+                              child: const Text(
+                                "Kabupaten/Kota",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          //Banyumas
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota2,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk2, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_2, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk2, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_2, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_2, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 3,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 10, top: 10, bottom: 10),
+                              child: const Text(
+                                "Pddk Miskin",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          //Purbalingga
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota3,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk3, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_3, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk3, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_3, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_3, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 2,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 0, top: 10, bottom: 10),
+                              child: const Text(
+                                "P0",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          //Banjarnegara
-
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota4,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk4, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_4, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk4, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_4, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_4, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 2,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 5, top: 10, bottom: 10),
+                              child: const Text(
+                                "GK",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          //Kebumen
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota5,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk5, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_5, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk5, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_5, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_5, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 2,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 10, top: 10, bottom: 10),
+                              child: const Text(
+                                "P1",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          //Purworejo
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota6,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk6, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_6, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk6, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_6, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_6, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 2,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 5, top: 10, bottom: 10),
+                              child: const Text(
+                                "P2",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          // Wonosobo
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota7,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                        ],
+                      ),
+                    ),
+                    //),
+                    Expanded(
+                      //flex:16,
+                      child: SingleChildScrollView(
+                        //child: Flexible(
+                        //flex: 20,
+                        //fit: FlexFit.tight,
+                        //child: SizedBox(
+                        //width: screenWidth,
+                        //height: screenHeight,
+                        child: Column(
+                          children: [
+                            // Cilacap
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota1,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk7, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk1, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_7, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_1, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk7, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk1, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_7, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_1, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_7, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_1, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Magelang
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota8,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Banyumas
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota2,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk8, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk2, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_8, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_2, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk8, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk2, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_8, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_2, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_8, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_2, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Boyolali
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota9,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Purbalingga
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota3,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk9, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk3, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_9, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_3, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk9, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk3, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_9, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_3, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_9, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_3, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Klaten
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota10,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk10, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_10, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk10, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_10, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_10, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+                            //Banjarnegara
 
-                          //Sukoharjo
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota11,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota4,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk11, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk4, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_11, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_4, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk11, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk4, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_11, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_4, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_11, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_4, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Wonogiri
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota12,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Kebumen
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota5,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk12, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk5, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_12, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_5, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk12, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk5, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_12, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_5, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_12, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_5, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Karanganyar
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota13,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Purworejo
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota6,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk13, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk6, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_13, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_6, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk13, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk6, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_13, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_6, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_13, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_6, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Sragen
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota14,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            // Wonosobo
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota7,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk14, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk7, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_14, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_7, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk14, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk7, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_14, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_7, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_14, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_7, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Grobogan
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota15,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Magelang
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota8,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk15, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk8, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_15, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_8, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk15, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk8, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_15, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_8, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_15, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_8, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Blora
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota16,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Boyolali
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota9,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk16, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk9, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_16, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_9, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk16, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk9, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_16, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_9, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_16, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_9, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Rembang
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota17,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Klaten
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota10,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk17, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk10, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_17, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_10, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk17, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk10, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_17, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_10, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_17, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_10, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Pati
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota18,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Sukoharjo
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota11,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk18, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk11, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_18, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_11, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk18, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk11, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_18, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_11, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_18, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_11, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Kudus
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota19,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Wonogiri
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota12,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk19, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk12, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_19, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_12, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk19, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk12, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_19, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_12, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_19, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_12, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Jepara
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota20,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Karanganyar
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota13,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk20, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk13, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_20, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_13, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk20, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk13, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_20, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_13, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_20, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_13, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Demak
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota21,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Sragen
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota14,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk21, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk14, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_21, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_14, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk21, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk14, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_21, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_14, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_21, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_14, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Semarang
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota22,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Grobogan
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota15,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk22, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk15, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_22, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_15, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk22, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk15, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_22, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_15, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_22, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_15, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Temanggung
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota23,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Blora
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota16,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk23, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk16, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_23, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_16, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk23, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk16, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_23, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_16, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_23, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_16, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Kendal
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota24,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Rembang
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota17,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk24, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk17, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_24, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_17, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk24, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk17, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_24, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_17, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_24, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_17, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Batang
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota25,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Pati
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota18,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk25, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk18, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_25, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_18, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk25, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk18, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_25, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_18, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_25, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_18, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Pekalongan
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota26,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Kudus
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota19,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk26, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk19, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_26, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_19, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk26, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk19, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_26, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_19, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_26, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_19, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Pemalang
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota27,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Jepara
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota20,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk27, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk20, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_27, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_20, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk27, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk20, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_27, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_20, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_27, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_20, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Tegal
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota28,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Demak
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota21,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk28, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk21, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_28, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_21, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk28, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk21, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_28, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_21, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_28, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_21, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Brebes
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota29,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Semarang
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota22,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk29, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk22, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_29, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_22, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk29, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk22, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_29, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_22, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_29, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_22, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          // Kota Magelang
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota30,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Temanggung
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota23,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk30, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk23, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_30, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_23, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk30, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk23, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_30, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_23, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_30, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_23, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Kota Surakarta
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota31,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Kendal
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota24,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk31, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk24, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_31, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_24, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk31, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk24, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_31, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_24, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_31, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_24, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Kota Salatiga
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota32,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Batang
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota25,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk32, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk25, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_32, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_25, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk32, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk25, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_32, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_25, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_32, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_25, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Kota Semarang
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota33,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Pekalongan
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota26,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk33, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk26, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_33, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_26, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk33, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk26, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_33, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_26, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_33, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_26, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Kota Pekalongan
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.045,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota34,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Pemalang
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota27,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk34, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk27, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_34, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_27, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk34, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk27, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_34, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_27, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_34, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_27, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Kota Tegal
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      kabkota35,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                            //Tegal
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota28,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pmk35, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk28, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 12, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p0_35, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_28, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(gk35, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk28, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p1_35, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_28, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(p2_35, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.normal),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_28, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
 
-                          //Total
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.050,
-                            color: Colors.green,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        left: 0, right: 3, top: 3, bottom: 3),
-                                    child: Text(
-                                      kabkota36,
-                                      textAlign: TextAlign.center,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 14,
-                                          color: Colors.white),
+                            //Brebes
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota29,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo(pmk36, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 13,
-                                          color: Colors.white),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk29, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo(p0_36, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 13,
-                                          color: Colors.white),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_29, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 0, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo(gk36, 3),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 13,
-                                          color: Colors.white),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk29, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 6, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo(p1_36, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 13,
-                                          color: Colors.white),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_29, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo(p2_36, 2),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 13,
-                                          color: Colors.white),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_29, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
+
+                            // Kota Magelang
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota30,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk30, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_30, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk30, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_30, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_30, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Kota Surakarta
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota31,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk31, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_31, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk31, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_31, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_31, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Kota Salatiga
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota32,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk32, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_32, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk32, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_32, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_32, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Kota Semarang
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota33,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk33, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_33, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk33, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_33, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_33, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Kota Pekalongan
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.049,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota34,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk34, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_34, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk34, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_34, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_34, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Kota Tegal
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        kabkota35,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pmk35, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 12, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p0_35, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(gk35, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p1_35, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(p2_35, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Total
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.050,
+                              color: Colors.green,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          left: 0, right: 3, top: 3, bottom: 3),
+                                      child: Text(
+                                        kabkota36,
+                                        textAlign: TextAlign.center,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 3, bottom: 3),
+                                      child: Text(
+                                        Format.convertTo(pmk36, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 13,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 3, bottom: 3),
+                                      child: Text(
+                                        Format.convertTo(p0_36, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 13,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 0, top: 3, bottom: 3),
+                                      child: Text(
+                                        Format.convertTo(gk36, 3),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 13,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 6, top: 3, bottom: 3),
+                                      child: Text(
+                                        Format.convertTo(p1_36, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 13,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 3, bottom: 3),
+                                      child: Text(
+                                        Format.convertTo(p2_36, 2),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 13,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                             Container(
                               alignment: Alignment.centerLeft,
                               padding: const EdgeInsets.only(

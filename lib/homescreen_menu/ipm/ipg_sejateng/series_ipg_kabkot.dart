@@ -39,7 +39,7 @@ class _SeriesIpgkabkot extends State<SeriesIpgkabkot> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.08,
+              height: screenHeight * 0.088,
               color: Colors.black,
               child: const Center(
                 child: Padding(

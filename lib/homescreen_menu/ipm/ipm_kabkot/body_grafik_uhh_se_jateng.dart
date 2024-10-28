@@ -43,7 +43,7 @@ class _BodyGrafikUhhSejateng extends State<BodyGrafikUhhSejateng> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight,
+                height: screenHeight * 1.15,
                 width: screenWidth * 0.92,
                 child: Column(
                   children: [

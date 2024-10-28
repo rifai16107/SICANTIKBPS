@@ -39,7 +39,7 @@ class _SeriesDistPdrb extends State<SeriesDistPdrb> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.085,
+              height: screenHeight * 0.09,
               color: Colors.black,
               child: const Center(
                 child: Padding(

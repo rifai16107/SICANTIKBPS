@@ -4073,7 +4073,7 @@ class _kemiskinanKabkotCState extends State<kemiskinanKabkotC> {
                           //Kota Pekalongan
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.045,
+                            height: screenHeight * 0.049,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [

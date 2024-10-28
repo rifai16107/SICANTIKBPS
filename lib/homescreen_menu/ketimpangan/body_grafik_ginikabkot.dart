@@ -43,7 +43,7 @@ class _BodyGrafikGiniKabkot extends State<BodyGrafikGiniKabkot> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight,
+                height: screenHeight * 1.15,
                 width: screenWidth * 0.97,
                 child: Column(
                   children: [

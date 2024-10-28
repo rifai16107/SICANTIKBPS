@@ -124,7 +124,7 @@ class FixedColumnWidget extends StatelessWidget {
                 child: const Text(
                   textAlign: TextAlign.center,
                   'Kabupaten/Kota',
-                  //maxLines: 2,
+                  maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.white),

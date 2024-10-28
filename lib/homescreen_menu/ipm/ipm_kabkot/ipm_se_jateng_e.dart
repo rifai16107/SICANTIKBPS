@@ -3997,14 +3997,14 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
                                       child: Container(
                                         padding: const EdgeInsets.only(
                                             left: 5,
-                                            right: 3,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
                                           kabkota34,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                              fontSize: 13,
+                                              fontSize: 12.7,
                                               fontWeight: FontWeight.normal),
                                         ),
                                       ),

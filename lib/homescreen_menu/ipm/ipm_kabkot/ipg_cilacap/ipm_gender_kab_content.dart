@@ -183,7 +183,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                   double ipgN1 = double.parse(isiipm[index = 4].ipg);
 
                   return Container(
-                      height: 2000,
+                      height: screenHeight * 1.2,
                       color: Colors.transparent,
                       child: Column(
                         children: [
@@ -2078,81 +2078,71 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                           ),
                           const Divider(
                             color: Colors.white,
-                            height: 5,
-                            thickness: 5,
+                            height: 3,
+                            thickness: 3,
                           ),
                           //catatan
-                          Container(
-                            color: Colors.transparent,
+                          SizedBox(
+                            //color: Colors.transparent,
                             width: screenWidth,
-                            //height: screenHeight * 0.055,
+                            height: screenHeight * 0.027,
                             child: Row(
                               children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 2),
-                                    child: const Text(
-                                      "Catatan:",
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        fontStyle: FontStyle.normal,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                      textAlign: TextAlign.left,
+                                Container(
+                                  margin:
+                                      const EdgeInsets.symmetric(vertical: 2),
+                                  child: const Text(
+                                    "Catatan:",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontStyle: FontStyle.normal,
+                                      fontWeight: FontWeight.w600,
                                     ),
+                                    textAlign: TextAlign.left,
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                          Container(
-                            color: Colors.transparent,
+                          SizedBox(
+                            //color: Colors.transparent,
                             width: screenWidth,
-                            //height: screenHeight * 0.055,
+                            height: screenHeight * 0.028,
                             child: Row(
                               children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 2),
-                                    child: Text(
-                                      " - Tahun $tahun1 UHH dihitung menggunakan data SP2010.",
-                                      style: const TextStyle(
-                                        fontSize: 11,
-                                        fontStyle: FontStyle.normal,
-                                      ),
-                                      textAlign: TextAlign.left,
+                                Container(
+                                  margin:
+                                      const EdgeInsets.symmetric(vertical: 2),
+                                  child: Text(
+                                    " - Tahun $tahun1 UHH dihitung menggunakan data SP2010.",
+                                    style: const TextStyle(
+                                      fontSize: 11,
+                                      fontStyle: FontStyle.normal,
                                     ),
+                                    textAlign: TextAlign.left,
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                          Container(
-                            color: Colors.transparent,
+                          SizedBox(
+                            //color: Colors.transparent,
                             width: screenWidth,
-                            //height: screenHeight * 0.055,
+                            height: screenHeight * 0.028,
                             child: Row(
                               children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 2),
-                                    child: Text(
-                                      " - Tahun $tahun2 s.d $tahun5 UHH dihitung menggunakan data LFSP2020.",
-                                      style: const TextStyle(
-                                        fontSize: 11,
-                                        fontStyle: FontStyle.normal,
-                                      ),
-                                      textAlign: TextAlign.left,
+                                Container(
+                                  margin: const EdgeInsets.only(
+                                    top: 2,
+                                    bottom: 2,
+                                  ),
+                                  child: Text(
+                                    " - Tahun $tahun2 s.d $tahun5 UHH dihitung menggunakan data LFSP2020.",
+                                    style: const TextStyle(
+                                      fontSize: 11,
+                                      fontStyle: FontStyle.normal,
                                     ),
+                                    textAlign: TextAlign.left,
                                   ),
                                 ),
                               ],
@@ -2170,7 +2160,8 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
             return const Center(
                 child: CircularProgressIndicator(strokeWidth: 3));
           }),
-      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+      floatingActionButtonLocation:
+          FloatingActionButtonLocation.miniStartDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(

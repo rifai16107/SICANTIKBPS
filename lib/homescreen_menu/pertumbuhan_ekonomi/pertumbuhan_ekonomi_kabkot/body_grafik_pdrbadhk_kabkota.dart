@@ -43,7 +43,7 @@ class _BodyGrafikPdrbadhkKabkot extends State<BodyGrafikPdrbadhkKabkot> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.05,
+                height: screenHeight * 1.15,
                 width: screenWidth * 0.96,
                 child: Column(
                   children: [
