@@ -200,7 +200,7 @@ class _inflasiContentState extends State<inflasiContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.06,
                     child: Row(
                       children: [
                         const Flexible(
@@ -240,7 +240,7 @@ class _inflasiContentState extends State<inflasiContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.06,
                     child: Row(
                       children: [
                         const Flexible(
@@ -280,7 +280,7 @@ class _inflasiContentState extends State<inflasiContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.06,
                     child: Row(
                       children: [
                         const Flexible(
@@ -320,7 +320,7 @@ class _inflasiContentState extends State<inflasiContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.06,
                     child: Row(
                       children: [
                         const Flexible(

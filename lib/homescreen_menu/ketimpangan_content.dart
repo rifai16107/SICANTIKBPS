@@ -144,7 +144,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.07,
                     child: Row(
                       children: [
                         const Flexible(
@@ -184,7 +184,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.07,
                     child: Row(
                       children: [
                         const Flexible(
@@ -204,7 +204,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                     )),
               ),
             ),
-             const Divider(
+            const Divider(
               height: 5,
               color: Colors.transparent,
             ),
@@ -224,7 +224,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.07,
                     child: Row(
                       children: [
                         const Flexible(
