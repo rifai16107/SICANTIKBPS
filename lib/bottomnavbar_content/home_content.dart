@@ -1299,7 +1299,7 @@ class _HomeContentState extends State<HomeContent> {
                                               height: screenHeight * 0.06,
                                             ),
                                             const SizedBox(
-                                              width: 0.02,
+                                              width: 0.05,
                                             ),
                                           ]),
                                     ),
