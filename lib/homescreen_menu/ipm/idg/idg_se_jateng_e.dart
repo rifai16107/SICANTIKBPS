@@ -735,7 +735,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota1,
                                           style: const TextStyle(
@@ -749,7 +749,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN11, 2),
                                           textAlign: TextAlign.center,
@@ -763,7 +763,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN11, 2),
                                           textAlign: TextAlign.center,
@@ -777,7 +777,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN11, 2),
                                           textAlign: TextAlign.center,
@@ -793,7 +793,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN11, 2),
                                           textAlign: TextAlign.center,
@@ -818,7 +818,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota2,
                                           style: const TextStyle(fontSize: 12),
@@ -831,7 +831,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN12, 2),
                                           textAlign: TextAlign.center,
@@ -844,7 +844,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN12, 2),
                                           textAlign: TextAlign.center,
@@ -857,7 +857,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN12, 2),
                                           textAlign: TextAlign.center,
@@ -870,7 +870,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN12, 2),
                                           textAlign: TextAlign.center,
@@ -894,7 +894,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota3,
                                           style: const TextStyle(fontSize: 12),
@@ -907,7 +907,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN13, 2),
                                           textAlign: TextAlign.center,
@@ -920,7 +920,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN13, 2),
                                           textAlign: TextAlign.center,
@@ -933,7 +933,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN13, 2),
                                           textAlign: TextAlign.center,
@@ -948,7 +948,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN13, 2),
                                           textAlign: TextAlign.center,
@@ -972,7 +972,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota4,
                                           style: const TextStyle(fontSize: 12),
@@ -985,7 +985,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN14, 2),
                                           textAlign: TextAlign.center,
@@ -998,7 +998,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN14, 2),
                                           textAlign: TextAlign.center,
@@ -1011,7 +1011,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN14, 2),
                                           textAlign: TextAlign.center,
@@ -1026,7 +1026,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN14, 2),
                                           textAlign: TextAlign.center,
@@ -1050,7 +1050,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota5,
                                           style: const TextStyle(fontSize: 12),
@@ -1063,7 +1063,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN15, 2),
                                           textAlign: TextAlign.center,
@@ -1076,7 +1076,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN15, 2),
                                           textAlign: TextAlign.center,
@@ -1089,7 +1089,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN15, 2),
                                           textAlign: TextAlign.center,
@@ -1104,7 +1104,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN15, 2),
                                           textAlign: TextAlign.center,
@@ -1128,7 +1128,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota6,
                                           style: const TextStyle(fontSize: 12),
@@ -1141,7 +1141,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN16, 2),
                                           textAlign: TextAlign.center,
@@ -1154,7 +1154,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN16, 2),
                                           textAlign: TextAlign.center,
@@ -1167,7 +1167,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN16, 2),
                                           textAlign: TextAlign.center,
@@ -1182,7 +1182,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN16, 2),
                                           textAlign: TextAlign.center,
@@ -1206,7 +1206,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota7,
                                           style: const TextStyle(fontSize: 12),
@@ -1219,7 +1219,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN17, 2),
                                           textAlign: TextAlign.center,
@@ -1232,7 +1232,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN17, 2),
                                           textAlign: TextAlign.center,
@@ -1245,7 +1245,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN17, 2),
                                           textAlign: TextAlign.center,
@@ -1260,7 +1260,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN17, 2),
                                           textAlign: TextAlign.center,
@@ -1284,7 +1284,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota8,
                                           style: const TextStyle(fontSize: 12),
@@ -1297,7 +1297,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN18, 2),
                                           textAlign: TextAlign.center,
@@ -1310,7 +1310,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN18, 2),
                                           textAlign: TextAlign.center,
@@ -1323,7 +1323,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN18, 2),
                                           textAlign: TextAlign.center,
@@ -1338,7 +1338,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN18, 2),
                                           textAlign: TextAlign.center,
@@ -1362,7 +1362,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota9,
                                           style: const TextStyle(fontSize: 12),
@@ -1375,7 +1375,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN19, 2),
                                           textAlign: TextAlign.center,
@@ -1388,7 +1388,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN19, 2),
                                           textAlign: TextAlign.center,
@@ -1401,7 +1401,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN19, 2),
                                           textAlign: TextAlign.center,
@@ -1416,7 +1416,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN19, 2),
                                           textAlign: TextAlign.center,
@@ -1440,7 +1440,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota10,
                                           style: const TextStyle(fontSize: 12),
@@ -1453,7 +1453,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN110, 2),
                                           textAlign: TextAlign.center,
@@ -1466,7 +1466,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN110, 2),
                                           textAlign: TextAlign.center,
@@ -1479,7 +1479,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN110, 2),
                                           textAlign: TextAlign.center,
@@ -1494,7 +1494,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN110, 2),
                                           textAlign: TextAlign.center,
@@ -1518,7 +1518,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota11,
                                           style: const TextStyle(fontSize: 12),
@@ -1531,7 +1531,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN111, 2),
                                           textAlign: TextAlign.center,
@@ -1544,7 +1544,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN111, 2),
                                           textAlign: TextAlign.center,
@@ -1557,7 +1557,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN111, 2),
                                           textAlign: TextAlign.center,
@@ -1572,7 +1572,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN111, 2),
                                           textAlign: TextAlign.center,
@@ -1596,7 +1596,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota12,
                                           style: const TextStyle(fontSize: 12),
@@ -1609,7 +1609,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN112, 2),
                                           textAlign: TextAlign.center,
@@ -1622,7 +1622,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN112, 2),
                                           textAlign: TextAlign.center,
@@ -1635,7 +1635,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN112, 2),
                                           textAlign: TextAlign.center,
@@ -1650,7 +1650,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN112, 2),
                                           textAlign: TextAlign.center,
@@ -1673,7 +1673,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota13,
                                           style: const TextStyle(fontSize: 12),
@@ -1686,7 +1686,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN113, 2),
                                           textAlign: TextAlign.center,
@@ -1699,7 +1699,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN113, 2),
                                           textAlign: TextAlign.center,
@@ -1712,7 +1712,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN113, 2),
                                           textAlign: TextAlign.center,
@@ -1727,7 +1727,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN113, 2),
                                           textAlign: TextAlign.center,
@@ -1750,7 +1750,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota14,
                                           style: const TextStyle(fontSize: 12),
@@ -1763,7 +1763,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN114, 2),
                                           textAlign: TextAlign.center,
@@ -1776,7 +1776,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN114, 2),
                                           textAlign: TextAlign.center,
@@ -1789,7 +1789,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN114, 2),
                                           textAlign: TextAlign.center,
@@ -1804,7 +1804,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN114, 2),
                                           textAlign: TextAlign.center,
@@ -1828,7 +1828,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota15,
                                           style: const TextStyle(fontSize: 12),
@@ -1841,7 +1841,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN115, 2),
                                           textAlign: TextAlign.center,
@@ -1854,7 +1854,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN115, 2),
                                           textAlign: TextAlign.center,
@@ -1867,7 +1867,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN115, 2),
                                           textAlign: TextAlign.center,
@@ -1882,7 +1882,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN115, 2),
                                           textAlign: TextAlign.center,
@@ -1905,7 +1905,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota16,
                                           style: const TextStyle(fontSize: 12),
@@ -1918,7 +1918,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN116, 2),
                                           textAlign: TextAlign.center,
@@ -1931,7 +1931,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN116, 2),
                                           textAlign: TextAlign.center,
@@ -1944,7 +1944,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN116, 2),
                                           textAlign: TextAlign.center,
@@ -1959,7 +1959,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN116, 2),
                                           textAlign: TextAlign.center,
@@ -1983,7 +1983,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota17,
                                           style: const TextStyle(fontSize: 12),
@@ -1996,7 +1996,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN117, 2),
                                           textAlign: TextAlign.center,
@@ -2009,7 +2009,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN117, 2),
                                           textAlign: TextAlign.center,
@@ -2022,7 +2022,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN117, 2),
                                           textAlign: TextAlign.center,
@@ -2037,7 +2037,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN117, 2),
                                           textAlign: TextAlign.center,
@@ -2061,7 +2061,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota18,
                                           style: const TextStyle(fontSize: 12),
@@ -2074,7 +2074,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN118, 2),
                                           textAlign: TextAlign.center,
@@ -2087,7 +2087,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN118, 2),
                                           textAlign: TextAlign.center,
@@ -2100,7 +2100,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN118, 2),
                                           textAlign: TextAlign.center,
@@ -2115,7 +2115,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN118, 2),
                                           textAlign: TextAlign.center,
@@ -2138,7 +2138,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota19,
                                           style: const TextStyle(fontSize: 12),
@@ -2151,7 +2151,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN119, 2),
                                           textAlign: TextAlign.center,
@@ -2164,7 +2164,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN119, 2),
                                           textAlign: TextAlign.center,
@@ -2177,7 +2177,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN119, 2),
                                           textAlign: TextAlign.center,
@@ -2192,7 +2192,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN119, 2),
                                           textAlign: TextAlign.center,
@@ -2216,7 +2216,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota20,
                                           style: const TextStyle(fontSize: 12),
@@ -2229,7 +2229,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN120, 2),
                                           textAlign: TextAlign.center,
@@ -2242,7 +2242,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN120, 2),
                                           textAlign: TextAlign.center,
@@ -2255,7 +2255,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN120, 2),
                                           textAlign: TextAlign.center,
@@ -2270,7 +2270,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN120, 2),
                                           textAlign: TextAlign.center,
@@ -2294,7 +2294,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota21,
                                           style: const TextStyle(fontSize: 12),
@@ -2307,7 +2307,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN121, 2),
                                           textAlign: TextAlign.center,
@@ -2320,7 +2320,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN121, 2),
                                           textAlign: TextAlign.center,
@@ -2333,7 +2333,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN121, 2),
                                           textAlign: TextAlign.center,
@@ -2348,7 +2348,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN121, 2),
                                           textAlign: TextAlign.center,
@@ -2372,7 +2372,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota22,
                                           style: const TextStyle(fontSize: 12),
@@ -2385,7 +2385,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN122, 2),
                                           textAlign: TextAlign.center,
@@ -2398,7 +2398,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN122, 2),
                                           textAlign: TextAlign.center,
@@ -2411,7 +2411,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN122, 2),
                                           textAlign: TextAlign.center,
@@ -2426,7 +2426,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN122, 2),
                                           textAlign: TextAlign.center,
@@ -2450,7 +2450,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota23,
                                           style: const TextStyle(fontSize: 12),
@@ -2463,7 +2463,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN123, 2),
                                           textAlign: TextAlign.center,
@@ -2476,7 +2476,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN123, 2),
                                           textAlign: TextAlign.center,
@@ -2489,7 +2489,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN123, 2),
                                           textAlign: TextAlign.center,
@@ -2504,7 +2504,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN123, 2),
                                           textAlign: TextAlign.center,
@@ -2528,7 +2528,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota24,
                                           style: const TextStyle(fontSize: 12),
@@ -2541,7 +2541,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN124, 2),
                                           textAlign: TextAlign.center,
@@ -2554,7 +2554,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN124, 2),
                                           textAlign: TextAlign.center,
@@ -2567,7 +2567,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN124, 2),
                                           textAlign: TextAlign.center,
@@ -2582,7 +2582,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN124, 2),
                                           textAlign: TextAlign.center,
@@ -2606,7 +2606,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota25,
                                           style: const TextStyle(fontSize: 12),
@@ -2619,7 +2619,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN125, 2),
                                           textAlign: TextAlign.center,
@@ -2632,7 +2632,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN125, 2),
                                           textAlign: TextAlign.center,
@@ -2645,7 +2645,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN125, 2),
                                           textAlign: TextAlign.center,
@@ -2660,7 +2660,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN125, 2),
                                           textAlign: TextAlign.center,
@@ -2684,7 +2684,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota26,
                                           style: const TextStyle(fontSize: 12),
@@ -2697,7 +2697,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN126, 2),
                                           textAlign: TextAlign.center,
@@ -2710,7 +2710,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN126, 2),
                                           textAlign: TextAlign.center,
@@ -2723,7 +2723,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN126, 2),
                                           textAlign: TextAlign.center,
@@ -2738,7 +2738,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN126, 2),
                                           textAlign: TextAlign.center,
@@ -2761,7 +2761,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota27,
                                           style: const TextStyle(fontSize: 12),
@@ -2774,7 +2774,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN127, 2),
                                           textAlign: TextAlign.center,
@@ -2787,7 +2787,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN127, 2),
                                           textAlign: TextAlign.center,
@@ -2800,7 +2800,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN127, 2),
                                           textAlign: TextAlign.center,
@@ -2815,7 +2815,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN127, 2),
                                           textAlign: TextAlign.center,
@@ -2838,7 +2838,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota28,
                                           style: const TextStyle(fontSize: 12),
@@ -2851,7 +2851,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN128, 2),
                                           textAlign: TextAlign.center,
@@ -2864,7 +2864,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN128, 2),
                                           textAlign: TextAlign.center,
@@ -2877,7 +2877,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN128, 2),
                                           textAlign: TextAlign.center,
@@ -2892,7 +2892,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN128, 2),
                                           textAlign: TextAlign.center,
@@ -2916,7 +2916,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota29,
                                           style: const TextStyle(fontSize: 12),
@@ -2929,7 +2929,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN129, 2),
                                           textAlign: TextAlign.center,
@@ -2942,7 +2942,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN129, 2),
                                           textAlign: TextAlign.center,
@@ -2955,7 +2955,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN129, 2),
                                           textAlign: TextAlign.center,
@@ -2970,7 +2970,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN129, 2),
                                           textAlign: TextAlign.center,
@@ -2994,7 +2994,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota30,
                                           style: const TextStyle(fontSize: 12),
@@ -3007,7 +3007,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN130, 2),
                                           textAlign: TextAlign.center,
@@ -3020,7 +3020,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN130, 2),
                                           textAlign: TextAlign.center,
@@ -3033,7 +3033,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN130, 2),
                                           textAlign: TextAlign.center,
@@ -3048,7 +3048,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN130, 2),
                                           textAlign: TextAlign.center,
@@ -3072,7 +3072,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota31,
                                           style: const TextStyle(fontSize: 12),
@@ -3085,7 +3085,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN131, 2),
                                           textAlign: TextAlign.center,
@@ -3098,7 +3098,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN131, 2),
                                           textAlign: TextAlign.center,
@@ -3111,7 +3111,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN131, 2),
                                           textAlign: TextAlign.center,
@@ -3126,7 +3126,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN131, 2),
                                           textAlign: TextAlign.center,
@@ -3149,7 +3149,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota32,
                                           style: const TextStyle(fontSize: 12),
@@ -3162,7 +3162,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN132, 2),
                                           textAlign: TextAlign.center,
@@ -3175,7 +3175,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN132, 2),
                                           textAlign: TextAlign.center,
@@ -3188,7 +3188,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN132, 2),
                                           textAlign: TextAlign.center,
@@ -3203,7 +3203,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN132, 2),
                                           textAlign: TextAlign.center,
@@ -3227,7 +3227,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota33,
                                           style: const TextStyle(fontSize: 12),
@@ -3240,7 +3240,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN133, 2),
                                           textAlign: TextAlign.center,
@@ -3253,7 +3253,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN133, 2),
                                           textAlign: TextAlign.center,
@@ -3266,7 +3266,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN133, 2),
                                           textAlign: TextAlign.center,
@@ -3281,7 +3281,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN133, 2),
                                           textAlign: TextAlign.center,
@@ -3304,7 +3304,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota34,
                                           style: const TextStyle(fontSize: 12),
@@ -3317,7 +3317,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN134, 2),
                                           textAlign: TextAlign.center,
@@ -3330,7 +3330,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN134, 2),
                                           textAlign: TextAlign.center,
@@ -3343,7 +3343,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN134, 2),
                                           textAlign: TextAlign.center,
@@ -3358,7 +3358,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN134, 2),
                                           textAlign: TextAlign.center,
@@ -3382,7 +3382,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota35,
                                           style: const TextStyle(fontSize: 12),
@@ -3395,7 +3395,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN135, 2),
                                           textAlign: TextAlign.center,
@@ -3408,7 +3408,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN135, 2),
                                           textAlign: TextAlign.center,
@@ -3421,7 +3421,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN135, 2),
                                           textAlign: TextAlign.center,
@@ -3436,7 +3436,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN135, 2),
                                           textAlign: TextAlign.center,
@@ -3460,7 +3460,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 3,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 1, vertical: 5),
+                                            horizontal: 1, vertical: 2),
                                         child: Text(
                                           kabkota36,
                                           style: const TextStyle(
@@ -3475,7 +3475,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(pendapatanN136, 2),
                                           textAlign: TextAlign.center,
@@ -3491,7 +3491,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       child: Container(
                                         color: Colors.green,
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(profesionalN136, 2),
                                           textAlign: TextAlign.center,
@@ -3506,7 +3506,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(parlemenN136, 2),
                                           textAlign: TextAlign.center,
@@ -3521,7 +3521,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       flex: 2,
                                       child: Container(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 2, vertical: 5),
+                                            horizontal: 2, vertical: 2),
                                         child: Text(
                                           Format.convertTo(idgN136, 2),
                                           textAlign: TextAlign.center,
