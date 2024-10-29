@@ -206,7 +206,7 @@ class _GrafikPppKabkotState extends State<GrafikPppKabkot> {
                         // Visibility of legend
                         isVisible: true,
                         textStyle: const TextStyle(
-                        fontSize: 11,
+                          fontSize: 11,
                         ),
                         toggleSeriesVisibility: true,
                         position: LegendPosition.top),
@@ -239,8 +239,7 @@ class _GrafikPppKabkotState extends State<GrafikPppKabkot> {
                             // Renders the data label
                             isVisible: true,
                             textStyle: TextStyle(fontSize: 9)),
-                        name:
-                            'PPP (Purchasing Power Parity/Pengeluaran Perkapita disesuaikan)',
+                        name: 'PPP (Purchasing Power Parity)',
                         color: const Color.fromRGBO(9, 0, 136, 1),
                       ),
                     ]),
