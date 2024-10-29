@@ -118,9 +118,9 @@ class _IndeksImplisitAState extends State<IndeksImplisitA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                          horizontal: 4,vertical: 2),
                                       child: const Text(
-                                        " Pengeluaran Konsumsi Rumahtangga",
+                                        "Pengeluaran Konsumsi Rumahtangga",
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -148,9 +148,9 @@ class _IndeksImplisitAState extends State<IndeksImplisitA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                          horizontal: 4,vertical: 2),
                                       child: const Text(
-                                        " Pengeluaran Konsumsi LNPRT",
+                                        "Pengeluaran Konsumsi LNPRT",
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -178,9 +178,9 @@ class _IndeksImplisitAState extends State<IndeksImplisitA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                          horizontal: 4,vertical: 2),
                                       child: const Text(
-                                        " Pengeluaran Konsumsi Pemerintah",
+                                        "Pengeluaran Konsumsi Pemerintah",
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -209,9 +209,9 @@ class _IndeksImplisitAState extends State<IndeksImplisitA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                          horizontal: 4,vertical: 2),
                                       child: const Text(
-                                        " Pembentukan Modal Tetap Bruto",
+                                        "Pembentukan Modal Tetap Bruto",
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -240,9 +240,9 @@ class _IndeksImplisitAState extends State<IndeksImplisitA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                          horizontal: 4,vertical: 2),
                                       child: const Text(
-                                        " Perubahan Inventori",
+                                        "Perubahan Inventori",
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -272,9 +272,9 @@ class _IndeksImplisitAState extends State<IndeksImplisitA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                          horizontal: 4,vertical: 2),
                                       child: const Text(
-                                        " Net Eskpor",
+                                        "Net Eskpor",
                                         textAlign: TextAlign.left,
                                       ),
                                     ),

@@ -367,7 +367,7 @@ class _LajuPdrbAdhkBState extends State<LajuPdrbAdhkB> {
                                   fit: FlexFit.tight,
                                   flex: 4,
                                   child: Container(
-                                    height: screenHeight * 0.05,
+                                    height: screenHeight * 0.06,
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 4, vertical: 10),
                                     color: Colors.green,
@@ -386,7 +386,7 @@ class _LajuPdrbAdhkBState extends State<LajuPdrbAdhkB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    height: screenHeight * 0.05,
+                                    height: screenHeight * 0.06,
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 2, vertical: 10),
                                     color: Colors.green,
@@ -403,7 +403,7 @@ class _LajuPdrbAdhkBState extends State<LajuPdrbAdhkB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    height: screenHeight * 0.05,
+                                    height: screenHeight * 0.06,
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 2, vertical: 10),
                                     color: Colors.green,

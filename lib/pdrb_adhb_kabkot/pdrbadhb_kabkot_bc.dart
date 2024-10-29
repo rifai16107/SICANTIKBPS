@@ -225,7 +225,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Cilacap
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -267,7 +267,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Banyumas
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -309,7 +309,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Purbalingga
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -351,7 +351,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Banjarnegara
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -393,7 +393,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Kebumen
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -435,7 +435,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Purworejo
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -477,7 +477,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Wonosobo
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -519,7 +519,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Magelang
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -561,7 +561,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Boyolali
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -603,7 +603,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Klaten
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -645,7 +645,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Sukoharjo
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -687,7 +687,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Wonogiri
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -729,7 +729,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Karanganyar
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -771,7 +771,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Sragen
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -813,7 +813,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Grobogan
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -855,7 +855,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Blora
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -897,7 +897,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Rembang
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -939,7 +939,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Pati
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -981,7 +981,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Kudus
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -1023,7 +1023,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Jepara
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -1065,7 +1065,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Demak
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -1107,7 +1107,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Semarang
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -1149,7 +1149,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Temanggung
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -1191,7 +1191,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Kendal
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -1233,7 +1233,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Batang
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -1275,7 +1275,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Pekalongan
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -1317,7 +1317,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Pemalang
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -1359,7 +1359,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Tegal
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -1401,7 +1401,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Brebes
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -1443,7 +1443,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Kota Magelang
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -1485,7 +1485,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Kota Surakarta
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -1527,7 +1527,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Kota Salatiga
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -1569,7 +1569,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // 33 Kota Semarang
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -1611,7 +1611,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Kota Pekalongan
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -1653,7 +1653,7 @@ class _PdrbKabkotBCState extends State<PdrbKabkotBC> {
                           // Kota Tegal
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
+                            height: screenHeight * 0.034,
                             color: Colors.transparent,
                             child: Row(
                               children: [
