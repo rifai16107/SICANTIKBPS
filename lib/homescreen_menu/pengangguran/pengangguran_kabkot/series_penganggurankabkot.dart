@@ -39,7 +39,7 @@ class _SeriesPengangguranKabkot extends State<SeriesPengangguranKabkot> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.085,
+              height: screenHeight * 0.1,
               color: Colors.black,
               child: const Center(
                 child: Padding(

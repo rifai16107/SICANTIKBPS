@@ -524,14 +524,15 @@ class _IsiPukAState extends State<IsiPukA> {
                           child: Container(
                             height: screenHeight * 0.05,
                             color: Colors.green,
-                            padding: const EdgeInsets.only(
-                                top: 10, left: 5, right: 5),
-                            child: const Text(
+                            //padding: const EdgeInsets.only(
+                                //top: 10, left: 5, right: 5),
+                            child: const Center(
+                            child: Text(
                               "Total Penduduk Usia Kerja",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold),
-                            ),
+                            )),
                           ),
                         ),
                         Flexible(

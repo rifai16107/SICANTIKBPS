@@ -78,7 +78,7 @@ class _IsiBakBState extends State<IsiBakB> {
               toString();
               data = [
                 _ChartData("Bekerja", JmlBekerja),
-                _ChartData("Pengangguran", JmlPenganggur),
+                _ChartData("Pengangguran Terbuka", JmlPenganggur),
                 _ChartData("Sekolah", JmlSekolah),
                 _ChartData("Urus Rumah Tangga", JmlRuta),
                 _ChartData("Lainnya", JmlLainnya),
@@ -300,7 +300,7 @@ class _IsiBakBState extends State<IsiBakB> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 10, left: 10, right: 5),
-                                  height: screenHeight * 0.06,
+                                  height: screenHeight * 0.07,
                                   child: const Text(
                                     "Pengangguran Terbuka",
                                     style: TextStyle(
@@ -745,7 +745,8 @@ class _IsiBakBState extends State<IsiBakB> {
                                                 fontSize: 11,
                                               )),
                                           primaryXAxis: CategoryAxis(
-                                            labelRotation: -45,
+                                            labelsExtent: 0.25 * screenWidth,
+                                            //labelRotation: -45,
                                           ),
                                           legend: Legend(
                                             // Visibility of legend
@@ -770,7 +771,7 @@ class _IsiBakBState extends State<IsiBakB> {
                                               interval: 200000),
                                           tooltipBehavior: tooltip,
                                           series: <CartesianSeries>[
-                                            ColumnSeries<_ChartData, String>(
+                                            BarSeries<_ChartData, String>(
                                               dataSource: data,
                                               xValueMapper:
                                                   (_ChartData data, _) =>
@@ -788,7 +789,7 @@ class _IsiBakBState extends State<IsiBakB> {
                                                       isVisible: true,
                                                       textStyle: TextStyle(
                                                           fontSize: 10)),
-                                              name: 'Jumlah Penduduk',
+                                              name: 'Penduduk Usia 15+',
                                               color: const Color.fromARGB(
                                                   255, 6, 103, 230),
                                             ),

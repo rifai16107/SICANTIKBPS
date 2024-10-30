@@ -489,7 +489,7 @@ class _AkTPTState extends State<AkTPT> {
                                         color: Colors.transparent,
                                       ),
                                       SizedBox(
-                                      height: screenHeight * 0.55,
+                                      height: screenHeight * 0.50,
                                       width: screenWidth,
                                       child: SfCartesianChart(
                                           title: ChartTitle(

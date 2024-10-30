@@ -113,8 +113,9 @@ class _AkTKKState extends State<AkTKK> {
                      tooltip = TooltipBehavior(enable: true);
 
                       return Container(
-                        height: screenHeight,
-                        color: Colors.transparent,
+                        padding: const EdgeInsets.all(2),
+                        //height: screenHeight,
+                        //color: Colors.transparent,
                         child: Column(children: [
                               Container(
                                   padding: const EdgeInsets.symmetric(
@@ -507,7 +508,7 @@ class _AkTKKState extends State<AkTKK> {
                                         color: Colors.transparent,
                                       ),
                                   SizedBox(
-                                      height: screenHeight * 0.55,
+                                      height: screenHeight * 0.50,
                                       width: screenWidth,
                                       child: SfCartesianChart(
                                           title: ChartTitle(

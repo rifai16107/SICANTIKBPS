@@ -172,7 +172,7 @@ class _BukanAngkatanKerja extends State<BukanAngkatanKerja> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.06,
+              height: screenHeight * 0.10,
               color: Colors.black,
               child: const Center(
                 child: Padding(

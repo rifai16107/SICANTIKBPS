@@ -126,7 +126,7 @@ class _PendudukUsiaKerjaState extends State<PendudukUsiaKerja> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.15,
+              height: screenHeight * 0.11,
               color: Colors.black,
               child: const Center(
                 child: Padding(
@@ -141,7 +141,7 @@ class _PendudukUsiaKerjaState extends State<PendudukUsiaKerja> {
             ),
             Flexible(
               child: SizedBox(
-                height: screenHeight * 0.80,
+                height: screenHeight * 0.87,
                 child: const BodyPuk(),
               ),
             ),

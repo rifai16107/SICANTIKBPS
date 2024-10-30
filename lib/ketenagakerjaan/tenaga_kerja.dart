@@ -176,7 +176,7 @@ class _tenagaKerjaState extends State<tenagaKerja> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.07,
                     child: Row(
                       children: const [
                         Flexible(
