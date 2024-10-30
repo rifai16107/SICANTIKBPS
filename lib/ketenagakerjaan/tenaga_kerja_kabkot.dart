@@ -48,10 +48,10 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                     child: Column(
                       children: [
                         Flexible(
-                          flex: 3,
+                          flex: 10,
                           fit: FlexFit.tight,
                           child: Container(
-                            height: 100,
+                            height: 120,
                             color: Colors.black,
                             child: const Center(
                               child: Padding(
@@ -73,7 +73,7 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                           fit: FlexFit.tight,
                           flex: 1,
                           child: Container(
-                            height: 100,
+                            height: 120,
                             color: Colors.transparent,
                           ),
                         )
@@ -314,6 +314,10 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                           ],
                         )),
                   ),
+                ),
+                const Divider(
+                  height: 5,
+                  color: Colors.transparent,
                 ),
                 Flexible(
                   flex: 1,

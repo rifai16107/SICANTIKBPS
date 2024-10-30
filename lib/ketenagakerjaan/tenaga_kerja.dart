@@ -196,6 +196,10 @@ class _tenagaKerjaState extends State<tenagaKerja> {
                     )),
               ),
             ),
+            const Divider(
+              height: 50,
+              color: Colors.transparent,
+            ),
             Flexible(
               flex: 1,
               fit: FlexFit.tight,

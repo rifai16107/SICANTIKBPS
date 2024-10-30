@@ -204,7 +204,7 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 50,
               color: Colors.transparent,
             ),
             Flexible(
