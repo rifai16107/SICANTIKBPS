@@ -23,7 +23,7 @@ class _tenagaKerjaState extends State<tenagaKerja> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'KETENAGAKERJAAN',
+          'KABUPATEN CILACAP',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,

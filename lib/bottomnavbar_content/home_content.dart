@@ -10,7 +10,6 @@ import 'package:bps_cilacap/homescreen_menu/kemiskinan_content.dart';
 import 'package:bps_cilacap/homescreen_menu/ketimpangan_content.dart';
 import 'package:bps_cilacap/homescreen_menu/pengangguran_content.dart';
 import 'package:bps_cilacap/homescreen_menu/pertumbuhan_ekonomi.dart';
-import 'package:bps_cilacap/homescreen_menu/tenaga_kerja.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import '../homescreen_menu/inflasi_content.dart';
@@ -22,6 +21,7 @@ import '../homescreen_menu/pertanian_content.dart';
 import '../homescreen_menu/pdrb_content.dart';
 import '../homescreen_menu/ipm_content.dart';
 import '../homescreen_menu/jumlah_penduduk.dart';
+import '../homescreen_menu/ketenagakerjaan_content.dart';
 import '../homescreen_menu/sensus_ekonomi/sensus_ekonomi_content.dart';
 //import 'package:social_media_flutter/widgets/icons.dart';
 //import 'package:social_media_flutter/widgets/text.dart';
@@ -208,7 +208,7 @@ class _HomeContentState extends State<HomeContent> {
                                 onTap: () {
                                   Navigator.push(context, MaterialPageRoute(
                                     builder: (context) {
-                                      return const tenagaKerja();
+                                      return const ketenagakerjaanContent();
                                     },
                                   ));
                                 },
