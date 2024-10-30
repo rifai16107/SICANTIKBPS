@@ -230,7 +230,7 @@ class _GrafikGuremState extends State<GrafikGurem> {
                         // Visibility of legend
                         isVisible: true,
                         textStyle: const TextStyle(
-                          fontSize: 12,
+                          fontSize: 11,
                         ),
                         toggleSeriesVisibility: true,
                         overflowMode: LegendItemOverflowMode.wrap,

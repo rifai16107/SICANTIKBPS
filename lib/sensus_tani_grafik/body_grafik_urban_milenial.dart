@@ -38,21 +38,26 @@ class _BodyGrafikUrbanMilenial extends State<BodyGrafikUrbanMilenial> {
           ),
         ),
       ),
-      body: Container(
-        padding: const EdgeInsets.all(2),
-        child: Column(
-          children: [
+      body: ListView(
+       children: [
            
-            Flexible(
-              child: SizedBox(
-                height: screenHeight * 1.2,
+            Column(
+              children: <Widget>[
+                SizedBox(
+                height: screenHeight * 0.95,
                 width: screenWidth*0.95,
-                child: const GrafikUrbanMilenial(),
+                child: Column(
+                  children:[
+                    Flexible(
+                     child: const GrafikUrbanMilenial(),
+                    ),
+                  ],
+                ),
               ),
+             ], 
             ),
-             Container(
+             SizedBox(
               height: screenHeight * 0.035,
-              color: Colors.white,
               child:  Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 2, horizontal: 2),
@@ -66,9 +71,10 @@ class _BodyGrafikUrbanMilenial extends State<BodyGrafikUrbanMilenial> {
                 ),
               ),
             ),
+  
           ],
         ),
       ),
-    ));
+    );
   }
 }

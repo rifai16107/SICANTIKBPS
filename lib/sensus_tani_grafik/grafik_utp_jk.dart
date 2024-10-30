@@ -216,7 +216,7 @@ class _GrafikUtpJkState extends State<GrafikUtpJk> {
                         // Visibility of legend
                         isVisible: true,
                         textStyle: const TextStyle(
-                          fontSize: 12,
+                          fontSize: 11,
                         ),
                         toggleSeriesVisibility: true,
                         overflowMode: LegendItemOverflowMode.wrap,

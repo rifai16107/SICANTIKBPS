@@ -38,36 +38,24 @@ class _BodyGrafikRtupJk extends State<BodyGrafikRtupJk> {
           ),
         ),
       ),
-      body: Container(
-        padding: const EdgeInsets.all(2),
-        child: Column(
-          children: [
-           
-            Flexible(
-              child: SizedBox(
-                height: screenHeight * 0.97,
+      body: ListView(
+        children: [
+         Column(
+          children: <Widget>[
+           SizedBox(
+                height: screenHeight * 0.9,
                 width: screenWidth*0.98,
-                child: const GrafikRtupJk(),
-              ),
-            ),
-             Container(
-              height: screenHeight * 0.035,
-              color: Colors.white,
-              child:  Center(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 2),
-                  child: Text(
-                    "Tekan/sentuh Pada Legenda Untuk Mengaktifkan/Menonaktifkan series data",
-                    style: TextStyle(
-                      color: Colors.black, 
-                      fontSize: 10,
-                      fontStyle: FontStyle.italic),
-                  ),
-                ),
-              ),
-            ),
-          ],
+                child: Column(
+                  children:[
+                    Flexible(
+                     child: const GrafikRtupJk(),
+                    ),
+                  ],
+                ),    
+          ),
+        ],
         ),
+      ],
       ),
     ));
   }

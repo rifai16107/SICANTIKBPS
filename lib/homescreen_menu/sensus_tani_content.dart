@@ -234,7 +234,7 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                 Container(
                   padding: const EdgeInsets.only(left: 4, top: 2, right: 12),
                   width: screenWidth * 0.30,
-                  height: screenHeight * 0.10,
+                  height: screenHeight * 0.11,
                   child: ElevatedButton(
                     style: ButtonStyle(
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -264,9 +264,9 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.only(left: 12, top: 5, right: 2),
+                  padding: const EdgeInsets.only(left: 12, top: 2, bottom:2,right: 2),
                   width: screenWidth * 0.70,
-                  height: screenHeight * 0.10,
+                  height: screenHeight * 0.13,
                   child: const Text(
                     "Summary Hasil Sensus Pertanian 2023: Jumlah UTP, UPB, UTL, Jumlah Petani Milenial, Petani Pengguna Lahan dan Petani Gurem. ",
                     style:
@@ -322,9 +322,9 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.only(left: 12, top: 5, right: 2),
+                  padding: const EdgeInsets.only(left: 12, top: 2, bottom:2, right: 2),
                   width: screenWidth * 0.70,
-                  height: screenHeight * 0.11,
+                  height: screenHeight * 0.12,
                   child: const Text(
                     "Summary Hasil Sensus Pertanian 2023: 10 (Sepuluh)Komoditas pertanian terbanyak yang diusahakan serta Jumlah Sapi dan Kerbau. ",
                     style:

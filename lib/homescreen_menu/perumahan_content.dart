@@ -141,7 +141,7 @@ class _perumahanContentState extends State<perumahanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.055,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -181,7 +181,7 @@ class _perumahanContentState extends State<perumahanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.055,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -221,7 +221,7 @@ class _perumahanContentState extends State<perumahanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.055,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -261,7 +261,7 @@ class _perumahanContentState extends State<perumahanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.055,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -301,7 +301,7 @@ class _perumahanContentState extends State<perumahanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.055,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -341,7 +341,7 @@ class _perumahanContentState extends State<perumahanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.055,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(

@@ -56,8 +56,8 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                   child: Column(
                     children: <Widget>[
                       Container(
-                        height: screenHeight * 0.13,
-                        margin: const EdgeInsets.only(bottom: 15),
+                        height: screenHeight * 0.15,
+                        margin: const EdgeInsets.only(bottom: 5),
                         color: Colors.transparent,
                         child: Center(
                           child: Text(

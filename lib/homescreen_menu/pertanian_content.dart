@@ -142,7 +142,7 @@ class _pertanianContentState extends State<pertanianContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.08,
+                    height: screenHeight * 0.09,
                     child: Row(
                       children: [
                         const Flexible(

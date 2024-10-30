@@ -243,7 +243,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -255,7 +255,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -283,7 +283,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -295,7 +295,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -323,7 +323,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -335,7 +335,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -363,7 +363,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -375,7 +375,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -403,7 +403,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -415,7 +415,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -443,7 +443,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -455,7 +455,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -483,7 +483,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.05,
+                    height: screenHeight * 0.08,
                     child: Row(
                       children: [
                         const Flexible(
@@ -495,7 +495,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),

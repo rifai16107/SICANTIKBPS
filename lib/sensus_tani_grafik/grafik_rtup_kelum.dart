@@ -172,14 +172,21 @@ class _GrafikRtupKelumState extends State<GrafikRtupKelum> {
                       tooltipBehavior: tooltip,
                       legend: Legend(
                           isVisible: true,
+                          itemPadding: 8,
                           overflowMode: LegendItemOverflowMode.wrap,
+                          shouldAlwaysShowScrollbar: true,
                           position: LegendPosition.bottom,
+                          textStyle: const TextStyle(
+                                  color: Color.fromARGB(255, 12, 12, 12),
+                                  fontSize: 12,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.normal),
                           // Legend title
                           title: LegendTitle(
                               text: 'Persentase KRT',
                               textStyle: const TextStyle(
                                   color: Color.fromARGB(255, 12, 12, 12),
-                                  fontSize: 15,
+                                  fontSize: 13,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w900))),
                       series: <CircularSeries>[

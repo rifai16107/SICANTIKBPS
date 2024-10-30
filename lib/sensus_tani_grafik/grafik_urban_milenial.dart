@@ -209,7 +209,7 @@ class _GrafikUrbanMilenialState extends State<GrafikUrbanMilenial> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight,
+                height: screenHeight*0.9,
                 width: screenWidth,
                 child: SfCartesianChart(
                     title: ChartTitle(
@@ -233,9 +233,10 @@ class _GrafikUrbanMilenialState extends State<GrafikUrbanMilenial> {
                         )),
                     legend: Legend(
                         // Visibility of legend
+                        padding:5,
                         isVisible: true,
                         textStyle: const TextStyle(
-                          fontSize: 12,
+                          fontSize: 11,
                         ),
                         toggleSeriesVisibility: true,
                         overflowMode: LegendItemOverflowMode.wrap,
@@ -246,11 +247,11 @@ class _GrafikUrbanMilenialState extends State<GrafikUrbanMilenial> {
                         minimum: 0,
                         maximum: 2900,
                         interval: 500),
-                    zoomPanBehavior: ZoomPanBehavior(
-                        enableDoubleTapZooming: true,
-                        enablePinching: true,
+                       //zoomPanBehavior: ZoomPanBehavior(
+                        //enableDoubleTapZooming: true,
+                        //enablePinching: true,
                         // Enables the selection zooming
-                        enableSelectionZooming: true),
+                        //enableSelectionZooming: true),
                     tooltipBehavior: tooltip,
                     series: <CartesianSeries>[
                       StackedBarSeries<_ChartData, String>(

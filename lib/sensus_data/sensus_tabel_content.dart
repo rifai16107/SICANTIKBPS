@@ -634,13 +634,13 @@ class _SensusTabelContentState extends State<SensusTabelContent> {
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
-            Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
+            SizedBox(
+              height:screenHeight*0.09,
+                //fit: FlexFit.tight,
                 child: Column(
                   children: [
                     Flexible(
-                      flex: 14,
+                      flex: 6,
                       fit: FlexFit.tight,
                       child: Container(
                         height: 100,
@@ -648,8 +648,8 @@ class _SensusTabelContentState extends State<SensusTabelContent> {
                         child: const Center(
                           child: Padding(
                             padding: EdgeInsets.symmetric(
-                              vertical: 2,
-                              horizontal: 5,
+                              vertical: 0,
+                              horizontal: 3,
                             ),
                             child: Text(
                               "Hasil Pencacahan Lengkap Sensus Pertanian 2023 Kabupaten Cilacap (-Tahap 1)",
@@ -667,15 +667,15 @@ class _SensusTabelContentState extends State<SensusTabelContent> {
                       fit: FlexFit.tight,
                       flex: 1,
                       child: Container(
-                        height: 5,
+                        //height: 15,
                         color: Colors.transparent,
                       ),
                     )
                   ],
                 )),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
+            SizedBox(
+              height:screenHeight*0.09,
+              //fit: FlexFit.tight,
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
@@ -799,9 +799,8 @@ class _SensusTabelContentState extends State<SensusTabelContent> {
               height: 3,
               color: Colors.transparent,
             ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
+            SizedBox(
+              height:screenHeight*0.09,
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
@@ -925,9 +924,8 @@ class _SensusTabelContentState extends State<SensusTabelContent> {
               height: 3,
               color: Colors.transparent,
             ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
+            SizedBox(
+              height:screenHeight*0.09,
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
