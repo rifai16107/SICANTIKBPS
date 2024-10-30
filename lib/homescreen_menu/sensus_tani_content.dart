@@ -207,15 +207,16 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.only(left: 12, top: 10, right: 2),
+                  padding: const EdgeInsets.only(left: 12, top: 2, bottom:2, right: 2),
                   width: screenWidth * 0.70,
                   height: screenHeight * 0.10,
-                  child: const Text(
+                   child:const Center(
+                  child: Text(
                     "Summary Hasil Sensus Pertanian 2023: Jumlah RUTP dan Jumlah UTP per Sub sektor. ",
                     style:
                         TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
                     textAlign: TextAlign.left,
-                  ),
+                  )),
                 ),
               ],
             ),
@@ -266,13 +267,15 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                 Container(
                   padding: const EdgeInsets.only(left: 12, top: 2, bottom:2,right: 2),
                   width: screenWidth * 0.70,
+                  //height:200,
                   height: screenHeight * 0.13,
-                  child: const Text(
+                   child:const Center(
+                  child: Text(
                     "Summary Hasil Sensus Pertanian 2023: Jumlah UTP, UPB, UTL, Jumlah Petani Milenial, Petani Pengguna Lahan dan Petani Gurem. ",
                     style:
                         TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
                     textAlign: TextAlign.left,
-                  ),
+                  )),
                 ),
               ],
             ),
@@ -322,14 +325,17 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.only(left: 12, top: 2, bottom:2, right: 2),
+                   padding: const EdgeInsets.only(left: 12, top: 2, bottom:2, right: 2),
                   width: screenWidth * 0.70,
+                  //height:200,
                   height: screenHeight * 0.12,
-                  child: const Text(
-                    "Summary Hasil Sensus Pertanian 2023: 10 (Sepuluh)Komoditas pertanian terbanyak yang diusahakan serta Jumlah Sapi dan Kerbau. ",
+                  child:const Center(
+                  child: Text(
+                    "Summary Hasil Sensus Pertanian 2023: 10 (Sepuluh) Komoditas pertanian terbanyak yang diusahakan serta Jumlah Sapi dan Kerbau. ",
                     style:
                         TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
                     textAlign: TextAlign.left,
+                  ),
                   ),
                 ),
               ],
@@ -379,16 +385,17 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.only(left: 12, top: 20, right: 2),
+                  padding: const EdgeInsets.only(left: 12, top: 2, bottom:2 ),
                   width: screenWidth * 0.70,
-                  height: screenHeight * 0.11,
-                  child: const Text(
-                    "Tabulasi Hasil Sensus Pertanian 2023 ",
+                  height: screenHeight * 0.10,
+                  child: const Center(
+                  child: Text(
+                    "Tabulasi Hasil Sensus Pertanian 2023.                     ",
                     style:
                         TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
                     textAlign: TextAlign.left,
                   ),
-                ),
+                )),
               ],
             ),
           ),
