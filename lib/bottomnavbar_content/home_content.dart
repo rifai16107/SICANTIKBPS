@@ -75,7 +75,7 @@ class _HomeContentState extends State<HomeContent> {
         children: <Widget>[
           //animasi atas
           SizedBox(
-            height: 0.17*screenHeight, 
+            height: 0.17 * screenHeight,
             //flex: 25,
             child: Container(
               margin: const EdgeInsets.only(top: 0, bottom: 0),
@@ -114,10 +114,10 @@ class _HomeContentState extends State<HomeContent> {
             color: Colors.transparent,
           ),
           Expanded(
-            //flex: 80,
-           child:Container (
-             margin: const EdgeInsets.only(bottom: 2),
-             height: 0.85*screenHeight, 
+              //flex: 80,
+              child: Container(
+            margin: const EdgeInsets.only(bottom: 2),
+            height: 0.85 * screenHeight,
             child: Scrollbar(
               thickness: 5,
               thumbVisibility: true,
@@ -860,7 +860,7 @@ class _HomeContentState extends State<HomeContent> {
                   const SizedBox(height: 5),
 
                   //Baris ke 5
-                  
+
                   Container(
                     width: screenWidth * 0.92,
                     height: screenHeight * 0.12,
@@ -900,7 +900,6 @@ class _HomeContentState extends State<HomeContent> {
                       ],
                     ),
                   ),
-                  
 
                   //baris 6
                   Container(
@@ -941,8 +940,7 @@ class _HomeContentState extends State<HomeContent> {
                         ),
                       ],
                     ),
-                  ), 
-                  
+                  ),
 
                   // baris 7 SE
                   Container(
@@ -1286,7 +1284,11 @@ class _HomeContentState extends State<HomeContent> {
                                   splashColor: Colors.blueGrey,
                                   child: IntrinsicHeight(
                                     child: Padding(
-                                      padding: const EdgeInsets.all(5.0),
+                                      padding: const EdgeInsets.only(
+                                          left: 5.0,
+                                          top: 5,
+                                          bottom: 5,
+                                          right: 10),
                                       child: Row(
                                           //mainAxisSize: MainAxisSize.min,
                                           children: [
@@ -1299,7 +1301,7 @@ class _HomeContentState extends State<HomeContent> {
                                               height: screenHeight * 0.06,
                                             ),
                                             const SizedBox(
-                                              width: 0.05,
+                                              width: 0.0,
                                             ),
                                           ]),
                                     ),
@@ -1323,8 +1325,8 @@ class _HomeContentState extends State<HomeContent> {
                 //),
               ),
             ),
-          )
-      )],
+          ))
+        ],
       ),
     );
   }

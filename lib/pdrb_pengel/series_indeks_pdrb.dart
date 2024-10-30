@@ -18,7 +18,7 @@ class _SeriesIndeksImplisit extends State<SeriesIndeksImplisit> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "LAJU PDRB ADHK",
+          "INDEKS IMPLISIT PDRB",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
