@@ -1,0 +1,5 @@
+Catatan rilis 6.5.0
+
+- Perbaikan layout untu resolusi 720 x 1280
+- Penambahan indicator naker kab/kota sejateng
+- Penmbahan indicator Pendidikan kab/kota se jateng
