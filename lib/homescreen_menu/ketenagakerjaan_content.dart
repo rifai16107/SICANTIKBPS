@@ -25,7 +25,7 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'INDIKATOR KETENAGAKERJAAN',
+          'KETENAGAKERJAAN',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -143,11 +143,11 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.07,
+                    height: screenHeight * 0.1,
                     child: Row(
                       children: [
                         const Flexible(
-                          flex: 16,
+                          flex: 10,
                           fit: FlexFit.tight,
                           child: Text(
                             "Kondisi Ketenagakerjaan Kabupaten Cilacap",
@@ -155,7 +155,7 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -183,11 +183,11 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.07,
+                    height: screenHeight * 0.1,
                     child: Row(
                       children: [
                         const Flexible(
-                          flex: 16,
+                          flex: 10,
                           fit: FlexFit.tight,
                           child: Text(
                             "Kondisi Ketenagakerjaan Kabupaten Kota Di Jawa Tengah",
@@ -195,7 +195,7 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),

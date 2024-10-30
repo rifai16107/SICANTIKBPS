@@ -95,7 +95,7 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                     },
                     child: SizedBox(
                         width: screenWidth,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.1,
                         child: Row(
                           children: const [
                             Flexible(
@@ -135,7 +135,7 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                     },
                     child: SizedBox(
                         width: screenWidth,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.1,
                         child: Row(
                           children: const [
                             Flexible(
@@ -175,7 +175,7 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                     },
                     child: SizedBox(
                         width: screenWidth,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.1,
                         child: Row(
                           children: const [
                             Flexible(
@@ -215,7 +215,7 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                     },
                     child: SizedBox(
                         width: screenWidth,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.1,
                         child: Row(
                           children: const [
                             Flexible(
@@ -255,7 +255,7 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                     },
                     child: SizedBox(
                         width: screenWidth,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.1,
                         child: Row(
                           children: const [
                             Flexible(
@@ -295,7 +295,7 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                     },
                     child: SizedBox(
                         width: screenWidth,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.1,
                         child: Row(
                           children: const [
                             Flexible(
