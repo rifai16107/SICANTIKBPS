@@ -173,7 +173,6 @@ class _IsiPukAState extends State<IsiPukA> {
                                 style: const TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.left,
                               ),
                             ),
                           ),
