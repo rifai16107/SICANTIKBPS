@@ -173,6 +173,7 @@ class _IsiPukAState extends State<IsiPukA> {
                                 style: const TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold),
+                                textAlign: TextAlign.left,
                               ),
                             ),
                           ),
@@ -525,9 +526,9 @@ class _IsiPukAState extends State<IsiPukA> {
                             height: screenHeight * 0.05,
                             color: Colors.green,
                             //padding: const EdgeInsets.only(
-                                //top: 10, left: 5, right: 5),
+                            //top: 10, left: 5, right: 5),
                             child: const Center(
-                            child: Text(
+                                child: Text(
                               "Total Penduduk Usia Kerja",
                               style: TextStyle(
                                   color: Colors.white,

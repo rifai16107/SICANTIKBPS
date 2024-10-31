@@ -77,11 +77,11 @@ class _IsiBakAState extends State<IsiBakA> {
 
               toString();
               data = [
-                _ChartData("Bekerja", JmlBekerja),
-                _ChartData("Pengangguran Terbuka", JmlPenganggur),
-                _ChartData("Sekolah", JmlSekolah),
-                _ChartData("Urus Rumah Tangga", JmlRuta),
-                _ChartData("Lainnya", JmlLainnya),
+                _ChartData("Bekerja", JmlBekerja / 1000),
+                _ChartData("Pengangguran Terbuka", JmlPenganggur / 1000),
+                _ChartData("Sekolah", JmlSekolah / 1000),
+                _ChartData("Urus Rumah Tangga", JmlRuta / 1000),
+                _ChartData("Lainnya", JmlLainnya / 1000),
               ];
               tooltip = TooltipBehavior(enable: true);
 
@@ -167,7 +167,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   padding: const EdgeInsets.only(
-                                      top: 10, left: 5, right: 5),
+                                      top: 5, left: 5, right: 5),
                                   height: screenHeight * 0.04,
                                   child: const Text(
                                     "Angkatan Kerja",
@@ -182,7 +182,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 0),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(akLk, 0),
                                     textAlign: TextAlign.right,
@@ -197,7 +200,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(akPr, 0),
                                     textAlign: TextAlign.right,
@@ -212,9 +218,12 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
-                                    Format.convertTo((akLk + akPr), 0),
+                                    Format.convertTo(akLk + akPr, 0),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       color: Colors.black,
@@ -233,7 +242,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   padding: const EdgeInsets.only(
-                                      top: 10, left: 10, right: 5),
+                                      top: 5, left: 10, right: 5),
                                   height: screenHeight * 0.04,
                                   child: const Text(
                                     "Bekerja",
@@ -248,7 +257,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 0),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(bkjLk, 0),
                                     textAlign: TextAlign.right,
@@ -263,7 +275,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(bkjPr, 0),
                                     textAlign: TextAlign.right,
@@ -278,9 +293,12 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
-                                    Format.convertTo((bkjLk + bkjPr), 0),
+                                    Format.convertTo(bkjLk + bkjPr, 0),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       color: Colors.black,
@@ -299,8 +317,8 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   padding: const EdgeInsets.only(
-                                      top: 10, left: 10, right: 5),
-                                  height: screenHeight * 0.07,
+                                      top: 5, left: 10, right: 5),
+                                  height: screenHeight * 0.06,
                                   child: const Text(
                                     "Pengangguran Terbuka",
                                     style: TextStyle(
@@ -314,7 +332,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 0),
+                                  height: screenHeight * 0.06,
                                   child: Text(
                                     Format.convertTo(pgrLk, 0),
                                     textAlign: TextAlign.right,
@@ -329,7 +350,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.06,
                                   child: Text(
                                     Format.convertTo(pgrPr, 0),
                                     textAlign: TextAlign.right,
@@ -344,9 +368,12 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  height: screenHeight * 0.06,
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
                                   child: Text(
-                                    Format.convertTo((pgrLk + pgrPr), 0),
+                                    Format.convertTo(pgrLk + pgrPr, 0),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       color: Colors.black,
@@ -365,7 +392,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   padding: const EdgeInsets.only(
-                                      top: 10, left: 5, right: 5),
+                                      top: 5, left: 5, right: 5),
                                   height: screenHeight * 0.04,
                                   child: const Text(
                                     "Bukan Angkatan Kerja",
@@ -380,7 +407,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 0),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(bakLk, 0),
                                     textAlign: TextAlign.right,
@@ -395,7 +425,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(bakPr, 0),
                                     textAlign: TextAlign.right,
@@ -410,9 +443,12 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
-                                    Format.convertTo((bakLk + bakPr), 0),
+                                    Format.convertTo(bakLk + bakPr, 0),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       color: Colors.black,
@@ -431,7 +467,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   padding: const EdgeInsets.only(
-                                      top: 10, left: 10, right: 5),
+                                      top: 5, left: 10, right: 5),
                                   height: screenHeight * 0.04,
                                   child: const Text(
                                     "Sekolah",
@@ -446,7 +482,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 0),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(sklLk, 0),
                                     textAlign: TextAlign.right,
@@ -461,7 +500,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(sklPr, 0),
                                     textAlign: TextAlign.right,
@@ -476,9 +518,12 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
-                                    Format.convertTo((sklLk + sklPr), 0),
+                                    Format.convertTo(sklLk + sklPr, 0),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       color: Colors.black,
@@ -497,7 +542,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   padding: const EdgeInsets.only(
-                                      top: 10, left: 10, right: 5),
+                                      top: 5, left: 10, right: 5),
                                   height: screenHeight * 0.04,
                                   child: const Text(
                                     "Urus Rumah Tangga",
@@ -512,7 +557,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 0),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(rutaLk, 0),
                                     textAlign: TextAlign.right,
@@ -527,7 +575,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(rutaPr, 0),
                                     textAlign: TextAlign.right,
@@ -542,9 +593,12 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
-                                    Format.convertTo((rutaLk + rutaPr), 0),
+                                    Format.convertTo(rutaLk + rutaPr, 0),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       color: Colors.black,
@@ -563,7 +617,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   padding: const EdgeInsets.only(
-                                      top: 10, left: 10, right: 5),
+                                      top: 5, left: 10, right: 5),
                                   height: screenHeight * 0.04,
                                   child: const Text(
                                     "Lainnya",
@@ -578,7 +632,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 0),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(lainLk, 0),
                                     textAlign: TextAlign.right,
@@ -593,7 +650,10 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
                                     Format.convertTo(lainPr, 0),
                                     textAlign: TextAlign.right,
@@ -608,9 +668,12 @@ class _IsiBakAState extends State<IsiBakA> {
                               Flexible(
                                 flex: 1,
                                 fit: FlexFit.tight,
-                                child: SizedBox(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 5, left: 5, right: 5),
+                                  height: screenHeight * 0.04,
                                   child: Text(
-                                    Format.convertTo((lainLk + lainPr), 0),
+                                    Format.convertTo(lainLk + lainPr, 0),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       color: Colors.black,
@@ -631,7 +694,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                   height: screenHeight * 0.05,
                                   color: Colors.green,
                                   padding: const EdgeInsets.only(
-                                      top: 10, left: 5, right: 5),
+                                      top: 10, left: 5, right: 0),
                                   child: const Text(
                                     "Penduduk Usia Kerja",
                                     style: TextStyle(
@@ -645,19 +708,17 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  height: screenHeight * 0.05,
                                   color: Colors.green,
-                                  padding:
-                                      const EdgeInsets.only(top: 10, right: 0),
-                                  child: SizedBox(
-                                    child: Text(
-                                      Format.convertTo(jumlahLk, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 13,
-                                      ),
+                                  padding: const EdgeInsets.only(
+                                      top: 10, left: 5, right: 0),
+                                  height: screenHeight * 0.05,
+                                  child: Text(
+                                    Format.convertTo(jumlahLk, 0),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
                                     ),
                                   ),
                                 ),
@@ -666,19 +727,17 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  height: screenHeight * 0.05,
                                   color: Colors.green,
-                                  padding:
-                                      const EdgeInsets.only(top: 10, right: 0),
-                                  child: SizedBox(
-                                    child: Text(
-                                      Format.convertTo(jumlahPr, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 13,
-                                      ),
+                                  padding: const EdgeInsets.only(
+                                      top: 10, left: 5, right: 5),
+                                  height: screenHeight * 0.05,
+                                  child: Text(
+                                    Format.convertTo(jumlahPr, 0),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
                                     ),
                                   ),
                                 ),
@@ -687,20 +746,17 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  height: screenHeight * 0.05,
                                   color: Colors.green,
-                                  padding:
-                                      const EdgeInsets.only(top: 10, right: 0),
-                                  child: SizedBox(
-                                    child: Text(
-                                      Format.convertTo(
-                                          (jumlahLk + jumlahPr), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 13,
-                                      ),
+                                  padding: const EdgeInsets.only(
+                                      top: 10, left: 5, right: 5),
+                                  height: screenHeight * 0.05,
+                                  child: Text(
+                                    Format.convertTo(jumlahLk + jumlahPr, 0),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
                                     ),
                                   ),
                                 ),
@@ -760,6 +816,19 @@ class _IsiBakAState extends State<IsiBakA> {
                                             //position: LegendPosition.bottom
                                           ),
                                           primaryYAxis: NumericAxis(
+                                              axisLabelFormatter:
+                                                  (AxisLabelRenderDetails
+                                                      args) {
+                                                if (args.value < 0) {
+                                                  return ChartAxisLabel(
+                                                      '${args.text}K',
+                                                      args.textStyle);
+                                                }
+                                                return ChartAxisLabel(
+                                                    '${args.text}K',
+                                                    args.textStyle);
+                                                //return ChartAxisLabel(args.text, args.textStyle);
+                                              },
                                               numberFormat:
                                                   NumberFormat.decimalPattern(
                                                       'vi_VN'),
@@ -767,8 +836,8 @@ class _IsiBakAState extends State<IsiBakA> {
                                                   const MajorGridLines(
                                                       width: 0),
                                               minimum: 0,
-                                              maximum: 1000000,
-                                              interval: 200000),
+                                              maximum: 1100,
+                                              interval: 200),
                                           tooltipBehavior: tooltip,
                                           series: <CartesianSeries>[
                                             BarSeries<_ChartData, String>(
