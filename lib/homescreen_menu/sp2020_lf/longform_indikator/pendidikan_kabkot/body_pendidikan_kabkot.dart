@@ -46,7 +46,7 @@ class _BodyPendidikanKabkot extends State<BodyPendidikanKabkot> {
           Column(
             children: [
               SizedBox(
-                height: screenHeight *1.35,
+                height: screenHeight *1.36,
                 width: screenWidth,
                 child: Column(
                   children: const [

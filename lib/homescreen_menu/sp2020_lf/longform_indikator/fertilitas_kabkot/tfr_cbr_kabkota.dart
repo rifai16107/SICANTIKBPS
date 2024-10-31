@@ -174,8 +174,8 @@ class _TfrcbrKabkotState extends State<TfrcbrKabkot> {
                           padding: const EdgeInsets.only(
                             left: 5,
                             right: 0,
-                            top: 10,
-                            bottom: 10,
+                            top: 5,
+                            bottom: 5,
                           ),
                           child: const Text(
                             "Total Fertility Rate (TFR) dan Crude Birth Rate (CBR) Kabupaten/Kota Di Jawa Tengah, Hasil Pendataan Long Form SP2020 ",

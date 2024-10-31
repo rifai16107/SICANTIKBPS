@@ -682,7 +682,14 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       SizedBox(
                         width: screenWidth * 0.95,
                         child: const Text(
-                          "- ADHB : Atas Dasar Harga Berlaku, ADHK : Atas dasar Harga Konstan",
+                          "- ADHB : Atas Dasar Harga Berlaku.",
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ),
+                      SizedBox(
+                        width: screenWidth * 0.95,
+                        child: const Text(
+                          "- ADHK : Atas dasar Harga Konstan",
                           style: TextStyle(fontSize: 12),
                         ),
                       ),

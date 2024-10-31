@@ -459,9 +459,9 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                       //flex: 5,
                       Container(
                           width: screenWidth * 1.0,
-                          height: screenHeight * 0.1,
+                          height: screenHeight * 0.12,
                           padding: const EdgeInsets.only(
-                            left: 5,
+                            left: 2,
                             right: 10,
                             top: 10,
                             bottom: 10,
@@ -483,13 +483,13 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 height: screenHeight * 0.04,
                                 color: Colors.blue,
                                 padding: const EdgeInsets.only(
-                                    right: 3, top: 10, bottom: 0),
+                                    right: 0, top: 10, bottom: 0),
                                 child: const Text(
                                   "Kabupaten/",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12.5,
                                       color: Colors.white),
                                 ),
                               ),
@@ -506,7 +506,7 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12.5,
                                       color: Colors.white),
                                 ),
                               ),
@@ -517,13 +517,13 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 height: screenHeight * 0.07,
                                 color: Colors.blue,
                                 padding: const EdgeInsets.only(
-                                    left: 0, top: 12, bottom: 0),
+                                    left: 0, top: 10, bottom: 0),
                                 child: const Text(
                                   "Gen. Z",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12.5,
                                       color: Colors.white),
                                 ),
                               ),
@@ -534,13 +534,13 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 height: screenHeight * 0.07,
                                 color: Colors.blue,
                                 padding: const EdgeInsets.only(
-                                    left: 0, top: 12, bottom: 0),
+                                    left: 0, top: 10, bottom: 0),
                                 child: const Text(
                                   "Milenial",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12.5,
                                       color: Colors.white),
                                 ),
                               ),
@@ -551,19 +551,19 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 height: screenHeight * 0.07,
                                 color: Colors.blue,
                                 padding: const EdgeInsets.only(
-                                    left: 0, top: 12, bottom: 0),
+                                    left: 0, top: 10, bottom: 0),
                                 child: const Text(
                                   "Gen. X",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12.5,
                                       color: Colors.white),
                                 ),
                               ),
                             ),
                             SizedBox(
-                              width: screenWidth * 0.18,
+                              width: screenWidth * 0.20,
                               child: Container(
                                 height: screenHeight * 0.04,
                                 color: Colors.blue,
@@ -574,7 +574,7 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12.5,
                                       color: Colors.white),
                                 ),
                               ),
@@ -594,13 +594,13 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 height: screenHeight * 0.04,
                                 color: Colors.blue,
                                 padding: const EdgeInsets.only(
-                                    right: 3, top: 0, bottom: 0),
+                                    right: 0, top: 0, bottom: 0),
                                 child: const Text(
                                   "Kota",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12.5,
                                       color: Colors.white),
                                 ),
                               ),
@@ -617,7 +617,7 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12,
                                       color: Colors.white),
                                 ),
                               ),
@@ -631,7 +631,7 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                     left: 0, top:0, bottom: 0),
                                 child: const Text(
                                   "  ",
-                                  textAlign: TextAlign.center,
+                                  //textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.normal,
                                       fontSize: 13,
@@ -642,7 +642,7 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                             SizedBox(
                               width: screenWidth * 0.14,
                               child: Container(
-                                height: screenHeight * 0.04,
+                                height: screenHeight * 0.01,
                                 color: Colors.blue,
                                 padding: const EdgeInsets.only(
                                     left: 0, top: 0, bottom: 2),
@@ -659,7 +659,7 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                             SizedBox(
                               width: screenWidth * 0.13,
                               child: Container(
-                                height: screenHeight * 0.04,
+                                height: screenHeight * 0.01,
                                 color: Colors.blue,
                                 padding: const EdgeInsets.only(
                                     left: 0, top: 0, bottom: 2),
@@ -674,7 +674,7 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                               ),
                             ),
                             SizedBox(
-                              width: screenWidth * 0.18,
+                              width: screenWidth * 0.20,
                               child: Container(
                                 height: screenHeight * 0.04,
                                 color: Colors.blue,
@@ -685,7 +685,7 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 13,
+                                      fontSize: 12.5,
                                       color: Colors.white),
                                 ),
                               ),
@@ -715,11 +715,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -820,11 +820,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -925,11 +925,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1031,11 +1031,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1136,11 +1136,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1241,11 +1241,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1346,11 +1346,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1451,11 +1451,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1556,11 +1556,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1661,11 +1661,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1766,11 +1766,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1871,11 +1871,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -1976,11 +1976,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2081,11 +2081,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2186,11 +2186,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2291,11 +2291,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2396,11 +2396,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2501,11 +2501,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2606,11 +2606,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2711,11 +2711,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2816,11 +2816,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -2921,11 +2921,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3026,11 +3026,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3131,11 +3131,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3236,11 +3236,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3341,11 +3341,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3446,11 +3446,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3551,11 +3551,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3656,11 +3656,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3761,11 +3761,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3866,11 +3866,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -3971,11 +3971,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -4076,11 +4076,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -4181,11 +4181,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -4286,11 +4286,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(
@@ -4391,11 +4391,11 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                                 child: Row(
                                   children: [
                                     SizedBox(
-                                      width: screenWidth * 0.28,
+                                      width: screenWidth * 0.30,
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 5,
-                                            right: 3,
+                                            left: 2,
+                                            right: 0,
                                             top: 1,
                                             bottom: 1),
                                         child: Text(

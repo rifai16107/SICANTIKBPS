@@ -373,7 +373,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
 
                         //Grafik ketahanan bangunan
                         SizedBox(
-                          height: screenHeight * 0.70,
+                          height: screenHeight * 0.75,
                           width: screenWidth,
                           child: SfCartesianChart(
                               title: ChartTitle(
@@ -393,9 +393,11 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                               ),
                               legend: Legend(
                                   // Visibility of legend
+                                  padding:4,
+                                  itemPadding:5,
                                   overflowMode: LegendItemOverflowMode.wrap,
                                   textStyle: const TextStyle(
-                                    fontSize: 11,
+                                    fontSize: 10.5,
                                   ),
                                   isVisible: true,
                                   position: LegendPosition.bottom),
@@ -423,7 +425,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                       labelAlignment:
                                           ChartDataLabelAlignment.outer,
                                       textStyle: TextStyle(fontSize: 11)),
-                                  name: 'Bangunan yang atapnya memenuhi syarat ketahanan bangunan',
+                                  name: 'Bangunan yg atapnya memenuhi syarat ketahanan bangunan',
                                   color:
                                       const Color.fromARGB(255, 53, 224, 210),
                                 ),
@@ -441,7 +443,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                           ChartDataLabelAlignment.outer,
                                       isVisible: true,
                                       textStyle: TextStyle(fontSize: 11)),
-                                  name: 'Bangunan yang dindingnya memenuhi syarat ketahanan bangunan',
+                                  name: 'Bangunan yg dindingnya memenuhi syarat ketahanan bangunan',
                                   color:
                                       const Color.fromARGB(255, 170, 240, 80),
                                 ),
@@ -459,7 +461,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                           ChartDataLabelAlignment.outer,
                                       isVisible: true,
                                       textStyle: TextStyle(fontSize: 11)),
-                                  name: 'Bangunan yang lantainya memenuhi syarat ketahanan bangunan',
+                                  name: 'Bangunan yg lantainya memenuhi syarat ketahanan bangunan',
                                   color:
                                       const Color.fromARGB(255, 40, 88, 248),
                                 ),
@@ -477,7 +479,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                           ChartDataLabelAlignment.outer,
                                       isVisible: true,
                                       textStyle: TextStyle(fontSize: 11)),
-                                  name: 'Bangunan tempat tinggal yang memenuhi syarat ketahanan bangunan',
+                                  name: 'Bangunan tempat tinggal yg memenuhi syarat ketahanan bangunan',
                                   color:
                                       const Color.fromARGB(255, 243, 44, 37),
                                   ),

@@ -22,7 +22,7 @@ class _BodyRumahmilikKabkot extends State<BodyRumahmilikKabkot> {
         child: Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Jenis Dinding Terluas',
+          'Status Kepemilikan',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,

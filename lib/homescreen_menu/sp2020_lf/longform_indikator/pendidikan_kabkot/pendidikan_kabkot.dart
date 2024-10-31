@@ -17,7 +17,7 @@ class PendidikanKabkot extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 0.085 * screenHeight,
+          toolbarHeight: 0.088 * screenHeight,
           flexibleSpace: Center(
             child: Column(
               children: const [
