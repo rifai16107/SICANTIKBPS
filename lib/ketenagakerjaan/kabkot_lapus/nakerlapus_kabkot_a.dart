@@ -4,44 +4,16 @@ import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const NakerkabkotLapus());
+void main() => runApp(const NakerkabkotLapusA());
 
-class NakerkabkotLapus extends StatelessWidget {
-  const NakerkabkotLapus({super.key});
+class NakerkabkotLapusA extends StatelessWidget {
+  const NakerkabkotLapusA({super.key});
 
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
+    //double screenHeight = MediaQuery.of(context).size.height;
     //double screenWidth = MediaQuery.of(context).size.width;
-    return MaterialApp(
-      theme: ThemeData(useMaterial3: true),
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          toolbarHeight: 0.065 * screenHeight,
-          flexibleSpace: Center(
-            child: Column(
-              children: const [
-                Text(
-                  'Penduduk yang Bekerja Menurut Lapangan Usaha Utama  dan Kabupaten/Kota di Provinsi Jawa Tengah',
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 17, 17, 17),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                Text(
-                    'geser kolom berisi data ke kiri untuk melihat isian kolom lainnya',
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 17, 17, 17),
-                      fontWeight: FontWeight.normal,
-                      fontSize: 11,
-                    )),
-              ],
-            ),
-          ),
-        ),
+     return Scaffold(
         body: SafeArea(
           child: SingleChildScrollView(
             child: Row(
@@ -52,8 +24,8 @@ class NakerkabkotLapus extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+      );
+    
   }
 }
 
@@ -535,7 +507,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                   columns: [
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.18,
+                          width: screenWidth * 0.20,
                           child: const Text(
                             'Lap.Usaha A',
                             //maxLines: 2,
@@ -550,7 +522,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.18,
+                          width: screenWidth * 0.20,
                           child: const Text(
                             'Lap. Usaha B',
                             //maxLines: 2,
@@ -565,7 +537,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.18,
+                          width: screenWidth * 0.20,
                           child: const Text(
                             'Lap. Usaha C',
                             //maxLines: 2,
@@ -584,7 +556,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.20,
+                          width: screenWidth * 0.18,
                           child: const Text(
                             'Jumlah',
                             //maxLines: 2,
@@ -648,8 +620,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                                (Format.convertTo(
-                                    double.tryParse(data.lapus1_n1), 0)),
+                         (Format.convertTo((double.tryParse(data.lapus1_n1)!+double.tryParse(data.lapus2_n1)! + double.tryParse(data.lapus3_n1)!),0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
