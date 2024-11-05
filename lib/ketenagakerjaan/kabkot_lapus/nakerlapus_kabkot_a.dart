@@ -14,16 +14,22 @@ class NakerkabkotLapusA extends StatelessWidget {
     //double screenHeight = MediaQuery.of(context).size.height;
     //double screenWidth = MediaQuery.of(context).size.width;
      return Scaffold(
-        body: SafeArea(
-          child: SingleChildScrollView(
-            child: Row(
-              children: const [
-                FixedColumnWidget(),
-                ScrollableColumnWidget(),
-              ],
+        body: ListView(
+          children: 
+          [SingleChildScrollView(
+              child: Row(
+                children: const [
+                  FixedColumnWidget(),
+                  ScrollableColumnWidget(),
+                ],
             ),
           ),
-        ),
+          const CatatanWidget(),
+        
+        ],
+          
+      ),
+      
       );
     
   }
@@ -466,6 +472,7 @@ class FixedColumnWidget extends StatelessWidget {
       ],
       showBottomBorder: true,
     );
+  
   }
 }
 
@@ -643,5 +650,52 @@ class ScrollableColumnWidget extends StatelessWidget {
         },
       ),
     );
+  }
+}
+
+class CatatanWidget extends StatelessWidget {
+  const CatatanWidget ({super.key});
+  @override
+  Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+    return SizedBox(
+            width: screenWidth*0.5,        
+            height: 0.1*screenHeight,
+            child: Column(
+              
+              children: const [
+                
+                Text(
+                  'Keterangan: ',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                  ),
+                  //textAlign: TextAlign.left,
+                ),
+                Text(
+                    'Lap. Usaha A: Pertanian, Perkebunan',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.normal,
+                      fontSize: 11,
+                    )),
+                Text(
+                    'Lap. Usaha B: Manufaktur',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.normal,
+                      fontSize: 11,
+                    )),    
+              ],
+            ),
+                                  
+   
+      
+  ); 
   }
 }

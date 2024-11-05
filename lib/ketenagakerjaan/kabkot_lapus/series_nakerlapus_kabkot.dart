@@ -67,40 +67,15 @@ class _SeriesPengangguranKabkot extends State<SeriesPengangguranKabkot> {
             
           Container(
           color: Colors.transparent,
-            height: screenHeight * 0.72,
+            height: screenHeight * 0.85,
             width: screenWidth*1,
             child: Column(
               children: const [
                 Flexible(
                   fit: FlexFit.tight,
-                  flex: 20,
+                  flex: 24,
                   child: BodyNakerKabkotLapus(),
                 ),
-              ],
-            ),
-          ),
-          Container(
-              height: screenHeight * 0.10,
-              color: Colors.black,
-              
-            child: Column(
-              children: const [
-                Text(
-                  'Penduduk Menurut Kabupaten/Kota dan Jenis Kelamin di Provinsi Jawa Tengah Hasil Sensus Penduduk 2020',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                Text(
-                    'geser kolom berisi data ke kiri untuk melihat isian kolom lainnya',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.normal,
-                      fontSize: 11,
-                    )),
               ],
             ),
           ),
