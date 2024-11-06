@@ -746,7 +746,7 @@ class CatatanWidget extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                             text:
-                                ' Penduduk Usia 15+ yang Bersekolah Mengurus Rumahtangga dan Lainnya (seminggu lalu melakukan kegiatan selain Sekolah dan Mengurus Rumahtangga).',
+                                ' Penduduk Usia 15+ yang Bersekolah, Mengurus Rumahtangga, dan Lainnya (seminggu lalu melakukan kegiatan selain Sekolah dan Mengurus Rumahtangga).',
                             style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Roboto',
