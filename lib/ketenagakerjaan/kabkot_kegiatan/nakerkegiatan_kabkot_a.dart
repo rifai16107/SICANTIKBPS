@@ -660,7 +660,7 @@ class CatatanWidget extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return SizedBox(
       width: screenWidth,
-      height: 0.38 * screenHeight,
+      height: 0.30 * screenHeight,
       child: Column(
         children: [
           Column(
@@ -704,14 +704,15 @@ class CatatanWidget extends StatelessWidget {
                 child: RichText(
                   textAlign: TextAlign.left,
                   text: const TextSpan(
-                      text: 'Lap. Pekerjaan Utama A:',
+                      text: 'Angkatan Kerja (AK):',
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 13),
                       children: <TextSpan>[
                         TextSpan(
-                            text: ' Pertanian, Kehutanan, Perikanan.',
+                            text:
+                                ' Penduduk Usia 15+ yang Bekerja dan Pengangguran.',
                             style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Roboto',
@@ -726,7 +727,7 @@ class CatatanWidget extends StatelessWidget {
                 child: RichText(
                   textAlign: TextAlign.left,
                   text: const TextSpan(
-                      text: 'Lap. Pekerjaan Utama B:',
+                      text: 'Bukan Angkatan Kerja (BAK):',
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -734,30 +735,7 @@ class CatatanWidget extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                             text:
-                                'Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi.',
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontFamily: 'Roboto',
-                                color: Colors.black,
-                                fontWeight: FontWeight.normal)),
-                      ]),
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(1),
-                alignment: Alignment.centerLeft,
-                child: RichText(
-                  textAlign: TextAlign.justify,
-                  text: const TextSpan(
-                      text: 'Lap. Pekerjaan Utama C:',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 13),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text:
-                                'Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya',
+                                ' Penduduk Usia 15+ yang Bersekolah Mengurus Rumahtangga dan Lainnya (seminggu lalu melakukan kegiatan selain Sekolah dan Mengurus Rumahtangga).',
                             style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Roboto',

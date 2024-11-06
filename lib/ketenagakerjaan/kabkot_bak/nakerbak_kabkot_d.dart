@@ -4,10 +4,10 @@ import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const NakerkabkotKegiatanB());
+void main() => runApp(const NakerkabkotBakD());
 
-class NakerkabkotKegiatanB extends StatelessWidget {
-  const NakerkabkotKegiatanB({super.key});
+class NakerkabkotBakD extends StatelessWidget {
+  const NakerkabkotBakD({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,32 +46,26 @@ Future<List<Data>> fetchData() async {
 class Data {
   final int id;
   final String wilayah;
-  final String bekerja_n2;
-  final String penganggur_n2;
-  final String sekolah_n2;
-  final String urusruta_n2;
-  final String lainnya_n2;
+  final String sekolah_n4;
+  final String urusruta_n4;
+  final String lainnya_n4;
   final String tahun;
 
   Data(
       {required this.id,
       required this.wilayah,
-      required this.bekerja_n2,
-      required this.penganggur_n2,
-      required this.sekolah_n2,
-      required this.urusruta_n2,
-      required this.lainnya_n2,
+      required this.sekolah_n4,
+      required this.urusruta_n4,
+      required this.lainnya_n4,
       required this.tahun});
 
   factory Data.fromJson(Map<String, dynamic> json) {
     return Data(
       id: json['id'],
       wilayah: json['wilayah'],
-      bekerja_n2: json['bekerja_n2'],
-      penganggur_n2: json['penganggur_n2'],
-      sekolah_n2: json['sekolah_n2'],
-      urusruta_n2: json['urusruta_n2'],
-      lainnya_n2: json['lainnya_n2'],
+      sekolah_n4: json['sekolah_n4'],
+      urusruta_n4: json['urusruta_n4'],
+      lainnya_n4: json['lainnya_n4'],
       tahun: json['tahun'],
     );
   }
@@ -517,7 +511,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.20,
                           child: const Text(
-                            'Bekerja',
+                            'Sekolah',
                             maxLines: 3,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
@@ -532,7 +526,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.21,
                           child: const Text(
-                            'Pengangguran',
+                            'Urus Rumah tangga',
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
@@ -547,7 +541,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.20,
                           child: const Text(
-                            'Bukan Angkatan Kerja',
+                            'Lainnya',
                             maxLines: 3,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
@@ -595,7 +589,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    double.tryParse(data.bekerja_n2), 0)),
+                                    double.tryParse(data.sekolah_n4), 0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -606,7 +600,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    double.tryParse(data.penganggur_n2), 0)),
+                                    double.tryParse(data.urusruta_n4), 0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -618,10 +612,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    (double.tryParse(data.sekolah_n2)! +
-                                        double.tryParse(data.urusruta_n2)! +
-                                        double.tryParse(data.lainnya_n2)!),
-                                    0)),
+                                    double.tryParse(data.lainnya_n4), 0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -632,11 +623,9 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    (double.tryParse(data.bekerja_n2)! +
-                                        double.tryParse(data.penganggur_n2)! +
-                                        double.tryParse(data.sekolah_n2)! +
-                                        double.tryParse(data.urusruta_n2)! +
-                                        double.tryParse(data.lainnya_n2)!),
+                                    (double.tryParse(data.sekolah_n4)! +
+                                        double.tryParse(data.urusruta_n4)! +
+                                        double.tryParse(data.lainnya_n4)!),
                                     0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
@@ -671,7 +660,7 @@ class CatatanWidget extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return SizedBox(
       width: screenWidth,
-      height: 0.30 * screenHeight,
+      height: 0.25 * screenHeight,
       child: Column(
         children: [
           Column(
@@ -707,29 +696,6 @@ class CatatanWidget extends StatelessWidget {
                       fontSize: 14,
                       color: Colors.blue,
                       fontWeight: FontWeight.bold),
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(1),
-                alignment: Alignment.centerLeft,
-                child: RichText(
-                  textAlign: TextAlign.left,
-                  text: const TextSpan(
-                      text: 'Angkatan Kerja (AK):',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 13),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text:
-                                ' Penduduk Usia 15+ yang Bekerja dan Pengangguran.',
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontFamily: 'Roboto',
-                                color: Colors.black,
-                                fontWeight: FontWeight.normal)),
-                      ]),
                 ),
               ),
               Container(

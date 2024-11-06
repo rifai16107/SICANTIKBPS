@@ -1,16 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_kegiatan/body_nakerkegiatan_kabkot.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_bak/body_nakerbak_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesNakerKegiatanKabkot extends StatefulWidget {
-  const SeriesNakerKegiatanKabkot({super.key});
+class SeriesNakerBakkabkot extends StatefulWidget {
+  const SeriesNakerBakkabkot({super.key});
 
   @override
-  State<SeriesNakerKegiatanKabkot> createState() =>
-      _SeriesNakerKegiatanKabkot();
+  State<SeriesNakerBakkabkot> createState() => _SeriesNakerBakkabkot();
 }
 
-class _SeriesNakerKegiatanKabkot extends State<SeriesNakerKegiatanKabkot> {
+class _SeriesNakerBakkabkot extends State<SeriesNakerBakkabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -45,7 +44,7 @@ class _SeriesNakerKegiatanKabkot extends State<SeriesNakerKegiatanKabkot> {
             child: Column(
               children: const [
                 Text(
-                  ' Penduduk Usia 15+ yang Bekerja, Menganggur dan Bukan Angkatan Kerja Menurut Kabupaten/Kota dan Lapangan Pekerjaan Utama di Provinsi Jawa Tengah ',
+                  ' Penduduk Usia 15+ yang Bukan Angkatan Kerja Menurut Kabupaten/Kota dan Kegiatan Utama di Provinsi Jawa Tengah ',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -72,7 +71,7 @@ class _SeriesNakerKegiatanKabkot extends State<SeriesNakerKegiatanKabkot> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 24,
-                  child: BodyNakerKabkotKegiatan(),
+                  child: BodyNakerKabkotBak(),
                 ),
               ],
             ),

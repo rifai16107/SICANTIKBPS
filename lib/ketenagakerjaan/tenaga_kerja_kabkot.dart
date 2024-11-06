@@ -4,6 +4,7 @@ import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/ketenagakerjaan/bukan_angkatan_kerja.dart';
 import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/series_nakerlapus_kabkot.dart';
 import 'package:bps_cilacap/ketenagakerjaan/kabkot_kegiatan/series_nakerkegiatan_kabkot.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_bak/series_nakerbak_kabkot.dart';
 import 'package:flutter/material.dart';
 
 class tenagaKerjaKabkot extends StatefulWidget {
@@ -171,7 +172,7 @@ class _tenagaKerjaKabkotState extends State<tenagaKerjaKabkot> {
                       Navigator.push(
                           context,
                           CustomPageRoute(
-                              child: const BukanAngkatanKerja(),
+                              child: const SeriesNakerBakkabkot(),
                               direction: AxisDirection.left));
                     },
                     child: SizedBox(

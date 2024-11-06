@@ -660,7 +660,7 @@ class CatatanWidget extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return SizedBox(
       width: screenWidth,
-      height: 0.38 * screenHeight,
+      height: 0.40 * screenHeight,
       child: Column(
         children: [
           Column(

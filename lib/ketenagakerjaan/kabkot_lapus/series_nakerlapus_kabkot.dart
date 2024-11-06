@@ -39,12 +39,12 @@ class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: screenHeight * 0.085,
+            height: 65,
             color: Colors.black,
             child: Column(
               children: const [
                 Text(
-                  ' Penduduk yang Bekerja Menurut Kabupaten/Kota dan Lapangan Pekerjaan Utama di Provinsi Jawa Tengah ',
+                  ' Penduduk Usia 15+ yang Bekerja Menurut Kabupaten/Kota dan Lapangan Pekerjaan Utama di Provinsi Jawa Tengah ',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
