@@ -14,8 +14,9 @@ class NakerkabkotLapusC extends StatelessWidget {
     //double screenHeight = MediaQuery.of(context).size.height;
     //double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-        body: SafeArea(
-          child: SingleChildScrollView(
+      body: ListView(
+        children: [
+          SingleChildScrollView(
             child: Row(
               children: const [
                 FixedColumnWidget(),
@@ -23,8 +24,10 @@ class NakerkabkotLapusC extends StatelessWidget {
               ],
             ),
           ),
-        ),
-      );
+          const CatatanWidget(),
+        ],
+      ),
+    );
   }
 }
 
@@ -508,9 +511,9 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.20,
                           child: const Text(
-                            'Lap.Usaha A',
-                            //maxLines: 2,
-                            //overflow: TextOverflow.ellipsis,
+                            'Lap. Pekerjaan Utama A',
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -523,9 +526,9 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.20,
                           child: const Text(
-                            'Lap. Usaha B',
-                            //maxLines: 2,
-                            //overflow: TextOverflow.ellipsis,
+                            'Lap. Pekerjaan Utama B',
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -538,9 +541,9 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.20,
                           child: const Text(
-                            'Lap. Usaha C',
-                            //maxLines: 2,
-                            //overflow: TextOverflow.ellipsis,
+                            'Lap. Pekerjaan Utama C',
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -619,7 +622,11 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                         (Format.convertTo((double.tryParse(data.lapus1_n3)! + double.tryParse(data.lapus2_n3)! + double.tryParse(data.lapus3_n3)!),0)),
+                                (Format.convertTo(
+                                    (double.tryParse(data.lapus1_n3)! +
+                                        double.tryParse(data.lapus2_n3)! +
+                                        double.tryParse(data.lapus3_n3)!),
+                                    0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -640,6 +647,128 @@ class ScrollableColumnWidget extends StatelessWidget {
           // By default show a loading spinner.
           return const Center(child: CircularProgressIndicator());
         },
+      ),
+    );
+  }
+}
+
+class CatatanWidget extends StatelessWidget {
+  const CatatanWidget({super.key});
+  @override
+  Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+    return SizedBox(
+      width: screenWidth,
+      height: 0.38 * screenHeight,
+      child: Column(
+        children: [
+          Column(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(1),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: const TextSpan(
+                      text: 'Sumber:',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12),
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: ' Survei Angkatan Kerja Nasional (Sakernas)',
+                            style: TextStyle(
+                                fontSize: 11,
+                                fontFamily: 'Roboto',
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold)),
+                      ]),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(3),
+                alignment: Alignment.centerLeft,
+                child: const Text(
+                  "Keterangan:",
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(1),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: const TextSpan(
+                      text: 'Lap. Pekerjaan Utama A:',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 13),
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: ' Pertanian, Kehutanan, Perikanan.',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Roboto',
+                                color: Colors.black,
+                                fontWeight: FontWeight.normal)),
+                      ]),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(1),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: const TextSpan(
+                      text: 'Lap. Pekerjaan Utama B:',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 13),
+                      children: <TextSpan>[
+                        TextSpan(
+                            text:
+                                'Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi.',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Roboto',
+                                color: Colors.black,
+                                fontWeight: FontWeight.normal)),
+                      ]),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(1),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.justify,
+                  text: const TextSpan(
+                      text: 'Lap. Pekerjaan Utama C:',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 13),
+                      children: <TextSpan>[
+                        TextSpan(
+                            text:
+                                'Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Roboto',
+                                color: Colors.black,
+                                fontWeight: FontWeight.normal)),
+                      ]),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

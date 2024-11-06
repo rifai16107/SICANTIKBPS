@@ -4,10 +4,10 @@ import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const NakerkabkotLapusA());
+void main() => runApp(const NakerkabkotKegiatanB());
 
-class NakerkabkotLapusA extends StatelessWidget {
-  const NakerkabkotLapusA({super.key});
+class NakerkabkotKegiatanB extends StatelessWidget {
+  const NakerkabkotKegiatanB({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class NakerkabkotLapusA extends StatelessWidget {
 }
 
 Future<List<Data>> fetchData() async {
-  var url = Uri.parse('https://bps-3301-asap.my.id/api/nakerkabkot-lapus');
+  var url = Uri.parse('https://bps-3301-asap.my.id/api/nakerkabkot-kegiatan');
   final response = await http.get(url);
   if (response.statusCode == 200) {
     var cokk = jsonDecode(response.body);
@@ -46,26 +46,32 @@ Future<List<Data>> fetchData() async {
 class Data {
   final int id;
   final String wilayah;
-  final String lapus1_n1;
-  final String lapus2_n1;
-  final String lapus3_n1;
+  final String bekerja_n2;
+  final String penganggur_n2;
+  final String sekolah_n2;
+  final String urusruta_n2;
+  final String lainnya_n2;
   final String tahun;
 
   Data(
       {required this.id,
       required this.wilayah,
-      required this.lapus1_n1,
-      required this.lapus2_n1,
-      required this.lapus3_n1,
+      required this.bekerja_n2,
+      required this.penganggur_n2,
+      required this.sekolah_n2,
+      required this.urusruta_n2,
+      required this.lainnya_n2,
       required this.tahun});
 
   factory Data.fromJson(Map<String, dynamic> json) {
     return Data(
       id: json['id'],
       wilayah: json['wilayah'],
-      lapus1_n1: json['lapus1_n1'],
-      lapus2_n1: json['lapus2_n1'],
-      lapus3_n1: json['lapus3_n1'],
+      bekerja_n2: json['bekerja_n2'],
+      penganggur_n2: json['penganggur_n2'],
+      sekolah_n2: json['sekolah_n2'],
+      urusruta_n2: json['urusruta_n2'],
+      lainnya_n2: json['lainnya_n2'],
       tahun: json['tahun'],
     );
   }
@@ -511,8 +517,23 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.20,
                           child: const Text(
-                            'Lap. Pekerjaan Utama A',
+                            'Bekerja',
                             maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13,
+                            ),
+                          ),
+                        ),
+                        numeric: true),
+                    DataColumn(
+                        label: SizedBox(
+                          width: screenWidth * 0.21,
+                          child: const Text(
+                            'Pengangguran',
+                            maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                             style: TextStyle(
@@ -526,22 +547,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.20,
                           child: const Text(
-                            'Lap. Pekerjaan Utama B',
-                            maxLines: 3,
-                            overflow: TextOverflow.ellipsis,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ),
-                        numeric: true),
-                    DataColumn(
-                        label: SizedBox(
-                          width: screenWidth * 0.20,
-                          child: const Text(
-                            'Lap. Pekerjaan Utama C',
+                            'Bukan Angkatan Kerja',
                             maxLines: 3,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
@@ -589,7 +595,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    double.tryParse(data.lapus1_n1), 0)),
+                                    double.tryParse(data.bekerja_n2), 0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -600,7 +606,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    double.tryParse(data.lapus2_n1), 0)),
+                                    double.tryParse(data.penganggur_n2), 0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -612,7 +618,10 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    double.tryParse(data.lapus3_n1), 0)),
+                                    (double.tryParse(data.sekolah_n2)! +
+                                        double.tryParse(data.urusruta_n2)! +
+                                        double.tryParse(data.lainnya_n2)!),
+                                    0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -623,9 +632,11 @@ class ScrollableColumnWidget extends StatelessWidget {
                             DataCell(
                               Text(
                                 (Format.convertTo(
-                                    (double.tryParse(data.lapus1_n1)! +
-                                        double.tryParse(data.lapus2_n1)! +
-                                        double.tryParse(data.lapus3_n1)!),
+                                    (double.tryParse(data.bekerja_n2)! +
+                                        double.tryParse(data.penganggur_n2)! +
+                                        double.tryParse(data.sekolah_n2)! +
+                                        double.tryParse(data.urusruta_n2)! +
+                                        double.tryParse(data.lainnya_n2)!),
                                     0)),
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),

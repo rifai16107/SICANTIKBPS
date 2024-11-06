@@ -1,15 +1,16 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/body_nakerlapus_kabkot.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_kegiatan/body_nakerkegiatan_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesNakerLapusKabkot extends StatefulWidget {
-  const SeriesNakerLapusKabkot({super.key});
+class SeriesNakerKegiatanKabkot extends StatefulWidget {
+  const SeriesNakerKegiatanKabkot({super.key});
 
   @override
-  State<SeriesNakerLapusKabkot> createState() => _SeriesNakerLapusKabkot();
+  State<SeriesNakerKegiatanKabkot> createState() =>
+      _SeriesNakerKegiatanKabkot();
 }
 
-class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
+class _SeriesNakerKegiatanKabkot extends State<SeriesNakerKegiatanKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -71,7 +72,7 @@ class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 24,
-                  child: BodyNakerKabkotLapus(),
+                  child: BodyNakerKabkotKegiatan(),
                 ),
               ],
             ),

@@ -1,15 +1,15 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/nakerlapus_kabkot_a.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/nakerlapus_kabkot_b.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/nakerlapus_kabkot_c.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/nakerlapus_kabkot_d.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/nakerlapus_kabkot_e.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_kegiatan/nakerkegiatan_kabkot_a.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_kegiatan/nakerkegiatan_kabkot_b.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_kegiatan/nakerkegiatan_kabkot_c.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_kegiatan/nakerkegiatan_kabkot_d.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_kegiatan/nakerkegiatan_kabkot_e.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class RepositoryNakerKabkotLapus {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-lapus';
+class RepositoryNakerKabkotKegiatan {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-kegiatan';
 
   Future getData() async {
     try {
@@ -18,7 +18,7 @@ class RepositoryNakerKabkotLapus {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isinaker) => ModelNakerKabkotLapus.fromJson(isinaker))
+            .map((isinaker) => ModelNakerKabkotKegiatan.fromJson(isinaker))
             .toList();
       }
     } catch (isinaker) {
@@ -29,44 +29,45 @@ class RepositoryNakerKabkotLapus {
 }
 
 // ignore_for_file: non_constant_identifier_names
-class ModelNakerKabkotLapus {
+class ModelNakerKabkotKegiatan {
   final int id;
   final String wilayah;
-  final String lapus1_n1;
-  final String lapus2_n1;
-  final String lapus3_n1;
+  final String bekerja_n1;
+  final String penganggur_n1;
+  final String bak_n1;
   final String tahun;
 
-  ModelNakerKabkotLapus(
+  ModelNakerKabkotKegiatan(
       {required this.id,
       required this.wilayah,
-      required this.lapus1_n1,
-      required this.lapus2_n1,
-      required this.lapus3_n1,
+      required this.bekerja_n1,
+      required this.penganggur_n1,
+      required this.bak_n1,
       required this.tahun});
 
-  factory ModelNakerKabkotLapus.fromJson(Map<String, dynamic> json) {
-    return ModelNakerKabkotLapus(
+  factory ModelNakerKabkotKegiatan.fromJson(Map<String, dynamic> json) {
+    return ModelNakerKabkotKegiatan(
       id: json['id'],
       wilayah: json['wilayah'],
-      lapus1_n1: json['lapus1_n1'],
-      lapus2_n1: json['lapus2_n1'],
-      lapus3_n1: json['lapus3_n1'],
+      bekerja_n1: json['bekerja_n1'],
+      penganggur_n1: json['penganggur_n1'],
+      bak_n1: json['bak_n1'],
       tahun: json['tahun'],
     );
   }
 }
 
-class BodyNakerKabkotLapus extends StatefulWidget {
-  const BodyNakerKabkotLapus({super.key});
+class BodyNakerKabkotKegiatan extends StatefulWidget {
+  const BodyNakerKabkotKegiatan({super.key});
 
   @override
-  State<BodyNakerKabkotLapus> createState() => _BodyNakerKabkotLapusState();
+  State<BodyNakerKabkotKegiatan> createState() =>
+      _BodyNakerKabkotKegiatanState();
 }
 
-class _BodyNakerKabkotLapusState extends State<BodyNakerKabkotLapus> {
-  RepositoryNakerKabkotLapus repositoryNakerKabkot =
-      RepositoryNakerKabkotLapus();
+class _BodyNakerKabkotKegiatanState extends State<BodyNakerKabkotKegiatan> {
+  RepositoryNakerKabkotKegiatan repositoryNakerKabkot =
+      RepositoryNakerKabkotKegiatan();
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -121,11 +122,11 @@ class _BodyNakerKabkotLapusState extends State<BodyNakerKabkotLapus> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    NakerkabkotLapusA(),
-                    NakerkabkotLapusB(),
-                    NakerkabkotLapusC(),
-                    NakerkabkotLapusD(),
-                    NakerkabkotLapusE(),
+                    NakerkabkotKegiatanA(),
+                    NakerkabkotKegiatanB(),
+                    NakerkabkotKegiatanC(),
+                    NakerkabkotKegiatanD(),
+                    NakerkabkotKegiatanE(),
                   ]),
                 ),
               );
