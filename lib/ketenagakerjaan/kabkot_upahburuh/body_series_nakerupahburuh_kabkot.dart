@@ -111,7 +111,7 @@ class _BodySeriesNakerkabkotUpahState extends State<BodySeriesNakerkabkotUpah> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    NakerkabkotUpahA(),
+                    NakerkabkotUpahAA(),
                     NakerkabkotUpahB(),
                     NakerkabkotUpahC(),
                     NakerkabkotUpahD(),

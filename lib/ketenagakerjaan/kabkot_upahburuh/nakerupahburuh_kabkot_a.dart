@@ -56,16 +56,16 @@ class ModelNakerKabkotUpah {
   }
 }
 
-class NakerkabkotUpahA extends StatefulWidget {
-  const NakerkabkotUpahA({Key? key}) : super(key: key);
+class NakerkabkotUpahAA extends StatefulWidget {
+  const NakerkabkotUpahAA({Key? key}) : super(key: key);
 
   @override
-  State<NakerkabkotUpahA> createState() => _NakerkabkotUpahAState();
+  State<NakerkabkotUpahAA> createState() => _NakerkabkotUpahAAState();
 }
 
 RepositoryNakerKabkotUpah repositorynaker = RepositoryNakerKabkotUpah();
 
-class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
+class _NakerkabkotUpahAAState extends State<NakerkabkotUpahAA> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
