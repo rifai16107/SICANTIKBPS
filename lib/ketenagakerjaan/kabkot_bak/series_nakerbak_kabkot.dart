@@ -19,7 +19,7 @@ class _SeriesNakerBakkabkot extends State<SeriesNakerBakkabkot> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PENDUDUK BEKERJA",
+          "BUKAN ANGKATAN KERJA (BAK)",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
