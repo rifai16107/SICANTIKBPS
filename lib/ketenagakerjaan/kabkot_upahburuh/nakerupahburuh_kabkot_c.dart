@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
 
-//umk 2021
+//upah buruh 2021
 
 class RepositoryNakerKabkotUpah {
   final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-upahburuh';

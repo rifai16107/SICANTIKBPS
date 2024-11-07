@@ -1,17 +1,17 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_umk/grafik_nakerumk_kabkot.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/grafik_upahlkpr_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class BodyGrafikNakerumkkabkot extends StatefulWidget {
-  const BodyGrafikNakerumkkabkot({super.key});
+class BodyGrafikUpahlkprkabkot extends StatefulWidget {
+  const BodyGrafikUpahlkprkabkot({super.key});
 
   @override
-  State<BodyGrafikNakerumkkabkot> createState() => _BodyGrafikNakerumkkabkot();
+  State<BodyGrafikUpahlkprkabkot> createState() => _BodyGrafikUpahlkprkabkot();
 }
 
-class _BodyGrafikNakerumkkabkot extends State<BodyGrafikNakerumkkabkot> {
+class _BodyGrafikUpahlkprkabkot extends State<BodyGrafikUpahlkprkabkot> {
   @override
   Widget build(BuildContext context) {
     var screenHeight = MediaQuery.of(context).size.height -
@@ -22,7 +22,7 @@ class _BodyGrafikNakerumkkabkot extends State<BodyGrafikNakerumkkabkot> {
         child: Scaffold(
       appBar: AppBar(
         title: const Text(
-          'UMK Kabupaten/Kota di Jawa Tengah',
+          'Rata-Rata Upah Kabupaten/Kota di Jawa Tengah',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -48,7 +48,7 @@ class _BodyGrafikNakerumkkabkot extends State<BodyGrafikNakerumkkabkot> {
                 child: Column(
                   children: [
                     Flexible(
-                      child: GrafikNakerumkkabkot(),
+                      child: GrafikUpahlkprkabkot(),
                     ),
                   ],
                 ),

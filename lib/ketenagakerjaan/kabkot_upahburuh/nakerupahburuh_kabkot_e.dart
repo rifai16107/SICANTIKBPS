@@ -3,10 +3,14 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/body_grafik_upahlaki_kabkota.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/body_grafik_upahperempuan_kabkota.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/body_grafik_upahlkpr_kabkota.dart';
 
-//umk 2023
+//upah buruh 2023
 
 class RepositoryNakerKabkotUpah {
   final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-upahburuh';
@@ -2782,7 +2786,10 @@ class _NakerkabkotUpahEState extends State<NakerkabkotUpahE> {
                           //Total
 
                           Container(
-                            padding: const EdgeInsets.all(1),
+                             padding: const EdgeInsets.only(
+                                  top: 4,
+                                  left: 4,
+                                  bottom: 90),
                             alignment: Alignment.centerLeft,
                             child: RichText(
                               textAlign: TextAlign.left,
@@ -2818,6 +2825,96 @@ class _NakerkabkotUpahEState extends State<NakerkabkotUpahE> {
           return const Center(child: CircularProgressIndicator(strokeWidth: 3));
         }
       },
-    ));
+    ),
+    floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
+      floatingActionButton: SpeedDial(
+          icon: Icons.bar_chart_outlined,
+          visible: true,
+          //mini:true,
+          //animatedIcon:AnimatedIcons.menu_close,
+          activeIcon: Icons.close,
+          buttonSize: const Size(45, 45),
+          curve: Curves.elasticInOut,
+          direction: SpeedDialDirection.up,
+          //animatedIconTheme: const IconThemeData(size: 25),
+          //animatedIcon: AnimatedIcons.list_view,
+          closeManually: false,
+          children: [
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikUpahlkkabkot(),
+                        direction: AxisDirection.left));
+              },
+              label: 'Upah Laki-laki',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikUpahprabkot(),
+                        direction: AxisDirection.left));
+              },
+              label: 'Upah Perempuan',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikUpahlkprkabkot(),
+                        direction: AxisDirection.left));
+              },
+              label: 'Upah Laki+Perempuan',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+          ]),
+    );
+  }
+}
+
+class CustomPageRoute extends PageRouteBuilder {
+  final Widget child;
+  final AxisDirection direction;
+
+  CustomPageRoute({required this.child, this.direction = AxisDirection.left})
+      : super(
+            transitionDuration: const Duration(milliseconds: 200),
+            reverseTransitionDuration: const Duration(milliseconds: 200),
+            pageBuilder: (context, animation, secondaryAnimation) => child);
+
+  @override
+  Widget buildTransitions(BuildContext context, Animation<double> animation,
+          Animation<double> secondaryAnimation, Widget child) =>
+      SlideTransition(
+        position: Tween<Offset>(begin: getBeginOffset(), end: Offset.zero)
+            .animate(animation),
+        child: child,
+      );
+  Offset getBeginOffset() {
+    switch (direction) {
+      case AxisDirection.up:
+        return const Offset(0, 1);
+      case AxisDirection.down:
+        return const Offset(0, -1);
+      case AxisDirection.right:
+        return const Offset(-1, 0);
+      case AxisDirection.left:
+        return const Offset(1, 0);
+    }
   }
 }
