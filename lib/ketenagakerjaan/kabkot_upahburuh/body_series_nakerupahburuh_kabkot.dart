@@ -104,6 +104,9 @@ class _BodySeriesNakerkabkotUpahState extends State<BodySeriesNakerkabkotUpah> {
                         Tab(
                           text: thn_n4,
                         ),
+                        Tab(
+                          text: thn_n5,
+                        ),
                       ],
                     ),
                   ),

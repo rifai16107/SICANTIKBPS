@@ -6,10 +6,10 @@ class SeriesNakerkabkotUpah extends StatefulWidget {
   const SeriesNakerkabkotUpah({super.key});
 
   @override
-  State<SeriesNakerkabkotUpah> createState() => _SeriesNakerkabkotUmk();
+  State<SeriesNakerkabkotUpah> createState() => _SeriesNakerkabkotUpah();
 }
 
-class _SeriesNakerkabkotUmk extends State<SeriesNakerkabkotUpah> {
+class _SeriesNakerkabkotUpah extends State<SeriesNakerkabkotUpah> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
