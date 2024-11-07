@@ -1,19 +1,17 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pertumbuhan_ekonomi/pertumbuhan_ekonomi_kabkot/grafik_pertumbuhanekonomi_kabkot.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_umk/grafik_nakerumk_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class BodyGrafikPertumbEkonomiKabkot extends StatefulWidget {
-  const BodyGrafikPertumbEkonomiKabkot({super.key});
+class BodyGrafikNakerumkkabkot extends StatefulWidget {
+  const BodyGrafikNakerumkkabkot({super.key});
 
   @override
-  State<BodyGrafikPertumbEkonomiKabkot> createState() =>
-      _BodyGrafikPertumbEkonomiKabkot();
+  State<BodyGrafikNakerumkkabkot> createState() => _BodyGrafikNakerumkkabkot();
 }
 
-class _BodyGrafikPertumbEkonomiKabkot
-    extends State<BodyGrafikPertumbEkonomiKabkot> {
+class _BodyGrafikNakerumkkabkot extends State<BodyGrafikNakerumkkabkot> {
   @override
   Widget build(BuildContext context) {
     var screenHeight = MediaQuery.of(context).size.height -
@@ -24,7 +22,7 @@ class _BodyGrafikPertumbEkonomiKabkot
         child: Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Pertumbuhan Ekonomi Kabupaten/Kota di Jawa Tengah',
+          'UMK Kabupaten/Kota di Jawa Tengah',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -50,7 +48,7 @@ class _BodyGrafikPertumbEkonomiKabkot
                 child: Column(
                   children: [
                     Flexible(
-                      child: GrafikPertumbEkonomiKabkot(),
+                      child: GrafikNakerumkkabkot(),
                     ),
                   ],
                 ),
