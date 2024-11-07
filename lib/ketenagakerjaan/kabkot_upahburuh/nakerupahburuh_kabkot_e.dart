@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
 
-//umk 2021-2022
+//umk 2023
 
-class RepositoryNakerKabkotUmk {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-umk';
+class RepositoryNakerKabkotUpah {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-upahburuh';
 
   Future getData() async {
     try {
@@ -18,7 +18,7 @@ class RepositoryNakerKabkotUmk {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isinaker) => ModelNakerKabkotUmk.fromJson(isinaker))
+            .map((isinaker) => ModelNakerKabkotUpah.fromJson(isinaker))
             .toList();
       }
     } catch (isinaker) {
@@ -28,50 +28,44 @@ class RepositoryNakerKabkotUmk {
   }
 }
 
-class ModelNakerKabkotUmk {
+class ModelNakerKabkotUpah {
   final int id;
   final String wilayah;
-  final String umk_n1;
-  final String umk_n2;
-  final String umk_n3;
-  final String umk_n4;
-  final String umk_n5;
+  final String lk_n5;
+  final String pr_n5;
+  final String lkpr_n5;
   final String tahun;
 
-  ModelNakerKabkotUmk(
+  ModelNakerKabkotUpah(
       {required this.id,
       required this.wilayah,
-      required this.umk_n1,
-      required this.umk_n2,
-      required this.umk_n3,
-      required this.umk_n4,
-      required this.umk_n5,
+      required this.lk_n5,
+      required this.pr_n5,
+      required this.lkpr_n5,
       required this.tahun});
 
-  factory ModelNakerKabkotUmk.fromJson(Map<String, dynamic> json) {
-    return ModelNakerKabkotUmk(
+  factory ModelNakerKabkotUpah.fromJson(Map<String, dynamic> json) {
+    return ModelNakerKabkotUpah(
       id: json['id'],
       wilayah: json['wilayah'],
-      umk_n1: json['umk_n1'],
-      umk_n2: json['umk_n2'],
-      umk_n3: json['umk_n3'],
-      umk_n4: json['umk_n4'],
-      umk_n5: json['umk_n5'],
+      lk_n5: json['lk_n5'],
+      pr_n5: json['pr_n5'],
+      lkpr_n5: json['lkpr_n5'],
       tahun: json['tahun'],
     );
   }
 }
 
-class NakerkabkotUmkB extends StatefulWidget {
-  const NakerkabkotUmkB({Key? key}) : super(key: key);
+class NakerkabkotUpahA extends StatefulWidget {
+  const NakerkabkotUpahA({Key? key}) : super(key: key);
 
   @override
-  State<NakerkabkotUmkB> createState() => _NakerkabkotUmkBState();
+  State<NakerkabkotUpahA> createState() => _NakerkabkotUpahAState();
 }
 
-RepositoryNakerKabkotUmk repositorynaker = RepositoryNakerKabkotUmk();
+RepositoryNakerKabkotUpah repositorynaker = RepositoryNakerKabkotUpah();
 
-class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
+class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -124,80 +118,115 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
               String kab34 = "75. " + isinaker[index = 33].wilayah;
               String kab35 = "76. " + isinaker[index = 34].wilayah;
 
-              double umkN2_1 = double.parse(isinaker[index = 0].umk_n2);
-              double umkN2_2 = double.parse(isinaker[index = 1].umk_n2);
-              double umkN2_3 = double.parse(isinaker[index = 2].umk_n2);
-              double umkN2_4 = double.parse(isinaker[index = 3].umk_n2);
-              double umkN2_5 = double.parse(isinaker[index = 4].umk_n2);
-              double umkN2_6 = double.parse(isinaker[index = 5].umk_n2);
-              double umkN2_7 = double.parse(isinaker[index = 6].umk_n2);
-              double umkN2_8 = double.parse(isinaker[index = 7].umk_n2);
-              double umkN2_9 = double.parse(isinaker[index = 8].umk_n2);
-              double umkN2_10 = double.parse(isinaker[index = 9].umk_n2);
-              double umkN2_11 = double.parse(isinaker[index = 10].umk_n2);
-              double umkN2_12 = double.parse(isinaker[index = 11].umk_n2);
-              double umkN2_13 = double.parse(isinaker[index = 12].umk_n2);
-              double umkN2_14 = double.parse(isinaker[index = 13].umk_n2);
-              double umkN2_15 = double.parse(isinaker[index = 14].umk_n2);
-              double umkN2_16 = double.parse(isinaker[index = 15].umk_n2);
-              double umkN2_17 = double.parse(isinaker[index = 16].umk_n2);
-              double umkN2_18 = double.parse(isinaker[index = 17].umk_n2);
-              double umkN2_19 = double.parse(isinaker[index = 18].umk_n2);
-              double umkN2_20 = double.parse(isinaker[index = 19].umk_n2);
-              double umkN2_21 = double.parse(isinaker[index = 20].umk_n2);
-              double umkN2_22 = double.parse(isinaker[index = 21].umk_n2);
-              double umkN2_23 = double.parse(isinaker[index = 22].umk_n2);
-              double umkN2_24 = double.parse(isinaker[index = 23].umk_n2);
-              double umkN2_25 = double.parse(isinaker[index = 24].umk_n2);
-              double umkN2_26 = double.parse(isinaker[index = 25].umk_n2);
-              double umkN2_27 = double.parse(isinaker[index = 26].umk_n2);
-              double umkN2_28 = double.parse(isinaker[index = 27].umk_n2);
-              double umkN2_29 = double.parse(isinaker[index = 28].umk_n2);
-              double umkN2_30 = double.parse(isinaker[index = 29].umk_n2);
-              double umkN2_31 = double.parse(isinaker[index = 30].umk_n2);
-              double umkN2_32 = double.parse(isinaker[index = 31].umk_n2);
-              double umkN2_33 = double.parse(isinaker[index = 32].umk_n2);
-              double umkN2_34 = double.parse(isinaker[index = 33].umk_n2);
-              double umkN2_35 = double.parse(isinaker[index = 34].umk_n2);
+              double lk_1 = double.parse(isinaker[index = 0].lk_n5);
+              double lk_2 = double.parse(isinaker[index = 1].lk_n5);
+              double lk_3 = double.parse(isinaker[index = 2].lk_n5);
+              double lk_4 = double.parse(isinaker[index = 3].lk_n5);
+              double lk_5 = double.parse(isinaker[index = 4].lk_n5);
+              double lk_6 = double.parse(isinaker[index = 5].lk_n5);
+              double lk_7 = double.parse(isinaker[index = 6].lk_n5);
+              double lk_8 = double.parse(isinaker[index = 7].lk_n5);
+              double lk_9 = double.parse(isinaker[index = 8].lk_n5);
+              double lk_10 = double.parse(isinaker[index = 9].lk_n5);
+              double lk_11 = double.parse(isinaker[index = 10].lk_n5);
+              double lk_12 = double.parse(isinaker[index = 11].lk_n5);
+              double lk_13 = double.parse(isinaker[index = 12].lk_n5);
+              double lk_14 = double.parse(isinaker[index = 13].lk_n5);
+              double lk_15 = double.parse(isinaker[index = 14].lk_n5);
+              double lk_16 = double.parse(isinaker[index = 15].lk_n5);
+              double lk_17 = double.parse(isinaker[index = 16].lk_n5);
+              double lk_18 = double.parse(isinaker[index = 17].lk_n5);
+              double lk_19 = double.parse(isinaker[index = 18].lk_n5);
+              double lk_20 = double.parse(isinaker[index = 19].lk_n5);
+              double lk_21 = double.parse(isinaker[index = 20].lk_n5);
+              double lk_22 = double.parse(isinaker[index = 21].lk_n5);
+              double lk_23 = double.parse(isinaker[index = 22].lk_n5);
+              double lk_24 = double.parse(isinaker[index = 23].lk_n5);
+              double lk_25 = double.parse(isinaker[index = 24].lk_n5);
+              double lk_26 = double.parse(isinaker[index = 25].lk_n5);
+              double lk_27 = double.parse(isinaker[index = 26].lk_n5);
+              double lk_28 = double.parse(isinaker[index = 27].lk_n5);
+              double lk_29 = double.parse(isinaker[index = 28].lk_n5);
+              double lk_30 = double.parse(isinaker[index = 29].lk_n5);
+              double lk_31 = double.parse(isinaker[index = 30].lk_n5);
+              double lk_32 = double.parse(isinaker[index = 31].lk_n5);
+              double lk_33 = double.parse(isinaker[index = 32].lk_n5);
+              double lk_34 = double.parse(isinaker[index = 33].lk_n5);
+              double lk_35 = double.parse(isinaker[index = 34].lk_n5);
 
-              double umkN3_1 = double.parse(isinaker[index = 0].umk_n3);
-              double umkN3_2 = double.parse(isinaker[index = 1].umk_n3);
-              double umkN3_3 = double.parse(isinaker[index = 2].umk_n3);
-              double umkN3_4 = double.parse(isinaker[index = 3].umk_n3);
-              double umkN3_5 = double.parse(isinaker[index = 4].umk_n3);
-              double umkN3_6 = double.parse(isinaker[index = 5].umk_n3);
-              double umkN3_7 = double.parse(isinaker[index = 6].umk_n3);
-              double umkN3_8 = double.parse(isinaker[index = 7].umk_n3);
-              double umkN3_9 = double.parse(isinaker[index = 8].umk_n3);
-              double umkN3_10 = double.parse(isinaker[index = 9].umk_n3);
-              double umkN3_11 = double.parse(isinaker[index = 10].umk_n3);
-              double umkN3_12 = double.parse(isinaker[index = 11].umk_n3);
-              double umkN3_13 = double.parse(isinaker[index = 12].umk_n3);
-              double umkN3_14 = double.parse(isinaker[index = 13].umk_n3);
-              double umkN3_15 = double.parse(isinaker[index = 14].umk_n3);
-              double umkN3_16 = double.parse(isinaker[index = 15].umk_n3);
-              double umkN3_17 = double.parse(isinaker[index = 16].umk_n3);
-              double umkN3_18 = double.parse(isinaker[index = 17].umk_n3);
-              double umkN3_19 = double.parse(isinaker[index = 18].umk_n3);
-              double umkN3_20 = double.parse(isinaker[index = 19].umk_n3);
-              double umkN3_21 = double.parse(isinaker[index = 20].umk_n3);
-              double umkN3_22 = double.parse(isinaker[index = 21].umk_n3);
-              double umkN3_23 = double.parse(isinaker[index = 22].umk_n3);
-              double umkN3_24 = double.parse(isinaker[index = 23].umk_n3);
-              double umkN3_25 = double.parse(isinaker[index = 24].umk_n3);
-              double umkN3_26 = double.parse(isinaker[index = 25].umk_n3);
-              double umkN3_27 = double.parse(isinaker[index = 26].umk_n3);
-              double umkN3_28 = double.parse(isinaker[index = 27].umk_n3);
-              double umkN3_29 = double.parse(isinaker[index = 28].umk_n3);
-              double umkN3_30 = double.parse(isinaker[index = 29].umk_n3);
-              double umkN3_31 = double.parse(isinaker[index = 30].umk_n3);
-              double umkN3_32 = double.parse(isinaker[index = 31].umk_n3);
-              double umkN3_33 = double.parse(isinaker[index = 32].umk_n3);
-              double umkN3_34 = double.parse(isinaker[index = 33].umk_n3);
-              double umkN3_35 = double.parse(isinaker[index = 34].umk_n3);
+              double pr_1 = double.parse(isinaker[index = 0].pr_n5);
+              double pr_2 = double.parse(isinaker[index = 1].pr_n5);
+              double pr_3 = double.parse(isinaker[index = 2].pr_n5);
+              double pr_4 = double.parse(isinaker[index = 3].pr_n5);
+              double pr_5 = double.parse(isinaker[index = 4].pr_n5);
+              double pr_6 = double.parse(isinaker[index = 5].pr_n5);
+              double pr_7 = double.parse(isinaker[index = 6].pr_n5);
+              double pr_8 = double.parse(isinaker[index = 7].pr_n5);
+              double pr_9 = double.parse(isinaker[index = 8].pr_n5);
+              double pr_10 = double.parse(isinaker[index = 9].pr_n5);
+              double pr_11 = double.parse(isinaker[index = 10].pr_n5);
+              double pr_12 = double.parse(isinaker[index = 11].pr_n5);
+              double pr_13 = double.parse(isinaker[index = 12].pr_n5);
+              double pr_14 = double.parse(isinaker[index = 13].pr_n5);
+              double pr_15 = double.parse(isinaker[index = 14].pr_n5);
+              double pr_16 = double.parse(isinaker[index = 15].pr_n5);
+              double pr_17 = double.parse(isinaker[index = 16].pr_n5);
+              double pr_18 = double.parse(isinaker[index = 17].pr_n5);
+              double pr_19 = double.parse(isinaker[index = 18].pr_n5);
+              double pr_20 = double.parse(isinaker[index = 19].pr_n5);
+              double pr_21 = double.parse(isinaker[index = 20].pr_n5);
+              double pr_22 = double.parse(isinaker[index = 21].pr_n5);
+              double pr_23 = double.parse(isinaker[index = 22].pr_n5);
+              double pr_24 = double.parse(isinaker[index = 23].pr_n5);
+              double pr_25 = double.parse(isinaker[index = 24].pr_n5);
+              double pr_26 = double.parse(isinaker[index = 25].pr_n5);
+              double pr_27 = double.parse(isinaker[index = 26].pr_n5);
+              double pr_28 = double.parse(isinaker[index = 27].pr_n5);
+              double pr_29 = double.parse(isinaker[index = 28].pr_n5);
+              double pr_30 = double.parse(isinaker[index = 29].pr_n5);
+              double pr_31 = double.parse(isinaker[index = 30].pr_n5);
+              double pr_32 = double.parse(isinaker[index = 31].pr_n5);
+              double pr_33 = double.parse(isinaker[index = 32].pr_n5);
+              double pr_34 = double.parse(isinaker[index = 33].pr_n5);
+              double pr_35 = double.parse(isinaker[index = 34].pr_n5);
 
-              String thn2 = isinaker[index = 0].tahun.substring(5, 9);
-              String thn3 = isinaker[index = 0].tahun.substring(10, 14);
+              double lkpr_1 = double.parse(isinaker[index = 0].lkpr_n5);
+              double lkpr_2 = double.parse(isinaker[index = 1].lkpr_n5);
+              double lkpr_3 = double.parse(isinaker[index = 2].lkpr_n5);
+              double lkpr_4 = double.parse(isinaker[index = 3].lkpr_n5);
+              double lkpr_5 = double.parse(isinaker[index = 4].lkpr_n5);
+              double lkpr_6 = double.parse(isinaker[index = 5].lkpr_n5);
+              double lkpr_7 = double.parse(isinaker[index = 6].lkpr_n5);
+              double lkpr_8 = double.parse(isinaker[index = 7].lkpr_n5);
+              double lkpr_9 = double.parse(isinaker[index = 8].lkpr_n5);
+              double lkpr_10 = double.parse(isinaker[index = 9].lkpr_n5);
+              double lkpr_11 = double.parse(isinaker[index = 10].lkpr_n5);
+              double lkpr_12 = double.parse(isinaker[index = 11].lkpr_n5);
+              double lkpr_13 = double.parse(isinaker[index = 12].lkpr_n5);
+              double lkpr_14 = double.parse(isinaker[index = 13].lkpr_n5);
+              double lkpr_15 = double.parse(isinaker[index = 14].lkpr_n5);
+              double lkpr_16 = double.parse(isinaker[index = 15].lkpr_n5);
+              double lkpr_17 = double.parse(isinaker[index = 16].lkpr_n5);
+              double lkpr_18 = double.parse(isinaker[index = 17].lkpr_n5);
+              double lkpr_19 = double.parse(isinaker[index = 18].lkpr_n5);
+              double lkpr_20 = double.parse(isinaker[index = 19].lkpr_n5);
+              double lkpr_21 = double.parse(isinaker[index = 20].lkpr_n5);
+              double lkpr_22 = double.parse(isinaker[index = 21].lkpr_n5);
+              double lkpr_23 = double.parse(isinaker[index = 22].lkpr_n5);
+              double lkpr_24 = double.parse(isinaker[index = 23].lkpr_n5);
+              double lkpr_25 = double.parse(isinaker[index = 24].lkpr_n5);
+              double lkpr_26 = double.parse(isinaker[index = 25].lkpr_n5);
+              double lkpr_27 = double.parse(isinaker[index = 26].lkpr_n5);
+              double lkpr_28 = double.parse(isinaker[index = 27].lkpr_n5);
+              double lkpr_29 = double.parse(isinaker[index = 28].lkpr_n5);
+              double lkpr_30 = double.parse(isinaker[index = 29].lkpr_n5);
+              double lkpr_31 = double.parse(isinaker[index = 30].lkpr_n5);
+              double lkpr_32 = double.parse(isinaker[index = 31].lkpr_n5);
+              double lkpr_33 = double.parse(isinaker[index = 32].lkpr_n5);
+              double lkpr_34 = double.parse(isinaker[index = 33].lkpr_n5);
+              double lkpr_35 = double.parse(isinaker[index = 34].lkpr_n5);
+
+              //String thn1 = isinaker[index = 0].tahun.substring(0, 4);
 
               return Scaffold(
                   body: Column(
@@ -213,7 +242,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                       children: [
                         Flexible(
                           fit: FlexFit.tight,
-                          flex: 3,
+                          flex: 4,
                           child: Container(
                             padding: const EdgeInsets.only(
                                 right: 20, top: 3, bottom: 3),
@@ -232,11 +261,11 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                           flex: 2,
                           child: Container(
                             padding: const EdgeInsets.only(
-                                right: 10, top: 3, bottom: 3),
-                            child: Text(
-                              thn2,
+                                left: 10, top: 3, bottom: 3),
+                            child: const Text(
+                              'Laki-laki',
                               textAlign: TextAlign.center,
-                              style: const TextStyle(
+                              style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 13,
                                   color: Colors.white),
@@ -248,11 +277,27 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                           flex: 2,
                           child: Container(
                             padding: const EdgeInsets.only(
-                                right: 5, top: 3, bottom: 3),
-                            child: Text(
-                              thn3,
+                                left: 10, top: 3, bottom: 3),
+                            child: const Text(
+                              'Perempuan',
                               textAlign: TextAlign.center,
-                              style: const TextStyle(
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            padding: const EdgeInsets.only(
+                                left: 10, top: 3, bottom: 3),
+                            child: const Text(
+                              'Lk+Pr',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 13,
                                   color: Colors.white),
@@ -282,7 +327,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -297,13 +342,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_1, 0),
+                                      Format.convertTo(lk_1, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -312,13 +357,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_1, 0),
+                                      Format.convertTo(pr_1, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_1, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -338,7 +398,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -352,12 +412,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_2, 0),
+                                      Format.convertTo(lk_2, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -366,12 +426,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_2, 0),
+                                      Format.convertTo(pr_2, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_2, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -391,7 +467,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -406,13 +482,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_3, 0),
+                                      Format.convertTo(lk_3, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -421,13 +497,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_3, 0),
+                                      Format.convertTo(pr_3, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_3, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -447,7 +538,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -461,12 +552,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_4, 0),
+                                      Format.convertTo(lk_4, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -475,12 +566,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_4, 0),
+                                      Format.convertTo(pr_4, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_4, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -500,7 +607,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -515,13 +622,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_5, 0),
+                                      Format.convertTo(lk_5, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -530,13 +637,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_5, 0),
+                                      Format.convertTo(pr_5, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_5, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -556,7 +678,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -570,13 +692,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_6, 0),
+                                      Format.convertTo(lk_6, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -585,18 +707,32 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_6, 0),
+                                      Format.convertTo(pr_6, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                        fontWeight: FontWeight.normal,
-                                        fontSize: 13,
-                                      ),
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_6, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
@@ -612,7 +748,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -627,13 +763,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_7, 0),
+                                      Format.convertTo(lk_7, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -642,13 +778,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_7, 0),
+                                      Format.convertTo(pr_7, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_7, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -668,7 +819,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
@@ -683,13 +834,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_8, 0),
+                                      Format.convertTo(lk_8, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -698,13 +849,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_8, 0),
+                                      Format.convertTo(pr_8, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_8, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -724,7 +890,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -739,13 +905,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_9, 0),
+                                      Format.convertTo(lk_9, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -754,13 +920,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_9, 0),
+                                      Format.convertTo(pr_9, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_9, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -780,7 +961,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
@@ -795,13 +976,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_10, 0),
+                                      Format.convertTo(lk_10, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -810,13 +991,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_10, 0),
+                                      Format.convertTo(pr_10, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_10, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -837,7 +1033,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -852,13 +1048,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_11, 0),
+                                      Format.convertTo(lk_11, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -867,13 +1063,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_11, 0),
+                                      Format.convertTo(pr_11, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_11, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -893,7 +1104,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
@@ -908,13 +1119,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_12, 0),
+                                      Format.convertTo(lk_12, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -923,13 +1134,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_12, 0),
+                                      Format.convertTo(pr_12, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_12, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -949,7 +1175,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -964,13 +1190,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_13, 0),
+                                      Format.convertTo(lk_13, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -979,13 +1205,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_13, 0),
+                                      Format.convertTo(pr_13, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_13, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1005,7 +1246,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
@@ -1020,13 +1261,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_14, 0),
+                                      Format.convertTo(lk_14, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1035,13 +1276,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_14, 0),
+                                      Format.convertTo(pr_14, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_14, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1061,7 +1317,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1076,13 +1332,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_15, 0),
+                                      Format.convertTo(lk_15, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1091,13 +1347,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_15, 0),
+                                      Format.convertTo(pr_15, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_15, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1117,7 +1388,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
@@ -1132,13 +1403,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_16, 0),
+                                      Format.convertTo(lk_16, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1147,13 +1418,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_16, 0),
+                                      Format.convertTo(pr_16, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_16, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1173,7 +1459,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1188,13 +1474,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_17, 0),
+                                      Format.convertTo(lk_17, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1203,13 +1489,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_17, 0),
+                                      Format.convertTo(pr_17, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_17, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1229,7 +1530,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
@@ -1244,13 +1545,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_18, 0),
+                                      Format.convertTo(lk_18, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1259,13 +1560,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_18, 0),
+                                      Format.convertTo(pr_18, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_18, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1285,7 +1601,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1300,13 +1616,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_19, 0),
+                                      Format.convertTo(lk_19, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1315,13 +1631,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_19, 0),
+                                      Format.convertTo(pr_19, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_19, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1341,7 +1672,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
@@ -1356,13 +1687,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_20, 0),
+                                      Format.convertTo(lk_20, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1371,13 +1702,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_20, 0),
+                                      Format.convertTo(pr_20, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_20, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1397,7 +1743,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1412,13 +1758,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_21, 0),
+                                      Format.convertTo(lk_21, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1427,13 +1773,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_21, 0),
+                                      Format.convertTo(pr_21, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_21, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1453,7 +1814,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
@@ -1468,13 +1829,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.grey.shade200,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_22, 0),
+                                      Format.convertTo(lk_22, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1483,13 +1844,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
-                                    color: Colors.grey.shade200,
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_22, 0),
+                                      Format.convertTo(pr_22, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_22, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1509,7 +1885,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1524,13 +1900,13 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_23, 0),
+                                      Format.convertTo(lk_23, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1539,13 +1915,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_23, 0),
+                                      Format.convertTo(pr_23, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_23, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1565,7 +1956,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -1579,12 +1970,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_24, 0),
+                                      Format.convertTo(lk_24, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1593,12 +1984,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_24, 0),
+                                      Format.convertTo(pr_24, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_24, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1618,7 +2025,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -1632,12 +2039,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_25, 0),
+                                      Format.convertTo(lk_25, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1646,12 +2053,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_25, 0),
+                                      Format.convertTo(pr_25, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_25, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1663,7 +2086,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             ),
                           ),
 
-                          //umkN3_kalongan
+                          //Pekalongan
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
@@ -1671,7 +2094,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -1685,12 +2108,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_26, 0),
+                                      Format.convertTo(lk_26, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1699,12 +2122,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_26, 0),
+                                      Format.convertTo(pr_26, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_26, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1716,7 +2155,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             ),
                           ),
 
-                          //umkN3_malang
+                          //Pemalang
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
@@ -1724,7 +2163,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -1738,12 +2177,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_27, 0),
+                                      Format.convertTo(lk_27, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1752,12 +2191,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_27, 0),
+                                      Format.convertTo(pr_27, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_27, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1777,7 +2232,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -1791,12 +2246,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_28, 0),
+                                      Format.convertTo(lk_28, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1805,12 +2260,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_28, 0),
+                                      Format.convertTo(pr_28, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_28, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1830,7 +2301,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -1844,12 +2315,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_29, 0),
+                                      Format.convertTo(lk_29, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1858,12 +2329,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_29, 0),
+                                      Format.convertTo(pr_29, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_29, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1883,7 +2370,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
@@ -1897,12 +2384,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_30, 0),
+                                      Format.convertTo(lk_30, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1911,12 +2398,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_30, 0),
+                                      Format.convertTo(pr_30, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_30, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1936,7 +2439,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -1950,12 +2453,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_31, 0),
+                                      Format.convertTo(lk_31, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1964,12 +2467,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_31, 0),
+                                      Format.convertTo(pr_31, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_31, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -1989,7 +2508,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -2003,12 +2522,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_32, 0),
+                                      Format.convertTo(lk_32, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -2017,12 +2536,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_32, 0),
+                                      Format.convertTo(pr_32, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_32, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -2042,7 +2577,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -2056,12 +2591,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_33, 0),
+                                      Format.convertTo(lk_33, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -2070,12 +2605,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_33, 0),
+                                      Format.convertTo(pr_33, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_33, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -2095,7 +2646,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
@@ -2109,12 +2660,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_34, 0),
+                                      Format.convertTo(lk_34, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -2123,12 +2674,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_34, 0),
+                                      Format.convertTo(pr_34, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_34, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -2148,7 +2715,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.34 * screenWidth,
+                                  width: 0.31 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
@@ -2162,12 +2729,12 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN2_35, 0),
+                                      Format.convertTo(lk_35, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,
@@ -2176,12 +2743,28 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.31 * screenWidth,
+                                  width: 0.21 * screenWidth,
                                   child: Container(
+                                    color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 10, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(umkN3_35, 0),
+                                      Format.convertTo(pr_35, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.21 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 10, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_35, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 13,

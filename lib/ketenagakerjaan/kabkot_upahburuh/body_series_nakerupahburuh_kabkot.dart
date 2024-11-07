@@ -1,16 +1,17 @@
-
 // ignore_for_file: non_constant_identifier_names
 
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_umk/nakerumk_kabkot_a.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_umk/nakerumk_kabkot_b.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_umk/nakerumk_kabkot_c.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/nakerupahburuh_kabkot_a.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/nakerupahburuh_kabkot_b.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/nakerupahburuh_kabkot_c.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/nakerupahburuh_kabkot_d.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/nakerupahburuh_kabkot_e.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
-class RepositoryNakerKabkotUmk {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-umk';
+class RepositoryNakerKabkotUpah {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-upahburuh';
 
   Future getData() async {
     try {
@@ -19,7 +20,7 @@ class RepositoryNakerKabkotUmk {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isinaker) => ModelNakerKabkotUmk.fromJson(isinaker))
+            .map((isinaker) => ModelNakerKabkotUpah.fromJson(isinaker))
             .toList();
       }
     } catch (isinaker) {
@@ -29,37 +30,33 @@ class RepositoryNakerKabkotUmk {
   }
 }
 
-
-class ModelNakerKabkotUmk {
+class ModelNakerKabkotUpah {
   final int id;
   final String wilayah;
   final String tahun;
 
-  ModelNakerKabkotUmk(
-      {required this.id,
-      required this.wilayah,
-      required this.tahun});
+  ModelNakerKabkotUpah(
+      {required this.id, required this.wilayah, required this.tahun});
 
-  factory ModelNakerKabkotUmk.fromJson(Map<String, dynamic> json) {
-    return ModelNakerKabkotUmk(
+  factory ModelNakerKabkotUpah.fromJson(Map<String, dynamic> json) {
+    return ModelNakerKabkotUpah(
       id: json['id'],
       wilayah: json['wilayah'],
       tahun: json['tahun'],
     );
   }
 }
-class BodySeriesNakerkabkotUmk extends StatefulWidget {
-  const BodySeriesNakerkabkotUmk({super.key});
+
+class BodySeriesNakerkabkotUpah extends StatefulWidget {
+  const BodySeriesNakerkabkotUpah({super.key});
 
   @override
-  State<BodySeriesNakerkabkotUmk> createState() =>
-      _BodySeriesNakerkabkotUmkState();
+  State<BodySeriesNakerkabkotUpah> createState() =>
+      _BodySeriesNakerkabkotUpahState();
 }
 
-class _BodySeriesNakerkabkotUmkState
-    extends State<BodySeriesNakerkabkotUmk> {
-  RepositoryNakerKabkotUmk repositorynaker =
-      RepositoryNakerKabkotUmk();
+class _BodySeriesNakerkabkotUpahState extends State<BodySeriesNakerkabkotUpah> {
+  RepositoryNakerKabkotUpah repositorynaker = RepositoryNakerKabkotUpah();
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -77,12 +74,13 @@ class _BodySeriesNakerkabkotUmkState
             itemBuilder: (context, index) {
               //tahun 2019-2023
               String thn_n1 = isinaker[index = 0].tahun.substring(0, 4);
-              String thn_n2_n3 = isinaker[index = 0].tahun.substring(5, 9)+"-"+isinaker[index = 0].tahun.substring(10, 14);
-              String thn_n4_n5 =
-                  isinaker[index = 0].tahun.substring(15, 19)+"-"+isinaker[index = 0].tahun.substring(20, 24);
-  
+              String thn_n2 = isinaker[index = 0].tahun.substring(5, 9);
+              String thn_n3 = isinaker[index = 0].tahun.substring(10, 14);
+              String thn_n4 = isinaker[index = 0].tahun.substring(15, 19);
+              String thn_n5 = isinaker[index = 0].tahun.substring(20, 24);
+
               return DefaultTabController(
-                length: 3,
+                length: 5,
                 child: Scaffold(
                   appBar: AppBar(
                     backgroundColor: Colors.black,
@@ -98,19 +96,23 @@ class _BodySeriesNakerkabkotUmkState
                           text: thn_n1,
                         ),
                         Tab(
-                          text: thn_n2_n3,
+                          text: thn_n2,
                         ),
                         Tab(
-                          text: thn_n4_n5,
+                          text: thn_n3,
                         ),
-                        
+                        Tab(
+                          text: thn_n4,
+                        ),
                       ],
                     ),
                   ),
                   body: const TabBarView(children: [
-                    NakerkabkotUmkA(),
-                    NakerkabkotUmkB(),
-                    NakerkabkotUmkC(),
+                    NakerkabkotUpahA(),
+                    NakerkabkotUpahB(),
+                    NakerkabkotUpahC(),
+                    NakerkabkotUpahD(),
+                    NakerkabkotUpahE(),
                   ]),
                 ),
               );
