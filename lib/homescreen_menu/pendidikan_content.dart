@@ -190,7 +190,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                           flex: 10,
                           fit: FlexFit.tight,
                           child: Text(
-                            "beberapa Indikator Pendidikan Kabupaten/Kota Di Jawa Tengah",
+                            "Beberapa Indikator Pendidikan Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                           ),
                         ),
