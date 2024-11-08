@@ -190,7 +190,7 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                           flex: 10,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Kondisi Ketenagakerjaan Kabupaten Kota Di Jawa Tengah",
+                            "Kondisi Ketenagakerjaan Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                           ),
                         ),

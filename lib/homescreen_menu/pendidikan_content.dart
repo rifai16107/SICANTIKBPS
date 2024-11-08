@@ -1,14 +1,9 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings, prefer_const_literals_to_create_immutables
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_apm_apk.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_aps.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_sttb.dart';
-import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_amh.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_parsek.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/prasekolah/prasekolah.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_sarped.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkota.dart';
+import 'package:bps_cilacap/restAPI/repository_inflasi.dart';
 import 'package:flutter/material.dart';
 
 class pendidikanContent extends StatefulWidget {
@@ -18,7 +13,7 @@ class pendidikanContent extends StatefulWidget {
   State<pendidikanContent> createState() => _pendidikanContentState();
 }
 
-RepositoryApmApk repositoryapmapk = RepositoryApmApk();
+RepositoryInflasi repositoryinflasi = RepositoryInflasi();
 
 class _pendidikanContentState extends State<pendidikanContent> {
   @override
@@ -30,7 +25,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'INDIKATOR PENDIDIKAN',
+          'PENDIDIKAN',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -59,7 +54,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.centerLeft,
                             child: const Text(
-                              "Pendidikan",
+                              "Ketimpangan",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -69,114 +64,19 @@ class _pendidikanContentState extends State<pendidikanContent> {
                             child: Column(
                               children: [
                                 const Text(
-                                  "   Pendidikan merupakan salah satu komponen penting dalam merencanakan pembangunan ataupun melakukan evaluasi pembangunan yang telah dilaksanakan. Indikator Pendidikan (yaitu Harapan Lama Sekolah/HLS dan Rata-rata Lama Sekolah/RLS) juga merupakan salah satu komponen yang digunakan dalam menghitung Indeks Pembangunan Manusia (IPM). Indikator pendidikan lainnya yang sering digunakan dalam mengukur pencapaian kemajuan dibidang pendidikan diantaranya adalah Angka Partisipasi Sekolah (APS), Angka Partisipasi Murni (APM), Angka PArtisipasi Kasar (APK), Angka Melek Huruf (AMH), Pendidikan yang ditamatkan dll.",
-                                  textAlign: TextAlign.justify,
-                                ),
-                                const Divider(),
-                                const Text(
-                                  "   APM, APK, APS dihitung pada setiap jenjang pendidikan dengan maksud untuk melihat sejauh mana partisipasi sekolah pada setiap jenjang pendidikan sehingga gambaran umum kontinuitas pendidikan pada setiap jenjang dapat diamati. Angka Partisipasi Sekolah ini disisi lain selain terkait dengan kesadaran masyarakat serta kemampuannya mengikuti pendidikan pada suatu jenjang (--kemampuan secara edukasional ataupun finasial-) juga sangat terkait dengan ketersedian fasilitas atau sarana pendidikan di suatu daerah.",
-                                  textAlign: TextAlign.justify,
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(10),
-                            alignment: Alignment.centerLeft,
-                            child: const Text(
-                              "Konsep Penghitungan Angka Melek Huruf (AMH)",
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(0),
-                            alignment: Alignment.centerLeft,
-                            child: Column(
-                              children: [
-                                const Text(
-                                  "   Angka Melek Huruf dihitung berdasarkan jumlah penduduk yang bisa membaca dan menulis dibagi dengan banyaknya jumlah penduduk. Dengan asumsi seseorang memulai pendidikan pada usia 7 tahun atau tamat SD pada usia 12 tahun, AMH biasanya dihitung pada kelompok penduduk usia 10 tahun ke atas atau 15 tahun ke atas.",
+                                  "   Uukuran Tingkat Ketimpangan merupakan salah tolak ukur untuk melihat pemerataan tingkat kesejahteraan. Ukuran yang biasa digunakan untuk melihat tingkat ketimpangan atau pemerataan kesejahteraan diantaranya adalah distirbusi pendapatan menurut kriteria Bank Dunia  dan Angka Gini rasio (Koefisien Gini).",
                                   textAlign: TextAlign.justify,
                                 ),
                                 const Text(
-                                  "   Secara umum penghitungan AMH adalah sebagai berikut :",
+                                  "   Distribusi pendapatan menurut kriteria Bank Dunia membagi kelompok penduduk menjadi 3 kelompok, yaitu Desil ke- 4 yang merupakan 40 persen penduduk berpendapatan rendah, desil ke- 8 merupakan 40 persen penduduk berpendapatan sedang dan desil ke- 10 merupakan 20 persen penduduk berpendapatan tinggi.",
                                 ),
-                                Image.asset(
-                                  './assets/images/modal/amh_modal.jpeg',
-                                  alignment: Alignment.center,
-                                  scale: 2.5,
+                                const Text(
+                                  "   Ukuran lain adalah Angka Gini Rasio atau Koefisien Gini, angka ini berada pada rnage 0 - 1, semakin mendekati '0'  tingkat ketimpangan semakin rendah atau tingkat pemerataan kesejahteraan semakinbaik. Sementara mendekati '1' tingkat ketimpangan semakin tinggi atau tingkat pemerataan kesejahteraan semakini buruk.",
                                 ),
                               ],
                             ),
                           ),
                           const Divider(),
-                          Container(
-                            padding: const EdgeInsets.all(5),
-                            alignment: Alignment.centerLeft,
-                            child: const Text(
-                              "Konsep Penghitungan APM, APK dan APS",
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(5),
-                            alignment: Alignment.centerLeft,
-                            child: Column(
-                              children: [
-                                const Text(
-                                  "   APM dan APK dihitung menurut jenjang pendidikan, dengan mengacu pada usia sekolah yang berlaku di Indonesia yaitu SD (7-12 tahun), SLTP (13-15 tahun), SLTA (16-18 tahun) serta Perguruan Tinggi/PT (19-24 tahun).",
-                                  textAlign: TextAlign.justify,
-                                ),
-                                const Text(
-                                  "   Angka Partisipasi Murni (APM) dihitung dengan rumusan sebagai berikut:",
-                                ),
-                                Image.asset(
-                                  './assets/images/modal/apm_modal.jpeg',
-                                  alignment: Alignment.center,
-                                  scale: 2.5,
-                                ),
-                                const Text(
-                                  "   Sedangkan Angka Partisipasi Kasar (APK) dihitung menggunakan:",
-                                ),
-                                Image.asset(
-                                  './assets/images/modal/apk_modal.jpeg',
-                                  alignment: Alignment.center,
-                                  scale: 2.5,
-                                ),
-                                const Text(
-                                  "   Dan Angka Partisipasi Sekolah (APS) dihitung berdasarkan rumus:",
-                                ),
-                                Image.asset(
-                                  './assets/images/modal/aps_modal.jpeg',
-                                  alignment: Alignment.center,
-                                  scale: 2,
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(5),
-                            alignment: Alignment.centerLeft,
-                            child: const Text(
-                              "Partisipasi Sekolah",
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(5),
-                            alignment: Alignment.centerLeft,
-                            child: Column(
-                              children: [
-                                const Text(
-                                  "   Partisipasi sekolah menunjukkan persentase penduduk yang tercatat dan aktif bersekolah pada jenjang pendidikan formal atau yang setara (Paket A/B/C). Tidak/Belum pernah bersekolah adalah seseorang yang sama sekali belum pernah menduduki/terdaftar pada suatu jenjang pendidikan. Sementara yang dimaksud dengan Tidak Bersekolah Lagi adalah seseorang yang pernah tercatat aktif/terdaftar pada suatu jenjang pendidikan tertentu tetapi saat ini sudah tidak bersekolah lagi, bisa karena lulus/tamas sekolah atau bisa juga karena putus sekolah.",
-                                  textAlign: TextAlign.justify,
-                                ),
-                                const Text(
-                                  "   Banyaknya fasilitas pendidikan/jumlah sekolah, guru dan murid dihitung pada setiap jenis jenjang pendidikan baik pendidikan umum, berbasis keagamaan ataupun pendidikan kejuruan yang diselenggarakan oleh Negeri ataupun Swasta.",
-                                  textAlign: TextAlign.justify,
-                                ),
-                              ],
-                            ),
-                          ),
                         ],
                       ),
                     ]);
@@ -208,7 +108,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
                               horizontal: 5,
                             ),
                             child: Text(
-                              "Indikator Pendidikan Kabupaten Cilacap",
+                              "Beberapa Indikator Pendidikan Kabupaten Cilacap dan Kabupaten/Kota Di Jawa Tengah",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15),
                               textAlign: TextAlign.center,
@@ -238,19 +138,19 @@ class _pendidikanContentState extends State<pendidikanContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesApmApk(),
+                          child: const pendidikanCilacap(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.08,
+                    height: screenHeight * 0.1,
                     child: Row(
                       children: [
                         const Flexible(
-                          flex: 16,
+                          flex: 10,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Angka Partisipasi Murni (APM) dan Angka Partisipasi Kasar (APK)",
+                            "Beberapa Indikator Pendidikan Kabupaten Cilacap",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -278,19 +178,19 @@ class _pendidikanContentState extends State<pendidikanContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesAps(),
+                          child: const pendidikanKabkota(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.08,
+                    height: screenHeight * 0.1,
                     child: Row(
                       children: [
                         const Flexible(
-                          flex: 16,
+                          flex: 10,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Angka Partisipasi Sekolah (APS) Menurut Kelompok Usia Sekolah",
+                            "beberapa Indikator Pendidikan Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -304,204 +204,8 @@ class _pendidikanContentState extends State<pendidikanContent> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 50,
               color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const SeriesSttb(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Persentase Penduduk Usia 15+ Menurut Pendidikan Tertinggi Yang Ditamatkan",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const SeriesAmh(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Angka Melek Huruf (AMH) Penduduk Usia 15+ Menurut Kelompok Umur",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const SeriesParsek(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Persentase Penduduk Usia 5+ Menurut Partisipasi Sekolah",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const SeriesSarped(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Banyaknya Sarana Pendidikan Menurut Jenjang Pendidikan",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const PendidikanPrasekolah(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Partisipasi Pendidikan Pra Sekolah Penduduk Usia 0-6 Tahun",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
             ),
             Flexible(
               flex: 1,
