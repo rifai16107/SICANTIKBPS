@@ -118,6 +118,7 @@ class _GrafikUpahprkabkotState extends State<GrafikUpahprkabkot> {
               String wilayah33 = isinaker[index = 32].wilayah;
               String wilayah34 = isinaker[index = 33].wilayah;
               String wilayah35 = isinaker[index = 34].wilayah;
+              String wilayah36 = isinaker[index = 35].wilayah;
 
               double upah1 = double.parse(isinaker[index = 0].pr_n5) / 1000;
               double upah2 = double.parse(isinaker[index = 1].pr_n5) / 1000;
@@ -154,6 +155,7 @@ class _GrafikUpahprkabkotState extends State<GrafikUpahprkabkot> {
               double upah33 = double.parse(isinaker[index = 32].pr_n5) / 1000;
               double upah34 = double.parse(isinaker[index = 33].pr_n5) / 1000;
               double upah35 = double.parse(isinaker[index = 34].pr_n5) / 1000;
+              double upah36 = double.parse(isinaker[index = 35].pr_n5) / 1000;
 
               String thn5 = isinaker[index = 0].tahun.substring(20, 24);
 
@@ -194,6 +196,7 @@ class _GrafikUpahprkabkotState extends State<GrafikUpahprkabkot> {
                 _ChartData(wilayah33, upah33),
                 _ChartData(wilayah34, upah34),
                 _ChartData(wilayah35, upah35),
+                _ChartData(wilayah36, upah36),
               ];
               tooltip = TooltipBehavior(enable: true);
 
@@ -202,7 +205,8 @@ class _GrafikUpahprkabkotState extends State<GrafikUpahprkabkot> {
                 width: screenWidth,
                 child: SfCartesianChart(
                     title: ChartTitle(
-                        text: 'Rata-Rata Upah Buruh/Karyawan/Pegawai Perempuan Menurut Kabupaten/Kota di Jawa Tengah Tahun $thn5',
+                        text:
+                            'Rata-Rata Upah Buruh/Karyawan/Pegawai Perempuan Menurut Kabupaten/Kota di Jawa Tengah Tahun $thn5',
                         // Aligns the chart title to left
                         alignment: ChartAlignment.center,
                         textStyle: const TextStyle(

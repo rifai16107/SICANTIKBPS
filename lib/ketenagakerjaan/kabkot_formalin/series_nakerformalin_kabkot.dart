@@ -1,15 +1,16 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_upahburuh/body_series_nakerupahburuh_kabkot.dart';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_formalin/body_series_nakerformalin_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesNakerkabkotUpah extends StatefulWidget {
-  const SeriesNakerkabkotUpah({super.key});
+class SeriesNakerkabkotFormalin extends StatefulWidget {
+  const SeriesNakerkabkotFormalin({super.key});
 
   @override
-  State<SeriesNakerkabkotUpah> createState() => _SeriesNakerkabkotUpah();
+  State<SeriesNakerkabkotFormalin> createState() =>
+      _SeriesNakerkabkotFormalin();
 }
 
-class _SeriesNakerkabkotUpah extends State<SeriesNakerkabkotUpah> {
+class _SeriesNakerkabkotFormalin extends State<SeriesNakerkabkotFormalin> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -18,7 +19,7 @@ class _SeriesNakerkabkotUpah extends State<SeriesNakerkabkotUpah> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "UPAH BURUH DI JATENG",
+          "FORMAL DAN INFORMAL",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -39,13 +40,13 @@ class _SeriesNakerkabkotUpah extends State<SeriesNakerkabkotUpah> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.094,
+              height: screenHeight * 0.090,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Rata-Rata Upah Buruh/Karyawan/Pegawai Sebulan Menurut Jenis Kelamin dan Kabupaten/Kota di Provinsi Jawa Tengah (Rupiah)",
+                    "Rata-Rata Upah/Gaji Bersih Sebulan Pekerja Formal dan Informal Menurut Kabupaten/Kota di Provinsi Jawa Tengah (Ribuan Rupiah)",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -55,7 +56,7 @@ class _SeriesNakerkabkotUpah extends State<SeriesNakerkabkotUpah> {
             Flexible(
               child: SizedBox(
                 height: screenHeight * 0.95,
-                child: const BodySeriesNakerkabkotUpah(),
+                child: const BodySeriesNakerkabkotFormalin(),
               ),
             ),
           ],

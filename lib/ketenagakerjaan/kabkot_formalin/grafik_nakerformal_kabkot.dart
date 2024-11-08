@@ -7,8 +7,8 @@ import 'package:http/http.dart' as http;
 
 // ignore_for_file: camel_case_types, non_constant_identifier_names
 
-class RepositoryNakerKabkotUpah {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-upahburuh';
+class RepositoryNakerKabkotFormalin {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/nakerkabkot-formalinformal';
 
   Future getData() async {
     try {
@@ -17,7 +17,7 @@ class RepositoryNakerKabkotUpah {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isinaker) => ModelNakerKabkotUpah.fromJson(isinaker))
+            .map((isinaker) => ModelNakerKabkotFormalin.fromJson(isinaker))
             .toList();
       }
     } catch (isinaker) {
@@ -27,43 +27,42 @@ class RepositoryNakerKabkotUpah {
   }
 }
 
-class ModelNakerKabkotUpah {
+class ModelNakerKabkotFormalin {
   final int id;
   final String wilayah;
-  final String lk_n5;
-  final String pr_n5;
-  final String lkpr_n5;
+  final String formal_n5;
+  final String informal_n5;
   final String tahun;
 
-  ModelNakerKabkotUpah(
+  ModelNakerKabkotFormalin(
       {required this.id,
       required this.wilayah,
-      required this.lk_n5,
-      required this.pr_n5,
-      required this.lkpr_n5,
+      required this.formal_n5,
+      required this.informal_n5,
       required this.tahun});
 
-  factory ModelNakerKabkotUpah.fromJson(Map<String, dynamic> json) {
-    return ModelNakerKabkotUpah(
+  factory ModelNakerKabkotFormalin.fromJson(Map<String, dynamic> json) {
+    return ModelNakerKabkotFormalin(
       id: json['id'],
       wilayah: json['wilayah'],
-      lk_n5: json['lk_n5'],
-      pr_n5: json['pr_n5'],
-      lkpr_n5: json['lkpr_n5'],
+      formal_n5: json['formal_n5'],
+      informal_n5: json['informal_n5'],
       tahun: json['tahun'],
     );
   }
 }
 
-class GrafikUpahlkprkabkot extends StatefulWidget {
-  const GrafikUpahlkprkabkot({Key? key}) : super(key: key);
+class GrafikNakerformalkabkot extends StatefulWidget {
+  const GrafikNakerformalkabkot({Key? key}) : super(key: key);
 
   @override
-  _GrafikUpahlkprkabkotState createState() => _GrafikUpahlkprkabkotState();
+  _GrafikNakerformalkabkotState createState() =>
+      _GrafikNakerformalkabkotState();
 }
 
-class _GrafikUpahlkprkabkotState extends State<GrafikUpahlkprkabkot> {
-  RepositoryNakerKabkotUpah repositorynaker = RepositoryNakerKabkotUpah();
+class _GrafikNakerformalkabkotState extends State<GrafikNakerformalkabkot> {
+  RepositoryNakerKabkotFormalin repositorynaker =
+      RepositoryNakerKabkotFormalin();
   int key = 0;
   late List<_ChartData> data;
   late TooltipBehavior tooltip;
@@ -120,83 +119,83 @@ class _GrafikUpahlkprkabkotState extends State<GrafikUpahlkprkabkot> {
               String wilayah35 = isinaker[index = 34].wilayah;
               String wilayah36 = isinaker[index = 35].wilayah;
 
-              double upah1 = double.parse(isinaker[index = 0].lkpr_n5) / 1000;
-              double upah2 = double.parse(isinaker[index = 1].lkpr_n5) / 1000;
-              double upah3 = double.parse(isinaker[index = 2].lkpr_n5) / 1000;
-              double upah4 = double.parse(isinaker[index = 3].lkpr_n5) / 1000;
-              double upah5 = double.parse(isinaker[index = 4].lkpr_n5) / 1000;
-              double upah6 = double.parse(isinaker[index = 5].lkpr_n5) / 1000;
-              double upah7 = double.parse(isinaker[index = 6].lkpr_n5) / 1000;
-              double upah8 = double.parse(isinaker[index = 7].lkpr_n5) / 1000;
-              double upah9 = double.parse(isinaker[index = 8].lkpr_n5) / 1000;
-              double upah10 = double.parse(isinaker[index = 9].lkpr_n5) / 1000;
-              double upah11 = double.parse(isinaker[index = 10].lkpr_n5) / 1000;
-              double upah12 = double.parse(isinaker[index = 11].lkpr_n5) / 1000;
-              double upah13 = double.parse(isinaker[index = 12].lkpr_n5) / 1000;
-              double upah14 = double.parse(isinaker[index = 13].lkpr_n5) / 1000;
-              double upah15 = double.parse(isinaker[index = 14].lkpr_n5) / 1000;
-              double upah16 = double.parse(isinaker[index = 15].lkpr_n5) / 1000;
-              double upah17 = double.parse(isinaker[index = 16].lkpr_n5) / 1000;
-              double upah18 = double.parse(isinaker[index = 17].lkpr_n5) / 1000;
-              double upah19 = double.parse(isinaker[index = 18].lkpr_n5) / 1000;
-              double upah20 = double.parse(isinaker[index = 19].lkpr_n5) / 1000;
-              double upah21 = double.parse(isinaker[index = 20].lkpr_n5) / 1000;
-              double upah22 = double.parse(isinaker[index = 21].lkpr_n5) / 1000;
-              double upah23 = double.parse(isinaker[index = 22].lkpr_n5) / 1000;
-              double upah24 = double.parse(isinaker[index = 23].lkpr_n5) / 1000;
-              double upah25 = double.parse(isinaker[index = 24].lkpr_n5) / 1000;
-              double upah26 = double.parse(isinaker[index = 25].lkpr_n5) / 1000;
-              double upah27 = double.parse(isinaker[index = 26].lkpr_n5) / 1000;
-              double upah28 = double.parse(isinaker[index = 27].lkpr_n5) / 1000;
-              double upah29 = double.parse(isinaker[index = 28].lkpr_n5) / 1000;
-              double upah30 = double.parse(isinaker[index = 29].lkpr_n5) / 1000;
-              double upah31 = double.parse(isinaker[index = 30].lkpr_n5) / 1000;
-              double upah32 = double.parse(isinaker[index = 31].lkpr_n5) / 1000;
-              double upah33 = double.parse(isinaker[index = 32].lkpr_n5) / 1000;
-              double upah34 = double.parse(isinaker[index = 33].lkpr_n5) / 1000;
-              double upah35 = double.parse(isinaker[index = 34].lkpr_n5) / 1000;
-              double upah36 = double.parse(isinaker[index = 35].lkpr_n5) / 1000;
+              double formal1 = double.parse(isinaker[index = 0].formal_n5);
+              double formal2 = double.parse(isinaker[index = 1].formal_n5);
+              double formal3 = double.parse(isinaker[index = 2].formal_n5);
+              double formal4 = double.parse(isinaker[index = 3].formal_n5);
+              double formal5 = double.parse(isinaker[index = 4].formal_n5);
+              double formal6 = double.parse(isinaker[index = 5].formal_n5);
+              double formal7 = double.parse(isinaker[index = 6].formal_n5);
+              double formal8 = double.parse(isinaker[index = 7].formal_n5);
+              double formal9 = double.parse(isinaker[index = 8].formal_n5);
+              double formal10 = double.parse(isinaker[index = 9].formal_n5);
+              double formal11 = double.parse(isinaker[index = 10].formal_n5);
+              double formal12 = double.parse(isinaker[index = 11].formal_n5);
+              double formal13 = double.parse(isinaker[index = 12].formal_n5);
+              double formal14 = double.parse(isinaker[index = 13].formal_n5);
+              double formal15 = double.parse(isinaker[index = 14].formal_n5);
+              double formal16 = double.parse(isinaker[index = 15].formal_n5);
+              double formal17 = double.parse(isinaker[index = 16].formal_n5);
+              double formal18 = double.parse(isinaker[index = 17].formal_n5);
+              double formal19 = double.parse(isinaker[index = 18].formal_n5);
+              double formal20 = double.parse(isinaker[index = 19].formal_n5);
+              double formal21 = double.parse(isinaker[index = 20].formal_n5);
+              double formal22 = double.parse(isinaker[index = 21].formal_n5);
+              double formal23 = double.parse(isinaker[index = 22].formal_n5);
+              double formal24 = double.parse(isinaker[index = 23].formal_n5);
+              double formal25 = double.parse(isinaker[index = 24].formal_n5);
+              double formal26 = double.parse(isinaker[index = 25].formal_n5);
+              double formal27 = double.parse(isinaker[index = 26].formal_n5);
+              double formal28 = double.parse(isinaker[index = 27].formal_n5);
+              double formal29 = double.parse(isinaker[index = 28].formal_n5);
+              double formal30 = double.parse(isinaker[index = 29].formal_n5);
+              double formal31 = double.parse(isinaker[index = 30].formal_n5);
+              double formal32 = double.parse(isinaker[index = 31].formal_n5);
+              double formal33 = double.parse(isinaker[index = 32].formal_n5);
+              double formal34 = double.parse(isinaker[index = 33].formal_n5);
+              double formal35 = double.parse(isinaker[index = 34].formal_n5);
+              double formal36 = double.parse(isinaker[index = 34].formal_n5);
 
               String thn5 = isinaker[index = 0].tahun.substring(20, 24);
 
               toString();
               data = [
-                _ChartData(wilayah1, upah1),
-                _ChartData(wilayah2, upah2),
-                _ChartData(wilayah3, upah3),
-                _ChartData(wilayah4, upah4),
-                _ChartData(wilayah5, upah5),
-                _ChartData(wilayah6, upah6),
-                _ChartData(wilayah7, upah7),
-                _ChartData(wilayah8, upah8),
-                _ChartData(wilayah9, upah9),
-                _ChartData(wilayah10, upah10),
-                _ChartData(wilayah11, upah11),
-                _ChartData(wilayah12, upah12),
-                _ChartData(wilayah13, upah13),
-                _ChartData(wilayah14, upah14),
-                _ChartData(wilayah15, upah15),
-                _ChartData(wilayah16, upah16),
-                _ChartData(wilayah17, upah17),
-                _ChartData(wilayah18, upah18),
-                _ChartData(wilayah19, upah19),
-                _ChartData(wilayah20, upah20),
-                _ChartData(wilayah21, upah21),
-                _ChartData(wilayah22, upah22),
-                _ChartData(wilayah23, upah23),
-                _ChartData(wilayah24, upah24),
-                _ChartData(wilayah25, upah25),
-                _ChartData(wilayah26, upah26),
-                _ChartData(wilayah27, upah27),
-                _ChartData(wilayah28, upah28),
-                _ChartData(wilayah29, upah29),
-                _ChartData(wilayah30, upah30),
-                _ChartData(wilayah31, upah31),
-                _ChartData(wilayah32, upah32),
-                _ChartData(wilayah33, upah33),
-                _ChartData(wilayah34, upah34),
-                _ChartData(wilayah35, upah35),
-                _ChartData(wilayah36, upah36),
+                _ChartData(wilayah1, formal1),
+                _ChartData(wilayah2, formal2),
+                _ChartData(wilayah3, formal3),
+                _ChartData(wilayah4, formal4),
+                _ChartData(wilayah5, formal5),
+                _ChartData(wilayah6, formal6),
+                _ChartData(wilayah7, formal7),
+                _ChartData(wilayah8, formal8),
+                _ChartData(wilayah9, formal9),
+                _ChartData(wilayah10, formal10),
+                _ChartData(wilayah11, formal11),
+                _ChartData(wilayah12, formal12),
+                _ChartData(wilayah13, formal13),
+                _ChartData(wilayah14, formal14),
+                _ChartData(wilayah15, formal15),
+                _ChartData(wilayah16, formal16),
+                _ChartData(wilayah17, formal17),
+                _ChartData(wilayah18, formal18),
+                _ChartData(wilayah19, formal19),
+                _ChartData(wilayah20, formal20),
+                _ChartData(wilayah21, formal21),
+                _ChartData(wilayah22, formal22),
+                _ChartData(wilayah23, formal23),
+                _ChartData(wilayah24, formal24),
+                _ChartData(wilayah25, formal25),
+                _ChartData(wilayah26, formal26),
+                _ChartData(wilayah27, formal27),
+                _ChartData(wilayah28, formal28),
+                _ChartData(wilayah29, formal29),
+                _ChartData(wilayah30, formal30),
+                _ChartData(wilayah31, formal31),
+                _ChartData(wilayah32, formal32),
+                _ChartData(wilayah33, formal33),
+                _ChartData(wilayah34, formal34),
+                _ChartData(wilayah35, formal35),
+                _ChartData(wilayah36, formal36),
               ];
               tooltip = TooltipBehavior(enable: true);
 
@@ -206,7 +205,7 @@ class _GrafikUpahlkprkabkotState extends State<GrafikUpahlkprkabkot> {
                 child: SfCartesianChart(
                     title: ChartTitle(
                         text:
-                            'Rata-Rata Upah Buruh/Karyawan/Pegawai Menurut Kabupaten/Kota di Jawa Tengah Tahun $thn5',
+                            'Rata-Rata Upah Bersih Sebulan Pekerja Formal Kabupaten/Kota di Jawa Tengah Tahun $thn5',
                         // Aligns the chart title to left
                         alignment: ChartAlignment.center,
                         textStyle: const TextStyle(
@@ -234,7 +233,7 @@ class _GrafikUpahlkprkabkotState extends State<GrafikUpahlkprkabkot> {
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         title: AxisTitle(
-                            text: 'Rata-rata upah (000 Rp)',
+                            text: 'Upah Bersih (000 Rp)',
                             textStyle: const TextStyle(
                               color: Color.fromARGB(255, 10, 10, 10),
                               fontFamily: 'Roboto',
@@ -271,8 +270,8 @@ class _GrafikUpahlkprkabkotState extends State<GrafikUpahlkprkabkot> {
                             // Renders the data label
                             isVisible: true,
                             textStyle: TextStyle(fontSize: 10)),
-                        name: 'Rata-rata upah (000 Rupiah)',
-                        color: const Color.fromARGB(255, 15, 102, 3),
+                        name: 'Upah Bersih (000 Rupiah)',
+                        color: const Color.fromRGBO(9, 0, 136, 1),
                       ),
                     ]),
               );

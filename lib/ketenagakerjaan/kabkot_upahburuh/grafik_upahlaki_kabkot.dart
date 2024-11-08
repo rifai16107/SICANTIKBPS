@@ -155,6 +155,7 @@ class _GrafikUpahlkkabkotState extends State<GrafikUpahlkkabkot> {
               double upah33 = double.parse(isinaker[index = 32].lk_n5) / 1000;
               double upah34 = double.parse(isinaker[index = 33].lk_n5) / 1000;
               double upah35 = double.parse(isinaker[index = 34].lk_n5) / 1000;
+              double upah36 = double.parse(isinaker[index = 35].lk_n5) / 1000;
 
               String thn5 = isinaker[index = 0].tahun.substring(20, 24);
 
@@ -195,6 +196,7 @@ class _GrafikUpahlkkabkotState extends State<GrafikUpahlkkabkot> {
                 _ChartData(wilayah33, upah33),
                 _ChartData(wilayah34, upah34),
                 _ChartData(wilayah35, upah35),
+                _ChartData(wilayah36, upah36),
               ];
               tooltip = TooltipBehavior(enable: true);
 
