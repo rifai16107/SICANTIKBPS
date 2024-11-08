@@ -2783,10 +2783,7 @@ class _NakerkabkotUpahEState extends State<NakerkabkotUpahE> {
                                 ],
                               ),
                             ),
-                            const Divider(
-                              thickness: 1,
-                              color: Colors.black38,
-                            ),
+                           
                             //Jateng
                             Container(
                               width: screenWidth * 1.0,
