@@ -118,6 +118,7 @@ class _GrafikUpahlkkabkotState extends State<GrafikUpahlkkabkot> {
               String wilayah33 = isinaker[index = 32].wilayah;
               String wilayah34 = isinaker[index = 33].wilayah;
               String wilayah35 = isinaker[index = 34].wilayah;
+              String wilayah36 = isinaker[index = 35].wilayah;
 
               double upah1 = double.parse(isinaker[index = 0].lk_n5) / 1000;
               double upah2 = double.parse(isinaker[index = 1].lk_n5) / 1000;
@@ -202,7 +203,8 @@ class _GrafikUpahlkkabkotState extends State<GrafikUpahlkkabkot> {
                 width: screenWidth,
                 child: SfCartesianChart(
                     title: ChartTitle(
-                        text: 'Rata-Rata Upah Buruh/Karyawan/Pegawai Laki-laki Menurut Kabupaten/Kota di Jawa Tengah Tahun $thn5',
+                        text:
+                            'Rata-Rata Upah Buruh/Karyawan/Pegawai Laki-laki Menurut Kabupaten/Kota di Jawa Tengah Tahun $thn5',
                         // Aligns the chart title to left
                         alignment: ChartAlignment.center,
                         textStyle: const TextStyle(

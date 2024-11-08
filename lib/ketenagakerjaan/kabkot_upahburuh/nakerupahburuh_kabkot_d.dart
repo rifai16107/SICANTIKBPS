@@ -117,6 +117,7 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
               String kab33 = "74. " + isinaker[index = 32].wilayah;
               String kab34 = "75. " + isinaker[index = 33].wilayah;
               String kab35 = "76. " + isinaker[index = 34].wilayah;
+              String kab36 = "    " + isinaker[index = 35].wilayah;
 
               double lk_1 = double.parse(isinaker[index = 0].lk_n4);
               double lk_2 = double.parse(isinaker[index = 1].lk_n4);
@@ -153,6 +154,7 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
               double lk_33 = double.parse(isinaker[index = 32].lk_n4);
               double lk_34 = double.parse(isinaker[index = 33].lk_n4);
               double lk_35 = double.parse(isinaker[index = 34].lk_n4);
+              double lk_36 = double.parse(isinaker[index = 35].lk_n4);
 
               double pr_1 = double.parse(isinaker[index = 0].pr_n4);
               double pr_2 = double.parse(isinaker[index = 1].pr_n4);
@@ -189,6 +191,7 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
               double pr_33 = double.parse(isinaker[index = 32].pr_n4);
               double pr_34 = double.parse(isinaker[index = 33].pr_n4);
               double pr_35 = double.parse(isinaker[index = 34].pr_n4);
+              double pr_36 = double.parse(isinaker[index = 35].pr_n4);
 
               double lkpr_1 = double.parse(isinaker[index = 0].lkpr_n4);
               double lkpr_2 = double.parse(isinaker[index = 1].lkpr_n4);
@@ -225,6 +228,7 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
               double lkpr_33 = double.parse(isinaker[index = 32].lkpr_n4);
               double lkpr_34 = double.parse(isinaker[index = 33].lkpr_n4);
               double lkpr_35 = double.parse(isinaker[index = 34].lkpr_n4);
+              double lkpr_36 = double.parse(isinaker[index = 35].lkpr_n4);
 
               //String thn1 = isinaker[index = 0].tahun.substring(0, 4);
 
@@ -2775,11 +2779,78 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
                               ],
                             ),
                           ),
-                          const Divider(
-                            thickness: 1,
-                            color: Colors.black38,
+
+                          //Jateng
+                          Container(
+                            width: screenWidth * 1.0,
+                            height: screenHeight * 0.045,
+                            color: Colors.blue,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 0.38 * screenWidth,
+                                  child: Container(
+                                    padding: const EdgeInsets.only(
+                                        right: 5, top: 1, bottom: 1),
+                                    child: Text(
+                                      kab36,
+                                      textAlign: TextAlign.left,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.20 * screenWidth,
+                                  child: Container(
+                                    padding: const EdgeInsets.only(
+                                        right: 5, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lk_36, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.20 * screenWidth,
+                                  child: Container(
+                                    padding: const EdgeInsets.only(
+                                        right: 5, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(pr_36, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.20 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 5, top: 1, bottom: 1),
+                                    child: Text(
+                                      Format.convertTo(lkpr_36, 0),
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 13,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                          //Total
 
                           Container(
                             padding: const EdgeInsets.all(1),
@@ -2794,7 +2865,8 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
                                       fontSize: 12),
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text: ' Survei Angkatan Kerja Nasional (Sakernas)',
+                                        text:
+                                            ' Survei Angkatan Kerja Nasional (Sakernas)',
                                         style: TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',
