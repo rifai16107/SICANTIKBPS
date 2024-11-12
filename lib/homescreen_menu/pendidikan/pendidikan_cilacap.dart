@@ -1,14 +1,14 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings, prefer_const_literals_to_create_immutables
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_apm_apk.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_aps.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_sttb.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/series_apm_apk.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/series_aps.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/series_sttb.dart';
 import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_amh.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_parsek.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/prasekolah/prasekolah.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_sarped.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/series_amh.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/series_parsek.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/prasekolah/prasekolah.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/series_sarped.dart';
 import 'package:flutter/material.dart';
 
 class pendidikanCilacap extends StatefulWidget {

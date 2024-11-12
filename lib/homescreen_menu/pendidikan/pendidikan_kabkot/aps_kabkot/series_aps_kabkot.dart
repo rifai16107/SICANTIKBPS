@@ -1,5 +1,5 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/body_aps.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_aps.dart';
 import 'package:flutter/material.dart';
 
 class SeriesAps extends StatefulWidget {

@@ -1,18 +1,18 @@
-import 'package:bps_cilacap/homescreen_menu/pendidikan/sttb/sttb_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/sttb/sttb_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/sttb/sttb_c.dart';
-import 'package:bps_cilacap/restAPI/repository_pendidikan_sttb.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/aps/aps_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/aps/aps_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/aps/aps_c.dart';
+import 'package:bps_cilacap/restAPI/repository_pendidikan_aps.dart';
 import 'package:flutter/material.dart';
 
-class BodySeriesSttb extends StatefulWidget {
-  const BodySeriesSttb({super.key});
+class BodySeriesAps extends StatefulWidget {
+  const BodySeriesAps({super.key});
 
   @override
-  State<BodySeriesSttb> createState() => _BodySeriesSttbState();
+  State<BodySeriesAps> createState() => _BodySeriesApsState();
 }
 
-class _BodySeriesSttbState extends State<BodySeriesSttb> {
-  RepositorySttb repositorysttb = RepositorySttb();
+class _BodySeriesApsState extends State<BodySeriesAps> {
+  RepositoryAps repositoryaps = RepositoryAps();
 
   @override
   Widget build(BuildContext context) {
@@ -22,16 +22,16 @@ class _BodySeriesSttbState extends State<BodySeriesSttb> {
     // ignore: unused_local_variable
     final screenWidth = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: repositorysttb.getData(),
+      future: repositoryaps.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isisttb = snapshot.data as List;
+          List isiaps = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String th1 = isisttb[index = 0].tahun;
-              String th2 = isisttb[index = 6].tahun;
-              String th3 = isisttb[index = 12].tahun;
+              String th1 = isiaps[index = 0].tahun;
+              String th2 = isiaps[index = 4].tahun;
+              String th3 = isiaps[index = 8].tahun;
 
               return DefaultTabController(
                 length: 3,
@@ -61,9 +61,9 @@ class _BodySeriesSttbState extends State<BodySeriesSttb> {
                   ),
                   body: const TabBarView(children: [
                     
-                    SttbA(),
-                    SttbB(),
-                    SttbC(),
+                    ApsA(),
+                    ApsB(),
+                    ApsC(),
                   ]),
                 ),
               );

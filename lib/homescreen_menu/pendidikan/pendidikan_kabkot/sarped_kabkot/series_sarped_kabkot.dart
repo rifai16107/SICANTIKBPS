@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/body_amh.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_sarped.dart';
 import 'package:flutter/material.dart';
 
-class SeriesAmh extends StatefulWidget {
-  const SeriesAmh({super.key});
+class SeriesSarped extends StatefulWidget {
+  const SeriesSarped({super.key});
 
   @override
-  State<SeriesAmh> createState() => _SeriesAmh();
+  State<SeriesSarped> createState() => _SeriesSarped();
 }
 
-class _SeriesAmh extends State<SeriesAmh> {
+class _SeriesSarped extends State<SeriesSarped> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -33,20 +33,19 @@ class _SeriesAmh extends State<SeriesAmh> {
             ),
           ),
         ),
-
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.065,
+              height: screenHeight * 0.07,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Angka Melek Huruf (AMH) Penduduk Usia 15+Menurut Kelompok Umur di Kabupaten Cilacap",
+                    "Jumlah Sekolah, Guru dan Murid di Sekolah Negeri dan Swasta Menurut Tahun Ajaran di Kabupaten Cilacap",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -56,7 +55,7 @@ class _SeriesAmh extends State<SeriesAmh> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesAmh(),
+                child: const BodySeriesSarped(),
               ),
             ),
           ],

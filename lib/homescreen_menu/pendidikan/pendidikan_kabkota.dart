@@ -1,14 +1,14 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings, prefer_const_literals_to_create_immutables
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_apm_apk.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_aps.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_sttb.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/series_apm_apk_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/series_aps_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/series_sttb_kabkot.dart';
 import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_amh.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_parsek.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/prasekolah/prasekolah.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/series_sarped.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/amh_kabkot/series_amh_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/series_parsek_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/prasekolah_kabkot/prasekolah.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot/series_sarped_kabkot.dart';
 import 'package:flutter/material.dart';
 
 class pendidikanKabkota extends StatefulWidget {
@@ -208,7 +208,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                               horizontal: 5,
                             ),
                             child: Text(
-                              "Indikator Pendidikan Kabupaten Cilacap",
+                              "Indikator Pendidikan Kabupaten/Kota di Jawa Tengah",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15),
                               textAlign: TextAlign.center,

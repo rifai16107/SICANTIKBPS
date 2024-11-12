@@ -1,18 +1,18 @@
-import 'package:bps_cilacap/homescreen_menu/pendidikan/apm_apk/apm_apk_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/apm_apk/apm_apk_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/apm_apk/apm_apk_c.dart';
-import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/sttb/sttb_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/sttb/sttb_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/sttb/sttb_c.dart';
+import 'package:bps_cilacap/restAPI/repository_pendidikan_sttb.dart';
 import 'package:flutter/material.dart';
 
-class BodySeriesApmApk extends StatefulWidget {
-  const BodySeriesApmApk({super.key});
+class BodySeriesSttb extends StatefulWidget {
+  const BodySeriesSttb({super.key});
 
   @override
-  State<BodySeriesApmApk> createState() => _BodySeriesApmApkState();
+  State<BodySeriesSttb> createState() => _BodySeriesSttbState();
 }
 
-class _BodySeriesApmApkState extends State<BodySeriesApmApk> {
-  RepositoryApmApk repositoryapmapk = RepositoryApmApk();
+class _BodySeriesSttbState extends State<BodySeriesSttb> {
+  RepositorySttb repositorysttb = RepositorySttb();
 
   @override
   Widget build(BuildContext context) {
@@ -22,16 +22,16 @@ class _BodySeriesApmApkState extends State<BodySeriesApmApk> {
     // ignore: unused_local_variable
     final screenWidth = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: repositoryapmapk.getData(),
+      future: repositorysttb.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isiapmapk = snapshot.data as List;
+          List isisttb = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String th1 = isiapmapk[index = 0].tahun;
-              String th2 = isiapmapk[index = 4].tahun;
-              String th3 = isiapmapk[index = 8].tahun;
+              String th1 = isisttb[index = 0].tahun;
+              String th2 = isisttb[index = 6].tahun;
+              String th3 = isisttb[index = 12].tahun;
 
               return DefaultTabController(
                 length: 3,
@@ -61,9 +61,9 @@ class _BodySeriesApmApkState extends State<BodySeriesApmApk> {
                   ),
                   body: const TabBarView(children: [
                     
-                    ApmApkA(),
-                    ApmApkB(),
-                    ApmApkC(),
+                    SttbA(),
+                    SttbB(),
+                    SttbC(),
                   ]),
                 ),
               );

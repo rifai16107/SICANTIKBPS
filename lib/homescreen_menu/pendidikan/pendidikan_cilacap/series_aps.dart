@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/body_parsek.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_aps.dart';
 import 'package:flutter/material.dart';
 
-class SeriesParsek extends StatefulWidget {
-  const SeriesParsek({super.key});
+class SeriesAps extends StatefulWidget {
+  const SeriesAps({super.key});
 
   @override
-  State<SeriesParsek> createState() => _SeriesParsek();
+  State<SeriesAps> createState() => _SeriesAps();
 }
 
-class _SeriesParsek extends State<SeriesParsek> {
+class _SeriesAps extends State<SeriesAps> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -33,7 +33,7 @@ class _SeriesParsek extends State<SeriesParsek> {
             ),
           ),
         ),
-     
+        
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
@@ -46,7 +46,7 @@ class _SeriesParsek extends State<SeriesParsek> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Partisipasi Sekolah Penduduk Usia 5+ di Kabupaten Cilacap",
+                    "Angka Partisipasi Sekolah Menurut Kelompok Usia Sekolah di Kabupaten Cilacap",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -56,7 +56,7 @@ class _SeriesParsek extends State<SeriesParsek> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesParsek(),
+                child: const BodySeriesAps(),
               ),
             ),
           ],

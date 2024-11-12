@@ -1,18 +1,18 @@
-import 'package:bps_cilacap/homescreen_menu/pendidikan/sarped/sarped_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/sarped/sarped_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/sarped/sarped_c.dart';
-import 'package:bps_cilacap/restAPI/repository_pendidikan_sarped.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/apm_apk/apm_apk_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/apm_apk/apm_apk_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/apm_apk/apm_apk_c.dart';
+import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
 import 'package:flutter/material.dart';
 
-class BodySeriesSarped extends StatefulWidget {
-  const BodySeriesSarped({super.key});
+class BodySeriesApmApk extends StatefulWidget {
+  const BodySeriesApmApk({super.key});
 
   @override
-  State<BodySeriesSarped> createState() => _BodySeriesSarpedState();
+  State<BodySeriesApmApk> createState() => _BodySeriesApmApkState();
 }
 
-class _BodySeriesSarpedState extends State<BodySeriesSarped> {
-  RepositorySarped repositorysarped = RepositorySarped();
+class _BodySeriesApmApkState extends State<BodySeriesApmApk> {
+  RepositoryApmApk repositoryapmapk = RepositoryApmApk();
 
   @override
   Widget build(BuildContext context) {
@@ -22,21 +22,22 @@ class _BodySeriesSarpedState extends State<BodySeriesSarped> {
     // ignore: unused_local_variable
     final screenWidth = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: repositorysarped.getData(),
+      future: repositoryapmapk.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isisarped = snapshot.data as List;
+          List isiapmapk = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String th1 = isisarped[index = 0].tahun;
-              String th2 = isisarped[index = 10].tahun;
-              String th3 = isisarped[index = 20].tahun;
+              String th1 = isiapmapk[index = 0].tahun;
+              String th2 = isiapmapk[index = 4].tahun;
+              String th3 = isiapmapk[index = 8].tahun;
 
               return DefaultTabController(
                 length: 3,
                 child: Scaffold(
                   appBar: AppBar(
+                    
                     backgroundColor: Colors.black,
                     leading: const Text(
                       " ",
@@ -59,9 +60,10 @@ class _BodySeriesSarpedState extends State<BodySeriesSarped> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    SarpedA(),
-                    SarpedB(),
-                    SarpedC(),
+                    
+                    ApmApkA(),
+                    ApmApkB(),
+                    ApmApkC(),
                   ]),
                 ),
               );

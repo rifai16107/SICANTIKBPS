@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/body_apm_apk.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_sarped.dart';
 import 'package:flutter/material.dart';
 
-class SeriesApmApk extends StatefulWidget {
-  const SeriesApmApk({super.key});
+class SeriesSarped extends StatefulWidget {
+  const SeriesSarped({super.key});
 
   @override
-  State<SeriesApmApk> createState() => _SeriesApmApk();
+  State<SeriesSarped> createState() => _SeriesSarped();
 }
 
-class _SeriesApmApk extends State<SeriesApmApk> {
+class _SeriesSarped extends State<SeriesSarped> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -33,20 +33,19 @@ class _SeriesApmApk extends State<SeriesApmApk> {
             ),
           ),
         ),
-        
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.065,
+              height: screenHeight * 0.09,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Angka Partisipasi Murni dan Angka Partisipasi Kasar di Kabupaten Cilacap",
+                    "Jumlah Sekolah, Guru dan Murid di Sekolah Negeri dan Swasta Menurut Tahun Ajaran di Kabupaten Cilacap",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -55,8 +54,8 @@ class _SeriesApmApk extends State<SeriesApmApk> {
             ),
             Flexible(
               child: SizedBox(
-                height: screenHeight,
-                child: const BodySeriesApmApk(),
+                height: screenHeight*0.95,
+                child: const BodySeriesSarped(),
               ),
             ),
           ],
