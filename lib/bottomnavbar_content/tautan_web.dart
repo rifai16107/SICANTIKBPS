@@ -974,7 +974,7 @@ class _TautanWebState extends State<TautanWeb> {
                                               TextButton(
                                                 onPressed: _launchUrlPDK,
                                                 child: Text(
-                                                    "Dinas Pendidikan dan Kebudayaan Kab. Cilacap"),
+                                                    "Disdikbud Kabupaten Cilacap"),
                                               )
                                             ],
                                           ),
