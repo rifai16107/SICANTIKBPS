@@ -7,7 +7,6 @@ import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_ka
 import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/amh_kabkot/series_amh_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/series_parsek_kabkot.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/prasekolah_kabkot/prasekolah.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot/series_sarped_kabkot.dart';
 import 'package:flutter/material.dart';
 
@@ -466,42 +465,6 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
             const Divider(
               height: 5,
               color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const PendidikanPrasekolah(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Partisipasi Pendidikan Pra Sekolah Penduduk Usia 0-6 Tahun",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
             ),
             Flexible(
               flex: 1,
