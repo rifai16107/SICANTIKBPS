@@ -250,6 +250,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah TK Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(
@@ -290,6 +291,8 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah RA Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
+
                           ),
                         ),
                         const Flexible(
@@ -330,6 +333,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah SD Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(
@@ -370,6 +374,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah MI Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(
@@ -410,6 +415,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah SLTP Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(
@@ -450,6 +456,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah MTs Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(
@@ -490,6 +497,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah SMU Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(
@@ -530,6 +538,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah SMK Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(
@@ -570,6 +579,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah MA Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(
@@ -601,7 +611,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.09,
+                    height: screenHeight * 0.15,
                     child: Row(
                       children: [
                         const Flexible(
@@ -610,6 +620,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           child: Text(
                             "Jumlah Perguruan Tinggi Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
                           ),
                         ),
                         const Flexible(

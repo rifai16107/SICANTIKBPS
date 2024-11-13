@@ -320,7 +320,7 @@ class _PdrbPengelContentState extends State<PdrbPengelContent> {
                           child: Text(
                             "PDRB ADHB Menurut Komponen Pengeluaran",
                             textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                            style: TextStyle(fontSize: 14),
                           ),
                         ),
                         Flexible(
@@ -360,7 +360,7 @@ class _PdrbPengelContentState extends State<PdrbPengelContent> {
                           child: Text(
                             "PDRB ADHK (2010) Menurut Komponen Pengeluaran",
                             textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                            style: TextStyle(fontSize: 14),
                           ),
                         ),
                         Flexible(
@@ -401,7 +401,7 @@ class _PdrbPengelContentState extends State<PdrbPengelContent> {
                           child: Text(
                             "Distribusi Persentase PDRB ADHB Menurut Komponen Pengeluaran",
                             textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                            style: TextStyle(fontSize: 14),
                           ),
                         ),
                         Flexible(
@@ -442,7 +442,7 @@ class _PdrbPengelContentState extends State<PdrbPengelContent> {
                           child: Text(
                             "Laju Pertumbuhan PDRB ADHK (2010) Menurut Komponen Pengeluaran",
                             textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                            style: TextStyle(fontSize: 14),
                           ),
                         ),
                         Flexible(
@@ -483,7 +483,7 @@ class _PdrbPengelContentState extends State<PdrbPengelContent> {
                           child: Text(
                             "Indeks Implisit PDRB ADHK (2010) Menurut Komponen Pengeluaran",
                             textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                            style: TextStyle(fontSize: 14),
                           ),
                         ),
                         Flexible(
