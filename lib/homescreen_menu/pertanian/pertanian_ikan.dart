@@ -193,8 +193,8 @@ class _PertanianIkanState extends State<PertanianIkan> {
                                 flex: 1,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 8),
+                                  padding: const EdgeInsets.only(
+                                      left: 2, top: 4, bottom:1),
                                   child: const Text(
                                     "1. Perikanan Tangkap",
                                     textAlign: TextAlign.left,
@@ -411,9 +411,9 @@ class _PertanianIkanState extends State<PertanianIkan> {
                                 fit: FlexFit.tight,
                                 flex: 5,
                                 child: Container(
-                                  height: screenHeight * 0.04,
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 6),
+                                  height: screenHeight * 0.05,
+                                  padding: const EdgeInsets.only(
+                                      left: 2, top: 4, bottom:1),
                                   child: const Text(
                                     "2. Perikanan Budidaya",
                                     textAlign: TextAlign.left,
