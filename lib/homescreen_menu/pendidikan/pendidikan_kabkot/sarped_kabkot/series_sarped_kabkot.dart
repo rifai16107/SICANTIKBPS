@@ -39,7 +39,7 @@ class _SeriesSarped extends State<SeriesSarped> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.07,
+              height: screenHeight * 0.09,
               color: Colors.black,
               child: const Center(
                 child: Padding(
