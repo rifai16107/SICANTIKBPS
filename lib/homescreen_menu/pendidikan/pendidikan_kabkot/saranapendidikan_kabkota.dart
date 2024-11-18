@@ -236,7 +236,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesApmApk(),
+                          child: const SeriesApmApkKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -277,7 +277,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesApmApk(),
+                          child: const SeriesApmApkKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -292,7 +292,6 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                             "Jumlah RA Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
-
                           ),
                         ),
                         const Flexible(
@@ -319,7 +318,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesApmApk(),
+                          child: const SeriesApmApkKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(

@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_apm_apk.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/body_apm_apk_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesApmApk extends StatefulWidget {
-  const SeriesApmApk({super.key});
+class SeriesApmApkKabkot extends StatefulWidget {
+  const SeriesApmApkKabkot({super.key});
 
   @override
-  State<SeriesApmApk> createState() => _SeriesApmApk();
+  State<SeriesApmApkKabkot> createState() => _SeriesApmApkKabkot();
 }
 
-class _SeriesApmApk extends State<SeriesApmApk> {
+class _SeriesApmApkKabkot extends State<SeriesApmApkKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -33,7 +33,6 @@ class _SeriesApmApk extends State<SeriesApmApk> {
             ),
           ),
         ),
-        
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
@@ -46,7 +45,7 @@ class _SeriesApmApk extends State<SeriesApmApk> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Angka Partisipasi Murni dan Angka Partisipasi Kasar di Kabupaten Cilacap",
+                    "Angka Partisipasi Murni dan Angka Partisipasi Kasar SD, SMP dan SMA di Kabupaten/Kota di Jawa Tengah",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -56,7 +55,7 @@ class _SeriesApmApk extends State<SeriesApmApk> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesApmApk(),
+                child: const BodySeriesApmApKabkot(),
               ),
             ),
           ],
