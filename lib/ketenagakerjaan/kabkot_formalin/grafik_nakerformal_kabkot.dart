@@ -154,7 +154,7 @@ class _GrafikNakerformalkabkotState extends State<GrafikNakerformalkabkot> {
               double formal33 = double.parse(isinaker[index = 32].formal_n5);
               double formal34 = double.parse(isinaker[index = 33].formal_n5);
               double formal35 = double.parse(isinaker[index = 34].formal_n5);
-              double formal36 = double.parse(isinaker[index = 34].formal_n5);
+              double formal36 = double.parse(isinaker[index = 35].formal_n5);
 
               String thn5 = isinaker[index = 0].tahun.substring(20, 24);
 

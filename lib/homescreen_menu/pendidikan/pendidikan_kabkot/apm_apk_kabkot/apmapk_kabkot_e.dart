@@ -1,10 +1,17 @@
 // ignore_for_file: camel_case_types, prefer_doubleerpolation_to_compose_strings, non_constant_identifier_names, prefer_interpolation_to_compose_strings
 
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/body_grafik_apmsd_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/body_grafik_apmsmp_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/body_grafik_apmsma_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/body_grafik_apksd_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/body_grafik_apksmp_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/body_grafik_apksma_kabkot.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 
 //apm apk 2023
 
@@ -5673,7 +5680,7 @@ class _PendidikanKabkotApmapkEState extends State<PendidikanKabkotApmapkE> {
                             ),
                           ),
                           const Divider(
-                            height: 20,
+                            height: 60,
                           )
                         ],
                       ),
@@ -5690,6 +5697,143 @@ class _PendidikanKabkotApmapkEState extends State<PendidikanKabkotApmapkE> {
           return const Center(child: CircularProgressIndicator(strokeWidth: 3));
         }
       },
-    ));
+    ),
+    floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
+      floatingActionButton: SpeedDial(
+          icon: Icons.bar_chart_outlined,
+          visible: true,
+          //mini:true,
+          //animatedIcon:AnimatedIcons.menu_close,
+          activeIcon: Icons.close,
+          buttonSize: const Size(45, 45),
+          curve: Curves.elasticInOut,
+          direction: SpeedDialDirection.up,
+
+          //animatedIconTheme: const IconThemeData(size: 25),
+          //animatedIcon: AnimatedIcons.list_view,
+          closeManually: false,
+          children: [
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkotApmsd(),
+                        direction: AxisDirection.left));
+              },
+              label: 'APM SD',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 10,
+              ),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkotApmsmp(),
+                        direction: AxisDirection.left));
+              },
+              label: 'APM SMP',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkotApmsma(),
+                        direction: AxisDirection.left));
+              },
+              label: 'APM SMA',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkotApksd(),
+                        direction: AxisDirection.left));
+              },
+              label: 'APK SD',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkotApksmp(),
+                        direction: AxisDirection.left));
+              },
+              label: 'APK SMP',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkotApksma(),
+                        direction: AxisDirection.left));
+              },
+              label: 'APK SMA',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+          ]),
+    );
   }
 }
+
+class CustomPageRoute extends PageRouteBuilder {
+  final Widget child;
+  final AxisDirection direction;
+
+  CustomPageRoute({required this.child, this.direction = AxisDirection.left})
+      : super(
+            transitionDuration: const Duration(milliseconds: 200),
+            reverseTransitionDuration: const Duration(milliseconds: 200),
+            pageBuilder: (context, animation, secondaryAnimation) => child);
+
+  @override
+  Widget buildTransitions(BuildContext context, Animation<double> animation,
+          Animation<double> secondaryAnimation, Widget child) =>
+      SlideTransition(
+        position: Tween<Offset>(begin: getBeginOffset(), end: Offset.zero)
+            .animate(animation),
+        child: child,
+      );
+  Offset getBeginOffset() {
+    switch (direction) {
+      case AxisDirection.up:
+        return const Offset(0, 1);
+      case AxisDirection.down:
+        return const Offset(0, -1);
+      case AxisDirection.right:
+        return const Offset(-1, 0);
+      case AxisDirection.left:
+        return const Offset(1, 0);
+    }
+  }
+}
+

@@ -180,7 +180,7 @@ class _GrafikNakerinformalkabkotState extends State<GrafikNakerinformalkabkot> {
               double informal35 =
                   double.parse(isinaker[index = 34].informal_n5);
               double informal36 =
-                  double.parse(isinaker[index = 34].informal_n5);
+                  double.parse(isinaker[index = 35].informal_n5);
 
               String thn5 = isinaker[index = 0].tahun.substring(20, 24);
 
