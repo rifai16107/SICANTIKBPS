@@ -1,5 +1,5 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/body_parsek_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/body_sttb_kabkot.dart';
 import 'package:flutter/material.dart';
 
 class SeriesParsekKabkot extends StatefulWidget {
@@ -55,7 +55,7 @@ class _SeriesParsekKabkot extends State<SeriesParsekKabkot> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesParsekKabkot(),
+                child: const BodySeriesSttbKabkot(),
               ),
             ),
           ],

@@ -118,154 +118,154 @@ class _GrafikPendidikanKabkotAps1315State
               String wilayah35 = isipendidikan[index = 34].wilayah;
               String wilayah36 = isipendidikan[index = 35].wilayah;
 
-              double aps13151 =
+              double aps1315_1 =
                   double.parse(isipendidikan[index = 0].aps1315_n5);
-              double aps13152 =
+              double aps1315_2 =
                   double.parse(isipendidikan[index = 1].aps1315_n5);
-              double aps13153 =
+              double aps1315_3 =
                   double.parse(isipendidikan[index = 2].aps1315_n5);
-              double aps13154 =
+              double aps1315_4 =
                   double.parse(isipendidikan[index = 3].aps1315_n5);
-              double aps13155 =
+              double aps1315_5 =
                   double.parse(isipendidikan[index = 4].aps1315_n5);
-              double aps13156 =
+              double aps1315_6 =
                   double.parse(isipendidikan[index = 5].aps1315_n5);
-              double aps13157 =
+              double aps1315_7 =
                   double.parse(isipendidikan[index = 6].aps1315_n5);
-              double aps13158 =
+              double aps1315_8 =
                   double.parse(isipendidikan[index = 7].aps1315_n5);
-              double aps13159 =
+              double aps1315_9 =
                   double.parse(isipendidikan[index = 8].aps1315_n5);
-              double aps131510 =
+              double aps1315_10 =
                   double.parse(isipendidikan[index = 9].aps1315_n5);
-              double aps131511 =
+              double aps1315_11 =
                   double.parse(isipendidikan[index = 10].aps1315_n5);
-              double aps131512 =
+              double aps1315_12 =
                   double.parse(isipendidikan[index = 11].aps1315_n5);
-              double aps131513 =
+              double aps1315_13 =
                   double.parse(isipendidikan[index = 12].aps1315_n5);
-              double aps131514 =
+              double aps1315_14 =
                   double.parse(isipendidikan[index = 13].aps1315_n5);
-              double aps131515 =
+              double aps1315_15 =
                   double.parse(isipendidikan[index = 14].aps1315_n5);
-              double aps131516 =
+              double aps1315_16 =
                   double.parse(isipendidikan[index = 15].aps1315_n5);
-              double aps131517 =
+              double aps1315_17 =
                   double.parse(isipendidikan[index = 16].aps1315_n5);
-              double aps131518 =
+              double aps1315_18 =
                   double.parse(isipendidikan[index = 17].aps1315_n5);
-              double aps131519 =
+              double aps1315_19 =
                   double.parse(isipendidikan[index = 18].aps1315_n5);
-              double aps131520 =
+              double aps1315_20 =
                   double.parse(isipendidikan[index = 19].aps1315_n5);
-              double aps131521 =
+              double aps1315_21 =
                   double.parse(isipendidikan[index = 20].aps1315_n5);
-              double aps131522 =
+              double aps1315_22 =
                   double.parse(isipendidikan[index = 21].aps1315_n5);
-              double aps131523 =
+              double aps1315_23 =
                   double.parse(isipendidikan[index = 22].aps1315_n5);
-              double aps131524 =
+              double aps1315_24 =
                   double.parse(isipendidikan[index = 23].aps1315_n5);
-              double aps131525 =
+              double aps1315_25 =
                   double.parse(isipendidikan[index = 24].aps1315_n5);
-              double aps131526 =
+              double aps1315_26 =
                   double.parse(isipendidikan[index = 25].aps1315_n5);
-              double aps131527 =
+              double aps1315_27 =
                   double.parse(isipendidikan[index = 26].aps1315_n5);
-              double aps131528 =
+              double aps1315_28 =
                   double.parse(isipendidikan[index = 27].aps1315_n5);
-              double aps131529 =
+              double aps1315_29 =
                   double.parse(isipendidikan[index = 28].aps1315_n5);
-              double aps131530 =
+              double aps1315_30 =
                   double.parse(isipendidikan[index = 29].aps1315_n5);
-              double aps131531 =
+              double aps1315_31 =
                   double.parse(isipendidikan[index = 30].aps1315_n5);
-              double aps131532 =
+              double aps1315_32 =
                   double.parse(isipendidikan[index = 31].aps1315_n5);
-              double aps131533 =
+              double aps1315_33 =
                   double.parse(isipendidikan[index = 32].aps1315_n5);
-              double aps131534 =
+              double aps1315_34 =
                   double.parse(isipendidikan[index = 33].aps1315_n5);
-              double aps131535 =
+              double aps1315_35 =
                   double.parse(isipendidikan[index = 34].aps1315_n5);
-              double aps131536 =
+              double aps1315_36 =
                   double.parse(isipendidikan[index = 35].aps1315_n5);
 
               String thn5 = isipendidikan[index = 0].tahun.substring(20, 24);
 
               toString();
               data = [
-                _ChartData(wilayah1, aps13151,
+                _ChartData(wilayah1, aps1315_1,
                     const Color.fromARGB(255, 207, 154, 38)),
                 _ChartData(
-                    wilayah2, aps13152, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah2, aps1315_2, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah3, aps13153, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah3, aps1315_3, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah4, aps13154, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah4, aps1315_4, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah5, aps13155, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah5, aps1315_5, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah6, aps13156, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah6, aps1315_6, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah7, aps13157, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah7, aps1315_7, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah8, aps13158, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah8, aps1315_8, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah9, aps13159, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah9, aps1315_9, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah10, aps131510, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah10, aps1315_10, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah11, aps131511, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah11, aps1315_11, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah12, aps131512, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah12, aps1315_12, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah13, aps131513, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah13, aps1315_13, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah14, aps131514, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah14, aps1315_14, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah15, aps131515, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah15, aps1315_15, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah16, aps131516, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah16, aps1315_16, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah17, aps131517, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah17, aps1315_17, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah18, aps131518, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah18, aps1315_18, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah19, aps131519, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah19, aps1315_19, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah20, aps131520, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah20, aps1315_20, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah21, aps131521, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah21, aps1315_21, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah22, aps131522, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah22, aps1315_22, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah23, aps131523, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah23, aps1315_23, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah24, aps131524, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah24, aps1315_24, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah25, aps131525, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah25, aps1315_25, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah26, aps131526, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah26, aps1315_26, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah27, aps131527, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah27, aps1315_27, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah28, aps131528, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah28, aps1315_28, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah29, aps131529, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah29, aps1315_29, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah30, aps131530, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah30, aps1315_30, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah31, aps131531, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah31, aps1315_31, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah32, aps131532, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah32, aps1315_32, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah33, aps131533, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah33, aps1315_33, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah34, aps131534, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah34, aps1315_34, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah35, aps131535, const Color.fromRGBO(9, 0, 136, 1)),
-                _ChartData(wilayah36, aps131536,
+                    wilayah35, aps1315_35, const Color.fromRGBO(9, 0, 136, 1)),
+                _ChartData(wilayah36, aps1315_36,
                     const Color.fromARGB(255, 243, 53, 243))
               ];
               tooltip = TooltipBehavior(enable: true);

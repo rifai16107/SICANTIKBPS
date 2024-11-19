@@ -8,8 +8,8 @@ import 'package:http/http.dart' as http;
 
 //apm apk 2019
 
-class RepositoryPendidikanKabkotParsek {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-parsek';
+class RepositoryPendidikanKabkotSttb {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-sttb';
 
   Future getData() async {
     try {
@@ -19,7 +19,7 @@ class RepositoryPendidikanKabkotParsek {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
             .map((isipendidikan) =>
-                ModelPendidikanKabkotParsek.fromJson(isipendidikan))
+                ModelPendidikanKabkotSttb.fromJson(isipendidikan))
             .toList();
       }
     } catch (isipendidikan) {
@@ -29,55 +29,55 @@ class RepositoryPendidikanKabkotParsek {
   }
 }
 
-class ModelPendidikanKabkotParsek {
+class ModelPendidikanKabkotSttb {
   final int id;
   final String wilayah;
-  final String tdk_blmsekolah_n1;
-  final String tdk_tmtsd_n1;
-  final String sd_n1;
-  final String smp_n1;
-  final String sma_n1;
-  final String pt_n1;
+  final String tdk_blmsekolah_n5;
+  final String tdk_tmtsd_n5;
+  final String sd_n5;
+  final String smp_n5;
+  final String sma_n5;
+  final String pt_n5;
   final String tahun;
 
-  ModelPendidikanKabkotParsek(
+  ModelPendidikanKabkotSttb(
       {required this.id,
       required this.wilayah,
-      required this.tdk_blmsekolah_n1,
-      required this.tdk_tmtsd_n1,
-      required this.sd_n1,
-      required this.smp_n1,
-      required this.sma_n1,
-      required this.pt_n1,
+      required this.tdk_blmsekolah_n5,
+      required this.tdk_tmtsd_n5,
+      required this.sd_n5,
+      required this.smp_n5,
+      required this.sma_n5,
+      required this.pt_n5,
       required this.tahun});
 
-  factory ModelPendidikanKabkotParsek.fromJson(Map<String, dynamic> json) {
-    return ModelPendidikanKabkotParsek(
+  factory ModelPendidikanKabkotSttb.fromJson(Map<String, dynamic> json) {
+    return ModelPendidikanKabkotSttb(
       id: json['id'],
       wilayah: json['wilayah'],
-      tdk_blmsekolah_n1: json['tdk_blmsekolah_n1'],
-      tdk_tmtsd_n1: json['tdk_tmtsd_n1'],
-      sd_n1: json['sd_n1'],
-      smp_n1: json['smp_n1'],
-      sma_n1: json['sma_n1'],
-      pt_n1: json['pt_n1'],
+      tdk_blmsekolah_n5: json['tdk_blmsekolah_n5'],
+      tdk_tmtsd_n5: json['tdk_tmtsd_n5'],
+      sd_n5: json['sd_n5'],
+      smp_n5: json['smp_n5'],
+      sma_n5: json['sma_n5'],
+      pt_n5: json['pt_n5'],
       tahun: json['tahun'],
     );
   }
 }
 
-class PendidikanKabkotParsekC extends StatefulWidget {
-  const PendidikanKabkotParsekC({Key? key}) : super(key: key);
+class PendidikanKabkotSttbE extends StatefulWidget {
+  const PendidikanKabkotSttbE({Key? key}) : super(key: key);
 
   @override
-  State<PendidikanKabkotParsekC> createState() =>
-      _PendidikanKabkotParsekCState();
+  State<PendidikanKabkotSttbE> createState() =>
+      _PendidikanKabkotSttbEState();
 }
 
-RepositoryPendidikanKabkotParsek repositorypendidikan =
-    RepositoryPendidikanKabkotParsek();
+RepositoryPendidikanKabkotSttb repositorypendidikan =
+    RepositoryPendidikanKabkotSttb();
 
-class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
+class _PendidikanKabkotSttbEState extends State<PendidikanKabkotSttbE> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -133,298 +133,298 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
 
               //APM
               double tdk_blmsekolah_1 =
-                  double.parse(isipendidikan[index = 0].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 0].tdk_blmsekolah_n5);
               double tdk_blmsekolah_2 =
-                  double.parse(isipendidikan[index = 1].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 1].tdk_blmsekolah_n5);
               double tdk_blmsekolah_3 =
-                  double.parse(isipendidikan[index = 2].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 2].tdk_blmsekolah_n5);
               double tdk_blmsekolah_4 =
-                  double.parse(isipendidikan[index = 3].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 3].tdk_blmsekolah_n5);
               double tdk_blmsekolah_5 =
-                  double.parse(isipendidikan[index = 4].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 4].tdk_blmsekolah_n5);
               double tdk_blmsekolah_6 =
-                  double.parse(isipendidikan[index = 5].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 5].tdk_blmsekolah_n5);
               double tdk_blmsekolah_7 =
-                  double.parse(isipendidikan[index = 6].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 6].tdk_blmsekolah_n5);
               double tdk_blmsekolah_8 =
-                  double.parse(isipendidikan[index = 7].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 7].tdk_blmsekolah_n5);
               double tdk_blmsekolah_9 =
-                  double.parse(isipendidikan[index = 8].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 8].tdk_blmsekolah_n5);
               double tdk_blmsekolah_10 =
-                  double.parse(isipendidikan[index = 9].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 9].tdk_blmsekolah_n5);
               double tdk_blmsekolah_11 =
-                  double.parse(isipendidikan[index = 10].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 10].tdk_blmsekolah_n5);
               double tdk_blmsekolah_12 =
-                  double.parse(isipendidikan[index = 11].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 11].tdk_blmsekolah_n5);
               double tdk_blmsekolah_13 =
-                  double.parse(isipendidikan[index = 12].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 12].tdk_blmsekolah_n5);
               double tdk_blmsekolah_14 =
-                  double.parse(isipendidikan[index = 13].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 13].tdk_blmsekolah_n5);
               double tdk_blmsekolah_15 =
-                  double.parse(isipendidikan[index = 14].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 14].tdk_blmsekolah_n5);
               double tdk_blmsekolah_16 =
-                  double.parse(isipendidikan[index = 15].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 15].tdk_blmsekolah_n5);
               double tdk_blmsekolah_17 =
-                  double.parse(isipendidikan[index = 16].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 16].tdk_blmsekolah_n5);
               double tdk_blmsekolah_18 =
-                  double.parse(isipendidikan[index = 17].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 17].tdk_blmsekolah_n5);
               double tdk_blmsekolah_19 =
-                  double.parse(isipendidikan[index = 18].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 18].tdk_blmsekolah_n5);
               double tdk_blmsekolah_20 =
-                  double.parse(isipendidikan[index = 19].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 19].tdk_blmsekolah_n5);
               double tdk_blmsekolah_21 =
-                  double.parse(isipendidikan[index = 20].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 20].tdk_blmsekolah_n5);
               double tdk_blmsekolah_22 =
-                  double.parse(isipendidikan[index = 21].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 21].tdk_blmsekolah_n5);
               double tdk_blmsekolah_23 =
-                  double.parse(isipendidikan[index = 22].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 22].tdk_blmsekolah_n5);
               double tdk_blmsekolah_24 =
-                  double.parse(isipendidikan[index = 23].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 23].tdk_blmsekolah_n5);
               double tdk_blmsekolah_25 =
-                  double.parse(isipendidikan[index = 24].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 24].tdk_blmsekolah_n5);
               double tdk_blmsekolah_26 =
-                  double.parse(isipendidikan[index = 25].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 25].tdk_blmsekolah_n5);
               double tdk_blmsekolah_27 =
-                  double.parse(isipendidikan[index = 26].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 26].tdk_blmsekolah_n5);
               double tdk_blmsekolah_28 =
-                  double.parse(isipendidikan[index = 27].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 27].tdk_blmsekolah_n5);
               double tdk_blmsekolah_29 =
-                  double.parse(isipendidikan[index = 28].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 28].tdk_blmsekolah_n5);
               double tdk_blmsekolah_30 =
-                  double.parse(isipendidikan[index = 29].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 29].tdk_blmsekolah_n5);
               double tdk_blmsekolah_31 =
-                  double.parse(isipendidikan[index = 30].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 30].tdk_blmsekolah_n5);
               double tdk_blmsekolah_32 =
-                  double.parse(isipendidikan[index = 31].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 31].tdk_blmsekolah_n5);
               double tdk_blmsekolah_33 =
-                  double.parse(isipendidikan[index = 32].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 32].tdk_blmsekolah_n5);
               double tdk_blmsekolah_34 =
-                  double.parse(isipendidikan[index = 33].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 33].tdk_blmsekolah_n5);
               double tdk_blmsekolah_35 =
-                  double.parse(isipendidikan[index = 34].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 34].tdk_blmsekolah_n5);
               double tdk_blmsekolah_36 =
-                  double.parse(isipendidikan[index = 35].tdk_blmsekolah_n1);
+                  double.parse(isipendidikan[index = 35].tdk_blmsekolah_n5);
 
               double tdk_tmtsd_1 =
-                  double.parse(isipendidikan[index = 0].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 0].tdk_tmtsd_n5);
               double tdk_tmtsd_2 =
-                  double.parse(isipendidikan[index = 1].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 1].tdk_tmtsd_n5);
               double tdk_tmtsd_3 =
-                  double.parse(isipendidikan[index = 2].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 2].tdk_tmtsd_n5);
               double tdk_tmtsd_4 =
-                  double.parse(isipendidikan[index = 3].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 3].tdk_tmtsd_n5);
               double tdk_tmtsd_5 =
-                  double.parse(isipendidikan[index = 4].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 4].tdk_tmtsd_n5);
               double tdk_tmtsd_6 =
-                  double.parse(isipendidikan[index = 5].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 5].tdk_tmtsd_n5);
               double tdk_tmtsd_7 =
-                  double.parse(isipendidikan[index = 6].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 6].tdk_tmtsd_n5);
               double tdk_tmtsd_8 =
-                  double.parse(isipendidikan[index = 7].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 7].tdk_tmtsd_n5);
               double tdk_tmtsd_9 =
-                  double.parse(isipendidikan[index = 8].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 8].tdk_tmtsd_n5);
               double tdk_tmtsd_10 =
-                  double.parse(isipendidikan[index = 9].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 9].tdk_tmtsd_n5);
               double tdk_tmtsd_11 =
-                  double.parse(isipendidikan[index = 10].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 10].tdk_tmtsd_n5);
               double tdk_tmtsd_12 =
-                  double.parse(isipendidikan[index = 11].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 11].tdk_tmtsd_n5);
               double tdk_tmtsd_13 =
-                  double.parse(isipendidikan[index = 12].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 12].tdk_tmtsd_n5);
               double tdk_tmtsd_14 =
-                  double.parse(isipendidikan[index = 13].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 13].tdk_tmtsd_n5);
               double tdk_tmtsd_15 =
-                  double.parse(isipendidikan[index = 14].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 14].tdk_tmtsd_n5);
               double tdk_tmtsd_16 =
-                  double.parse(isipendidikan[index = 15].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 15].tdk_tmtsd_n5);
               double tdk_tmtsd_17 =
-                  double.parse(isipendidikan[index = 16].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 16].tdk_tmtsd_n5);
               double tdk_tmtsd_18 =
-                  double.parse(isipendidikan[index = 17].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 17].tdk_tmtsd_n5);
               double tdk_tmtsd_19 =
-                  double.parse(isipendidikan[index = 18].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 18].tdk_tmtsd_n5);
               double tdk_tmtsd_20 =
-                  double.parse(isipendidikan[index = 19].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 19].tdk_tmtsd_n5);
               double tdk_tmtsd_21 =
-                  double.parse(isipendidikan[index = 20].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 20].tdk_tmtsd_n5);
               double tdk_tmtsd_22 =
-                  double.parse(isipendidikan[index = 21].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 21].tdk_tmtsd_n5);
               double tdk_tmtsd_23 =
-                  double.parse(isipendidikan[index = 22].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 22].tdk_tmtsd_n5);
               double tdk_tmtsd_24 =
-                  double.parse(isipendidikan[index = 23].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 23].tdk_tmtsd_n5);
               double tdk_tmtsd_25 =
-                  double.parse(isipendidikan[index = 24].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 24].tdk_tmtsd_n5);
               double tdk_tmtsd_26 =
-                  double.parse(isipendidikan[index = 25].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 25].tdk_tmtsd_n5);
               double tdk_tmtsd_27 =
-                  double.parse(isipendidikan[index = 26].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 26].tdk_tmtsd_n5);
               double tdk_tmtsd_28 =
-                  double.parse(isipendidikan[index = 27].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 27].tdk_tmtsd_n5);
               double tdk_tmtsd_29 =
-                  double.parse(isipendidikan[index = 28].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 28].tdk_tmtsd_n5);
               double tdk_tmtsd_30 =
-                  double.parse(isipendidikan[index = 29].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 29].tdk_tmtsd_n5);
               double tdk_tmtsd_31 =
-                  double.parse(isipendidikan[index = 30].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 30].tdk_tmtsd_n5);
               double tdk_tmtsd_32 =
-                  double.parse(isipendidikan[index = 31].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 31].tdk_tmtsd_n5);
               double tdk_tmtsd_33 =
-                  double.parse(isipendidikan[index = 32].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 32].tdk_tmtsd_n5);
               double tdk_tmtsd_34 =
-                  double.parse(isipendidikan[index = 33].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 33].tdk_tmtsd_n5);
               double tdk_tmtsd_35 =
-                  double.parse(isipendidikan[index = 34].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 34].tdk_tmtsd_n5);
               double tdk_tmtsd_36 =
-                  double.parse(isipendidikan[index = 35].tdk_tmtsd_n1);
+                  double.parse(isipendidikan[index = 35].tdk_tmtsd_n5);
 
-              double sd_1 = double.parse(isipendidikan[index = 0].sd_n1);
-              double sd_2 = double.parse(isipendidikan[index = 1].sd_n1);
-              double sd_3 = double.parse(isipendidikan[index = 2].sd_n1);
-              double sd_4 = double.parse(isipendidikan[index = 3].sd_n1);
-              double sd_5 = double.parse(isipendidikan[index = 4].sd_n1);
-              double sd_6 = double.parse(isipendidikan[index = 5].sd_n1);
-              double sd_7 = double.parse(isipendidikan[index = 6].sd_n1);
-              double sd_8 = double.parse(isipendidikan[index = 7].sd_n1);
-              double sd_9 = double.parse(isipendidikan[index = 8].sd_n1);
-              double sd_10 = double.parse(isipendidikan[index = 9].sd_n1);
-              double sd_11 = double.parse(isipendidikan[index = 10].sd_n1);
-              double sd_12 = double.parse(isipendidikan[index = 11].sd_n1);
-              double sd_13 = double.parse(isipendidikan[index = 12].sd_n1);
-              double sd_14 = double.parse(isipendidikan[index = 13].sd_n1);
-              double sd_15 = double.parse(isipendidikan[index = 14].sd_n1);
-              double sd_16 = double.parse(isipendidikan[index = 15].sd_n1);
-              double sd_17 = double.parse(isipendidikan[index = 16].sd_n1);
-              double sd_18 = double.parse(isipendidikan[index = 17].sd_n1);
-              double sd_19 = double.parse(isipendidikan[index = 18].sd_n1);
-              double sd_20 = double.parse(isipendidikan[index = 19].sd_n1);
-              double sd_21 = double.parse(isipendidikan[index = 20].sd_n1);
-              double sd_22 = double.parse(isipendidikan[index = 21].sd_n1);
-              double sd_23 = double.parse(isipendidikan[index = 22].sd_n1);
-              double sd_24 = double.parse(isipendidikan[index = 23].sd_n1);
-              double sd_25 = double.parse(isipendidikan[index = 24].sd_n1);
-              double sd_26 = double.parse(isipendidikan[index = 25].sd_n1);
-              double sd_27 = double.parse(isipendidikan[index = 26].sd_n1);
-              double sd_28 = double.parse(isipendidikan[index = 27].sd_n1);
-              double sd_29 = double.parse(isipendidikan[index = 28].sd_n1);
-              double sd_30 = double.parse(isipendidikan[index = 29].sd_n1);
-              double sd_31 = double.parse(isipendidikan[index = 30].sd_n1);
-              double sd_32 = double.parse(isipendidikan[index = 31].sd_n1);
-              double sd_33 = double.parse(isipendidikan[index = 32].sd_n1);
-              double sd_34 = double.parse(isipendidikan[index = 33].sd_n1);
-              double sd_35 = double.parse(isipendidikan[index = 34].sd_n1);
-              double sd_36 = double.parse(isipendidikan[index = 35].sd_n1);
+              double sd_1 = double.parse(isipendidikan[index = 0].sd_n5);
+              double sd_2 = double.parse(isipendidikan[index = 1].sd_n5);
+              double sd_3 = double.parse(isipendidikan[index = 2].sd_n5);
+              double sd_4 = double.parse(isipendidikan[index = 3].sd_n5);
+              double sd_5 = double.parse(isipendidikan[index = 4].sd_n5);
+              double sd_6 = double.parse(isipendidikan[index = 5].sd_n5);
+              double sd_7 = double.parse(isipendidikan[index = 6].sd_n5);
+              double sd_8 = double.parse(isipendidikan[index = 7].sd_n5);
+              double sd_9 = double.parse(isipendidikan[index = 8].sd_n5);
+              double sd_10 = double.parse(isipendidikan[index = 9].sd_n5);
+              double sd_11 = double.parse(isipendidikan[index = 10].sd_n5);
+              double sd_12 = double.parse(isipendidikan[index = 11].sd_n5);
+              double sd_13 = double.parse(isipendidikan[index = 12].sd_n5);
+              double sd_14 = double.parse(isipendidikan[index = 13].sd_n5);
+              double sd_15 = double.parse(isipendidikan[index = 14].sd_n5);
+              double sd_16 = double.parse(isipendidikan[index = 15].sd_n5);
+              double sd_17 = double.parse(isipendidikan[index = 16].sd_n5);
+              double sd_18 = double.parse(isipendidikan[index = 17].sd_n5);
+              double sd_19 = double.parse(isipendidikan[index = 18].sd_n5);
+              double sd_20 = double.parse(isipendidikan[index = 19].sd_n5);
+              double sd_21 = double.parse(isipendidikan[index = 20].sd_n5);
+              double sd_22 = double.parse(isipendidikan[index = 21].sd_n5);
+              double sd_23 = double.parse(isipendidikan[index = 22].sd_n5);
+              double sd_24 = double.parse(isipendidikan[index = 23].sd_n5);
+              double sd_25 = double.parse(isipendidikan[index = 24].sd_n5);
+              double sd_26 = double.parse(isipendidikan[index = 25].sd_n5);
+              double sd_27 = double.parse(isipendidikan[index = 26].sd_n5);
+              double sd_28 = double.parse(isipendidikan[index = 27].sd_n5);
+              double sd_29 = double.parse(isipendidikan[index = 28].sd_n5);
+              double sd_30 = double.parse(isipendidikan[index = 29].sd_n5);
+              double sd_31 = double.parse(isipendidikan[index = 30].sd_n5);
+              double sd_32 = double.parse(isipendidikan[index = 31].sd_n5);
+              double sd_33 = double.parse(isipendidikan[index = 32].sd_n5);
+              double sd_34 = double.parse(isipendidikan[index = 33].sd_n5);
+              double sd_35 = double.parse(isipendidikan[index = 34].sd_n5);
+              double sd_36 = double.parse(isipendidikan[index = 35].sd_n5);
 
-              double smp_1 = double.parse(isipendidikan[index = 0].smp_n1);
-              double smp_2 = double.parse(isipendidikan[index = 1].smp_n1);
-              double smp_3 = double.parse(isipendidikan[index = 2].smp_n1);
-              double smp_4 = double.parse(isipendidikan[index = 3].smp_n1);
-              double smp_5 = double.parse(isipendidikan[index = 4].smp_n1);
-              double smp_6 = double.parse(isipendidikan[index = 5].smp_n1);
-              double smp_7 = double.parse(isipendidikan[index = 6].smp_n1);
-              double smp_8 = double.parse(isipendidikan[index = 7].smp_n1);
-              double smp_9 = double.parse(isipendidikan[index = 8].smp_n1);
-              double smp_10 = double.parse(isipendidikan[index = 9].smp_n1);
-              double smp_11 = double.parse(isipendidikan[index = 10].smp_n1);
-              double smp_12 = double.parse(isipendidikan[index = 11].smp_n1);
-              double smp_13 = double.parse(isipendidikan[index = 12].smp_n1);
-              double smp_14 = double.parse(isipendidikan[index = 13].smp_n1);
-              double smp_15 = double.parse(isipendidikan[index = 14].smp_n1);
-              double smp_16 = double.parse(isipendidikan[index = 15].smp_n1);
-              double smp_17 = double.parse(isipendidikan[index = 16].smp_n1);
-              double smp_18 = double.parse(isipendidikan[index = 17].smp_n1);
-              double smp_19 = double.parse(isipendidikan[index = 18].smp_n1);
-              double smp_20 = double.parse(isipendidikan[index = 19].smp_n1);
-              double smp_21 = double.parse(isipendidikan[index = 20].smp_n1);
-              double smp_22 = double.parse(isipendidikan[index = 21].smp_n1);
-              double smp_23 = double.parse(isipendidikan[index = 22].smp_n1);
-              double smp_24 = double.parse(isipendidikan[index = 23].smp_n1);
-              double smp_25 = double.parse(isipendidikan[index = 24].smp_n1);
-              double smp_26 = double.parse(isipendidikan[index = 25].smp_n1);
-              double smp_27 = double.parse(isipendidikan[index = 26].smp_n1);
-              double smp_28 = double.parse(isipendidikan[index = 27].smp_n1);
-              double smp_29 = double.parse(isipendidikan[index = 28].smp_n1);
-              double smp_30 = double.parse(isipendidikan[index = 29].smp_n1);
-              double smp_31 = double.parse(isipendidikan[index = 30].smp_n1);
-              double smp_32 = double.parse(isipendidikan[index = 31].smp_n1);
-              double smp_33 = double.parse(isipendidikan[index = 32].smp_n1);
-              double smp_34 = double.parse(isipendidikan[index = 33].smp_n1);
-              double smp_35 = double.parse(isipendidikan[index = 34].smp_n1);
-              double smp_36 = double.parse(isipendidikan[index = 35].smp_n1);
+              double smp_1 = double.parse(isipendidikan[index = 0].smp_n5);
+              double smp_2 = double.parse(isipendidikan[index = 1].smp_n5);
+              double smp_3 = double.parse(isipendidikan[index = 2].smp_n5);
+              double smp_4 = double.parse(isipendidikan[index = 3].smp_n5);
+              double smp_5 = double.parse(isipendidikan[index = 4].smp_n5);
+              double smp_6 = double.parse(isipendidikan[index = 5].smp_n5);
+              double smp_7 = double.parse(isipendidikan[index = 6].smp_n5);
+              double smp_8 = double.parse(isipendidikan[index = 7].smp_n5);
+              double smp_9 = double.parse(isipendidikan[index = 8].smp_n5);
+              double smp_10 = double.parse(isipendidikan[index = 9].smp_n5);
+              double smp_11 = double.parse(isipendidikan[index = 10].smp_n5);
+              double smp_12 = double.parse(isipendidikan[index = 11].smp_n5);
+              double smp_13 = double.parse(isipendidikan[index = 12].smp_n5);
+              double smp_14 = double.parse(isipendidikan[index = 13].smp_n5);
+              double smp_15 = double.parse(isipendidikan[index = 14].smp_n5);
+              double smp_16 = double.parse(isipendidikan[index = 15].smp_n5);
+              double smp_17 = double.parse(isipendidikan[index = 16].smp_n5);
+              double smp_18 = double.parse(isipendidikan[index = 17].smp_n5);
+              double smp_19 = double.parse(isipendidikan[index = 18].smp_n5);
+              double smp_20 = double.parse(isipendidikan[index = 19].smp_n5);
+              double smp_21 = double.parse(isipendidikan[index = 20].smp_n5);
+              double smp_22 = double.parse(isipendidikan[index = 21].smp_n5);
+              double smp_23 = double.parse(isipendidikan[index = 22].smp_n5);
+              double smp_24 = double.parse(isipendidikan[index = 23].smp_n5);
+              double smp_25 = double.parse(isipendidikan[index = 24].smp_n5);
+              double smp_26 = double.parse(isipendidikan[index = 25].smp_n5);
+              double smp_27 = double.parse(isipendidikan[index = 26].smp_n5);
+              double smp_28 = double.parse(isipendidikan[index = 27].smp_n5);
+              double smp_29 = double.parse(isipendidikan[index = 28].smp_n5);
+              double smp_30 = double.parse(isipendidikan[index = 29].smp_n5);
+              double smp_31 = double.parse(isipendidikan[index = 30].smp_n5);
+              double smp_32 = double.parse(isipendidikan[index = 31].smp_n5);
+              double smp_33 = double.parse(isipendidikan[index = 32].smp_n5);
+              double smp_34 = double.parse(isipendidikan[index = 33].smp_n5);
+              double smp_35 = double.parse(isipendidikan[index = 34].smp_n5);
+              double smp_36 = double.parse(isipendidikan[index = 35].smp_n5);
 
-              double sma_1 = double.parse(isipendidikan[index = 0].sma_n1);
-              double sma_2 = double.parse(isipendidikan[index = 1].sma_n1);
-              double sma_3 = double.parse(isipendidikan[index = 2].sma_n1);
-              double sma_4 = double.parse(isipendidikan[index = 3].sma_n1);
-              double sma_5 = double.parse(isipendidikan[index = 4].sma_n1);
-              double sma_6 = double.parse(isipendidikan[index = 5].sma_n1);
-              double sma_7 = double.parse(isipendidikan[index = 6].sma_n1);
-              double sma_8 = double.parse(isipendidikan[index = 7].sma_n1);
-              double sma_9 = double.parse(isipendidikan[index = 8].sma_n1);
-              double sma_10 = double.parse(isipendidikan[index = 9].sma_n1);
-              double sma_11 = double.parse(isipendidikan[index = 10].sma_n1);
-              double sma_12 = double.parse(isipendidikan[index = 11].sma_n1);
-              double sma_13 = double.parse(isipendidikan[index = 12].sma_n1);
-              double sma_14 = double.parse(isipendidikan[index = 13].sma_n1);
-              double sma_15 = double.parse(isipendidikan[index = 14].sma_n1);
-              double sma_16 = double.parse(isipendidikan[index = 15].sma_n1);
-              double sma_17 = double.parse(isipendidikan[index = 16].sma_n1);
-              double sma_18 = double.parse(isipendidikan[index = 17].sma_n1);
-              double sma_19 = double.parse(isipendidikan[index = 18].sma_n1);
-              double sma_20 = double.parse(isipendidikan[index = 19].sma_n1);
-              double sma_21 = double.parse(isipendidikan[index = 20].sma_n1);
-              double sma_22 = double.parse(isipendidikan[index = 21].sma_n1);
-              double sma_23 = double.parse(isipendidikan[index = 22].sma_n1);
-              double sma_24 = double.parse(isipendidikan[index = 23].sma_n1);
-              double sma_25 = double.parse(isipendidikan[index = 24].sma_n1);
-              double sma_26 = double.parse(isipendidikan[index = 25].sma_n1);
-              double sma_27 = double.parse(isipendidikan[index = 26].sma_n1);
-              double sma_28 = double.parse(isipendidikan[index = 27].sma_n1);
-              double sma_29 = double.parse(isipendidikan[index = 28].sma_n1);
-              double sma_30 = double.parse(isipendidikan[index = 29].sma_n1);
-              double sma_31 = double.parse(isipendidikan[index = 30].sma_n1);
-              double sma_32 = double.parse(isipendidikan[index = 31].sma_n1);
-              double sma_33 = double.parse(isipendidikan[index = 32].sma_n1);
-              double sma_34 = double.parse(isipendidikan[index = 33].sma_n1);
-              double sma_35 = double.parse(isipendidikan[index = 34].sma_n1);
-              double sma_36 = double.parse(isipendidikan[index = 35].sma_n1);
+              double sma_1 = double.parse(isipendidikan[index = 0].sma_n5);
+              double sma_2 = double.parse(isipendidikan[index = 1].sma_n5);
+              double sma_3 = double.parse(isipendidikan[index = 2].sma_n5);
+              double sma_4 = double.parse(isipendidikan[index = 3].sma_n5);
+              double sma_5 = double.parse(isipendidikan[index = 4].sma_n5);
+              double sma_6 = double.parse(isipendidikan[index = 5].sma_n5);
+              double sma_7 = double.parse(isipendidikan[index = 6].sma_n5);
+              double sma_8 = double.parse(isipendidikan[index = 7].sma_n5);
+              double sma_9 = double.parse(isipendidikan[index = 8].sma_n5);
+              double sma_10 = double.parse(isipendidikan[index = 9].sma_n5);
+              double sma_11 = double.parse(isipendidikan[index = 10].sma_n5);
+              double sma_12 = double.parse(isipendidikan[index = 11].sma_n5);
+              double sma_13 = double.parse(isipendidikan[index = 12].sma_n5);
+              double sma_14 = double.parse(isipendidikan[index = 13].sma_n5);
+              double sma_15 = double.parse(isipendidikan[index = 14].sma_n5);
+              double sma_16 = double.parse(isipendidikan[index = 15].sma_n5);
+              double sma_17 = double.parse(isipendidikan[index = 16].sma_n5);
+              double sma_18 = double.parse(isipendidikan[index = 17].sma_n5);
+              double sma_19 = double.parse(isipendidikan[index = 18].sma_n5);
+              double sma_20 = double.parse(isipendidikan[index = 19].sma_n5);
+              double sma_21 = double.parse(isipendidikan[index = 20].sma_n5);
+              double sma_22 = double.parse(isipendidikan[index = 21].sma_n5);
+              double sma_23 = double.parse(isipendidikan[index = 22].sma_n5);
+              double sma_24 = double.parse(isipendidikan[index = 23].sma_n5);
+              double sma_25 = double.parse(isipendidikan[index = 24].sma_n5);
+              double sma_26 = double.parse(isipendidikan[index = 25].sma_n5);
+              double sma_27 = double.parse(isipendidikan[index = 26].sma_n5);
+              double sma_28 = double.parse(isipendidikan[index = 27].sma_n5);
+              double sma_29 = double.parse(isipendidikan[index = 28].sma_n5);
+              double sma_30 = double.parse(isipendidikan[index = 29].sma_n5);
+              double sma_31 = double.parse(isipendidikan[index = 30].sma_n5);
+              double sma_32 = double.parse(isipendidikan[index = 31].sma_n5);
+              double sma_33 = double.parse(isipendidikan[index = 32].sma_n5);
+              double sma_34 = double.parse(isipendidikan[index = 33].sma_n5);
+              double sma_35 = double.parse(isipendidikan[index = 34].sma_n5);
+              double sma_36 = double.parse(isipendidikan[index = 35].sma_n5);
 
-              double pt_1 = double.parse(isipendidikan[index = 0].pt_n1);
-              double pt_2 = double.parse(isipendidikan[index = 1].pt_n1);
-              double pt_3 = double.parse(isipendidikan[index = 2].pt_n1);
-              double pt_4 = double.parse(isipendidikan[index = 3].pt_n1);
-              double pt_5 = double.parse(isipendidikan[index = 4].pt_n1);
-              double pt_6 = double.parse(isipendidikan[index = 5].pt_n1);
-              double pt_7 = double.parse(isipendidikan[index = 6].pt_n1);
-              double pt_8 = double.parse(isipendidikan[index = 7].pt_n1);
-              double pt_9 = double.parse(isipendidikan[index = 8].pt_n1);
-              double pt_10 = double.parse(isipendidikan[index = 9].pt_n1);
-              double pt_11 = double.parse(isipendidikan[index = 10].pt_n1);
-              double pt_12 = double.parse(isipendidikan[index = 11].pt_n1);
-              double pt_13 = double.parse(isipendidikan[index = 12].pt_n1);
-              double pt_14 = double.parse(isipendidikan[index = 13].pt_n1);
-              double pt_15 = double.parse(isipendidikan[index = 14].pt_n1);
-              double pt_16 = double.parse(isipendidikan[index = 15].pt_n1);
-              double pt_17 = double.parse(isipendidikan[index = 16].pt_n1);
-              double pt_18 = double.parse(isipendidikan[index = 17].pt_n1);
-              double pt_19 = double.parse(isipendidikan[index = 18].pt_n1);
-              double pt_20 = double.parse(isipendidikan[index = 19].pt_n1);
-              double pt_21 = double.parse(isipendidikan[index = 20].pt_n1);
-              double pt_22 = double.parse(isipendidikan[index = 21].pt_n1);
-              double pt_23 = double.parse(isipendidikan[index = 22].pt_n1);
-              double pt_24 = double.parse(isipendidikan[index = 23].pt_n1);
-              double pt_25 = double.parse(isipendidikan[index = 24].pt_n1);
-              double pt_26 = double.parse(isipendidikan[index = 25].pt_n1);
-              double pt_27 = double.parse(isipendidikan[index = 26].pt_n1);
-              double pt_28 = double.parse(isipendidikan[index = 27].pt_n1);
-              double pt_29 = double.parse(isipendidikan[index = 28].pt_n1);
-              double pt_30 = double.parse(isipendidikan[index = 29].pt_n1);
-              double pt_31 = double.parse(isipendidikan[index = 30].pt_n1);
-              double pt_32 = double.parse(isipendidikan[index = 31].pt_n1);
-              double pt_33 = double.parse(isipendidikan[index = 32].pt_n1);
-              double pt_34 = double.parse(isipendidikan[index = 33].pt_n1);
-              double pt_35 = double.parse(isipendidikan[index = 34].pt_n1);
-              double pt_36 = double.parse(isipendidikan[index = 35].pt_n1);
+              double pt_1 = double.parse(isipendidikan[index = 0].pt_n5);
+              double pt_2 = double.parse(isipendidikan[index = 1].pt_n5);
+              double pt_3 = double.parse(isipendidikan[index = 2].pt_n5);
+              double pt_4 = double.parse(isipendidikan[index = 3].pt_n5);
+              double pt_5 = double.parse(isipendidikan[index = 4].pt_n5);
+              double pt_6 = double.parse(isipendidikan[index = 5].pt_n5);
+              double pt_7 = double.parse(isipendidikan[index = 6].pt_n5);
+              double pt_8 = double.parse(isipendidikan[index = 7].pt_n5);
+              double pt_9 = double.parse(isipendidikan[index = 8].pt_n5);
+              double pt_10 = double.parse(isipendidikan[index = 9].pt_n5);
+              double pt_11 = double.parse(isipendidikan[index = 10].pt_n5);
+              double pt_12 = double.parse(isipendidikan[index = 11].pt_n5);
+              double pt_13 = double.parse(isipendidikan[index = 12].pt_n5);
+              double pt_14 = double.parse(isipendidikan[index = 13].pt_n5);
+              double pt_15 = double.parse(isipendidikan[index = 14].pt_n5);
+              double pt_16 = double.parse(isipendidikan[index = 15].pt_n5);
+              double pt_17 = double.parse(isipendidikan[index = 16].pt_n5);
+              double pt_18 = double.parse(isipendidikan[index = 17].pt_n5);
+              double pt_19 = double.parse(isipendidikan[index = 18].pt_n5);
+              double pt_20 = double.parse(isipendidikan[index = 19].pt_n5);
+              double pt_21 = double.parse(isipendidikan[index = 20].pt_n5);
+              double pt_22 = double.parse(isipendidikan[index = 21].pt_n5);
+              double pt_23 = double.parse(isipendidikan[index = 22].pt_n5);
+              double pt_24 = double.parse(isipendidikan[index = 23].pt_n5);
+              double pt_25 = double.parse(isipendidikan[index = 24].pt_n5);
+              double pt_26 = double.parse(isipendidikan[index = 25].pt_n5);
+              double pt_27 = double.parse(isipendidikan[index = 26].pt_n5);
+              double pt_28 = double.parse(isipendidikan[index = 27].pt_n5);
+              double pt_29 = double.parse(isipendidikan[index = 28].pt_n5);
+              double pt_30 = double.parse(isipendidikan[index = 29].pt_n5);
+              double pt_31 = double.parse(isipendidikan[index = 30].pt_n5);
+              double pt_32 = double.parse(isipendidikan[index = 31].pt_n5);
+              double pt_33 = double.parse(isipendidikan[index = 32].pt_n5);
+              double pt_34 = double.parse(isipendidikan[index = 33].pt_n5);
+              double pt_35 = double.parse(isipendidikan[index = 34].pt_n5);
+              double pt_36 = double.parse(isipendidikan[index = 35].pt_n5);
 
               //String thn1 = isipendidikan[index = 0].tahun.substring(0, 4);
 
@@ -445,10 +445,10 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                         SizedBox(
                           width: screenWidth * 0.30,
                           child: Container(
-                            height: screenHeight * 0.04,
+                            height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                right: 0, top: 10, bottom: 0),
+                                right: 0, top: 0, bottom: 0),
                             child: const Text(
                               "Kabupaten/",
                               textAlign: TextAlign.center,
@@ -462,10 +462,27 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                         SizedBox(
                           width: screenWidth * 0.11,
                           child: Container(
-                            height: screenHeight * 0.04,
+                            height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "Tdk/",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.13,
+                          child: Container(
+                            height: screenHeight * 0.02,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
                             child: const Text(
                               "Tdk/",
                               textAlign: TextAlign.center,
@@ -479,12 +496,12 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                         SizedBox(
                           width: screenWidth * 0.11,
                           child: Container(
-                            height: screenHeight * 0.04,
+                            height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
+                                left: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "Tdk/",
+                              "",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -496,12 +513,12 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                         SizedBox(
                           width: screenWidth * 0.11,
                           child: Container(
-                            height: screenHeight * 0.04,
+                            height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
+                                left: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "SD/",
+                              "",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -513,12 +530,12 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                         SizedBox(
                           width: screenWidth * 0.11,
                           child: Container(
-                            height: screenHeight * 0.04,
+                            height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
+                                left: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "SMP/",
+                              "",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -530,12 +547,40 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                         SizedBox(
                           width: screenWidth * 0.11,
                           child: Container(
-                            height: screenHeight * 0.04,
+                            height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
+                                left: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "SMA/",
+                              "",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //row header 2
+                  Container(
+                    width: screenWidth * 1.0,
+                    height: screenHeight * 0.02,
+                    color: Colors.blue,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: screenWidth * 0.30,
+                          child: Container(
+                            height: screenHeight * 0.02,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "Kota",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -547,10 +592,95 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                         SizedBox(
                           width: screenWidth * 0.11,
                           child: Container(
-                            height: screenHeight * 0.04,
+                            height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "Belum",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.13,
+                          child: Container(
+                            height: screenHeight * 0.02,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "Tamat",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.02,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "SD",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.02,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "SMP",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.02,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "SMA",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.02,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
                             child: const Text(
                               "PT",
                               textAlign: TextAlign.center,
@@ -565,8 +695,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                     ),
                   ),
 
-                  //row header 2
-
+                  //row header 3
                   Container(
                     width: screenWidth * 1.0,
                     height: screenHeight * 0.04,
@@ -574,7 +703,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: screenWidth * 0.30,
+                          width: screenWidth * 0.29,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
@@ -591,7 +720,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.11,
+                          width: screenWidth * 0.13,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
@@ -608,14 +737,14 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.11,
+                          width: screenWidth * 0.12,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 left: 0, top: 5, bottom: 0),
                             child: const Text(
-                              "SD",
+                              "SD  ",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -696,135 +825,6 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                     ),
                   ),
 
-                  // row header 3
-                  Container(
-                    width: screenWidth * 1.0,
-                    height: screenHeight * 0.04,
-                    color: Colors.blue,
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: screenWidth * 0.30,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                right: 0, top: 10, bottom: 0),
-                            child: const Text(
-                              "Kota/",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
-                            child: const Text(
-                              "Belum",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
-                            child: const Text(
-                              "Tamat",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
-                            child: const Text(
-                              "Sederajat",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
-                            child: const Text(
-                              "Sederajat",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
-                            child: const Text(
-                              "Sederajat",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 5, bottom: 0),
-                            child: const Text(
-                              "PT",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
                   //),
                   Expanded(
                     //flex:16,
@@ -864,7 +864,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        left:0,right: 0, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_blmsekolah_1, 2),
                                       textAlign: TextAlign.right,
@@ -875,11 +875,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_1, 2),
                                       textAlign: TextAlign.right,
@@ -904,25 +904,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -937,7 +921,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -952,7 +936,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1008,11 +992,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_2, 2),
                                       textAlign: TextAlign.right,
@@ -1037,25 +1021,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1070,7 +1038,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1085,7 +1053,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1141,11 +1109,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_3, 2),
                                       textAlign: TextAlign.right,
@@ -1170,25 +1138,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1203,7 +1155,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1218,7 +1170,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1274,11 +1226,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_4, 2),
                                       textAlign: TextAlign.right,
@@ -1303,25 +1255,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1336,7 +1272,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1351,7 +1287,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1407,11 +1343,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_5, 2),
                                       textAlign: TextAlign.right,
@@ -1436,25 +1372,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1469,7 +1389,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1484,7 +1404,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1540,11 +1460,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_6, 2),
                                       textAlign: TextAlign.right,
@@ -1569,25 +1489,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1602,7 +1506,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1617,7 +1521,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1673,11 +1577,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_7, 2),
                                       textAlign: TextAlign.right,
@@ -1702,25 +1606,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1735,7 +1623,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1750,7 +1638,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1806,11 +1694,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_8, 2),
                                       textAlign: TextAlign.right,
@@ -1835,25 +1723,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1868,7 +1740,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1883,7 +1755,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1939,11 +1811,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_9, 2),
                                       textAlign: TextAlign.right,
@@ -1968,25 +1840,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2001,7 +1857,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2016,7 +1872,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2072,11 +1928,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_10, 2),
                                       textAlign: TextAlign.right,
@@ -2101,25 +1957,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2134,7 +1974,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2149,7 +1989,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2206,11 +2046,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_11, 2),
                                       textAlign: TextAlign.right,
@@ -2235,25 +2075,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2268,7 +2092,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2283,7 +2107,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2339,11 +2163,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_12, 2),
                                       textAlign: TextAlign.right,
@@ -2368,25 +2192,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2401,7 +2209,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2416,7 +2224,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2472,11 +2280,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_13, 2),
                                       textAlign: TextAlign.right,
@@ -2501,25 +2309,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2534,7 +2326,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2549,7 +2341,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2605,11 +2397,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_14, 2),
                                       textAlign: TextAlign.right,
@@ -2634,25 +2426,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2667,7 +2443,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2682,7 +2458,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2738,11 +2514,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_15, 2),
                                       textAlign: TextAlign.right,
@@ -2767,25 +2543,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2800,7 +2560,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2815,7 +2575,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2871,11 +2631,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_16, 2),
                                       textAlign: TextAlign.right,
@@ -2900,25 +2660,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2933,7 +2677,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2948,7 +2692,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3004,11 +2748,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_17, 2),
                                       textAlign: TextAlign.right,
@@ -3033,25 +2777,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3066,7 +2794,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3081,7 +2809,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3137,11 +2865,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_18, 2),
                                       textAlign: TextAlign.right,
@@ -3166,25 +2894,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3199,7 +2911,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3214,7 +2926,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3270,11 +2982,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_19, 2),
                                       textAlign: TextAlign.right,
@@ -3299,25 +3011,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3332,7 +3028,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3347,7 +3043,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3403,11 +3099,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_20, 2),
                                       textAlign: TextAlign.right,
@@ -3432,25 +3128,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3465,7 +3145,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3480,7 +3160,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3536,11 +3216,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_21, 2),
                                       textAlign: TextAlign.right,
@@ -3565,25 +3245,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3598,7 +3262,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3613,7 +3277,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3669,11 +3333,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_22, 2),
                                       textAlign: TextAlign.right,
@@ -3698,25 +3362,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3731,7 +3379,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3746,7 +3394,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3802,11 +3450,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_23, 2),
                                       textAlign: TextAlign.right,
@@ -3831,25 +3479,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3864,7 +3496,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3879,7 +3511,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3935,11 +3567,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_24, 2),
                                       textAlign: TextAlign.right,
@@ -3964,25 +3596,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -3997,7 +3613,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4012,7 +3628,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4068,11 +3684,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_25, 2),
                                       textAlign: TextAlign.right,
@@ -4097,25 +3713,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4130,7 +3730,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4145,7 +3745,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4201,11 +3801,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_26, 2),
                                       textAlign: TextAlign.right,
@@ -4230,25 +3830,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4263,7 +3847,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4278,7 +3862,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4334,11 +3918,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_27, 2),
                                       textAlign: TextAlign.right,
@@ -4363,25 +3947,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4396,7 +3964,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4411,7 +3979,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4467,11 +4035,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_28, 2),
                                       textAlign: TextAlign.right,
@@ -4496,25 +4064,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4529,7 +4081,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4544,7 +4096,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4600,11 +4152,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_29, 2),
                                       textAlign: TextAlign.right,
@@ -4629,25 +4181,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4662,7 +4198,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4677,7 +4213,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4733,11 +4269,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_30, 2),
                                       textAlign: TextAlign.right,
@@ -4763,24 +4299,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4795,7 +4314,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4810,7 +4329,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4866,11 +4385,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_31, 2),
                                       textAlign: TextAlign.right,
@@ -4895,25 +4414,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4928,7 +4431,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4943,7 +4446,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -4999,11 +4502,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_32, 2),
                                       textAlign: TextAlign.right,
@@ -5028,25 +4531,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5061,7 +4548,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5076,7 +4563,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5132,11 +4619,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_33, 2),
                                       textAlign: TextAlign.right,
@@ -5161,25 +4648,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5194,7 +4665,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5209,7 +4680,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5265,11 +4736,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_34, 2),
                                       textAlign: TextAlign.right,
@@ -5294,25 +4765,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5327,7 +4782,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5342,7 +4797,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5398,11 +4853,11 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_35, 2),
                                       textAlign: TextAlign.right,
@@ -5427,25 +4882,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                                
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5460,7 +4899,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5475,7 +4914,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -5531,10 +4970,10 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.11 * screenWidth,
+                                  width: 0.14 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 5,  top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_36, 2),
                                       textAlign: TextAlign.right,
@@ -5560,24 +4999,9 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                     ),
                                   ),
                                 ),
+                               
                                 SizedBox(
-                                  width: screenWidth * 0.01,
-                                  child: Container(
-                                    height: screenHeight * 0.032,
-                                    padding: const EdgeInsets.only(
-                                        left: 0, top: 0, bottom: 0),
-                                    child: const Text(
-                                      "",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 12.5,
-                                          color: Colors.blue),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
@@ -5592,7 +5016,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
@@ -5607,7 +5031,7 @@ class _PendidikanKabkotParsekCState extends State<PendidikanKabkotParsekC> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.12 * screenWidth,
+                                  width: 0.11 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),

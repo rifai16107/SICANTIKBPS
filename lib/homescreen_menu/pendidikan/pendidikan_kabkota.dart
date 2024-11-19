@@ -3,10 +3,10 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/series_apm_apk_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/series_apsek_kabkot.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/series_sttb_kabkot.dart';
+//import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/partisek_kabkot/series_sttb_kabkot.dart';
 import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/amh_kabkot/series_amh_kabkot.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/series_parsek_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/series_sttb_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/saranapendidikan_kabkota.dart';
 import 'package:flutter/material.dart';
 
@@ -317,7 +317,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesSttb(),
+                          child: const SeriesSttbKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -397,7 +397,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesParsekKabkot(),
+                          child: const SeriesSttbKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(

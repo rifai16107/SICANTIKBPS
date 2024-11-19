@@ -118,68 +118,68 @@ class _GrafikPendidikanKabkotAps712State
               String wilayah35 = isipendidikan[index = 34].wilayah;
               String wilayah36 = isipendidikan[index = 35].wilayah;
 
-              double aps7121 = double.parse(isipendidikan[index = 0].aps712_n5);
-              double aps7122 = double.parse(isipendidikan[index = 1].aps712_n5);
-              double aps7123 = double.parse(isipendidikan[index = 2].aps712_n5);
-              double aps7124 = double.parse(isipendidikan[index = 3].aps712_n5);
-              double aps7125 = double.parse(isipendidikan[index = 4].aps712_n5);
-              double aps7126 = double.parse(isipendidikan[index = 5].aps712_n5);
-              double aps7127 = double.parse(isipendidikan[index = 6].aps712_n5);
-              double aps7128 = double.parse(isipendidikan[index = 7].aps712_n5);
-              double aps7129 = double.parse(isipendidikan[index = 8].aps712_n5);
-              double aps71210 =
+              double aps712_1 = double.parse(isipendidikan[index = 0].aps712_n5);
+              double aps712_2 = double.parse(isipendidikan[index = 1].aps712_n5);
+              double aps712_3 = double.parse(isipendidikan[index = 2].aps712_n5);
+              double aps712_4 = double.parse(isipendidikan[index = 3].aps712_n5);
+              double aps712_5 = double.parse(isipendidikan[index = 4].aps712_n5);
+              double aps712_6 = double.parse(isipendidikan[index = 5].aps712_n5);
+              double aps712_7 = double.parse(isipendidikan[index = 6].aps712_n5);
+              double aps712_8 = double.parse(isipendidikan[index = 7].aps712_n5);
+              double aps712_9 = double.parse(isipendidikan[index = 8].aps712_n5);
+              double aps712_10 =
                   double.parse(isipendidikan[index = 9].aps712_n5);
-              double aps71211 =
+              double aps712_11 =
                   double.parse(isipendidikan[index = 10].aps712_n5);
-              double aps71212 =
+              double aps712_12 =
                   double.parse(isipendidikan[index = 11].aps712_n5);
-              double aps71213 =
+              double aps712_13 =
                   double.parse(isipendidikan[index = 12].aps712_n5);
-              double aps71214 =
+              double aps712_14 =
                   double.parse(isipendidikan[index = 13].aps712_n5);
-              double aps71215 =
+              double aps712_15 =
                   double.parse(isipendidikan[index = 14].aps712_n5);
-              double aps71216 =
+              double aps712_16 =
                   double.parse(isipendidikan[index = 15].aps712_n5);
-              double aps71217 =
+              double aps712_17 =
                   double.parse(isipendidikan[index = 16].aps712_n5);
-              double aps71218 =
+              double aps712_18 =
                   double.parse(isipendidikan[index = 17].aps712_n5);
-              double aps71219 =
+              double aps712_19 =
                   double.parse(isipendidikan[index = 18].aps712_n5);
-              double aps71220 =
+              double aps712_20 =
                   double.parse(isipendidikan[index = 19].aps712_n5);
-              double aps71221 =
+              double aps712_21 =
                   double.parse(isipendidikan[index = 20].aps712_n5);
-              double aps71222 =
+              double aps712_22 =
                   double.parse(isipendidikan[index = 21].aps712_n5);
-              double aps71223 =
+              double aps712_23 =
                   double.parse(isipendidikan[index = 22].aps712_n5);
-              double aps71224 =
+              double aps712_24 =
                   double.parse(isipendidikan[index = 23].aps712_n5);
-              double aps71225 =
+              double aps712_25 =
                   double.parse(isipendidikan[index = 24].aps712_n5);
-              double aps71226 =
+              double aps712_26 =
                   double.parse(isipendidikan[index = 25].aps712_n5);
-              double aps71227 =
+              double aps712_27 =
                   double.parse(isipendidikan[index = 26].aps712_n5);
-              double aps71228 =
+              double aps712_28 =
                   double.parse(isipendidikan[index = 27].aps712_n5);
-              double aps71229 =
+              double aps712_29 =
                   double.parse(isipendidikan[index = 28].aps712_n5);
-              double aps71230 =
+              double aps712_30 =
                   double.parse(isipendidikan[index = 29].aps712_n5);
-              double aps71231 =
+              double aps712_31 =
                   double.parse(isipendidikan[index = 30].aps712_n5);
-              double aps71232 =
+              double aps712_32 =
                   double.parse(isipendidikan[index = 31].aps712_n5);
-              double aps71233 =
+              double aps712_33 =
                   double.parse(isipendidikan[index = 32].aps712_n5);
-              double aps71234 =
+              double aps712_34 =
                   double.parse(isipendidikan[index = 33].aps712_n5);
-              double aps71235 =
+              double aps712_35 =
                   double.parse(isipendidikan[index = 34].aps712_n5);
-              double aps71236 =
+              double aps712_36 =
                   double.parse(isipendidikan[index = 35].aps712_n5);
 
               String thn5 = isipendidikan[index = 0].tahun.substring(20, 24);
@@ -187,76 +187,76 @@ class _GrafikPendidikanKabkotAps712State
               toString();
               data = [
                 _ChartData(
-                    wilayah1, aps7121, const Color.fromARGB(255, 207, 154, 38)),
+                    wilayah1, aps712_1, const Color.fromARGB(255, 207, 154, 38)),
                 _ChartData(
-                    wilayah2, aps7122, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah2, aps712_2, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah3, aps7123, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah3, aps712_3, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah4, aps7124, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah4, aps712_4, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah5, aps7125, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah5, aps712_5, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah6, aps7126, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah6, aps712_6, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah7, aps7127, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah7, aps712_7, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah8, aps7128, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah8, aps712_8, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah9, aps7129, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah9, aps712_9, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah10, aps71210, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah10, aps712_10, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah11, aps71211, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah11, aps712_11, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah12, aps71212, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah12, aps712_12, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah13, aps71213, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah13, aps712_13, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah14, aps71214, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah14, aps712_14, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah15, aps71215, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah15, aps712_15, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah16, aps71216, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah16, aps712_16, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah17, aps71217, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah17, aps712_17, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah18, aps71218, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah18, aps712_18, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah19, aps71219, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah19, aps712_19, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah20, aps71220, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah20, aps712_20, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah21, aps71221, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah21, aps712_21, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah22, aps71222, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah22, aps712_22, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah23, aps71223, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah23, aps712_23, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah24, aps71224, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah24, aps712_24, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah25, aps71225, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah25, aps712_25, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah26, aps71226, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah26, aps712_26, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah27, aps71227, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah27, aps712_27, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah28, aps71228, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah28, aps712_28, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah29, aps71229, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah29, aps712_29, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah30, aps71230, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah30, aps712_30, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah31, aps71231, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah31, aps712_31, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah32, aps71232, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah32, aps712_32, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah33, aps71233, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah33, aps712_33, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah34, aps71234, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah34, aps712_34, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah35, aps71235, const Color.fromRGBO(9, 0, 136, 1)),
-                _ChartData(wilayah36, aps71236,
+                    wilayah35, aps712_35, const Color.fromRGBO(9, 0, 136, 1)),
+                _ChartData(wilayah36, aps712_36,
                     const Color.fromARGB(255, 243, 53, 243))
               ];
               tooltip = TooltipBehavior(enable: true);

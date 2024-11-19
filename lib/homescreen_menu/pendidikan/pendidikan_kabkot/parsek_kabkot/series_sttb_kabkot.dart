@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/body_sttb_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_sttb.dart';
 import 'package:flutter/material.dart';
 
-class SeriesSttbKabkot extends StatefulWidget {
-  const SeriesSttbKabkot({super.key});
+class SeriesSttb extends StatefulWidget {
+  const SeriesSttb({super.key});
 
   @override
-  State<SeriesSttbKabkot> createState() => _SeriesSttbKabkot();
+  State<SeriesSttb> createState() => _SeriesSttb();
 }
 
-class _SeriesSttbKabkot extends State<SeriesSttbKabkot> {
+class _SeriesSttb extends State<SeriesSttb> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -33,19 +33,20 @@ class _SeriesSttbKabkot extends State<SeriesSttbKabkot> {
             ),
           ),
         ),
+ 
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.095,
+              height: screenHeight * 0.065,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Persentase Penduduk Usia 15+ Menurut Pendidikan Tertinggi yang Ditamatkan dan Kabupaten/Kota di Jawa Tengah",
+                    "Persentase Penduduk Usia 15+ Menurut Pendidikan Tertinggi Yang Ditamatkan di Kabupaten Cilacap",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -55,7 +56,7 @@ class _SeriesSttbKabkot extends State<SeriesSttbKabkot> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesSttbKabkot(),
+                child: const BodySeriesSttb(),
               ),
             ),
           ],

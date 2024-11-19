@@ -1,18 +1,61 @@
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/sttb/sttb_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/sttb/sttb_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/sttb/sttb_c.dart';
-import 'package:bps_cilacap/restAPI/repository_pendidikan_sttb.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/sttb_kabkot_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/sttb_kabkot_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/sttb_kabkot_c.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/sttb_kabkot_d.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/sttb_kabkot_e.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:async';
+import 'dart:convert';
 
-class BodySeriesSttb extends StatefulWidget {
-  const BodySeriesSttb({super.key});
+class RepositoryPendidikanKabkotSttb {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-sttb';
 
-  @override
-  State<BodySeriesSttb> createState() => _BodySeriesSttbState();
+  Future getData() async {
+    try {
+      final response = await http.get(Uri.parse(_baseURL));
+
+      if (response.statusCode == 200) {
+        var cokk = jsonDecode(response.body);
+        return (cokk['data'] as List)
+            .map((isipendidikan) =>
+                ModelPendidikanKabkotSttb.fromJson(isipendidikan))
+            .toList();
+      }
+    } catch (isipendidikan) {
+      // ignore: avoid_print
+      print(isipendidikan.toString());
+    }
+  }
 }
 
-class _BodySeriesSttbState extends State<BodySeriesSttb> {
-  RepositorySttb repositorysttb = RepositorySttb();
+class ModelPendidikanKabkotSttb {
+  final int id;
+  final String wilayah;
+  final String tahun;
+
+  ModelPendidikanKabkotSttb(
+      {required this.id, required this.wilayah, required this.tahun});
+
+  factory ModelPendidikanKabkotSttb.fromJson(Map<String, dynamic> json) {
+    return ModelPendidikanKabkotSttb(
+      id: json['id'],
+      wilayah: json['wilayah'],
+      tahun: json['tahun'],
+    );
+  }
+}
+
+class BodySeriesSttbKabkot extends StatefulWidget {
+  const BodySeriesSttbKabkot({super.key});
+
+  @override
+  State<BodySeriesSttbKabkot> createState() => _BodySeriesSttbKabkotState();
+}
+
+class _BodySeriesSttbKabkotState extends State<BodySeriesSttbKabkot> {
+  RepositoryPendidikanKabkotSttb repositoryapmapk =
+      RepositoryPendidikanKabkotSttb();
 
   @override
   Widget build(BuildContext context) {
@@ -22,22 +65,23 @@ class _BodySeriesSttbState extends State<BodySeriesSttb> {
     // ignore: unused_local_variable
     final screenWidth = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: repositorysttb.getData(),
+      future: repositoryapmapk.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isisttb = snapshot.data as List;
+          List isipendidikan = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String th1 = isisttb[index = 0].tahun;
-              String th2 = isisttb[index = 6].tahun;
-              String th3 = isisttb[index = 12].tahun;
+              String thnN1 = isipendidikan[index = 0].tahun.substring(0, 4);
+              String thnN2 = isipendidikan[index = 0].tahun.substring(5, 9);
+              String thnN3 = isipendidikan[index = 0].tahun.substring(10, 14);
+              String thnN4 = isipendidikan[index = 0].tahun.substring(15, 19);
+              String thnN5 = isipendidikan[index = 0].tahun.substring(20, 24);
 
               return DefaultTabController(
-                length: 3,
+                length: 5,
                 child: Scaffold(
                   appBar: AppBar(
-                    
                     backgroundColor: Colors.black,
                     leading: const Text(
                       " ",
@@ -48,22 +92,29 @@ class _BodySeriesSttbState extends State<BodySeriesSttb> {
                       indicatorColor: Colors.white,
                       tabs: [
                         Tab(
-                          text: th1,
+                          text: thnN1,
                         ),
                         Tab(
-                          text: th2,
+                          text: thnN2,
                         ),
                         Tab(
-                          text: th3,
+                          text: thnN3,
+                        ),
+                        Tab(
+                          text: thnN4,
+                        ),
+                        Tab(
+                          text: thnN5,
                         ),
                       ],
                     ),
                   ),
                   body: const TabBarView(children: [
-                    
-                    SttbA(),
-                    SttbB(),
-                    SttbC(),
+                    PendidikanKabkotSttbA(),
+                    PendidikanKabkotSttbB(),
+                    PendidikanKabkotSttbC(),
+                    PendidikanKabkotSttbD(),
+                    PendidikanKabkotSttbE(),
                   ]),
                 ),
               );
