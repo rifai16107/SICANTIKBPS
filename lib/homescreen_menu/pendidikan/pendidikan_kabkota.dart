@@ -2,7 +2,7 @@
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk_kabkot/series_apm_apk_kabkot.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/series_aps_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/series_apsek_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/series_sttb_kabkot.dart';
 import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/amh_kabkot/series_amh_kabkot.dart';
@@ -277,7 +277,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesAps(),
+                          child: const SeriesApmApseKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -397,7 +397,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesParsek(),
+                          child: const SeriesParsekKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(

@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
 
-//apm apk 2020
+//apm apk 2019
 
-class RepositoryPendidikanKabkotApmapk {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-apmapk';
+class RepositoryPendidikanKabkotParsek {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-parsek';
 
   Future getData() async {
     try {
@@ -19,7 +19,7 @@ class RepositoryPendidikanKabkotApmapk {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
             .map((isipendidikan) =>
-                ModelPendidikanKabkotApmapk.fromJson(isipendidikan))
+                ModelPendidikanKabkotParsek.fromJson(isipendidikan))
             .toList();
       }
     } catch (isipendidikan) {
@@ -29,55 +29,55 @@ class RepositoryPendidikanKabkotApmapk {
   }
 }
 
-class ModelPendidikanKabkotApmapk {
+class ModelPendidikanKabkotParsek {
   final int id;
   final String wilayah;
-  final String apmsd_n2;
-  final String apmsmp_n2;
-  final String apmsma_n2;
-  final String apksd_n2;
-  final String apksmp_n2;
-  final String apksma_n2;
+  final String tdk_blmsekolah_n1;
+  final String tdk_tmtsd_n1;
+  final String sd_n1;
+  final String smp_n1;
+  final String sma_n1;
+  final String pt_n1;
   final String tahun;
 
-  ModelPendidikanKabkotApmapk(
+  ModelPendidikanKabkotParsek(
       {required this.id,
       required this.wilayah,
-      required this.apmsd_n2,
-      required this.apmsmp_n2,
-      required this.apmsma_n2,
-      required this.apksd_n2,
-      required this.apksmp_n2,
-      required this.apksma_n2,
+      required this.tdk_blmsekolah_n1,
+      required this.tdk_tmtsd_n1,
+      required this.sd_n1,
+      required this.smp_n1,
+      required this.sma_n1,
+      required this.pt_n1,
       required this.tahun});
 
-  factory ModelPendidikanKabkotApmapk.fromJson(Map<String, dynamic> json) {
-    return ModelPendidikanKabkotApmapk(
+  factory ModelPendidikanKabkotParsek.fromJson(Map<String, dynamic> json) {
+    return ModelPendidikanKabkotParsek(
       id: json['id'],
       wilayah: json['wilayah'],
-      apmsd_n2: json['apmsd_n2'],
-      apmsmp_n2: json['apmsmp_n2'],
-      apmsma_n2: json['apmsma_n2'],
-      apksd_n2: json['apksd_n2'],
-      apksmp_n2: json['apksmp_n2'],
-      apksma_n2: json['apksma_n2'],
+      tdk_blmsekolah_n1: json['tdk_blmsekolah_n1'],
+      tdk_tmtsd_n1: json['tdk_tmtsd_n1'],
+      sd_n1: json['sd_n1'],
+      smp_n1: json['smp_n1'],
+      sma_n1: json['sma_n1'],
+      pt_n1: json['pt_n1'],
       tahun: json['tahun'],
     );
   }
 }
 
-class PendidikanKabkotApmapkB extends StatefulWidget {
-  const PendidikanKabkotApmapkB({Key? key}) : super(key: key);
+class PendidikanKabkotParsekD extends StatefulWidget {
+  const PendidikanKabkotParsekD({Key? key}) : super(key: key);
 
   @override
-  State<PendidikanKabkotApmapkB> createState() =>
-      _PendidikanKabkotApmapkBState();
+  State<PendidikanKabkotParsekD> createState() =>
+      _PendidikanKabkotParsekDState();
 }
 
-RepositoryPendidikanKabkotApmapk repositorypendidikan =
-    RepositoryPendidikanKabkotApmapk();
+RepositoryPendidikanKabkotParsek repositorypendidikan =
+    RepositoryPendidikanKabkotParsek();
 
-class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
+class _PendidikanKabkotParsekDState extends State<PendidikanKabkotParsekD> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -132,425 +132,299 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
               String kab36 = "    " + isipendidikan[index = 35].wilayah;
 
               //APM
-              double apmsd_1 = double.parse(isipendidikan[index = 0].apmsd_n2);
-              double apmsd_2 = double.parse(isipendidikan[index = 1].apmsd_n2);
-              double apmsd_3 = double.parse(isipendidikan[index = 2].apmsd_n2);
-              double apmsd_4 = double.parse(isipendidikan[index = 3].apmsd_n2);
-              double apmsd_5 = double.parse(isipendidikan[index = 4].apmsd_n2);
-              double apmsd_6 = double.parse(isipendidikan[index = 5].apmsd_n2);
-              double apmsd_7 = double.parse(isipendidikan[index = 6].apmsd_n2);
-              double apmsd_8 = double.parse(isipendidikan[index = 7].apmsd_n2);
-              double apmsd_9 = double.parse(isipendidikan[index = 8].apmsd_n2);
-              double apmsd_10 = double.parse(isipendidikan[index = 9].apmsd_n2);
-              double apmsd_11 =
-                  double.parse(isipendidikan[index = 10].apmsd_n2);
-              double apmsd_12 =
-                  double.parse(isipendidikan[index = 11].apmsd_n2);
-              double apmsd_13 =
-                  double.parse(isipendidikan[index = 12].apmsd_n2);
-              double apmsd_14 =
-                  double.parse(isipendidikan[index = 13].apmsd_n2);
-              double apmsd_15 =
-                  double.parse(isipendidikan[index = 14].apmsd_n2);
-              double apmsd_16 =
-                  double.parse(isipendidikan[index = 15].apmsd_n2);
-              double apmsd_17 =
-                  double.parse(isipendidikan[index = 16].apmsd_n2);
-              double apmsd_18 =
-                  double.parse(isipendidikan[index = 17].apmsd_n2);
-              double apmsd_19 =
-                  double.parse(isipendidikan[index = 18].apmsd_n2);
-              double apmsd_20 =
-                  double.parse(isipendidikan[index = 19].apmsd_n2);
-              double apmsd_21 =
-                  double.parse(isipendidikan[index = 20].apmsd_n2);
-              double apmsd_22 =
-                  double.parse(isipendidikan[index = 21].apmsd_n2);
-              double apmsd_23 =
-                  double.parse(isipendidikan[index = 22].apmsd_n2);
-              double apmsd_24 =
-                  double.parse(isipendidikan[index = 23].apmsd_n2);
-              double apmsd_25 =
-                  double.parse(isipendidikan[index = 24].apmsd_n2);
-              double apmsd_26 =
-                  double.parse(isipendidikan[index = 25].apmsd_n2);
-              double apmsd_27 =
-                  double.parse(isipendidikan[index = 26].apmsd_n2);
-              double apmsd_28 =
-                  double.parse(isipendidikan[index = 27].apmsd_n2);
-              double apmsd_29 =
-                  double.parse(isipendidikan[index = 28].apmsd_n2);
-              double apmsd_30 =
-                  double.parse(isipendidikan[index = 29].apmsd_n2);
-              double apmsd_31 =
-                  double.parse(isipendidikan[index = 30].apmsd_n2);
-              double apmsd_32 =
-                  double.parse(isipendidikan[index = 31].apmsd_n2);
-              double apmsd_33 =
-                  double.parse(isipendidikan[index = 32].apmsd_n2);
-              double apmsd_34 =
-                  double.parse(isipendidikan[index = 33].apmsd_n2);
-              double apmsd_35 =
-                  double.parse(isipendidikan[index = 34].apmsd_n2);
-              double apmsd_36 =
-                  double.parse(isipendidikan[index = 35].apmsd_n2);
+              double tdk_blmsekolah_1 =
+                  double.parse(isipendidikan[index = 0].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_2 =
+                  double.parse(isipendidikan[index = 1].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_3 =
+                  double.parse(isipendidikan[index = 2].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_4 =
+                  double.parse(isipendidikan[index = 3].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_5 =
+                  double.parse(isipendidikan[index = 4].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_6 =
+                  double.parse(isipendidikan[index = 5].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_7 =
+                  double.parse(isipendidikan[index = 6].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_8 =
+                  double.parse(isipendidikan[index = 7].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_9 =
+                  double.parse(isipendidikan[index = 8].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_10 =
+                  double.parse(isipendidikan[index = 9].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_11 =
+                  double.parse(isipendidikan[index = 10].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_12 =
+                  double.parse(isipendidikan[index = 11].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_13 =
+                  double.parse(isipendidikan[index = 12].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_14 =
+                  double.parse(isipendidikan[index = 13].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_15 =
+                  double.parse(isipendidikan[index = 14].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_16 =
+                  double.parse(isipendidikan[index = 15].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_17 =
+                  double.parse(isipendidikan[index = 16].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_18 =
+                  double.parse(isipendidikan[index = 17].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_19 =
+                  double.parse(isipendidikan[index = 18].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_20 =
+                  double.parse(isipendidikan[index = 19].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_21 =
+                  double.parse(isipendidikan[index = 20].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_22 =
+                  double.parse(isipendidikan[index = 21].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_23 =
+                  double.parse(isipendidikan[index = 22].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_24 =
+                  double.parse(isipendidikan[index = 23].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_25 =
+                  double.parse(isipendidikan[index = 24].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_26 =
+                  double.parse(isipendidikan[index = 25].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_27 =
+                  double.parse(isipendidikan[index = 26].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_28 =
+                  double.parse(isipendidikan[index = 27].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_29 =
+                  double.parse(isipendidikan[index = 28].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_30 =
+                  double.parse(isipendidikan[index = 29].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_31 =
+                  double.parse(isipendidikan[index = 30].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_32 =
+                  double.parse(isipendidikan[index = 31].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_33 =
+                  double.parse(isipendidikan[index = 32].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_34 =
+                  double.parse(isipendidikan[index = 33].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_35 =
+                  double.parse(isipendidikan[index = 34].tdk_blmsekolah_n1);
+              double tdk_blmsekolah_36 =
+                  double.parse(isipendidikan[index = 35].tdk_blmsekolah_n1);
 
-              double apmsmp_1 =
-                  double.parse(isipendidikan[index = 0].apmsmp_n2);
-              double apmsmp_2 =
-                  double.parse(isipendidikan[index = 1].apmsmp_n2);
-              double apmsmp_3 =
-                  double.parse(isipendidikan[index = 2].apmsmp_n2);
-              double apmsmp_4 =
-                  double.parse(isipendidikan[index = 3].apmsmp_n2);
-              double apmsmp_5 =
-                  double.parse(isipendidikan[index = 4].apmsmp_n2);
-              double apmsmp_6 =
-                  double.parse(isipendidikan[index = 5].apmsmp_n2);
-              double apmsmp_7 =
-                  double.parse(isipendidikan[index = 6].apmsmp_n2);
-              double apmsmp_8 =
-                  double.parse(isipendidikan[index = 7].apmsmp_n2);
-              double apmsmp_9 =
-                  double.parse(isipendidikan[index = 8].apmsmp_n2);
-              double apmsmp_10 =
-                  double.parse(isipendidikan[index = 9].apmsmp_n2);
-              double apmsmp_11 =
-                  double.parse(isipendidikan[index = 10].apmsmp_n2);
-              double apmsmp_12 =
-                  double.parse(isipendidikan[index = 11].apmsmp_n2);
-              double apmsmp_13 =
-                  double.parse(isipendidikan[index = 12].apmsmp_n2);
-              double apmsmp_14 =
-                  double.parse(isipendidikan[index = 13].apmsmp_n2);
-              double apmsmp_15 =
-                  double.parse(isipendidikan[index = 14].apmsmp_n2);
-              double apmsmp_16 =
-                  double.parse(isipendidikan[index = 15].apmsmp_n2);
-              double apmsmp_17 =
-                  double.parse(isipendidikan[index = 16].apmsmp_n2);
-              double apmsmp_18 =
-                  double.parse(isipendidikan[index = 17].apmsmp_n2);
-              double apmsmp_19 =
-                  double.parse(isipendidikan[index = 18].apmsmp_n2);
-              double apmsmp_20 =
-                  double.parse(isipendidikan[index = 19].apmsmp_n2);
-              double apmsmp_21 =
-                  double.parse(isipendidikan[index = 20].apmsmp_n2);
-              double apmsmp_22 =
-                  double.parse(isipendidikan[index = 21].apmsmp_n2);
-              double apmsmp_23 =
-                  double.parse(isipendidikan[index = 22].apmsmp_n2);
-              double apmsmp_24 =
-                  double.parse(isipendidikan[index = 23].apmsmp_n2);
-              double apmsmp_25 =
-                  double.parse(isipendidikan[index = 24].apmsmp_n2);
-              double apmsmp_26 =
-                  double.parse(isipendidikan[index = 25].apmsmp_n2);
-              double apmsmp_27 =
-                  double.parse(isipendidikan[index = 26].apmsmp_n2);
-              double apmsmp_28 =
-                  double.parse(isipendidikan[index = 27].apmsmp_n2);
-              double apmsmp_29 =
-                  double.parse(isipendidikan[index = 28].apmsmp_n2);
-              double apmsmp_30 =
-                  double.parse(isipendidikan[index = 29].apmsmp_n2);
-              double apmsmp_31 =
-                  double.parse(isipendidikan[index = 30].apmsmp_n2);
-              double apmsmp_32 =
-                  double.parse(isipendidikan[index = 31].apmsmp_n2);
-              double apmsmp_33 =
-                  double.parse(isipendidikan[index = 32].apmsmp_n2);
-              double apmsmp_34 =
-                  double.parse(isipendidikan[index = 33].apmsmp_n2);
-              double apmsmp_35 =
-                  double.parse(isipendidikan[index = 34].apmsmp_n2);
-              double apmsmp_36 =
-                  double.parse(isipendidikan[index = 35].apmsmp_n2);
+              double tdk_tmtsd_1 =
+                  double.parse(isipendidikan[index = 0].tdk_tmtsd_n1);
+              double tdk_tmtsd_2 =
+                  double.parse(isipendidikan[index = 1].tdk_tmtsd_n1);
+              double tdk_tmtsd_3 =
+                  double.parse(isipendidikan[index = 2].tdk_tmtsd_n1);
+              double tdk_tmtsd_4 =
+                  double.parse(isipendidikan[index = 3].tdk_tmtsd_n1);
+              double tdk_tmtsd_5 =
+                  double.parse(isipendidikan[index = 4].tdk_tmtsd_n1);
+              double tdk_tmtsd_6 =
+                  double.parse(isipendidikan[index = 5].tdk_tmtsd_n1);
+              double tdk_tmtsd_7 =
+                  double.parse(isipendidikan[index = 6].tdk_tmtsd_n1);
+              double tdk_tmtsd_8 =
+                  double.parse(isipendidikan[index = 7].tdk_tmtsd_n1);
+              double tdk_tmtsd_9 =
+                  double.parse(isipendidikan[index = 8].tdk_tmtsd_n1);
+              double tdk_tmtsd_10 =
+                  double.parse(isipendidikan[index = 9].tdk_tmtsd_n1);
+              double tdk_tmtsd_11 =
+                  double.parse(isipendidikan[index = 10].tdk_tmtsd_n1);
+              double tdk_tmtsd_12 =
+                  double.parse(isipendidikan[index = 11].tdk_tmtsd_n1);
+              double tdk_tmtsd_13 =
+                  double.parse(isipendidikan[index = 12].tdk_tmtsd_n1);
+              double tdk_tmtsd_14 =
+                  double.parse(isipendidikan[index = 13].tdk_tmtsd_n1);
+              double tdk_tmtsd_15 =
+                  double.parse(isipendidikan[index = 14].tdk_tmtsd_n1);
+              double tdk_tmtsd_16 =
+                  double.parse(isipendidikan[index = 15].tdk_tmtsd_n1);
+              double tdk_tmtsd_17 =
+                  double.parse(isipendidikan[index = 16].tdk_tmtsd_n1);
+              double tdk_tmtsd_18 =
+                  double.parse(isipendidikan[index = 17].tdk_tmtsd_n1);
+              double tdk_tmtsd_19 =
+                  double.parse(isipendidikan[index = 18].tdk_tmtsd_n1);
+              double tdk_tmtsd_20 =
+                  double.parse(isipendidikan[index = 19].tdk_tmtsd_n1);
+              double tdk_tmtsd_21 =
+                  double.parse(isipendidikan[index = 20].tdk_tmtsd_n1);
+              double tdk_tmtsd_22 =
+                  double.parse(isipendidikan[index = 21].tdk_tmtsd_n1);
+              double tdk_tmtsd_23 =
+                  double.parse(isipendidikan[index = 22].tdk_tmtsd_n1);
+              double tdk_tmtsd_24 =
+                  double.parse(isipendidikan[index = 23].tdk_tmtsd_n1);
+              double tdk_tmtsd_25 =
+                  double.parse(isipendidikan[index = 24].tdk_tmtsd_n1);
+              double tdk_tmtsd_26 =
+                  double.parse(isipendidikan[index = 25].tdk_tmtsd_n1);
+              double tdk_tmtsd_27 =
+                  double.parse(isipendidikan[index = 26].tdk_tmtsd_n1);
+              double tdk_tmtsd_28 =
+                  double.parse(isipendidikan[index = 27].tdk_tmtsd_n1);
+              double tdk_tmtsd_29 =
+                  double.parse(isipendidikan[index = 28].tdk_tmtsd_n1);
+              double tdk_tmtsd_30 =
+                  double.parse(isipendidikan[index = 29].tdk_tmtsd_n1);
+              double tdk_tmtsd_31 =
+                  double.parse(isipendidikan[index = 30].tdk_tmtsd_n1);
+              double tdk_tmtsd_32 =
+                  double.parse(isipendidikan[index = 31].tdk_tmtsd_n1);
+              double tdk_tmtsd_33 =
+                  double.parse(isipendidikan[index = 32].tdk_tmtsd_n1);
+              double tdk_tmtsd_34 =
+                  double.parse(isipendidikan[index = 33].tdk_tmtsd_n1);
+              double tdk_tmtsd_35 =
+                  double.parse(isipendidikan[index = 34].tdk_tmtsd_n1);
+              double tdk_tmtsd_36 =
+                  double.parse(isipendidikan[index = 35].tdk_tmtsd_n1);
 
-              double apmsma_1 =
-                  double.parse(isipendidikan[index = 0].apmsma_n2);
-              double apmsma_2 =
-                  double.parse(isipendidikan[index = 1].apmsma_n2);
-              double apmsma_3 =
-                  double.parse(isipendidikan[index = 2].apmsma_n2);
-              double apmsma_4 =
-                  double.parse(isipendidikan[index = 3].apmsma_n2);
-              double apmsma_5 =
-                  double.parse(isipendidikan[index = 4].apmsma_n2);
-              double apmsma_6 =
-                  double.parse(isipendidikan[index = 5].apmsma_n2);
-              double apmsma_7 =
-                  double.parse(isipendidikan[index = 6].apmsma_n2);
-              double apmsma_8 =
-                  double.parse(isipendidikan[index = 7].apmsma_n2);
-              double apmsma_9 =
-                  double.parse(isipendidikan[index = 8].apmsma_n2);
-              double apmsma_10 =
-                  double.parse(isipendidikan[index = 9].apmsma_n2);
-              double apmsma_11 =
-                  double.parse(isipendidikan[index = 10].apmsma_n2);
-              double apmsma_12 =
-                  double.parse(isipendidikan[index = 11].apmsma_n2);
-              double apmsma_13 =
-                  double.parse(isipendidikan[index = 12].apmsma_n2);
-              double apmsma_14 =
-                  double.parse(isipendidikan[index = 13].apmsma_n2);
-              double apmsma_15 =
-                  double.parse(isipendidikan[index = 14].apmsma_n2);
-              double apmsma_16 =
-                  double.parse(isipendidikan[index = 15].apmsma_n2);
-              double apmsma_17 =
-                  double.parse(isipendidikan[index = 16].apmsma_n2);
-              double apmsma_18 =
-                  double.parse(isipendidikan[index = 17].apmsma_n2);
-              double apmsma_19 =
-                  double.parse(isipendidikan[index = 18].apmsma_n2);
-              double apmsma_20 =
-                  double.parse(isipendidikan[index = 19].apmsma_n2);
-              double apmsma_21 =
-                  double.parse(isipendidikan[index = 20].apmsma_n2);
-              double apmsma_22 =
-                  double.parse(isipendidikan[index = 21].apmsma_n2);
-              double apmsma_23 =
-                  double.parse(isipendidikan[index = 22].apmsma_n2);
-              double apmsma_24 =
-                  double.parse(isipendidikan[index = 23].apmsma_n2);
-              double apmsma_25 =
-                  double.parse(isipendidikan[index = 24].apmsma_n2);
-              double apmsma_26 =
-                  double.parse(isipendidikan[index = 25].apmsma_n2);
-              double apmsma_27 =
-                  double.parse(isipendidikan[index = 26].apmsma_n2);
-              double apmsma_28 =
-                  double.parse(isipendidikan[index = 27].apmsma_n2);
-              double apmsma_29 =
-                  double.parse(isipendidikan[index = 28].apmsma_n2);
-              double apmsma_30 =
-                  double.parse(isipendidikan[index = 29].apmsma_n2);
-              double apmsma_31 =
-                  double.parse(isipendidikan[index = 30].apmsma_n2);
-              double apmsma_32 =
-                  double.parse(isipendidikan[index = 31].apmsma_n2);
-              double apmsma_33 =
-                  double.parse(isipendidikan[index = 32].apmsma_n2);
-              double apmsma_34 =
-                  double.parse(isipendidikan[index = 33].apmsma_n2);
-              double apmsma_35 =
-                  double.parse(isipendidikan[index = 34].apmsma_n2);
-              double apmsma_36 =
-                  double.parse(isipendidikan[index = 35].apmsma_n2);
+              double sd_1 = double.parse(isipendidikan[index = 0].sd_n1);
+              double sd_2 = double.parse(isipendidikan[index = 1].sd_n1);
+              double sd_3 = double.parse(isipendidikan[index = 2].sd_n1);
+              double sd_4 = double.parse(isipendidikan[index = 3].sd_n1);
+              double sd_5 = double.parse(isipendidikan[index = 4].sd_n1);
+              double sd_6 = double.parse(isipendidikan[index = 5].sd_n1);
+              double sd_7 = double.parse(isipendidikan[index = 6].sd_n1);
+              double sd_8 = double.parse(isipendidikan[index = 7].sd_n1);
+              double sd_9 = double.parse(isipendidikan[index = 8].sd_n1);
+              double sd_10 = double.parse(isipendidikan[index = 9].sd_n1);
+              double sd_11 = double.parse(isipendidikan[index = 10].sd_n1);
+              double sd_12 = double.parse(isipendidikan[index = 11].sd_n1);
+              double sd_13 = double.parse(isipendidikan[index = 12].sd_n1);
+              double sd_14 = double.parse(isipendidikan[index = 13].sd_n1);
+              double sd_15 = double.parse(isipendidikan[index = 14].sd_n1);
+              double sd_16 = double.parse(isipendidikan[index = 15].sd_n1);
+              double sd_17 = double.parse(isipendidikan[index = 16].sd_n1);
+              double sd_18 = double.parse(isipendidikan[index = 17].sd_n1);
+              double sd_19 = double.parse(isipendidikan[index = 18].sd_n1);
+              double sd_20 = double.parse(isipendidikan[index = 19].sd_n1);
+              double sd_21 = double.parse(isipendidikan[index = 20].sd_n1);
+              double sd_22 = double.parse(isipendidikan[index = 21].sd_n1);
+              double sd_23 = double.parse(isipendidikan[index = 22].sd_n1);
+              double sd_24 = double.parse(isipendidikan[index = 23].sd_n1);
+              double sd_25 = double.parse(isipendidikan[index = 24].sd_n1);
+              double sd_26 = double.parse(isipendidikan[index = 25].sd_n1);
+              double sd_27 = double.parse(isipendidikan[index = 26].sd_n1);
+              double sd_28 = double.parse(isipendidikan[index = 27].sd_n1);
+              double sd_29 = double.parse(isipendidikan[index = 28].sd_n1);
+              double sd_30 = double.parse(isipendidikan[index = 29].sd_n1);
+              double sd_31 = double.parse(isipendidikan[index = 30].sd_n1);
+              double sd_32 = double.parse(isipendidikan[index = 31].sd_n1);
+              double sd_33 = double.parse(isipendidikan[index = 32].sd_n1);
+              double sd_34 = double.parse(isipendidikan[index = 33].sd_n1);
+              double sd_35 = double.parse(isipendidikan[index = 34].sd_n1);
+              double sd_36 = double.parse(isipendidikan[index = 35].sd_n1);
 
-              //APK
-              //APM
-              double apksd_1 = double.parse(isipendidikan[index = 0].apksd_n2);
-              double apksd_2 = double.parse(isipendidikan[index = 1].apksd_n2);
-              double apksd_3 = double.parse(isipendidikan[index = 2].apksd_n2);
-              double apksd_4 = double.parse(isipendidikan[index = 3].apksd_n2);
-              double apksd_5 = double.parse(isipendidikan[index = 4].apksd_n2);
-              double apksd_6 = double.parse(isipendidikan[index = 5].apksd_n2);
-              double apksd_7 = double.parse(isipendidikan[index = 6].apksd_n2);
-              double apksd_8 = double.parse(isipendidikan[index = 7].apksd_n2);
-              double apksd_9 = double.parse(isipendidikan[index = 8].apksd_n2);
-              double apksd_10 = double.parse(isipendidikan[index = 9].apksd_n2);
-              double apksd_11 =
-                  double.parse(isipendidikan[index = 10].apksd_n2);
-              double apksd_12 =
-                  double.parse(isipendidikan[index = 11].apksd_n2);
-              double apksd_13 =
-                  double.parse(isipendidikan[index = 12].apksd_n2);
-              double apksd_14 =
-                  double.parse(isipendidikan[index = 13].apksd_n2);
-              double apksd_15 =
-                  double.parse(isipendidikan[index = 14].apksd_n2);
-              double apksd_16 =
-                  double.parse(isipendidikan[index = 15].apksd_n2);
-              double apksd_17 =
-                  double.parse(isipendidikan[index = 16].apksd_n2);
-              double apksd_18 =
-                  double.parse(isipendidikan[index = 17].apksd_n2);
-              double apksd_19 =
-                  double.parse(isipendidikan[index = 18].apksd_n2);
-              double apksd_20 =
-                  double.parse(isipendidikan[index = 19].apksd_n2);
-              double apksd_21 =
-                  double.parse(isipendidikan[index = 20].apksd_n2);
-              double apksd_22 =
-                  double.parse(isipendidikan[index = 21].apksd_n2);
-              double apksd_23 =
-                  double.parse(isipendidikan[index = 22].apksd_n2);
-              double apksd_24 =
-                  double.parse(isipendidikan[index = 23].apksd_n2);
-              double apksd_25 =
-                  double.parse(isipendidikan[index = 24].apksd_n2);
-              double apksd_26 =
-                  double.parse(isipendidikan[index = 25].apksd_n2);
-              double apksd_27 =
-                  double.parse(isipendidikan[index = 26].apksd_n2);
-              double apksd_28 =
-                  double.parse(isipendidikan[index = 27].apksd_n2);
-              double apksd_29 =
-                  double.parse(isipendidikan[index = 28].apksd_n2);
-              double apksd_30 =
-                  double.parse(isipendidikan[index = 29].apksd_n2);
-              double apksd_31 =
-                  double.parse(isipendidikan[index = 30].apksd_n2);
-              double apksd_32 =
-                  double.parse(isipendidikan[index = 31].apksd_n2);
-              double apksd_33 =
-                  double.parse(isipendidikan[index = 32].apksd_n2);
-              double apksd_34 =
-                  double.parse(isipendidikan[index = 33].apksd_n2);
-              double apksd_35 =
-                  double.parse(isipendidikan[index = 34].apksd_n2);
-              double apksd_36 =
-                  double.parse(isipendidikan[index = 35].apksd_n2);
+              double smp_1 = double.parse(isipendidikan[index = 0].smp_n1);
+              double smp_2 = double.parse(isipendidikan[index = 1].smp_n1);
+              double smp_3 = double.parse(isipendidikan[index = 2].smp_n1);
+              double smp_4 = double.parse(isipendidikan[index = 3].smp_n1);
+              double smp_5 = double.parse(isipendidikan[index = 4].smp_n1);
+              double smp_6 = double.parse(isipendidikan[index = 5].smp_n1);
+              double smp_7 = double.parse(isipendidikan[index = 6].smp_n1);
+              double smp_8 = double.parse(isipendidikan[index = 7].smp_n1);
+              double smp_9 = double.parse(isipendidikan[index = 8].smp_n1);
+              double smp_10 = double.parse(isipendidikan[index = 9].smp_n1);
+              double smp_11 = double.parse(isipendidikan[index = 10].smp_n1);
+              double smp_12 = double.parse(isipendidikan[index = 11].smp_n1);
+              double smp_13 = double.parse(isipendidikan[index = 12].smp_n1);
+              double smp_14 = double.parse(isipendidikan[index = 13].smp_n1);
+              double smp_15 = double.parse(isipendidikan[index = 14].smp_n1);
+              double smp_16 = double.parse(isipendidikan[index = 15].smp_n1);
+              double smp_17 = double.parse(isipendidikan[index = 16].smp_n1);
+              double smp_18 = double.parse(isipendidikan[index = 17].smp_n1);
+              double smp_19 = double.parse(isipendidikan[index = 18].smp_n1);
+              double smp_20 = double.parse(isipendidikan[index = 19].smp_n1);
+              double smp_21 = double.parse(isipendidikan[index = 20].smp_n1);
+              double smp_22 = double.parse(isipendidikan[index = 21].smp_n1);
+              double smp_23 = double.parse(isipendidikan[index = 22].smp_n1);
+              double smp_24 = double.parse(isipendidikan[index = 23].smp_n1);
+              double smp_25 = double.parse(isipendidikan[index = 24].smp_n1);
+              double smp_26 = double.parse(isipendidikan[index = 25].smp_n1);
+              double smp_27 = double.parse(isipendidikan[index = 26].smp_n1);
+              double smp_28 = double.parse(isipendidikan[index = 27].smp_n1);
+              double smp_29 = double.parse(isipendidikan[index = 28].smp_n1);
+              double smp_30 = double.parse(isipendidikan[index = 29].smp_n1);
+              double smp_31 = double.parse(isipendidikan[index = 30].smp_n1);
+              double smp_32 = double.parse(isipendidikan[index = 31].smp_n1);
+              double smp_33 = double.parse(isipendidikan[index = 32].smp_n1);
+              double smp_34 = double.parse(isipendidikan[index = 33].smp_n1);
+              double smp_35 = double.parse(isipendidikan[index = 34].smp_n1);
+              double smp_36 = double.parse(isipendidikan[index = 35].smp_n1);
 
-              double apksmp_1 =
-                  double.parse(isipendidikan[index = 0].apksmp_n2);
-              double apksmp_2 =
-                  double.parse(isipendidikan[index = 1].apksmp_n2);
-              double apksmp_3 =
-                  double.parse(isipendidikan[index = 2].apksmp_n2);
-              double apksmp_4 =
-                  double.parse(isipendidikan[index = 3].apksmp_n2);
-              double apksmp_5 =
-                  double.parse(isipendidikan[index = 4].apksmp_n2);
-              double apksmp_6 =
-                  double.parse(isipendidikan[index = 5].apksmp_n2);
-              double apksmp_7 =
-                  double.parse(isipendidikan[index = 6].apksmp_n2);
-              double apksmp_8 =
-                  double.parse(isipendidikan[index = 7].apksmp_n2);
-              double apksmp_9 =
-                  double.parse(isipendidikan[index = 8].apksmp_n2);
-              double apksmp_10 =
-                  double.parse(isipendidikan[index = 9].apksmp_n2);
-              double apksmp_11 =
-                  double.parse(isipendidikan[index = 10].apksmp_n2);
-              double apksmp_12 =
-                  double.parse(isipendidikan[index = 11].apksmp_n2);
-              double apksmp_13 =
-                  double.parse(isipendidikan[index = 12].apksmp_n2);
-              double apksmp_14 =
-                  double.parse(isipendidikan[index = 13].apksmp_n2);
-              double apksmp_15 =
-                  double.parse(isipendidikan[index = 14].apksmp_n2);
-              double apksmp_16 =
-                  double.parse(isipendidikan[index = 15].apksmp_n2);
-              double apksmp_17 =
-                  double.parse(isipendidikan[index = 16].apksmp_n2);
-              double apksmp_18 =
-                  double.parse(isipendidikan[index = 17].apksmp_n2);
-              double apksmp_19 =
-                  double.parse(isipendidikan[index = 18].apksmp_n2);
-              double apksmp_20 =
-                  double.parse(isipendidikan[index = 19].apksmp_n2);
-              double apksmp_21 =
-                  double.parse(isipendidikan[index = 20].apksmp_n2);
-              double apksmp_22 =
-                  double.parse(isipendidikan[index = 21].apksmp_n2);
-              double apksmp_23 =
-                  double.parse(isipendidikan[index = 22].apksmp_n2);
-              double apksmp_24 =
-                  double.parse(isipendidikan[index = 23].apksmp_n2);
-              double apksmp_25 =
-                  double.parse(isipendidikan[index = 24].apksmp_n2);
-              double apksmp_26 =
-                  double.parse(isipendidikan[index = 25].apksmp_n2);
-              double apksmp_27 =
-                  double.parse(isipendidikan[index = 26].apksmp_n2);
-              double apksmp_28 =
-                  double.parse(isipendidikan[index = 27].apksmp_n2);
-              double apksmp_29 =
-                  double.parse(isipendidikan[index = 28].apksmp_n2);
-              double apksmp_30 =
-                  double.parse(isipendidikan[index = 29].apksmp_n2);
-              double apksmp_31 =
-                  double.parse(isipendidikan[index = 30].apksmp_n2);
-              double apksmp_32 =
-                  double.parse(isipendidikan[index = 31].apksmp_n2);
-              double apksmp_33 =
-                  double.parse(isipendidikan[index = 32].apksmp_n2);
-              double apksmp_34 =
-                  double.parse(isipendidikan[index = 33].apksmp_n2);
-              double apksmp_35 =
-                  double.parse(isipendidikan[index = 34].apksmp_n2);
-              double apksmp_36 =
-                  double.parse(isipendidikan[index = 35].apksmp_n2);
+              double sma_1 = double.parse(isipendidikan[index = 0].sma_n1);
+              double sma_2 = double.parse(isipendidikan[index = 1].sma_n1);
+              double sma_3 = double.parse(isipendidikan[index = 2].sma_n1);
+              double sma_4 = double.parse(isipendidikan[index = 3].sma_n1);
+              double sma_5 = double.parse(isipendidikan[index = 4].sma_n1);
+              double sma_6 = double.parse(isipendidikan[index = 5].sma_n1);
+              double sma_7 = double.parse(isipendidikan[index = 6].sma_n1);
+              double sma_8 = double.parse(isipendidikan[index = 7].sma_n1);
+              double sma_9 = double.parse(isipendidikan[index = 8].sma_n1);
+              double sma_10 = double.parse(isipendidikan[index = 9].sma_n1);
+              double sma_11 = double.parse(isipendidikan[index = 10].sma_n1);
+              double sma_12 = double.parse(isipendidikan[index = 11].sma_n1);
+              double sma_13 = double.parse(isipendidikan[index = 12].sma_n1);
+              double sma_14 = double.parse(isipendidikan[index = 13].sma_n1);
+              double sma_15 = double.parse(isipendidikan[index = 14].sma_n1);
+              double sma_16 = double.parse(isipendidikan[index = 15].sma_n1);
+              double sma_17 = double.parse(isipendidikan[index = 16].sma_n1);
+              double sma_18 = double.parse(isipendidikan[index = 17].sma_n1);
+              double sma_19 = double.parse(isipendidikan[index = 18].sma_n1);
+              double sma_20 = double.parse(isipendidikan[index = 19].sma_n1);
+              double sma_21 = double.parse(isipendidikan[index = 20].sma_n1);
+              double sma_22 = double.parse(isipendidikan[index = 21].sma_n1);
+              double sma_23 = double.parse(isipendidikan[index = 22].sma_n1);
+              double sma_24 = double.parse(isipendidikan[index = 23].sma_n1);
+              double sma_25 = double.parse(isipendidikan[index = 24].sma_n1);
+              double sma_26 = double.parse(isipendidikan[index = 25].sma_n1);
+              double sma_27 = double.parse(isipendidikan[index = 26].sma_n1);
+              double sma_28 = double.parse(isipendidikan[index = 27].sma_n1);
+              double sma_29 = double.parse(isipendidikan[index = 28].sma_n1);
+              double sma_30 = double.parse(isipendidikan[index = 29].sma_n1);
+              double sma_31 = double.parse(isipendidikan[index = 30].sma_n1);
+              double sma_32 = double.parse(isipendidikan[index = 31].sma_n1);
+              double sma_33 = double.parse(isipendidikan[index = 32].sma_n1);
+              double sma_34 = double.parse(isipendidikan[index = 33].sma_n1);
+              double sma_35 = double.parse(isipendidikan[index = 34].sma_n1);
+              double sma_36 = double.parse(isipendidikan[index = 35].sma_n1);
 
-              double apksma_1 =
-                  double.parse(isipendidikan[index = 0].apksma_n2);
-              double apksma_2 =
-                  double.parse(isipendidikan[index = 1].apksma_n2);
-              double apksma_3 =
-                  double.parse(isipendidikan[index = 2].apksma_n2);
-              double apksma_4 =
-                  double.parse(isipendidikan[index = 3].apksma_n2);
-              double apksma_5 =
-                  double.parse(isipendidikan[index = 4].apksma_n2);
-              double apksma_6 =
-                  double.parse(isipendidikan[index = 5].apksma_n2);
-              double apksma_7 =
-                  double.parse(isipendidikan[index = 6].apksma_n2);
-              double apksma_8 =
-                  double.parse(isipendidikan[index = 7].apksma_n2);
-              double apksma_9 =
-                  double.parse(isipendidikan[index = 8].apksma_n2);
-              double apksma_10 =
-                  double.parse(isipendidikan[index = 9].apksma_n2);
-              double apksma_11 =
-                  double.parse(isipendidikan[index = 10].apksma_n2);
-              double apksma_12 =
-                  double.parse(isipendidikan[index = 11].apksma_n2);
-              double apksma_13 =
-                  double.parse(isipendidikan[index = 12].apksma_n2);
-              double apksma_14 =
-                  double.parse(isipendidikan[index = 13].apksma_n2);
-              double apksma_15 =
-                  double.parse(isipendidikan[index = 14].apksma_n2);
-              double apksma_16 =
-                  double.parse(isipendidikan[index = 15].apksma_n2);
-              double apksma_17 =
-                  double.parse(isipendidikan[index = 16].apksma_n2);
-              double apksma_18 =
-                  double.parse(isipendidikan[index = 17].apksma_n2);
-              double apksma_19 =
-                  double.parse(isipendidikan[index = 18].apksma_n2);
-              double apksma_20 =
-                  double.parse(isipendidikan[index = 19].apksma_n2);
-              double apksma_21 =
-                  double.parse(isipendidikan[index = 20].apksma_n2);
-              double apksma_22 =
-                  double.parse(isipendidikan[index = 21].apksma_n2);
-              double apksma_23 =
-                  double.parse(isipendidikan[index = 22].apksma_n2);
-              double apksma_24 =
-                  double.parse(isipendidikan[index = 23].apksma_n2);
-              double apksma_25 =
-                  double.parse(isipendidikan[index = 24].apksma_n2);
-              double apksma_26 =
-                  double.parse(isipendidikan[index = 25].apksma_n2);
-              double apksma_27 =
-                  double.parse(isipendidikan[index = 26].apksma_n2);
-              double apksma_28 =
-                  double.parse(isipendidikan[index = 27].apksma_n2);
-              double apksma_29 =
-                  double.parse(isipendidikan[index = 28].apksma_n2);
-              double apksma_30 =
-                  double.parse(isipendidikan[index = 29].apksma_n2);
-              double apksma_31 =
-                  double.parse(isipendidikan[index = 30].apksma_n2);
-              double apksma_32 =
-                  double.parse(isipendidikan[index = 31].apksma_n2);
-              double apksma_33 =
-                  double.parse(isipendidikan[index = 32].apksma_n2);
-              double apksma_34 =
-                  double.parse(isipendidikan[index = 33].apksma_n2);
-              double apksma_35 =
-                  double.parse(isipendidikan[index = 34].apksma_n2);
-              double apksma_36 =
-                  double.parse(isipendidikan[index = 35].apksma_n2);
+              double pt_1 = double.parse(isipendidikan[index = 0].pt_n1);
+              double pt_2 = double.parse(isipendidikan[index = 1].pt_n1);
+              double pt_3 = double.parse(isipendidikan[index = 2].pt_n1);
+              double pt_4 = double.parse(isipendidikan[index = 3].pt_n1);
+              double pt_5 = double.parse(isipendidikan[index = 4].pt_n1);
+              double pt_6 = double.parse(isipendidikan[index = 5].pt_n1);
+              double pt_7 = double.parse(isipendidikan[index = 6].pt_n1);
+              double pt_8 = double.parse(isipendidikan[index = 7].pt_n1);
+              double pt_9 = double.parse(isipendidikan[index = 8].pt_n1);
+              double pt_10 = double.parse(isipendidikan[index = 9].pt_n1);
+              double pt_11 = double.parse(isipendidikan[index = 10].pt_n1);
+              double pt_12 = double.parse(isipendidikan[index = 11].pt_n1);
+              double pt_13 = double.parse(isipendidikan[index = 12].pt_n1);
+              double pt_14 = double.parse(isipendidikan[index = 13].pt_n1);
+              double pt_15 = double.parse(isipendidikan[index = 14].pt_n1);
+              double pt_16 = double.parse(isipendidikan[index = 15].pt_n1);
+              double pt_17 = double.parse(isipendidikan[index = 16].pt_n1);
+              double pt_18 = double.parse(isipendidikan[index = 17].pt_n1);
+              double pt_19 = double.parse(isipendidikan[index = 18].pt_n1);
+              double pt_20 = double.parse(isipendidikan[index = 19].pt_n1);
+              double pt_21 = double.parse(isipendidikan[index = 20].pt_n1);
+              double pt_22 = double.parse(isipendidikan[index = 21].pt_n1);
+              double pt_23 = double.parse(isipendidikan[index = 22].pt_n1);
+              double pt_24 = double.parse(isipendidikan[index = 23].pt_n1);
+              double pt_25 = double.parse(isipendidikan[index = 24].pt_n1);
+              double pt_26 = double.parse(isipendidikan[index = 25].pt_n1);
+              double pt_27 = double.parse(isipendidikan[index = 26].pt_n1);
+              double pt_28 = double.parse(isipendidikan[index = 27].pt_n1);
+              double pt_29 = double.parse(isipendidikan[index = 28].pt_n1);
+              double pt_30 = double.parse(isipendidikan[index = 29].pt_n1);
+              double pt_31 = double.parse(isipendidikan[index = 30].pt_n1);
+              double pt_32 = double.parse(isipendidikan[index = 31].pt_n1);
+              double pt_33 = double.parse(isipendidikan[index = 32].pt_n1);
+              double pt_34 = double.parse(isipendidikan[index = 33].pt_n1);
+              double pt_35 = double.parse(isipendidikan[index = 34].pt_n1);
+              double pt_36 = double.parse(isipendidikan[index = 35].pt_n1);
 
               //String thn1 = isipendidikan[index = 0].tahun.substring(0, 4);
 
@@ -560,6 +434,8 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                   //Flexible(
                   //fit: FlexFit.tight,
                   //flex: 5,
+
+                  //row header 1
                   Container(
                     width: screenWidth * 1.0,
                     height: screenHeight * 0.04,
@@ -584,14 +460,14 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.34,
+                          width: screenWidth * 0.11,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 left: 0, top: 5, bottom: 0),
                             child: const Text(
-                              "APM",
+                              "Tdk/",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -600,19 +476,83 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                             ),
                           ),
                         ),
-                        const Divider(
-                          thickness: 2,
-                          color: Colors.black,
-                        ),
                         SizedBox(
-                          width: screenWidth * 0.34,
+                          width: screenWidth * 0.11,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 left: 0, top: 5, bottom: 0),
                             child: const Text(
-                              "APK",
+                              "Tdk/",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "SD/",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "SMP/",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "SMA/",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "PT",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -625,84 +565,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                     ),
                   ),
 
-                  //separator
-                  Container(
-                    width: screenWidth * 1.0,
-                    height: screenHeight * 0.005,
-                    color: Colors.blue,
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: screenWidth * 0.30,
-                          child: Container(
-                            height: screenHeight * 0.005,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                right: 0, top: 0, bottom: 0),
-                            child: const Text(
-                              "",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.30,
-                          child: Container(
-                            height: screenHeight * 0.002,
-                            color: Colors.white,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 0, bottom: 0),
-                            child: const Text(
-                              "__",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.06,
-                          child: Container(
-                            height: screenHeight * 0.002,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 0, bottom: 0),
-                            child: const Text(
-                              "__",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12.5,
-                                  color: Colors.blue),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.30,
-                          child: Container(
-                            height: screenHeight * 0.002,
-                            color: Colors.white,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 0, bottom: 0),
-                            child: const Text(
-                              "__",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  //row header 2
 
                   Container(
                     width: screenWidth * 1.0,
@@ -711,80 +574,12 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: screenWidth * 0.28,
+                          width: screenWidth * 0.30,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                right: 0, top: 0, bottom: 0),
-                            child: const Text(
-                              "Kota",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 5, top: 0, bottom: 0),
-                            child: const Text(
-                              "SD",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 10, top: 0, bottom: 0),
-                            child: const Text(
-                              "SMP",
-                              //textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.11,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 10, top: 0, bottom: 0),
-                            child: const Text(
-                              "SMA",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.01,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 0, bottom: 0),
+                                right: 0, top: 10, bottom: 0),
                             child: const Text(
                               "",
                               textAlign: TextAlign.center,
@@ -796,12 +591,29 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.12,
+                          width: screenWidth * 0.11,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 5, top: 0, bottom: 0),
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "Sekolah",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
                             child: const Text(
                               "SD",
                               textAlign: TextAlign.center,
@@ -813,34 +625,198 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.12,
+                          width: screenWidth * 0.11,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 10, top: 0, bottom: 0),
+                                left: 0, top: 5, bottom: 0),
                             child: const Text(
-                              "SMP",
-                              //textAlign: TextAlign.center,
+                              "",
+                              textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontSize: 12.5,
                                   color: Colors.white),
                             ),
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.12,
+                          width: screenWidth * 0.11,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 10, top: 0, bottom: 0),
+                                left: 0, top: 5, bottom: 0),
                             child: const Text(
-                              "SMA",
+                              "",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // row header 3
+                  Container(
+                    width: screenWidth * 1.0,
+                    height: screenHeight * 0.04,
+                    color: Colors.blue,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: screenWidth * 0.30,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 0, top: 10, bottom: 0),
+                            child: const Text(
+                              "Kota/",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "Belum",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "Tamat",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "Sederajat",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "Sederajat",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "Sederajat",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.11,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "PT",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
                                   fontSize: 12.5,
                                   color: Colors.white),
                             ),
@@ -890,7 +866,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_1, 2),
+                                      Format.convertTo(tdk_blmsekolah_1, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -905,7 +881,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_1, 2),
+                                      Format.convertTo(tdk_tmtsd_1, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -920,7 +896,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_1, 2),
+                                      Format.convertTo(sd_1, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -952,7 +928,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_1, 2),
+                                      Format.convertTo(smp_1, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -967,7 +943,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_1, 2),
+                                      Format.convertTo(sma_1, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -982,7 +958,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_1, 2),
+                                      Format.convertTo(pt_1, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1023,7 +999,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_2, 2),
+                                      Format.convertTo(tdk_blmsekolah_2, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1038,7 +1014,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_2, 2),
+                                      Format.convertTo(tdk_tmtsd_2, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1053,7 +1029,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_2, 2),
+                                      Format.convertTo(sd_2, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1085,7 +1061,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_2, 2),
+                                      Format.convertTo(smp_2, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1100,7 +1076,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_2, 2),
+                                      Format.convertTo(sma_2, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1115,7 +1091,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_2, 2),
+                                      Format.convertTo(pt_2, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1156,7 +1132,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_3, 2),
+                                      Format.convertTo(tdk_blmsekolah_3, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1171,7 +1147,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_3, 2),
+                                      Format.convertTo(tdk_tmtsd_3, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1186,7 +1162,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_3, 2),
+                                      Format.convertTo(sd_3, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1218,7 +1194,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_3, 2),
+                                      Format.convertTo(smp_3, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1233,7 +1209,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_3, 2),
+                                      Format.convertTo(sma_3, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1248,7 +1224,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_3, 2),
+                                      Format.convertTo(pt_3, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1289,7 +1265,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_4, 2),
+                                      Format.convertTo(tdk_blmsekolah_4, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1304,7 +1280,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_4, 2),
+                                      Format.convertTo(tdk_tmtsd_4, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1319,7 +1295,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_4, 2),
+                                      Format.convertTo(sd_4, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1351,7 +1327,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_4, 2),
+                                      Format.convertTo(smp_4, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1366,7 +1342,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_4, 2),
+                                      Format.convertTo(sma_4, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1381,7 +1357,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_4, 2),
+                                      Format.convertTo(pt_4, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1422,7 +1398,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_5, 2),
+                                      Format.convertTo(tdk_blmsekolah_5, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1437,7 +1413,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_5, 2),
+                                      Format.convertTo(tdk_tmtsd_5, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1452,7 +1428,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_5, 2),
+                                      Format.convertTo(sd_5, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1484,7 +1460,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_5, 2),
+                                      Format.convertTo(smp_5, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1499,7 +1475,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_5, 2),
+                                      Format.convertTo(sma_5, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1514,7 +1490,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_5, 2),
+                                      Format.convertTo(pt_5, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1555,7 +1531,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_6, 2),
+                                      Format.convertTo(tdk_blmsekolah_6, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1570,7 +1546,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_6, 2),
+                                      Format.convertTo(tdk_tmtsd_6, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1585,7 +1561,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_6, 2),
+                                      Format.convertTo(sd_6, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1617,7 +1593,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_6, 2),
+                                      Format.convertTo(smp_6, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1632,7 +1608,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_6, 2),
+                                      Format.convertTo(sma_6, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1647,7 +1623,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_6, 2),
+                                      Format.convertTo(pt_6, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1688,7 +1664,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_7, 2),
+                                      Format.convertTo(tdk_blmsekolah_7, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1703,7 +1679,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_7, 2),
+                                      Format.convertTo(tdk_tmtsd_7, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1718,7 +1694,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_7, 2),
+                                      Format.convertTo(sd_7, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1750,7 +1726,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_7, 2),
+                                      Format.convertTo(smp_7, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1765,7 +1741,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_7, 2),
+                                      Format.convertTo(sma_7, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1780,7 +1756,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_7, 2),
+                                      Format.convertTo(pt_7, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1821,7 +1797,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_8, 2),
+                                      Format.convertTo(tdk_blmsekolah_8, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1836,7 +1812,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_8, 2),
+                                      Format.convertTo(tdk_tmtsd_8, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1851,7 +1827,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_8, 2),
+                                      Format.convertTo(sd_8, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1883,7 +1859,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_8, 2),
+                                      Format.convertTo(smp_8, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1898,7 +1874,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_8, 2),
+                                      Format.convertTo(sma_8, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1913,7 +1889,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_8, 2),
+                                      Format.convertTo(pt_8, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1954,7 +1930,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_9, 2),
+                                      Format.convertTo(tdk_blmsekolah_9, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1969,7 +1945,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_9, 2),
+                                      Format.convertTo(tdk_tmtsd_9, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1984,7 +1960,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_9, 2),
+                                      Format.convertTo(sd_9, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2016,7 +1992,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_9, 2),
+                                      Format.convertTo(smp_9, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2031,7 +2007,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_9, 2),
+                                      Format.convertTo(sma_9, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2046,7 +2022,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_9, 2),
+                                      Format.convertTo(pt_9, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2087,7 +2063,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_10, 2),
+                                      Format.convertTo(tdk_blmsekolah_10, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2102,7 +2078,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_10, 2),
+                                      Format.convertTo(tdk_tmtsd_10, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2117,7 +2093,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_10, 2),
+                                      Format.convertTo(sd_10, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2149,7 +2125,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_10, 2),
+                                      Format.convertTo(smp_10, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2164,7 +2140,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_10, 2),
+                                      Format.convertTo(sma_10, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2179,7 +2155,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_10, 2),
+                                      Format.convertTo(pt_10, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2221,7 +2197,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_11, 2),
+                                      Format.convertTo(tdk_blmsekolah_11, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2236,7 +2212,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_11, 2),
+                                      Format.convertTo(tdk_tmtsd_11, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2251,7 +2227,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_11, 2),
+                                      Format.convertTo(sd_11, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2283,7 +2259,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_11, 2),
+                                      Format.convertTo(smp_11, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2298,7 +2274,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_11, 2),
+                                      Format.convertTo(sma_11, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2313,7 +2289,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_11, 2),
+                                      Format.convertTo(pt_11, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2354,7 +2330,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_12, 2),
+                                      Format.convertTo(tdk_blmsekolah_12, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2369,7 +2345,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_12, 2),
+                                      Format.convertTo(tdk_tmtsd_12, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2384,7 +2360,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_12, 2),
+                                      Format.convertTo(sd_12, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2416,7 +2392,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_12, 2),
+                                      Format.convertTo(smp_12, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2431,7 +2407,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_12, 2),
+                                      Format.convertTo(sma_12, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2446,7 +2422,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_12, 2),
+                                      Format.convertTo(pt_12, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2487,7 +2463,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_13, 2),
+                                      Format.convertTo(tdk_blmsekolah_13, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2502,7 +2478,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_13, 2),
+                                      Format.convertTo(tdk_tmtsd_13, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2517,7 +2493,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_13, 2),
+                                      Format.convertTo(sd_13, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2549,7 +2525,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_13, 2),
+                                      Format.convertTo(smp_13, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2564,7 +2540,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_13, 2),
+                                      Format.convertTo(sma_13, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2579,7 +2555,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_13, 2),
+                                      Format.convertTo(pt_13, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2620,7 +2596,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_14, 2),
+                                      Format.convertTo(tdk_blmsekolah_14, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2635,7 +2611,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_14, 2),
+                                      Format.convertTo(tdk_tmtsd_14, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2650,7 +2626,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_14, 2),
+                                      Format.convertTo(sd_14, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2682,7 +2658,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_14, 2),
+                                      Format.convertTo(smp_14, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2697,7 +2673,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_14, 2),
+                                      Format.convertTo(sma_14, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2712,7 +2688,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_14, 2),
+                                      Format.convertTo(pt_14, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2753,7 +2729,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_15, 2),
+                                      Format.convertTo(tdk_blmsekolah_15, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2768,7 +2744,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_15, 2),
+                                      Format.convertTo(tdk_tmtsd_15, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2783,7 +2759,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_15, 2),
+                                      Format.convertTo(sd_15, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2815,7 +2791,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_15, 2),
+                                      Format.convertTo(smp_15, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2830,7 +2806,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_15, 2),
+                                      Format.convertTo(sma_15, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2845,7 +2821,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_15, 2),
+                                      Format.convertTo(pt_15, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2886,7 +2862,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_16, 2),
+                                      Format.convertTo(tdk_blmsekolah_16, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2901,7 +2877,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_16, 2),
+                                      Format.convertTo(tdk_tmtsd_16, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2916,7 +2892,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_16, 2),
+                                      Format.convertTo(sd_16, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2948,7 +2924,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_16, 2),
+                                      Format.convertTo(smp_16, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2963,7 +2939,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_16, 2),
+                                      Format.convertTo(sma_16, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2978,7 +2954,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_16, 2),
+                                      Format.convertTo(pt_16, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3019,7 +2995,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_17, 2),
+                                      Format.convertTo(tdk_blmsekolah_17, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3034,7 +3010,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_17, 2),
+                                      Format.convertTo(tdk_tmtsd_17, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3049,7 +3025,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_17, 2),
+                                      Format.convertTo(sd_17, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3081,7 +3057,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_17, 2),
+                                      Format.convertTo(smp_17, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3096,7 +3072,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_17, 2),
+                                      Format.convertTo(sma_17, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3111,7 +3087,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_17, 2),
+                                      Format.convertTo(pt_17, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3152,7 +3128,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_18, 2),
+                                      Format.convertTo(tdk_blmsekolah_18, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3167,7 +3143,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_18, 2),
+                                      Format.convertTo(tdk_tmtsd_18, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3182,7 +3158,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_18, 2),
+                                      Format.convertTo(sd_18, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3214,7 +3190,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_18, 2),
+                                      Format.convertTo(smp_18, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3229,7 +3205,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_18, 2),
+                                      Format.convertTo(sma_18, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3244,7 +3220,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_18, 2),
+                                      Format.convertTo(pt_18, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3285,7 +3261,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_19, 2),
+                                      Format.convertTo(tdk_blmsekolah_19, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3300,7 +3276,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_19, 2),
+                                      Format.convertTo(tdk_tmtsd_19, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3315,7 +3291,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_19, 2),
+                                      Format.convertTo(sd_19, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3347,7 +3323,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_19, 2),
+                                      Format.convertTo(smp_19, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3362,7 +3338,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_19, 2),
+                                      Format.convertTo(sma_19, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3377,7 +3353,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_19, 2),
+                                      Format.convertTo(pt_19, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3418,7 +3394,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_20, 2),
+                                      Format.convertTo(tdk_blmsekolah_20, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3433,7 +3409,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_20, 2),
+                                      Format.convertTo(tdk_tmtsd_20, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3448,7 +3424,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_20, 2),
+                                      Format.convertTo(sd_20, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3480,7 +3456,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_20, 2),
+                                      Format.convertTo(smp_20, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3495,7 +3471,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_20, 2),
+                                      Format.convertTo(sma_20, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3510,7 +3486,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_20, 2),
+                                      Format.convertTo(pt_20, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3551,7 +3527,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_21, 2),
+                                      Format.convertTo(tdk_blmsekolah_21, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3566,7 +3542,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_21, 2),
+                                      Format.convertTo(tdk_tmtsd_21, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3581,7 +3557,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_21, 2),
+                                      Format.convertTo(sd_21, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3613,7 +3589,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_21, 2),
+                                      Format.convertTo(smp_21, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3628,7 +3604,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_21, 2),
+                                      Format.convertTo(sma_21, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3643,7 +3619,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_21, 2),
+                                      Format.convertTo(pt_21, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3684,7 +3660,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_22, 2),
+                                      Format.convertTo(tdk_blmsekolah_22, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3699,7 +3675,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_22, 2),
+                                      Format.convertTo(tdk_tmtsd_22, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3714,7 +3690,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_22, 2),
+                                      Format.convertTo(sd_22, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3746,7 +3722,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_22, 2),
+                                      Format.convertTo(smp_22, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3761,7 +3737,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_22, 2),
+                                      Format.convertTo(sma_22, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3776,7 +3752,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_22, 2),
+                                      Format.convertTo(pt_22, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3817,7 +3793,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_23, 2),
+                                      Format.convertTo(tdk_blmsekolah_23, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3832,7 +3808,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_23, 2),
+                                      Format.convertTo(tdk_tmtsd_23, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3847,7 +3823,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_23, 2),
+                                      Format.convertTo(sd_23, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3879,7 +3855,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_23, 2),
+                                      Format.convertTo(smp_23, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3894,7 +3870,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_23, 2),
+                                      Format.convertTo(sma_23, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3909,7 +3885,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_23, 2),
+                                      Format.convertTo(pt_23, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3950,7 +3926,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_24, 2),
+                                      Format.convertTo(tdk_blmsekolah_24, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3965,7 +3941,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_24, 2),
+                                      Format.convertTo(tdk_tmtsd_24, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3980,7 +3956,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_24, 2),
+                                      Format.convertTo(sd_24, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4012,7 +3988,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_24, 2),
+                                      Format.convertTo(smp_24, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4027,7 +4003,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_24, 2),
+                                      Format.convertTo(sma_24, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4042,7 +4018,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_24, 2),
+                                      Format.convertTo(pt_24, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4083,7 +4059,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_25, 2),
+                                      Format.convertTo(tdk_blmsekolah_25, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4098,7 +4074,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_25, 2),
+                                      Format.convertTo(tdk_tmtsd_25, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4113,7 +4089,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_25, 2),
+                                      Format.convertTo(sd_25, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4145,7 +4121,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_25, 2),
+                                      Format.convertTo(smp_25, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4160,7 +4136,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_25, 2),
+                                      Format.convertTo(sma_25, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4175,7 +4151,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_25, 2),
+                                      Format.convertTo(pt_25, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4216,7 +4192,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_26, 2),
+                                      Format.convertTo(tdk_blmsekolah_26, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4231,7 +4207,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_26, 2),
+                                      Format.convertTo(tdk_tmtsd_26, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4246,7 +4222,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_26, 2),
+                                      Format.convertTo(sd_26, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4278,7 +4254,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_26, 2),
+                                      Format.convertTo(smp_26, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4293,7 +4269,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_26, 2),
+                                      Format.convertTo(sma_26, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4308,7 +4284,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_26, 2),
+                                      Format.convertTo(pt_26, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4349,7 +4325,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_27, 2),
+                                      Format.convertTo(tdk_blmsekolah_27, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4364,7 +4340,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_27, 2),
+                                      Format.convertTo(tdk_tmtsd_27, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4379,7 +4355,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_27, 2),
+                                      Format.convertTo(sd_27, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4411,7 +4387,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_27, 2),
+                                      Format.convertTo(smp_27, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4426,7 +4402,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_27, 2),
+                                      Format.convertTo(sma_27, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4441,7 +4417,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_27, 2),
+                                      Format.convertTo(pt_27, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4482,7 +4458,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_28, 2),
+                                      Format.convertTo(tdk_blmsekolah_28, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4497,7 +4473,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_28, 2),
+                                      Format.convertTo(tdk_tmtsd_28, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4512,7 +4488,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_28, 2),
+                                      Format.convertTo(sd_28, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4544,7 +4520,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_28, 2),
+                                      Format.convertTo(smp_28, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4559,7 +4535,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_28, 2),
+                                      Format.convertTo(sma_28, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4574,7 +4550,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_28, 2),
+                                      Format.convertTo(pt_28, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4615,7 +4591,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_29, 2),
+                                      Format.convertTo(tdk_blmsekolah_29, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4630,7 +4606,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_29, 2),
+                                      Format.convertTo(tdk_tmtsd_29, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4645,7 +4621,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_29, 2),
+                                      Format.convertTo(sd_29, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4677,7 +4653,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_29, 2),
+                                      Format.convertTo(smp_29, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4692,7 +4668,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_29, 2),
+                                      Format.convertTo(sma_29, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4707,7 +4683,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_29, 2),
+                                      Format.convertTo(pt_29, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4748,7 +4724,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_30, 2),
+                                      Format.convertTo(tdk_blmsekolah_30, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4763,7 +4739,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_30, 2),
+                                      Format.convertTo(tdk_tmtsd_30, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4778,7 +4754,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_30, 2),
+                                      Format.convertTo(sd_30, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4810,7 +4786,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_30, 2),
+                                      Format.convertTo(smp_30, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4825,7 +4801,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_30, 2),
+                                      Format.convertTo(sma_30, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4840,7 +4816,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_30, 2),
+                                      Format.convertTo(pt_30, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4881,7 +4857,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_31, 2),
+                                      Format.convertTo(tdk_blmsekolah_31, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4896,7 +4872,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_31, 2),
+                                      Format.convertTo(tdk_tmtsd_31, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4911,7 +4887,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_31, 2),
+                                      Format.convertTo(sd_31, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4943,7 +4919,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_31, 2),
+                                      Format.convertTo(smp_31, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4958,7 +4934,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_31, 2),
+                                      Format.convertTo(sma_31, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -4973,7 +4949,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_31, 2),
+                                      Format.convertTo(pt_31, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5014,7 +4990,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_32, 2),
+                                      Format.convertTo(tdk_blmsekolah_32, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5029,7 +5005,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_32, 2),
+                                      Format.convertTo(tdk_tmtsd_32, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5044,7 +5020,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_32, 2),
+                                      Format.convertTo(sd_32, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5076,7 +5052,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_32, 2),
+                                      Format.convertTo(smp_32, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5091,7 +5067,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_32, 2),
+                                      Format.convertTo(sma_32, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5106,7 +5082,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_32, 2),
+                                      Format.convertTo(pt_32, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5147,7 +5123,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_33, 2),
+                                      Format.convertTo(tdk_blmsekolah_33, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5162,7 +5138,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_33, 2),
+                                      Format.convertTo(tdk_tmtsd_33, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5177,7 +5153,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_33, 2),
+                                      Format.convertTo(sd_33, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5209,7 +5185,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_33, 2),
+                                      Format.convertTo(smp_33, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5224,7 +5200,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_33, 2),
+                                      Format.convertTo(sma_33, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5239,7 +5215,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_33, 2),
+                                      Format.convertTo(pt_33, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5280,7 +5256,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_34, 2),
+                                      Format.convertTo(tdk_blmsekolah_34, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5295,7 +5271,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_34, 2),
+                                      Format.convertTo(tdk_tmtsd_34, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5310,7 +5286,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_34, 2),
+                                      Format.convertTo(sd_34, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5342,7 +5318,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_34, 2),
+                                      Format.convertTo(smp_34, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5357,7 +5333,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_34, 2),
+                                      Format.convertTo(sma_34, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5372,7 +5348,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_34, 2),
+                                      Format.convertTo(pt_34, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5413,7 +5389,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_35, 2),
+                                      Format.convertTo(tdk_blmsekolah_35, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5428,7 +5404,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_35, 2),
+                                      Format.convertTo(tdk_tmtsd_35, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5443,7 +5419,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_35, 2),
+                                      Format.convertTo(sd_35, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5475,7 +5451,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_35, 2),
+                                      Format.convertTo(smp_35, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5490,7 +5466,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_35, 2),
+                                      Format.convertTo(sma_35, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5505,7 +5481,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_35, 2),
+                                      Format.convertTo(pt_35, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -5545,7 +5521,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsd_36, 2),
+                                      Format.convertTo(tdk_blmsekolah_36, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,
@@ -5560,7 +5536,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsmp_36, 2),
+                                      Format.convertTo(tdk_tmtsd_36, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,
@@ -5575,7 +5551,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apmsma_36, 2),
+                                      Format.convertTo(sd_36, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,
@@ -5606,7 +5582,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksd_36, 2),
+                                      Format.convertTo(smp_36, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,
@@ -5621,7 +5597,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksmp_36, 2),
+                                      Format.convertTo(sma_36, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,
@@ -5636,7 +5612,7 @@ class _PendidikanKabkotApmapkBState extends State<PendidikanKabkotApmapkB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(apksma_36, 2),
+                                      Format.convertTo(pt_36, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,

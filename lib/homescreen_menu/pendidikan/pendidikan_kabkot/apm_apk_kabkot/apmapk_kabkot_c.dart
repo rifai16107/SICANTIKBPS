@@ -94,41 +94,41 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String kab1 = "01. " + isipendidikan[index = 0].wilayah;
-              String kab2 = "02. " + isipendidikan[index = 1].wilayah;
-              String kab3 = "03. " + isipendidikan[index = 2].wilayah;
-              String kab4 = "04. " + isipendidikan[index = 3].wilayah;
-              String kab5 = "05. " + isipendidikan[index = 4].wilayah;
-              String kab6 = "06. " + isipendidikan[index = 5].wilayah;
-              String kab7 = "07. " + isipendidikan[index = 6].wilayah;
-              String kab8 = "08. " + isipendidikan[index = 7].wilayah;
-              String kab9 = "09. " + isipendidikan[index = 8].wilayah;
-              String kab10 = "10. " + isipendidikan[index = 9].wilayah;
-              String kab11 = "11. " + isipendidikan[index = 10].wilayah;
-              String kab12 = "12. " + isipendidikan[index = 11].wilayah;
-              String kab13 = "13. " + isipendidikan[index = 12].wilayah;
-              String kab14 = "14. " + isipendidikan[index = 13].wilayah;
-              String kab15 = "15. " + isipendidikan[index = 14].wilayah;
-              String kab16 = "16. " + isipendidikan[index = 15].wilayah;
-              String kab17 = "17. " + isipendidikan[index = 16].wilayah;
-              String kab18 = "18. " + isipendidikan[index = 17].wilayah;
-              String kab19 = "19. " + isipendidikan[index = 18].wilayah;
-              String kab20 = "20. " + isipendidikan[index = 19].wilayah;
-              String kab21 = "21. " + isipendidikan[index = 20].wilayah;
-              String kab22 = "22. " + isipendidikan[index = 21].wilayah;
-              String kab23 = "23. " + isipendidikan[index = 22].wilayah;
-              String kab24 = "24. " + isipendidikan[index = 23].wilayah;
-              String kab25 = "25. " + isipendidikan[index = 24].wilayah;
-              String kab26 = "26. " + isipendidikan[index = 25].wilayah;
-              String kab27 = "27. " + isipendidikan[index = 26].wilayah;
-              String kab28 = "28. " + isipendidikan[index = 27].wilayah;
-              String kab29 = "29. " + isipendidikan[index = 28].wilayah;
-              String kab30 = "71. " + isipendidikan[index = 29].wilayah;
-              String kab31 = "72. " + isipendidikan[index = 30].wilayah;
-              String kab32 = "73. " + isipendidikan[index = 31].wilayah;
-              String kab33 = "74. " + isipendidikan[index = 32].wilayah;
-              String kab34 = "75. " + isipendidikan[index = 33].wilayah;
-              String kab35 = "76. " + isipendidikan[index = 34].wilayah;
+              String kab1 = isipendidikan[index = 0].wilayah;
+              String kab2 = isipendidikan[index = 1].wilayah;
+              String kab3 = isipendidikan[index = 2].wilayah;
+              String kab4 = isipendidikan[index = 3].wilayah;
+              String kab5 = isipendidikan[index = 4].wilayah;
+              String kab6 = isipendidikan[index = 5].wilayah;
+              String kab7 = isipendidikan[index = 6].wilayah;
+              String kab8 = isipendidikan[index = 7].wilayah;
+              String kab9 = isipendidikan[index = 8].wilayah;
+              String kab10 = isipendidikan[index = 9].wilayah;
+              String kab11 = isipendidikan[index = 10].wilayah;
+              String kab12 = isipendidikan[index = 11].wilayah;
+              String kab13 = isipendidikan[index = 12].wilayah;
+              String kab14 = isipendidikan[index = 13].wilayah;
+              String kab15 = isipendidikan[index = 14].wilayah;
+              String kab16 = isipendidikan[index = 15].wilayah;
+              String kab17 = isipendidikan[index = 16].wilayah;
+              String kab18 = isipendidikan[index = 17].wilayah;
+              String kab19 = isipendidikan[index = 18].wilayah;
+              String kab20 = isipendidikan[index = 19].wilayah;
+              String kab21 = isipendidikan[index = 20].wilayah;
+              String kab22 = isipendidikan[index = 21].wilayah;
+              String kab23 = isipendidikan[index = 22].wilayah;
+              String kab24 = isipendidikan[index = 23].wilayah;
+              String kab25 = isipendidikan[index = 24].wilayah;
+              String kab26 = isipendidikan[index = 25].wilayah;
+              String kab27 = isipendidikan[index = 26].wilayah;
+              String kab28 = isipendidikan[index = 27].wilayah;
+              String kab29 = isipendidikan[index = 28].wilayah;
+              String kab30 = isipendidikan[index = 29].wilayah;
+              String kab31 = isipendidikan[index = 30].wilayah;
+              String kab32 = isipendidikan[index = 31].wilayah;
+              String kab33 = isipendidikan[index = 32].wilayah;
+              String kab34 = isipendidikan[index = 33].wilayah;
+              String kab35 = isipendidikan[index = 34].wilayah;
               String kab36 = "    " + isipendidikan[index = 35].wilayah;
 
               //APM
@@ -998,7 +998,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -1264,7 +1264,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -1530,7 +1530,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -1796,7 +1796,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -2062,7 +2062,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -2329,7 +2329,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -2595,7 +2595,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -2861,7 +2861,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -3127,7 +3127,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -3393,7 +3393,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -3659,7 +3659,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -3925,7 +3925,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -4191,7 +4191,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -4457,7 +4457,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -4723,7 +4723,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -4989,7 +4989,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
@@ -5255,7 +5255,7 @@ class _PendidikanKabkotApmapkCState extends State<PendidikanKabkotApmapkC> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.032,
-                            color: Colors.transparent,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(

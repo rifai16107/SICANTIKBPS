@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_parsek.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/body_parsek_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesParsek extends StatefulWidget {
-  const SeriesParsek({super.key});
+class SeriesParsekKabkot extends StatefulWidget {
+  const SeriesParsekKabkot({super.key});
 
   @override
-  State<SeriesParsek> createState() => _SeriesParsek();
+  State<SeriesParsekKabkot> createState() => _SeriesParsekKabkot();
 }
 
-class _SeriesParsek extends State<SeriesParsek> {
+class _SeriesParsekKabkot extends State<SeriesParsekKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -33,20 +33,19 @@ class _SeriesParsek extends State<SeriesParsek> {
             ),
           ),
         ),
-     
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.065,
+              height: screenHeight * 0.095,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Partisipasi Sekolah Penduduk Usia 5+ di Kabupaten Cilacap",
+                    "Persentase Penduduk Usia 5+ Menurut Partisipasi Sekolah dan Kabupaten/Kota di Jawa Tengah",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -56,7 +55,7 @@ class _SeriesParsek extends State<SeriesParsek> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesParsek(),
+                child: const BodySeriesParsekKabkot(),
               ),
             ),
           ],

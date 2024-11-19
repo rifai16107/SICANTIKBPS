@@ -1,15 +1,15 @@
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/parsek_kabkot_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/parsek_kabkot_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/parsek_kabkot_c.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/parsek_kabkot_d.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/parsek_kabkot_e.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/apsek_kabkot_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/apsek_kabkot_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/apsek_kabkot_c.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/apsek_kabkot_d.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/aps_kabkot/apsek_kabkot_e.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
-class RepositoryPendidikanKabkotParsek {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-parsek';
+class RepositoryPendidikanKabkotApsek {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-apmapk';
 
   Future getData() async {
     try {
@@ -19,7 +19,7 @@ class RepositoryPendidikanKabkotParsek {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
             .map((isipendidikan) =>
-                ModelPendidikanKabkotParsek.fromJson(isipendidikan))
+                ModelPendidikanKabkotApsek.fromJson(isipendidikan))
             .toList();
       }
     } catch (isipendidikan) {
@@ -29,16 +29,16 @@ class RepositoryPendidikanKabkotParsek {
   }
 }
 
-class ModelPendidikanKabkotParsek {
+class ModelPendidikanKabkotApsek {
   final int id;
   final String wilayah;
   final String tahun;
 
-  ModelPendidikanKabkotParsek(
+  ModelPendidikanKabkotApsek(
       {required this.id, required this.wilayah, required this.tahun});
 
-  factory ModelPendidikanKabkotParsek.fromJson(Map<String, dynamic> json) {
-    return ModelPendidikanKabkotParsek(
+  factory ModelPendidikanKabkotApsek.fromJson(Map<String, dynamic> json) {
+    return ModelPendidikanKabkotApsek(
       id: json['id'],
       wilayah: json['wilayah'],
       tahun: json['tahun'],
@@ -46,16 +46,16 @@ class ModelPendidikanKabkotParsek {
   }
 }
 
-class BodySeriesParsekKabkot extends StatefulWidget {
-  const BodySeriesParsekKabkot({super.key});
+class BodySeriesApsekKabkot extends StatefulWidget {
+  const BodySeriesApsekKabkot({super.key});
 
   @override
-  State<BodySeriesParsekKabkot> createState() => _BodySeriesParsekKabkotState();
+  State<BodySeriesApsekKabkot> createState() => _BodySeriesApsekKabkotState();
 }
 
-class _BodySeriesParsekKabkotState extends State<BodySeriesParsekKabkot> {
-  RepositoryPendidikanKabkotParsek repositoryapmapk =
-      RepositoryPendidikanKabkotParsek();
+class _BodySeriesApsekKabkotState extends State<BodySeriesApsekKabkot> {
+  RepositoryPendidikanKabkotApsek repositoryapmapk =
+      RepositoryPendidikanKabkotApsek();
 
   @override
   Widget build(BuildContext context) {
@@ -110,11 +110,11 @@ class _BodySeriesParsekKabkotState extends State<BodySeriesParsekKabkot> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    PendidikanKabkotParsekA(),
-                    PendidikanKabkotParsekB(),
-                    PendidikanKabkotParsekC(),
-                    PendidikanKabkotParsekD(),
-                    PendidikanKabkotParsekE(),
+                    PendidikanKabkotApsekA(),
+                    PendidikanKabkotApsekB(),
+                    PendidikanKabkotApsekC(),
+                    PendidikanKabkotApsekD(),
+                    PendidikanKabkotApsekE(),
                   ]),
                 ),
               );
