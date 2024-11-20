@@ -416,10 +416,10 @@ class _PendidikanKabkotAmhEState extends State<PendidikanKabkotAmhE> {
                         SizedBox(
                           width: screenWidth * 0.32,
                           child: Container(
-                            height: screenHeight * 0.02,
+                            height: screenHeight * 0.03,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                right: 0, top: 0, bottom: 0),
+                                right: 0, top: 3, bottom: 0),
                             child: const Text(
                               "Kabupaten/",
                               textAlign: TextAlign.center,

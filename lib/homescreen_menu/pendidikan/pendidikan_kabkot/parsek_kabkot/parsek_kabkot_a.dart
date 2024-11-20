@@ -351,10 +351,10 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                         SizedBox(
                           width: screenWidth * 0.32,
                           child: Container(
-                            height: screenHeight * 0.02,
+                            height: screenHeight * 0.03,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                right: 0, top: 0, bottom: 0),
+                                right: 20, top: 3, bottom: 0),
                             child: const Text(
                               "Kabupaten/",
                               textAlign: TextAlign.center,
@@ -366,14 +366,14 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.16,
+                          width: screenWidth * 0.22,
                           child: Container(
                             height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 left: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "15 Tahun",
+                              "Tidak/Belum",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -383,14 +383,14 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.16,
+                          width: screenWidth * 0.22,
                           child: Container(
                             height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 right: 5, top: 0, bottom: 0),
                             child: const Text(
-                              "15-24",
+                              "Masih",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -400,14 +400,14 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.16,
+                          width: screenWidth * 0.22,
                           child: Container(
                             height: screenHeight * 0.02,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 right: 5, top: 0, bottom: 0),
                             child: const Text(
-                              "25-44",
+                              "Tidak",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -416,23 +416,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             ),
                           ),
                         ),
-                        SizedBox(
-                          width: screenWidth * 0.16,
-                          child: Container(
-                            height: screenHeight * 0.02,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 0, bottom: 0),
-                            child: const Text(
-                              "45 Tahun",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
+                        
                       ],
                     ),
                   ),
@@ -450,7 +434,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             height: screenHeight * 0.03,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                right: 0, top: 0, bottom: 0),
+                                right: 20, top: 0, bottom: 0),
                             child: const Text(
                               "Kota",
                               textAlign: TextAlign.center,
@@ -462,14 +446,14 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.16,
+                          width: screenWidth * 0.22,
                           child: Container(
                             height: screenHeight * 0.03,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 left: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "ke Atas",
+                              "Pernah",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -479,14 +463,14 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.16,
+                          width: screenWidth * 0.22,
                           child: Container(
                             height: screenHeight * 0.03,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 left: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "",
+                              "Sekolah",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -496,14 +480,14 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.16,
+                          width: screenWidth * 0.22,
                           child: Container(
                             height: screenHeight * 0.03,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
                                 left: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "",
+                              "Bersekolah",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -512,27 +496,91 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             ),
                           ),
                         ),
-                        SizedBox(
-                          width: screenWidth * 0.16,
-                          child: Container(
-                            height: screenHeight * 0.03,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 0, top: 0, bottom: 0),
-                            child: const Text(
-                              "ke Atas",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
+                        
                       ],
                     ),
                   ),
 
+                  //row header 3
+                 Container(
+                    width: screenWidth * 1.0,
+                    height: screenHeight * 0.03,
+                    color: Colors.blue,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: screenWidth * 0.32,
+                          child: Container(
+                            height: screenHeight * 0.03,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 20, top: 0, bottom: 0),
+                            child: const Text(
+                              "",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.22,
+                          child: Container(
+                            height: screenHeight * 0.03,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "Sekolah",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.22,
+                          child: Container(
+                            height: screenHeight * 0.03,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.22,
+                          child: Container(
+                            height: screenHeight * 0.03,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "Lagi",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        
+                      ],
+                    ),
+                  ),
+                    
                   //),
                   Expanded(
                     //flex:16,
@@ -553,7 +601,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -568,11 +616,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        left: 0, right: 0, top: 1, bottom: 1),
+                                        left: 0, right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_1, 2),
                                       textAlign: TextAlign.right,
@@ -583,11 +631,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_1, 2),
                                       textAlign: TextAlign.right,
@@ -598,11 +646,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_1, 2),
                                       textAlign: TextAlign.right,
@@ -624,7 +672,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -639,11 +687,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_2, 2),
                                       textAlign: TextAlign.right,
@@ -654,11 +702,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_2, 2),
                                       textAlign: TextAlign.right,
@@ -669,11 +717,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_2, 2),
                                       textAlign: TextAlign.right,
@@ -695,7 +743,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -710,11 +758,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_3, 2),
                                       textAlign: TextAlign.right,
@@ -725,11 +773,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_3, 2),
                                       textAlign: TextAlign.right,
@@ -740,11 +788,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_3, 2),
                                       textAlign: TextAlign.right,
@@ -766,7 +814,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -781,11 +829,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_4, 2),
                                       textAlign: TextAlign.right,
@@ -796,11 +844,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_4, 2),
                                       textAlign: TextAlign.right,
@@ -811,11 +859,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_4, 2),
                                       textAlign: TextAlign.right,
@@ -837,7 +885,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -852,11 +900,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_5, 2),
                                       textAlign: TextAlign.right,
@@ -867,11 +915,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_5, 2),
                                       textAlign: TextAlign.right,
@@ -882,11 +930,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_5, 2),
                                       textAlign: TextAlign.right,
@@ -908,7 +956,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -923,11 +971,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_6, 2),
                                       textAlign: TextAlign.right,
@@ -938,11 +986,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_6, 2),
                                       textAlign: TextAlign.right,
@@ -953,11 +1001,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_6, 2),
                                       textAlign: TextAlign.right,
@@ -979,7 +1027,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -994,11 +1042,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_7, 2),
                                       textAlign: TextAlign.right,
@@ -1009,11 +1057,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_7, 2),
                                       textAlign: TextAlign.right,
@@ -1024,11 +1072,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_7, 2),
                                       textAlign: TextAlign.right,
@@ -1050,7 +1098,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1065,11 +1113,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_8, 2),
                                       textAlign: TextAlign.right,
@@ -1080,11 +1128,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_8, 2),
                                       textAlign: TextAlign.right,
@@ -1095,11 +1143,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_8, 2),
                                       textAlign: TextAlign.right,
@@ -1121,7 +1169,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1136,11 +1184,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_9, 2),
                                       textAlign: TextAlign.right,
@@ -1151,11 +1199,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_9, 2),
                                       textAlign: TextAlign.right,
@@ -1166,11 +1214,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_9, 2),
                                       textAlign: TextAlign.right,
@@ -1192,7 +1240,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1207,11 +1255,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_10, 2),
                                       textAlign: TextAlign.right,
@@ -1222,11 +1270,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_10, 2),
                                       textAlign: TextAlign.right,
@@ -1237,11 +1285,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_10, 2),
                                       textAlign: TextAlign.right,
@@ -1264,7 +1312,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1279,11 +1327,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_11, 2),
                                       textAlign: TextAlign.right,
@@ -1294,11 +1342,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_11, 2),
                                       textAlign: TextAlign.right,
@@ -1309,11 +1357,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_11, 2),
                                       textAlign: TextAlign.right,
@@ -1335,7 +1383,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1350,11 +1398,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_12, 2),
                                       textAlign: TextAlign.right,
@@ -1365,11 +1413,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_12, 2),
                                       textAlign: TextAlign.right,
@@ -1380,11 +1428,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_12, 2),
                                       textAlign: TextAlign.right,
@@ -1406,7 +1454,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1421,11 +1469,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_13, 2),
                                       textAlign: TextAlign.right,
@@ -1436,11 +1484,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_13, 2),
                                       textAlign: TextAlign.right,
@@ -1451,11 +1499,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_13, 2),
                                       textAlign: TextAlign.right,
@@ -1477,7 +1525,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1492,11 +1540,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_14, 2),
                                       textAlign: TextAlign.right,
@@ -1507,11 +1555,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_14, 2),
                                       textAlign: TextAlign.right,
@@ -1522,11 +1570,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_14, 2),
                                       textAlign: TextAlign.right,
@@ -1548,7 +1596,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1563,11 +1611,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_15, 2),
                                       textAlign: TextAlign.right,
@@ -1578,11 +1626,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_15, 2),
                                       textAlign: TextAlign.right,
@@ -1593,11 +1641,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_15, 2),
                                       textAlign: TextAlign.right,
@@ -1619,7 +1667,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1634,11 +1682,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_16, 2),
                                       textAlign: TextAlign.right,
@@ -1649,11 +1697,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_16, 2),
                                       textAlign: TextAlign.right,
@@ -1664,11 +1712,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_16, 2),
                                       textAlign: TextAlign.right,
@@ -1690,7 +1738,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1705,11 +1753,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_17, 2),
                                       textAlign: TextAlign.right,
@@ -1720,11 +1768,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_17, 2),
                                       textAlign: TextAlign.right,
@@ -1735,11 +1783,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_17, 2),
                                       textAlign: TextAlign.right,
@@ -1761,7 +1809,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1776,11 +1824,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_18, 2),
                                       textAlign: TextAlign.right,
@@ -1791,11 +1839,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_18, 2),
                                       textAlign: TextAlign.right,
@@ -1806,11 +1854,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_18, 2),
                                       textAlign: TextAlign.right,
@@ -1832,7 +1880,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1847,11 +1895,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_19, 2),
                                       textAlign: TextAlign.right,
@@ -1862,11 +1910,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_19, 2),
                                       textAlign: TextAlign.right,
@@ -1877,11 +1925,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_19, 2),
                                       textAlign: TextAlign.right,
@@ -1903,7 +1951,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1918,11 +1966,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_20, 2),
                                       textAlign: TextAlign.right,
@@ -1933,11 +1981,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_20, 2),
                                       textAlign: TextAlign.right,
@@ -1948,11 +1996,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_20, 2),
                                       textAlign: TextAlign.right,
@@ -1974,7 +2022,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -1989,11 +2037,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_21, 2),
                                       textAlign: TextAlign.right,
@@ -2004,11 +2052,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_21, 2),
                                       textAlign: TextAlign.right,
@@ -2019,11 +2067,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_21, 2),
                                       textAlign: TextAlign.right,
@@ -2045,7 +2093,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2060,11 +2108,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_22, 2),
                                       textAlign: TextAlign.right,
@@ -2075,11 +2123,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_22, 2),
                                       textAlign: TextAlign.right,
@@ -2090,11 +2138,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_22, 2),
                                       textAlign: TextAlign.right,
@@ -2116,7 +2164,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2131,11 +2179,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_23, 2),
                                       textAlign: TextAlign.right,
@@ -2146,11 +2194,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_23, 2),
                                       textAlign: TextAlign.right,
@@ -2161,11 +2209,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_23, 2),
                                       textAlign: TextAlign.right,
@@ -2187,7 +2235,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2202,11 +2250,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_24, 2),
                                       textAlign: TextAlign.right,
@@ -2217,11 +2265,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_24, 2),
                                       textAlign: TextAlign.right,
@@ -2232,11 +2280,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_24, 2),
                                       textAlign: TextAlign.right,
@@ -2258,7 +2306,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2273,11 +2321,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_25, 2),
                                       textAlign: TextAlign.right,
@@ -2288,11 +2336,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_25, 2),
                                       textAlign: TextAlign.right,
@@ -2303,11 +2351,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_25, 2),
                                       textAlign: TextAlign.right,
@@ -2329,7 +2377,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2344,11 +2392,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_26, 2),
                                       textAlign: TextAlign.right,
@@ -2359,11 +2407,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_26, 2),
                                       textAlign: TextAlign.right,
@@ -2374,11 +2422,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_26, 2),
                                       textAlign: TextAlign.right,
@@ -2400,7 +2448,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2415,11 +2463,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_27, 2),
                                       textAlign: TextAlign.right,
@@ -2430,11 +2478,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_27, 2),
                                       textAlign: TextAlign.right,
@@ -2445,11 +2493,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_27, 2),
                                       textAlign: TextAlign.right,
@@ -2471,7 +2519,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2486,11 +2534,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_28, 2),
                                       textAlign: TextAlign.right,
@@ -2501,11 +2549,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_28, 2),
                                       textAlign: TextAlign.right,
@@ -2516,11 +2564,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_28, 2),
                                       textAlign: TextAlign.right,
@@ -2542,7 +2590,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2557,11 +2605,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_29, 2),
                                       textAlign: TextAlign.right,
@@ -2572,11 +2620,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_29, 2),
                                       textAlign: TextAlign.right,
@@ -2587,11 +2635,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_29, 2),
                                       textAlign: TextAlign.right,
@@ -2613,7 +2661,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2628,11 +2676,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_30, 2),
                                       textAlign: TextAlign.right,
@@ -2643,11 +2691,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_30, 2),
                                       textAlign: TextAlign.right,
@@ -2658,11 +2706,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_30, 2),
                                       textAlign: TextAlign.right,
@@ -2684,7 +2732,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2699,11 +2747,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_31, 2),
                                       textAlign: TextAlign.right,
@@ -2714,11 +2762,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_31, 2),
                                       textAlign: TextAlign.right,
@@ -2729,11 +2777,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_31, 2),
                                       textAlign: TextAlign.right,
@@ -2755,7 +2803,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2770,11 +2818,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_32, 2),
                                       textAlign: TextAlign.right,
@@ -2785,11 +2833,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_32, 2),
                                       textAlign: TextAlign.right,
@@ -2800,11 +2848,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_32, 2),
                                       textAlign: TextAlign.right,
@@ -2826,7 +2874,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2841,11 +2889,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_33, 2),
                                       textAlign: TextAlign.right,
@@ -2856,11 +2904,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_33, 2),
                                       textAlign: TextAlign.right,
@@ -2871,11 +2919,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_33, 2),
                                       textAlign: TextAlign.right,
@@ -2897,7 +2945,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2912,11 +2960,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_34, 2),
                                       textAlign: TextAlign.right,
@@ -2927,11 +2975,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_34, 2),
                                       textAlign: TextAlign.right,
@@ -2942,11 +2990,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_34, 2),
                                       textAlign: TextAlign.right,
@@ -2968,7 +3016,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -2983,11 +3031,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_35, 2),
                                       textAlign: TextAlign.right,
@@ -2998,11 +3046,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_35, 2),
                                       textAlign: TextAlign.right,
@@ -3013,11 +3061,11 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_35, 2),
                                       textAlign: TextAlign.right,
@@ -3039,7 +3087,7 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.32 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
                                         right: 2, top: 1, bottom: 1),
@@ -3054,10 +3102,10 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdkbelum_36, 2),
                                       textAlign: TextAlign.right,
@@ -3069,10 +3117,10 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(masih_36, 2),
                                       textAlign: TextAlign.right,
@@ -3084,10 +3132,10 @@ class _PendidikanKabkotParsekAState extends State<PendidikanKabkotParsekA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.16 * screenWidth,
+                                  width: 0.22 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
-                                        right: 0, top: 1, bottom: 1),
+                                        right: 25, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tidaklagi_36, 2),
                                       textAlign: TextAlign.right,
