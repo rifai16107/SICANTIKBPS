@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_amh.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/amh_kabkot/body_amh_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesAmh extends StatefulWidget {
-  const SeriesAmh({super.key});
+class SeriesAmhKabkot extends StatefulWidget {
+  const SeriesAmhKabkot({super.key});
 
   @override
-  State<SeriesAmh> createState() => _SeriesAmh();
+  State<SeriesAmhKabkot> createState() => _SeriesAmhKabkot();
 }
 
-class _SeriesAmh extends State<SeriesAmh> {
+class _SeriesAmhKabkot extends State<SeriesAmhKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -33,20 +33,19 @@ class _SeriesAmh extends State<SeriesAmh> {
             ),
           ),
         ),
-
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.065,
+              height: screenHeight * 0.095,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Angka Melek Huruf (AMH) Penduduk Usia 15+Menurut Kelompok Umur di Kabupaten Cilacap",
+                    "Angka Melek Huruf (AMH) Penduduk Usia 15+ Menurut Kelompok Umur Tertentu dan Kabupaten/Kota di Jawa Tengah",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -56,7 +55,7 @@ class _SeriesAmh extends State<SeriesAmh> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesAmh(),
+                child: const BodySeriesAmhKabkot(),
               ),
             ),
           ],

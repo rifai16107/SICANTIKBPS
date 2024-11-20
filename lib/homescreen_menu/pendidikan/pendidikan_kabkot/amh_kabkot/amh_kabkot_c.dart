@@ -32,45 +32,45 @@ class RepositoryPendidikanKabkotAmh {
 class ModelPendidikanKabkotAmh {
   final int id;
   final String wilayah;
-  final String amh15_n1;
-  final String amh1524_n1;
-  final String amh2544_n1;
-  final String amh45_n1;
+  final String amh15_n3;
+  final String amh1524_n3;
+  final String amh2544_n3;
+  final String amh45_n3;
   final String tahun;
 
   ModelPendidikanKabkotAmh(
       {required this.id,
       required this.wilayah,
-      required this.amh15_n1,
-      required this.amh1524_n1,
-      required this.amh2544_n1,
-      required this.amh45_n1,
+      required this.amh15_n3,
+      required this.amh1524_n3,
+      required this.amh2544_n3,
+      required this.amh45_n3,
       required this.tahun});
 
   factory ModelPendidikanKabkotAmh.fromJson(Map<String, dynamic> json) {
     return ModelPendidikanKabkotAmh(
       id: json['id'],
       wilayah: json['wilayah'],
-      amh15_n1: json['amh15_n1'],
-      amh1524_n1: json['amh1524_n1'],
-      amh2544_n1: json['amh2544_n1'],
-      amh45_n1: json['amh45_n1'],
+      amh15_n3: json['amh15_n3'],
+      amh1524_n3: json['amh1524_n3'],
+      amh2544_n3: json['amh2544_n3'],
+      amh45_n3: json['amh45_n3'],
       tahun: json['tahun'],
     );
   }
 }
 
-class PendidikanKabkotAmhA extends StatefulWidget {
-  const PendidikanKabkotAmhA({Key? key}) : super(key: key);
+class PendidikanKabkotAmhC extends StatefulWidget {
+  const PendidikanKabkotAmhC({Key? key}) : super(key: key);
 
   @override
-  State<PendidikanKabkotAmhA> createState() => _PendidikanKabkotAmhAState();
+  State<PendidikanKabkotAmhC> createState() => _PendidikanKabkotAmhCState();
 }
 
 RepositoryPendidikanKabkotAmh repositorypendidikan =
     RepositoryPendidikanKabkotAmh();
 
-class _PendidikanKabkotAmhAState extends State<PendidikanKabkotAmhA> {
+class _PendidikanKabkotAmhCState extends State<PendidikanKabkotAmhC> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -125,277 +125,277 @@ class _PendidikanKabkotAmhAState extends State<PendidikanKabkotAmhA> {
               String kab36 = "    " + isipendidikan[index = 35].wilayah;
 
               //APM
-              double amh15_1 = double.parse(isipendidikan[index = 0].amh15_n1);
-              double amh15_2 = double.parse(isipendidikan[index = 1].amh15_n1);
-              double amh15_3 = double.parse(isipendidikan[index = 2].amh15_n1);
-              double amh15_4 = double.parse(isipendidikan[index = 3].amh15_n1);
-              double amh15_5 = double.parse(isipendidikan[index = 4].amh15_n1);
-              double amh15_6 = double.parse(isipendidikan[index = 5].amh15_n1);
-              double amh15_7 = double.parse(isipendidikan[index = 6].amh15_n1);
-              double amh15_8 = double.parse(isipendidikan[index = 7].amh15_n1);
-              double amh15_9 = double.parse(isipendidikan[index = 8].amh15_n1);
-              double amh15_10 = double.parse(isipendidikan[index = 9].amh15_n1);
+              double amh15_1 = double.parse(isipendidikan[index = 0].amh15_n3);
+              double amh15_2 = double.parse(isipendidikan[index = 1].amh15_n3);
+              double amh15_3 = double.parse(isipendidikan[index = 2].amh15_n3);
+              double amh15_4 = double.parse(isipendidikan[index = 3].amh15_n3);
+              double amh15_5 = double.parse(isipendidikan[index = 4].amh15_n3);
+              double amh15_6 = double.parse(isipendidikan[index = 5].amh15_n3);
+              double amh15_7 = double.parse(isipendidikan[index = 6].amh15_n3);
+              double amh15_8 = double.parse(isipendidikan[index = 7].amh15_n3);
+              double amh15_9 = double.parse(isipendidikan[index = 8].amh15_n3);
+              double amh15_10 = double.parse(isipendidikan[index = 9].amh15_n3);
               double amh15_11 =
-                  double.parse(isipendidikan[index = 10].amh15_n1);
+                  double.parse(isipendidikan[index = 10].amh15_n3);
               double amh15_12 =
-                  double.parse(isipendidikan[index = 11].amh15_n1);
+                  double.parse(isipendidikan[index = 11].amh15_n3);
               double amh15_13 =
-                  double.parse(isipendidikan[index = 12].amh15_n1);
+                  double.parse(isipendidikan[index = 12].amh15_n3);
               double amh15_14 =
-                  double.parse(isipendidikan[index = 13].amh15_n1);
+                  double.parse(isipendidikan[index = 13].amh15_n3);
               double amh15_15 =
-                  double.parse(isipendidikan[index = 14].amh15_n1);
+                  double.parse(isipendidikan[index = 14].amh15_n3);
               double amh15_16 =
-                  double.parse(isipendidikan[index = 15].amh15_n1);
+                  double.parse(isipendidikan[index = 15].amh15_n3);
               double amh15_17 =
-                  double.parse(isipendidikan[index = 16].amh15_n1);
+                  double.parse(isipendidikan[index = 16].amh15_n3);
               double amh15_18 =
-                  double.parse(isipendidikan[index = 17].amh15_n1);
+                  double.parse(isipendidikan[index = 17].amh15_n3);
               double amh15_19 =
-                  double.parse(isipendidikan[index = 18].amh15_n1);
+                  double.parse(isipendidikan[index = 18].amh15_n3);
               double amh15_20 =
-                  double.parse(isipendidikan[index = 19].amh15_n1);
+                  double.parse(isipendidikan[index = 19].amh15_n3);
               double amh15_21 =
-                  double.parse(isipendidikan[index = 20].amh15_n1);
+                  double.parse(isipendidikan[index = 20].amh15_n3);
               double amh15_22 =
-                  double.parse(isipendidikan[index = 21].amh15_n1);
+                  double.parse(isipendidikan[index = 21].amh15_n3);
               double amh15_23 =
-                  double.parse(isipendidikan[index = 22].amh15_n1);
+                  double.parse(isipendidikan[index = 22].amh15_n3);
               double amh15_24 =
-                  double.parse(isipendidikan[index = 23].amh15_n1);
+                  double.parse(isipendidikan[index = 23].amh15_n3);
               double amh15_25 =
-                  double.parse(isipendidikan[index = 24].amh15_n1);
+                  double.parse(isipendidikan[index = 24].amh15_n3);
               double amh15_26 =
-                  double.parse(isipendidikan[index = 25].amh15_n1);
+                  double.parse(isipendidikan[index = 25].amh15_n3);
               double amh15_27 =
-                  double.parse(isipendidikan[index = 26].amh15_n1);
+                  double.parse(isipendidikan[index = 26].amh15_n3);
               double amh15_28 =
-                  double.parse(isipendidikan[index = 27].amh15_n1);
+                  double.parse(isipendidikan[index = 27].amh15_n3);
               double amh15_29 =
-                  double.parse(isipendidikan[index = 28].amh15_n1);
+                  double.parse(isipendidikan[index = 28].amh15_n3);
               double amh15_30 =
-                  double.parse(isipendidikan[index = 29].amh15_n1);
+                  double.parse(isipendidikan[index = 29].amh15_n3);
               double amh15_31 =
-                  double.parse(isipendidikan[index = 30].amh15_n1);
+                  double.parse(isipendidikan[index = 30].amh15_n3);
               double amh15_32 =
-                  double.parse(isipendidikan[index = 31].amh15_n1);
+                  double.parse(isipendidikan[index = 31].amh15_n3);
               double amh15_33 =
-                  double.parse(isipendidikan[index = 32].amh15_n1);
+                  double.parse(isipendidikan[index = 32].amh15_n3);
               double amh15_34 =
-                  double.parse(isipendidikan[index = 33].amh15_n1);
+                  double.parse(isipendidikan[index = 33].amh15_n3);
               double amh15_35 =
-                  double.parse(isipendidikan[index = 34].amh15_n1);
+                  double.parse(isipendidikan[index = 34].amh15_n3);
               double amh15_36 =
-                  double.parse(isipendidikan[index = 35].amh15_n1);
+                  double.parse(isipendidikan[index = 35].amh15_n3);
 
               double amh1524_1 =
-                  double.parse(isipendidikan[index = 0].amh1524_n1);
+                  double.parse(isipendidikan[index = 0].amh1524_n3);
               double amh1524_2 =
-                  double.parse(isipendidikan[index = 1].amh1524_n1);
+                  double.parse(isipendidikan[index = 1].amh1524_n3);
               double amh1524_3 =
-                  double.parse(isipendidikan[index = 2].amh1524_n1);
+                  double.parse(isipendidikan[index = 2].amh1524_n3);
               double amh1524_4 =
-                  double.parse(isipendidikan[index = 3].amh1524_n1);
+                  double.parse(isipendidikan[index = 3].amh1524_n3);
               double amh1524_5 =
-                  double.parse(isipendidikan[index = 4].amh1524_n1);
+                  double.parse(isipendidikan[index = 4].amh1524_n3);
               double amh1524_6 =
-                  double.parse(isipendidikan[index = 5].amh1524_n1);
+                  double.parse(isipendidikan[index = 5].amh1524_n3);
               double amh1524_7 =
-                  double.parse(isipendidikan[index = 6].amh1524_n1);
+                  double.parse(isipendidikan[index = 6].amh1524_n3);
               double amh1524_8 =
-                  double.parse(isipendidikan[index = 7].amh1524_n1);
+                  double.parse(isipendidikan[index = 7].amh1524_n3);
               double amh1524_9 =
-                  double.parse(isipendidikan[index = 8].amh1524_n1);
+                  double.parse(isipendidikan[index = 8].amh1524_n3);
               double amh1524_10 =
-                  double.parse(isipendidikan[index = 9].amh1524_n1);
+                  double.parse(isipendidikan[index = 9].amh1524_n3);
               double amh1524_11 =
-                  double.parse(isipendidikan[index = 10].amh1524_n1);
+                  double.parse(isipendidikan[index = 10].amh1524_n3);
               double amh1524_12 =
-                  double.parse(isipendidikan[index = 11].amh1524_n1);
+                  double.parse(isipendidikan[index = 11].amh1524_n3);
               double amh1524_13 =
-                  double.parse(isipendidikan[index = 12].amh1524_n1);
+                  double.parse(isipendidikan[index = 12].amh1524_n3);
               double amh1524_14 =
-                  double.parse(isipendidikan[index = 13].amh1524_n1);
+                  double.parse(isipendidikan[index = 13].amh1524_n3);
               double amh1524_15 =
-                  double.parse(isipendidikan[index = 14].amh1524_n1);
+                  double.parse(isipendidikan[index = 14].amh1524_n3);
               double amh1524_16 =
-                  double.parse(isipendidikan[index = 15].amh1524_n1);
+                  double.parse(isipendidikan[index = 15].amh1524_n3);
               double amh1524_17 =
-                  double.parse(isipendidikan[index = 16].amh1524_n1);
+                  double.parse(isipendidikan[index = 16].amh1524_n3);
               double amh1524_18 =
-                  double.parse(isipendidikan[index = 17].amh1524_n1);
+                  double.parse(isipendidikan[index = 17].amh1524_n3);
               double amh1524_19 =
-                  double.parse(isipendidikan[index = 18].amh1524_n1);
+                  double.parse(isipendidikan[index = 18].amh1524_n3);
               double amh1524_20 =
-                  double.parse(isipendidikan[index = 19].amh1524_n1);
+                  double.parse(isipendidikan[index = 19].amh1524_n3);
               double amh1524_21 =
-                  double.parse(isipendidikan[index = 20].amh1524_n1);
+                  double.parse(isipendidikan[index = 20].amh1524_n3);
               double amh1524_22 =
-                  double.parse(isipendidikan[index = 21].amh1524_n1);
+                  double.parse(isipendidikan[index = 21].amh1524_n3);
               double amh1524_23 =
-                  double.parse(isipendidikan[index = 22].amh1524_n1);
+                  double.parse(isipendidikan[index = 22].amh1524_n3);
               double amh1524_24 =
-                  double.parse(isipendidikan[index = 23].amh1524_n1);
+                  double.parse(isipendidikan[index = 23].amh1524_n3);
               double amh1524_25 =
-                  double.parse(isipendidikan[index = 24].amh1524_n1);
+                  double.parse(isipendidikan[index = 24].amh1524_n3);
               double amh1524_26 =
-                  double.parse(isipendidikan[index = 25].amh1524_n1);
+                  double.parse(isipendidikan[index = 25].amh1524_n3);
               double amh1524_27 =
-                  double.parse(isipendidikan[index = 26].amh1524_n1);
+                  double.parse(isipendidikan[index = 26].amh1524_n3);
               double amh1524_28 =
-                  double.parse(isipendidikan[index = 27].amh1524_n1);
+                  double.parse(isipendidikan[index = 27].amh1524_n3);
               double amh1524_29 =
-                  double.parse(isipendidikan[index = 28].amh1524_n1);
+                  double.parse(isipendidikan[index = 28].amh1524_n3);
               double amh1524_30 =
-                  double.parse(isipendidikan[index = 29].amh1524_n1);
+                  double.parse(isipendidikan[index = 29].amh1524_n3);
               double amh1524_31 =
-                  double.parse(isipendidikan[index = 30].amh1524_n1);
+                  double.parse(isipendidikan[index = 30].amh1524_n3);
               double amh1524_32 =
-                  double.parse(isipendidikan[index = 31].amh1524_n1);
+                  double.parse(isipendidikan[index = 31].amh1524_n3);
               double amh1524_33 =
-                  double.parse(isipendidikan[index = 32].amh1524_n1);
+                  double.parse(isipendidikan[index = 32].amh1524_n3);
               double amh1524_34 =
-                  double.parse(isipendidikan[index = 33].amh1524_n1);
+                  double.parse(isipendidikan[index = 33].amh1524_n3);
               double amh1524_35 =
-                  double.parse(isipendidikan[index = 34].amh1524_n1);
+                  double.parse(isipendidikan[index = 34].amh1524_n3);
               double amh1524_36 =
-                  double.parse(isipendidikan[index = 35].amh1524_n1);
+                  double.parse(isipendidikan[index = 35].amh1524_n3);
 
               double amh2544_1 =
-                  double.parse(isipendidikan[index = 0].amh2544_n1);
+                  double.parse(isipendidikan[index = 0].amh2544_n3);
               double amh2544_2 =
-                  double.parse(isipendidikan[index = 1].amh2544_n1);
+                  double.parse(isipendidikan[index = 1].amh2544_n3);
               double amh2544_3 =
-                  double.parse(isipendidikan[index = 2].amh2544_n1);
+                  double.parse(isipendidikan[index = 2].amh2544_n3);
               double amh2544_4 =
-                  double.parse(isipendidikan[index = 3].amh2544_n1);
+                  double.parse(isipendidikan[index = 3].amh2544_n3);
               double amh2544_5 =
-                  double.parse(isipendidikan[index = 4].amh2544_n1);
+                  double.parse(isipendidikan[index = 4].amh2544_n3);
               double amh2544_6 =
-                  double.parse(isipendidikan[index = 5].amh2544_n1);
+                  double.parse(isipendidikan[index = 5].amh2544_n3);
               double amh2544_7 =
-                  double.parse(isipendidikan[index = 6].amh2544_n1);
+                  double.parse(isipendidikan[index = 6].amh2544_n3);
               double amh2544_8 =
-                  double.parse(isipendidikan[index = 7].amh2544_n1);
+                  double.parse(isipendidikan[index = 7].amh2544_n3);
               double amh2544_9 =
-                  double.parse(isipendidikan[index = 8].amh2544_n1);
+                  double.parse(isipendidikan[index = 8].amh2544_n3);
               double amh2544_10 =
-                  double.parse(isipendidikan[index = 9].amh2544_n1);
+                  double.parse(isipendidikan[index = 9].amh2544_n3);
               double amh2544_11 =
-                  double.parse(isipendidikan[index = 10].amh2544_n1);
+                  double.parse(isipendidikan[index = 10].amh2544_n3);
               double amh2544_12 =
-                  double.parse(isipendidikan[index = 11].amh2544_n1);
+                  double.parse(isipendidikan[index = 11].amh2544_n3);
               double amh2544_13 =
-                  double.parse(isipendidikan[index = 12].amh2544_n1);
+                  double.parse(isipendidikan[index = 12].amh2544_n3);
               double amh2544_14 =
-                  double.parse(isipendidikan[index = 13].amh2544_n1);
+                  double.parse(isipendidikan[index = 13].amh2544_n3);
               double amh2544_15 =
-                  double.parse(isipendidikan[index = 14].amh2544_n1);
+                  double.parse(isipendidikan[index = 14].amh2544_n3);
               double amh2544_16 =
-                  double.parse(isipendidikan[index = 15].amh2544_n1);
+                  double.parse(isipendidikan[index = 15].amh2544_n3);
               double amh2544_17 =
-                  double.parse(isipendidikan[index = 16].amh2544_n1);
+                  double.parse(isipendidikan[index = 16].amh2544_n3);
               double amh2544_18 =
-                  double.parse(isipendidikan[index = 17].amh2544_n1);
+                  double.parse(isipendidikan[index = 17].amh2544_n3);
               double amh2544_19 =
-                  double.parse(isipendidikan[index = 18].amh2544_n1);
+                  double.parse(isipendidikan[index = 18].amh2544_n3);
               double amh2544_20 =
-                  double.parse(isipendidikan[index = 19].amh2544_n1);
+                  double.parse(isipendidikan[index = 19].amh2544_n3);
               double amh2544_21 =
-                  double.parse(isipendidikan[index = 20].amh2544_n1);
+                  double.parse(isipendidikan[index = 20].amh2544_n3);
               double amh2544_22 =
-                  double.parse(isipendidikan[index = 21].amh2544_n1);
+                  double.parse(isipendidikan[index = 21].amh2544_n3);
               double amh2544_23 =
-                  double.parse(isipendidikan[index = 22].amh2544_n1);
+                  double.parse(isipendidikan[index = 22].amh2544_n3);
               double amh2544_24 =
-                  double.parse(isipendidikan[index = 23].amh2544_n1);
+                  double.parse(isipendidikan[index = 23].amh2544_n3);
               double amh2544_25 =
-                  double.parse(isipendidikan[index = 24].amh2544_n1);
+                  double.parse(isipendidikan[index = 24].amh2544_n3);
               double amh2544_26 =
-                  double.parse(isipendidikan[index = 25].amh2544_n1);
+                  double.parse(isipendidikan[index = 25].amh2544_n3);
               double amh2544_27 =
-                  double.parse(isipendidikan[index = 26].amh2544_n1);
+                  double.parse(isipendidikan[index = 26].amh2544_n3);
               double amh2544_28 =
-                  double.parse(isipendidikan[index = 27].amh2544_n1);
+                  double.parse(isipendidikan[index = 27].amh2544_n3);
               double amh2544_29 =
-                  double.parse(isipendidikan[index = 28].amh2544_n1);
+                  double.parse(isipendidikan[index = 28].amh2544_n3);
               double amh2544_30 =
-                  double.parse(isipendidikan[index = 29].amh2544_n1);
+                  double.parse(isipendidikan[index = 29].amh2544_n3);
               double amh2544_31 =
-                  double.parse(isipendidikan[index = 30].amh2544_n1);
+                  double.parse(isipendidikan[index = 30].amh2544_n3);
               double amh2544_32 =
-                  double.parse(isipendidikan[index = 31].amh2544_n1);
+                  double.parse(isipendidikan[index = 31].amh2544_n3);
               double amh2544_33 =
-                  double.parse(isipendidikan[index = 32].amh2544_n1);
+                  double.parse(isipendidikan[index = 32].amh2544_n3);
               double amh2544_34 =
-                  double.parse(isipendidikan[index = 33].amh2544_n1);
+                  double.parse(isipendidikan[index = 33].amh2544_n3);
               double amh2544_35 =
-                  double.parse(isipendidikan[index = 34].amh2544_n1);
+                  double.parse(isipendidikan[index = 34].amh2544_n3);
               double amh2544_36 =
-                  double.parse(isipendidikan[index = 35].amh2544_n1);
+                  double.parse(isipendidikan[index = 35].amh2544_n3);
 
-              double amh45_1 = double.parse(isipendidikan[index = 0].amh45_n1);
-              double amh45_2 = double.parse(isipendidikan[index = 1].amh45_n1);
-              double amh45_3 = double.parse(isipendidikan[index = 2].amh45_n1);
-              double amh45_4 = double.parse(isipendidikan[index = 3].amh45_n1);
-              double amh45_5 = double.parse(isipendidikan[index = 4].amh45_n1);
-              double amh45_6 = double.parse(isipendidikan[index = 5].amh45_n1);
-              double amh45_7 = double.parse(isipendidikan[index = 6].amh45_n1);
-              double amh45_8 = double.parse(isipendidikan[index = 7].amh45_n1);
-              double amh45_9 = double.parse(isipendidikan[index = 8].amh45_n1);
-              double amh45_10 = double.parse(isipendidikan[index = 9].amh45_n1);
+              double amh45_1 = double.parse(isipendidikan[index = 0].amh45_n3);
+              double amh45_2 = double.parse(isipendidikan[index = 1].amh45_n3);
+              double amh45_3 = double.parse(isipendidikan[index = 2].amh45_n3);
+              double amh45_4 = double.parse(isipendidikan[index = 3].amh45_n3);
+              double amh45_5 = double.parse(isipendidikan[index = 4].amh45_n3);
+              double amh45_6 = double.parse(isipendidikan[index = 5].amh45_n3);
+              double amh45_7 = double.parse(isipendidikan[index = 6].amh45_n3);
+              double amh45_8 = double.parse(isipendidikan[index = 7].amh45_n3);
+              double amh45_9 = double.parse(isipendidikan[index = 8].amh45_n3);
+              double amh45_10 = double.parse(isipendidikan[index = 9].amh45_n3);
               double amh45_11 =
-                  double.parse(isipendidikan[index = 10].amh45_n1);
+                  double.parse(isipendidikan[index = 10].amh45_n3);
               double amh45_12 =
-                  double.parse(isipendidikan[index = 11].amh45_n1);
+                  double.parse(isipendidikan[index = 11].amh45_n3);
               double amh45_13 =
-                  double.parse(isipendidikan[index = 12].amh45_n1);
+                  double.parse(isipendidikan[index = 12].amh45_n3);
               double amh45_14 =
-                  double.parse(isipendidikan[index = 13].amh45_n1);
+                  double.parse(isipendidikan[index = 13].amh45_n3);
               double amh45_15 =
-                  double.parse(isipendidikan[index = 14].amh45_n1);
+                  double.parse(isipendidikan[index = 14].amh45_n3);
               double amh45_16 =
-                  double.parse(isipendidikan[index = 15].amh45_n1);
+                  double.parse(isipendidikan[index = 15].amh45_n3);
               double amh45_17 =
-                  double.parse(isipendidikan[index = 16].amh45_n1);
+                  double.parse(isipendidikan[index = 16].amh45_n3);
               double amh45_18 =
-                  double.parse(isipendidikan[index = 17].amh45_n1);
+                  double.parse(isipendidikan[index = 17].amh45_n3);
               double amh45_19 =
-                  double.parse(isipendidikan[index = 18].amh45_n1);
+                  double.parse(isipendidikan[index = 18].amh45_n3);
               double amh45_20 =
-                  double.parse(isipendidikan[index = 19].amh45_n1);
+                  double.parse(isipendidikan[index = 19].amh45_n3);
               double amh45_21 =
-                  double.parse(isipendidikan[index = 20].amh45_n1);
+                  double.parse(isipendidikan[index = 20].amh45_n3);
               double amh45_22 =
-                  double.parse(isipendidikan[index = 21].amh45_n1);
+                  double.parse(isipendidikan[index = 21].amh45_n3);
               double amh45_23 =
-                  double.parse(isipendidikan[index = 22].amh45_n1);
+                  double.parse(isipendidikan[index = 22].amh45_n3);
               double amh45_24 =
-                  double.parse(isipendidikan[index = 23].amh45_n1);
+                  double.parse(isipendidikan[index = 23].amh45_n3);
               double amh45_25 =
-                  double.parse(isipendidikan[index = 24].amh45_n1);
+                  double.parse(isipendidikan[index = 24].amh45_n3);
               double amh45_26 =
-                  double.parse(isipendidikan[index = 25].amh45_n1);
+                  double.parse(isipendidikan[index = 25].amh45_n3);
               double amh45_27 =
-                  double.parse(isipendidikan[index = 26].amh45_n1);
+                  double.parse(isipendidikan[index = 26].amh45_n3);
               double amh45_28 =
-                  double.parse(isipendidikan[index = 27].amh45_n1);
+                  double.parse(isipendidikan[index = 27].amh45_n3);
               double amh45_29 =
-                  double.parse(isipendidikan[index = 28].amh45_n1);
+                  double.parse(isipendidikan[index = 28].amh45_n3);
               double amh45_30 =
-                  double.parse(isipendidikan[index = 29].amh45_n1);
+                  double.parse(isipendidikan[index = 29].amh45_n3);
               double amh45_31 =
-                  double.parse(isipendidikan[index = 30].amh45_n1);
+                  double.parse(isipendidikan[index = 30].amh45_n3);
               double amh45_32 =
-                  double.parse(isipendidikan[index = 31].amh45_n1);
+                  double.parse(isipendidikan[index = 31].amh45_n3);
               double amh45_33 =
-                  double.parse(isipendidikan[index = 32].amh45_n1);
+                  double.parse(isipendidikan[index = 32].amh45_n3);
               double amh45_34 =
-                  double.parse(isipendidikan[index = 33].amh45_n1);
+                  double.parse(isipendidikan[index = 33].amh45_n3);
               double amh45_35 =
-                  double.parse(isipendidikan[index = 34].amh45_n1);
+                  double.parse(isipendidikan[index = 34].amh45_n3);
               double amh45_36 =
-                  double.parse(isipendidikan[index = 35].amh45_n1);
+                  double.parse(isipendidikan[index = 35].amh45_n3);
 
               //String thn1 = isipendidikan[index = 0].tahun.substring(0, 4);
 

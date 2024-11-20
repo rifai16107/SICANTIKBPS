@@ -357,7 +357,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesAmh(),
+                          child: const SeriesAmhKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(

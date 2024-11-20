@@ -440,7 +440,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesAmh(),
+                          child: const SeriesAmhKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -481,7 +481,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesAmh(),
+                          child: const SeriesAmhKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(

@@ -33,7 +33,6 @@ class _SeriesAmh extends State<SeriesAmh> {
             ),
           ),
         ),
-
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
@@ -46,7 +45,7 @@ class _SeriesAmh extends State<SeriesAmh> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Angka Melek Huruf (AMH) Penduduk Usia 15+Menurut Kelompok Umur di Kabupaten Cilacap",
+                    "Angka Melek Huruf (AMH) Penduduk Usia 15+ Menurut Kelompok Umur di Kabupaten Cilacap",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
