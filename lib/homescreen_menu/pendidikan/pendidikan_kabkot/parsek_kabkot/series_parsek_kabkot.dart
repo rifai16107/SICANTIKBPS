@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_cilacap/body_sttb.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/body_parsek_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesSttb extends StatefulWidget {
-  const SeriesSttb({super.key});
+class SeriesParsekKabkot extends StatefulWidget {
+  const SeriesParsekKabkot({super.key});
 
   @override
-  State<SeriesSttb> createState() => _SeriesSttb();
+  State<SeriesParsekKabkot> createState() => _SeriesParsekKabkot();
 }
 
-class _SeriesSttb extends State<SeriesSttb> {
+class _SeriesParsekKabkot extends State<SeriesParsekKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -33,20 +33,19 @@ class _SeriesSttb extends State<SeriesSttb> {
             ),
           ),
         ),
- 
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.065,
+              height: screenHeight * 0.095,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Persentase Penduduk Usia 15+ Menurut Pendidikan Tertinggi Yang Ditamatkan di Kabupaten Cilacap",
+                    "Angka Melek Huruf (AMH) Penduduk Usia 15+ Menurut Kelompok Umur Tertentu dan Kabupaten/Kota di Jawa Tengah",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -56,7 +55,7 @@ class _SeriesSttb extends State<SeriesSttb> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesSttb(),
+                child: const BodySeriesParsekKabkot(),
               ),
             ),
           ],
