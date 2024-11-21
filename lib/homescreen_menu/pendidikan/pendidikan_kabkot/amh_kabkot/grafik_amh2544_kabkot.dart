@@ -7,8 +7,8 @@ import 'package:http/http.dart' as http;
 
 // ignore_for_file: camel_case_types, non_constant_identifier_names
 
-class RepositoryPendidikanKabkotApsek {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-apsek';
+class RepositoryPendidikanKabkotAmh2544 {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-amh';
 
   Future getData() async {
     try {
@@ -18,7 +18,7 @@ class RepositoryPendidikanKabkotApsek {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
             .map((isipendidikan) =>
-                ModelPendidikanKabkotApsek.fromJson(isipendidikan))
+                ModelPendidikanKabkotAmh2544.fromJson(isipendidikan))
             .toList();
       }
     } catch (isipendidikan) {
@@ -28,40 +28,40 @@ class RepositoryPendidikanKabkotApsek {
   }
 }
 
-class ModelPendidikanKabkotApsek {
+class ModelPendidikanKabkotAmh2544 {
   final int id;
   final String wilayah;
-  final String aps1618_n5;
+  final String amh2544_n5;
   final String tahun;
 
-  ModelPendidikanKabkotApsek(
+  ModelPendidikanKabkotAmh2544(
       {required this.id,
       required this.wilayah,
-      required this.aps1618_n5,
+      required this.amh2544_n5,
       required this.tahun});
 
-  factory ModelPendidikanKabkotApsek.fromJson(Map<String, dynamic> json) {
-    return ModelPendidikanKabkotApsek(
+  factory ModelPendidikanKabkotAmh2544.fromJson(Map<String, dynamic> json) {
+    return ModelPendidikanKabkotAmh2544(
       id: json['id'],
       wilayah: json['wilayah'],
-      aps1618_n5: json['aps1618_n5'],
+      amh2544_n5: json['amh2544_n5'],
       tahun: json['tahun'],
     );
   }
 }
 
-class GrafikPendidikanKabkotAps1618 extends StatefulWidget {
-  const GrafikPendidikanKabkotAps1618({Key? key}) : super(key: key);
+class GrafikPendidikanKabkotAmh2544 extends StatefulWidget {
+  const GrafikPendidikanKabkotAmh2544({Key? key}) : super(key: key);
 
   @override
-  _GrafikPendidikanKabkotAps1618State createState() =>
-      _GrafikPendidikanKabkotAps1618State();
+  _GrafikPendidikanKabkotAmh2544State createState() =>
+      _GrafikPendidikanKabkotAmh2544State();
 }
 
-class _GrafikPendidikanKabkotAps1618State
-    extends State<GrafikPendidikanKabkotAps1618> {
-  RepositoryPendidikanKabkotApsek repositorypendidikan =
-      RepositoryPendidikanKabkotApsek();
+class _GrafikPendidikanKabkotAmh2544State
+    extends State<GrafikPendidikanKabkotAmh2544> {
+  RepositoryPendidikanKabkotAmh2544 repositorypendidikan =
+      RepositoryPendidikanKabkotAmh2544();
   int key = 0;
   late List<_ChartData> data;
   late TooltipBehavior tooltip;
@@ -118,154 +118,145 @@ class _GrafikPendidikanKabkotAps1618State
               String wilayah35 = isipendidikan[index = 34].wilayah;
               String wilayah36 = isipendidikan[index = 35].wilayah;
 
-              double aps1618_1 =
-                  double.parse(isipendidikan[index = 0].aps1618_n5);
-              double aps1618_2 =
-                  double.parse(isipendidikan[index = 1].aps1618_n5);
-              double aps1618_3 =
-                  double.parse(isipendidikan[index = 2].aps1618_n5);
-              double aps1618_4 =
-                  double.parse(isipendidikan[index = 3].aps1618_n5);
-              double aps1618_5 =
-                  double.parse(isipendidikan[index = 4].aps1618_n5);
-              double aps1618_6 =
-                  double.parse(isipendidikan[index = 5].aps1618_n5);
-              double aps1618_7 =
-                  double.parse(isipendidikan[index = 6].aps1618_n5);
-              double aps1618_8 =
-                  double.parse(isipendidikan[index = 7].aps1618_n5);
-              double aps1618_9 =
-                  double.parse(isipendidikan[index = 8].aps1618_n5);
-              double aps1618_10 =
-                  double.parse(isipendidikan[index = 9].aps1618_n5);
-              double aps1618_11 =
-                  double.parse(isipendidikan[index = 10].aps1618_n5);
-              double aps1618_12 =
-                  double.parse(isipendidikan[index = 11].aps1618_n5);
-              double aps1618_13 =
-                  double.parse(isipendidikan[index = 12].aps1618_n5);
-              double aps1618_14 =
-                  double.parse(isipendidikan[index = 13].aps1618_n5);
-              double aps1618_15 =
-                  double.parse(isipendidikan[index = 14].aps1618_n5);
-              double aps1618_16 =
-                  double.parse(isipendidikan[index = 15].aps1618_n5);
-              double aps1618_17 =
-                  double.parse(isipendidikan[index = 16].aps1618_n5);
-              double aps1618_18 =
-                  double.parse(isipendidikan[index = 17].aps1618_n5);
-              double aps1618_19 =
-                  double.parse(isipendidikan[index = 18].aps1618_n5);
-              double aps1618_20 =
-                  double.parse(isipendidikan[index = 19].aps1618_n5);
-              double aps1618_21 =
-                  double.parse(isipendidikan[index = 20].aps1618_n5);
-              double aps1618_22 =
-                  double.parse(isipendidikan[index = 21].aps1618_n5);
-              double aps1618_23 =
-                  double.parse(isipendidikan[index = 22].aps1618_n5);
-              double aps1618_24 =
-                  double.parse(isipendidikan[index = 23].aps1618_n5);
-              double aps1618_25 =
-                  double.parse(isipendidikan[index = 24].aps1618_n5);
-              double aps1618_26 =
-                  double.parse(isipendidikan[index = 25].aps1618_n5);
-              double aps1618_27 =
-                  double.parse(isipendidikan[index = 26].aps1618_n5);
-              double aps1618_28 =
-                  double.parse(isipendidikan[index = 27].aps1618_n5);
-              double aps1618_29 =
-                  double.parse(isipendidikan[index = 28].aps1618_n5);
-              double aps1618_30 =
-                  double.parse(isipendidikan[index = 29].aps1618_n5);
-              double aps1618_31 =
-                  double.parse(isipendidikan[index = 30].aps1618_n5);
-              double aps1618_32 =
-                  double.parse(isipendidikan[index = 31].aps1618_n5);
-              double aps1618_33 =
-                  double.parse(isipendidikan[index = 32].aps1618_n5);
-              double aps1618_34 =
-                  double.parse(isipendidikan[index = 33].aps1618_n5);
-              double aps1618_35 =
-                  double.parse(isipendidikan[index = 34].aps1618_n5);
-              double aps1618_36 =
-                  double.parse(isipendidikan[index = 35].aps1618_n5);
+              double amh2544_1 = double.parse(isipendidikan[index = 0].amh2544_n5);
+              double amh2544_2 = double.parse(isipendidikan[index = 1].amh2544_n5);
+              double amh2544_3 = double.parse(isipendidikan[index = 2].amh2544_n5);
+              double amh2544_4 = double.parse(isipendidikan[index = 3].amh2544_n5);
+              double amh2544_5 = double.parse(isipendidikan[index = 4].amh2544_n5);
+              double amh2544_6 = double.parse(isipendidikan[index = 5].amh2544_n5);
+              double amh2544_7 = double.parse(isipendidikan[index = 6].amh2544_n5);
+              double amh2544_8 = double.parse(isipendidikan[index = 7].amh2544_n5);
+              double amh2544_9 = double.parse(isipendidikan[index = 8].amh2544_n5);
+              double amh2544_10 =
+                  double.parse(isipendidikan[index = 9].amh2544_n5);
+              double amh2544_11 =
+                  double.parse(isipendidikan[index = 10].amh2544_n5);
+              double amh2544_12 =
+                  double.parse(isipendidikan[index = 11].amh2544_n5);
+              double amh2544_13 =
+                  double.parse(isipendidikan[index = 12].amh2544_n5);
+              double amh2544_14 =
+                  double.parse(isipendidikan[index = 13].amh2544_n5);
+              double amh2544_15 =
+                  double.parse(isipendidikan[index = 14].amh2544_n5);
+              double amh2544_16 =
+                  double.parse(isipendidikan[index = 15].amh2544_n5);
+              double amh2544_17 =
+                  double.parse(isipendidikan[index = 16].amh2544_n5);
+              double amh2544_18 =
+                  double.parse(isipendidikan[index = 17].amh2544_n5);
+              double amh2544_19 =
+                  double.parse(isipendidikan[index = 18].amh2544_n5);
+              double amh2544_20 =
+                  double.parse(isipendidikan[index = 19].amh2544_n5);
+              double amh2544_21 =
+                  double.parse(isipendidikan[index = 20].amh2544_n5);
+              double amh2544_22 =
+                  double.parse(isipendidikan[index = 21].amh2544_n5);
+              double amh2544_23 =
+                  double.parse(isipendidikan[index = 22].amh2544_n5);
+              double amh2544_24 =
+                  double.parse(isipendidikan[index = 23].amh2544_n5);
+              double amh2544_25 =
+                  double.parse(isipendidikan[index = 24].amh2544_n5);
+              double amh2544_26 =
+                  double.parse(isipendidikan[index = 25].amh2544_n5);
+              double amh2544_27 =
+                  double.parse(isipendidikan[index = 26].amh2544_n5);
+              double amh2544_28 =
+                  double.parse(isipendidikan[index = 27].amh2544_n5);
+              double amh2544_29 =
+                  double.parse(isipendidikan[index = 28].amh2544_n5);
+              double amh2544_30 =
+                  double.parse(isipendidikan[index = 29].amh2544_n5);
+              double amh2544_31 =
+                  double.parse(isipendidikan[index = 30].amh2544_n5);
+              double amh2544_32 =
+                  double.parse(isipendidikan[index = 31].amh2544_n5);
+              double amh2544_33 =
+                  double.parse(isipendidikan[index = 32].amh2544_n5);
+              double amh2544_34 =
+                  double.parse(isipendidikan[index = 33].amh2544_n5);
+              double amh2544_35 =
+                  double.parse(isipendidikan[index = 34].amh2544_n5);
+              double amh2544_36 =
+                  double.parse(isipendidikan[index = 35].amh2544_n5);
 
               String thn5 = isipendidikan[index = 0].tahun.substring(20, 24);
 
               toString();
               data = [
-                _ChartData(wilayah1, aps1618_1,
-                    const Color.fromARGB(255, 207, 154, 38)),
                 _ChartData(
-                    wilayah2, aps1618_2, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah1,amh2544_1, const Color.fromARGB(255, 207, 154, 38)),
                 _ChartData(
-                    wilayah3, aps1618_3, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah2,amh2544_2, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah4, aps1618_4, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah3,amh2544_3, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah5, aps1618_5, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah4,amh2544_4, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah6, aps1618_6, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah5,amh2544_5, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah7, aps1618_7, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah6,amh2544_6, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah8, aps1618_8, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah7,amh2544_7, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah9, aps1618_9, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah8,amh2544_8, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah10, aps1618_10, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah9,amh2544_9, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah11, aps1618_11, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah10,amh2544_10, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah12, aps1618_12, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah11,amh2544_11, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah13, aps1618_13, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah12,amh2544_12, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah14, aps1618_14, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah13,amh2544_13, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah15, aps1618_15, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah14,amh2544_14, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah16, aps1618_16, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah15,amh2544_15, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah17, aps1618_17, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah16,amh2544_16, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah18, aps1618_18, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah17,amh2544_17, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah19, aps1618_19, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah18,amh2544_18, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah20, aps1618_20, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah19,amh2544_19, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah21, aps1618_21, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah20,amh2544_20, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah22, aps1618_22, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah21,amh2544_21, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah23, aps1618_23, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah22,amh2544_22, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah24, aps1618_24, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah23,amh2544_23, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah25, aps1618_25, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah24,amh2544_24, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah26, aps1618_26, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah25,amh2544_25, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah27, aps1618_27, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah26,amh2544_26, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah28, aps1618_28, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah27,amh2544_27, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah29, aps1618_29, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah28,amh2544_28, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah30, aps1618_30, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah29,amh2544_29, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah31, aps1618_31, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah30,amh2544_30, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah32, aps1618_32, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah31,amh2544_31, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah33, aps1618_33, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah32,amh2544_32, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah34, aps1618_34, const Color.fromRGBO(9, 0, 136, 1)),
+                    wilayah33,amh2544_33, const Color.fromRGBO(9, 0, 136, 1)),
                 _ChartData(
-                    wilayah35, aps1618_35, const Color.fromRGBO(9, 0, 136, 1)),
-                _ChartData(wilayah36, aps1618_36,
+                    wilayah34,amh2544_34, const Color.fromRGBO(9, 0, 136, 1)),
+                _ChartData(
+                    wilayah35,amh2544_35, const Color.fromRGBO(9, 0, 136, 1)),
+                _ChartData(wilayah36,amh2544_36,
                     const Color.fromARGB(255, 243, 53, 243))
               ];
               tooltip = TooltipBehavior(enable: true);
@@ -276,7 +267,7 @@ class _GrafikPendidikanKabkotAps1618State
                 child: SfCartesianChart(
                     title: ChartTitle(
                         text:
-                            'Angka Partisipasi Sekolah (APS) Usia 16-18 Tahun Menurut Kabupaten/Kota di Jawa Tengah Tahun $thn5',
+                            'Angka Melek Huruf (AMH) Penduduk Usia 25-44 Tahun Menurut Kabupaten/Kota di Jawa Tengah Tahun $thn5',
                         // Aligns the chart title to left
                         alignment: ChartAlignment.center,
                         textStyle: const TextStyle(
@@ -304,7 +295,7 @@ class _GrafikPendidikanKabkotAps1618State
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         title: AxisTitle(
-                            text: 'APS 16-18 Tahun (persen)',
+                            text: 'AMH Usia 25-44 Tahun (persen)',
                             textStyle: const TextStyle(
                               color: Color.fromARGB(255, 10, 10, 10),
                               fontFamily: 'Roboto',
@@ -333,7 +324,7 @@ class _GrafikPendidikanKabkotAps1618State
                             isVisible: true,
                             labelAlignment: ChartDataLabelAlignment.outer,
                             textStyle: TextStyle(fontSize: 10)),
-                        name: 'APS 16-18 Tahun (persen)',
+                        name: 'AMH Usia 25-44 Tahun (persen)',
                         color: const Color.fromRGBO(9, 0, 136, 1),
                       ),
                     ]),

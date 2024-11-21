@@ -445,7 +445,7 @@ class _PendidikanKabkotJumlahtkCState extends State<PendidikanKabkotJumlahtkC> {
                             padding: const EdgeInsets.only(
                                 right: 20, top: 0, bottom: 0),
                             child: const Text(
-                              "",
+                              "Kota",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,

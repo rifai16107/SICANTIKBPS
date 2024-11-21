@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 
 // ignore_for_file: camel_case_types, non_constant_identifier_names
 
-class RepositoryPendidikanKabkotApmapk {
+class RepositoryPendidikanKabkotApsek {
   final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-apsek';
 
   Future getData() async {
@@ -60,8 +60,8 @@ class GrafikPendidikanKabkotAps1315 extends StatefulWidget {
 
 class _GrafikPendidikanKabkotAps1315State
     extends State<GrafikPendidikanKabkotAps1315> {
-  RepositoryPendidikanKabkotApmapk repositorypendidikan =
-      RepositoryPendidikanKabkotApmapk();
+  RepositoryPendidikanKabkotApsek repositorypendidikan =
+      RepositoryPendidikanKabkotApsek();
   int key = 0;
   late List<_ChartData> data;
   late TooltipBehavior tooltip;
