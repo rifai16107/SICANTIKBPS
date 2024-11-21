@@ -45,7 +45,7 @@ class _SeriesParsekKabkot extends State<SeriesParsekKabkot> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Angka Melek Huruf (AMH) Penduduk Usia 15+ Menurut Kelompok Umur Tertentu dan Kabupaten/Kota di Jawa Tengah",
+                    "Persentase Penduduk Usia 5+ Menurut Partisipasi Sekolah dan Kabupaten/Kota di Jawa Tengah",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
