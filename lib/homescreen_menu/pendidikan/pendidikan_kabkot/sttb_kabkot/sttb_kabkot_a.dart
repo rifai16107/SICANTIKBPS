@@ -70,8 +70,7 @@ class PendidikanKabkotSttbA extends StatefulWidget {
   const PendidikanKabkotSttbA({Key? key}) : super(key: key);
 
   @override
-  State<PendidikanKabkotSttbA> createState() =>
-      _PendidikanKabkotSttbAState();
+  State<PendidikanKabkotSttbA> createState() => _PendidikanKabkotSttbAState();
 }
 
 RepositoryPendidikanKabkotSttb repositorypendidikan =
@@ -864,7 +863,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        left:0,right: 0, top: 1, bottom: 1),
+                                        left: 0, right: 0, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_blmsekolah_1, 2),
                                       textAlign: TextAlign.right,
@@ -904,7 +903,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -996,7 +994,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_2, 2),
                                       textAlign: TextAlign.right,
@@ -1021,7 +1019,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -1113,7 +1110,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_3, 2),
                                       textAlign: TextAlign.right,
@@ -1138,7 +1135,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -1230,7 +1226,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_4, 2),
                                       textAlign: TextAlign.right,
@@ -1255,7 +1251,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -1347,7 +1342,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_5, 2),
                                       textAlign: TextAlign.right,
@@ -1372,7 +1367,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -1464,7 +1458,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_6, 2),
                                       textAlign: TextAlign.right,
@@ -1489,7 +1483,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -1581,7 +1574,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_7, 2),
                                       textAlign: TextAlign.right,
@@ -1606,7 +1599,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -1698,7 +1690,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_8, 2),
                                       textAlign: TextAlign.right,
@@ -1723,7 +1715,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -1815,7 +1806,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_9, 2),
                                       textAlign: TextAlign.right,
@@ -1840,7 +1831,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -1932,7 +1922,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_10, 2),
                                       textAlign: TextAlign.right,
@@ -1957,7 +1947,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2050,7 +2039,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_11, 2),
                                       textAlign: TextAlign.right,
@@ -2075,7 +2064,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2167,7 +2155,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_12, 2),
                                       textAlign: TextAlign.right,
@@ -2192,7 +2180,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2284,7 +2271,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_13, 2),
                                       textAlign: TextAlign.right,
@@ -2309,7 +2296,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2401,7 +2387,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_14, 2),
                                       textAlign: TextAlign.right,
@@ -2426,7 +2412,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2518,7 +2503,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_15, 2),
                                       textAlign: TextAlign.right,
@@ -2543,7 +2528,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2635,7 +2619,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_16, 2),
                                       textAlign: TextAlign.right,
@@ -2660,7 +2644,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2752,7 +2735,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_17, 2),
                                       textAlign: TextAlign.right,
@@ -2777,7 +2760,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2869,7 +2851,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_18, 2),
                                       textAlign: TextAlign.right,
@@ -2894,7 +2876,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -2986,7 +2967,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_19, 2),
                                       textAlign: TextAlign.right,
@@ -3011,7 +2992,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -3103,7 +3083,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_20, 2),
                                       textAlign: TextAlign.right,
@@ -3128,7 +3108,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -3220,7 +3199,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_21, 2),
                                       textAlign: TextAlign.right,
@@ -3245,7 +3224,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -3337,7 +3315,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_22, 2),
                                       textAlign: TextAlign.right,
@@ -3362,7 +3340,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -3454,7 +3431,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_23, 2),
                                       textAlign: TextAlign.right,
@@ -3479,7 +3456,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -3571,7 +3547,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_24, 2),
                                       textAlign: TextAlign.right,
@@ -3596,7 +3572,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -3688,7 +3663,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_25, 2),
                                       textAlign: TextAlign.right,
@@ -3713,7 +3688,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -3830,7 +3804,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -3922,7 +3895,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_27, 2),
                                       textAlign: TextAlign.right,
@@ -3947,7 +3920,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -4039,7 +4011,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_28, 2),
                                       textAlign: TextAlign.right,
@@ -4064,7 +4036,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -4156,7 +4127,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_29, 2),
                                       textAlign: TextAlign.right,
@@ -4181,7 +4152,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -4273,7 +4243,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_30, 2),
                                       textAlign: TextAlign.right,
@@ -4389,7 +4359,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_31, 2),
                                       textAlign: TextAlign.right,
@@ -4414,7 +4384,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -4506,7 +4475,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_32, 2),
                                       textAlign: TextAlign.right,
@@ -4531,7 +4500,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -4623,7 +4591,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_33, 2),
                                       textAlign: TextAlign.right,
@@ -4648,7 +4616,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -4740,7 +4707,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_34, 2),
                                       textAlign: TextAlign.right,
@@ -4765,7 +4732,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -4857,7 +4823,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_35, 2),
                                       textAlign: TextAlign.right,
@@ -4882,7 +4848,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                                
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(
@@ -4973,7 +4938,7 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                   width: 0.14 * screenWidth,
                                   child: Container(
                                     padding: const EdgeInsets.only(
-                                        right: 5,  top: 1, bottom: 1),
+                                        right: 5, top: 1, bottom: 1),
                                     child: Text(
                                       Format.convertTo(tdk_tmtsd_36, 2),
                                       textAlign: TextAlign.right,
@@ -4999,7 +4964,6 @@ class _PendidikanKabkotSttbAState extends State<PendidikanKabkotSttbA> {
                                     ),
                                   ),
                                 ),
-                               
                                 SizedBox(
                                   width: 0.11 * screenWidth,
                                   child: Container(

@@ -6,7 +6,7 @@ import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk
 //import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/series_sttb_kabkot.dart';
 //import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/amh_kabkot/series_amh_kabkot.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot/series_sarped_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_tk/series_jumlahtk_kabkot.dart';
 import 'package:flutter/material.dart';
 
 class saranapendidikanKabkota extends StatefulWidget {
@@ -235,7 +235,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesApmApkKabkot(),
+                          child: const SeriesJumlahtkKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -522,7 +522,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesSarped(),
+                          child: const SeriesJumlahtkKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -563,7 +563,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesSarped(),
+                          child: const SeriesJumlahtkKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -604,7 +604,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesSarped(),
+                          child: const SeriesJumlahtkKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
