@@ -5,6 +5,11 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/body_grafik_tdkbelum_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/body_grafik_masih_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/parsek_kabkot/body_grafik_tidaklagi_kabkot.dart';
+
 
 //apm apk 2019
 
@@ -3171,7 +3176,7 @@ class _PendidikanKabkotParsekEState extends State<PendidikanKabkotParsekE> {
                             ),
                           ),
                           const Divider(
-                            height: 20,
+                            height: 70,
                           )
                         ],
                       ),
@@ -3183,11 +3188,108 @@ class _PendidikanKabkotParsekEState extends State<PendidikanKabkotParsekE> {
           );
         }
         if (snapshot.hasError) {
-          return const Text('Database Error');
-        } else {
-          return const Center(child: CircularProgressIndicator(strokeWidth: 3));
-        }
-      },
-    ));
+            return const Text('Database Error');
+          } else {
+            return const Center(
+                child: CircularProgressIndicator(strokeWidth: 3));
+          }
+        },
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
+      floatingActionButton: SpeedDial(
+          icon: Icons.bar_chart_outlined,
+          visible: true,
+          //mini:true,
+          //animatedIcon:AnimatedIcons.menu_close,
+          activeIcon: Icons.close,
+          buttonSize: const Size(45, 45),
+          curve: Curves.elasticInOut,
+          direction: SpeedDialDirection.up,
+
+          //animatedIconTheme: const IconThemeData(size: 25),
+          //animatedIcon: AnimatedIcons.list_view,
+          closeManually: false,
+          children: [
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkottdkbelum(),
+                        direction: AxisDirection.left));
+              },
+              label: 'Tidak/Belum Sekolah',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 10,
+              ),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkotmasih(),
+                        direction: AxisDirection.left));
+              },
+              label: 'Masih Sekolah',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+            SpeedDialChild(
+              backgroundColor: Colors.greenAccent,
+              child: const Icon(Icons.bar_chart),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CustomPageRoute(
+                        child: const BodyGrafikPendidikanKabkotTdklagi(),
+                        direction: AxisDirection.left));
+              },
+              label: 'Tidak Bersekolah LAgi',
+              labelBackgroundColor: Colors.black,
+              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+            ),
+           
+          ]),
+    );
   }
 }
+
+class CustomPageRoute extends PageRouteBuilder {
+  final Widget child;
+  final AxisDirection direction;
+
+  CustomPageRoute({required this.child, this.direction = AxisDirection.left})
+      : super(
+            transitionDuration: const Duration(milliseconds: 200),
+            reverseTransitionDuration: const Duration(milliseconds: 200),
+            pageBuilder: (context, animation, secondaryAnimation) => child);
+
+  @override
+  Widget buildTransitions(BuildContext context, Animation<double> animation,
+          Animation<double> secondaryAnimation, Widget child) =>
+      SlideTransition(
+        position: Tween<Offset>(begin: getBeginOffset(), end: Offset.zero)
+            .animate(animation),
+        child: child,
+      );
+  Offset getBeginOffset() {
+    switch (direction) {
+      case AxisDirection.up:
+        return const Offset(0, 1);
+      case AxisDirection.down:
+        return const Offset(0, -1);
+      case AxisDirection.right:
+        return const Offset(-1, 0);
+      case AxisDirection.left:
+        return const Offset(1, 0);
+    }
+  }
+}
+

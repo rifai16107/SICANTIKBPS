@@ -72,9 +72,9 @@ class _BodySeriesJumlahtkKabkotState extends State<BodySeriesJumlahtkKabkot> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String thnN1 = isipendidikan[index = 0].tahun.substring(0, 8);
-              String thnN2 = isipendidikan[index = 0].tahun.substring(10, 18);
-              String thnN3 = isipendidikan[index = 0].tahun.substring(20, 28);
+              String thnN1 = isipendidikan[index = 0].tahun.substring(0, 9);
+              String thnN2 = isipendidikan[index = 0].tahun.substring(10, 19);
+              String thnN3 = isipendidikan[index = 0].tahun.substring(20, 29);
 
               return DefaultTabController(
                 length: 3,

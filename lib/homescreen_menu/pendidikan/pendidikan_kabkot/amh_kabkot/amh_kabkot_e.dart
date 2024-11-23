@@ -3736,7 +3736,7 @@ class _PendidikanKabkotAmhEState extends State<PendidikanKabkotAmhE> {
                             ),
                           ),
                           const Divider(
-                            height: 20,
+                            height: 70,
                           )
                         ],
                       ),
