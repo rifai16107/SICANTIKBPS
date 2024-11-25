@@ -9,6 +9,7 @@ import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/amh_kab
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_tk/series_jumlahtk_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_ra/series_jumlahra_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/series_jumlahsd_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_mi/series_jumlahmi_kabkot.dart';
 import 'package:flutter/material.dart';
 
 class saranapendidikanKabkota extends StatefulWidget {
@@ -360,7 +361,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesApmApkKabkot(),
+                          child: const SeriesJumlahmiKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(

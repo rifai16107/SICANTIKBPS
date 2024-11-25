@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
 
-// 2021/2022 jumlah sd
+// 2022/2023 jumlah mi
 
-class RepositoryPendidikanKabkotJumlahsd {
+class RepositoryPendidikanKabkotJumlahmi {
   final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-sgmsd';
 
   Future getData() async {
@@ -19,7 +19,7 @@ class RepositoryPendidikanKabkotJumlahsd {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
             .map((isipendidikan) =>
-                ModelPendidikanKabkotJumlahsd.fromJson(isipendidikan))
+                ModelPendidikanKabkotJumlahmi.fromJson(isipendidikan))
             .toList();
       }
     } catch (isipendidikan) {
@@ -29,46 +29,46 @@ class RepositoryPendidikanKabkotJumlahsd {
   }
 }
 
-class ModelPendidikanKabkotJumlahsd {
+class ModelPendidikanKabkotJumlahmi {
   final int id;
   final String wilayah;
-  final String sekolahsd_n2;
-  final String gurusd_n2;
-  final String muridsd_n2;
+  final String sekolahmi_n2;
+  final String gurumi_n2;
+  final String muridmi_n2;
   final String tahun;
 
-  ModelPendidikanKabkotJumlahsd(
+  ModelPendidikanKabkotJumlahmi(
       {required this.id,
       required this.wilayah,
-      required this.sekolahsd_n2,
-      required this.gurusd_n2,
-      required this.muridsd_n2,
+      required this.sekolahmi_n2,
+      required this.gurumi_n2,
+      required this.muridmi_n2,
       required this.tahun});
 
-  factory ModelPendidikanKabkotJumlahsd.fromJson(Map<String, dynamic> json) {
-    return ModelPendidikanKabkotJumlahsd(
+  factory ModelPendidikanKabkotJumlahmi.fromJson(Map<String, dynamic> json) {
+    return ModelPendidikanKabkotJumlahmi(
       id: json['id'],
       wilayah: json['wilayah'],
-      sekolahsd_n2: json['sekolahsd_n2'],
-      gurusd_n2: json['gurusd_n2'],
-      muridsd_n2: json['muridsd_n2'],
+      sekolahmi_n2: json['sekolahmi_n2'],
+      gurumi_n2: json['gurumi_n2'],
+      muridmi_n2: json['muridmi_n2'],
       tahun: json['tahun'],
     );
   }
 }
 
-class PendidikanKabkotJumlahsdB extends StatefulWidget {
-  const PendidikanKabkotJumlahsdB({Key? key}) : super(key: key);
+class PendidikanKabkotJumlahmiB extends StatefulWidget {
+  const PendidikanKabkotJumlahmiB({Key? key}) : super(key: key);
 
   @override
-  State<PendidikanKabkotJumlahsdB> createState() =>
-      _PendidikanKabkotJumlahsdBState();
+  State<PendidikanKabkotJumlahmiB> createState() =>
+      _PendidikanKabkotJumlahmiBState();
 }
 
-RepositoryPendidikanKabkotJumlahsd repositorypendidikan =
-    RepositoryPendidikanKabkotJumlahsd();
+RepositoryPendidikanKabkotJumlahmi repositorypendidikan =
+    RepositoryPendidikanKabkotJumlahmi();
 
-class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
+class _PendidikanKabkotJumlahmiBState extends State<PendidikanKabkotJumlahmiB> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -123,224 +123,224 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
               String kab36 = "    " + isipendidikan[index = 35].wilayah;
 
               //APM
-              double sekolahsd_1 =
-                  double.parse(isipendidikan[index = 0].sekolahsd_n2);
-              double sekolahsd_2 =
-                  double.parse(isipendidikan[index = 1].sekolahsd_n2);
-              double sekolahsd_3 =
-                  double.parse(isipendidikan[index = 2].sekolahsd_n2);
-              double sekolahsd_4 =
-                  double.parse(isipendidikan[index = 3].sekolahsd_n2);
-              double sekolahsd_5 =
-                  double.parse(isipendidikan[index = 4].sekolahsd_n2);
-              double sekolahsd_6 =
-                  double.parse(isipendidikan[index = 5].sekolahsd_n2);
-              double sekolahsd_7 =
-                  double.parse(isipendidikan[index = 6].sekolahsd_n2);
-              double sekolahsd_8 =
-                  double.parse(isipendidikan[index = 7].sekolahsd_n2);
-              double sekolahsd_9 =
-                  double.parse(isipendidikan[index = 8].sekolahsd_n2);
-              double sekolahsd_10 =
-                  double.parse(isipendidikan[index = 9].sekolahsd_n2);
-              double sekolahsd_11 =
-                  double.parse(isipendidikan[index = 10].sekolahsd_n2);
-              double sekolahsd_12 =
-                  double.parse(isipendidikan[index = 11].sekolahsd_n2);
-              double sekolahsd_13 =
-                  double.parse(isipendidikan[index = 12].sekolahsd_n2);
-              double sekolahsd_14 =
-                  double.parse(isipendidikan[index = 13].sekolahsd_n2);
-              double sekolahsd_15 =
-                  double.parse(isipendidikan[index = 14].sekolahsd_n2);
-              double sekolahsd_16 =
-                  double.parse(isipendidikan[index = 15].sekolahsd_n2);
-              double sekolahsd_17 =
-                  double.parse(isipendidikan[index = 16].sekolahsd_n2);
-              double sekolahsd_18 =
-                  double.parse(isipendidikan[index = 17].sekolahsd_n2);
-              double sekolahsd_19 =
-                  double.parse(isipendidikan[index = 18].sekolahsd_n2);
-              double sekolahsd_20 =
-                  double.parse(isipendidikan[index = 19].sekolahsd_n2);
-              double sekolahsd_21 =
-                  double.parse(isipendidikan[index = 20].sekolahsd_n2);
-              double sekolahsd_22 =
-                  double.parse(isipendidikan[index = 21].sekolahsd_n2);
-              double sekolahsd_23 =
-                  double.parse(isipendidikan[index = 22].sekolahsd_n2);
-              double sekolahsd_24 =
-                  double.parse(isipendidikan[index = 23].sekolahsd_n2);
-              double sekolahsd_25 =
-                  double.parse(isipendidikan[index = 24].sekolahsd_n2);
-              double sekolahsd_26 =
-                  double.parse(isipendidikan[index = 25].sekolahsd_n2);
-              double sekolahsd_27 =
-                  double.parse(isipendidikan[index = 26].sekolahsd_n2);
-              double sekolahsd_28 =
-                  double.parse(isipendidikan[index = 27].sekolahsd_n2);
-              double sekolahsd_29 =
-                  double.parse(isipendidikan[index = 28].sekolahsd_n2);
-              double sekolahsd_30 =
-                  double.parse(isipendidikan[index = 29].sekolahsd_n2);
-              double sekolahsd_31 =
-                  double.parse(isipendidikan[index = 30].sekolahsd_n2);
-              double sekolahsd_32 =
-                  double.parse(isipendidikan[index = 31].sekolahsd_n2);
-              double sekolahsd_33 =
-                  double.parse(isipendidikan[index = 32].sekolahsd_n2);
-              double sekolahsd_34 =
-                  double.parse(isipendidikan[index = 33].sekolahsd_n2);
-              double sekolahsd_35 =
-                  double.parse(isipendidikan[index = 34].sekolahsd_n2);
-              double sekolahsd_36 =
-                  double.parse(isipendidikan[index = 35].sekolahsd_n2);
+              double sekolahmi_1 =
+                  double.parse(isipendidikan[index = 0].sekolahmi_n2);
+              double sekolahmi_2 =
+                  double.parse(isipendidikan[index = 1].sekolahmi_n2);
+              double sekolahmi_3 =
+                  double.parse(isipendidikan[index = 2].sekolahmi_n2);
+              double sekolahmi_4 =
+                  double.parse(isipendidikan[index = 3].sekolahmi_n2);
+              double sekolahmi_5 =
+                  double.parse(isipendidikan[index = 4].sekolahmi_n2);
+              double sekolahmi_6 =
+                  double.parse(isipendidikan[index = 5].sekolahmi_n2);
+              double sekolahmi_7 =
+                  double.parse(isipendidikan[index = 6].sekolahmi_n2);
+              double sekolahmi_8 =
+                  double.parse(isipendidikan[index = 7].sekolahmi_n2);
+              double sekolahmi_9 =
+                  double.parse(isipendidikan[index = 8].sekolahmi_n2);
+              double sekolahmi_10 =
+                  double.parse(isipendidikan[index = 9].sekolahmi_n2);
+              double sekolahmi_11 =
+                  double.parse(isipendidikan[index = 10].sekolahmi_n2);
+              double sekolahmi_12 =
+                  double.parse(isipendidikan[index = 11].sekolahmi_n2);
+              double sekolahmi_13 =
+                  double.parse(isipendidikan[index = 12].sekolahmi_n2);
+              double sekolahmi_14 =
+                  double.parse(isipendidikan[index = 13].sekolahmi_n2);
+              double sekolahmi_15 =
+                  double.parse(isipendidikan[index = 14].sekolahmi_n2);
+              double sekolahmi_16 =
+                  double.parse(isipendidikan[index = 15].sekolahmi_n2);
+              double sekolahmi_17 =
+                  double.parse(isipendidikan[index = 16].sekolahmi_n2);
+              double sekolahmi_18 =
+                  double.parse(isipendidikan[index = 17].sekolahmi_n2);
+              double sekolahmi_19 =
+                  double.parse(isipendidikan[index = 18].sekolahmi_n2);
+              double sekolahmi_20 =
+                  double.parse(isipendidikan[index = 19].sekolahmi_n2);
+              double sekolahmi_21 =
+                  double.parse(isipendidikan[index = 20].sekolahmi_n2);
+              double sekolahmi_22 =
+                  double.parse(isipendidikan[index = 21].sekolahmi_n2);
+              double sekolahmi_23 =
+                  double.parse(isipendidikan[index = 22].sekolahmi_n2);
+              double sekolahmi_24 =
+                  double.parse(isipendidikan[index = 23].sekolahmi_n2);
+              double sekolahmi_25 =
+                  double.parse(isipendidikan[index = 24].sekolahmi_n2);
+              double sekolahmi_26 =
+                  double.parse(isipendidikan[index = 25].sekolahmi_n2);
+              double sekolahmi_27 =
+                  double.parse(isipendidikan[index = 26].sekolahmi_n2);
+              double sekolahmi_28 =
+                  double.parse(isipendidikan[index = 27].sekolahmi_n2);
+              double sekolahmi_29 =
+                  double.parse(isipendidikan[index = 28].sekolahmi_n2);
+              double sekolahmi_30 =
+                  double.parse(isipendidikan[index = 29].sekolahmi_n2);
+              double sekolahmi_31 =
+                  double.parse(isipendidikan[index = 30].sekolahmi_n2);
+              double sekolahmi_32 =
+                  double.parse(isipendidikan[index = 31].sekolahmi_n2);
+              double sekolahmi_33 =
+                  double.parse(isipendidikan[index = 32].sekolahmi_n2);
+              double sekolahmi_34 =
+                  double.parse(isipendidikan[index = 33].sekolahmi_n2);
+              double sekolahmi_35 =
+                  double.parse(isipendidikan[index = 34].sekolahmi_n2);
+              double sekolahmi_36 =
+                  double.parse(isipendidikan[index = 35].sekolahmi_n2);
 
-              double gurusd_1 =
-                  double.parse(isipendidikan[index = 0].gurusd_n2);
-              double gurusd_2 =
-                  double.parse(isipendidikan[index = 1].gurusd_n2);
-              double gurusd_3 =
-                  double.parse(isipendidikan[index = 2].gurusd_n2);
-              double gurusd_4 =
-                  double.parse(isipendidikan[index = 3].gurusd_n2);
-              double gurusd_5 =
-                  double.parse(isipendidikan[index = 4].gurusd_n2);
-              double gurusd_6 =
-                  double.parse(isipendidikan[index = 5].gurusd_n2);
-              double gurusd_7 =
-                  double.parse(isipendidikan[index = 6].gurusd_n2);
-              double gurusd_8 =
-                  double.parse(isipendidikan[index = 7].gurusd_n2);
-              double gurusd_9 =
-                  double.parse(isipendidikan[index = 8].gurusd_n2);
-              double gurusd_10 =
-                  double.parse(isipendidikan[index = 9].gurusd_n2);
-              double gurusd_11 =
-                  double.parse(isipendidikan[index = 10].gurusd_n2);
-              double gurusd_12 =
-                  double.parse(isipendidikan[index = 11].gurusd_n2);
-              double gurusd_13 =
-                  double.parse(isipendidikan[index = 12].gurusd_n2);
-              double gurusd_14 =
-                  double.parse(isipendidikan[index = 13].gurusd_n2);
-              double gurusd_15 =
-                  double.parse(isipendidikan[index = 14].gurusd_n2);
-              double gurusd_16 =
-                  double.parse(isipendidikan[index = 15].gurusd_n2);
-              double gurusd_17 =
-                  double.parse(isipendidikan[index = 16].gurusd_n2);
-              double gurusd_18 =
-                  double.parse(isipendidikan[index = 17].gurusd_n2);
-              double gurusd_19 =
-                  double.parse(isipendidikan[index = 18].gurusd_n2);
-              double gurusd_20 =
-                  double.parse(isipendidikan[index = 19].gurusd_n2);
-              double gurusd_21 =
-                  double.parse(isipendidikan[index = 20].gurusd_n2);
-              double gurusd_22 =
-                  double.parse(isipendidikan[index = 21].gurusd_n2);
-              double gurusd_23 =
-                  double.parse(isipendidikan[index = 22].gurusd_n2);
-              double gurusd_24 =
-                  double.parse(isipendidikan[index = 23].gurusd_n2);
-              double gurusd_25 =
-                  double.parse(isipendidikan[index = 24].gurusd_n2);
-              double gurusd_26 =
-                  double.parse(isipendidikan[index = 25].gurusd_n2);
-              double gurusd_27 =
-                  double.parse(isipendidikan[index = 26].gurusd_n2);
-              double gurusd_28 =
-                  double.parse(isipendidikan[index = 27].gurusd_n2);
-              double gurusd_29 =
-                  double.parse(isipendidikan[index = 28].gurusd_n2);
-              double gurusd_30 =
-                  double.parse(isipendidikan[index = 29].gurusd_n2);
-              double gurusd_31 =
-                  double.parse(isipendidikan[index = 30].gurusd_n2);
-              double gurusd_32 =
-                  double.parse(isipendidikan[index = 31].gurusd_n2);
-              double gurusd_33 =
-                  double.parse(isipendidikan[index = 32].gurusd_n2);
-              double gurusd_34 =
-                  double.parse(isipendidikan[index = 33].gurusd_n2);
-              double gurusd_35 =
-                  double.parse(isipendidikan[index = 34].gurusd_n2);
-              double gurusd_36 =
-                  double.parse(isipendidikan[index = 35].gurusd_n2);
+              double gurumi_1 =
+                  double.parse(isipendidikan[index = 0].gurumi_n2);
+              double gurumi_2 =
+                  double.parse(isipendidikan[index = 1].gurumi_n2);
+              double gurumi_3 =
+                  double.parse(isipendidikan[index = 2].gurumi_n2);
+              double gurumi_4 =
+                  double.parse(isipendidikan[index = 3].gurumi_n2);
+              double gurumi_5 =
+                  double.parse(isipendidikan[index = 4].gurumi_n2);
+              double gurumi_6 =
+                  double.parse(isipendidikan[index = 5].gurumi_n2);
+              double gurumi_7 =
+                  double.parse(isipendidikan[index = 6].gurumi_n2);
+              double gurumi_8 =
+                  double.parse(isipendidikan[index = 7].gurumi_n2);
+              double gurumi_9 =
+                  double.parse(isipendidikan[index = 8].gurumi_n2);
+              double gurumi_10 =
+                  double.parse(isipendidikan[index = 9].gurumi_n2);
+              double gurumi_11 =
+                  double.parse(isipendidikan[index = 10].gurumi_n2);
+              double gurumi_12 =
+                  double.parse(isipendidikan[index = 11].gurumi_n2);
+              double gurumi_13 =
+                  double.parse(isipendidikan[index = 12].gurumi_n2);
+              double gurumi_14 =
+                  double.parse(isipendidikan[index = 13].gurumi_n2);
+              double gurumi_15 =
+                  double.parse(isipendidikan[index = 14].gurumi_n2);
+              double gurumi_16 =
+                  double.parse(isipendidikan[index = 15].gurumi_n2);
+              double gurumi_17 =
+                  double.parse(isipendidikan[index = 16].gurumi_n2);
+              double gurumi_18 =
+                  double.parse(isipendidikan[index = 17].gurumi_n2);
+              double gurumi_19 =
+                  double.parse(isipendidikan[index = 18].gurumi_n2);
+              double gurumi_20 =
+                  double.parse(isipendidikan[index = 19].gurumi_n2);
+              double gurumi_21 =
+                  double.parse(isipendidikan[index = 20].gurumi_n2);
+              double gurumi_22 =
+                  double.parse(isipendidikan[index = 21].gurumi_n2);
+              double gurumi_23 =
+                  double.parse(isipendidikan[index = 22].gurumi_n2);
+              double gurumi_24 =
+                  double.parse(isipendidikan[index = 23].gurumi_n2);
+              double gurumi_25 =
+                  double.parse(isipendidikan[index = 24].gurumi_n2);
+              double gurumi_26 =
+                  double.parse(isipendidikan[index = 25].gurumi_n2);
+              double gurumi_27 =
+                  double.parse(isipendidikan[index = 26].gurumi_n2);
+              double gurumi_28 =
+                  double.parse(isipendidikan[index = 27].gurumi_n2);
+              double gurumi_29 =
+                  double.parse(isipendidikan[index = 28].gurumi_n2);
+              double gurumi_30 =
+                  double.parse(isipendidikan[index = 29].gurumi_n2);
+              double gurumi_31 =
+                  double.parse(isipendidikan[index = 30].gurumi_n2);
+              double gurumi_32 =
+                  double.parse(isipendidikan[index = 31].gurumi_n2);
+              double gurumi_33 =
+                  double.parse(isipendidikan[index = 32].gurumi_n2);
+              double gurumi_34 =
+                  double.parse(isipendidikan[index = 33].gurumi_n2);
+              double gurumi_35 =
+                  double.parse(isipendidikan[index = 34].gurumi_n2);
+              double gurumi_36 =
+                  double.parse(isipendidikan[index = 35].gurumi_n2);
 
-              double muridsd_1 =
-                  double.parse(isipendidikan[index = 0].muridsd_n2);
-              double muridsd_2 =
-                  double.parse(isipendidikan[index = 1].muridsd_n2);
-              double muridsd_3 =
-                  double.parse(isipendidikan[index = 2].muridsd_n2);
-              double muridsd_4 =
-                  double.parse(isipendidikan[index = 3].muridsd_n2);
-              double muridsd_5 =
-                  double.parse(isipendidikan[index = 4].muridsd_n2);
-              double muridsd_6 =
-                  double.parse(isipendidikan[index = 5].muridsd_n2);
-              double muridsd_7 =
-                  double.parse(isipendidikan[index = 6].muridsd_n2);
-              double muridsd_8 =
-                  double.parse(isipendidikan[index = 7].muridsd_n2);
-              double muridsd_9 =
-                  double.parse(isipendidikan[index = 8].muridsd_n2);
-              double muridsd_10 =
-                  double.parse(isipendidikan[index = 9].muridsd_n2);
-              double muridsd_11 =
-                  double.parse(isipendidikan[index = 10].muridsd_n2);
-              double muridsd_12 =
-                  double.parse(isipendidikan[index = 11].muridsd_n2);
-              double muridsd_13 =
-                  double.parse(isipendidikan[index = 12].muridsd_n2);
-              double muridsd_14 =
-                  double.parse(isipendidikan[index = 13].muridsd_n2);
-              double muridsd_15 =
-                  double.parse(isipendidikan[index = 14].muridsd_n2);
-              double muridsd_16 =
-                  double.parse(isipendidikan[index = 15].muridsd_n2);
-              double muridsd_17 =
-                  double.parse(isipendidikan[index = 16].muridsd_n2);
-              double muridsd_18 =
-                  double.parse(isipendidikan[index = 17].muridsd_n2);
-              double muridsd_19 =
-                  double.parse(isipendidikan[index = 18].muridsd_n2);
-              double muridsd_20 =
-                  double.parse(isipendidikan[index = 19].muridsd_n2);
-              double muridsd_21 =
-                  double.parse(isipendidikan[index = 20].muridsd_n2);
-              double muridsd_22 =
-                  double.parse(isipendidikan[index = 21].muridsd_n2);
-              double muridsd_23 =
-                  double.parse(isipendidikan[index = 22].muridsd_n2);
-              double muridsd_24 =
-                  double.parse(isipendidikan[index = 23].muridsd_n2);
-              double muridsd_25 =
-                  double.parse(isipendidikan[index = 24].muridsd_n2);
-              double muridsd_26 =
-                  double.parse(isipendidikan[index = 25].muridsd_n2);
-              double muridsd_27 =
-                  double.parse(isipendidikan[index = 26].muridsd_n2);
-              double muridsd_28 =
-                  double.parse(isipendidikan[index = 27].muridsd_n2);
-              double muridsd_29 =
-                  double.parse(isipendidikan[index = 28].muridsd_n2);
-              double muridsd_30 =
-                  double.parse(isipendidikan[index = 29].muridsd_n2);
-              double muridsd_31 =
-                  double.parse(isipendidikan[index = 30].muridsd_n2);
-              double muridsd_32 =
-                  double.parse(isipendidikan[index = 31].muridsd_n2);
-              double muridsd_33 =
-                  double.parse(isipendidikan[index = 32].muridsd_n2);
-              double muridsd_34 =
-                  double.parse(isipendidikan[index = 33].muridsd_n2);
-              double muridsd_35 =
-                  double.parse(isipendidikan[index = 34].muridsd_n2);
-              double muridsd_36 =
-                  double.parse(isipendidikan[index = 35].muridsd_n2);
+              double muridmi_1 =
+                  double.parse(isipendidikan[index = 0].muridmi_n2);
+              double muridmi_2 =
+                  double.parse(isipendidikan[index = 1].muridmi_n2);
+              double muridmi_3 =
+                  double.parse(isipendidikan[index = 2].muridmi_n2);
+              double muridmi_4 =
+                  double.parse(isipendidikan[index = 3].muridmi_n2);
+              double muridmi_5 =
+                  double.parse(isipendidikan[index = 4].muridmi_n2);
+              double muridmi_6 =
+                  double.parse(isipendidikan[index = 5].muridmi_n2);
+              double muridmi_7 =
+                  double.parse(isipendidikan[index = 6].muridmi_n2);
+              double muridmi_8 =
+                  double.parse(isipendidikan[index = 7].muridmi_n2);
+              double muridmi_9 =
+                  double.parse(isipendidikan[index = 8].muridmi_n2);
+              double muridmi_10 =
+                  double.parse(isipendidikan[index = 9].muridmi_n2);
+              double muridmi_11 =
+                  double.parse(isipendidikan[index = 10].muridmi_n2);
+              double muridmi_12 =
+                  double.parse(isipendidikan[index = 11].muridmi_n2);
+              double muridmi_13 =
+                  double.parse(isipendidikan[index = 12].muridmi_n2);
+              double muridmi_14 =
+                  double.parse(isipendidikan[index = 13].muridmi_n2);
+              double muridmi_15 =
+                  double.parse(isipendidikan[index = 14].muridmi_n2);
+              double muridmi_16 =
+                  double.parse(isipendidikan[index = 15].muridmi_n2);
+              double muridmi_17 =
+                  double.parse(isipendidikan[index = 16].muridmi_n2);
+              double muridmi_18 =
+                  double.parse(isipendidikan[index = 17].muridmi_n2);
+              double muridmi_19 =
+                  double.parse(isipendidikan[index = 18].muridmi_n2);
+              double muridmi_20 =
+                  double.parse(isipendidikan[index = 19].muridmi_n2);
+              double muridmi_21 =
+                  double.parse(isipendidikan[index = 20].muridmi_n2);
+              double muridmi_22 =
+                  double.parse(isipendidikan[index = 21].muridmi_n2);
+              double muridmi_23 =
+                  double.parse(isipendidikan[index = 22].muridmi_n2);
+              double muridmi_24 =
+                  double.parse(isipendidikan[index = 23].muridmi_n2);
+              double muridmi_25 =
+                  double.parse(isipendidikan[index = 24].muridmi_n2);
+              double muridmi_26 =
+                  double.parse(isipendidikan[index = 25].muridmi_n2);
+              double muridmi_27 =
+                  double.parse(isipendidikan[index = 26].muridmi_n2);
+              double muridmi_28 =
+                  double.parse(isipendidikan[index = 27].muridmi_n2);
+              double muridmi_29 =
+                  double.parse(isipendidikan[index = 28].muridmi_n2);
+              double muridmi_30 =
+                  double.parse(isipendidikan[index = 29].muridmi_n2);
+              double muridmi_31 =
+                  double.parse(isipendidikan[index = 30].muridmi_n2);
+              double muridmi_32 =
+                  double.parse(isipendidikan[index = 31].muridmi_n2);
+              double muridmi_33 =
+                  double.parse(isipendidikan[index = 32].muridmi_n2);
+              double muridmi_34 =
+                  double.parse(isipendidikan[index = 33].muridmi_n2);
+              double muridmi_35 =
+                  double.parse(isipendidikan[index = 34].muridmi_n2);
+              double muridmi_36 =
+                  double.parse(isipendidikan[index = 35].muridmi_n2);
 
               //String thn1 = isipendidikan[index = 0].tahun.substring(0, 4);
 
@@ -550,7 +550,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         left: 0, right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_1, 0),
+                                      Format.convertTo(sekolahmi_1, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -565,7 +565,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_1, 0),
+                                      Format.convertTo(gurumi_1, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -580,7 +580,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_1, 0),
+                                      Format.convertTo(muridmi_1, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -621,7 +621,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_2, 0),
+                                      Format.convertTo(sekolahmi_2, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -636,7 +636,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_2, 0),
+                                      Format.convertTo(gurumi_2, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -651,7 +651,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_2, 0),
+                                      Format.convertTo(muridmi_2, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -692,7 +692,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_3, 0),
+                                      Format.convertTo(sekolahmi_3, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -707,7 +707,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_3, 0),
+                                      Format.convertTo(gurumi_3, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -722,7 +722,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_3, 0),
+                                      Format.convertTo(muridmi_3, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -763,7 +763,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_4, 0),
+                                      Format.convertTo(sekolahmi_4, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -778,7 +778,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_4, 0),
+                                      Format.convertTo(gurumi_4, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -793,7 +793,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_4, 0),
+                                      Format.convertTo(muridmi_4, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -834,7 +834,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_5, 0),
+                                      Format.convertTo(sekolahmi_5, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -849,7 +849,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_5, 0),
+                                      Format.convertTo(gurumi_5, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -864,7 +864,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_5, 0),
+                                      Format.convertTo(muridmi_5, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -905,7 +905,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_6, 0),
+                                      Format.convertTo(sekolahmi_6, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -920,7 +920,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_6, 0),
+                                      Format.convertTo(gurumi_6, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -935,7 +935,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_6, 0),
+                                      Format.convertTo(muridmi_6, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -976,7 +976,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_7, 0),
+                                      Format.convertTo(sekolahmi_7, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -991,7 +991,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_7, 0),
+                                      Format.convertTo(gurumi_7, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1006,7 +1006,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_7, 0),
+                                      Format.convertTo(muridmi_7, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1047,7 +1047,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_8, 0),
+                                      Format.convertTo(sekolahmi_8, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1062,7 +1062,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_8, 0),
+                                      Format.convertTo(gurumi_8, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1077,7 +1077,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_8, 0),
+                                      Format.convertTo(muridmi_8, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1118,7 +1118,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_9, 0),
+                                      Format.convertTo(sekolahmi_9, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1133,7 +1133,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_9, 0),
+                                      Format.convertTo(gurumi_9, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1148,7 +1148,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_9, 0),
+                                      Format.convertTo(muridmi_9, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1189,7 +1189,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_10, 0),
+                                      Format.convertTo(sekolahmi_10, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1204,7 +1204,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_10, 0),
+                                      Format.convertTo(gurumi_10, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1219,7 +1219,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_10, 0),
+                                      Format.convertTo(muridmi_10, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1261,7 +1261,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_11, 0),
+                                      Format.convertTo(sekolahmi_11, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1276,7 +1276,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_11, 0),
+                                      Format.convertTo(gurumi_11, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1291,7 +1291,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_11, 0),
+                                      Format.convertTo(muridmi_11, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1332,7 +1332,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_12, 0),
+                                      Format.convertTo(sekolahmi_12, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1347,7 +1347,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_12, 0),
+                                      Format.convertTo(gurumi_12, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1362,7 +1362,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_12, 0),
+                                      Format.convertTo(muridmi_12, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1403,7 +1403,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_13, 0),
+                                      Format.convertTo(sekolahmi_13, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1418,7 +1418,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_13, 0),
+                                      Format.convertTo(gurumi_13, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1433,7 +1433,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_13, 0),
+                                      Format.convertTo(muridmi_13, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1474,7 +1474,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_14, 0),
+                                      Format.convertTo(sekolahmi_14, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1489,7 +1489,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_14, 0),
+                                      Format.convertTo(gurumi_14, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1504,7 +1504,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_14, 0),
+                                      Format.convertTo(muridmi_14, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1545,7 +1545,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_15, 0),
+                                      Format.convertTo(sekolahmi_15, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1560,7 +1560,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_15, 0),
+                                      Format.convertTo(gurumi_15, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1575,7 +1575,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_15, 0),
+                                      Format.convertTo(muridmi_15, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1616,7 +1616,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_16, 0),
+                                      Format.convertTo(sekolahmi_16, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1631,7 +1631,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_16, 0),
+                                      Format.convertTo(gurumi_16, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1646,7 +1646,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_16, 0),
+                                      Format.convertTo(muridmi_16, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1687,7 +1687,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_17, 0),
+                                      Format.convertTo(sekolahmi_17, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1702,7 +1702,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_17, 0),
+                                      Format.convertTo(gurumi_17, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1717,7 +1717,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_17, 0),
+                                      Format.convertTo(muridmi_17, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1758,7 +1758,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_18, 0),
+                                      Format.convertTo(sekolahmi_18, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1773,7 +1773,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_18, 0),
+                                      Format.convertTo(gurumi_18, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1788,7 +1788,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_18, 0),
+                                      Format.convertTo(muridmi_18, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1829,7 +1829,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_19, 0),
+                                      Format.convertTo(sekolahmi_19, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1844,7 +1844,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_19, 0),
+                                      Format.convertTo(gurumi_19, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1859,7 +1859,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_19, 0),
+                                      Format.convertTo(muridmi_19, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1900,7 +1900,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_20, 0),
+                                      Format.convertTo(sekolahmi_20, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1915,7 +1915,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_20, 0),
+                                      Format.convertTo(gurumi_20, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1930,7 +1930,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_20, 0),
+                                      Format.convertTo(muridmi_20, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1971,7 +1971,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_21, 0),
+                                      Format.convertTo(sekolahmi_21, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -1986,7 +1986,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_21, 0),
+                                      Format.convertTo(gurumi_21, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2001,7 +2001,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_21, 0),
+                                      Format.convertTo(muridmi_21, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2042,7 +2042,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_22, 0),
+                                      Format.convertTo(sekolahmi_22, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2057,7 +2057,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_22, 0),
+                                      Format.convertTo(gurumi_22, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2072,7 +2072,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_22, 0),
+                                      Format.convertTo(muridmi_22, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2113,7 +2113,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_23, 0),
+                                      Format.convertTo(sekolahmi_23, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2128,7 +2128,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_23, 0),
+                                      Format.convertTo(gurumi_23, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2143,7 +2143,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_23, 0),
+                                      Format.convertTo(muridmi_23, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2184,7 +2184,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_24, 0),
+                                      Format.convertTo(sekolahmi_24, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2199,7 +2199,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_24, 0),
+                                      Format.convertTo(gurumi_24, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2214,7 +2214,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_24, 0),
+                                      Format.convertTo(muridmi_24, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2255,7 +2255,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_25, 0),
+                                      Format.convertTo(sekolahmi_25, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2270,7 +2270,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_25, 0),
+                                      Format.convertTo(gurumi_25, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2285,7 +2285,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_25, 0),
+                                      Format.convertTo(muridmi_25, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2326,7 +2326,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_26, 0),
+                                      Format.convertTo(sekolahmi_26, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2341,7 +2341,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_26, 0),
+                                      Format.convertTo(gurumi_26, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2356,7 +2356,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_26, 0),
+                                      Format.convertTo(muridmi_26, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2397,7 +2397,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_27, 0),
+                                      Format.convertTo(sekolahmi_27, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2412,7 +2412,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_27, 0),
+                                      Format.convertTo(gurumi_27, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2427,7 +2427,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_27, 0),
+                                      Format.convertTo(muridmi_27, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2468,7 +2468,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_28, 0),
+                                      Format.convertTo(sekolahmi_28, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2483,7 +2483,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_28, 0),
+                                      Format.convertTo(gurumi_28, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2498,7 +2498,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_28, 0),
+                                      Format.convertTo(muridmi_28, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2539,7 +2539,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_29, 0),
+                                      Format.convertTo(sekolahmi_29, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2554,7 +2554,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_29, 0),
+                                      Format.convertTo(gurumi_29, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2569,7 +2569,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_29, 0),
+                                      Format.convertTo(muridmi_29, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2610,7 +2610,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_30, 0),
+                                      Format.convertTo(sekolahmi_30, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2625,7 +2625,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_30, 0),
+                                      Format.convertTo(gurumi_30, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2640,7 +2640,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_30, 0),
+                                      Format.convertTo(muridmi_30, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2681,7 +2681,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_31, 0),
+                                      Format.convertTo(sekolahmi_31, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2696,7 +2696,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_31, 0),
+                                      Format.convertTo(gurumi_31, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2711,7 +2711,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_31, 0),
+                                      Format.convertTo(muridmi_31, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2752,7 +2752,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_32, 0),
+                                      Format.convertTo(sekolahmi_32, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2767,7 +2767,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_32, 0),
+                                      Format.convertTo(gurumi_32, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2782,7 +2782,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_32, 0),
+                                      Format.convertTo(muridmi_32, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2823,7 +2823,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_33, 0),
+                                      Format.convertTo(sekolahmi_33, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2838,7 +2838,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_33, 0),
+                                      Format.convertTo(gurumi_33, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2853,7 +2853,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_33, 0),
+                                      Format.convertTo(muridmi_33, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2894,7 +2894,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_34, 0),
+                                      Format.convertTo(sekolahmi_34, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2909,7 +2909,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_34, 0),
+                                      Format.convertTo(gurumi_34, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2924,7 +2924,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_34, 0),
+                                      Format.convertTo(muridmi_34, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2965,7 +2965,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_35, 0),
+                                      Format.convertTo(sekolahmi_35, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2980,7 +2980,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_35, 0),
+                                      Format.convertTo(gurumi_35, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -2995,7 +2995,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_35, 0),
+                                      Format.convertTo(muridmi_35, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12.5,
@@ -3035,7 +3035,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(sekolahsd_36, 0),
+                                      Format.convertTo(sekolahmi_36, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,
@@ -3050,7 +3050,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(gurusd_36, 0),
+                                      Format.convertTo(gurumi_36, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,
@@ -3065,7 +3065,7 @@ class _PendidikanKabkotJumlahsdBState extends State<PendidikanKabkotJumlahsdB> {
                                     padding: const EdgeInsets.only(
                                         right: 20, top: 1, bottom: 1),
                                     child: Text(
-                                      Format.convertTo(muridsd_36, 0),
+                                      Format.convertTo(muridmi_36, 0),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           color: Colors.white,

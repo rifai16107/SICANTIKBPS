@@ -93,7 +93,7 @@ class _SarpedAState extends State<SarpedA> {
                                     color: Colors.green,
                                     child: const Center(
                                       child: Text(
-                                        "Jenis Sekolah",
+                                        "Jenjang Pendidikan",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold),

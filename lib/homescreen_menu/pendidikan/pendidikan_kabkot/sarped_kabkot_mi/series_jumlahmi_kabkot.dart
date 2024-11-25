@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/body_jumlahsd_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_mi/body_jumlahmi_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesJumlahsdKabkot extends StatefulWidget {
-  const SeriesJumlahsdKabkot({super.key});
+class SeriesJumlahmiKabkot extends StatefulWidget {
+  const SeriesJumlahmiKabkot({super.key});
 
   @override
-  State<SeriesJumlahsdKabkot> createState() => _SeriesJumlahsdKabkot();
+  State<SeriesJumlahmiKabkot> createState() => _SeriesJumlahmiKabkot();
 }
 
-class _SeriesJumlahsdKabkot extends State<SeriesJumlahsdKabkot> {
+class _SeriesJumlahmiKabkot extends State<SeriesJumlahmiKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -55,7 +55,7 @@ class _SeriesJumlahsdKabkot extends State<SeriesJumlahsdKabkot> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesJumlahsdKabkot(),
+                child: const BodySeriesJumlahmiKabkot(),
               ),
             ),
           ],
