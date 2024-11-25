@@ -7,6 +7,8 @@ import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/apm_apk
 //import 'package:bps_cilacap/restAPI/repository_pendidikan_apm_apk.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/amh_kabkot/series_amh_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_tk/series_jumlahtk_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_ra/series_jumlahra_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/series_jumlahsd_kabkot.dart';
 import 'package:flutter/material.dart';
 
 class saranapendidikanKabkota extends StatefulWidget {
@@ -205,7 +207,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                               horizontal: 5,
                             ),
                             child: Text(
-                              "Jumlah Sarana Pendidikan di Kabupaten/Kota di Jawa Tengah",
+                              "Jumlah Sekolah, Guru dan Murid Menurut Jenjang Pendidikan dan Kabupaten/Kota di Jawa Tengah",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15),
                               textAlign: TextAlign.center,
@@ -247,7 +249,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Jumlah TK Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "Jumlah Sekolah, Guru dan Murid TK Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
                           ),
@@ -262,7 +264,89 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 3,
+              color: Colors.transparent,
+            ),
+            Flexible(
+              flex: 1,
+              fit: FlexFit.tight,
+              child: ElevatedButton(
+                style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll<Color>(
+                        Color.fromRGBO(10, 100, 31, 0.886))),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      CustomPageRoute(
+                          child: const SeriesJumlahrakKabkot(),
+                          direction: AxisDirection.left));
+                },
+                child: SizedBox(
+                    width: screenWidth,
+                    height: screenHeight * 0.09,
+                    child: Row(
+                      children: [
+                        const Flexible(
+                          flex: 16,
+                          fit: FlexFit.tight,
+                          child: Text(
+                            "Jumlah Sekolah, Guru dan Murid RA Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
+                          ),
+                        ),
+                        const Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: Icon(Icons.arrow_right),
+                        ),
+                      ],
+                    )),
+              ),
+            ),
+            const Divider(
+              height: 3,
+              color: Colors.transparent,
+            ),
+            Flexible(
+              flex: 1,
+              fit: FlexFit.tight,
+              child: ElevatedButton(
+                style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll<Color>(
+                        Color.fromRGBO(10, 100, 31, 0.886))),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      CustomPageRoute(
+                          child: const SeriesJumlahsdKabkot(),
+                          direction: AxisDirection.left));
+                },
+                child: SizedBox(
+                    width: screenWidth,
+                    height: screenHeight * 0.09,
+                    child: Row(
+                      children: [
+                        const Flexible(
+                          flex: 16,
+                          fit: FlexFit.tight,
+                          child: Text(
+                            "Jumlah Sekolah, Guru dan Murid SD Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 13),
+                          ),
+                        ),
+                        const Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: Icon(Icons.arrow_right),
+                        ),
+                      ],
+                    )),
+              ),
+            ),
+            const Divider(
+              height: 3,
               color: Colors.transparent,
             ),
             Flexible(
@@ -288,7 +372,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Jumlah RA Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "Jumlah Sekolah, Guru dan Murid MI Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
                           ),
@@ -303,7 +387,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 3,
               color: Colors.transparent,
             ),
             Flexible(
@@ -329,7 +413,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Jumlah SD Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "Jumlah Sekolah, Guru dan Murid SLTP Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
                           ),
@@ -344,89 +428,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
               ),
             ),
             const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const SeriesApmApkKabkot(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.09,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Jumlah MI Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 13),
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const SeriesApmApkKabkot(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.09,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Jumlah SLTP Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 13),
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
+              height: 3,
               color: Colors.transparent,
             ),
             Flexible(
@@ -452,7 +454,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Jumlah MTs Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "Jumlah Sekolah, Guru dan Murid MTs Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
                           ),
@@ -467,7 +469,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 3,
               color: Colors.transparent,
             ),
             Flexible(
@@ -493,7 +495,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Jumlah SMU Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "Jumlah Sekolah, Guru dan Murid SMU Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
                           ),
@@ -508,7 +510,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 3,
               color: Colors.transparent,
             ),
             Flexible(
@@ -534,7 +536,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Jumlah SMK Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "Jumlah Sekolah, Guru dan Murid SMK Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
                           ),
@@ -549,7 +551,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 3,
               color: Colors.transparent,
             ),
             Flexible(
@@ -575,7 +577,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Jumlah MA Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "Jumlah Sekolah, Guru dan Murid MA Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
                           ),
@@ -590,7 +592,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 3,
               color: Colors.transparent,
             ),
             Flexible(
@@ -616,7 +618,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Jumlah Perguruan Tinggi Negeri dan Swasta Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "Jumlah Perguruan Tinggi, Dosen dan Mahasiswa Menurut Kabupaten/Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 13),
                           ),
@@ -631,7 +633,7 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
               ),
             ),
             const Divider(
-              height: 5,
+              height: 3,
               color: Colors.transparent,
             ),
             Flexible(

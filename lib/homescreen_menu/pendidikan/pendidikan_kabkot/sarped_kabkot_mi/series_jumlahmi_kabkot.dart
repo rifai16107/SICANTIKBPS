@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_tk/body_jumlahtk_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/body_jumlahsd_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesJumlahtkKabkot extends StatefulWidget {
-  const SeriesJumlahtkKabkot({super.key});
+class SeriesJumlahsdKabkot extends StatefulWidget {
+  const SeriesJumlahsdKabkot({super.key});
 
   @override
-  State<SeriesJumlahtkKabkot> createState() => _SeriesJumlahtkKabkot();
+  State<SeriesJumlahsdKabkot> createState() => _SeriesJumlahsdKabkot();
 }
 
-class _SeriesJumlahtkKabkot extends State<SeriesJumlahtkKabkot> {
+class _SeriesJumlahsdKabkot extends State<SeriesJumlahsdKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -45,7 +45,7 @@ class _SeriesJumlahtkKabkot extends State<SeriesJumlahtkKabkot> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Jumlah Sekolah, Guru, dan Murid Taman Kanak-Kanak (TK) di Bawah Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Menurut Kabupaten/Kota di Provinsi Jawa Tengah",
+                    "Jumlah Sekolah, Guru, dan Murid Sekolah Dasar (SD) di Bawah Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Menurut Kabupaten/Kota di Provinsi Jawa Tengah",
                     style: TextStyle(color: Colors.white, fontSize: 14),
                     textAlign: TextAlign.center,
                   ),
@@ -55,7 +55,7 @@ class _SeriesJumlahtkKabkot extends State<SeriesJumlahtkKabkot> {
             Flexible(
               child: SizedBox(
                 height: screenHeight,
-                child: const BodySeriesJumlahtkKabkot(),
+                child: const BodySeriesJumlahsdKabkot(),
               ),
             ),
           ],
