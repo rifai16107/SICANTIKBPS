@@ -1,14 +1,13 @@
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/jumlahsd_kabkot_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/jumlahsd_kabkot_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/jumlahsd_kabkot_c.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_ptag/jumlahptag_kabkot_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_ptag/jumlahptag_kabkot_b.dart';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
-class RepositoryPendidikanKabkotJumlahsd {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-sgmsd';
+class RepositoryPendidikanKabkotJumlahptag {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-sgmpt';
 
   Future getData() async {
     try {
@@ -18,7 +17,7 @@ class RepositoryPendidikanKabkotJumlahsd {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
             .map((isipendidikan) =>
-                ModelPendidikanKabkotJumlahsd.fromJson(isipendidikan))
+                ModelPendidikanKabkotJumlahptag.fromJson(isipendidikan))
             .toList();
       }
     } catch (isipendidikan) {
@@ -28,16 +27,16 @@ class RepositoryPendidikanKabkotJumlahsd {
   }
 }
 
-class ModelPendidikanKabkotJumlahsd {
+class ModelPendidikanKabkotJumlahptag {
   final int id;
   final String wilayah;
   final String tahun;
 
-  ModelPendidikanKabkotJumlahsd(
+  ModelPendidikanKabkotJumlahptag(
       {required this.id, required this.wilayah, required this.tahun});
 
-  factory ModelPendidikanKabkotJumlahsd.fromJson(Map<String, dynamic> json) {
-    return ModelPendidikanKabkotJumlahsd(
+  factory ModelPendidikanKabkotJumlahptag.fromJson(Map<String, dynamic> json) {
+    return ModelPendidikanKabkotJumlahptag(
       id: json['id'],
       wilayah: json['wilayah'],
       tahun: json['tahun'],
@@ -45,17 +44,18 @@ class ModelPendidikanKabkotJumlahsd {
   }
 }
 
-class BodySeriesJumlahsdKabkot extends StatefulWidget {
-  const BodySeriesJumlahsdKabkot({super.key});
+class BodySeriesJumlahptagKabkot extends StatefulWidget {
+  const BodySeriesJumlahptagKabkot({super.key});
 
   @override
-  State<BodySeriesJumlahsdKabkot> createState() =>
-      _BodySeriesJumlahsdKabkotState();
+  State<BodySeriesJumlahptagKabkot> createState() =>
+      _BodySeriesJumlahptagKabkotState();
 }
 
-class _BodySeriesJumlahsdKabkotState extends State<BodySeriesJumlahsdKabkot> {
-  RepositoryPendidikanKabkotJumlahsd repositoryapmapk =
-      RepositoryPendidikanKabkotJumlahsd();
+class _BodySeriesJumlahptagKabkotState
+    extends State<BodySeriesJumlahptagKabkot> {
+  RepositoryPendidikanKabkotJumlahptag repositoryapmapk =
+      RepositoryPendidikanKabkotJumlahptag();
 
   @override
   Widget build(BuildContext context) {
@@ -72,12 +72,11 @@ class _BodySeriesJumlahsdKabkotState extends State<BodySeriesJumlahsdKabkot> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String thnN1 = isipendidikan[index = 0].tahun.substring(0, 9);
-              String thnN2 = isipendidikan[index = 0].tahun.substring(10, 19);
-              String thnN3 = isipendidikan[index = 0].tahun.substring(20, 29);
+              String thnN1 = isipendidikan[index = 0].tahun.substring(0, 4);
+              String thnN2 = isipendidikan[index = 0].tahun.substring(5, 9);
 
               return DefaultTabController(
-                length: 3,
+                length: 2,
                 child: Scaffold(
                   appBar: AppBar(
                     backgroundColor: Colors.black,
@@ -95,16 +94,12 @@ class _BodySeriesJumlahsdKabkotState extends State<BodySeriesJumlahsdKabkot> {
                         Tab(
                           text: thnN2,
                         ),
-                        Tab(
-                          text: thnN3,
-                        ),
                       ],
                     ),
                   ),
                   body: const TabBarView(children: [
-                    PendidikanKabkotJumlahsdA(),
-                    PendidikanKabkotJumlahsdB(),
-                    PendidikanKabkotJumlahsdC(),
+                    PendidikanKabkotJumlahptagA(),
+                    PendidikanKabkotJumlahptagB(),
                   ]),
                 ),
               );

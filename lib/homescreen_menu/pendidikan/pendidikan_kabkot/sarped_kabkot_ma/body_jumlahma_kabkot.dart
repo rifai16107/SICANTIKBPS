@@ -1,14 +1,14 @@
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/jumlahsd_kabkot_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/jumlahsd_kabkot_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_sd/jumlahsd_kabkot_c.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_ma/jumlahma_kabkot_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_ma/jumlahma_kabkot_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_ma/jumlahma_kabkot_c.dart';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
-class RepositoryPendidikanKabkotJumlahsd {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-sgmsd';
+class RepositoryPendidikanKabkotJumlahma {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pendidikankabkot-sgmsma';
 
   Future getData() async {
     try {
@@ -18,7 +18,7 @@ class RepositoryPendidikanKabkotJumlahsd {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
             .map((isipendidikan) =>
-                ModelPendidikanKabkotJumlahsd.fromJson(isipendidikan))
+                ModelPendidikanKabkotJumlahma.fromJson(isipendidikan))
             .toList();
       }
     } catch (isipendidikan) {
@@ -28,16 +28,16 @@ class RepositoryPendidikanKabkotJumlahsd {
   }
 }
 
-class ModelPendidikanKabkotJumlahsd {
+class ModelPendidikanKabkotJumlahma {
   final int id;
   final String wilayah;
   final String tahun;
 
-  ModelPendidikanKabkotJumlahsd(
+  ModelPendidikanKabkotJumlahma(
       {required this.id, required this.wilayah, required this.tahun});
 
-  factory ModelPendidikanKabkotJumlahsd.fromJson(Map<String, dynamic> json) {
-    return ModelPendidikanKabkotJumlahsd(
+  factory ModelPendidikanKabkotJumlahma.fromJson(Map<String, dynamic> json) {
+    return ModelPendidikanKabkotJumlahma(
       id: json['id'],
       wilayah: json['wilayah'],
       tahun: json['tahun'],
@@ -45,17 +45,17 @@ class ModelPendidikanKabkotJumlahsd {
   }
 }
 
-class BodySeriesJumlahsdKabkot extends StatefulWidget {
-  const BodySeriesJumlahsdKabkot({super.key});
+class BodySeriesJumlahmaKabkot extends StatefulWidget {
+  const BodySeriesJumlahmaKabkot({super.key});
 
   @override
-  State<BodySeriesJumlahsdKabkot> createState() =>
-      _BodySeriesJumlahsdKabkotState();
+  State<BodySeriesJumlahmaKabkot> createState() =>
+      _BodySeriesJumlahmaKabkotState();
 }
 
-class _BodySeriesJumlahsdKabkotState extends State<BodySeriesJumlahsdKabkot> {
-  RepositoryPendidikanKabkotJumlahsd repositoryapmapk =
-      RepositoryPendidikanKabkotJumlahsd();
+class _BodySeriesJumlahmaKabkotState extends State<BodySeriesJumlahmaKabkot> {
+  RepositoryPendidikanKabkotJumlahma repositoryapmapk =
+      RepositoryPendidikanKabkotJumlahma();
 
   @override
   Widget build(BuildContext context) {
@@ -102,9 +102,9 @@ class _BodySeriesJumlahsdKabkotState extends State<BodySeriesJumlahsdKabkot> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    PendidikanKabkotJumlahsdA(),
-                    PendidikanKabkotJumlahsdB(),
-                    PendidikanKabkotJumlahsdC(),
+                    PendidikanKabkotJumlahmaA(),
+                    PendidikanKabkotJumlahmaB(),
+                    PendidikanKabkotJumlahmaC(),
                   ]),
                 ),
               );

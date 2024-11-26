@@ -1,25 +1,24 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/ketenagakerjaan/body_bak.dart';
+import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sarped_kabkot_ptag/body_jumlahptag_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class BukanAngkatanKerja extends StatefulWidget {
-  const BukanAngkatanKerja({super.key});
+class SeriesJumlahptagKabkot extends StatefulWidget {
+  const SeriesJumlahptagKabkot({super.key});
 
   @override
-  State<BukanAngkatanKerja> createState() => _BukanAngkatanKerja();
+  State<SeriesJumlahptagKabkot> createState() => _SeriesJumlahptagKabkot();
 }
 
-class _BukanAngkatanKerja extends State<BukanAngkatanKerja> {
+class _SeriesJumlahptagKabkot extends State<SeriesJumlahptagKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PENDUDUK USIA KERJA (15+ Tahun)",
+          "INDIKATOR PENDIDIKAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -40,15 +39,14 @@ class _BukanAngkatanKerja extends State<BukanAngkatanKerja> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.10,
-              width: screenWidth,
+              height: screenHeight * 0.11,
               color: Colors.black,
               child: const Center(
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 5),
+                  padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Jumlah Penduduk Usia Kerja (15+ tahun) Kabupaten Cilacap Menurut Kegiatan dan Jenis Kelamin",
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    "Jumlah Perguruan Tinggi, Dosen dan Mahasiswa pada Perguruan Tinggi (PT) di Bawah Kementerian Agama Menurut Kabupaten/Kota di Provinsi Jawa Tengah",
+                    style: TextStyle(color: Colors.white, fontSize: 14),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -56,8 +54,8 @@ class _BukanAngkatanKerja extends State<BukanAngkatanKerja> {
             ),
             Flexible(
               child: SizedBox(
-                height: screenHeight * 0.85,
-                child: const BodyBak(),
+                height: screenHeight,
+                child: const BodySeriesJumlahptagKabkot(),
               ),
             ),
           ],

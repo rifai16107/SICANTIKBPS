@@ -34,92 +34,6 @@ class _PendudukUsiaKerjaState extends State<PendudukUsiaKerja> {
             ),
           ),
         ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                showModalBottomSheet(
-                  backgroundColor: Colors.white,
-                  constraints: BoxConstraints.tight(
-                    Size(screenWidth, screenHeight),
-                  ),
-                  context: context,
-                  builder: (context) {
-                    return ListView(children: [
-                      Container(
-                        padding: const EdgeInsets.all(5),
-                        alignment: Alignment.centerLeft,
-                        child: const Text(
-                          "   Konsep/definisi ketenagakerjaan yang digunakan BPS merujuk pada rekomendasi International Labor Organization (ILO) sebagaimana tercantum dalam buku ' Surveys of economically Active Population, employment, Unemployment and Underemployment' An ILO Manual on Concept and Methods, ILO 1992.",
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(5),
-                        alignment: Alignment.centerLeft,
-                        child: const Text(
-                          "   Hal ini dimaksudkan terutama agar data ketenagakerjaan yang dihasilkan dari berbagai survey di Indonesia dapat dibandingkar secara internasional, tanpa mengesampingkan kondisi ketenagakerjaan spesifik Indonesia.",
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(5),
-                        alignment: Alignment.centerLeft,
-                        child: const Text(
-                          "Tingkat Partisipasi Angkatan Kerja (TPAK)",
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(5),
-                        alignment: Alignment.centerLeft,
-                        child: const Text(
-                          "   Menurut konsep Labor Force Framework, penduduk dibagi ke dalam dua kelompok, yaitu : Usia Kerja dan Bukan Usia Kerja",
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(5),
-                        alignment: Alignment.centerLeft,
-                        child: const Text(
-                          "Penduduk Usia Kerja",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(5),
-                        alignment: Alignment.centerLeft,
-                        child: const Text(
-                          "   Indonesia menggunakan batas bawah usia kerja 15 tahun dan tanpa batas atas usia kerja. Penduduk Usia Kerja dibagi ke dala dua kelompok, yaitu:",
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.only(left: 15, right: 5),
-                        child: const Text(
-                          "1. Angkatan Kerja",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.only(left: 25, right: 5),
-                        child: const Text(
-                          "   Konsep angkatan kerja merujuk pada kegiatan utama yang dilakukan oleh penduduk usia kerja selama periode tertentu Angkatan kerja adalah penduduk usia kerja yang bekerja atau punya pekerjaan namun sementara tidak bekerja dan penganggur.",
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.only(left: 15, right: 5),
-                        child: const Text(
-                          "2. Bukan Angkatan Kerja",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.only(left: 25, right: 5),
-                        child: const Text(
-                          "   Penduduk usia kerja termasuk dalam bukan angkatan kerja mencakup: penduduk yang bersekolah, mengurus rumah tangga, dan melakukan kegiatan lainnya.",
-                        ),
-                      ),
-                    ]);
-                  },
-                );
-              },
-              icon: const Icon(Icons.info_outlined))
-        ],
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
@@ -142,6 +56,7 @@ class _PendudukUsiaKerjaState extends State<PendudukUsiaKerja> {
             Flexible(
               child: SizedBox(
                 height: screenHeight * 0.87,
+                width: screenWidth,
                 child: const BodyPuk(),
               ),
             ),
