@@ -52,8 +52,20 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
+                            "BEBERAPA KONSEP TERKAIT KEMISKINAN",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
                             "Kemiskinan",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
                           ),
                         ),
                         Container(
@@ -68,7 +80,9 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
                           alignment: Alignment.centerLeft,
                           child: const Text(
                             "Penduduk Miskin",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
                           ),
                         ),
                         Container(
@@ -83,7 +97,9 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
                           alignment: Alignment.centerLeft,
                           child: const Text(
                             "Garis Kemiskinan",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
                           ),
                         ),
                         Container(
@@ -172,7 +188,9 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
                           alignment: Alignment.centerLeft,
                           child: const Text(
                             "Ukuran Kemiskinan",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
                           ),
                         ),
                         Container(

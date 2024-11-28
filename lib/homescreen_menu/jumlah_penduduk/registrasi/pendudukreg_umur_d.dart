@@ -77,11 +77,11 @@ class _PendudukRegUmurDState extends State<PendudukRegUmurD> {
                             children: [
                               Flexible(
                                 fit: FlexFit.tight,
-                                flex: 1,
+                                flex: 3,
                                 child: Container(
                                   height: screenHeight * 0.07,
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                  padding:
+                                      const EdgeInsets.only(left: 2, right: 25),
                                   color: Colors.green,
                                   child: const Center(
                                     child: Text(
@@ -97,11 +97,11 @@ class _PendudukRegUmurDState extends State<PendudukRegUmurD> {
                               ),
                               Flexible(
                                 fit: FlexFit.tight,
-                                flex: 1,
+                                flex: 2,
                                 child: Container(
                                   height: screenHeight * 0.07,
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 15, vertical: 10),
+                                      horizontal: 5, vertical: 10),
                                   color: Colors.green,
                                   child: const Center(
                                     child: Text(
@@ -116,7 +116,7 @@ class _PendudukRegUmurDState extends State<PendudukRegUmurD> {
                               ),
                               Flexible(
                                 fit: FlexFit.tight,
-                                flex: 1,
+                                flex: 2,
                                 child: Container(
                                   height: screenHeight * 0.07,
                                   padding: const EdgeInsets.symmetric(
@@ -135,7 +135,7 @@ class _PendudukRegUmurDState extends State<PendudukRegUmurD> {
                               ),
                               Flexible(
                                 fit: FlexFit.tight,
-                                flex: 1,
+                                flex: 2,
                                 child: Container(
                                   height: screenHeight * 0.07,
                                   padding: const EdgeInsets.symmetric(

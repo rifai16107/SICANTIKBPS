@@ -1997,7 +1997,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                 bottom: 10,
                               ),
                               child: const Text(
-                                " Sumber Data : Proyeksi Penduduk Berdasarkan Hasil SUPAS 2015",
+                                " Sumber Data : Hasil Proyeksi Penduduk dan Sensus Penduduk",
                                 style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.normal),

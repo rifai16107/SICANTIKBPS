@@ -11,8 +11,7 @@ class KetimpanganGini extends StatefulWidget {
   State<KetimpanganGini> createState() => _KetimpanganGiniState();
 }
 
-RepositoryKetimpanganGini repositoryginicilacap =
-    RepositoryKetimpanganGini();
+RepositoryKetimpanganGini repositoryginicilacap = RepositoryKetimpanganGini();
 
 class _KetimpanganGiniState extends State<KetimpanganGini> {
   late List<_ChartData> data;
@@ -54,27 +53,24 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                 // isi data kabupaten cilacap
                 //String thn = isisensustani[index = 0].tahun;
 
-                String thn1=isiginirasio[index = 0].tahun.substring(0, 4);
-                String thn2=isiginirasio[index = 0].tahun.substring(5, 9);
-                String thn3=isiginirasio[index = 0].tahun.substring(10, 14);
+                String thn1 = isiginirasio[index = 0].tahun.substring(0, 4);
+                String thn2 = isiginirasio[index = 0].tahun.substring(5, 9);
+                String thn3 = isiginirasio[index = 0].tahun.substring(10, 14);
 
-                String kabupaten=isiginirasio[index = 0].wilayah.substring(6, 13);    
-                
-                double gini1 =
-                    double.parse(isiginirasio[index = 0].gini2021);
-                double gini2 =
-                    double.parse(isiginirasio[index = 0].gini2022);
-                double gini3 =
-                    double.parse(isiginirasio[index = 0].gini2023);    
+                String kabupaten =
+                    isiginirasio[index = 0].wilayah.substring(6, 13);
+
+                double gini1 = double.parse(isiginirasio[index = 0].gini2021);
+                double gini2 = double.parse(isiginirasio[index = 0].gini2022);
+                double gini3 = double.parse(isiginirasio[index = 0].gini2023);
                 toString();
-                      data = [
-                        _ChartData(thn1, gini1),
-                        _ChartData(thn2, gini2),
-                        _ChartData(thn3, gini3), 
-                      ];
-                      tooltip = TooltipBehavior(enable: true);
-                
-                
+                data = [
+                  _ChartData(thn1, gini1),
+                  _ChartData(thn2, gini2),
+                  _ChartData(thn3, gini3),
+                ];
+                tooltip = TooltipBehavior(enable: true);
+
                 return Container(
                   //color: const Color.fromARGB(223, 240, 216, 172),
                   margin: const EdgeInsets.all(2),
@@ -95,64 +91,59 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                           ),
                         ),
                       ),
-                      
-                       //Header Column
+
+                      //Header Column
                       Row(
                         children: [
-                                    Flexible(
-                                      flex: 2,
-                                      fit: FlexFit.tight,
-                                      child: Container(
-                                        height: screenHeight * 0.06,
-                                        color: Colors.green,
-                                        child: const Center(
-                                          child: Text(
-                                            "Tahun",
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 16),
-                                            textAlign: TextAlign.center,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Flexible(
-                                      flex: 2,
-                                      fit: FlexFit.tight,
-                                      child: Container(
-                                        height: screenHeight * 0.06,
-                                        color: Colors.green,
-                                        child: const Center(
-                                          child: Text(
-                                            "Gini Rasio",
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 16),
-                                            textAlign: TextAlign.center,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    
-                                                                        
-                                  ],
-                      ),
-                      
-                      Row(
-                        children: [
-                          Column(
-                            children: [
-                              SizedBox(
-                                width: screenWidth*0.95,
-                                height: screenHeight*0.02,
-                                
+                          Flexible(
+                            flex: 2,
+                            fit: FlexFit.tight,
+                            child: Container(
+                              height: screenHeight * 0.06,
+                              color: Colors.green,
+                              child: const Center(
+                                child: Text(
+                                  "Tahun",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16),
+                                  textAlign: TextAlign.center,
+                                ),
                               ),
-                            ],
+                            ),
                           ),
-                        ]  
-                      ), 
+                          Flexible(
+                            flex: 2,
+                            fit: FlexFit.tight,
+                            child: Container(
+                              height: screenHeight * 0.06,
+                              color: Colors.green,
+                              child: const Center(
+                                child: Text(
+                                  "Gini Rasio",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+
+                      Row(children: [
+                        Column(
+                          children: [
+                            SizedBox(
+                              width: screenWidth * 0.95,
+                              height: screenHeight * 0.02,
+                            ),
+                          ],
+                        ),
+                      ]),
                       //Gini 1
                       Row(
                         children: [
@@ -160,7 +151,7 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                             children: [
                               SizedBox(
                                 width: screenWidth * 0.50,
-                                height: screenHeight*0.05,
+                                height: screenHeight * 0.05,
                                 child: Text(
                                   thn1,
                                   style: const TextStyle(
@@ -174,9 +165,9 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                           ),
                           Column(
                             children: [
-                             SizedBox(
+                              SizedBox(
                                 width: screenWidth * 0.30,
-                                height: screenHeight*0.05,
+                                height: screenHeight * 0.05,
                                 child: Text(
                                   Format.convertTo(gini1, 3),
                                   style: const TextStyle(
@@ -190,20 +181,18 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                               ),
                             ],
                           ),
-                          
                         ],
                       ),
-                     
 
                       //Gini 2
-                      
+
                       Row(
                         children: [
                           Column(
                             children: [
                               SizedBox(
                                 width: screenWidth * 0.50,
-                                height: screenHeight*0.05,
+                                height: screenHeight * 0.05,
                                 child: Text(
                                   thn2,
                                   style: const TextStyle(
@@ -217,9 +206,9 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                           ),
                           Column(
                             children: [
-                             SizedBox(
+                              SizedBox(
                                 width: screenWidth * 0.30,
-                                height: screenHeight*0.05,
+                                height: screenHeight * 0.05,
                                 child: Text(
                                   Format.convertTo(gini2, 3),
                                   style: const TextStyle(
@@ -233,10 +222,9 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                               ),
                             ],
                           ),
-                          
                         ],
                       ),
-                     
+
                       //Gini 3
                       Row(
                         children: [
@@ -244,7 +232,7 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                             children: [
                               SizedBox(
                                 width: screenWidth * 0.50,
-                                height: screenHeight*0.04,
+                                height: screenHeight * 0.04,
                                 child: Text(
                                   thn3,
                                   style: const TextStyle(
@@ -258,9 +246,9 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                           ),
                           Column(
                             children: [
-                             SizedBox(
+                              SizedBox(
                                 width: screenWidth * 0.30,
-                                height: screenHeight*0.04,
+                                height: screenHeight * 0.04,
                                 child: Text(
                                   Format.convertTo(gini3, 3),
                                   style: const TextStyle(
@@ -274,94 +262,82 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                               ),
                             ],
                           ),
-                          
                         ],
                       ),
                       const Divider(
                         thickness: 1,
                       ),
 
-                      
-                    const Divider(
-                              color: Colors.white,
-                              height: 15,
-                              thickness: 10,
-                            ),
+                      const Divider(
+                        color: Colors.white,
+                        height: 15,
+                        thickness: 10,
+                      ),
 
-                            //Grafik
-                            SizedBox(
-                              height: screenHeight * 0.35,
-                              width: screenWidth,
-                              child: SfCartesianChart(
-                                  title: ChartTitle(
-                                      text:
-                                          'Gini Rasio Kabupaten Cilacap Tahun $thn1 - $thn3',
-                                      // Aligns the chart title to left
-                                      alignment: ChartAlignment.center,
-                                      textStyle: const TextStyle(
-                                        color: Color.fromARGB(255, 10, 10, 10),
-                                        fontFamily: 'Roboto',
-                                        fontStyle: FontStyle.italic,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 11,
-                                      )),
-                                  primaryXAxis: CategoryAxis(),
-                                  legend: Legend(
-                                      // Visibility of legend
-                                      overflowMode: LegendItemOverflowMode.wrap,
-                                      textStyle: const TextStyle(
-                                        fontSize: 11,
-                                      ),
-                                      isVisible: false,
-                                      position: LegendPosition.bottom),
-                                  primaryYAxis: NumericAxis(
-                                      majorGridLines:
-                                          const MajorGridLines(width: 0),
-                                      minimum: 0,
-                                      maximum: 0.6,
-                                      interval: 0.1),
-                                  tooltipBehavior: tooltip,
-                                  series: <CartesianSeries>[
-                                    ColumnSeries<_ChartData, String>(
-                                      dataSource: data,
-                                      xValueMapper: (_ChartData data, _) =>
-                                          data.x,
-                                      yValueMapper: (_ChartData data, _) =>
-                                          data.y,
-                                      width: 0.6,
-                                      spacing: 0.3,    
-                                      // Sorting based on the specified field
-                                      //sortingOrder: SortingOrder.descending,
-                                      //sortFieldValueMapper: (_ChartData data, _) =>
-                                      //data.y,
-                                      dataLabelSettings:
-                                          const DataLabelSettings(
-                                              // Renders the data label
-                                              isVisible: true,
-                                              textStyle:
-                                                  TextStyle(fontSize: 10)),
-                                      name: 'Gini Rasio',
-                                      color: const Color.fromARGB(
-                                          255, 240, 164, 50),
-                                    ),
-                                    LineSeries<_ChartData, String>(
-                                          dataSource: data,
-                                          xValueMapper: (_ChartData data, _) => data.x,
-                                          yValueMapper: (_ChartData data, _) => data.y,
-                                          markerSettings: const MarkerSettings(
-                                                isVisible: true
-                                          ),
-                                         dataLabelSettings:
-                                          const DataLabelSettings(
-                                              // Renders the data label
-                                              isVisible: false,
-                                           ),
-                                      )
-                                    
-                                    
-                                  ]),
-                            ),
-                          Row(
+                      //Grafik
+                      SizedBox(
+                        height: screenHeight * 0.35,
+                        width: screenWidth,
+                        child: SfCartesianChart(
+                            title: ChartTitle(
+                                text:
+                                    'Gini Rasio Kabupaten Cilacap Tahun $thn1 - $thn3',
+                                // Aligns the chart title to left
+                                alignment: ChartAlignment.center,
+                                textStyle: const TextStyle(
+                                  color: Color.fromARGB(255, 10, 10, 10),
+                                  fontFamily: 'Roboto',
+                                  fontStyle: FontStyle.italic,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 11,
+                                )),
+                            primaryXAxis: CategoryAxis(),
+                            legend: Legend(
+                                // Visibility of legend
+                                overflowMode: LegendItemOverflowMode.wrap,
+                                textStyle: const TextStyle(
+                                  fontSize: 11,
+                                ),
+                                isVisible: false,
+                                position: LegendPosition.bottom),
+                            primaryYAxis: NumericAxis(
+                                majorGridLines: const MajorGridLines(width: 0),
+                                minimum: 0,
+                                maximum: 0.6,
+                                interval: 0.1),
+                            tooltipBehavior: tooltip,
+                            series: <CartesianSeries>[
+                              ColumnSeries<_ChartData, String>(
+                                dataSource: data,
+                                xValueMapper: (_ChartData data, _) => data.x,
+                                yValueMapper: (_ChartData data, _) => data.y,
+                                width: 0.6,
+                                spacing: 0.3,
+                                // Sorting based on the specified field
+                                //sortingOrder: SortingOrder.descending,
+                                //sortFieldValueMapper: (_ChartData data, _) =>
+                                //data.y,
+                                dataLabelSettings: const DataLabelSettings(
+                                    // Renders the data label
+                                    isVisible: true,
+                                    textStyle: TextStyle(fontSize: 10)),
+                                name: 'Gini Rasio',
+                                color: const Color.fromARGB(255, 240, 164, 50),
+                              ),
+                              LineSeries<_ChartData, String>(
+                                dataSource: data,
+                                xValueMapper: (_ChartData data, _) => data.x,
+                                yValueMapper: (_ChartData data, _) => data.y,
+                                markerSettings:
+                                    const MarkerSettings(isVisible: true),
+                                dataLabelSettings: const DataLabelSettings(
+                                  // Renders the data label
+                                  isVisible: false,
+                                ),
+                              )
+                            ]),
+                      ),
+                      Row(
                         children: [
                           Column(
                             children: [
@@ -482,7 +458,7 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                           ),
                         ],
                       ),
-                       Row(
+                      Row(
                         children: [
                           Column(
                             children: [
@@ -502,9 +478,6 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                         ],
                       ),
                     ],
-                  
-
-
                   ),
                 );
               },
@@ -521,10 +494,10 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
     );
   }
 }
+
 class _ChartData {
   _ChartData(this.x, this.y);
 
   final String x;
   final double? y;
-  
 }

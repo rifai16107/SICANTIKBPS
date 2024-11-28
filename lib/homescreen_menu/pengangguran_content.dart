@@ -45,6 +45,9 @@ class _pengangguranContentState extends State<pengangguranContent> {
                 onPressed: () {
                   showModalBottomSheet(
                     backgroundColor: Colors.white,
+                    constraints: BoxConstraints.tight(
+                      Size(screenWidth, screenHeight),
+                    ),
                     context: context,
                     builder: (context) {
                       return ListView(children: [
@@ -53,37 +56,16 @@ class _pengangguranContentState extends State<pengangguranContent> {
                           alignment: Alignment.centerLeft,
                           child: const Text(
                             "BEBERAPA KONSEP KETENAGAKERJAAN",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
                           ),
                         ),
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "Penduduk Usia Kerja",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                              "   Penduduk yang berusia 15 tahun sampai dengan 64 tahun.",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                            "Angkatan Kerja (AK)",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                            "   Banyaknya penduduk usia kerja (15 tahun ke atas) yang bekerja, atau punya pekerjaan namun sementara tidak bekerja dan pengangguran",
+                            "   Konsep/definisi ketenagakerjaan yang digunakan BPS merujuk pada rekomendasi International Labor Organization (ILO) sebagaimana tercantum dalam buku 'Surveys of Economically Active Population, Employment, Unemployment and Underemployment' An ILO Manual on Concept and Methods, ILO 1992.",
                             textAlign: TextAlign.justify,
                           ),
                         ),
@@ -91,15 +73,7 @@ class _pengangguranContentState extends State<pengangguranContent> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "Bukan Angkatan Kerja (BAK)",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                            "   Bukan angkatan kerja adalah penduduk usia kerja (15 tahun dan lebih) yang masih sekolah, mengurus rumah tangga atau melaksanakan kegiatan lainnya selain kegiatan pribadi.",
+                            "   Hal ini dimaksudkan terutama agar data ketenagakerjaan yang dihasilkan dari berbagai survey di Indonesia dapat dibandingkar secara internasional, tanpa mengesampingkan kondisi ketenagakerjaan spesifik Indonesia.",
                             textAlign: TextAlign.justify,
                           ),
                         ),
@@ -107,7 +81,85 @@ class _pengangguranContentState extends State<pengangguranContent> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "Tingkat Partisipasi Angkatan Kerja (TPAK)",
+                            "TINGKAT PARTISIPASI ANGKATAN KERJA (TPAK)",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "   TPAK adalah persentase Angkatan Kerja (AK) terhadap Penduduk Usia Kerja (PUK).",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "   Menurut konsep Labor Force Framework, penduduk dibagi ke dalam dua kelompok, yaitu : Usia Kerja dan Bukan Usia Kerja",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "PENDUDUK USIA KERJA (PUK)",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "   Indonesia menggunakan batas bawah usia kerja 15 tahun dan tanpa batas atas usia kerja. Penduduk Usia Kerja dibagi ke dala dua kelompok, yaitu:",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding:
+                              const EdgeInsets.only(left: 5, right: 5, top: 8),
+                          child: const Text(
+                            "1. ANGKATAN KERJA (AK)",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
+                          ),
+                        ),
+                        Container(
+                          padding:
+                              const EdgeInsets.only(left: 5, right: 5, top: 5),
+                          child: const Text(
+                            "   Konsep angkatan kerja merujuk pada kegiatan utama yang dilakukan oleh penduduk usia kerja selama periode tertentu Angkatan kerja adalah penduduk usia kerja yang bekerja atau punya pekerjaan namun sementara tidak bekerja dan penganggur.",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "Bekerja",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(1),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "   Adalah kegiatan ekonomi yang dilakukan seseorang dengan maksud memperoleh atau membantu memperoleh pendapatan atau keuntungan paling sedikit 1 (satu) jam secar tidak terputus selama seminggu yang lalu. Kegiatan ini mencakup, baik yang sedang bekerja maupun yang punya pekerjaan tetapi dalam seminggu yang lalu sementara tidak bekerja, misalnya karena cuti, sakit, dan sejenisnya.",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "Tingkat Kesempatan Kerja (TKK)",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -115,8 +167,64 @@ class _pengangguranContentState extends State<pengangguranContent> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "   Tingkat Partisipasi Angkatan Kerja (TPAK) adalah persentase banyaknya angkatan kerja terhadap banyaknya penduduk usia kerja.",
+                            "   TKK diukur sebagai persentase jumlah penduduk yang bekerja terhadap jumlah penduduk yang termasuk angkatan kerja.",
                             textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "Penganggur",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "  Angkatan kerja yang tergolong dalam penganggur adalah mereka yang : ",
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.only(
+                              top: 5, left: 5, right: 5, bottom: 5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "- Sedang mencari pekerjaan.",
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.only(
+                              top: 5, left: 5, right: 5, bottom: 5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "- Mempersiapkan usaha.",
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.only(
+                              top: 5, left: 5, right: 5, bottom: 5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "- Tidak mencari pekerjaan karena merasa tidak mungkin mendapatkan pekerjaan.",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.only(
+                              top: 5, left: 5, right: 5, bottom: 5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "- Sudah punya pekerjaan tetapi belum mulai bekerja, dan pada waktu yang bersamaan mereka tidak bekerja (Jobless).",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "  Penganggur dengan konsep/definisi tersebut biasanya disebut dengan penganggur terbuka (open unemployment).",
                           ),
                         ),
                         Container(
@@ -131,7 +239,24 @@ class _pengangguranContentState extends State<pengangguranContent> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "   Persentase jumlah pengangguran terhadap jumlah angkatan kerja.",
+                            "   TPT dihitung berdasarkan perbandingan antara jumlah penganggur dengan jumlah angkatan kerja dan dinyatakan dalam persentase.",
+                          ),
+                        ),
+                        Container(
+                          padding:
+                              const EdgeInsets.only(top: 8, left: 5, right: 5),
+                          child: const Text(
+                            "2. BUKAN ANGKATAN KERJA (BAK)",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
+                          ),
+                        ),
+                        Container(
+                          padding:
+                              const EdgeInsets.only(top: 5, left: 5, right: 5),
+                          child: const Text(
+                            "   Penduduk usia kerja yang tergolong ke dalam bukan angkatan kerja mencakup: penduduk yang bersekolah, mengurus rumah tangga, dan melakukan kegiatan lainnya.",
                             textAlign: TextAlign.justify,
                           ),
                         ),
@@ -139,7 +264,22 @@ class _pengangguranContentState extends State<pengangguranContent> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "Konsep Bekerja",
+                            "Sekolah",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(3),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                              "   Kegiatan bersekolah di sekolah formal dan nonformal, baik pada pendidikan dasar, pendidikan menengah, atau pendidikai tinggi. Tidak termasuk yang sedang libur sekolah/cuti kuliah.",
+                              textAlign: TextAlign.justify),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "Mengurus Rumah Tangga",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -147,15 +287,14 @@ class _pengangguranContentState extends State<pengangguranContent> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "   Bekerja adalah kegiatan melakukan pekerjaan dengan maksud memperoleh atau  membantu memperoleh penghasilan atau keuntungan paling sedikit  selama satu jam. Termasuk ke dalam konsep bekerja adalah orang yang sementara tidak bekerja.",
-                            textAlign: TextAlign.justify,
-                          ),
+                              "   Adalah kegiatan mengurus rumah tangga atau membantu mengurus rumah tangga tanpa mendapat upah/gaji. Seluruh anggota rumah tangga yang melakukan kegiatan kerumah tanggaan, seperti: memasak, mencuci,membersihkan rumah, dsb digolongkan sebagai mengurus rumah tangga. Bagi Pembantu Rumah Tangga yang mengerjakan hal yang sama tetapi mendapat upah/gaji digolongkan sebagai bekerja.",
+                              textAlign: TextAlign.justify),
                         ),
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "Konsep Penduduk Pengangguran",
+                            "Kegiatan Lainnya",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -163,47 +302,7 @@ class _pengangguranContentState extends State<pengangguranContent> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                            "   penduduk pengangguran adalah penduduk tidak bekerja dan :",
-                            textAlign: TextAlign.justify,
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                            "a). Sebulan yang lalu aktif mencari pekerjaan atau mempersiapkan suatu usaha, dan siap/bersedia bekerja dalam selang waktu dua minggu ke depan, ",
-                            textAlign: TextAlign.justify,
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                            "b). Sebulan yang lalu aktif mencari pekerjaan atau mempersiapkan usaha dan jika seminggu terakhir ada tawaran pekerjaan siap/bersedia menerima, atau 2 minggu ke depan siap/bersedia, ",
-                            textAlign: TextAlign.justify,
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                            "c). Tidak mencari pekerjaan dengan alasan sudah diterima bekerja tetapi belum mulai bekerja, dimulainya pekerjaan tersebut dalam kurun waktu  kurang dari 3 bulan ke depan, dan mengaku saat ini dalam kondisi siap/bersedia untuk segera bekerja dalam selang waktu dua minggu kedepan. ",
-                            textAlign: TextAlign.justify,
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                            "Setengah Pengangguran",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text(
-                            "   adalah orang yang bekerja kurang dari 35 jam per minggu, tetapi masih mencari pekerjaan atau bersedia menerima pekerjaan.",
+                            "   Adalah kegiatan selain bekerja, sekolah, dan mengurus rumah tangga. Kegiatan lainnya yang dicakup di sini adalah kegiatan yang bersifat aktif, seperti: olah raga, piknik, kegiatar keagamaan, kegiatan sosial. Tidak termasuk seperti: tidur, malas-malasan, santai, dll.",
                             textAlign: TextAlign.justify,
                           ),
                         ),
