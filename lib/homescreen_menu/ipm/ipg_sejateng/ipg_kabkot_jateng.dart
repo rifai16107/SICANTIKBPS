@@ -429,8 +429,8 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                           padding: const EdgeInsets.only(
                             left: 5,
                             right: 5,
-                            top: 15,
-                            bottom: 15,
+                            top: 10,
+                            bottom: 10,
                           ),
                           child: Text(
                             "Indeks Pembangunan Gender (IPG) Kabupaten/Kota Di Jawa Tengah, Tahun " +
