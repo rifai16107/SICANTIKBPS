@@ -225,6 +225,106 @@ class _pendidikanContentState extends State<pendidikanContent> {
                               ],
                             ),
                           ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                                top: 5, left: 5, right: 5, bottom: 2),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text("SD/MI: ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 10, right: 5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "meliputi Sekolah Dasar, Madrasah Ibtidaiyah dan sederajat.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                                top: 5, left: 5, right: 5, bottom: 2),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text("SMP/MTs: ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 10, right: 5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "meliputi jenjang pendidikan SMP Umum, Madrasah Tsanawiyah, SMP Kejuruan dan sederajat.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                                top: 5, left: 5, right: 5, bottom: 2),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text("SM/MA: ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 10, right: 5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "meliputi jenjang pendidikan Sekolah Menengah Atas (SMA), Sekolah Menengah Kejuruan (SMK), Madrasah Aliyah (MA) dan sederajat.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                                top: 5, left: 5, right: 5, bottom: 2),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text("Perguruan Tinggi (PT): ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 10, right: 5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "meliputi jenjang pendidikan pada Perguruan Tinggi baik Diploma I/II/III, DIV/S1, S2, S3 dan sederajat.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ]);

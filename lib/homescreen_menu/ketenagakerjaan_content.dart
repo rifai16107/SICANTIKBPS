@@ -163,7 +163,7 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                         padding: const EdgeInsets.all(5),
                         alignment: Alignment.centerLeft,
                         child: const Text(
-                          "   TKK diukur sebagai persentase jumlah penduduk yang berkeja terhadap jumlah penduduk yang termasuk angkatan kerja.",
+                          "   TKK diukur sebagai persentase jumlah penduduk yang bekerja terhadap jumlah penduduk yang termasuk angkatan kerja.",
                           textAlign: TextAlign.justify,
                         ),
                       ),

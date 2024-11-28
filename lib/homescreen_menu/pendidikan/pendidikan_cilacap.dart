@@ -59,8 +59,10 @@ class _pendidikanCilacapState extends State<pendidikanCilacap> {
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.centerLeft,
                             child: const Text(
-                              "Pendidikan",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              "PENDIDIKAN",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue),
                             ),
                           ),
                           Container(
@@ -73,6 +75,16 @@ class _pendidikanCilacapState extends State<pendidikanCilacap> {
                                   textAlign: TextAlign.justify,
                                 ),
                                 const Divider(),
+                                Container(
+                                  padding: const EdgeInsets.all(5),
+                                  alignment: Alignment.centerLeft,
+                                  child: const Text(
+                                    "BEBERAPA KONSEP PADA STATISTIK PENDIDIKAN",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.blue),
+                                  ),
+                                ),
                                 const Text(
                                   "   APM, APK, APS dihitung pada setiap jenjang pendidikan dengan maksud untuk melihat sejauh mana partisipasi sekolah pada setiap jenjang pendidikan sehingga gambaran umum kontinuitas pendidikan pada setiap jenjang dapat diamati. Angka Partisipasi Sekolah ini disisi lain selain terkait dengan kesadaran masyarakat serta kemampuannya mengikuti pendidikan pada suatu jenjang (--kemampuan secara edukasional ataupun finasial-) juga sangat terkait dengan ketersedian fasilitas atau sarana pendidikan di suatu daerah.",
                                   textAlign: TextAlign.justify,
@@ -85,7 +97,9 @@ class _pendidikanCilacapState extends State<pendidikanCilacap> {
                             alignment: Alignment.centerLeft,
                             child: const Text(
                               "Konsep Penghitungan Angka Melek Huruf (AMH)",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue),
                             ),
                           ),
                           Container(
@@ -114,7 +128,9 @@ class _pendidikanCilacapState extends State<pendidikanCilacap> {
                             alignment: Alignment.centerLeft,
                             child: const Text(
                               "Konsep Penghitungan APM, APK dan APS",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue),
                             ),
                           ),
                           Container(
@@ -158,7 +174,9 @@ class _pendidikanCilacapState extends State<pendidikanCilacap> {
                             alignment: Alignment.centerLeft,
                             child: const Text(
                               "Partisipasi Sekolah",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue),
                             ),
                           ),
                           Container(
@@ -172,6 +190,141 @@ class _pendidikanCilacapState extends State<pendidikanCilacap> {
                                 ),
                                 const Text(
                                   "   Banyaknya fasilitas pendidikan/jumlah sekolah, guru dan murid dihitung pada setiap jenis jenjang pendidikan baik pendidikan umum, berbasis keagamaan ataupun pendidikan kejuruan yang diselenggarakan oleh Negeri ataupun Swasta.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(5),
+                            alignment: Alignment.centerLeft,
+                            child: const Text(
+                              "Pendidikan Tertinggi",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue),
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                    "Pendidikan tertinggi yang ditamatkan: ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(0),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "   adalah jenjang pendidikan tertinggi yang ditamatkan oleh seseorang, ditandai dengan sertifikat/ijazah.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                                top: 5, left: 5, right: 5, bottom: 2),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text("SD/MI: ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 10, right: 5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "meliputi Sekolah Dasar, Madrasah Ibtidaiyah dan sederajat.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                                top: 5, left: 5, right: 5, bottom: 2),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text("SMP/MTs: ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 10, right: 5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "meliputi jenjang pendidikan SMP Umum, Madrasah Tsanawiyah, SMP Kejuruan dan sederajat.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                                top: 5, left: 5, right: 5, bottom: 2),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text("SM/MA: ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 10, right: 5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "meliputi jenjang pendidikan Sekolah Menengah Atas (SMA), Sekolah Menengah Kejuruan (SMK), Madrasah Aliyah (MA) dan sederajat.",
+                                  textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                                top: 5, left: 5, right: 5, bottom: 2),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text("Perguruan Tinggi (PT): ",
+                                    textAlign: TextAlign.left,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.w500)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 10, right: 5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "meliputi jenjang pendidikan pada Perguruan Tinggi baik Diploma I/II/III, DIV/S1, S2, S3 dan sederajat.",
                                   textAlign: TextAlign.justify,
                                 ),
                               ],
