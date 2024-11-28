@@ -116,6 +116,7 @@ flutter:
      - assets/images/logo.png
      - assets/images/gedung.jpg
      - assets/images/logo_berakhlak.png
+     
     
     
     #  Drawer
@@ -249,6 +250,8 @@ flutter:
      - assets/images/modal/aps_modal.jpeg
      - assets/images/modal/amh_modal.jpeg
      - assets/images/modal/ketimpangan_modal.jpeg
+     - assets/images/modal/gini_modal.jpeg
+         
 
     # Logo Daerah
      - assets/images/daerah/logo_cilacap.png

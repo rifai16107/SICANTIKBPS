@@ -134,8 +134,25 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                   scale: 2,
                                 ),
                                 const Text(
-                                  "   Hasil penghitungan dari formula di atas digunakan untuk menghitung distribusi pendapatan berdasarkan kriteria bank dunia dan angka gini rasio.",
+                                  "   Hasil penghitungan dari formula di atas digunakan untuk menghitung distribusi pendapatan berdasarkan kriteria bank dunia.",
                                   textAlign: TextAlign.justify,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "   Sementara untuk menghitung Koefisien Gini Rasio dihitung dengan formula sebagai berikut:",
+                                  textAlign: TextAlign.justify,
+                                ),
+                                Image.asset(
+                                  './assets/images/modal/gini_modal.jpeg',
+                                  alignment: Alignment.center,
+                                  scale: 2,
                                 ),
                               ],
                             ),
