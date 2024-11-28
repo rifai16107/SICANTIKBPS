@@ -1,4 +1,4 @@
-import 'package:bps_cilacap/restAPI/repository_penduduk_kabkot.dart';
+import 'package:bps_cilacap/restAPI/repository_pengangguran_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pengangguran/pengangguran_kabkot/pengangguran_kabkot_a.dart';
 import 'package:bps_cilacap/homescreen_menu/pengangguran/pengangguran_kabkot/pengangguran_kabkot_b.dart';
 import 'package:bps_cilacap/homescreen_menu/pengangguran/pengangguran_kabkot/pengangguran_kabkot_c.dart';
@@ -16,8 +16,8 @@ class BodySeriesPengangguranKabkot extends StatefulWidget {
 
 class _BodySeriesPengangguranKabkotState
     extends State<BodySeriesPengangguranKabkot> {
-  RepositoryJumlahPendudukKabkot repositoryJumlahPenduduk =
-      RepositoryJumlahPendudukKabkot();
+  RepositoryPengangguranKabkot penganggurankabkot =
+      RepositoryPengangguranKabkot();
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -26,22 +26,24 @@ class _BodySeriesPengangguranKabkotState
     // ignore: unused_local_variable
     final screenWidth = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: repositoryJumlahPenduduk.getData(),
+      future: penganggurankabkot.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isijumlahpenduduk = snapshot.data as List;
+          List isipenganggurankabkot = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              String thn1 = isijumlahpenduduk[index = 0].tahun.substring(0, 4);
-              String thn2 = isijumlahpenduduk[index = 0].tahun.substring(5, 9);
+              String thn1 =
+                  isipenganggurankabkot[index = 0].tahun.substring(0, 4);
+              String thn2 =
+                  isipenganggurankabkot[index = 0].tahun.substring(5, 9);
               String thn3 =
-                  isijumlahpenduduk[index = 0].tahun.substring(10, 14);
+                  isipenganggurankabkot[index = 0].tahun.substring(10, 14);
               String thn4 =
-                  isijumlahpenduduk[index = 0].tahun.substring(15, 19);
+                  isipenganggurankabkot[index = 0].tahun.substring(15, 19);
               String thn5 =
-                  isijumlahpenduduk[index = 0].tahun.substring(20, 24);
+                  isipenganggurankabkot[index = 0].tahun.substring(20, 24);
 
               return DefaultTabController(
                 length: 5,

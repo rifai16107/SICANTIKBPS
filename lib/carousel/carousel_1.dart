@@ -101,7 +101,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                               margin: const EdgeInsets.only(right: 15),
                               child: Text(
                                 "Inflasi Month to Month : ${mtom1.toStringAsFixed(2)}%",
-                                style: const TextStyle(fontSize:13 ),                                 
+                                style: const TextStyle(fontSize: 13),
                               ),
                             ),
                             Container(
@@ -109,7 +109,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                               margin: const EdgeInsets.only(right: 15),
                               child: Text(
                                 "Inflasi Year to Date : ${ytod1.toStringAsFixed(2)}%",
-                                 style: const TextStyle(fontSize:13 ),
+                                style: const TextStyle(fontSize: 13),
                               ),
                             ),
                             Container(
@@ -117,7 +117,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                               margin: const EdgeInsets.only(right: 15),
                               child: Text(
                                 "Inflasi Year on Year : ${yony1.toStringAsFixed(2)}%",
-                                 style: const TextStyle(fontSize:13 ),
+                                style: const TextStyle(fontSize: 13),
                               ),
                             ),
                           ],

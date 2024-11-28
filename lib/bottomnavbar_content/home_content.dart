@@ -6,6 +6,7 @@ import 'package:bps_cilacap/carousel/carousel_3.dart';
 import 'package:bps_cilacap/carousel/carousel_4.dart';
 import 'package:bps_cilacap/carousel/carousel_5.dart';
 import 'package:bps_cilacap/carousel/carousel_6.dart';
+import 'package:bps_cilacap/carousel/carousel_7.dart';
 import 'package:bps_cilacap/homescreen_menu/kemiskinan_content.dart';
 import 'package:bps_cilacap/homescreen_menu/ketimpangan_content.dart';
 import 'package:bps_cilacap/homescreen_menu/pengangguran_content.dart';
@@ -59,6 +60,7 @@ class _HomeContentState extends State<HomeContent> {
     const carouselSlider4(),
     const carouselSlider5(),
     const carouselSlider6(),
+    const carouselSlider7(),
   ];
   final CarouselController _controller = CarouselController();
 

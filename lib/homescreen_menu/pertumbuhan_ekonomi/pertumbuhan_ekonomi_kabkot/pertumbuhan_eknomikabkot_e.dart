@@ -2351,7 +2351,7 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                 bottom: 0,
                               ),
                               child: const Text(
-                                "Pertumbuhan Ekonomi di hitung dari laju Pertumbuhan PDRB ADHK.",
+                                "Pertumbuhan Ekonomi di hitung dari laju Pertumbuhan PDRB ADHK. Untuk kota dengan Industri Migas PDRB ADHK yang digunakan adalah PDRB ADHK Dengan Migas",
                                 style: TextStyle(
                                     fontSize: 10,
                                     fontWeight: FontWeight.normal),
@@ -2362,7 +2362,7 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                               padding: const EdgeInsets.only(
                                 top: 4,
                                 left: 4,
-                                bottom: 60,
+                                bottom: 70,
                               ),
                               child: const Text(
                                 " Sumber Data : BPS Kabupaten Cilacap, BPS Provinsi Jawa Tengah",
