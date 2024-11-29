@@ -1,5 +1,54 @@
-import 'package:bps_cilacap/restAPI/repository_inflasi_kota.dart';
+import 'dart:async';
+import 'dart:convert';
+//import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
+class RepositoryIndikatorUtama {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
+
+  Future getData() async {
+    try {
+      final response = await http.get(Uri.parse(_baseURL));
+
+      if (response.statusCode == 200) {
+        var cokk = jsonDecode(response.body);
+        return (cokk['data'] as List)
+            .map((isiindikatorutama) =>
+                ModelIndikatorUtama.fromJson(isiindikatorutama))
+            .toList();
+      }
+    } catch (isiindikatorutama) {
+      // ignore: avoid_print
+      print(isiindikatorutama.toString());
+    }
+  }
+}
+
+class ModelIndikatorUtama {
+  final int id;
+  final String indikator;
+  final String nilai;
+  final String bulan;
+  final String tahun;
+
+  ModelIndikatorUtama(
+      {required this.id,
+      required this.indikator,
+      required this.nilai,
+      required this.bulan,
+      required this.tahun});
+
+  factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
+    return ModelIndikatorUtama(
+      id: json['id'],
+      indikator: json['indikator'],
+      nilai: json['nilai'],
+      bulan: json['bulan'],
+      tahun: json['tahun'],
+    );
+  }
+}
 
 class carouselSlider1 extends StatefulWidget {
   const carouselSlider1({super.key});
@@ -8,7 +57,7 @@ class carouselSlider1 extends StatefulWidget {
   State<carouselSlider1> createState() => _carouselSlider1State();
 }
 
-RepositoryInflasiKota repositoryinflasikota = RepositoryInflasiKota();
+RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
 
 class _carouselSlider1State extends State<carouselSlider1> {
   @override
@@ -18,16 +67,16 @@ class _carouselSlider1State extends State<carouselSlider1> {
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
-      future: repositoryinflasikota.getData(),
+      future: repositoryindikatorutama.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isiinflasi = snapshot.data as List;
+          List isiindikatorutama = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String kab = isiinflasi[index = 16].nama;
-              String tahun = isiinflasi[index = 16].tahun;
-              String bulan = isiinflasi[index = 16].bulan.substring(0, 3);
+              String kab = "Cilacap";
+              String tahun = isiindikatorutama[index = 0].tahun.substring(0, 4);
+              String bulan = isiindikatorutama[index = 0].bulan.substring(0, 3);
               String bln = "";
               if (bulan == "Jan") {
                 bln = "Januari";
@@ -55,9 +104,9 @@ class _carouselSlider1State extends State<carouselSlider1> {
                 bln = "Desember";
               }
 
-              double mtom1 = double.parse(isiinflasi[index = 16].mtom);
-              double yony1 = double.parse(isiinflasi[index = 16].ytoy);
-              double ytod1 = double.parse(isiinflasi[index = 16].ytod);
+              double mtom1 = double.parse(isiindikatorutama[index = 0].nilai);
+              double yony1 = double.parse(isiindikatorutama[index = 2].nilai);
+              double ytod1 = double.parse(isiindikatorutama[index = 1].nilai);
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),

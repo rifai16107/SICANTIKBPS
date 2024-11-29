@@ -66,6 +66,17 @@ class _TentangAplikasiState extends State<TentangAplikasi> {
                         color: Colors.black),
                   ),
                 ),
+                Container(
+                  margin: const EdgeInsets.fromLTRB(0, 0, 0, 5),
+                  child: const Text(
+                    'Aplikasi ini membutuhkan koneksi internet untuk menampilkan data',
+                    style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.normal,
+                        fontSize: 11,
+                        color: Colors.black),
+                  ),
+                ),
                 SizedBox(
                   height: screenHeight * 0.15,
                   width: screenWidth * 0.6,
