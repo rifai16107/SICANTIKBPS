@@ -1,8 +1,56 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
 
-import 'package:bps_cilacap/restAPI/repository_tenaga_kerja_tpt.dart';
-import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
+class RepositoryIndikatorUtama {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
+
+  Future getData() async {
+    try {
+      final response = await http.get(Uri.parse(_baseURL));
+
+      if (response.statusCode == 200) {
+        var cokk = jsonDecode(response.body);
+        return (cokk['data'] as List)
+            .map((isiindikatorutama) =>
+                ModelIndikatorUtama.fromJson(isiindikatorutama))
+            .toList();
+      }
+    } catch (isiindikatorutama) {
+      // ignore: avoid_print
+      print(isiindikatorutama.toString());
+    }
+  }
+}
+
+class ModelIndikatorUtama {
+  final int id;
+  final String indikator;
+  final String nilai;
+  final String bulan;
+  final String tahun;
+
+  ModelIndikatorUtama(
+      {required this.id,
+      required this.indikator,
+      required this.nilai,
+      required this.bulan,
+      required this.tahun});
+
+  factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
+    return ModelIndikatorUtama(
+      id: json['id'],
+      indikator: json['indikator'],
+      nilai: json['nilai'],
+      bulan: json['bulan'],
+      tahun: json['tahun'],
+    );
+  }
+}
 
 class carouselSlider7 extends StatefulWidget {
   const carouselSlider7({super.key});
@@ -11,7 +59,7 @@ class carouselSlider7 extends StatefulWidget {
   State<carouselSlider7> createState() => _carouselSlider7State();
 }
 
-RepositoryPengangguran repositorypengangguran = RepositoryPengangguran();
+RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
 
 class _carouselSlider7State extends State<carouselSlider7> {
   @override
@@ -21,28 +69,22 @@ class _carouselSlider7State extends State<carouselSlider7> {
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
-      future: repositorypengangguran.getData(),
+      future: repositoryindikatorutama.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isipengangguran = snapshot.data as List;
+          List isiindikatorutama = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String thn5 = (isipengangguran[index = 4].created_at[0] +
-                      isipengangguran[index = 4].created_at[1] +
-                      isipengangguran[index = 4].created_at[2] +
-                      isipengangguran[index = 4].created_at[3])
-                  .toString();
-              String thn4 = (isipengangguran[index = 3].created_at[0] +
-                      isipengangguran[index = 3].created_at[1] +
-                      isipengangguran[index = 3].created_at[2] +
-                      isipengangguran[index = 3].created_at[3])
-                  .toString();
+              String thnN1 =
+                  isiindikatorutama[index = 13].tahun.substring(0, 4);
+              String thnNow =
+                  isiindikatorutama[index = 14].tahun.substring(5, 9);
 
-              double tpt5 = double.parse(isipengangguran[index = 4].tpt);
-              double tpt4 = double.parse(isipengangguran[index = 3].tpt);
+              double tptN1 = double.parse(isiindikatorutama[index = 13].nilai);
+              double tptNow = double.parse(isiindikatorutama[index = 14].nilai);
 
-              var deltatpt = tpt5 - tpt4;
+              var deltatpt = tptNow - tptN1;
               String fenomena = "";
 
               if (deltatpt >= 0) {
@@ -92,7 +134,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thn5 : ${Format.convertTo(tpt5, 2)}%",
+                              "Tahun $thnNow : ${Format.convertTo(tptNow, 2)}%",
                               style: const TextStyle(fontSize: 13),
                             ),
                           ),
@@ -100,7 +142,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thn4 : ${Format.convertTo(tpt4, 2)}%",
+                              "Tahun $thnN1 : ${Format.convertTo(tptN1, 2)}%",
                               style: const TextStyle(fontSize: 13),
                             ),
                           ),

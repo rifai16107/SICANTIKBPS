@@ -1,66 +1,19 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
-import 'dart:async';
-import 'dart:convert';
-import 'package:bps_cilacap/format_angka.dart';
+
+import 'package:bps_cilacap/restAPI/repository_tenaga_kerja_tpt.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:bps_cilacap/format_angka.dart';
 
-class RepositoryIndikatorUtama {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
-
-  Future getData() async {
-    try {
-      final response = await http.get(Uri.parse(_baseURL));
-
-      if (response.statusCode == 200) {
-        var cokk = jsonDecode(response.body);
-        return (cokk['data'] as List)
-            .map((isiindikatorutama) =>
-                ModelIndikatorUtama.fromJson(isiindikatorutama))
-            .toList();
-      }
-    } catch (isiindikatorutama) {
-      // ignore: avoid_print
-      print(isiindikatorutama.toString());
-    }
-  }
-}
-
-class ModelIndikatorUtama {
-  final int id;
-  final String indikator;
-  final String nilai;
-  final String bulan;
-  final String tahun;
-
-  ModelIndikatorUtama(
-      {required this.id,
-      required this.indikator,
-      required this.nilai,
-      required this.bulan,
-      required this.tahun});
-
-  factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
-    return ModelIndikatorUtama(
-      id: json['id'],
-      indikator: json['indikator'],
-      nilai: json['nilai'],
-      bulan: json['bulan'],
-      tahun: json['tahun'],
-    );
-  }
-}
-
-class carouselSlider5 extends StatefulWidget {
-  const carouselSlider5({super.key});
+class carouselSlider7 extends StatefulWidget {
+  const carouselSlider7({super.key});
 
   @override
-  State<carouselSlider5> createState() => _carouselSlider5State();
+  State<carouselSlider7> createState() => _carouselSlider7State();
 }
 
-RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
+RepositoryPengangguran repositorypengangguran = RepositoryPengangguran();
 
-class _carouselSlider5State extends State<carouselSlider5> {
+class _carouselSlider7State extends State<carouselSlider7> {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
@@ -68,26 +21,31 @@ class _carouselSlider5State extends State<carouselSlider5> {
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
-      future: repositoryindikatorutama.getData(),
+      future: repositorypengangguran.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isiindikatorutama = snapshot.data as List;
+          List isipengangguran = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String thnN1 = isiindikatorutama[index = 9].tahun.substring(0, 4);
-              String thnNow =
-                  isiindikatorutama[index = 9].tahun.substring(5, 9);
+              String thn5 = (isipengangguran[index = 4].created_at[0] +
+                      isipengangguran[index = 4].created_at[1] +
+                      isipengangguran[index = 4].created_at[2] +
+                      isipengangguran[index = 4].created_at[3])
+                  .toString();
+              String thn4 = (isipengangguran[index = 3].created_at[0] +
+                      isipengangguran[index = 3].created_at[1] +
+                      isipengangguran[index = 3].created_at[2] +
+                      isipengangguran[index = 3].created_at[3])
+                  .toString();
 
-              double povertyN1 =
-                  double.parse(isiindikatorutama[index = 9].nilai);
-              double povertyNow =
-                  double.parse(isiindikatorutama[index = 10].nilai);
+              double tpt5 = double.parse(isipengangguran[index = 4].tpt);
+              double tpt4 = double.parse(isipengangguran[index = 3].tpt);
 
-              var deltaPoverty = povertyNow - povertyN1;
+              var deltatpt = tpt5 - tpt4;
               String fenomena = "";
 
-              if (deltaPoverty >= 0) {
+              if (deltatpt >= 0) {
                 fenomena = "kenaikan";
               } else {
                 fenomena = "penurunan";
@@ -98,7 +56,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                   color: const Color.fromARGB(255, 231, 232, 233),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                margin: const EdgeInsets.only(top: 2, bottom: 2),
+                margin: const EdgeInsets.only(top: 0, bottom: 0),
                 width: screenWidth,
                 height: screenHeight,
                 child: Row(
@@ -108,9 +66,9 @@ class _carouselSlider5State extends State<carouselSlider5> {
                       flex: 3,
                       child: SizedBox(
                         width: 55,
-                        height: 55,
+                        height: 56,
                         child: Image.asset(
-                          'assets/images/carousel/kemiskinan_icon.png',
+                          'assets/images/carousel/tpt_carousel_icon.png',
                           alignment: Alignment.center,
                         ),
                       ),
@@ -125,7 +83,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                           Container(
                             margin: const EdgeInsets.only(left: 2),
                             child: const Text(
-                              "Kemiskinan Kabupaten Cilacap",
+                              "Tingkat Pengangguran Terbuka (TPT) Kabupaten Cilacap",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -134,7 +92,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thnNow : ${Format.convertTo(povertyNow, 2)}%",
+                              "Tahun $thn5 : ${Format.convertTo(tpt5, 2)}%",
                               style: const TextStyle(fontSize: 13),
                             ),
                           ),
@@ -142,7 +100,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thnN1 : ${Format.convertTo(povertyN1, 2)}%",
+                              "Tahun $thn4 : ${Format.convertTo(tpt4, 2)}%",
                               style: const TextStyle(fontSize: 13),
                             ),
                           ),
@@ -150,7 +108,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Terjadi $fenomena : ${Format.convertTo(deltaPoverty.abs(), 2)} point %",
+                              "Terjadi $fenomena : ${Format.convertTo(deltatpt.abs(), 2)} point %",
                               style: const TextStyle(fontSize: 13),
                             ),
                           ),

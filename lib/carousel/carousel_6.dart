@@ -1,8 +1,56 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
 
-import 'package:bps_cilacap/restAPI/repository_pertumbuhan_ekonomi.dart';
-import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
+class RepositoryIndikatorUtama {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
+
+  Future getData() async {
+    try {
+      final response = await http.get(Uri.parse(_baseURL));
+
+      if (response.statusCode == 200) {
+        var cokk = jsonDecode(response.body);
+        return (cokk['data'] as List)
+            .map((isiindikatorutama) =>
+                ModelIndikatorUtama.fromJson(isiindikatorutama))
+            .toList();
+      }
+    } catch (isiindikatorutama) {
+      // ignore: avoid_print
+      print(isiindikatorutama.toString());
+    }
+  }
+}
+
+class ModelIndikatorUtama {
+  final int id;
+  final String indikator;
+  final String nilai;
+  final String bulan;
+  final String tahun;
+
+  ModelIndikatorUtama(
+      {required this.id,
+      required this.indikator,
+      required this.nilai,
+      required this.bulan,
+      required this.tahun});
+
+  factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
+    return ModelIndikatorUtama(
+      id: json['id'],
+      indikator: json['indikator'],
+      nilai: json['nilai'],
+      bulan: json['bulan'],
+      tahun: json['tahun'],
+    );
+  }
+}
 
 class carouselSlider6 extends StatefulWidget {
   const carouselSlider6({super.key});
@@ -11,8 +59,7 @@ class carouselSlider6 extends StatefulWidget {
   State<carouselSlider6> createState() => _carouselSlider6State();
 }
 
-RepositoryPertumbuhanEkonomi repositorypertumbuhan =
-    RepositoryPertumbuhanEkonomi();
+RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
 
 class _carouselSlider6State extends State<carouselSlider6> {
   @override
@@ -22,30 +69,22 @@ class _carouselSlider6State extends State<carouselSlider6> {
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
-      future: repositorypertumbuhan.getData(),
+      future: repositoryindikatorutama.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isipertumbuhanekonomi = snapshot.data as List;
+          List isiindikatorutama = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String thn4 = (isipertumbuhanekonomi[index = 3].tahun[0] +
-                      isipertumbuhanekonomi[index = 3].tahun[1] +
-                      isipertumbuhanekonomi[index = 3].tahun[2] +
-                      isipertumbuhanekonomi[index = 3].tahun[3])
-                  .toString();
-              String thn5 = (isipertumbuhanekonomi[index = 4].tahun[0] +
-                      isipertumbuhanekonomi[index = 4].tahun[1] +
-                      isipertumbuhanekonomi[index = 4].tahun[2] +
-                      isipertumbuhanekonomi[index = 4].tahun[3])
-                  .toString();
+              String thnN1 =
+                  isiindikatorutama[index = 11].tahun.substring(0, 4);
+              String thnNow =
+                  isiindikatorutama[index = 11].tahun.substring(5, 9);
 
-              double pe_4 = double.parse(
-                  isipertumbuhanekonomi[index = 3].ekonomi_nonmigas);
-              double pe_5 = double.parse(
-                  isipertumbuhanekonomi[index = 4].ekonomi_nonmigas);
+              double peN1 = double.parse(isiindikatorutama[index = 11].nilai);
+              double peNow = double.parse(isiindikatorutama[index = 12].nilai);
 
-              var deltape = pe_5 - pe_4;
+              var deltape = peNow - peN1;
               String fenomena = "";
 
               if (deltape >= 0) {
@@ -86,7 +125,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                           Container(
                             margin: const EdgeInsets.only(left: 2),
                             child: const Text(
-                              "Pertumbuhan Ekonomi Kab. Cilacap (Tanpa Migas)",
+                              "Pertumbuhan Ekonomi Kab. Cilacap (Dengan Migas)",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -95,16 +134,16 @@ class _carouselSlider6State extends State<carouselSlider6> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thn5 : ${Format.convertTo(pe_5, 2)}%",
-                               style: const TextStyle(fontSize:13 ),
+                              "Tahun $thnNow : ${Format.convertTo(peNow, 2)}%",
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                           Container(
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thn4 : ${Format.convertTo(pe_4, 2)}%",
-                               style: const TextStyle(fontSize:13 ),
+                              "Tahun $thnN1 : ${Format.convertTo(peN1, 2)}%",
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                           Container(
@@ -112,7 +151,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
                               "Terjadi $fenomena : ${Format.convertTo(deltape.abs(), 2)} point %",
-                               style: const TextStyle(fontSize:13 ),
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                         ],

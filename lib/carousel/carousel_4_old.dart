@@ -1,66 +1,19 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
-import 'dart:async';
-import 'dart:convert';
-import 'package:bps_cilacap/format_angka.dart';
+
+import 'package:bps_cilacap/restAPI/repository_ketimpangan_gini.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:bps_cilacap/format_angka.dart';
 
-class RepositoryIndikatorUtama {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
-
-  Future getData() async {
-    try {
-      final response = await http.get(Uri.parse(_baseURL));
-
-      if (response.statusCode == 200) {
-        var cokk = jsonDecode(response.body);
-        return (cokk['data'] as List)
-            .map((isiindikatorutama) =>
-                ModelIndikatorUtama.fromJson(isiindikatorutama))
-            .toList();
-      }
-    } catch (isiindikatorutama) {
-      // ignore: avoid_print
-      print(isiindikatorutama.toString());
-    }
-  }
-}
-
-class ModelIndikatorUtama {
-  final int id;
-  final String indikator;
-  final String nilai;
-  final String bulan;
-  final String tahun;
-
-  ModelIndikatorUtama(
-      {required this.id,
-      required this.indikator,
-      required this.nilai,
-      required this.bulan,
-      required this.tahun});
-
-  factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
-    return ModelIndikatorUtama(
-      id: json['id'],
-      indikator: json['indikator'],
-      nilai: json['nilai'],
-      bulan: json['bulan'],
-      tahun: json['tahun'],
-    );
-  }
-}
-
-class carouselSlider5 extends StatefulWidget {
-  const carouselSlider5({super.key});
+class carouselSlider4 extends StatefulWidget {
+  const carouselSlider4({super.key});
 
   @override
-  State<carouselSlider5> createState() => _carouselSlider5State();
+  State<carouselSlider4> createState() => _carouselSlider4State();
 }
 
-RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
+RepositoryKetimpanganGini repositoryipm = RepositoryKetimpanganGini();
 
-class _carouselSlider5State extends State<carouselSlider5> {
+class _carouselSlider4State extends State<carouselSlider4> {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
@@ -68,31 +21,28 @@ class _carouselSlider5State extends State<carouselSlider5> {
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
-      future: repositoryindikatorutama.getData(),
+      future: repositoryipm.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isiindikatorutama = snapshot.data as List;
+          List isiginikabkot = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String thnN1 = isiindikatorutama[index = 9].tahun.substring(0, 4);
-              String thnNow =
-                  isiindikatorutama[index = 9].tahun.substring(5, 9);
+              String thn2 = isiginikabkot[index = 0].tahun.substring(5, 9);
+              String thn3 = isiginikabkot[index = 0].tahun.substring(10, 14);
 
-              double povertyN1 =
-                  double.parse(isiindikatorutama[index = 9].nilai);
-              double povertyNow =
-                  double.parse(isiindikatorutama[index = 10].nilai);
-
-              var deltaPoverty = povertyNow - povertyN1;
+              double giniRasiothn2 =
+                  double.parse(isiginikabkot[index = 0].gini2022);
+              double giniRasiothn3 =
+                  double.parse(isiginikabkot[index = 0].gini2023);
+              double deltaGini = giniRasiothn3 - giniRasiothn2;
               String fenomena = "";
 
-              if (deltaPoverty >= 0) {
+              if (deltaGini >= 0) {
                 fenomena = "kenaikan";
               } else {
                 fenomena = "penurunan";
               }
-
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
@@ -110,7 +60,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                         width: 55,
                         height: 55,
                         child: Image.asset(
-                          'assets/images/carousel/kemiskinan_icon.png',
+                          'assets/images/carousel/ketimpangan_icon.png',
                           alignment: Alignment.center,
                         ),
                       ),
@@ -125,7 +75,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                           Container(
                             margin: const EdgeInsets.only(left: 2),
                             child: const Text(
-                              "Kemiskinan Kabupaten Cilacap",
+                              "Gini Rasio Kabupaten Cilacap",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -134,24 +84,24 @@ class _carouselSlider5State extends State<carouselSlider5> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thnNow : ${Format.convertTo(povertyNow, 2)}%",
-                              style: const TextStyle(fontSize: 13),
+                              "Tahun $thn3  tercatat: ${Format.convertTo(giniRasiothn3, 3)}",
+                               style: const TextStyle(fontSize:13 ),
                             ),
                           ),
                           Container(
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thnN1 : ${Format.convertTo(povertyN1, 2)}%",
-                              style: const TextStyle(fontSize: 13),
+                              "Tahun $thn2  tercatat: ${Format.convertTo(giniRasiothn2, 3)}",
+                               style: const TextStyle(fontSize:13 ),
                             ),
                           ),
                           Container(
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Terjadi $fenomena : ${Format.convertTo(deltaPoverty.abs(), 2)} point %",
-                              style: const TextStyle(fontSize: 13),
+                              "Terjadi $fenomena sebesar: ${Format.convertTo(deltaGini.abs(), 3)}",
+                               style: const TextStyle(fontSize:13 ),
                             ),
                           ),
                         ],

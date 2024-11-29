@@ -1,6 +1,54 @@
-import 'package:bps_cilacap/restAPI/repository_penduduk.dart';
-import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
+class RepositoryIndikatorUtama {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
+
+  Future getData() async {
+    try {
+      final response = await http.get(Uri.parse(_baseURL));
+
+      if (response.statusCode == 200) {
+        var cokk = jsonDecode(response.body);
+        return (cokk['data'] as List)
+            .map((isiindikatorutama) =>
+                ModelIndikatorUtama.fromJson(isiindikatorutama))
+            .toList();
+      }
+    } catch (isiindikatorutama) {
+      // ignore: avoid_print
+      print(isiindikatorutama.toString());
+    }
+  }
+}
+
+class ModelIndikatorUtama {
+  final int id;
+  final String indikator;
+  final String nilai;
+  final String bulan;
+  final String tahun;
+
+  ModelIndikatorUtama(
+      {required this.id,
+      required this.indikator,
+      required this.nilai,
+      required this.bulan,
+      required this.tahun});
+
+  factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
+    return ModelIndikatorUtama(
+      id: json['id'],
+      indikator: json['indikator'],
+      nilai: json['nilai'],
+      bulan: json['bulan'],
+      tahun: json['tahun'],
+    );
+  }
+}
 
 class carouselSlider2 extends StatefulWidget {
   const carouselSlider2({super.key});
@@ -9,7 +57,7 @@ class carouselSlider2 extends StatefulWidget {
   State<carouselSlider2> createState() => _carouselSlider2State();
 }
 
-RepositoryJumlahPenduduk repositoryJumlahPenduduk = RepositoryJumlahPenduduk();
+RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
 
 class _carouselSlider2State extends State<carouselSlider2> {
   @override
@@ -19,16 +67,16 @@ class _carouselSlider2State extends State<carouselSlider2> {
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
-      future: repositoryJumlahPenduduk.getData(),
+      future: repositoryindikatorutama.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isipenduduk = snapshot.data as List;
+          List isiindikatorutama = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String tahun = isipenduduk[index = 0].tahun;
-              int lkTotal = int.parse(isipenduduk[index = 0].total);
-              int prTotal = int.parse(isipenduduk[index = 1].total);
+              String tahun = isiindikatorutama[index = 3].tahun;
+              int lkTotal = int.parse(isiindikatorutama[index = 3].nilai);
+              int prTotal = int.parse(isiindikatorutama[index = 4].nilai);
 
               return Container(
                 decoration: BoxDecoration(
@@ -73,7 +121,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
                               "Laki - Laki : ${Format.convertTo(lkTotal, 0)} Jiwa",
-                               style: const TextStyle(fontSize:13 ),
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                           Container(
@@ -81,7 +129,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
                               "Perempuan :    ${Format.convertTo(prTotal, 0)} Jiwa",
-                               style: const TextStyle(fontSize:13 ),
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                           Container(
@@ -89,7 +137,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
                               "Total : ${Format.convertTo((lkTotal + prTotal), 0)} Jiwa",
-                               style: const TextStyle(fontSize:13 ),
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                         ],

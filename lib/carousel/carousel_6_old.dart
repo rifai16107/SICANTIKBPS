@@ -1,66 +1,20 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
-import 'dart:async';
-import 'dart:convert';
-import 'package:bps_cilacap/format_angka.dart';
+
+import 'package:bps_cilacap/restAPI/repository_pertumbuhan_ekonomi.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:bps_cilacap/format_angka.dart';
 
-class RepositoryIndikatorUtama {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
-
-  Future getData() async {
-    try {
-      final response = await http.get(Uri.parse(_baseURL));
-
-      if (response.statusCode == 200) {
-        var cokk = jsonDecode(response.body);
-        return (cokk['data'] as List)
-            .map((isiindikatorutama) =>
-                ModelIndikatorUtama.fromJson(isiindikatorutama))
-            .toList();
-      }
-    } catch (isiindikatorutama) {
-      // ignore: avoid_print
-      print(isiindikatorutama.toString());
-    }
-  }
-}
-
-class ModelIndikatorUtama {
-  final int id;
-  final String indikator;
-  final String nilai;
-  final String bulan;
-  final String tahun;
-
-  ModelIndikatorUtama(
-      {required this.id,
-      required this.indikator,
-      required this.nilai,
-      required this.bulan,
-      required this.tahun});
-
-  factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
-    return ModelIndikatorUtama(
-      id: json['id'],
-      indikator: json['indikator'],
-      nilai: json['nilai'],
-      bulan: json['bulan'],
-      tahun: json['tahun'],
-    );
-  }
-}
-
-class carouselSlider5 extends StatefulWidget {
-  const carouselSlider5({super.key});
+class carouselSlider6 extends StatefulWidget {
+  const carouselSlider6({super.key});
 
   @override
-  State<carouselSlider5> createState() => _carouselSlider5State();
+  State<carouselSlider6> createState() => _carouselSlider6State();
 }
 
-RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
+RepositoryPertumbuhanEkonomi repositorypertumbuhan =
+    RepositoryPertumbuhanEkonomi();
 
-class _carouselSlider5State extends State<carouselSlider5> {
+class _carouselSlider6State extends State<carouselSlider6> {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
@@ -68,26 +22,33 @@ class _carouselSlider5State extends State<carouselSlider5> {
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
-      future: repositoryindikatorutama.getData(),
+      future: repositorypertumbuhan.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isiindikatorutama = snapshot.data as List;
+          List isipertumbuhanekonomi = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String thnN1 = isiindikatorutama[index = 9].tahun.substring(0, 4);
-              String thnNow =
-                  isiindikatorutama[index = 9].tahun.substring(5, 9);
+              String thn4 = (isipertumbuhanekonomi[index = 3].tahun[0] +
+                      isipertumbuhanekonomi[index = 3].tahun[1] +
+                      isipertumbuhanekonomi[index = 3].tahun[2] +
+                      isipertumbuhanekonomi[index = 3].tahun[3])
+                  .toString();
+              String thn5 = (isipertumbuhanekonomi[index = 4].tahun[0] +
+                      isipertumbuhanekonomi[index = 4].tahun[1] +
+                      isipertumbuhanekonomi[index = 4].tahun[2] +
+                      isipertumbuhanekonomi[index = 4].tahun[3])
+                  .toString();
 
-              double povertyN1 =
-                  double.parse(isiindikatorutama[index = 9].nilai);
-              double povertyNow =
-                  double.parse(isiindikatorutama[index = 10].nilai);
+              double pe_4 = double.parse(
+                  isipertumbuhanekonomi[index = 3].ekonomi_nonmigas);
+              double pe_5 = double.parse(
+                  isipertumbuhanekonomi[index = 4].ekonomi_nonmigas);
 
-              var deltaPoverty = povertyNow - povertyN1;
+              var deltape = pe_5 - pe_4;
               String fenomena = "";
 
-              if (deltaPoverty >= 0) {
+              if (deltape >= 0) {
                 fenomena = "kenaikan";
               } else {
                 fenomena = "penurunan";
@@ -98,7 +59,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                   color: const Color.fromARGB(255, 231, 232, 233),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                margin: const EdgeInsets.only(top: 2, bottom: 2),
+                margin: const EdgeInsets.only(top: 0, bottom: 0),
                 width: screenWidth,
                 height: screenHeight,
                 child: Row(
@@ -108,9 +69,9 @@ class _carouselSlider5State extends State<carouselSlider5> {
                       flex: 3,
                       child: SizedBox(
                         width: 55,
-                        height: 55,
+                        height: 56,
                         child: Image.asset(
-                          'assets/images/carousel/kemiskinan_icon.png',
+                          'assets/images/carousel/pertumbuhan_icon.png',
                           alignment: Alignment.center,
                         ),
                       ),
@@ -125,7 +86,7 @@ class _carouselSlider5State extends State<carouselSlider5> {
                           Container(
                             margin: const EdgeInsets.only(left: 2),
                             child: const Text(
-                              "Kemiskinan Kabupaten Cilacap",
+                              "Pertumbuhan Ekonomi Kab. Cilacap (Tanpa Migas)",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -134,24 +95,24 @@ class _carouselSlider5State extends State<carouselSlider5> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thnNow : ${Format.convertTo(povertyNow, 2)}%",
-                              style: const TextStyle(fontSize: 13),
+                              "Tahun $thn5 : ${Format.convertTo(pe_5, 2)}%",
+                               style: const TextStyle(fontSize:13 ),
                             ),
                           ),
                           Container(
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Tahun $thnN1 : ${Format.convertTo(povertyN1, 2)}%",
-                              style: const TextStyle(fontSize: 13),
+                              "Tahun $thn4 : ${Format.convertTo(pe_4, 2)}%",
+                               style: const TextStyle(fontSize:13 ),
                             ),
                           ),
                           Container(
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Terjadi $fenomena : ${Format.convertTo(deltaPoverty.abs(), 2)} point %",
-                              style: const TextStyle(fontSize: 13),
+                              "Terjadi $fenomena : ${Format.convertTo(deltape.abs(), 2)} point %",
+                               style: const TextStyle(fontSize:13 ),
                             ),
                           ),
                         ],

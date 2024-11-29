@@ -1,8 +1,56 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
 
-import 'package:bps_cilacap/restAPI/repository_ipm.dart';
-import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
+class RepositoryIndikatorUtama {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
+
+  Future getData() async {
+    try {
+      final response = await http.get(Uri.parse(_baseURL));
+
+      if (response.statusCode == 200) {
+        var cokk = jsonDecode(response.body);
+        return (cokk['data'] as List)
+            .map((isiindikatorutama) =>
+                ModelIndikatorUtama.fromJson(isiindikatorutama))
+            .toList();
+      }
+    } catch (isiindikatorutama) {
+      // ignore: avoid_print
+      print(isiindikatorutama.toString());
+    }
+  }
+}
+
+class ModelIndikatorUtama {
+  final int id;
+  final String indikator;
+  final String nilai;
+  final String bulan;
+  final String tahun;
+
+  ModelIndikatorUtama(
+      {required this.id,
+      required this.indikator,
+      required this.nilai,
+      required this.bulan,
+      required this.tahun});
+
+  factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
+    return ModelIndikatorUtama(
+      id: json['id'],
+      indikator: json['indikator'],
+      nilai: json['nilai'],
+      bulan: json['bulan'],
+      tahun: json['tahun'],
+    );
+  }
+}
 
 class carouselSlider3 extends StatefulWidget {
   const carouselSlider3({super.key});
@@ -11,7 +59,7 @@ class carouselSlider3 extends StatefulWidget {
   State<carouselSlider3> createState() => _carouselSlider3State();
 }
 
-RepositoryIpm repositoryipm = RepositoryIpm();
+RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
 
 class _carouselSlider3State extends State<carouselSlider3> {
   @override
@@ -21,24 +69,20 @@ class _carouselSlider3State extends State<carouselSlider3> {
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
-      future: repositoryipm.getData(),
+      future: repositoryindikatorutama.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List isiipm = snapshot.data as List;
+          List isiindikatorutama = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String tahunn_1 = isiipm[index = 3].created_at[0] +
-                  isiipm[index = 3].created_at[1] +
-                  isiipm[index = 3].created_at[2] +
-                  isiipm[index = 3].created_at[3];
-              String tahunnow = isiipm[index = 4].created_at[0] +
-                  isiipm[index = 4].created_at[1] +
-                  isiipm[index = 4].created_at[2] +
-                  isiipm[index = 4].created_at[3];
+              String tahunn_1 =
+                  isiindikatorutama[index = 5].tahun.substring(0, 4);
+              String tahunnow =
+                  isiindikatorutama[index = 5].tahun.substring(5, 9);
 
-              double ipmA = double.parse(isiipm[index = 3].ipm_lfsp2020);
-              double ipmB = double.parse(isiipm[index = 4].ipm_lfsp2020);
+              double ipmA = double.parse(isiindikatorutama[index = 5].nilai);
+              double ipmB = double.parse(isiindikatorutama[index = 6].nilai);
               double deltaipm = ipmB - ipmA;
               String fenomena = "";
 
@@ -89,7 +133,7 @@ class _carouselSlider3State extends State<carouselSlider3> {
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
                               "Tahun $tahunnow  tercatat: ${Format.convertTo(ipmB, 2)}",
-                               style: const TextStyle(fontSize:13 ),
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                           Container(
@@ -97,7 +141,7 @@ class _carouselSlider3State extends State<carouselSlider3> {
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
                               "Tahun $tahunn_1  tercatat: ${Format.convertTo(ipmA, 2)}",
-                               style: const TextStyle(fontSize:13 ),
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                           Container(
@@ -105,7 +149,7 @@ class _carouselSlider3State extends State<carouselSlider3> {
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
                               "Terjadi $fenomena sebesar: ${Format.convertTo(deltaipm.abs(), 2)}",
-                               style: const TextStyle(fontSize:13 ),
+                              style: const TextStyle(fontSize: 13),
                             ),
                           ),
                         ],
