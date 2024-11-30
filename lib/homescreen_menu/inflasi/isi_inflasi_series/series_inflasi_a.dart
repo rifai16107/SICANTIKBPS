@@ -108,7 +108,7 @@ class _SeriesInflasiAState extends State<SeriesInflasiA> {
                                   child: Container(
                                     height: screenHeight * 0.08,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 5),
                                     color: Colors.green,
                                     child: const Center(
                                       child: Text(
@@ -124,7 +124,7 @@ class _SeriesInflasiAState extends State<SeriesInflasiA> {
                                   child: Container(
                                     height: screenHeight * 0.08,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 5),
                                     color: Colors.green,
                                     child: const Center(
                                       child: Text(
@@ -140,14 +140,22 @@ class _SeriesInflasiAState extends State<SeriesInflasiA> {
                                   child: Container(
                                     height: screenHeight * 0.08,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 5),
                                     color: Colors.green,
-                                    child: const Center(
-                                      child: Text(
-                                        "Inflasi M to M",
-                                        style: TextStyle(color: Colors.white),
+                                    child: Column(
+                                        children: const [
+                                          Text(
+                                            "Inflasi",
+                                             style: TextStyle(color: Colors.white),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                          Text(
+                                            "M to M",
+                                             style: TextStyle(color: Colors.white),
+                                          ),
+                                          
+                                        ],
                                       ),
-                                    ),
                                   ),
                                 ),
                                 Flexible(
@@ -156,14 +164,22 @@ class _SeriesInflasiAState extends State<SeriesInflasiA> {
                                   child: Container(
                                     height: screenHeight * 0.08,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 5),
                                     color: Colors.green,
-                                    child: const Center(
-                                      child: Text(
-                                        "Inflasi Y to D",
-                                        style: TextStyle(color: Colors.white),
+                                    child: Column(
+                                        children: const [
+                                          Text(
+                                            "Inflasi",
+                                             style: TextStyle(color: Colors.white),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                          Text(
+                                            "Y to D",
+                                             style: TextStyle(color: Colors.white),
+                                          ),
+                                          
+                                        ],
                                       ),
-                                    ),
                                   ),
                                 ),
                                 Flexible(
@@ -172,14 +188,22 @@ class _SeriesInflasiAState extends State<SeriesInflasiA> {
                                   child: Container(
                                     height: screenHeight * 0.08,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 5),
                                     color: Colors.green,
-                                    child: const Center(
-                                      child: Text(
-                                        "Inflasi Y on Y",
-                                        style: TextStyle(color: Colors.white),
+                                    child: Column(
+                                        children: const [
+                                          Text(
+                                            "Inflasi",
+                                             style: TextStyle(color: Colors.white),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                          Text(
+                                            "Y on Y",
+                                             style: TextStyle(color: Colors.white),
+                                          ),
+                                          
+                                        ],
                                       ),
-                                    ),
                                   ),
                                 ),
                               ],
