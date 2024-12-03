@@ -1,21 +1,21 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/restAPI/repository_perumahan_masak.dart';
+import 'package:bps_cilacap/restAPI/repository_perumahan_atap.dart';
 import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/body_grafik_rumah_masak.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/body_grafik_rumah_atap.dart';
 
-class PerumahanMasak extends StatefulWidget {
-  const PerumahanMasak({Key? key}) : super(key: key);
+class PerumahanAtap extends StatefulWidget {
+  const PerumahanAtap({Key? key}) : super(key: key);
 
   @override
-  State<PerumahanMasak> createState() => _PerumahanMasakState();
+  State<PerumahanAtap> createState() => _PerumahanAtapState();
 }
 
-RepositoryMasak repositorymasak = RepositoryMasak();
+RepositoryAtap repositoryatap = RepositoryAtap();
 
-class _PerumahanMasakState extends State<PerumahanMasak> {
+class _PerumahanAtapState extends State<PerumahanAtap> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -26,7 +26,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'INDIKATOR PERUMAHAN (BHN BAKAR MASAK)',
+          'INDIKATOR PERUMAHAN (ATAP)',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -43,65 +43,79 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
         ),
       ),
       body: FutureBuilder(
-        future: repositorymasak.getData(),
+        future: repositoryatap.getData(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            List isimasak = snapshot.data as List;
+            List isiatap = snapshot.data as List;
             return ListView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String th1 = isimasak[index = 0].tahun;
-                String th2 = isimasak[index = 6].tahun;
-                String th3 = isimasak[index = 12].tahun;
+                String th1 = isiatap[index = 0].tahun;
+                String th2 = isiatap[index = 8].tahun;
+                String th3 = isiatap[index = 16].tahun;
 
-                String rincian_1 = isimasak[index = 0].rincian;
-                String rincian_2 = isimasak[index = 1].rincian;
-                String rincian_3 = isimasak[index = 2].rincian;
-                String rincian_4 = isimasak[index = 3].rincian;
-                String rincian_5 = isimasak[index = 4].rincian;
-                String rincian_6 = isimasak[index = 5].rincian;
+                String rincian_1 = isiatap[index = 0].rincian;
+                String rincian_2 = isiatap[index = 1].rincian;
+                String rincian_3 = isiatap[index = 2].rincian;
+                String rincian_4 = isiatap[index = 3].rincian;
+                String rincian_5 = isiatap[index = 4].rincian;
+                String rincian_6 = isiatap[index = 5].rincian;
+                String rincian_7 = isiatap[index = 6].rincian;
+                String rincian_8 = isiatap[index = 7].rincian;
 
                 //tahun n-2
                 double persentase_1 =
-                    double.parse(isimasak[index = 0].persentase);
+                    double.parse(isiatap[index = 0].persentase);
                 double persentase_2 =
-                    double.parse(isimasak[index = 1].persentase);
+                    double.parse(isiatap[index = 1].persentase);
                 double persentase_3 =
-                    double.parse(isimasak[index = 2].persentase);
+                    double.parse(isiatap[index = 2].persentase);
                 double persentase_4 =
-                    double.parse(isimasak[index = 3].persentase);
+                    double.parse(isiatap[index = 3].persentase);
                 double persentase_5 =
-                    double.parse(isimasak[index = 4].persentase);
+                    double.parse(isiatap[index = 4].persentase);
                 double persentase_6 =
-                    double.parse(isimasak[index = 5].persentase);
+                    double.parse(isiatap[index = 5].persentase);
+                double persentase_7 =
+                    double.parse(isiatap[index = 6].persentase);
+                double persentase_8 =
+                    double.parse(isiatap[index = 7].persentase);
 
                 //tahun n-1
-                double persentase_7 =
-                    double.parse(isimasak[index = 6].persentase);
-                double persentase_8 =
-                    double.parse(isimasak[index = 7].persentase);
                 double persentase_9 =
-                    double.parse(isimasak[index = 8].persentase);
+                    double.parse(isiatap[index = 8].persentase);
                 double persentase_10 =
-                    double.parse(isimasak[index = 9].persentase);
+                    double.parse(isiatap[index = 9].persentase);
                 double persentase_11 =
-                    double.parse(isimasak[index = 10].persentase);
+                    double.parse(isiatap[index = 10].persentase);
                 double persentase_12 =
-                    double.parse(isimasak[index = 11].persentase);
+                    double.parse(isiatap[index = 11].persentase);
+                double persentase_13 =
+                    double.parse(isiatap[index = 12].persentase);
+                double persentase_14 =
+                    double.parse(isiatap[index = 13].persentase);
+                double persentase_15 =
+                    double.parse(isiatap[index = 14].persentase);
+                double persentase_16 =
+                    double.parse(isiatap[index = 15].persentase);
 
                 //tahun n
-                double persentase_13 =
-                    double.parse(isimasak[index = 12].persentase);
-                double persentase_14 =
-                    double.parse(isimasak[index = 13].persentase);
-                double persentase_15 =
-                    double.parse(isimasak[index = 14].persentase);
-                double persentase_16 =
-                    double.parse(isimasak[index = 15].persentase);
                 double persentase_17 =
-                    double.parse(isimasak[index = 16].persentase);
+                    double.parse(isiatap[index = 16].persentase);
                 double persentase_18 =
-                    double.parse(isimasak[index = 17].persentase);
+                    double.parse(isiatap[index = 17].persentase);
+                double persentase_19 =
+                    double.parse(isiatap[index = 18].persentase);
+                double persentase_20 =
+                    double.parse(isiatap[index = 19].persentase);
+                double persentase_21 =
+                    double.parse(isiatap[index = 20].persentase);
+                double persentase_22 =
+                    double.parse(isiatap[index = 21].persentase);
+                double persentase_23 =
+                    double.parse(isiatap[index = 22].persentase);
+                double persentase_24 =
+                    double.parse(isiatap[index = 23].persentase);
 
                 // grafik
                 return Container(
@@ -112,7 +126,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                           padding: const EdgeInsets.symmetric(
                               vertical: 10, horizontal: 2),
                           child: const Text(
-                            "Persentase Rumah Tangga Menurut Bahan Bakar Utama Untuk Memasak",
+                            "Persentase Rumah Tangga Menurut Jenis Atap Bangunan Tempat Tinggal Yang Terluas",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontWeight: FontWeight.bold),
                           )),
@@ -124,14 +138,13 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                               children: [
                                 Flexible(
                                   fit: FlexFit.tight,
-                                  flex: 4,
+                                  flex: 3,
                                   child: Container(
-                                    height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 15),
                                     color: Colors.green,
                                     child: const Text(
-                                      "Bahan Bakar Memasak",
+                                      "Jenis Atap",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
@@ -143,9 +156,8 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 15),
                                     color: Colors.green,
                                     child: Text(
                                       th1,
@@ -160,9 +172,8 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 15),
                                     color: Colors.green,
                                     child: Text(
                                       th2,
@@ -177,9 +188,8 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 15),
                                     color: Colors.green,
                                     child: Text(
                                       th3,
@@ -193,7 +203,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                               ],
                             ),
 
-                            // Listrik
+                            // Beton
 
                             Row(children: [
                               Flexible(
@@ -235,7 +245,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 2, vertical: 4),
                                   child: Text(
-                                    Format.convertTo(persentase_7, 2),
+                                    Format.convertTo(persentase_9, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -248,9 +258,9 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 4),
+                                      horizontal: 2, vertical: 4),
                                   child: Text(
-                                    Format.convertTo(persentase_13, 2),
+                                    Format.convertTo(persentase_17, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -261,8 +271,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                             ]),
                             const Divider(),
 
-                            // Gas Elpiji/Gas Kota/Biogas
-
+                            // Genteng
                             Row(children: [
                               Flexible(
                                 fit: FlexFit.tight,
@@ -301,7 +310,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_8, 2),
+                                    Format.convertTo(persentase_10, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -314,9 +323,9 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 2),
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_14, 2),
+                                    Format.convertTo(persentase_18, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -327,8 +336,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                             ]),
                             const Divider(),
 
-                            // Minyak tanah/Arang/Briket/Kayu Bakar
-
+                            // Seng
                             Row(children: [
                               Flexible(
                                 fit: FlexFit.tight,
@@ -367,7 +375,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_9, 2),
+                                    Format.convertTo(persentase_11, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -380,9 +388,9 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 2),
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_15, 2),
+                                    Format.convertTo(persentase_19, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -393,8 +401,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                             ]),
                             const Divider(),
 
-                            // Lainnya
-
+                            // Asbes
                             Row(children: [
                               Flexible(
                                 fit: FlexFit.tight,
@@ -433,7 +440,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_10, 2),
+                                    Format.convertTo(persentase_12, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -446,9 +453,9 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 2),
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_16, 2),
+                                    Format.convertTo(persentase_20, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -459,8 +466,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                             ]),
                             const Divider(),
 
-                            // Tidak memasak
-
+                            // Sirap/Kayu/Bambu
                             Row(children: [
                               Flexible(
                                 fit: FlexFit.tight,
@@ -499,7 +505,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_11, 2),
+                                    Format.convertTo(persentase_13, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -512,9 +518,9 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 2),
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_17, 2),
+                                    Format.convertTo(persentase_21, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontSize: 13,
@@ -523,11 +529,9 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                 ),
                               ),
                             ]),
-                            const Divider(
-                              thickness: 2,
-                            ),
+                            const Divider(),
 
-                            //  Total
+                            //  Jerami/Ijuk/daun/rumbia
                             Row(children: [
                               Flexible(
                                 fit: FlexFit.tight,
@@ -539,7 +543,6 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                     rincian_6,
                                     textAlign: TextAlign.left,
                                     style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
                                       fontSize: 13,
                                     ),
                                   ),
@@ -555,6 +558,123 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                     Format.convertTo(persentase_6, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_14, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_22, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ]),
+                            const Divider(),
+
+                            //  Lainnya
+                            Row(children: [
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 3,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    rincian_7,
+                                    textAlign: TextAlign.left,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_7, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_15, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_23, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ]),
+                            const Divider(
+                              thickness: 2,
+                            ),
+
+                            // Total
+                            Row(children: [
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 3,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    rincian_8,
+                                    textAlign: TextAlign.left,
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 13,
                                     ),
@@ -568,7 +688,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_12, 2),
+                                    Format.convertTo(persentase_8, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -582,9 +702,25 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 2),
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_18, 2),
+                                    Format.convertTo(persentase_16, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_24, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -644,7 +780,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
           Navigator.push(
               context,
               CustomPageRoute(
-                  child: const BodyGrafikRumahMasak(),
+                  child: const BodyGrafikRumahAtap(),
                   direction: AxisDirection.left));
         },
         mini: true,

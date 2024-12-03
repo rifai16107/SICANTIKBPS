@@ -1,21 +1,21 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/restAPI/repository_perumahan_penerangan.dart';
+import 'package:bps_cilacap/restAPI/repository_perumahan_dinding.dart';
 import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/body_grafik_rumah_penerangan.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/body_grafik_rumah_dinding.dart';
 
-class PerumahanPenerangan extends StatefulWidget {
-  const PerumahanPenerangan({Key? key}) : super(key: key);
+class PerumahanDinding extends StatefulWidget {
+  const PerumahanDinding({Key? key}) : super(key: key);
 
   @override
-  State<PerumahanPenerangan> createState() => _PerumahanPeneranganState();
+  State<PerumahanDinding> createState() => _PerumahanDindingState();
 }
 
-RepositoryPenerangan repositorypenerangan = RepositoryPenerangan();
+RepositoryDinding repositorydinding = RepositoryDinding();
 
-class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
+class _PerumahanDindingState extends State<PerumahanDinding> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -26,7 +26,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'INDIKATOR PERUMAHAN (PENERANGAN)',
+          'INDIKATOR PERUMAHAN (DINDING)',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -43,51 +43,65 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
         ),
       ),
       body: FutureBuilder(
-        future: repositorypenerangan.getData(),
+        future: repositorydinding.getData(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            List isipenerangan = snapshot.data as List;
+            List isidinding = snapshot.data as List;
             return ListView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String th1 = isipenerangan[index = 0].tahun;
-                String th2 = isipenerangan[index = 4].tahun;
-                String th3 = isipenerangan[index = 8].tahun;
+                String th1 = isidinding[index = 0].tahun;
+                String th2 = isidinding[index = 6].tahun;
+                String th3 = isidinding[index = 12].tahun;
 
-                String rincian_1 = isipenerangan[index = 0].rincian;
-                String rincian_2 = isipenerangan[index = 1].rincian;
-                String rincian_3 = isipenerangan[index = 2].rincian;
-                String rincian_4 = isipenerangan[index = 3].rincian;
+                String rincian_1 = isidinding[index = 0].rincian;
+                String rincian_2 = isidinding[index = 1].rincian;
+                String rincian_3 = isidinding[index = 2].rincian;
+                String rincian_4 = isidinding[index = 3].rincian;
+                String rincian_5 = isidinding[index = 4].rincian;
+                String rincian_6 = isidinding[index = 5].rincian;
 
                 //tahun n-2
                 double persentase_1 =
-                    double.parse(isipenerangan[index = 0].persentase);
+                    double.parse(isidinding[index = 0].persentase);
                 double persentase_2 =
-                    double.parse(isipenerangan[index = 1].persentase);
+                    double.parse(isidinding[index = 1].persentase);
                 double persentase_3 =
-                    double.parse(isipenerangan[index = 2].persentase);
+                    double.parse(isidinding[index = 2].persentase);
                 double persentase_4 =
-                    double.parse(isipenerangan[index = 3].persentase);
-
+                    double.parse(isidinding[index = 3].persentase);
                 double persentase_5 =
-                    double.parse(isipenerangan[index = 4].persentase);
+                    double.parse(isidinding[index = 4].persentase);
                 double persentase_6 =
-                    double.parse(isipenerangan[index = 5].persentase);
+                    double.parse(isidinding[index = 5].persentase);
+
                 //tahun n-1
                 double persentase_7 =
-                    double.parse(isipenerangan[index = 6].persentase);
+                    double.parse(isidinding[index = 6].persentase);
                 double persentase_8 =
-                    double.parse(isipenerangan[index = 7].persentase);
+                    double.parse(isidinding[index = 7].persentase);
+                double persentase_9 =
+                    double.parse(isidinding[index = 8].persentase);
+                double persentase_10 =
+                    double.parse(isidinding[index = 9].persentase);
+                double persentase_11 =
+                    double.parse(isidinding[index = 10].persentase);
+                double persentase_12 =
+                    double.parse(isidinding[index = 11].persentase);
 
                 //tahun n
-                double persentase_9 =
-                    double.parse(isipenerangan[index = 8].persentase);
-                double persentase_10 =
-                    double.parse(isipenerangan[index = 9].persentase);
-                double persentase_11 =
-                    double.parse(isipenerangan[index = 10].persentase);
-                double persentase_12 =
-                    double.parse(isipenerangan[index = 11].persentase);
+                double persentase_13 =
+                    double.parse(isidinding[index = 12].persentase);
+                double persentase_14 =
+                    double.parse(isidinding[index = 13].persentase);
+                double persentase_15 =
+                    double.parse(isidinding[index = 14].persentase);
+                double persentase_16 =
+                    double.parse(isidinding[index = 15].persentase);
+                double persentase_17 =
+                    double.parse(isidinding[index = 16].persentase);
+                double persentase_18 =
+                    double.parse(isidinding[index = 17].persentase);
 
                 // grafik
                 return Container(
@@ -98,7 +112,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                           padding: const EdgeInsets.symmetric(
                               vertical: 10, horizontal: 2),
                           child: const Text(
-                            "Persentase Rumah Tangga Menurut Sumber Penerangan Utama Bangunan Tempat Tinggal",
+                            "Persentase Rumah Tangga Menurut Jenis Dinding Bangunan Tempat Tinggal Yang Terluas",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontWeight: FontWeight.bold),
                           )),
@@ -110,13 +124,13 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                               children: [
                                 Flexible(
                                   fit: FlexFit.tight,
-                                  flex: 4,
+                                  flex: 3,
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 2, vertical: 15),
                                     color: Colors.green,
                                     child: const Text(
-                                      "Sumber Penerangan",
+                                      "Jenis Dinding",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
@@ -175,16 +189,16 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                               ],
                             ),
 
-                            // Listrik PLN
+                            // Tembok
 
                             Row(children: [
                               Flexible(
                                 fit: FlexFit.tight,
-                                flex: 2,
+                                flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
                                     horizontal: 2,
-                                    vertical: 6,
+                                    vertical: 4,
                                   ),
                                   child: Text(
                                     rincian_1,
@@ -197,10 +211,10 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                               ),
                               Flexible(
                                 fit: FlexFit.tight,
-                                flex: 3,
+                                flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 6),
+                                      horizontal: 2, vertical: 4),
                                   child: Text(
                                     Format.convertTo(persentase_1, 2),
                                     textAlign: TextAlign.right,
@@ -215,137 +229,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 6, vertical: 6),
-                                  child: Text(
-                                    Format.convertTo(persentase_5, 2),
-                                    textAlign: TextAlign.right,
-                                    style: const TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 2,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 6),
-                                  child: Text(
-                                    Format.convertTo(persentase_9, 2),
-                                    textAlign: TextAlign.right,
-                                    style: const TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ]),
-                            const Divider(),
-
-                            // Non PLN
-                            Row(children: [
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 3,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 6),
-                                  child: Text(
-                                    rincian_2,
-                                    textAlign: TextAlign.left,
-                                    style: const TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 2,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 6),
-                                  child: Text(
-                                    Format.convertTo(persentase_2, 2),
-                                    textAlign: TextAlign.right,
-                                    style: const TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 2,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 6, vertical: 6),
-                                  child: Text(
-                                    Format.convertTo(persentase_6, 2),
-                                    textAlign: TextAlign.right,
-                                    style: const TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 2,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 6),
-                                  child: Text(
-                                    Format.convertTo(persentase_10, 2),
-                                    textAlign: TextAlign.right,
-                                    style: const TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ]),
-                            const Divider(),
-
-                            // Non Listrik
-                            Row(children: [
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 3,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 6),
-                                  child: Text(
-                                    rincian_3,
-                                    textAlign: TextAlign.left,
-                                    style: const TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 2,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 6),
-                                  child: Text(
-                                    Format.convertTo(persentase_3, 2),
-                                    textAlign: TextAlign.right,
-                                    style: const TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 2,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 6, vertical: 6),
+                                      horizontal: 2, vertical: 4),
                                   child: Text(
                                     Format.convertTo(persentase_7, 2),
                                     textAlign: TextAlign.right,
@@ -360,7 +244,252 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 6),
+                                      horizontal: 2, vertical: 4),
+                                  child: Text(
+                                    Format.convertTo(persentase_13, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ]),
+                            const Divider(),
+
+                            // Plesteran Anyaman Bambu/Kawat
+                            Row(children: [
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 3,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    rincian_2,
+                                    textAlign: TextAlign.left,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_2, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_8, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_14, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ]),
+                            const Divider(),
+
+                            // Kayu/Batang Kayu
+                            Row(children: [
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 3,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    rincian_3,
+                                    textAlign: TextAlign.left,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_3, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_9, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_15, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ]),
+                            const Divider(),
+
+                            // Bambu/Anyaman Bambu
+                            Row(children: [
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 3,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    rincian_4,
+                                    textAlign: TextAlign.left,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_4, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_10, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_16, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ]),
+                            const Divider(),
+
+                            // Lainnya
+                            Row(children: [
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 3,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    rincian_5,
+                                    textAlign: TextAlign.left,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_5, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
                                     Format.convertTo(persentase_11, 2),
                                     textAlign: TextAlign.right,
@@ -370,21 +499,35 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                   ),
                                 ),
                               ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_17, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ]),
-                             const Divider(
+                            const Divider(
                               thickness: 2,
                             ),
-
-                            // TOTAL
+                            //  Total
                             Row(children: [
                               Flexible(
                                 fit: FlexFit.tight,
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 6),
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
-                                    rincian_4,
+                                    rincian_6,
                                     textAlign: TextAlign.left,
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -398,9 +541,9 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 6),
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
-                                    Format.convertTo(persentase_4, 2),
+                                    Format.convertTo(persentase_6, 2),
                                     textAlign: TextAlign.right,
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -414,23 +557,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 6, vertical: 6),
-                                  child: Text(
-                                    Format.convertTo(persentase_8, 2),
-                                    textAlign: TextAlign.right,
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Flexible(
-                                fit: FlexFit.tight,
-                                flex: 2,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 6),
+                                      horizontal: 2, vertical: 2),
                                   child: Text(
                                     Format.convertTo(persentase_12, 2),
                                     textAlign: TextAlign.right,
@@ -441,8 +568,23 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                   ),
                                 ),
                               ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 2, vertical: 2),
+                                  child: Text(
+                                    Format.convertTo(persentase_18, 2),
+                                    textAlign: TextAlign.right,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ]),
-
                             const Divider(
                               thickness: 2,
                             ),
@@ -493,7 +635,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
           Navigator.push(
               context,
               CustomPageRoute(
-                  child: const BodyGrafikRumahPenerangan(),
+                  child: const BodyGrafikRumahDinding(),
                   direction: AxisDirection.left));
         },
         mini: true,

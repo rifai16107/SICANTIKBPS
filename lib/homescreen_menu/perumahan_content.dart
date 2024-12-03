@@ -1,13 +1,8 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings, prefer_const_literals_to_create_immutables
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/restAPI/repository_perumahan_lantai.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_atap.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_lantai.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_dinding.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_penerangan.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_minum.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_masak.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp_content.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot_content.dart';
 import 'package:flutter/material.dart';
 
 class perumahanContent extends StatefulWidget {
@@ -16,8 +11,6 @@ class perumahanContent extends StatefulWidget {
   @override
   State<perumahanContent> createState() => _perumahanContentState();
 }
-
-RepositoryLantai repositorylantai = RepositoryLantai();
 
 class _perumahanContentState extends State<perumahanContent> {
   @override
@@ -29,7 +22,7 @@ class _perumahanContentState extends State<perumahanContent> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'INDIKATOR PERUMAHAN',
+          'PERUMAHAN',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -44,45 +37,6 @@ class _perumahanContentState extends State<perumahanContent> {
             ),
           ),
         ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                showModalBottomSheet(
-                  backgroundColor: Colors.white,
-                  context: context,
-                  builder: (context) {
-                    return ListView(children: [
-                      Column(
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.all(5),
-                            alignment: Alignment.centerLeft,
-                            child: const Text(
-                              "Perumahan",
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(5),
-                            alignment: Alignment.centerLeft,
-                            child: Column(
-                              children: [
-                                const Text(
-                                  "   Perumahan merupakan salah ukuran kesejahteraan suatu rumah tangga, secara umum semakin baik perekonomian suatu rumah tangga maka akan semakin bagus kondisi rumahnya. Kelayakan suatu bangunan tempat tinggal diantaranya dapat diukur dari kondisi fisik bangunan ataupun fasilitas-fasilitas pokok yang ada pada bangunan tersebut, seperti kondisi dinding, lantai dan atap bangunan serta fasilitas penerangan dan sumber air minum yang digunakan oleh suatu rumah tangga. Semakin tinggi persentase pada kelompok bangunan atau rumah tangga dengan fasilitas perumahan yang baik atau kondisi bangunan yang baik semakin tinggi persentasenya, maka dapat dikatakan kondisi daerah suatu daerah semakin baik/sejahtera",
-                                  textAlign: TextAlign.justify,
-                                ),
-                                const Divider(),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ]);
-                  },
-                );
-              },
-              icon: const Icon(Icons.info_outlined))
-        ],
       ),
       body: Container(
         padding: const EdgeInsets.all(2),
@@ -106,7 +60,7 @@ class _perumahanContentState extends State<perumahanContent> {
                               horizontal: 5,
                             ),
                             child: Text(
-                              "Indikator Perumahan Kabupaten Cilacap",
+                              "Indikator Perumahan Kabupaten Cilacap dan Kabupaten/Kota Lainnya di Jawa Tengah",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15),
                               textAlign: TextAlign.center,
@@ -136,24 +90,24 @@ class _perumahanContentState extends State<perumahanContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const PerumahanLantai(),
+                          child: const perumahanclpContent(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.08,
+                    height: screenHeight * 0.1,
                     child: Row(
                       children: [
                         const Flexible(
-                          flex: 16,
+                          flex: 10,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Persentase Rumah Tangga Menurut Jenis Lantai yang Terluas",
+                            "Kondisi Perumahan di Kabupaten Cilacap",
                             textAlign: TextAlign.center,
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -176,24 +130,24 @@ class _perumahanContentState extends State<perumahanContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const PerumahanAtap(),
+                          child: const perumahankabkotContent(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
                     width: screenWidth,
-                    height: screenHeight * 0.08,
+                    height: screenHeight * 0.1,
                     child: Row(
                       children: [
                         const Flexible(
-                          flex: 16,
+                          flex: 10,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Persentase Rumah Tangga Menurut Jenis Atap yang Terluas",
+                            "Kondisi Perumahan Kabupaten/Kota di Jawa Tengah",
                             textAlign: TextAlign.center,
                           ),
                         ),
                         const Flexible(
-                          flex: 2,
+                          flex: 1,
                           fit: FlexFit.tight,
                           child: Icon(Icons.arrow_right),
                         ),
@@ -202,167 +156,7 @@ class _perumahanContentState extends State<perumahanContent> {
               ),
             ),
             const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const PerumahanDinding(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Persentase Rumah Tangga Menurut Jenis Dinding yang Terluas",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 2,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const PerumahanPenerangan(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Persentase Rumah Tangga Menurut Sumber Penerangan Utama",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 2,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const PerumahanMinum(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Persentase Rumah Tangga Menurut Sumber Air Minum Utama",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 2,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
-              color: Colors.transparent,
-            ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      CustomPageRoute(
-                          child: const PerumahanMasak(),
-                          direction: AxisDirection.left));
-                },
-                child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        const Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Persentase Rumah Tangga Menurut Bahan Bakar Utama Untuk Memasak",
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const Flexible(
-                          flex: 2,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    )),
-              ),
-            ),
-            const Divider(
-              height: 5,
+              height: 50,
               color: Colors.transparent,
             ),
             Flexible(

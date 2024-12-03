@@ -3,7 +3,7 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/ketenagakerjaan/tenaga_kerja.dart';
 import 'package:bps_cilacap/ketenagakerjaan/tenaga_kerja_kabkot.dart';
-import 'package:bps_cilacap/restAPI/repository_inflasi.dart';
+
 import 'package:flutter/material.dart';
 
 class ketenagakerjaanContent extends StatefulWidget {
@@ -12,8 +12,6 @@ class ketenagakerjaanContent extends StatefulWidget {
   @override
   State<ketenagakerjaanContent> createState() => _ketenagakerjaanContentState();
 }
-
-RepositoryInflasi repositoryinflasi = RepositoryInflasi();
 
 class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
   @override
@@ -330,7 +328,7 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                               horizontal: 5,
                             ),
                             child: Text(
-                              "Kondisi Ketenagakerjaan Kabupaten Cilacap dan Kabupaten Kota Di Jawa Tengah",
+                              "Kondisi Ketenagakerjaan Kabupaten Cilacap dan Kabupaten/Kota Lainnya Di Jawa Tengah",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15),
                               textAlign: TextAlign.center,
