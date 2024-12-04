@@ -32,7 +32,7 @@ class NakerkabkotLapusB extends StatelessWidget {
 }
 
 Future<List<Data>> fetchData() async {
-  var url = Uri.parse('https://bps-3301-asap.my.id/api/nakerkabkot-lapus');
+  var url = Uri.parse('https://bps-3301-asap.my.id/api/rumahkabkot-lantai');
   final response = await http.get(url);
   if (response.statusCode == 200) {
     var cokk = jsonDecode(response.body);
