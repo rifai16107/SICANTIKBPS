@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/body_nakerlapus_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahatap/body_atap_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesNakerLapusKabkot extends StatefulWidget {
-  const SeriesNakerLapusKabkot({super.key});
+class SeriesRumahatapKabkot extends StatefulWidget {
+  const SeriesRumahatapKabkot({super.key});
 
   @override
-  State<SeriesNakerLapusKabkot> createState() => _SeriesNakerLapusKabkot();
+  State<SeriesRumahatapKabkot> createState() => _SeriesRumahatapKabkot();
 }
 
-class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
+class _SeriesRumahatapKabkot extends State<SeriesRumahatapKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -19,7 +19,7 @@ class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PENDUDUK BEKERJA",
+          "INDIKATOR PERUMAHAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -44,7 +44,7 @@ class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
             child: Column(
               children: const [
                 Text(
-                  ' Penduduk Usia 15+ yang Bekerja Menurut Kabupaten/Kota dan Lapangan Pekerjaan Utama di Provinsi Jawa Tengah ',
+                  ' Persentase Rumah Tangga menurut Kabupaten/Kota dan Bahan Bangunan Utama Atap Rumah Terluas di Provinsi Jawa Tengah ',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -71,7 +71,7 @@ class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 24,
-                  child: BodyNakerKabkotLapus(),
+                  child: BodyRumahkabkotAtap(),
                 ),
               ],
             ),

@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:bps_cilacap/homescreen_menu/pendidikan/pendidikan_kabkot/sttb_kabkot/body_grafik_sttb_kabkot.dart';
 
 void main() => runApp(const RumahkabkotLantaiC());
 
@@ -807,7 +806,7 @@ class CatatanWidget extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return SizedBox(
       width: screenWidth,
-      height: 0.35 * screenHeight,
+      height: 0.28 * screenHeight,
       child: Column(
         children: [
           Column(
@@ -876,36 +875,6 @@ class CatatanWidget extends StatelessWidget {
                           fontFamily: 'Roboto',
                           color: Colors.black,
                           fontWeight: FontWeight.normal)),
-                ),
-              ),
-              SizedBox(
-                width: screenWidth,
-                height: screenHeight * 0.08,
-                child: Row(
-                  children: [
-                    IconButton(
-                      icon: const Icon(Icons.pie_chart, size: 35),
-                      color: Colors.blue,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) {
-                              return const BodyGrafikSttbKabkot();
-                            },
-                          ),
-                        );
-                      },
-                    ),
-                    SizedBox(
-                      width: screenWidth * 0.45,
-                      child: const Text(
-                        "Grafik jenis Lantai Terluas",
-                        style: TextStyle(fontSize: 11.5),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ],
                 ),
               ),
               const Divider(
