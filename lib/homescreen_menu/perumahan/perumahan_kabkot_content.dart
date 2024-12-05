@@ -3,7 +3,7 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/restAPI/repository_perumahan_lantai.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/perumahan_atap.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/perumahan_lantai.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahlantai/series_lantai_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/perumahan_dinding.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/perumahan_penerangan.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/perumahan_minum.dart';
@@ -136,7 +136,7 @@ class _perumahankabkotContentState extends State<perumahankabkotContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const PerumahanLantai(),
+                          child: const SeriesRumahlantaiKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
