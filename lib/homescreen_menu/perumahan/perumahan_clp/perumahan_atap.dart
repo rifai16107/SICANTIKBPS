@@ -131,7 +131,7 @@ class _PerumahanAtapState extends State<PerumahanAtap> {
                             style: TextStyle(fontWeight: FontWeight.bold),
                           )),
                       SizedBox(
-                        height: screenHeight * 0.60,
+                        height: screenHeight * 0.65,
                         child: Column(
                           children: [
                             Row(

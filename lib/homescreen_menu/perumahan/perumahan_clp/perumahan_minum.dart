@@ -147,7 +147,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                             style: TextStyle(fontWeight: FontWeight.bold),
                           )),
                       SizedBox(
-                        height: screenHeight * 0.80,
+                        height: screenHeight * 0.90,
                         child: Column(
                           children: [
                             Row(
@@ -157,7 +157,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                   flex: 4,
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 15),
+                                        horizontal: 2, vertical: 12),
                                     color: Colors.green,
                                     child: const Text(
                                       "Sumber Air Minum",
@@ -173,7 +173,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                   flex: 2,
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 15),
+                                        horizontal: 2, vertical: 12),
                                     color: Colors.green,
                                     child: Text(
                                       th1,
@@ -189,7 +189,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                   flex: 2,
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 15),
+                                        horizontal: 2, vertical: 12),
                                     color: Colors.green,
                                     child: Text(
                                       th2,
@@ -205,7 +205,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                   flex: 2,
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 15),
+                                        horizontal: 2, vertical: 12),
                                     color: Colors.green,
                                     child: Text(
                                       th3,
@@ -228,7 +228,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
                                     horizontal: 2,
-                                    vertical: 4,
+                                    vertical: 2,
                                   ),
                                   child: Text(
                                     rincian_1,
@@ -244,7 +244,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 4),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_1, 2),
                                     textAlign: TextAlign.right,
@@ -259,7 +259,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 4),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_11, 2),
                                     textAlign: TextAlign.right,
@@ -274,7 +274,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 4),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_21, 2),
                                     textAlign: TextAlign.right,
@@ -294,7 +294,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_2,
                                     textAlign: TextAlign.left,
@@ -309,7 +309,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_2, 2),
                                     textAlign: TextAlign.right,
@@ -324,7 +324,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_12, 2),
                                     textAlign: TextAlign.right,
@@ -339,7 +339,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_22, 2),
                                     textAlign: TextAlign.right,
@@ -359,7 +359,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_3,
                                     textAlign: TextAlign.left,
@@ -374,7 +374,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_3, 2),
                                     textAlign: TextAlign.right,
@@ -389,7 +389,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_13, 2),
                                     textAlign: TextAlign.right,
@@ -404,7 +404,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_23, 2),
                                     textAlign: TextAlign.right,
@@ -424,7 +424,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_4,
                                     textAlign: TextAlign.left,
@@ -439,7 +439,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_4, 2),
                                     textAlign: TextAlign.right,
@@ -454,7 +454,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_14, 2),
                                     textAlign: TextAlign.right,
@@ -469,7 +469,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_24, 2),
                                     textAlign: TextAlign.right,
@@ -489,7 +489,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_5,
                                     textAlign: TextAlign.left,
@@ -504,7 +504,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_5, 2),
                                     textAlign: TextAlign.right,
@@ -519,7 +519,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_15, 2),
                                     textAlign: TextAlign.right,
@@ -534,7 +534,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_25, 2),
                                     textAlign: TextAlign.right,
@@ -554,7 +554,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_6,
                                     textAlign: TextAlign.left,
@@ -569,7 +569,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_6, 2),
                                     textAlign: TextAlign.right,
@@ -584,7 +584,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_16, 2),
                                     textAlign: TextAlign.right,
@@ -599,7 +599,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_26, 2),
                                     textAlign: TextAlign.right,
@@ -619,7 +619,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_7,
                                     textAlign: TextAlign.left,
@@ -634,7 +634,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_7, 2),
                                     textAlign: TextAlign.right,
@@ -649,7 +649,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_17, 2),
                                     textAlign: TextAlign.right,
@@ -664,7 +664,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_27, 2),
                                     textAlign: TextAlign.right,
@@ -684,7 +684,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_8,
                                     textAlign: TextAlign.left,
@@ -699,7 +699,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_8, 2),
                                     textAlign: TextAlign.right,
@@ -714,7 +714,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_18, 2),
                                     textAlign: TextAlign.right,
@@ -729,7 +729,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_28, 2),
                                     textAlign: TextAlign.right,
@@ -749,7 +749,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_9,
                                     textAlign: TextAlign.left,
@@ -764,7 +764,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_9, 2),
                                     textAlign: TextAlign.right,
@@ -779,7 +779,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_19, 2),
                                     textAlign: TextAlign.right,
@@ -794,7 +794,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_29, 2),
                                     textAlign: TextAlign.right,
@@ -816,7 +816,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 3,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     rincian_10,
                                     textAlign: TextAlign.left,
@@ -832,7 +832,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_10, 2),
                                     textAlign: TextAlign.right,
@@ -848,7 +848,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 2),
+                                      horizontal: 2, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_20, 2),
                                     textAlign: TextAlign.right,
@@ -864,7 +864,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                 flex: 2,
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 2),
+                                      horizontal: 10, vertical: 1),
                                   child: Text(
                                     Format.convertTo(persentase_30, 2),
                                     textAlign: TextAlign.right,
