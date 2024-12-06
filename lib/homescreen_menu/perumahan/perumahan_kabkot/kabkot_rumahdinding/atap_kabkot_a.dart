@@ -1,13 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const NakerkabkotLapusC());
+void main() => runApp(const RumahkabkotDindingA());
 
-class NakerkabkotLapusC extends StatelessWidget {
-  const NakerkabkotLapusC({super.key});
+class RumahkabkotDindingA extends StatelessWidget {
+  const RumahkabkotDindingA({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +31,7 @@ class NakerkabkotLapusC extends StatelessWidget {
 }
 
 Future<List<Data>> fetchData() async {
-  var url = Uri.parse('https://bps-3301-asap.my.id/api/nakerkabkot-lapus');
+  var url = Uri.parse('https://bps-3301-asap.my.id/api/rumahkabkot-dinding');
   final response = await http.get(url);
   if (response.statusCode == 200) {
     var cokk = jsonDecode(response.body);
@@ -46,26 +45,35 @@ Future<List<Data>> fetchData() async {
 class Data {
   final int id;
   final String wilayah;
-  final String lapus1_n3;
-  final String lapus2_n3;
-  final String lapus3_n3;
+  final String tembok_n1;
+  final String plesteranyamanbambu_n1;
+  final String kayu_n1;
+  final String bambu_anyaman_n1;
+  final String lainnya_n1;
+  final String total_n1;
   final String tahun;
 
   Data(
       {required this.id,
       required this.wilayah,
-      required this.lapus1_n3,
-      required this.lapus2_n3,
-      required this.lapus3_n3,
+      required this.tembok_n1,
+      required this.plesteranyamanbambu_n1,
+      required this.kayu_n1,
+      required this.bambu_anyaman_n1,
+      required this.lainnya_n1,
+      required this.total_n1,
       required this.tahun});
 
   factory Data.fromJson(Map<String, dynamic> json) {
     return Data(
       id: json['id'],
       wilayah: json['wilayah'],
-      lapus1_n3: json['lapus1_n3'],
-      lapus2_n3: json['lapus2_n3'],
-      lapus3_n3: json['lapus3_n3'],
+      tembok_n1: json['tembok_n1'],
+      plesteranyamanbambu_n1: json['plesteranyamanbambu_n1'],
+      kayu_n1: json['kayu_n1'],
+      bambu_anyaman_n1: json['bambu_anyaman_n1'],
+      lainnya_n1: json['lainnya_n1'],
+      total_n1: json['total_n1'],
       tahun: json['tahun'],
     );
   }
@@ -509,9 +517,9 @@ class ScrollableColumnWidget extends StatelessWidget {
                   columns: [
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.20,
+                          width: screenWidth * 0.14,
                           child: const Text(
-                            'Lap. Pekerjaan Utama A',
+                            'Tembok',
                             maxLines: 3,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
@@ -524,9 +532,78 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.20,
+                          width: screenWidth * 0.185,
+                          child: Column(
+                            children: const [
+                              Text(
+                                "",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Plesteran Anyaman",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Bambu/Kawat",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                        numeric: true),
+                    DataColumn(
+                        label: SizedBox(
+                          width: screenWidth * 0.185,
+                          child: Column(
+                            children: const [
+                              Text(
+                                "",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Kayu/Papan,",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Batang Kayu",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                        numeric: true),
+                    DataColumn(
+                        label: SizedBox(
+                          width: screenWidth * 0.185,
+                          child: Column(
+                            children: const [
+                              Text(
+                                "",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Bambu,",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Anayaman Bambu",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                        numeric: true),
+                    DataColumn(
+                        label: SizedBox(
+                          width: screenWidth * 0.14,
                           child: const Text(
-                            'Lap. Pekerjaan Utama B',
+                            'Lainnya',
                             maxLines: 3,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
@@ -539,26 +616,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.20,
-                          child: const Text(
-                            'Lap. Pekerjaan Utama C',
-                            maxLines: 3,
-                            overflow: TextOverflow.ellipsis,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 13,
-                            ),
-                            //style: TextStyle(
-                            //fontStyle: FontStyle.italic,
-                            //fontWeight: FontWeight.bold,
-                            //fontSize: 15),
-                          ),
-                        ),
-                        numeric: true),
-                    DataColumn(
-                        label: SizedBox(
-                          width: screenWidth * 0.18,
+                          width: screenWidth * 0.14,
                           child: const Text(
                             'Jumlah',
                             //maxLines: 2,
@@ -588,8 +646,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                           cells: [
                             DataCell(
                               Text(
-                                (Format.convertTo(
-                                    double.tryParse(data.lapus1_n3), 0)),
+                                data.tembok_n1,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -599,8 +656,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                                (Format.convertTo(
-                                    double.tryParse(data.lapus2_n3), 0)),
+                                data.plesteranyamanbambu_n1,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -611,8 +667,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                                (Format.convertTo(
-                                    double.tryParse(data.lapus3_n3), 0)),
+                                data.kayu_n1,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -622,11 +677,28 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                                (Format.convertTo(
-                                    (double.tryParse(data.lapus1_n3)! +
-                                        double.tryParse(data.lapus2_n3)! +
-                                        double.tryParse(data.lapus3_n3)!),
-                                    0)),
+                                data.bambu_anyaman_n1,
+                                style: const TextStyle(
+                                  color: Color.fromARGB(255, 17, 17, 17),
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ),
+                            DataCell(
+                              Text(
+                                data.lainnya_n1,
+                                style: const TextStyle(
+                                  color: Color.fromARGB(255, 17, 17, 17),
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 12,
+                                ),
+                                //textAlign: TextAlign.left,
+                              ),
+                            ),
+                            DataCell(
+                              Text(
+                                data.total_n1,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -660,7 +732,7 @@ class CatatanWidget extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return SizedBox(
       width: screenWidth,
-      height: 0.40 * screenHeight,
+      height: 0.28 * screenHeight,
       child: Column(
         children: [
           Column(
@@ -678,7 +750,7 @@ class CatatanWidget extends StatelessWidget {
                           fontSize: 12),
                       children: <TextSpan>[
                         TextSpan(
-                            text: ' Survei Angkatan Kerja Nasional (Sakernas)',
+                            text: ' Survei Sosial Ekonomi Nasional (Susenas)',
                             style: TextStyle(
                                 fontSize: 11,
                                 fontFamily: 'Roboto',
@@ -688,82 +760,47 @@ class CatatanWidget extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(3),
-                alignment: Alignment.centerLeft,
-                child: const Text(
-                  "Keterangan:",
-                  style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.blue,
-                      fontWeight: FontWeight.bold),
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(1),
+                padding: const EdgeInsets.all(2),
                 alignment: Alignment.centerLeft,
                 child: RichText(
                   textAlign: TextAlign.left,
                   text: const TextSpan(
-                      text: 'Lap. Pekerjaan Utama A:',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 13),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text: ' Pertanian, Kehutanan, Perikanan.',
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontFamily: 'Roboto',
-                                color: Colors.black,
-                                fontWeight: FontWeight.normal)),
-                      ]),
+                    text: 'Keterangan:',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 13),
+                  ),
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(1),
-                alignment: Alignment.centerLeft,
-                child: RichText(
-                  textAlign: TextAlign.left,
-                  text: const TextSpan(
-                      text: 'Lap. Pekerjaan Utama B:',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 13),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text:
-                                'Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi.',
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontFamily: 'Roboto',
-                                color: Colors.black,
-                                fontWeight: FontWeight.normal)),
-                      ]),
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(1),
+                padding: const EdgeInsets.all(2),
                 alignment: Alignment.centerLeft,
                 child: RichText(
                   textAlign: TextAlign.justify,
                   text: const TextSpan(
-                      text: 'Lap. Pekerjaan Utama C:',
+                      text:
+                          'Tanda strip (-), menunjukkan bahwa data bernilai nol (0) mutlak yang berarti tidak ada data/nilai estimasi pada sel tabel tersebut.',
                       style: TextStyle(
+                          fontSize: 12,
+                          fontFamily: 'Roboto',
                           color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 13),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text:
-                                'Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya',
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontFamily: 'Roboto',
-                                color: Colors.black,
-                                fontWeight: FontWeight.normal)),
-                      ]),
+                          fontWeight: FontWeight.normal)),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.only(left: 2, right: 2, top: 4),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.justify,
+                  text: const TextSpan(
+                      text:
+                          'NA (Not Applicable), menunjukkan bahwa data tidak dapat ditampilkan karena nilai relative standard error (RSE) lebih dari 50 persen.',
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontFamily: 'Roboto',
+                          color: Colors.black,
+                          fontWeight: FontWeight.normal)),
                 ),
               ),
             ],
