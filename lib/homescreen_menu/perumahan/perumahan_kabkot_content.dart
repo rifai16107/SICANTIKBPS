@@ -5,7 +5,7 @@ import 'package:bps_cilacap/restAPI/repository_perumahan_lantai.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahlantai/series_lantai_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahatap/series_atap_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahdinding/series_dinding_kabkot.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/perumahan_penerangan.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahpenerangan/series_penerangan_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/perumahan_minum.dart';
 import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_clp/perumahan_masak.dart';
 import 'package:flutter/material.dart';
@@ -256,7 +256,7 @@ class _perumahankabkotContentState extends State<perumahankabkotContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const PerumahanPenerangan(),
+                          child: const SeriesRumahpeneranganKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
