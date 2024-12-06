@@ -1,16 +1,16 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahpenerangan/body_penerangan_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahairminum/body_airminum_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesRumahpeneranganKabkot extends StatefulWidget {
-  const SeriesRumahpeneranganKabkot({super.key});
+class SeriesRumahairminumKabkot extends StatefulWidget {
+  const SeriesRumahairminumKabkot({super.key});
 
   @override
-  State<SeriesRumahpeneranganKabkot> createState() =>
-      _SeriesRumahpeneranganKabkot();
+  State<SeriesRumahairminumKabkot> createState() =>
+      _SeriesRumahairminumKabkot();
 }
 
-class _SeriesRumahpeneranganKabkot extends State<SeriesRumahpeneranganKabkot> {
+class _SeriesRumahairminumKabkot extends State<SeriesRumahairminumKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -45,7 +45,7 @@ class _SeriesRumahpeneranganKabkot extends State<SeriesRumahpeneranganKabkot> {
             child: Column(
               children: const [
                 Text(
-                  ' Persentase Rumah Tangga menurut Kabupaten/Kota dan Sumber Penerangan Utama ',
+                  ' Persentase Rumah Tangga menurut Kabupaten/Kota dan Sumber Air Utama yang Digunakan Rumah Tangga untuk Minum ',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class _SeriesRumahpeneranganKabkot extends State<SeriesRumahpeneranganKabkot> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 24,
-                  child: BodyRumahkabkotPenerangan(),
+                  child: BodyRumahkabkotAirminum(),
                 ),
               ],
             ),
