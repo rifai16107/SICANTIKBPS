@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const RumahkabkotAtapB());
+void main() => runApp(const RumahkabkotDindingC());
 
-class RumahkabkotAtapB extends StatelessWidget {
-  const RumahkabkotAtapB({super.key});
+class RumahkabkotDindingC extends StatelessWidget {
+  const RumahkabkotDindingC({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class RumahkabkotAtapB extends StatelessWidget {
 }
 
 Future<List<Data>> fetchData() async {
-  var url = Uri.parse('https://bps-3301-asap.my.id/api/rumahkabkot-atap');
+  var url = Uri.parse('https://bps-3301-asap.my.id/api/rumahkabkot-dinding');
   final response = await http.get(url);
   if (response.statusCode == 200) {
     var cokk = jsonDecode(response.body);
@@ -45,41 +45,35 @@ Future<List<Data>> fetchData() async {
 class Data {
   final int id;
   final String wilayah;
-  final String beton_n2;
-  final String genteng_n2;
-  final String seng_n2;
-  final String asbes_n2;
-  final String sirap_kayu_n2;
-  final String jerami_ijuk_n2;
-  final String lainnya_n2;
-  final String total_n2;
+  final String tembok_n3;
+  final String plesteranyamanbambu_n3;
+  final String kayu_n3;
+  final String bambu_anyaman_n3;
+  final String lainnya_n3;
+  final String total_n3;
   final String tahun;
 
   Data(
       {required this.id,
       required this.wilayah,
-      required this.beton_n2,
-      required this.genteng_n2,
-      required this.seng_n2,
-      required this.asbes_n2,
-      required this.sirap_kayu_n2,
-      required this.jerami_ijuk_n2,
-      required this.lainnya_n2,
-      required this.total_n2,
+      required this.tembok_n3,
+      required this.plesteranyamanbambu_n3,
+      required this.kayu_n3,
+      required this.bambu_anyaman_n3,
+      required this.lainnya_n3,
+      required this.total_n3,
       required this.tahun});
 
   factory Data.fromJson(Map<String, dynamic> json) {
     return Data(
       id: json['id'],
       wilayah: json['wilayah'],
-      beton_n2: json['beton_n2'],
-      genteng_n2: json['genteng_n2'],
-      seng_n2: json['seng_n2'],
-      asbes_n2: json['asbes_n2'],
-      sirap_kayu_n2: json['sirap_kayu_n2'],
-      jerami_ijuk_n2: json['jerami_ijuk_n2'],
-      lainnya_n2: json['lainnya_n2'],
-      total_n2: json['total_n2'],
+      tembok_n3: json['tembok_n3'],
+      plesteranyamanbambu_n3: json['plesteranyamanbambu_n3'],
+      kayu_n3: json['kayu_n3'],
+      bambu_anyaman_n3: json['bambu_anyaman_n3'],
+      lainnya_n3: json['lainnya_n3'],
+      total_n3: json['total_n3'],
       tahun: json['tahun'],
     );
   }
@@ -525,7 +519,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         label: SizedBox(
                           width: screenWidth * 0.14,
                           child: const Text(
-                            'Beton',
+                            'Tembok',
                             maxLines: 3,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
@@ -538,46 +532,47 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.14,
-                          child: const Text(
-                            'Genteng',
-                            maxLines: 3,
-                            overflow: TextOverflow.ellipsis,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 13,
-                            ),
+                          //width: screenWidth * 0.225,
+                          child: Column(
+                            children: const [
+                              Text(
+                                "Plesteran",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Anyaman",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Bambu/Kawat",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
                           ),
                         ),
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.14,
-                          child: const Text(
-                            'Seng',
-                            maxLines: 3,
-                            overflow: TextOverflow.ellipsis,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ),
-                        numeric: true),
-                    DataColumn(
-                        label: SizedBox(
-                          width: screenWidth * 0.14,
-                          child: const Text(
-                            'Asbes',
-                            maxLines: 3,
-                            overflow: TextOverflow.ellipsis,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 13,
-                            ),
+                          //width: screenWidth * 0.205,
+                          child: Column(
+                            children: const [
+                              Text(
+                                "",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Kayu/Papan,",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Batang Kayu",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
                           ),
                         ),
                         numeric: true),
@@ -587,40 +582,17 @@ class ScrollableColumnWidget extends StatelessWidget {
                           child: Column(
                             children: const [
                               Text(
-                                "",
+                                "Bambu,",
                                 style: TextStyle(color: Colors.white),
                                 textAlign: TextAlign.center,
                               ),
                               Text(
-                                "Bambu/",
+                                "Anyaman",
                                 style: TextStyle(color: Colors.white),
                                 textAlign: TextAlign.center,
                               ),
                               Text(
-                                "Kayu/Sirap",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
-                        ),
-                        numeric: true),
-                    DataColumn(
-                        label: SizedBox(
-                          //width: screenWidth * 0.185,
-                          child: Column(
-                            children: const [
-                              Text(
-                                "",
-                                style: TextStyle(color: Colors.white),
-                                textAlign: TextAlign.center,
-                              ),
-                              Text(
-                                "Jerami/Ijuk/",
-                                style: TextStyle(color: Colors.white),
-                                textAlign: TextAlign.center,
-                              ),
-                              Text(
-                                "Daun/Rumbia",
+                                "Bambu",
                                 style: TextStyle(color: Colors.white),
                               ),
                             ],
@@ -674,7 +646,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                           cells: [
                             DataCell(
                               Text(
-                                data.beton_n2,
+                                data.tembok_n3,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -684,7 +656,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                                data.genteng_n2,
+                                data.plesteranyamanbambu_n3,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -695,7 +667,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                                data.seng_n2,
+                                data.kayu_n3,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -705,7 +677,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                                data.asbes_n2,
+                                data.bambu_anyaman_n3,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
@@ -715,37 +687,18 @@ class ScrollableColumnWidget extends StatelessWidget {
                             ),
                             DataCell(
                               Text(
-                                data.sirap_kayu_n2,
+                                data.lainnya_n3,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
                                   fontSize: 12,
                                 ),
+                                //textAlign: TextAlign.left,
                               ),
                             ),
                             DataCell(
                               Text(
-                                data.jerami_ijuk_n2,
-                                style: const TextStyle(
-                                  color: Color.fromARGB(255, 17, 17, 17),
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ),
-                            DataCell(
-                              Text(
-                                data.lainnya_n2,
-                                style: const TextStyle(
-                                  color: Color.fromARGB(255, 17, 17, 17),
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ),
-                            DataCell(
-                              Text(
-                                data.total_n2,
+                                data.total_n3,
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,

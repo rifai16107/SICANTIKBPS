@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahatap/atap_kabkot_a.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahatap/atap_kabkot_b.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahatap/atap_kabkot_c.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahdinding/dinding_kabkot_a.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahdinding/dinding_kabkot_b.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahdinding/dinding_kabkot_c.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class RepositoryRumahkabkotAtap {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/rumahkabkot-atap';
+class RepositoryRumahkabkotDinding {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/rumahkabkot-dinding';
 
   Future getData() async {
     try {
@@ -16,7 +16,7 @@ class RepositoryRumahkabkotAtap {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isirumah) => ModelRumahkabkotAtap.fromJson(isirumah))
+            .map((isirumah) => ModelRumahkabkotDinding.fromJson(isirumah))
             .toList();
       }
     } catch (isirumah) {
@@ -27,16 +27,16 @@ class RepositoryRumahkabkotAtap {
 }
 
 // ignore_for_file: non_constant_identifier_names
-class ModelRumahkabkotAtap {
+class ModelRumahkabkotDinding {
   final int id;
   final String wilayah;
   final String tahun;
 
-  ModelRumahkabkotAtap(
+  ModelRumahkabkotDinding(
       {required this.id, required this.wilayah, required this.tahun});
 
-  factory ModelRumahkabkotAtap.fromJson(Map<String, dynamic> json) {
-    return ModelRumahkabkotAtap(
+  factory ModelRumahkabkotDinding.fromJson(Map<String, dynamic> json) {
+    return ModelRumahkabkotDinding(
       id: json['id'],
       wilayah: json['wilayah'],
       tahun: json['tahun'],
@@ -44,15 +44,16 @@ class ModelRumahkabkotAtap {
   }
 }
 
-class BodyRumahkabkotAtap extends StatefulWidget {
-  const BodyRumahkabkotAtap({super.key});
+class BodyRumahkabkotDinding extends StatefulWidget {
+  const BodyRumahkabkotDinding({super.key});
 
   @override
-  State<BodyRumahkabkotAtap> createState() => _BodyRumahkabkotAtapState();
+  State<BodyRumahkabkotDinding> createState() => _BodyRumahkabkotDindingState();
 }
 
-class _BodyRumahkabkotAtapState extends State<BodyRumahkabkotAtap> {
-  RepositoryRumahkabkotAtap repositoryrumahkabkot = RepositoryRumahkabkotAtap();
+class _BodyRumahkabkotDindingState extends State<BodyRumahkabkotDinding> {
+  RepositoryRumahkabkotDinding repositoryrumahkabkot =
+      RepositoryRumahkabkotDinding();
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -99,9 +100,9 @@ class _BodyRumahkabkotAtapState extends State<BodyRumahkabkotAtap> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    RumahkabkotAtapA(),
-                    RumahkabkotAtapB(),
-                    RumahkabkotAtapC(),
+                    RumahkabkotDindingA(),
+                    RumahkabkotDindingB(),
+                    RumahkabkotDindingC(),
                   ]),
                 ),
               );

@@ -532,16 +532,16 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.185,
+                          //width: screenWidth * 0.225,
                           child: Column(
                             children: const [
                               Text(
-                                "",
+                                "Plesteran",
                                 style: TextStyle(color: Colors.white),
                                 textAlign: TextAlign.center,
                               ),
                               Text(
-                                "Plesteran Anyaman",
+                                "Anyaman",
                                 style: TextStyle(color: Colors.white),
                                 textAlign: TextAlign.center,
                               ),
@@ -555,7 +555,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.185,
+                          //width: screenWidth * 0.205,
                           child: Column(
                             children: const [
                               Text(
@@ -582,17 +582,17 @@ class ScrollableColumnWidget extends StatelessWidget {
                           child: Column(
                             children: const [
                               Text(
-                                "",
-                                style: TextStyle(color: Colors.white),
-                                textAlign: TextAlign.center,
-                              ),
-                              Text(
                                 "Bambu,",
                                 style: TextStyle(color: Colors.white),
                                 textAlign: TextAlign.center,
                               ),
                               Text(
-                                "Anayaman Bambu",
+                                "Anyaman",
+                                style: TextStyle(color: Colors.white),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                "Bambu",
                                 style: TextStyle(color: Colors.white),
                               ),
                             ],

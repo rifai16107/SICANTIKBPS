@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahatap/body_atap_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/perumahan/perumahan_kabkot/kabkot_rumahdinding/body_dinding_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesRumahatapKabkot extends StatefulWidget {
-  const SeriesRumahatapKabkot({super.key});
+class SeriesRumahdindingKabkot extends StatefulWidget {
+  const SeriesRumahdindingKabkot({super.key});
 
   @override
-  State<SeriesRumahatapKabkot> createState() => _SeriesRumahatapKabkot();
+  State<SeriesRumahdindingKabkot> createState() => _SeriesRumahdindingKabkot();
 }
 
-class _SeriesRumahatapKabkot extends State<SeriesRumahatapKabkot> {
+class _SeriesRumahdindingKabkot extends State<SeriesRumahdindingKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -44,7 +44,7 @@ class _SeriesRumahatapKabkot extends State<SeriesRumahatapKabkot> {
             child: Column(
               children: const [
                 Text(
-                  ' Persentase Rumah Tangga menurut Kabupaten/Kota dan Bahan Bangunan Utama Atap Rumah Terluas di Provinsi Jawa Tengah ',
+                  ' Persentase Rumah Tangga menurut Kabupaten/Kota dan Bahan Bangunan Utama Dinding Rumah Terluas di Provinsi Jawa Tengah ',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -71,7 +71,7 @@ class _SeriesRumahatapKabkot extends State<SeriesRumahatapKabkot> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 24,
-                  child: BodyRumahkabkotAtap(),
+                  child: BodyRumahkabkotDinding(),
                 ),
               ],
             ),
