@@ -240,6 +240,7 @@ flutter:
      - assets/images/carousel/pertumbuhan_icon.png
      - assets/images/carousel/kemiskinan_icon.png
      - assets/images/carousel/tpt_carousel_icon.png
+     - assets/images/carousel/hotel_carousel_icon.png
      
     #  Modal
      - assets/images/modal/inflasi_modal_1.jpeg
