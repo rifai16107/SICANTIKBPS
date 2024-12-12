@@ -31,38 +31,23 @@ class _GrafikIpmState extends State<GrafikIpm> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              double ipm1 = double.parse(isiipm[index = 0].ipm);
-              double ipm2 = double.parse(isiipm[index = 1].ipm);
-              double ipm3 = double.parse(isiipm[index = 2].ipm);
-              double ipm4 = double.parse(isiipm[index = 3].ipm);
-              double ipm5 = double.parse(isiipm[index = 4].ipm);
+              double ipm1 = double.parse(isiipm[index = 15].ipm);
+              double ipm2 = double.parse(isiipm[index = 16].ipm);
+              double ipm3 = double.parse(isiipm[index = 17].ipm);
+              double ipm4 = double.parse(isiipm[index = 18].ipm);
+              double ipm5 = double.parse(isiipm[index = 19].ipm);
 
-              double ipmlf1 = double.parse(isiipm[index = 0].ipm_lfsp2020);
-              double ipmlf2 = double.parse(isiipm[index = 1].ipm_lfsp2020);
-              double ipmlf3 = double.parse(isiipm[index = 2].ipm_lfsp2020);
-              double ipmlf4 = double.parse(isiipm[index = 3].ipm_lfsp2020);
-              double ipmlf5 = double.parse(isiipm[index = 4].ipm_lfsp2020);
+              double ipmlf1 = double.parse(isiipm[index = 15].ipm_lfsp2020);
+              double ipmlf2 = double.parse(isiipm[index = 16].ipm_lfsp2020);
+              double ipmlf3 = double.parse(isiipm[index = 17].ipm_lfsp2020);
+              double ipmlf4 = double.parse(isiipm[index = 18].ipm_lfsp2020);
+              double ipmlf5 = double.parse(isiipm[index = 19].ipm_lfsp2020);
 
-              String tahun5 = isiipm[index = 4].created_at[0] +
-                  isiipm[index = 4].created_at[1] +
-                  isiipm[index = 4].created_at[2] +
-                  isiipm[index = 4].created_at[3];
-              String tahun4 = isiipm[index = 3].created_at[0] +
-                  isiipm[index = 3].created_at[1] +
-                  isiipm[index = 3].created_at[2] +
-                  isiipm[index = 3].created_at[3];
-              String tahun3 = isiipm[index = 2].created_at[0] +
-                  isiipm[index = 2].created_at[1] +
-                  isiipm[index = 2].created_at[2] +
-                  isiipm[index = 2].created_at[3];
-              String tahun2 = isiipm[index = 1].created_at[0] +
-                  isiipm[index = 1].created_at[1] +
-                  isiipm[index = 1].created_at[2] +
-                  isiipm[index = 1].created_at[3];
-              String tahun1 = isiipm[index = 0].created_at[0] +
-                  isiipm[index = 0].created_at[1] +
-                  isiipm[index = 0].created_at[2] +
-                  isiipm[index = 0].created_at[3];
+              String tahun5 = isiipm[index = 19].tahun;
+              String tahun4 = isiipm[index = 18].tahun;
+              String tahun3 = isiipm[index = 17].tahun;
+              String tahun2 = isiipm[index = 16].tahun;
+              String tahun1 = isiipm[index = 15].tahun;
               toString();
               data = [
                 _ChartData(tahun1, ipm1, ipmlf1),

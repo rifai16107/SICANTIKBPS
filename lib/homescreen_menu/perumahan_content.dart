@@ -37,6 +37,45 @@ class _perumahanContentState extends State<perumahanContent> {
             ),
           ),
         ),
+        actions: [
+          IconButton(
+              onPressed: () {
+                showModalBottomSheet(
+                  backgroundColor: Colors.white,
+                  context: context,
+                  builder: (context) {
+                    return ListView(children: [
+                      Column(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(5),
+                            alignment: Alignment.centerLeft,
+                            child: const Text(
+                              "Perumahan",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(5),
+                            alignment: Alignment.centerLeft,
+                            child: Column(
+                              children: [
+                                const Text(
+                                  "   Perumahan merupakan salah ukuran kesejahteraan suatu rumah tangga, secara umum semakin baik perekonomian suatu rumah tangga maka akan semakin bagus kondisi rumahnya. Kelayakan suatu bangunan tempat tinggal diantaranya dapat diukur dari kondisi fisik bangunan ataupun fasilitas-fasilitas pokok yang ada pada bangunan tersebut, seperti kondisi dinding, lantai dan atap bangunan serta fasilitas penerangan dan sumber air minum yang digunakan oleh suatu rumah tangga. Semakin tinggi persentase pada kelompok bangunan atau rumah tangga dengan fasilitas perumahan yang baik atau kondisi bangunan yang baik semakin tinggi persentasenya, maka dapat dikatakan kondisi daerah suatu daerah semakin baik/sejahtera",
+                                  textAlign: TextAlign.justify,
+                                ),
+                                const Divider(),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ]);
+                  },
+                );
+              },
+              icon: const Icon(Icons.info_outlined))
+        ],
       ),
       body: Container(
         padding: const EdgeInsets.all(2),

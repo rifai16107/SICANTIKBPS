@@ -10,6 +10,7 @@ class modelIpm {
   final String uhh_lfsp2020;
   final String ipm_lfsp2020;
   final String ipg;
+  final String tahun;
   final String created_at;
   final String updated_at;
 
@@ -23,6 +24,7 @@ class modelIpm {
     required this.uhh_lfsp2020,
     required this.ipm_lfsp2020,
     required this.ipg,
+    required this.tahun,
     required this.created_at,
     required this.updated_at,
   });
@@ -38,6 +40,7 @@ class modelIpm {
       uhh_lfsp2020: json['uhh_lfsp2020'],
       ipm_lfsp2020: json['ipm_lfsp2020'],
       ipg: json['ipg'],
+      tahun: json['tahun'],
       created_at: json['created_at'],
       updated_at: json['updated_at'],
     );

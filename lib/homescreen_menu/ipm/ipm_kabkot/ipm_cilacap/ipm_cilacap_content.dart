@@ -47,69 +47,54 @@ class _IpmKabContentState extends State<IpmKabContent> {
               return ListView.builder(
                 itemCount: 1,
                 itemBuilder: (context, index) {
-                  String tahun5 = isiipm[index = 4].created_at[0] +
-                      isiipm[index = 4].created_at[1] +
-                      isiipm[index = 4].created_at[2] +
-                      isiipm[index = 4].created_at[3];
-                  String tahun4 = isiipm[index = 3].created_at[0] +
-                      isiipm[index = 3].created_at[1] +
-                      isiipm[index = 3].created_at[2] +
-                      isiipm[index = 3].created_at[3];
-                  String tahun3 = isiipm[index = 2].created_at[0] +
-                      isiipm[index = 2].created_at[1] +
-                      isiipm[index = 2].created_at[2] +
-                      isiipm[index = 2].created_at[3];
-                  String tahun2 = isiipm[index = 1].created_at[0] +
-                      isiipm[index = 1].created_at[1] +
-                      isiipm[index = 1].created_at[2] +
-                      isiipm[index = 1].created_at[3];
-                  String tahun1 = isiipm[index = 0].created_at[0] +
-                      isiipm[index = 0].created_at[1] +
-                      isiipm[index = 0].created_at[2] +
-                      isiipm[index = 0].created_at[3];
+                  String tahun5 = isiipm[index = 19].tahun;
+                  String tahun4 = isiipm[index = 18].tahun;
+                  String tahun3 = isiipm[index = 17].tahun;
+                  String tahun2 = isiipm[index = 16].tahun;
+                  String tahun1 = isiipm[index = 15].tahun;
 
-                  double uhh1 = double.parse(isiipm[index = 0].uhh);
-                  double uhh2 = double.parse(isiipm[index = 1].uhh);
-                  double uhh3 = double.parse(isiipm[index = 2].uhh);
-                  double uhh4 = double.parse(isiipm[index = 3].uhh);
-                  double uhh5 = double.parse(isiipm[index = 4].uhh);
+                  double uhh1 = double.parse(isiipm[index = 15].uhh);
+                  double uhh2 = double.parse(isiipm[index = 16].uhh);
+                  double uhh3 = double.parse(isiipm[index = 17].uhh);
+                  double uhh4 = double.parse(isiipm[index = 18].uhh);
+                  double uhh5 = double.parse(isiipm[index = 19].uhh);
 
-                  double rls1 = double.parse(isiipm[index = 0].rls);
-                  double rls2 = double.parse(isiipm[index = 1].rls);
-                  double rls3 = double.parse(isiipm[index = 2].rls);
-                  double rls4 = double.parse(isiipm[index = 3].rls);
-                  double rls5 = double.parse(isiipm[index = 4].rls);
+                  double rls1 = double.parse(isiipm[index = 15].rls);
+                  double rls2 = double.parse(isiipm[index = 16].rls);
+                  double rls3 = double.parse(isiipm[index = 17].rls);
+                  double rls4 = double.parse(isiipm[index = 18].rls);
+                  double rls5 = double.parse(isiipm[index = 19].rls);
 
-                  double hls1 = double.parse(isiipm[index = 0].hls);
-                  double hls2 = double.parse(isiipm[index = 1].hls);
-                  double hls3 = double.parse(isiipm[index = 2].hls);
-                  double hls4 = double.parse(isiipm[index = 3].hls);
-                  double hls5 = double.parse(isiipm[index = 4].hls);
+                  double hls1 = double.parse(isiipm[index = 15].hls);
+                  double hls2 = double.parse(isiipm[index = 16].hls);
+                  double hls3 = double.parse(isiipm[index = 17].hls);
+                  double hls4 = double.parse(isiipm[index = 18].hls);
+                  double hls5 = double.parse(isiipm[index = 19].hls);
 
-                  double ppp1 = double.parse(isiipm[index = 0].ppp);
-                  double ppp2 = double.parse(isiipm[index = 1].ppp);
-                  double ppp3 = double.parse(isiipm[index = 2].ppp);
-                  double ppp4 = double.parse(isiipm[index = 3].ppp);
-                  double ppp5 = double.parse(isiipm[index = 4].ppp);
+                  double ppp1 = double.parse(isiipm[index = 15].ppp);
+                  double ppp2 = double.parse(isiipm[index = 16].ppp);
+                  double ppp3 = double.parse(isiipm[index = 17].ppp);
+                  double ppp4 = double.parse(isiipm[index = 18].ppp);
+                  double ppp5 = double.parse(isiipm[index = 19].ppp);
 
-                  double ipm1 = double.parse(isiipm[index = 0].ipm);
-                  double ipm2 = double.parse(isiipm[index = 1].ipm);
-                  double ipm3 = double.parse(isiipm[index = 2].ipm);
-                  double ipm4 = double.parse(isiipm[index = 3].ipm);
-                  double ipm5 = double.parse(isiipm[index = 4].ipm);
+                  double ipm1 = double.parse(isiipm[index = 15].ipm);
+                  double ipm2 = double.parse(isiipm[index = 16].ipm);
+                  double ipm3 = double.parse(isiipm[index = 17].ipm);
+                  double ipm4 = double.parse(isiipm[index = 18].ipm);
+                  double ipm5 = double.parse(isiipm[index = 19].ipm);
 
                   //ipm  dengan UHH LF
-                  double uhhlf1 = double.parse(isiipm[index = 0].uhh_lfsp2020);
-                  double uhhlf2 = double.parse(isiipm[index = 1].uhh_lfsp2020);
-                  double uhhlf3 = double.parse(isiipm[index = 2].uhh_lfsp2020);
-                  double uhhlf4 = double.parse(isiipm[index = 3].uhh_lfsp2020);
-                  double uhhlf5 = double.parse(isiipm[index = 4].uhh_lfsp2020);
+                  double uhhlf1 = double.parse(isiipm[index = 15].uhh_lfsp2020);
+                  double uhhlf2 = double.parse(isiipm[index = 16].uhh_lfsp2020);
+                  double uhhlf3 = double.parse(isiipm[index = 17].uhh_lfsp2020);
+                  double uhhlf4 = double.parse(isiipm[index = 18].uhh_lfsp2020);
+                  double uhhlf5 = double.parse(isiipm[index = 19].uhh_lfsp2020);
 
-                  double ipmlf1 = double.parse(isiipm[index = 0].ipm_lfsp2020);
-                  double ipmlf2 = double.parse(isiipm[index = 1].ipm_lfsp2020);
-                  double ipmlf3 = double.parse(isiipm[index = 2].ipm_lfsp2020);
-                  double ipmlf4 = double.parse(isiipm[index = 3].ipm_lfsp2020);
-                  double ipmlf5 = double.parse(isiipm[index = 4].ipm_lfsp2020);
+                  double ipmlf1 = double.parse(isiipm[index = 15].ipm_lfsp2020);
+                  double ipmlf2 = double.parse(isiipm[index = 16].ipm_lfsp2020);
+                  double ipmlf3 = double.parse(isiipm[index = 17].ipm_lfsp2020);
+                  double ipmlf4 = double.parse(isiipm[index = 18].ipm_lfsp2020);
+                  double ipmlf5 = double.parse(isiipm[index = 19].ipm_lfsp2020);
 
                   return Container(
                       height: screenHeight,

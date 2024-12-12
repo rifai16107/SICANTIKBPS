@@ -276,13 +276,11 @@ class _IpmContentState extends State<IpmContent> {
               return PageView.builder(
                 itemCount: 1,
                 itemBuilder: (context, index) {
-                  String tahun = isiipm[index = 4].created_at[0] +
-                      isiipm[index = 4].created_at[1] +
-                      isiipm[index = 4].created_at[2] +
-                      isiipm[index = 4].created_at[3];
+                  String tahunipg = isiipm[index = 4].tahun;
+                  String tahunipm = isiipm[index = 19].tahun;
 
-                  double ipg5 = double.parse(isiipm[index = 4].ipg);
-                  double ipmlf5 = double.parse(isiipm[index = 4].ipm_lfsp2020);
+                  double ipg = double.parse(isiipm[index = 4].ipg);
+                  double ipmlf = double.parse(isiipm[index = 19].ipm_lfsp2020);
 
                   return Container(
                     padding: const EdgeInsets.all(2),
@@ -305,7 +303,7 @@ class _IpmContentState extends State<IpmContent> {
                                           horizontal: 5,
                                         ),
                                         child: Text(
-                                          "Tahun $tahun , IPM Kabupaten Cilacap tercatat sebesar $ipmlf5 dan IPG sebesar $ipg5 ",
+                                          "Tahun $tahunipm , IPM Kabupaten Cilacap tercatat sebesar $ipmlf, sementara IPG Kabupaten Cilacap tahun $tahunipg tercatat sebesar $ipg ",
                                           style: const TextStyle(
                                               color: Colors.white,
                                               fontSize: 15),
