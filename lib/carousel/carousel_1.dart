@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-//import 'package:bps_cilacap/format_angka.dart';
+import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -149,7 +149,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                               alignment: Alignment.centerRight,
                               margin: const EdgeInsets.only(right: 15),
                               child: Text(
-                                "Inflasi Month to Month : ${mtom1.toStringAsFixed(2)}%",
+                                "Inflasi Month to Month : ${Format.convertTo(mtom1, 2)}%",
                                 style: const TextStyle(fontSize: 13),
                               ),
                             ),
@@ -157,7 +157,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                               alignment: Alignment.centerRight,
                               margin: const EdgeInsets.only(right: 15),
                               child: Text(
-                                "Inflasi Year to Date : ${ytod1.toStringAsFixed(2)}%",
+                                "Inflasi Year to Date : ${Format.convertTo(ytod1, 2)}%",
                                 style: const TextStyle(fontSize: 13),
                               ),
                             ),
@@ -165,7 +165,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                               alignment: Alignment.centerRight,
                               margin: const EdgeInsets.only(right: 15),
                               child: Text(
-                                "Inflasi Year on Year : ${yony1.toStringAsFixed(2)}%",
+                                "Inflasi Year on Year : ${Format.convertTo(yony1, 2)}%",
                                 style: const TextStyle(fontSize: 13),
                               ),
                             ),

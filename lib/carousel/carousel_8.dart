@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-//import 'package:bps_cilacap/format_angka.dart';
+import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -179,17 +179,17 @@ class _carouselSlider8State extends State<carouselSlider8> {
                             const Divider(),
                             Container(
                               alignment: Alignment.centerRight,
-                              margin: const EdgeInsets.only(right: 15),
+                              margin: const EdgeInsets.only(right: 5),
                               child: Text(
-                                "$blnNow: TPK= ${tpkNow.toStringAsFixed(2)}, RLS=${rlmNow.toStringAsFixed(2)}",
+                                "$blnNow: TPK= ${Format.convertTo(tpkNow, 2)}; RLM=${Format.convertTo(rlmNow, 2)}",
                                 style: const TextStyle(fontSize: 13),
                               ),
                             ),
                             Container(
                               alignment: Alignment.centerRight,
-                              margin: const EdgeInsets.only(right: 15),
+                              margin: const EdgeInsets.only(right: 5),
                               child: Text(
-                                "$blnn1: TPK= ${tpkn1.toStringAsFixed(2)}, RLS=${rlmn1.toStringAsFixed(2)}",
+                                "$blnn1: TPK= ${Format.convertTo(tpkn1, 2)}; RLM=${Format.convertTo(rlmn1, 2)}",
                                 style: const TextStyle(fontSize: 13),
                               ),
                             ),
