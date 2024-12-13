@@ -89,15 +89,15 @@ class _pertanianContentState extends State<pertanianContent> {
         child: Column(
           children: [
             Flexible(
-                flex: 1,
+                flex: 2,
                 fit: FlexFit.tight,
                 child: Column(
                   children: [
                     Flexible(
-                      flex: 3,
+                      flex: 5,
                       fit: FlexFit.tight,
                       child: Container(
-                        height: screenHeight*0.15,
+                        //height: screenHeight*0.15,
                         color: Colors.black,
                         child: const Center(
                           child: Padding(
@@ -124,8 +124,7 @@ class _pertanianContentState extends State<pertanianContent> {
                       ),
                     )
                   ],
-                )
-            ),
+                )),
             Flexible(
               flex: 1,
               fit: FlexFit.tight,
