@@ -2221,7 +2221,7 @@ class _NakerkabkotUmkCState extends State<NakerkabkotUmkC> {
                                 bottom: 65,
                               ),
                               child: const Text(
-                                "UMK 2024 ditetapkan berdasarkan Surat Keputusan Gubernur Jawa Tengah Nomor 561 / 57 Tahun 2023 tanggal 30 November 2023 .",
+                                "UMK 2025 ditetapkan berdasarkan Surat Keputusan Gubernur Jawa Tengah Nomor 561 / 45 Tahun 2024 tanggal 18 Desember 2024 .",
                                 style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.normal),
