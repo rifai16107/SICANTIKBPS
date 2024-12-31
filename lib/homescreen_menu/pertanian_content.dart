@@ -2,12 +2,12 @@
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/restAPI/repository_perumahan_lantai.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/series_pangan.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/series_horti_semusim.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/series_horti_tahunan.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/series_kebun.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/series_ternak.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/series_ikan.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/series_pangan.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/series_horti_semusim.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/series_horti_tahunan.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/series_kebun.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/series_ternak.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/series_ikan.dart';
 import 'package:flutter/material.dart';
 
 class pertanianContent extends StatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_horti_tahunan.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_horti_tahunan.dart';
 import 'package:bps_cilacap/restAPI/repository_pertanian_horti_tahunan.dart';
 import 'package:flutter/material.dart';
 

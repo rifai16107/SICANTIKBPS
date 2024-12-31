@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/body_serieskebun.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/body_serieshortitahunan.dart';
 import 'package:flutter/material.dart';
 
-class SeriesKebun extends StatefulWidget {
-  const SeriesKebun({super.key});
+class SeriesHortiTahunan extends StatefulWidget {
+  const SeriesHortiTahunan({super.key});
 
   @override
-  State<SeriesKebun> createState() => _SeriesKebun();
+  State<SeriesHortiTahunan> createState() => _SeriesHortiTahunan();
 }
 
-class _SeriesKebun extends State<SeriesKebun> {
+class _SeriesHortiTahunan extends State<SeriesHortiTahunan> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -18,7 +18,7 @@ class _SeriesKebun extends State<SeriesKebun> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PERKEBUNAN",
+          "PERTANIAN HORTIKULTURA",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -39,13 +39,13 @@ class _SeriesKebun extends State<SeriesKebun> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.065,
+              height: screenHeight * 0.09,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Luas Areal Tanaman Perkebunan dan Produksi Tanaman Perkebunan di Kabupaten Cilacap",
+                    "Produksi Tanaman Sayuran dan Buah-Buahan Tahunan di Kabupaten Cilacap",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -54,8 +54,8 @@ class _SeriesKebun extends State<SeriesKebun> {
             ),
             Flexible(
               child: SizedBox(
-                height: screenHeight * 0.95,
-                child: const BodySeriesKebun(),
+                height: screenHeight * 1,
+                child: const BodySeriesHortiTahunan(),
               ),
             ),
           ],

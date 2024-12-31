@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/body_serieshortitahunan.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/body_seriesternak.dart';
 import 'package:flutter/material.dart';
 
-class SeriesHortiTahunan extends StatefulWidget {
-  const SeriesHortiTahunan({super.key});
+class SeriesTernak extends StatefulWidget {
+  const SeriesTernak({super.key});
 
   @override
-  State<SeriesHortiTahunan> createState() => _SeriesHortiTahunan();
+  State<SeriesTernak> createState() => _SeriesTernak();
 }
 
-class _SeriesHortiTahunan extends State<SeriesHortiTahunan> {
+class _SeriesTernak extends State<SeriesTernak> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -18,7 +18,7 @@ class _SeriesHortiTahunan extends State<SeriesHortiTahunan> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PERTANIAN HORTIKULTURA",
+          "TERNAK DAN UNGGAS",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -45,7 +45,7 @@ class _SeriesHortiTahunan extends State<SeriesHortiTahunan> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Produksi Tanaman Sayuran dan Buah-Buahan Tahunan di Kabupaten Cilacap",
+                    "Populasi Ternak Besar, Sedang, Kecil dan Populasi Unggas di Kabupaten Cilacap (Ekor)",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -55,7 +55,7 @@ class _SeriesHortiTahunan extends State<SeriesHortiTahunan> {
             Flexible(
               child: SizedBox(
                 height: screenHeight * 1,
-                child: const BodySeriesHortiTahunan(),
+                child: const BodySeriesTernak(),
               ),
             ),
           ],

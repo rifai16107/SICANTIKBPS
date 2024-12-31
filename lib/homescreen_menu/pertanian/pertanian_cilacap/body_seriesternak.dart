@@ -1,16 +1,16 @@
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_ikan.dart';
-import 'package:bps_cilacap/restAPI/repository_pertanian_ikan.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_ternak.dart';
+import 'package:bps_cilacap/restAPI/repository_pertanian_ternak.dart';
 import 'package:flutter/material.dart';
 
-class BodySeriesIkan extends StatefulWidget {
-  const BodySeriesIkan({super.key});
+class BodySeriesTernak extends StatefulWidget {
+  const BodySeriesTernak({super.key});
 
   @override
-  State<BodySeriesIkan> createState() => _BodySeriesIkanState();
+  State<BodySeriesTernak> createState() => _BodySeriesTernakState();
 }
 
-class _BodySeriesIkanState extends State<BodySeriesIkan> {
-  RepositoryPertanianIkan repositorypertanian = RepositoryPertanianIkan();
+class _BodySeriesTernakState extends State<BodySeriesTernak> {
+  RepositoryPertanianTernak repositorypertanian = RepositoryPertanianTernak();
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _BodySeriesIkanState extends State<BodySeriesIkan> {
                 length: 1,
                 child: Scaffold(
                   body: TabBarView(children: [
-                    PertanianIkan(),
+                    PertanianTernak(),
                   ]),
                 ),
               );

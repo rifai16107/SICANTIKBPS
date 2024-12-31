@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/body_seriespangan.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/body_seriesikan.dart';
 import 'package:flutter/material.dart';
 
-class SeriesPangan extends StatefulWidget {
-  const SeriesPangan({super.key});
+class SeriesIkan extends StatefulWidget {
+  const SeriesIkan({super.key});
 
   @override
-  State<SeriesPangan> createState() => _SeriesPangan();
+  State<SeriesIkan> createState() => _SeriesIkan();
 }
 
-class _SeriesPangan extends State<SeriesPangan> {
+class _SeriesIkan extends State<SeriesIkan> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -18,7 +18,7 @@ class _SeriesPangan extends State<SeriesPangan> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PERTANIAN TANAMAN PANGAN",
+          "PERIKANAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -39,13 +39,13 @@ class _SeriesPangan extends State<SeriesPangan> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.065,
+              height: screenHeight * 0.09,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Luas Panen, Produktivitas dan Produksi Tanaman Padi, Palawija di Kabupaten Cilacap",
+                    "Produksi Perikanan Tangkap dan Perikanan Budidaya di Kabupaten Cilacap (Kg)",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),
@@ -54,8 +54,8 @@ class _SeriesPangan extends State<SeriesPangan> {
             ),
             Flexible(
               child: SizedBox(
-                height: screenHeight * 0.95,
-                child: const BodySeriesPertanianPangan(),
+                height: screenHeight * 1,
+                child: const BodySeriesIkan(),
               ),
             ),
           ],

@@ -1,18 +1,17 @@
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_horti_semusim_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_horti_semusim_b.dart';
-import 'package:bps_cilacap/restAPI/repository_pertanian_horti_semusim.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_kebun_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_kebun_b.dart';
+import 'package:bps_cilacap/restAPI/repository_pertanian_kebun.dart';
 import 'package:flutter/material.dart';
 
-class BodySeriesHortiSemusim extends StatefulWidget {
-  const BodySeriesHortiSemusim({super.key});
+class BodySeriesKebun extends StatefulWidget {
+  const BodySeriesKebun({super.key});
 
   @override
-  State<BodySeriesHortiSemusim> createState() =>
-      _BodySeriesHortiSemusimState();
+  State<BodySeriesKebun> createState() => _BodySeriesKebunState();
 }
 
-class _BodySeriesHortiSemusimState extends State<BodySeriesHortiSemusim> {
-  RepositoryPertanianHortiSemusim repositorypertanian = RepositoryPertanianHortiSemusim();
+class _BodySeriesKebunState extends State<BodySeriesKebun> {
+  RepositoryPertanianKebun repositorypertanian = RepositoryPertanianKebun();
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +32,6 @@ class _BodySeriesHortiSemusimState extends State<BodySeriesHortiSemusim> {
               String luaspanen = "Luas Panen";
               //Produksi
               String produksi = "Produksi";
-              
 
               return DefaultTabController(
                 length: 2,
@@ -55,14 +53,12 @@ class _BodySeriesHortiSemusimState extends State<BodySeriesHortiSemusim> {
                         Tab(
                           text: produksi,
                         ),
-                        
                       ],
                     ),
                   ),
                   body: const TabBarView(children: [
-                    PertanianHortiSemusimA(),
-                    PertanianHortiSemusimB(),
-                    
+                    PertanianKebunA(),
+                    PertanianKebunB(),
                   ]),
                 ),
               );

@@ -1,17 +1,18 @@
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_kebun_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_kebun_b.dart';
-import 'package:bps_cilacap/restAPI/repository_pertanian_kebun.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_horti_semusim_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_horti_semusim_b.dart';
+import 'package:bps_cilacap/restAPI/repository_pertanian_horti_semusim.dart';
 import 'package:flutter/material.dart';
 
-class BodySeriesKebun extends StatefulWidget {
-  const BodySeriesKebun({super.key});
+class BodySeriesHortiSemusim extends StatefulWidget {
+  const BodySeriesHortiSemusim({super.key});
 
   @override
-  State<BodySeriesKebun> createState() => _BodySeriesKebunState();
+  State<BodySeriesHortiSemusim> createState() => _BodySeriesHortiSemusimState();
 }
 
-class _BodySeriesKebunState extends State<BodySeriesKebun> {
-  RepositoryPertanianKebun repositorypertanian = RepositoryPertanianKebun();
+class _BodySeriesHortiSemusimState extends State<BodySeriesHortiSemusim> {
+  RepositoryPertanianHortiSemusim repositorypertanian =
+      RepositoryPertanianHortiSemusim();
 
   @override
   Widget build(BuildContext context) {
@@ -57,8 +58,8 @@ class _BodySeriesKebunState extends State<BodySeriesKebun> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    PertanianKebunA(),
-                    PertanianKebunB(),
+                    PertanianHortiSemusimA(),
+                    PertanianHortiSemusimB(),
                   ]),
                 ),
               );

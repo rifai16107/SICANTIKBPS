@@ -1,6 +1,6 @@
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_pangan_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_pangan_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_pangan_c.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_pangan_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_pangan_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/pertanian_pangan_c.dart';
 import 'package:bps_cilacap/restAPI/repository_pertanian_pangan.dart';
 import 'package:flutter/material.dart';
 

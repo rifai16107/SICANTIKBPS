@@ -1,5 +1,5 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pertanian/body_serieshortisemusim.dart';
+import 'package:bps_cilacap/homescreen_menu/pertanian/pertanian_cilacap/body_serieshortisemusim.dart';
 import 'package:flutter/material.dart';
 
 class SeriesHortiSemusim extends StatefulWidget {
