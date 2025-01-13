@@ -58,7 +58,7 @@ android {
         targetSdkVersion 34 
         //flutter.targetSdkVersion
         versionCode 11
-        versionName '6.7.0'
+        versionName '7.0.0'
     }
 
      signingConfigs {

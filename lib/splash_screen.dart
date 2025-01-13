@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Expanded(
             flex: 1,
             child: Container(
-                color: Colors.white, child: const Text("versi 6.7.0")),
+                color: Colors.white, child: const Text("versi 7.0.0")),
           )
         ],
       ),
