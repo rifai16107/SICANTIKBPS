@@ -1,3 +1,5 @@
-Catatan rilis 7.0.0
+Catatan rilis 6.7.0
+Catatan rilis 6.7.0
 
-- Penambahan indikator PDRB Triwulanan
+- Penambahan indikator perumahan kab/kota sejateng
+- Penambahan indikator utama pada slider (TPT), TPK, RLM

@@ -1,0 +1,3 @@
+Catatan rilis 7.0.0
+
+- Penambahan indikator PDRB Triwulanan
