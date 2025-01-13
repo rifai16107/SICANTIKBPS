@@ -1,8 +1,9 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/pdrb/pdrb_lu_conten.dart';
-import 'package:bps_cilacap/pdrb_pengel/pdrb_pengel_content.dart';
-import 'package:bps_cilacap/pdrb_adhb_kabkot/series_pdrbadhb_kabkot.dart';
-import 'package:bps_cilacap/pdrb_adhk_kabkot/series_pdrbadhk_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu/pdrb_lu_conten.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/body_pdrb_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel/pdrb_pengel_content.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_adhb_kabkot/series_pdrbadhb_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_adhk_kabkot/series_pdrbadhk_kabkot.dart';
 import 'package:bps_cilacap/restAPI/repository_nilai_pdrb.dart';
 import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
@@ -205,7 +206,7 @@ class _PdrbContentState extends State<PdrbContent> {
                             child: Column(
                               children: [
                                 Flexible(
-                                  flex: 3,
+                                  flex: 12,
                                   fit: FlexFit.tight,
                                   child: Container(
                                     color: Colors.black,
@@ -216,7 +217,7 @@ class _PdrbContentState extends State<PdrbContent> {
                                           horizontal: 5,
                                         ),
                                         child: Text(
-                                          "Tahun $tahun , PDRB Atas Dasar Harga Berlaku (Dengan Migas) Kabupaten Cilacap tercatat sebesar ${Format.convertTo(nilaiadhbmigas5, 2)}, sedangkan PDRB Atas Dasar Harga Konstan (Dengan Migas) sebesar ${Format.convertTo(nilaiadhkmigas5, 2)} (dalam Juta Rp)",
+                                          "Tahun $tahun , PDRB ADHB (Dengan Migas) Kabupaten Cilacap tercatat sebesar ${Format.convertTo(nilaiadhbmigas5, 2)}, sedangkan PDRB ADHK (Dengan Migas) sebesar ${Format.convertTo(nilaiadhkmigas5, 2)} (dalam Juta Rp)",
                                           style: const TextStyle(
                                               color: Colors.white,
                                               fontSize: 14),
@@ -228,7 +229,7 @@ class _PdrbContentState extends State<PdrbContent> {
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
-                                  flex: 2,
+                                  flex: 1,
                                   child: Container(
                                     color: Colors.transparent,
                                   ),
@@ -264,7 +265,50 @@ class _PdrbContentState extends State<PdrbContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "Produk Domestik Regional Bruto (PDRB) Kabupaten Cilacap Menurut Lapangan Usaha",
+                                        "PDRB Kabupaten Cilacap Menurut Lapangan Usaha",
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                    Flexible(
+                                      flex: 1,
+                                      fit: FlexFit.tight,
+                                      child: Icon(
+                                        (Icons.arrow_right),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ),
+                        const Divider(
+                          height: 5,
+                          color: Colors.transparent,
+                        ),
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: ElevatedButton(
+                            style: const ButtonStyle(
+                                backgroundColor:
+                                    MaterialStatePropertyAll<Color>(
+                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CustomPageRoute(
+                                      child: const BodyPdrbLuTrw(),
+                                      direction: AxisDirection.left));
+                            },
+                            child: SizedBox(
+                                width: screenWidth,
+                                height: screenHeight * 0.1,
+                                child: Row(
+                                  children: const [
+                                    Flexible(
+                                      flex: 10,
+                                      fit: FlexFit.tight,
+                                      child: Text(
+                                        "PDRB Kabupaten Cilacap Menurut Lapangan Usaha (Triwulanan)",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -307,7 +351,51 @@ class _PdrbContentState extends State<PdrbContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "Produk Domestik Regional Bruto (PDRB) Kabupaten Cilacap Menurut Pengeluaran",
+                                        "PDRB Kabupaten Cilacap Menurut Komponen Pengeluaran",
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                    Flexible(
+                                      flex: 1,
+                                      fit: FlexFit.tight,
+                                      child: Icon(
+                                        (Icons.arrow_right),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ),
+
+                        const Divider(
+                          height: 5,
+                          color: Colors.transparent,
+                        ),
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: ElevatedButton(
+                            style: const ButtonStyle(
+                                backgroundColor:
+                                    MaterialStatePropertyAll<Color>(
+                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CustomPageRoute(
+                                      child: const PdrbPengelContent(),
+                                      direction: AxisDirection.left));
+                            },
+                            child: SizedBox(
+                                width: screenWidth,
+                                height: screenHeight * 0.1,
+                                child: Row(
+                                  children: const [
+                                    Flexible(
+                                      flex: 10,
+                                      fit: FlexFit.tight,
+                                      child: Text(
+                                        "PDRB Kabupaten Cilacap Menurut Komponen Pengeluaran (Triwulanan)",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -351,7 +439,50 @@ class _PdrbContentState extends State<PdrbContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "PDRB Atas Dasar Harga Berlaku Menurut Kabupaten/Kota di Jawa Tengah",
+                                        "PDRB ADHB Menurut Kabupaten/Kota di Jawa Tengah",
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                    Flexible(
+                                      flex: 1,
+                                      fit: FlexFit.tight,
+                                      child: Icon(
+                                        (Icons.arrow_right),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ),
+                        const Divider(
+                          height: 5,
+                          color: Colors.transparent,
+                        ),
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: ElevatedButton(
+                            style: const ButtonStyle(
+                                backgroundColor:
+                                    MaterialStatePropertyAll<Color>(
+                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CustomPageRoute(
+                                      child: const SeriesPdrbadhbKabkot(),
+                                      direction: AxisDirection.left));
+                            },
+                            child: SizedBox(
+                                width: screenWidth,
+                                height: screenHeight * 0.1,
+                                child: Row(
+                                  children: const [
+                                    Flexible(
+                                      flex: 10,
+                                      fit: FlexFit.tight,
+                                      child: Text(
+                                        "PDRB ADHB Menurut Kabupaten/Kota di Jawa Tengah (Triwulanan)",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -394,7 +525,50 @@ class _PdrbContentState extends State<PdrbContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "PDRB Atas Dasar Harga Konstan (Tahun 2010=100) Menurut Kabupaten/Kota di Jawa Tengah",
+                                        "PDRB ADHK (Tahun 2010=100) Menurut Kabupaten/Kota di Jawa Tengah",
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                    Flexible(
+                                      flex: 1,
+                                      fit: FlexFit.tight,
+                                      child: Icon(
+                                        (Icons.arrow_right),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ),
+                        const Divider(
+                          height: 5,
+                          color: Colors.transparent,
+                        ),
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: ElevatedButton(
+                            style: const ButtonStyle(
+                                backgroundColor:
+                                    MaterialStatePropertyAll<Color>(
+                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CustomPageRoute(
+                                      child: const SeriesPdrbadhkKabkot(),
+                                      direction: AxisDirection.left));
+                            },
+                            child: SizedBox(
+                                width: screenWidth,
+                                height: screenHeight * 0.1,
+                                child: Row(
+                                  children: const [
+                                    Flexible(
+                                      flex: 10,
+                                      fit: FlexFit.tight,
+                                      child: Text(
+                                        "PDRB ADHK (Tahun 2010=100) Menurut Kabupaten/Kota di Jawa Tengah (Triwulanan)",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
