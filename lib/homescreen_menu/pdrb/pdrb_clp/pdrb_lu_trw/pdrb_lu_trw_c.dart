@@ -4,45 +4,19 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const PdrbLuTrw());
+void main() => runApp(const PdrbLuTrwC());
 
-class PdrbLuTrw extends StatelessWidget {
-  const PdrbLuTrw({super.key});
+class PdrbLuTrwC extends StatelessWidget {
+  const PdrbLuTrwC({super.key});
 
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
-    return MaterialApp(
-      theme: ThemeData(useMaterial3: true),
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          toolbarHeight: 0.080 * screenHeight,
-          flexibleSpace: Center(
-            child: Column(
-              children: const [
-                Text(
-                  'PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Milyar Rupiah)',
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 17, 17, 17),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                Text(
-                    'geser kolom berisi data ke kiri untuk melihat isian kolom lainnya',
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 17, 17, 17),
-                      fontWeight: FontWeight.normal,
-                      fontSize: 11,
-                    )),
-              ],
-            ),
-          ),
-        ),
-        body: SafeArea(
-          child: SingleChildScrollView(
+    //double screenHeight = MediaQuery.of(context).size.height;
+    //double screenWidth = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: ListView(
+        children: [
+          SingleChildScrollView(
             child: Row(
               children: const [
                 FixedColumnWidget(),
@@ -50,7 +24,8 @@ class PdrbLuTrw extends StatelessWidget {
               ],
             ),
           ),
-        ),
+          const CatatanWidget(),
+        ],
       ),
     );
   }
@@ -235,55 +210,55 @@ class ScrollableColumnWidget extends StatelessWidget {
                   columns: [
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.15,
+                          width: screenWidth * 0.16,
                           child: const Text(
-                            'Trw 1',
-                            //maxLines: 2,
-                            //overflow: TextOverflow.ellipsis,
+                            'Triwulan 1',
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                           ),
                         ),
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.15,
+                          width: screenWidth * 0.16,
                           child: const Text(
-                            'Trw 2',
-                            //maxLines: 2,
-                            //overflow: TextOverflow.ellipsis,
+                            'Triwulan 2',
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                           ),
                         ),
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.15,
+                          width: screenWidth * 0.16,
                           child: const Text(
-                            'Trw 3',
-                            //maxLines: 2,
-                            //overflow: TextOverflow.ellipsis,
+                            'Triwulan 3',
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                           ),
                         ),
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.15,
+                          width: screenWidth * 0.16,
                           child: const Text(
-                            'Trw 4',
-                            //maxLines: 2,
-                            //overflow: TextOverflow.ellipsis,
+                            'Triwulan 4',
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                           ),
                         ),
                         numeric: true),
                     DataColumn(
                         label: SizedBox(
-                          width: screenWidth * 0.15,
+                          width: screenWidth * 0.14,
                           child: const Text(
                             'Total',
-                            //maxLines: 2,
-                            //overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.center,
                             //style: TextStyle(
                             //fontStyle: FontStyle.italic,
@@ -296,7 +271,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                   rows: List<DataRow>.generate(
                     4,
                     (index) {
-                      var data = snapshot.data![index + 0];
+                      var data = snapshot.data![index + 8];
                       return DataRow(
                           color: MaterialStateColor.resolveWith((states) =>
                               index % 2 == 1
@@ -309,7 +284,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
-                                  fontSize: 13,
+                                  fontSize: 12.5,
                                 ),
                               ),
                             ),
@@ -319,7 +294,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
-                                  fontSize: 13,
+                                  fontSize: 12.5,
                                 ),
                               ),
                               //textAlign: TextAlign.right,
@@ -330,7 +305,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
-                                  fontSize: 13,
+                                 fontSize: 12.5,
                                 ),
                               ),
                             ),
@@ -340,7 +315,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
-                                  fontSize: 13,
+                                  fontSize: 12.5,
                                 ),
                               ),
                             ),
@@ -350,7 +325,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                                 style: const TextStyle(
                                   color: Color.fromARGB(255, 17, 17, 17),
                                   fontWeight: FontWeight.normal,
-                                  fontSize: 13,
+                                 fontSize: 12.5,
                                 ),
                               ),
                             ),
@@ -367,6 +342,49 @@ class ScrollableColumnWidget extends StatelessWidget {
           // By default show a loading spinner.
           return const Center(child: CircularProgressIndicator());
         },
+      ),
+    );
+  }
+}
+class CatatanWidget extends StatelessWidget {
+  const CatatanWidget({super.key});
+  @override
+  Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+    return SizedBox(
+      width: screenWidth,
+      height: 0.40 * screenHeight,
+      child: Column(
+        children: [
+          Column(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(1),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: const TextSpan(
+                      text: 'Sumber:',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12),
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: ' BPS Kabupaten Cilacap',
+                            style: TextStyle(
+                                fontSize: 11,
+                                fontFamily: 'Roboto',
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold)),
+                      ]),
+                ),
+              ),
+              
+            ],
+          ),
+        ],
       ),
     );
   }
