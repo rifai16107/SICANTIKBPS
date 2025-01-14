@@ -18,8 +18,7 @@ class RepositoryPdrbLuTrw {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipdrb) =>
-                ModelPdrbTrwLu.fromJson(isipdrb))
+            .map((isipdrb) => ModelPdrbTrwLu.fromJson(isipdrb))
             .toList();
       }
     } catch (isipdrb) {
@@ -30,7 +29,7 @@ class RepositoryPdrbLuTrw {
 }
 
 class ModelPdrbTrwLu {
- final int id;
+  final int id;
   final String komponen;
   final String trw1;
   final String trw2;
@@ -78,18 +77,16 @@ class ModelPdrbTrwLu {
   }
 }
 
-class PdrbLuTrwA extends StatefulWidget {
-  const PdrbLuTrwA({Key? key}) : super(key: key);
+class PdrbLuTrwC extends StatefulWidget {
+  const PdrbLuTrwC({Key? key}) : super(key: key);
 
   @override
-  State<PdrbLuTrwA> createState() =>
-      _PdrbLuTrwAState();
+  State<PdrbLuTrwC> createState() => _PdrbLuTrwCState();
 }
 
-RepositoryPdrbLuTrw repositorypdrb =
-    RepositoryPdrbLuTrw();
+RepositoryPdrbLuTrw repositorypdrb = RepositoryPdrbLuTrw();
 
-class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
+class _PdrbLuTrwCState extends State<PdrbLuTrwC> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -106,40 +103,38 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String komponen1 = isipdrb[index = 0].komponen;
-              String komponen2 = isipdrb[index = 1].komponen;
-              String komponen3 = isipdrb[index = 2].komponen;
-              String komponen4 = isipdrb[index = 3].komponen;
-              
+              String komponen1 = isipdrb[index = 8].komponen;
+              String komponen2 = isipdrb[index = 9].komponen;
+              String komponen3 = isipdrb[index = 10].komponen;
+              String komponen4 = isipdrb[index = 11].komponen;
 
               //pdrb trw
-              String primer_trw1 = isipdrb[index = 0].trw1;
-              String sekunder_trw1 = isipdrb[index = 1].trw1;
-              String tersier_trw1 = isipdrb[index = 2].trw1;
-              String total_trw1 = isipdrb[index = 3].trw1;
+              String primer_trw1 = isipdrb[index = 8].trw1;
+              String sekunder_trw1 = isipdrb[index = 9].trw1;
+              String tersier_trw1 = isipdrb[index = 10].trw1;
+              String total_trw1 = isipdrb[index = 11].trw1;
 
-              String primer_trw2 = isipdrb[index = 0].trw2;
-              String sekunder_trw2 = isipdrb[index = 1].trw2;
-              String tersier_trw2 = isipdrb[index = 2].trw2;
-              String total_trw2 = isipdrb[index = 3].trw2;
+              String primer_trw2 = isipdrb[index = 8].trw2;
+              String sekunder_trw2 = isipdrb[index = 9].trw2;
+              String tersier_trw2 = isipdrb[index = 10].trw2;
+              String total_trw2 = isipdrb[index = 11].trw2;
 
-              String primer_trw3 = isipdrb[index = 0].trw3;
-              String sekunder_trw3 = isipdrb[index = 1].trw3;
-              String tersier_trw3 = isipdrb[index = 2].trw3;
-              String total_trw3 = isipdrb[index = 3].trw3;
+              String primer_trw3 = isipdrb[index = 8].trw3;
+              String sekunder_trw3 = isipdrb[index = 9].trw3;
+              String tersier_trw3 = isipdrb[index = 10].trw3;
+              String total_trw3 = isipdrb[index = 11].trw3;
 
-              String primer_trw4 = isipdrb[index = 0].trw4;
-              String sekunder_trw4 = isipdrb[index = 1].trw4;
-              String tersier_trw4 = isipdrb[index = 2].trw4;
-              String total_trw4 = isipdrb[index = 3].trw4;
+              String primer_trw4 = isipdrb[index = 8].trw4;
+              String sekunder_trw4 = isipdrb[index = 9].trw4;
+              String tersier_trw4 = isipdrb[index = 10].trw4;
+              String total_trw4 = isipdrb[index = 11].trw4;
 
-              String primer_total = isipdrb[index = 0].total;
-              String sekunder_total = isipdrb[index = 1].total;
-              String tersier_total = isipdrb[index = 2].total;
-              String total_total = isipdrb[index = 3].total;
-              
-                       
-              String thn1 = isipdrb[index = 0].tahun;
+              String primer_total = isipdrb[index = 8].total;
+              String sekunder_total = isipdrb[index = 9].total;
+              String tersier_total = isipdrb[index = 10].total;
+              String total_total = isipdrb[index = 11].total;
+
+              String thn1 = isipdrb[index = 8].tahun;
 
               return Scaffold(
                   body: Column(
@@ -154,7 +149,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: screenWidth * 0.23,
+                          width: screenWidth * 0.20,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
@@ -171,7 +166,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.75,
+                          width: screenWidth * 0.78,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
@@ -191,7 +186,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                           thickness: 2,
                           color: Colors.black,
                         ),
-                        ],
+                      ],
                     ),
                   ),
 
@@ -203,7 +198,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: screenWidth * 0.23,
+                          width: screenWidth * 0.22,
                           child: Container(
                             height: screenHeight * 0.005,
                             color: Colors.blue,
@@ -220,7 +215,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.75,
+                          width: screenWidth * 0.76,
                           child: Container(
                             height: screenHeight * 0.002,
                             color: Colors.white,
@@ -236,7 +231,6 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                             ),
                           ),
                         ),
-                        
                       ],
                     ),
                   ),
@@ -248,7 +242,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: screenWidth * 0.23,
+                          width: screenWidth * 0.20,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
@@ -270,10 +264,10 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 5, top: 0, bottom: 0),
+                                right: 15, top: 0, bottom: 0),
                             child: const Text(
                               "Trw 1",
-                              textAlign: TextAlign.center,
+                              textAlign: TextAlign.right,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 12,
@@ -287,12 +281,12 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 10, top: 0, bottom: 0),
+                                right: 15, top: 0, bottom: 0),
                             child: const Text(
                               "Trw 2",
-                              //textAlign: TextAlign.center,
+                              textAlign: TextAlign.right,
                               style: TextStyle(
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontSize: 12,
                                   color: Colors.white),
                             ),
@@ -304,47 +298,47 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 10, top: 0, bottom: 0),
+                                right: 10, top: 0, bottom: 0),
                             child: const Text(
                               "Trw 3",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12.5,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          width: screenWidth * 0.15,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.blue,
-                            padding: const EdgeInsets.only(
-                                left: 5, top: 0, bottom: 0),
-                            child: const Text(
-                              "Trw 4",
-                              textAlign: TextAlign.center,
+                              textAlign: TextAlign.right,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 12.5,
+                                  fontSize: 12,
                                   color: Colors.white),
                             ),
                           ),
                         ),
                         SizedBox(
-                          width: screenWidth * 0.15,
+                          width: screenWidth * 0.16,
                           child: Container(
                             height: screenHeight * 0.04,
                             color: Colors.blue,
                             padding: const EdgeInsets.only(
-                                left: 10, top: 0, bottom: 0),
+                                right: 10, top: 0, bottom: 0),
+                            child: const Text(
+                              "Trw 4",
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.16,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 5, top: 0, bottom: 0),
                             child: const Text(
                               "Total",
-                              //textAlign: TextAlign.center,
+                              textAlign: TextAlign.right,
                               style: TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 12.5,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
                                   color: Colors.white),
                             ),
                           ),
@@ -364,22 +358,21 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                       //height: screenHeight,
                       child: Column(
                         children: [
-                          
-                          // Primer
+                          // Sektor Primer
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.045,
+                            height: screenHeight * 0.07,
                             color: Colors.transparent,
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.23 * screenWidth,
+                                  width: 0.15 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      "Sektor "+komponen1,
+                                      "Sektor " + komponen1,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -388,11 +381,11 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.15 * screenWidth,
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 2, top: 1, bottom: 1),
+                                        right: 0, top: 1, bottom: 1),
                                     child: Text(
                                       primer_trw1,
                                       textAlign: TextAlign.right,
@@ -403,11 +396,11 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.15 * screenWidth,
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 2, top: 1, bottom: 1),
+                                        right: 0, top: 1, bottom: 1),
                                     child: Text(
                                       primer_trw2,
                                       textAlign: TextAlign.right,
@@ -418,11 +411,11 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.15 * screenWidth,
+                                  width: 0.16 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 2, top: 1, bottom: 1),
+                                        right: 0, top: 1, bottom: 1),
                                     child: Text(
                                       primer_trw3,
                                       textAlign: TextAlign.right,
@@ -432,23 +425,23 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                     ),
                                   ),
                                 ),
-                                 SizedBox(
-                                  width: 0.15 * screenWidth,
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 2, top: 1, bottom: 1),
+                                        right: 0, top: 1, bottom: 1),
                                     child: Text(
                                       primer_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                                 SizedBox(
-                                  width: 0.15 * screenWidth,
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -462,25 +455,25 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                     ),
                                   ),
                                 ),
-                               ],  
+                              ],
                             ),
                           ),
 
                           // Sekunder
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.030,
-                            color: Colors.transparent,
+                            height: screenHeight * 0.07,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.15 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 2, top: 1, bottom: 1),
+                                        right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      komponen2,
+                                      "Sektor " + komponen2,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -489,7 +482,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -504,7 +497,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -519,7 +512,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.16 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -528,13 +521,13 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       sekunder_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -543,13 +536,13 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       sekunder_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                                 SizedBox(
-                                  width: 0.14 * screenWidth,
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -558,30 +551,30 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       sekunder_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                               ],  
+                              ],
                             ),
                           ),
 
                           // Tersier
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.030,
+                            height: screenHeight * 0.07,
                             color: Colors.transparent,
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.15 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 2, top: 1, bottom: 1),
+                                        right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      komponen3,
+                                      "Sektor " + komponen3,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -590,7 +583,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -605,7 +598,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -620,7 +613,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.16 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -629,13 +622,13 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       tersier_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -644,13 +637,13 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       tersier_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                                 SizedBox(
-                                  width: 0.14 * screenWidth,
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -659,39 +652,39 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       tersier_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                               ],  
+                              ],
                             ),
                           ),
 
                           // TOTAL
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.030,
-                            color: Colors.transparent,
+                            height: screenHeight * 0.07,
+                            color: Colors.grey.shade200,
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: 0.28 * screenWidth,
+                                  width: 0.15 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
-                                        right: 2, top: 1, bottom: 1),
+                                        right: 0, top: 1, bottom: 1),
                                     child: Text(
                                       komponen4,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
-                                          fontWeight: FontWeight.normal),
+                                          fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -706,7 +699,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -721,7 +714,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                  width: 0.16 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -730,13 +723,13 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       total_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                                 SizedBox(
-                                  width: 0.13 * screenWidth,
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -745,13 +738,13 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       total_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                                 SizedBox(
-                                  width: 0.14 * screenWidth,
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
                                   child: Container(
                                     color: Colors.transparent,
                                     padding: const EdgeInsets.only(
@@ -760,21 +753,19 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       total_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          fontSize: 12.5,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
-                               ],  
+                              ],
                             ),
                           ),
 
                           const Divider(
                             height: 20,
+                            color: Colors.black,
                           ),
-                         
-
-                          
 
                           Container(
                             padding: const EdgeInsets.all(1),
@@ -789,8 +780,9 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                       fontSize: 12),
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text:
-                                            " Tahun "+ thn1+' Angka Sementara',
+                                        text: " Tahun " +
+                                            thn1 +
+                                            ' Angka Sangat Sangat Sementara',
                                         style: const TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',
@@ -799,7 +791,6 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                   ]),
                             ),
                           ),
-                          
                         ],
                       ),
                     ),

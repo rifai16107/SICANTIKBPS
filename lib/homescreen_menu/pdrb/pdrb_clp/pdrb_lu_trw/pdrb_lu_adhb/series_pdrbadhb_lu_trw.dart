@@ -1,16 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/body_pdrb_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/pdrb_lu_adhb/body_pdrbadhb_lu_trw.dart';
 import 'package:flutter/material.dart';
 
-
-class SeriesPdrbLuTrw extends StatefulWidget {
-  const SeriesPdrbLuTrw({super.key});
+class SeriesPdrbadhbLuTrw extends StatefulWidget {
+  const SeriesPdrbadhbLuTrw({super.key});
 
   @override
-  State<SeriesPdrbLuTrw> createState() => _SeriesPdrbLuTrw();
+  State<SeriesPdrbadhbLuTrw> createState() => _SeriesPdrbadhbLuTrw();
 }
 
-class _SeriesPdrbLuTrw extends State<SeriesPdrbLuTrw> {
+class _SeriesPdrbadhbLuTrw extends State<SeriesPdrbadhbLuTrw> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -20,7 +19,7 @@ class _SeriesPdrbLuTrw extends State<SeriesPdrbLuTrw> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PDRB LU TRIWULANAN",
+          "PDRB ADHB LU TRIWULANAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -40,12 +39,12 @@ class _SeriesPdrbLuTrw extends State<SeriesPdrbLuTrw> {
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: 0.1*screenHeight,
+            height: 0.08 * screenHeight,
             color: Colors.white,
             child: Column(
               children: const [
                 Text(
-                  ' PDRB ADHK Triwulanan Dengan Migas  Menurut Lapangan Usaha di Kabupaten Cilacap ',
+                  ' PDRB ADHB Triwulanan Dengan Migas  Menurut Lapangan Usaha di Kabupaten Cilacap (Milyar Rupiah) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -53,8 +52,7 @@ class _SeriesPdrbLuTrw extends State<SeriesPdrbLuTrw> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Text(
-                    'geser kolom berisi data ke kiri untuk melihat isian kolom lainnya',
+                Text('',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.normal,
@@ -72,17 +70,13 @@ class _SeriesPdrbLuTrw extends State<SeriesPdrbLuTrw> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 12,
-                  child: BodyPdrbLuTrw(),
+                  child: BodyPdrbadhbLuTrw(),
                 ),
               ],
             ),
-           
           ),
-         
         ],
       ),
-      
     );
-    
   }
 }
