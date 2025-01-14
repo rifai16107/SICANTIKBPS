@@ -4,6 +4,9 @@ import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/pdrb_lu_adhk/series_pdrb_lu_trw.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/pdrb_lu_adhb/series_pdrbadhb_lu_trw.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/series_distadhb_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuqq_lu_adhk/series_lajuadhkqq_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajucc_lu_adhk/series_lajuadhkcc_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuyy_lu_adhk/series_lajuadhkyy_lu_trw.dart';
 import 'package:flutter/material.dart';
 
 class pdrblutrwContent extends StatefulWidget {
@@ -49,10 +52,10 @@ class _pdrblutrwContentState extends State<pdrblutrwContent> {
                 child: Column(
                   children: [
                     Flexible(
-                      flex: 3,
+                      flex: 4,
                       fit: FlexFit.tight,
                       child: Container(
-                        height: 100,
+                        height: 110,
                         color: Colors.black,
                         child: const Center(
                           child: Padding(
@@ -103,7 +106,7 @@ class _pdrblutrwContentState extends State<pdrblutrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "PDRB ADHK Triwulanan Menurut Lapangan Usaha",
+                            "PDRB Triwulanan Atas Dasar Harga Konstan Menurut Lapangan Usaha",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -143,7 +146,7 @@ class _pdrblutrwContentState extends State<pdrblutrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "PDRB ADHB Triwulanan Menurut Lapangan Usaha",
+                            "PDRB Triwulanan Atas Dasar Harga Berlaku Menurut Lapangan Usaha",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -211,7 +214,7 @@ class _pdrblutrwContentState extends State<pdrblutrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesPdrbadhbLuTrw(),
+                          child: const SeriesLajuadhkLuTrw(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -223,7 +226,87 @@ class _pdrblutrwContentState extends State<pdrblutrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Laju Pertumbuhan PDRB Triwulanan Menurut Lapangan Usaha",
+                            "Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Lapangan Usaha (Persen)",
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Flexible(
+                          flex: 2,
+                          fit: FlexFit.tight,
+                          child: Icon(Icons.arrow_right),
+                        ),
+                      ],
+                    )),
+              ),
+            ),
+            const Divider(
+              height: 5,
+              color: Colors.transparent,
+            ),
+            Flexible(
+              flex: 1,
+              fit: FlexFit.tight,
+              child: ElevatedButton(
+                style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll<Color>(
+                        Color.fromRGBO(10, 100, 31, 0.886))),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      CustomPageRoute(
+                          child: const SeriesLajuadhkccLuTrw(),
+                          direction: AxisDirection.left));
+                },
+                child: SizedBox(
+                    width: screenWidth,
+                    height: screenHeight * 0.07,
+                    child: Row(
+                      children: const [
+                        Flexible(
+                          flex: 16,
+                          fit: FlexFit.tight,
+                          child: Text(
+                            "Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Lapangan Usaha (Persen)",
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Flexible(
+                          flex: 2,
+                          fit: FlexFit.tight,
+                          child: Icon(Icons.arrow_right),
+                        ),
+                      ],
+                    )),
+              ),
+            ),
+            const Divider(
+              height: 5,
+              color: Colors.transparent,
+            ),
+            Flexible(
+              flex: 1,
+              fit: FlexFit.tight,
+              child: ElevatedButton(
+                style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll<Color>(
+                        Color.fromRGBO(10, 100, 31, 0.886))),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      CustomPageRoute(
+                          child: const SeriesLajuadhkyyLuTrw(),
+                          direction: AxisDirection.left));
+                },
+                child: SizedBox(
+                    width: screenWidth,
+                    height: screenHeight * 0.07,
+                    child: Row(
+                      children: const [
+                        Flexible(
+                          flex: 16,
+                          fit: FlexFit.tight,
+                          child: Text(
+                            "Laju Pertumbuhan (y-on-y) PDRB Triwulanan Menurut Lapangan Usaha (Persen)",
                             textAlign: TextAlign.center,
                           ),
                         ),

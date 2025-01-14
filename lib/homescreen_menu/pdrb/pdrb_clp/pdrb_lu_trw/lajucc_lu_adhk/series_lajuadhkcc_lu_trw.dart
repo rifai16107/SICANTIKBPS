@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/pdrb_lu_adhb/body_pdrbadhb_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajucc_lu_adhk/body_lajuadhkcc_lu_trw.dart';
 import 'package:flutter/material.dart';
 
-class SeriesPdrbadhbLuTrw extends StatefulWidget {
-  const SeriesPdrbadhbLuTrw({super.key});
+class SeriesLajuadhkccLuTrw extends StatefulWidget {
+  const SeriesLajuadhkccLuTrw({super.key});
 
   @override
-  State<SeriesPdrbadhbLuTrw> createState() => _SeriesPdrbadhbLuTrw();
+  State<SeriesLajuadhkccLuTrw> createState() => _SeriesLajuadhkccLuTrw();
 }
 
-class _SeriesPdrbadhbLuTrw extends State<SeriesPdrbadhbLuTrw> {
+class _SeriesLajuadhkccLuTrw extends State<SeriesLajuadhkccLuTrw> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -19,7 +19,7 @@ class _SeriesPdrbadhbLuTrw extends State<SeriesPdrbadhbLuTrw> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PDRB ADHB LU TRIWULANAN",
+          "DISTRIBUSI PDRB LU TRIWULANAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -44,7 +44,7 @@ class _SeriesPdrbadhbLuTrw extends State<SeriesPdrbadhbLuTrw> {
             child: Column(
               children: const [
                 Text(
-                  ' PDRB Triwulanan Atas Dasar Harga Berlaku Menurut Lapangan Usaha di Kabupaten Cilacap (Milyar Rupiah) ',
+                  ' Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class _SeriesPdrbadhbLuTrw extends State<SeriesPdrbadhbLuTrw> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 12,
-                  child: BodyPdrbadhbLuTrw(),
+                  child: BodyLajuadhkccLuTrw(),
                 ),
               ],
             ),

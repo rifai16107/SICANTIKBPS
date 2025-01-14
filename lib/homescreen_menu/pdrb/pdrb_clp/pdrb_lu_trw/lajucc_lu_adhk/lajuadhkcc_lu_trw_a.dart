@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 
 //DIST PDRB ADHB 2022-2024
 
-class RepositoryPdrbadhkLuTrw {
+class RepositoryLajuadhkLuTrw {
   final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-laju';
 
   Future getData() async {
@@ -18,7 +18,7 @@ class RepositoryPdrbadhkLuTrw {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipdrb) => ModelPdrbadhkTrwLu.fromJson(isipdrb))
+            .map((isipdrb) => ModelLajuadhkTrwLu.fromJson(isipdrb))
             .toList();
       }
     } catch (isipdrb) {
@@ -28,50 +28,50 @@ class RepositoryPdrbadhkLuTrw {
   }
 }
 
-class ModelPdrbadhkTrwLu {
+class ModelLajuadhkTrwLu {
   final int id;
   final String komponen;
-  final String dis_trw1;
-  final String dis_trw2;
-  final String dis_trw3;
-  final String dis_trw4;
-  final String dis_total;
+  final String cc_trw1;
+  final String cc_trw2;
+  final String cc_trw3;
+  final String cc_trw4;
+  final String cc_total;
   final String tahun;
 
-  ModelPdrbadhkTrwLu(
+  ModelLajuadhkTrwLu(
       {required this.id,
       required this.komponen,
-      required this.dis_trw1,
-      required this.dis_trw2,
-      required this.dis_trw3,
-      required this.dis_trw4,
-      required this.dis_total,
+      required this.cc_trw1,
+      required this.cc_trw2,
+      required this.cc_trw3,
+      required this.cc_trw4,
+      required this.cc_total,
       required this.tahun});
 
-  factory ModelPdrbadhkTrwLu.fromJson(Map<String, dynamic> json) {
-    return ModelPdrbadhkTrwLu(
+  factory ModelLajuadhkTrwLu.fromJson(Map<String, dynamic> json) {
+    return ModelLajuadhkTrwLu(
       id: json['id'],
       komponen: json['komponen'],
-      dis_trw1: json['dis_trw1'],
-      dis_trw2: json['dis_trw2'],
-      dis_trw3: json['dis_trw3'],
-      dis_trw4: json['dis_trw4'],
-      dis_total: json['dis_total'],
+      cc_trw1: json['cc_trw1'],
+      cc_trw2: json['cc_trw2'],
+      cc_trw3: json['cc_trw3'],
+      cc_trw4: json['cc_trw4'],
+      cc_total: json['cc_total'],
       tahun: json['tahun'],
     );
   }
 }
 
-class LajuadhkLuTrwA extends StatefulWidget {
-  const LajuadhkLuTrwA({Key? key}) : super(key: key);
+class LajuadhkccLuTrwA extends StatefulWidget {
+  const LajuadhkccLuTrwA({Key? key}) : super(key: key);
 
   @override
-  State<LajuadhkLuTrwA> createState() => _LajuadhkLuTrwAState();
+  State<LajuadhkccLuTrwA> createState() => _LajuadhkccLuTrwAState();
 }
 
-RepositoryPdrbadhkLuTrw repositorypdrbadhk = RepositoryPdrbadhkLuTrw();
+RepositoryLajuadhkLuTrw repositoryLajuadhk = RepositoryLajuadhkLuTrw();
 
-class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
+class _LajuadhkccLuTrwAState extends State<LajuadhkccLuTrwA> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -81,45 +81,45 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
         body: FutureBuilder(
-      future: repositorypdrbadhk.getData(),
+      future: repositoryLajuadhk.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           List isipdrb = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String komponen1 = isipdrb[index = 12].komponen;
-              String komponen2 = isipdrb[index = 13].komponen;
-              String komponen3 = isipdrb[index = 14].komponen;
-              String komponen4 = isipdrb[index = 15].komponen;
+              String komponen1 = isipdrb[index = 19].komponen;
+              String komponen2 = isipdrb[index = 20].komponen;
+              String komponen3 = isipdrb[index = 21].komponen;
+              String komponen4 = isipdrb[index = 22].komponen;
 
               //pdrb trw
-              String primer_dis_trw1 = isipdrb[index = 12].dis_trw1;
-              String sekunder_dis_trw1 = isipdrb[index = 13].dis_trw1;
-              String tersier_dis_trw1 = isipdrb[index = 14].dis_trw1;
-              String total_dis_trw1 = isipdrb[index = 15].dis_trw1;
+              String primer_cc_trw1 = isipdrb[index = 19].cc_trw1;
+              String sekunder_cc_trw1 = isipdrb[index = 20].cc_trw1;
+              String tersier_cc_trw1 = isipdrb[index = 21].cc_trw1;
+              String total_cc_trw1 = isipdrb[index = 22].cc_trw1;
 
-              String primer_dis_trw2 = isipdrb[index = 12].dis_trw2;
-              String sekunder_dis_trw2 = isipdrb[index = 13].dis_trw2;
-              String tersier_dis_trw2 = isipdrb[index = 14].dis_trw2;
-              String total_dis_trw2 = isipdrb[index = 15].dis_trw2;
+              String primer_cc_trw2 = isipdrb[index = 19].cc_trw2;
+              String sekunder_cc_trw2 = isipdrb[index = 20].cc_trw2;
+              String tersier_cc_trw2 = isipdrb[index = 21].cc_trw2;
+              String total_cc_trw2 = isipdrb[index = 22].cc_trw2;
 
-              String primer_dis_trw3 = isipdrb[index = 12].dis_trw3;
-              String sekunder_dis_trw3 = isipdrb[index = 13].dis_trw3;
-              String tersier_dis_trw3 = isipdrb[index = 14].dis_trw3;
-              String total_dis_trw3 = isipdrb[index = 15].dis_trw3;
+              String primer_cc_trw3 = isipdrb[index = 19].cc_trw3;
+              String sekunder_cc_trw3 = isipdrb[index = 20].cc_trw3;
+              String tersier_cc_trw3 = isipdrb[index = 21].cc_trw3;
+              String total_cc_trw3 = isipdrb[index = 22].cc_trw3;
 
-              String primer_dis_trw4 = isipdrb[index = 12].dis_trw4;
-              String sekunder_dis_trw4 = isipdrb[index = 13].dis_trw4;
-              String tersier_dis_trw4 = isipdrb[index = 14].dis_trw4;
-              String total_dis_trw4 = isipdrb[index = 15].dis_trw4;
+              String primer_cc_trw4 = isipdrb[index = 19].cc_trw4;
+              String sekunder_cc_trw4 = isipdrb[index = 20].cc_trw4;
+              String tersier_cc_trw4 = isipdrb[index = 21].cc_trw4;
+              String total_cc_trw4 = isipdrb[index = 22].cc_trw4;
 
-              String primer_dis_total = isipdrb[index = 12].dis_total;
-              String sekunder_dis_total = isipdrb[index = 13].dis_total;
-              String tersier_dis_total = isipdrb[index = 14].dis_total;
-              String dis_total = isipdrb[index = 15].dis_total;
+              String primer_cc_total = isipdrb[index = 19].cc_total;
+              String sekunder_cc_total = isipdrb[index = 20].cc_total;
+              String tersier_cc_total = isipdrb[index = 21].cc_total;
+              String cc_total = isipdrb[index = 22].cc_total;
 
-              String thn1 = isipdrb[index = 12].tahun;
+              String thn1 = isipdrb[index = 19].tahun;
 
               return Scaffold(
                   body: Column(
@@ -158,7 +158,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                             padding: const EdgeInsets.only(
                                 left: 0, top: 5, bottom: 0),
                             child: const Text(
-                              "Distribusi PDRB ADHB dengan Migas",
+                              "Laju Pertumbuhan PDRB dengan Migas",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -357,7 +357,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      "Sektor " + komponen1,
+                                       komponen1,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -372,7 +372,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_trw1,
+                                      primer_cc_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -387,7 +387,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_trw2,
+                                      primer_cc_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -402,7 +402,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_trw3,
+                                      primer_cc_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -417,7 +417,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_trw4,
+                                      primer_cc_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -432,7 +432,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_total,
+                                      primer_cc_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -458,7 +458,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      "Sektor " + komponen2,
+                                        komponen2,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -473,7 +473,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_trw1,
+                                      sekunder_cc_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -488,7 +488,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_trw2,
+                                      sekunder_cc_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -503,7 +503,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_trw3,
+                                      sekunder_cc_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -518,7 +518,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_trw4,
+                                      sekunder_cc_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -533,7 +533,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_total,
+                                      sekunder_cc_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -559,7 +559,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      "Sektor " + komponen3,
+                                       komponen3,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -574,7 +574,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_trw1,
+                                      tersier_cc_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -589,7 +589,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_trw2,
+                                      tersier_cc_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -604,7 +604,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_trw3,
+                                      tersier_cc_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -619,7 +619,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_trw4,
+                                      tersier_cc_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -634,7 +634,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_total,
+                                      tersier_cc_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -675,7 +675,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_dis_trw1,
+                                      total_cc_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -690,7 +690,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_dis_trw2,
+                                      total_cc_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -705,7 +705,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_dis_trw3,
+                                      total_cc_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -720,7 +720,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_dis_trw4,
+                                      total_cc_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -735,7 +735,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      dis_total,
+                                      cc_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -767,12 +767,12 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     TextSpan(
                                         text: " Tahun " +
                                             thn1 +
-                                            ' Angka Sementara',
+                                            ' Angka Sangat Sementara',
                                         style: const TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',
                                             color: Colors.black,
-                                            fontWeight: FontWeight.bold)),
+                                            fontWeight: FontWeight.normal)),
                                   ]),
                             ),
                           ),

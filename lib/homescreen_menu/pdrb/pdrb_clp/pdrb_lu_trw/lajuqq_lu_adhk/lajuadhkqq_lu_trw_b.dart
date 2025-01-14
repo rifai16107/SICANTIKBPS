@@ -8,8 +8,8 @@ import 'package:http/http.dart' as http;
 
 //DIST PDRB ADHB 2022-2024
 
-class RepositoryPdrbadhbLuTrw {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-lapu';
+class RepositoryLajuadhkLuTrw {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-laju';
 
   Future getData() async {
     try {
@@ -18,7 +18,7 @@ class RepositoryPdrbadhbLuTrw {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipdrb) => ModelPdrbadhbTrwLu.fromJson(isipdrb))
+            .map((isipdrb) => ModelLajuadhkTrwLu.fromJson(isipdrb))
             .toList();
       }
     } catch (isipdrb) {
@@ -28,50 +28,50 @@ class RepositoryPdrbadhbLuTrw {
   }
 }
 
-class ModelPdrbadhbTrwLu {
+class ModelLajuadhkTrwLu {
   final int id;
   final String komponen;
-  final String dis_trw1;
-  final String dis_trw2;
-  final String dis_trw3;
-  final String dis_trw4;
-  final String dis_total;
+  final String qq_trw1;
+  final String qq_trw2;
+  final String qq_trw3;
+  final String qq_trw4;
+  final String qq_total;
   final String tahun;
 
-  ModelPdrbadhbTrwLu(
+  ModelLajuadhkTrwLu(
       {required this.id,
       required this.komponen,
-      required this.dis_trw1,
-      required this.dis_trw2,
-      required this.dis_trw3,
-      required this.dis_trw4,
-      required this.dis_total,
+      required this.qq_trw1,
+      required this.qq_trw2,
+      required this.qq_trw3,
+      required this.qq_trw4,
+      required this.qq_total,
       required this.tahun});
 
-  factory ModelPdrbadhbTrwLu.fromJson(Map<String, dynamic> json) {
-    return ModelPdrbadhbTrwLu(
+  factory ModelLajuadhkTrwLu.fromJson(Map<String, dynamic> json) {
+    return ModelLajuadhkTrwLu(
       id: json['id'],
       komponen: json['komponen'],
-      dis_trw1: json['dis_trw1'],
-      dis_trw2: json['dis_trw2'],
-      dis_trw3: json['dis_trw3'],
-      dis_trw4: json['dis_trw4'],
-      dis_total: json['dis_total'],
+      qq_trw1: json['qq_trw1'],
+      qq_trw2: json['qq_trw2'],
+      qq_trw3: json['qq_trw3'],
+      qq_trw4: json['qq_trw4'],
+      qq_total: json['qq_total'],
       tahun: json['tahun'],
     );
   }
 }
 
-class DistadhbLuTrwB extends StatefulWidget {
-  const DistadhbLuTrwB({Key? key}) : super(key: key);
+class LajuadhkLuTrwB extends StatefulWidget {
+  const LajuadhkLuTrwB({Key? key}) : super(key: key);
 
   @override
-  State<DistadhbLuTrwB> createState() => _DistadhbLuTrwBState();
+  State<LajuadhkLuTrwB> createState() => _LajuadhkLuTrwBState();
 }
 
-RepositoryPdrbadhbLuTrw repositorypdrbadhb = RepositoryPdrbadhbLuTrw();
+RepositoryLajuadhkLuTrw repositoryLajuadhk = RepositoryLajuadhkLuTrw();
 
-class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
+class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -81,45 +81,45 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
         body: FutureBuilder(
-      future: repositorypdrbadhb.getData(),
+      future: repositoryLajuadhk.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           List isipdrb = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String komponen1 = isipdrb[index = 16].komponen;
-              String komponen2 = isipdrb[index = 17].komponen;
-              String komponen3 = isipdrb[index = 18].komponen;
-              String komponen4 = isipdrb[index = 19].komponen;
+              String komponen1 = isipdrb[index = 23].komponen;
+              String komponen2 = isipdrb[index = 24].komponen;
+              String komponen3 = isipdrb[index = 25].komponen;
+              String komponen4 = isipdrb[index = 26].komponen;
 
               //pdrb trw
-              String primer_dis_trw1 = isipdrb[index = 16].dis_trw1;
-              String sekunder_dis_trw1 = isipdrb[index = 17].dis_trw1;
-              String tersier_dis_trw1 = isipdrb[index = 18].dis_trw1;
-              String total_dis_trw1 = isipdrb[index = 19].dis_trw1;
+              String primer_qq_trw1 = isipdrb[index = 23].qq_trw1;
+              String sekunder_qq_trw1 = isipdrb[index = 24].qq_trw1;
+              String tersier_qq_trw1 = isipdrb[index = 25].qq_trw1;
+              String total_qq_trw1 = isipdrb[index = 26].qq_trw1;
 
-              String primer_dis_trw2 = isipdrb[index = 16].dis_trw2;
-              String sekunder_dis_trw2 = isipdrb[index = 17].dis_trw2;
-              String tersier_dis_trw2 = isipdrb[index = 18].dis_trw2;
-              String total_dis_trw2 = isipdrb[index = 19].dis_trw2;
+              String primer_qq_trw2 = isipdrb[index = 23].qq_trw2;
+              String sekunder_qq_trw2 = isipdrb[index = 24].qq_trw2;
+              String tersier_qq_trw2 = isipdrb[index = 25].qq_trw2;
+              String total_qq_trw2 = isipdrb[index = 26].qq_trw2;
 
-              String primer_dis_trw3 = isipdrb[index = 16].dis_trw3;
-              String sekunder_dis_trw3 = isipdrb[index = 17].dis_trw3;
-              String tersier_dis_trw3 = isipdrb[index = 18].dis_trw3;
-              String total_dis_trw3 = isipdrb[index = 19].dis_trw3;
+              String primer_qq_trw3 = isipdrb[index = 23].qq_trw3;
+              String sekunder_qq_trw3 = isipdrb[index = 24].qq_trw3;
+              String tersier_qq_trw3 = isipdrb[index = 25].qq_trw3;
+              String total_qq_trw3 = isipdrb[index = 26].qq_trw3;
 
-              String primer_dis_trw4 = isipdrb[index = 16].dis_trw4;
-              String sekunder_dis_trw4 = isipdrb[index = 17].dis_trw4;
-              String tersier_dis_trw4 = isipdrb[index = 18].dis_trw4;
-              String total_dis_trw4 = isipdrb[index = 19].dis_trw4;
+              String primer_qq_trw4 = isipdrb[index = 23].qq_trw4;
+              String sekunder_qq_trw4 = isipdrb[index = 24].qq_trw4;
+              String tersier_qq_trw4 = isipdrb[index = 25].qq_trw4;
+              String total_qq_trw4 = isipdrb[index = 26].qq_trw4;
 
-              String primer_dis_total = isipdrb[index = 16].dis_total;
-              String sekunder_dis_total = isipdrb[index = 17].dis_total;
-              String tersier_dis_total = isipdrb[index = 18].dis_total;
-              String dis_total = isipdrb[index = 19].dis_total;
+              String primer_qq_total = isipdrb[index = 23].qq_total;
+              String sekunder_qq_total = isipdrb[index = 24].qq_total;
+              String tersier_qq_total = isipdrb[index = 25].qq_total;
+              String qq_total = isipdrb[index = 26].qq_total;
 
-              String thn1 = isipdrb[index = 16].tahun;
+              String thn1 = isipdrb[index = 23].tahun;
 
               return Scaffold(
                   body: Column(
@@ -158,7 +158,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                             padding: const EdgeInsets.only(
                                 left: 0, top: 5, bottom: 0),
                             child: const Text(
-                              "Distribusi PDRB ADHB dengan Migas",
+                              "Laju Pertumbuhan PDRB dengan Migas",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -357,7 +357,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      "Sektor " + komponen1,
+                                       komponen1,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -372,7 +372,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_trw1,
+                                      primer_qq_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -387,7 +387,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_trw2,
+                                      primer_qq_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -402,7 +402,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_trw3,
+                                      primer_qq_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -417,7 +417,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_trw4,
+                                      primer_qq_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -432,7 +432,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_dis_total,
+                                      primer_qq_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -458,7 +458,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      "Sektor " + komponen2,
+                                        komponen2,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -473,7 +473,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_trw1,
+                                      sekunder_qq_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -488,7 +488,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_trw2,
+                                      sekunder_qq_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -503,7 +503,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_trw3,
+                                      sekunder_qq_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -518,7 +518,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_trw4,
+                                      sekunder_qq_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -533,7 +533,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_dis_total,
+                                      sekunder_qq_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -559,7 +559,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      "Sektor " + komponen3,
+                                       komponen3,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -574,7 +574,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_trw1,
+                                      tersier_qq_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -589,7 +589,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_trw2,
+                                      tersier_qq_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -604,7 +604,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_trw3,
+                                      tersier_qq_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -619,7 +619,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_trw4,
+                                      tersier_qq_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -634,7 +634,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_dis_total,
+                                      tersier_qq_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -675,7 +675,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_dis_trw1,
+                                      total_qq_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -690,7 +690,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_dis_trw2,
+                                      total_qq_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -705,7 +705,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_dis_trw3,
+                                      total_qq_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -720,7 +720,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_dis_trw4,
+                                      total_qq_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -735,7 +735,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      dis_total,
+                                      qq_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -767,12 +767,12 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     TextSpan(
                                         text: " Tahun " +
                                             thn1 +
-                                            ' Angka Sangat Sementara',
+                                            ' Angka Sangat Sangat Sementara, q-to-q: PDRB atas dasar harga konstan (2010=100) pada suatu triwulan dibandingkan dengan triwulan sebelumnya.',
                                         style: const TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',
                                             color: Colors.black,
-                                            fontWeight: FontWeight.bold)),
+                                            fontWeight: FontWeight.normal)),
                                   ]),
                             ),
                           ),

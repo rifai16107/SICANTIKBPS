@@ -39,12 +39,12 @@ class _SeriesPdrbLuTrw extends State<SeriesPdrbLuTrw> {
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: 0.08 * screenHeight,
+            height: 0.1 * screenHeight,
             color: Colors.white,
             child: Column(
               children: const [
                 Text(
-                  ' PDRB ADHK Triwulanan Dengan Migas  Menurut Lapangan Usaha di Kabupaten Cilacap (Milyar Rupiah) ',
+                  ' PDRB Triwulanan Atas Dasar Harga Konstan Menurut Lapangan Usaha di Kabupaten Cilacap (Milyar Rupiah) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,

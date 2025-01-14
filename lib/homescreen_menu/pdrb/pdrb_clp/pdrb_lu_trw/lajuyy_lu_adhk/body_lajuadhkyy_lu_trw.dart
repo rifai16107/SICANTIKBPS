@@ -1,12 +1,11 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/distadhb_lu_trw_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/distadhb_lu_trw_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/distadhb_lu_trw_c.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuyy_lu_adhk/lajuadhkyy_lu_trw_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuyy_lu_adhk/lajuadhkyy_lu_trw_b.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class RepositoryPdrbadhbLuTrw {
+class RepositoryLajuadhkLuTrw {
   final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-lapu';
 
   Future getData() async {
@@ -16,7 +15,7 @@ class RepositoryPdrbadhbLuTrw {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipdrb) => ModelPdrbadhbLuTrw.fromJson(isipdrb))
+            .map((isipdrb) => ModelLajuadhkLuTrw.fromJson(isipdrb))
             .toList();
       }
     } catch (isipdrb) {
@@ -27,16 +26,16 @@ class RepositoryPdrbadhbLuTrw {
 }
 
 // ignore_for_file: non_constant_identifier_names
-class ModelPdrbadhbLuTrw {
+class ModelLajuadhkLuTrw {
   final int id;
   final String komponen;
   final String tahun;
 
-  ModelPdrbadhbLuTrw(
+  ModelLajuadhkLuTrw(
       {required this.id, required this.komponen, required this.tahun});
 
-  factory ModelPdrbadhbLuTrw.fromJson(Map<String, dynamic> json) {
-    return ModelPdrbadhbLuTrw(
+  factory ModelLajuadhkLuTrw.fromJson(Map<String, dynamic> json) {
+    return ModelLajuadhkLuTrw(
       id: json['id'],
       komponen: json['komponen'],
       tahun: json['tahun'],
@@ -44,15 +43,15 @@ class ModelPdrbadhbLuTrw {
   }
 }
 
-class BodyDistadhbLuTrw extends StatefulWidget {
-  const BodyDistadhbLuTrw({super.key});
+class BodyLajuadhkyyLuTrw extends StatefulWidget {
+  const BodyLajuadhkyyLuTrw({super.key});
 
   @override
-  State<BodyDistadhbLuTrw> createState() => _BodyDistadhbLuTrwState();
+  State<BodyLajuadhkyyLuTrw> createState() => _BodyLajuadhkyyLuTrwState();
 }
 
-class _BodyDistadhbLuTrwState extends State<BodyDistadhbLuTrw> {
-  RepositoryPdrbadhbLuTrw repositoryPdrbadhbLuTrw = RepositoryPdrbadhbLuTrw();
+class _BodyLajuadhkyyLuTrwState extends State<BodyLajuadhkyyLuTrw> {
+  RepositoryLajuadhkLuTrw repositoryLajuadhkLuTrw = RepositoryLajuadhkLuTrw();
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -61,7 +60,7 @@ class _BodyDistadhbLuTrwState extends State<BodyDistadhbLuTrw> {
     // ignore: unused_local_variable
     final screenWidth = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: repositoryPdrbadhbLuTrw.getData(),
+      future: repositoryLajuadhkLuTrw.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           List isipdrb = snapshot.data as List;
@@ -69,12 +68,12 @@ class _BodyDistadhbLuTrwState extends State<BodyDistadhbLuTrw> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              String thn1 = isipdrb[index = 0].tahun;
-              String thn2 = isipdrb[index = 4].tahun;
-              String thn3 = isipdrb[index = 8].tahun;
+              String thn1 = isipdrb[index = 19].tahun;
+              String thn2 = isipdrb[index = 23].tahun;
+             
 
               return DefaultTabController(
-                length: 3,
+                length: 2,
                 child: Scaffold(
                   appBar: AppBar(
                     backgroundColor: Colors.white,
@@ -106,23 +105,12 @@ class _BodyDistadhbLuTrwState extends State<BodyDistadhbLuTrw> {
                                 color: Colors.black),
                           ),
                         ),
-                        Tab(
-                          child: Text(
-                            thn3,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.black),
-                          ),
-                        ),
                       ],
                     ),
                   ),
                   body: const TabBarView(children: [
-                    DistadhbLuTrwA(),
-                    DistadhbLuTrwB(),
-                    DistadhbLuTrwC(),
+                    LajuadhkyyLuTrwA(),
+                    LajuadhkyyLuTrwB(),
                   ]),
                 ),
               );

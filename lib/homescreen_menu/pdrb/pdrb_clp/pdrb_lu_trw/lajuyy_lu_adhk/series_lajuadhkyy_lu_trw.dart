@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/body_distadhb_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuyy_lu_adhk/body_lajuadhkyy_lu_trw.dart';
 import 'package:flutter/material.dart';
 
-class SeriesDistadhbLuTrw extends StatefulWidget {
-  const SeriesDistadhbLuTrw({super.key});
+class SeriesLajuadhkyyLuTrw extends StatefulWidget {
+  const SeriesLajuadhkyyLuTrw({super.key});
 
   @override
-  State<SeriesDistadhbLuTrw> createState() => _SeriesDistadhbLuTrw();
+  State<SeriesLajuadhkyyLuTrw> createState() => _SeriesLajuadhkyyLuTrw();
 }
 
-class _SeriesDistadhbLuTrw extends State<SeriesDistadhbLuTrw> {
+class _SeriesLajuadhkyyLuTrw extends State<SeriesLajuadhkyyLuTrw> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -39,12 +39,12 @@ class _SeriesDistadhbLuTrw extends State<SeriesDistadhbLuTrw> {
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: 0.08 * screenHeight,
+            height: 0.1 * screenHeight,
             color: Colors.white,
             child: Column(
               children: const [
                 Text(
-                  ' Distribusi PDRB Triwulanan Dengan Migas  Menurut Lapangan Usaha di Kabupaten Cilacap (Milyar Rupiah) ',
+                  ' Laju Pertumbuhan (y-on-y) PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class _SeriesDistadhbLuTrw extends State<SeriesDistadhbLuTrw> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 12,
-                  child: BodyDistadhbLuTrw(),
+                  child: BodyLajuadhkyyLuTrw(),
                 ),
               ],
             ),

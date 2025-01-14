@@ -39,12 +39,12 @@ class _SeriesDistadhbLuTrw extends State<SeriesDistadhbLuTrw> {
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: 0.08 * screenHeight,
+            height: 0.09 * screenHeight,
             color: Colors.white,
             child: Column(
               children: const [
                 Text(
-                  ' Distribusi PDRB Triwulanan Dengan Migas  Menurut Lapangan Usaha di Kabupaten Cilacap (Milyar Rupiah) ',
+                  ' Distribusi PDRB Triwulanan Dengan Migas Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
