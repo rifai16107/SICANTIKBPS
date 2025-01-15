@@ -357,7 +357,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                       komponen1,
+                                      komponen1,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -458,7 +458,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                        komponen2,
+                                      komponen2,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -559,7 +559,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                       komponen3,
+                                      komponen3,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -748,7 +748,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                           ),
 
                           const Divider(
-                            height: 20,
+                            height: 5,
                             color: Colors.black,
                           ),
 
@@ -758,18 +758,40 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                             child: RichText(
                               textAlign: TextAlign.left,
                               text: TextSpan(
-                                  text: 'Keterangan:',
+                                  text: "Tahun " + thn1,
                                   style: const TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12),
+                                  children: const <TextSpan>[
+                                    TextSpan(
+                                        text:
+                                            ' Angka Sangat Sangat Sementara. ',
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontFamily: 'Roboto',
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.normal)),
+                                  ]),
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(1),
+                            alignment: Alignment.centerLeft,
+                            child: RichText(
+                              textAlign: TextAlign.left,
+                              text: const TextSpan(
+                                  text: 'q-to-q:',
+                                  style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12),
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text: " Tahun " +
-                                            thn1 +
-                                            ' Angka Sangat Sangat Sementara, q-to-q: PDRB atas dasar harga konstan (2010=100) pada suatu triwulan dibandingkan dengan triwulan sebelumnya.',
-                                        style: const TextStyle(
-                                            fontSize: 11,
+                                        text:
+                                            ' Pertumbuhan PDRB pada triwulan tertentu dibandingkan dengan triwulan sebelumnya.',
+                                        style: TextStyle(
+                                            fontSize: 12,
                                             fontFamily: 'Roboto',
                                             color: Colors.black,
                                             fontWeight: FontWeight.normal)),

@@ -763,7 +763,7 @@ class _PdrbadhbLuTrwCState extends State<PdrbadhbLuTrwC> {
                           ),
 
                           const Divider(
-                            height: 20,
+                            height: 5,
                             color: Colors.black,
                           ),
 

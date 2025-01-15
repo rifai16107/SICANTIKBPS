@@ -357,7 +357,7 @@ class _LajuadhkccLuTrwAState extends State<LajuadhkccLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                       komponen1,
+                                      komponen1,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -458,7 +458,7 @@ class _LajuadhkccLuTrwAState extends State<LajuadhkccLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                        komponen2,
+                                      komponen2,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -559,7 +559,7 @@ class _LajuadhkccLuTrwAState extends State<LajuadhkccLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                       komponen3,
+                                      komponen3,
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -748,28 +748,59 @@ class _LajuadhkccLuTrwAState extends State<LajuadhkccLuTrwA> {
                           ),
 
                           const Divider(
-                            height: 20,
+                            height: 5,
                             color: Colors.black,
                           ),
-
+                          Container(
+                            padding: const EdgeInsets.all(3),
+                            alignment: Alignment.centerLeft,
+                            child: const Text(
+                              "Keterangan:",
+                              style: TextStyle(
+                                  fontSize: 13,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
                           Container(
                             padding: const EdgeInsets.all(1),
                             alignment: Alignment.centerLeft,
                             child: RichText(
                               textAlign: TextAlign.left,
                               text: TextSpan(
-                                  text: 'Keterangan:',
+                                  text: "Tahun " + thn1,
                                   style: const TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12),
+                                  children: const <TextSpan>[
+                                    TextSpan(
+                                        text: ' Angka Sangat Sementara. ',
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontFamily: 'Roboto',
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.normal)),
+                                  ]),
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(1),
+                            alignment: Alignment.centerLeft,
+                            child: RichText(
+                              textAlign: TextAlign.left,
+                              text: const TextSpan(
+                                  text: 'c-to-c:',
+                                  style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12),
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text: " Tahun " +
-                                            thn1 +
-                                            ' Angka Sangat Sementara',
-                                        style: const TextStyle(
-                                            fontSize: 11,
+                                        text:
+                                            ' Pertumbuhan jumlah kumulatif PDRB sampai dengan triwulan tertentu dibandingkan dengan jumlah kumulatif PDRB sampai triwulan tertentu tahun sebelumnya.',
+                                        style: TextStyle(
+                                            fontSize: 12,
                                             fontFamily: 'Roboto',
                                             color: Colors.black,
                                             fontWeight: FontWeight.normal)),

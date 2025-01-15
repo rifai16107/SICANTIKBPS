@@ -19,7 +19,7 @@ class _SeriesLajuadhkyyLuTrw extends State<SeriesLajuadhkyyLuTrw> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "DISTRIBUSI PDRB LU TRIWULANAN",
+          "LAJU PDRB LU TRIWULANAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,

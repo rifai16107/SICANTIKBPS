@@ -748,7 +748,7 @@ class _DistadhbLuTrwCState extends State<DistadhbLuTrwC> {
                           ),
 
                           const Divider(
-                            height: 20,
+                            height: 5,
                             color: Colors.black,
                           ),
 

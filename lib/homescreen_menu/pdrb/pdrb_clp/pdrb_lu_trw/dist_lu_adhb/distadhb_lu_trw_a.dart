@@ -748,12 +748,12 @@ class _DistadhbLuTrwAState extends State<DistadhbLuTrwA> {
                           ),
 
                           const Divider(
-                            height: 20,
+                            height: 5,
                             color: Colors.black,
                           ),
 
                           Container(
-                            padding: const EdgeInsets.all(1),
+                            padding: const EdgeInsets.all(3),
                             alignment: Alignment.centerLeft,
                             child: RichText(
                               textAlign: TextAlign.left,
