@@ -44,7 +44,7 @@ class _SeriesLajuadhkyyPengelTrw extends State<SeriesLajuadhkyyPengelTrw> {
             child: Column(
               children: const [
                 Text(
-                  ' Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
+                  ' Laju Pertumbuhan (y-on-y) PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
