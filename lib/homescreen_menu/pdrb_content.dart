@@ -2,6 +2,7 @@ import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu/pdrb_lu_conten.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/pdrb_lu_trw_content.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel/pdrb_pengel_content.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/pdrb_pengel_trw_content.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_adhb_kabkot/series_pdrbadhb_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_adhk_kabkot/series_pdrbadhk_kabkot.dart';
 import 'package:bps_cilacap/restAPI/repository_nilai_pdrb.dart';
@@ -383,7 +384,7 @@ class _PdrbContentState extends State<PdrbContent> {
                               Navigator.push(
                                   context,
                                   CustomPageRoute(
-                                      child: const PdrbPengelContent(),
+                                      child: const pdrbpengeltrwContent(),
                                       direction: AxisDirection.left));
                             },
                             child: SizedBox(
