@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 //import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
 
-//DIST PDRB ADHB 2022-2024
+//DIST PDRB ADHB PENGEL 2022-2024
 
-class RepositoryLajuadhkLuTrw {
+class RepositoryLajuadhkPengelTrw {
   final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-laju';
 
   Future getData() async {
@@ -18,7 +18,7 @@ class RepositoryLajuadhkLuTrw {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipdrb) => ModelLajuadhkTrwLu.fromJson(isipdrb))
+            .map((isipdrb) => ModelLajuadhkPengelTrw.fromJson(isipdrb))
             .toList();
       }
     } catch (isipdrb) {
@@ -28,50 +28,50 @@ class RepositoryLajuadhkLuTrw {
   }
 }
 
-class ModelLajuadhkTrwLu {
+class ModelLajuadhkPengelTrw {
   final int id;
   final String komponen;
-  final String qq_trw1;
-  final String qq_trw2;
-  final String qq_trw3;
-  final String qq_trw4;
-  final String qq_total;
+  final String yy_trw1;
+  final String yy_trw2;
+  final String yy_trw3;
+  final String yy_trw4;
+  final String yy_total;
   final String tahun;
 
-  ModelLajuadhkTrwLu(
+  ModelLajuadhkPengelTrw(
       {required this.id,
       required this.komponen,
-      required this.qq_trw1,
-      required this.qq_trw2,
-      required this.qq_trw3,
-      required this.qq_trw4,
-      required this.qq_total,
+      required this.yy_trw1,
+      required this.yy_trw2,
+      required this.yy_trw3,
+      required this.yy_trw4,
+      required this.yy_total,
       required this.tahun});
 
-  factory ModelLajuadhkTrwLu.fromJson(Map<String, dynamic> json) {
-    return ModelLajuadhkTrwLu(
+  factory ModelLajuadhkPengelTrw.fromJson(Map<String, dynamic> json) {
+    return ModelLajuadhkPengelTrw(
       id: json['id'],
       komponen: json['komponen'],
-      qq_trw1: json['qq_trw1'],
-      qq_trw2: json['qq_trw2'],
-      qq_trw3: json['qq_trw3'],
-      qq_trw4: json['qq_trw4'],
-      qq_total: json['qq_total'],
+      yy_trw1: json['yy_trw1'],
+      yy_trw2: json['yy_trw2'],
+      yy_trw3: json['yy_trw3'],
+      yy_trw4: json['yy_trw4'],
+      yy_total: json['yy_total'],
       tahun: json['tahun'],
     );
   }
 }
 
-class LajuadhkLuTrwB extends StatefulWidget {
-  const LajuadhkLuTrwB({Key? key}) : super(key: key);
+class LajuadhkyyPengelTrwB extends StatefulWidget {
+  const LajuadhkyyPengelTrwB({Key? key}) : super(key: key);
 
   @override
-  State<LajuadhkLuTrwB> createState() => _LajuadhkLuTrwBState();
+  State<LajuadhkyyPengelTrwB> createState() => _LajuadhkyyPengelTrwBState();
 }
 
-RepositoryLajuadhkLuTrw repositoryLajuadhk = RepositoryLajuadhkLuTrw();
+RepositoryLajuadhkPengelTrw repositoryLajuadhk = RepositoryLajuadhkPengelTrw();
 
-class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
+class _LajuadhkyyPengelTrwBState extends State<LajuadhkyyPengelTrwB> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -88,38 +88,44 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String komponen1 = isipdrb[index = 23].komponen;
-              String komponen2 = isipdrb[index = 24].komponen;
-              String komponen3 = isipdrb[index = 25].komponen;
-              String komponen4 = isipdrb[index = 26].komponen;
+              String komponen1 = isipdrb[index = 10].komponen;
+              String komponen2 = isipdrb[index = 11].komponen;
+              String komponen3 = isipdrb[index = 12].komponen;
+              String komponen4 = isipdrb[index = 13].komponen;
+              String komponen5 = isipdrb[index = 14].komponen;
 
               //pdrb trw
-              String primer_qq_trw1 = isipdrb[index = 23].qq_trw1;
-              String sekunder_qq_trw1 = isipdrb[index = 24].qq_trw1;
-              String tersier_qq_trw1 = isipdrb[index = 25].qq_trw1;
-              String total_qq_trw1 = isipdrb[index = 26].qq_trw1;
+              String konsruta_yy_trw1 = isipdrb[index = 10].yy_trw1;
+              String konspem_yy_trw1 = isipdrb[index = 11].yy_trw1;
+              String pmtb_yy_trw1 = isipdrb[index = 12].yy_trw1;
+              String lainnya_yy_trw1 = isipdrb[index = 13].yy_trw1;
+              String total_yy_trw1 = isipdrb[index = 14].yy_trw1;
 
-              String primer_qq_trw2 = isipdrb[index = 23].qq_trw2;
-              String sekunder_qq_trw2 = isipdrb[index = 24].qq_trw2;
-              String tersier_qq_trw2 = isipdrb[index = 25].qq_trw2;
-              String total_qq_trw2 = isipdrb[index = 26].qq_trw2;
+              String konsruta_yy_trw2 = isipdrb[index = 10].yy_trw2;
+              String konspem_yy_trw2 = isipdrb[index = 11].yy_trw2;
+              String pmtb_yy_trw2 = isipdrb[index = 12].yy_trw2;
+              String lainnya_yy_trw2 = isipdrb[index = 13].yy_trw2;
+              String total_yy_trw2 = isipdrb[index = 14].yy_trw2;
 
-              String primer_qq_trw3 = isipdrb[index = 23].qq_trw3;
-              String sekunder_qq_trw3 = isipdrb[index = 24].qq_trw3;
-              String tersier_qq_trw3 = isipdrb[index = 25].qq_trw3;
-              String total_qq_trw3 = isipdrb[index = 26].qq_trw3;
+              String konsruta_yy_trw3 = isipdrb[index = 10].yy_trw3;
+              String konspem_yy_trw3 = isipdrb[index = 11].yy_trw3;
+              String pmtb_yy_trw3 = isipdrb[index = 12].yy_trw3;
+              String lainnya_yy_trw3 = isipdrb[index = 13].yy_trw3;
+              String total_yy_trw3 = isipdrb[index = 14].yy_trw3;
 
-              String primer_qq_trw4 = isipdrb[index = 23].qq_trw4;
-              String sekunder_qq_trw4 = isipdrb[index = 24].qq_trw4;
-              String tersier_qq_trw4 = isipdrb[index = 25].qq_trw4;
-              String total_qq_trw4 = isipdrb[index = 26].qq_trw4;
+              String konsruta_yy_trw4 = isipdrb[index = 10].yy_trw4;
+              String konspem_yy_trw4 = isipdrb[index = 11].yy_trw4;
+              String pmtb_yy_trw4 = isipdrb[index = 12].yy_trw4;
+              String lainnya_yy_trw4 = isipdrb[index = 13].yy_trw4;
+              String total_yy_trw4 = isipdrb[index = 14].yy_trw4;
 
-              String primer_qq_total = isipdrb[index = 23].qq_total;
-              String sekunder_qq_total = isipdrb[index = 24].qq_total;
-              String tersier_qq_total = isipdrb[index = 25].qq_total;
-              String qq_total = isipdrb[index = 26].qq_total;
+              String konsruta_yy_total = isipdrb[index = 10].yy_total;
+              String konspem_yy_total = isipdrb[index = 11].yy_total;
+              String pmtb_yy_total = isipdrb[index = 12].yy_total;
+              String lainnya_yy_total = isipdrb[index = 13].yy_total;
+              String total_yy_total = isipdrb[index = 14].yy_total;
 
-              String thn1 = isipdrb[index = 23].tahun;
+              String thn1 = isipdrb[index = 10].tahun;
 
               return Scaffold(
                   body: Column(
@@ -343,10 +349,10 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                       //height: screenHeight,
                       child: Column(
                         children: [
-                          // Sektor Primer
+                          // Kons Ruta
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.07,
+                            height: screenHeight * 0.095,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -372,7 +378,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_trw1,
+                                      konsruta_yy_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -387,7 +393,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_trw2,
+                                      konsruta_yy_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -402,7 +408,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_trw3,
+                                      konsruta_yy_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -417,7 +423,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_trw4,
+                                      konsruta_yy_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -432,7 +438,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_total,
+                                      konsruta_yy_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -444,10 +450,10 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                             ),
                           ),
 
-                          // Sekunder
+                          // Kons Pemerintah
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.07,
+                            height: screenHeight * 0.095,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -473,7 +479,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_trw1,
+                                      konspem_yy_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -488,7 +494,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_trw2,
+                                      konspem_yy_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -503,7 +509,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_trw3,
+                                      konspem_yy_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -518,7 +524,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_trw4,
+                                      konspem_yy_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -533,7 +539,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_total,
+                                      konspem_yy_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -545,7 +551,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                             ),
                           ),
 
-                          // Tersier
+                          // PMTB
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.07,
@@ -574,7 +580,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_trw1,
+                                      pmtb_yy_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -589,7 +595,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_trw2,
+                                      pmtb_yy_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -604,7 +610,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_trw3,
+                                      pmtb_yy_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -619,7 +625,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_trw4,
+                                      pmtb_yy_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -634,7 +640,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_total,
+                                      pmtb_yy_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -646,7 +652,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                             ),
                           ),
 
-                          // TOTAL
+                          // Lainnya
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.07,
@@ -675,7 +681,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_qq_trw1,
+                                      lainnya_yy_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -690,7 +696,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_qq_trw2,
+                                      lainnya_yy_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -705,7 +711,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_qq_trw3,
+                                      lainnya_yy_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -720,7 +726,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_qq_trw4,
+                                      lainnya_yy_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -735,7 +741,108 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      qq_total,
+                                      lainnya_yy_total,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          //TOTAL
+                          Container(
+                            width: screenWidth * 1.0,
+                            height: screenHeight * 0.07,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 0.15 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      komponen5,
+                                      textAlign: TextAlign.left,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_yy_trw1,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_yy_trw2,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.16 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_yy_trw3,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_yy_trw4,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_yy_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -753,6 +860,17 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                           ),
 
                           Container(
+                            padding: const EdgeInsets.all(3),
+                            alignment: Alignment.centerLeft,
+                            child: const Text(
+                              "Keterangan:",
+                              style: TextStyle(
+                                  fontSize: 13,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          Container(
                             padding: const EdgeInsets.all(1),
                             alignment: Alignment.centerLeft,
                             child: RichText(
@@ -765,8 +883,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                       fontSize: 12),
                                   children: const <TextSpan>[
                                     TextSpan(
-                                        text:
-                                            ' Angka Sangat Sangat Sementara. ',
+                                        text: ' Angka Sangat Sangat Sementara. ',
                                         style: TextStyle(
                                             fontSize: 12,
                                             fontFamily: 'Roboto',
@@ -781,7 +898,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                             child: RichText(
                               textAlign: TextAlign.left,
                               text: const TextSpan(
-                                  text: 'q-to-q:',
+                                  text: 'c-to-c:',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
@@ -789,7 +906,7 @@ class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
                                   children: <TextSpan>[
                                     TextSpan(
                                         text:
-                                            ' Pertumbuhan PDRB pada triwulan tertentu dibandingkan dengan triwulan sebelumnya.',
+                                            ' Pertumbuhan jumlah kumulatif PDRB sampai dengan triwulan tertentu dibandingkan dengan jumlah kumulatif PDRB sampai triwulan tertentu tahun sebelumnya.',
                                         style: TextStyle(
                                             fontSize: 12,
                                             fontFamily: 'Roboto',

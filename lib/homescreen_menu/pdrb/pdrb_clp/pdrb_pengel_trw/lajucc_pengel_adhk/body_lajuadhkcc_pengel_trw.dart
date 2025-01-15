@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuqq_lu_adhk/lajuadhkqq_lu_trw_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuqq_lu_adhk/lajuadhkqq_lu_trw_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajucc_pengel_adhk/lajuadhkcc_pengel_trw_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajucc_pengel_adhk/lajuadhkcc_pengel_trw_b.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class RepositoryLajuadhkLuTrw {
+class RepositoryLajuadhkPengelTrw {
   final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-lapu';
 
   Future getData() async {
@@ -15,7 +15,7 @@ class RepositoryLajuadhkLuTrw {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipdrb) => ModelLajuadhkLuTrw.fromJson(isipdrb))
+            .map((isipdrb) => ModelLajuadhkPengelTrw.fromJson(isipdrb))
             .toList();
       }
     } catch (isipdrb) {
@@ -26,16 +26,16 @@ class RepositoryLajuadhkLuTrw {
 }
 
 // ignore_for_file: non_constant_identifier_names
-class ModelLajuadhkLuTrw {
+class ModelLajuadhkPengelTrw {
   final int id;
   final String komponen;
   final String tahun;
 
-  ModelLajuadhkLuTrw(
+  ModelLajuadhkPengelTrw(
       {required this.id, required this.komponen, required this.tahun});
 
-  factory ModelLajuadhkLuTrw.fromJson(Map<String, dynamic> json) {
-    return ModelLajuadhkLuTrw(
+  factory ModelLajuadhkPengelTrw.fromJson(Map<String, dynamic> json) {
+    return ModelLajuadhkPengelTrw(
       id: json['id'],
       komponen: json['komponen'],
       tahun: json['tahun'],
@@ -43,15 +43,15 @@ class ModelLajuadhkLuTrw {
   }
 }
 
-class BodyLajuadhkLuTrw extends StatefulWidget {
-  const BodyLajuadhkLuTrw({super.key});
+class BodyLajuadhkccPengelTrw extends StatefulWidget {
+  const BodyLajuadhkccPengelTrw({super.key});
 
   @override
-  State<BodyLajuadhkLuTrw> createState() => _BodyLajuadhkLuTrwState();
+  State<BodyLajuadhkccPengelTrw> createState() => _BodyLajuadhkccPengelTrwState();
 }
 
-class _BodyLajuadhkLuTrwState extends State<BodyLajuadhkLuTrw> {
-  RepositoryLajuadhkLuTrw repositoryLajuadhkLuTrw = RepositoryLajuadhkLuTrw();
+class _BodyLajuadhkccPengelTrwState extends State<BodyLajuadhkccPengelTrw> {
+  RepositoryLajuadhkPengelTrw repositoryLajuadhkPengelTrw = RepositoryLajuadhkPengelTrw();
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -60,7 +60,7 @@ class _BodyLajuadhkLuTrwState extends State<BodyLajuadhkLuTrw> {
     // ignore: unused_local_variable
     final screenWidth = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: repositoryLajuadhkLuTrw.getData(),
+      future: repositoryLajuadhkPengelTrw.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           List isipdrb = snapshot.data as List;
@@ -68,8 +68,8 @@ class _BodyLajuadhkLuTrwState extends State<BodyLajuadhkLuTrw> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              String thn1 = isipdrb[index = 19].tahun;
-              String thn2 = isipdrb[index = 23].tahun;
+              String thn1 = isipdrb[index = 5].tahun;
+              String thn2 = isipdrb[index = 9].tahun;
              
 
               return DefaultTabController(
@@ -109,8 +109,8 @@ class _BodyLajuadhkLuTrwState extends State<BodyLajuadhkLuTrw> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    LajuadhkLuTrwA(),
-                    LajuadhkLuTrwB(),
+                    LajuadhkccPengelTrwA(),
+                    LajuadhkccPengelTrwB(),
                   ]),
                 ),
               );

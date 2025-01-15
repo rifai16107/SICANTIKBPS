@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/distadhb_lu_trw_a.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/distadhb_lu_trw_b.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/distadhb_lu_trw_c.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/dist_pengel_adhb/distadhb_pengel_trw_a.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/dist_pengel_adhb/distadhb_pengel_trw_b.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/dist_pengel_adhb/distadhb_pengel_trw_c.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class RepositoryPdrbadhbLuTrw {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-lapu';
+class RepositoryDistadhbPengelTrw {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-pengel';
 
   Future getData() async {
     try {
@@ -16,7 +16,7 @@ class RepositoryPdrbadhbLuTrw {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipdrb) => ModelPdrbadhbLuTrw.fromJson(isipdrb))
+            .map((isipdrb) => ModelDistadhbPengelTrw.fromJson(isipdrb))
             .toList();
       }
     } catch (isipdrb) {
@@ -27,16 +27,16 @@ class RepositoryPdrbadhbLuTrw {
 }
 
 // ignore_for_file: non_constant_identifier_names
-class ModelPdrbadhbLuTrw {
+class ModelDistadhbPengelTrw {
   final int id;
   final String komponen;
   final String tahun;
 
-  ModelPdrbadhbLuTrw(
+  ModelDistadhbPengelTrw(
       {required this.id, required this.komponen, required this.tahun});
 
-  factory ModelPdrbadhbLuTrw.fromJson(Map<String, dynamic> json) {
-    return ModelPdrbadhbLuTrw(
+  factory ModelDistadhbPengelTrw.fromJson(Map<String, dynamic> json) {
+    return ModelDistadhbPengelTrw(
       id: json['id'],
       komponen: json['komponen'],
       tahun: json['tahun'],
@@ -44,15 +44,16 @@ class ModelPdrbadhbLuTrw {
   }
 }
 
-class BodyDistadhbLuTrw extends StatefulWidget {
-  const BodyDistadhbLuTrw({super.key});
+class BodyDistadhbPengelTrw extends StatefulWidget {
+  const BodyDistadhbPengelTrw({super.key});
 
   @override
-  State<BodyDistadhbLuTrw> createState() => _BodyDistadhbLuTrwState();
+  State<BodyDistadhbPengelTrw> createState() => _BodyDistadhbPengelTrwState();
 }
 
-class _BodyDistadhbLuTrwState extends State<BodyDistadhbLuTrw> {
-  RepositoryPdrbadhbLuTrw repositoryPdrbadhbLuTrw = RepositoryPdrbadhbLuTrw();
+class _BodyDistadhbPengelTrwState extends State<BodyDistadhbPengelTrw> {
+  RepositoryDistadhbPengelTrw repositoryDistadhbPengelTrw =
+      RepositoryDistadhbPengelTrw();
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -61,7 +62,7 @@ class _BodyDistadhbLuTrwState extends State<BodyDistadhbLuTrw> {
     // ignore: unused_local_variable
     final screenWidth = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: repositoryPdrbadhbLuTrw.getData(),
+      future: repositoryDistadhbPengelTrw.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           List isipdrb = snapshot.data as List;
@@ -69,9 +70,9 @@ class _BodyDistadhbLuTrwState extends State<BodyDistadhbLuTrw> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              String thn1 = isipdrb[index = 0].tahun;
-              String thn2 = isipdrb[index = 4].tahun;
-              String thn3 = isipdrb[index = 8].tahun;
+              String thn1 = isipdrb[index = 15].tahun;
+              String thn2 = isipdrb[index = 20].tahun;
+              String thn3 = isipdrb[index = 25].tahun;
 
               return DefaultTabController(
                 length: 3,
@@ -120,9 +121,9 @@ class _BodyDistadhbLuTrwState extends State<BodyDistadhbLuTrw> {
                     ),
                   ),
                   body: const TabBarView(children: [
-                    DistadhbLuTrwA(),
-                    DistadhbLuTrwB(),
-                    DistadhbLuTrwC(),
+                    DistadhbPengelTrwA(),
+                    DistadhbPengelTrwB(),
+                    DistadhbPengelTrwC(),
                   ]),
                 ),
               );

@@ -69,9 +69,9 @@ class _BodyPdrbadhbLuTrwState extends State<BodyPdrbadhbLuTrw> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              String thn1 = isipdrb[index = 0].tahun;
-              String thn2 = isipdrb[index = 4].tahun;
-              String thn3 = isipdrb[index = 8].tahun;
+              String thn1 = isipdrb[index = 12].tahun;
+              String thn2 = isipdrb[index = 16].tahun;
+              String thn3 = isipdrb[index = 20].tahun;
 
               return DefaultTabController(
                 length: 3,

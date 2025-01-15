@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajucc_lu_adhk/body_lajuadhkcc_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/dist_pengel_adhb/body_distadhb_pengel_trw.dart';
 import 'package:flutter/material.dart';
 
-class SeriesLajuadhkccLuTrw extends StatefulWidget {
-  const SeriesLajuadhkccLuTrw({super.key});
+class SeriesDistadhbPengelTrw extends StatefulWidget {
+  const SeriesDistadhbPengelTrw({super.key});
 
   @override
-  State<SeriesLajuadhkccLuTrw> createState() => _SeriesLajuadhkccLuTrw();
+  State<SeriesDistadhbPengelTrw> createState() => _SeriesDistadhbPengelTrw();
 }
 
-class _SeriesLajuadhkccLuTrw extends State<SeriesLajuadhkccLuTrw> {
+class _SeriesDistadhbPengelTrw extends State<SeriesDistadhbPengelTrw> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -19,7 +19,7 @@ class _SeriesLajuadhkccLuTrw extends State<SeriesLajuadhkccLuTrw> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "LAJU PDRB LU TRIWULANAN",
+          "PDRB LU TRIWULANAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -44,7 +44,7 @@ class _SeriesLajuadhkccLuTrw extends State<SeriesLajuadhkccLuTrw> {
             child: Column(
               children: const [
                 Text(
-                  ' Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
+                  ' Distribusi PDRB Triwulanan Menurut Pengeluaran di Kabupaten Cilacap (Milyar Rupiah) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class _SeriesLajuadhkccLuTrw extends State<SeriesLajuadhkccLuTrw> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 12,
-                  child: BodyLajuadhkccLuTrw(),
+                  child: BodyDistadhbPengelTrw(),
                 ),
               ],
             ),

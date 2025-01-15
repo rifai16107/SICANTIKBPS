@@ -3,10 +3,10 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/pdrb_pengel_adhk/series_pdrb_pengel_trw.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/pdrb_pengel_adhb/series_pdrbadhb_pengel_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/dist_lu_adhb/series_distadhb_lu_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuqq_lu_adhk/series_lajuadhkqq_lu_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajucc_lu_adhk/series_lajuadhkcc_lu_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuyy_lu_adhk/series_lajuadhkyy_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/dist_pengel_adhb/series_distadhb_pengel_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajuqq_pengel_adhk/series_lajuadhkqq_pengel_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajucc_pengel_adhk/series_lajuadhkcc_pengel_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajuyy_pengel_adhk/series_lajuadhkyy_pengel_trw.dart';
 import 'package:flutter/material.dart';
 
 class pdrbpengeltrwContent extends StatefulWidget {
@@ -174,7 +174,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesDistadhbLuTrw(),
+                          child: const SeriesDistadhbPengelTrw(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -214,7 +214,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesLajuadhkLuTrw(),
+                          child: const SeriesLajuadhkqqPengelTrw(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -254,7 +254,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesLajuadhkccLuTrw(),
+                          child: const SeriesLajuadhkccPengelTrw(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -294,7 +294,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesLajuadhkyyLuTrw(),
+                          child: const SeriesLajuadhkyyPengelTrw(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(

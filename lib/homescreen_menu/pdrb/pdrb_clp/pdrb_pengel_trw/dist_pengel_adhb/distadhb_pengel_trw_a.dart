@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 //import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
 
-//DIST PDRB ADHB 2022-2024
+//PDRB ADHK 2022-2024
 
-class RepositoryLajuadhkLuTrw {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-laju';
+class RepositoryDistadhbPengelTrw {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-pengel';
 
   Future getData() async {
     try {
@@ -18,7 +18,7 @@ class RepositoryLajuadhkLuTrw {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipdrb) => ModelLajuadhkTrwLu.fromJson(isipdrb))
+            .map((isipdrb) => ModelDistadhbPengelTrw.fromJson(isipdrb))
             .toList();
       }
     } catch (isipdrb) {
@@ -28,50 +28,50 @@ class RepositoryLajuadhkLuTrw {
   }
 }
 
-class ModelLajuadhkTrwLu {
+class ModelDistadhbPengelTrw {
   final int id;
   final String komponen;
-  final String qq_trw1;
-  final String qq_trw2;
-  final String qq_trw3;
-  final String qq_trw4;
-  final String qq_total;
+  final String dis_trw1;
+  final String dis_trw2;
+  final String dis_trw3;
+  final String dis_trw4;
+  final String dis_total;
   final String tahun;
 
-  ModelLajuadhkTrwLu(
+  ModelDistadhbPengelTrw(
       {required this.id,
       required this.komponen,
-      required this.qq_trw1,
-      required this.qq_trw2,
-      required this.qq_trw3,
-      required this.qq_trw4,
-      required this.qq_total,
+      required this.dis_trw1,
+      required this.dis_trw2,
+      required this.dis_trw3,
+      required this.dis_trw4,
+      required this.dis_total,
       required this.tahun});
 
-  factory ModelLajuadhkTrwLu.fromJson(Map<String, dynamic> json) {
-    return ModelLajuadhkTrwLu(
+  factory ModelDistadhbPengelTrw.fromJson(Map<String, dynamic> json) {
+    return ModelDistadhbPengelTrw(
       id: json['id'],
       komponen: json['komponen'],
-      qq_trw1: json['qq_trw1'],
-      qq_trw2: json['qq_trw2'],
-      qq_trw3: json['qq_trw3'],
-      qq_trw4: json['qq_trw4'],
-      qq_total: json['qq_total'],
+      dis_trw1: json['dis_trw1'],
+      dis_trw2: json['dis_trw2'],
+      dis_trw3: json['dis_trw3'],
+      dis_trw4: json['dis_trw4'],
+      dis_total: json['dis_total'],
       tahun: json['tahun'],
     );
   }
 }
 
-class LajuadhkLuTrwA extends StatefulWidget {
-  const LajuadhkLuTrwA({Key? key}) : super(key: key);
+class DistadhbPengelTrwA extends StatefulWidget {
+  const DistadhbPengelTrwA({Key? key}) : super(key: key);
 
   @override
-  State<LajuadhkLuTrwA> createState() => _LajuadhkLuTrwAState();
+  State<DistadhbPengelTrwA> createState() => _DistadhbPengelTrwAState();
 }
 
-RepositoryLajuadhkLuTrw repositoryLajuadhk = RepositoryLajuadhkLuTrw();
+RepositoryDistadhbPengelTrw repositorypdrb = RepositoryDistadhbPengelTrw();
 
-class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
+class _DistadhbPengelTrwAState extends State<DistadhbPengelTrwA> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -81,45 +81,51 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
         body: FutureBuilder(
-      future: repositoryLajuadhk.getData(),
+      future: repositorypdrb.getData(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           List isipdrb = snapshot.data as List;
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String komponen1 = isipdrb[index = 19].komponen;
-              String komponen2 = isipdrb[index = 20].komponen;
-              String komponen3 = isipdrb[index = 21].komponen;
-              String komponen4 = isipdrb[index = 22].komponen;
+              String komponen1 = isipdrb[index = 15].komponen;
+              String komponen2 = isipdrb[index = 16].komponen;
+              String komponen3 = isipdrb[index = 17].komponen;
+              String komponen4 = isipdrb[index = 18].komponen;
+              String komponen5 = isipdrb[index = 19].komponen;
 
               //pdrb trw
-              String primer_qq_trw1 = isipdrb[index = 19].qq_trw1;
-              String sekunder_qq_trw1 = isipdrb[index = 20].qq_trw1;
-              String tersier_qq_trw1 = isipdrb[index = 21].qq_trw1;
-              String total_qq_trw1 = isipdrb[index = 22].qq_trw1;
+              String konsruta_dis_trw1 = isipdrb[index = 15].dis_trw1;
+              String konspem_dis_trw1 = isipdrb[index = 16].dis_trw1;
+              String pmtb_dis_trw1 = isipdrb[index = 17].dis_trw1;
+              String lainnya_dis_trw1 = isipdrb[index = 18].dis_trw1;
+              String total_dis_trw1 = isipdrb[index = 19].dis_trw1;
 
-              String primer_qq_trw2 = isipdrb[index = 19].qq_trw2;
-              String sekunder_qq_trw2 = isipdrb[index = 20].qq_trw2;
-              String tersier_qq_trw2 = isipdrb[index = 21].qq_trw2;
-              String total_qq_trw2 = isipdrb[index = 22].qq_trw2;
+              String konsruta_dis_trw2 = isipdrb[index = 15].dis_trw2;
+              String konspem_dis_trw2 = isipdrb[index = 16].dis_trw2;
+              String pmtb_dis_trw2 = isipdrb[index = 17].dis_trw2;
+              String lainnya_dis_trw2 = isipdrb[index = 18].dis_trw2;
+              String total_dis_trw2 = isipdrb[index = 19].dis_trw2;
 
-              String primer_qq_trw3 = isipdrb[index = 19].qq_trw3;
-              String sekunder_qq_trw3 = isipdrb[index = 20].qq_trw3;
-              String tersier_qq_trw3 = isipdrb[index = 21].qq_trw3;
-              String total_qq_trw3 = isipdrb[index = 22].qq_trw3;
+              String konsruta_dis_trw3 = isipdrb[index = 15].dis_trw3;
+              String konspem_dis_trw3 = isipdrb[index = 16].dis_trw3;
+              String pmtb_dis_trw3 = isipdrb[index = 17].dis_trw3;
+              String lainnya_dis_trw3 = isipdrb[index = 18].dis_trw3;
+              String total_dis_trw3 = isipdrb[index = 19].dis_trw3;
 
-              String primer_qq_trw4 = isipdrb[index = 19].qq_trw4;
-              String sekunder_qq_trw4 = isipdrb[index = 20].qq_trw4;
-              String tersier_qq_trw4 = isipdrb[index = 21].qq_trw4;
-              String total_qq_trw4 = isipdrb[index = 22].qq_trw4;
+              String konsruta_dis_trw4 = isipdrb[index = 15].dis_trw4;
+              String konspem_dis_trw4 = isipdrb[index = 16].dis_trw4;
+              String pmtb_dis_trw4 = isipdrb[index = 17].dis_trw4;
+              String lainnya_dis_trw4 = isipdrb[index = 18].dis_trw4;
+              String total_dis_trw4 = isipdrb[index = 19].dis_trw4;
 
-              String primer_qq_total = isipdrb[index = 19].qq_total;
-              String sekunder_qq_total = isipdrb[index = 20].qq_total;
-              String tersier_qq_total = isipdrb[index = 21].qq_total;
-              String qq_total = isipdrb[index = 22].qq_total;
+              String konsruta_dis_total = isipdrb[index = 15].dis_total;
+              String konspem_dis_total = isipdrb[index = 16].dis_total;
+              String pmtb_dis_total = isipdrb[index = 17].dis_total;
+              String lainnya_dis_total = isipdrb[index = 18].dis_total;
+              String total_dis_total = isipdrb[index = 19].dis_total;
 
-              String thn1 = isipdrb[index = 19].tahun;
+              String thn1 = isipdrb[index = 15].tahun;
 
               return Scaffold(
                   body: Column(
@@ -141,7 +147,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                             padding: const EdgeInsets.only(
                                 right: 0, top: 10, bottom: 0),
                             child: const Text(
-                              "Lapangan/",
+                              "Komponen/",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -158,7 +164,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                             padding: const EdgeInsets.only(
                                 left: 0, top: 5, bottom: 0),
                             child: const Text(
-                              "Laju Pertumbuhan PDRB dengan Migas",
+                              "Distribsusi PDRB dengan Migas",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -234,7 +240,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                             padding: const EdgeInsets.only(
                                 right: 0, top: 0, bottom: 0),
                             child: const Text(
-                              "Usaha",
+                              "Pengeluaran",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -343,10 +349,10 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                       //height: screenHeight,
                       child: Column(
                         children: [
-                          // Sektor Primer
+                          // Konst Ruta
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.07,
+                            height: screenHeight * 0.095,
                             color: Colors.transparent,
                             child: Row(
                               children: [
@@ -372,7 +378,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_trw1,
+                                      konsruta_dis_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -387,7 +393,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_trw2,
+                                      konsruta_dis_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -402,7 +408,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_trw3,
+                                      konsruta_dis_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -417,7 +423,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_trw4,
+                                      konsruta_dis_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -432,7 +438,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      primer_qq_total,
+                                      konsruta_dis_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -444,10 +450,10 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                             ),
                           ),
 
-                          // Sekunder
+                          // Konst Pemerintah
                           Container(
                             width: screenWidth * 1.0,
-                            height: screenHeight * 0.07,
+                            height: screenHeight * 0.095,
                             color: Colors.grey.shade200,
                             child: Row(
                               children: [
@@ -473,7 +479,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_trw1,
+                                      konspem_dis_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -488,7 +494,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_trw2,
+                                      konspem_dis_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -503,7 +509,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_trw3,
+                                      konspem_dis_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -518,7 +524,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_trw4,
+                                      konspem_dis_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -533,7 +539,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      sekunder_qq_total,
+                                      konspem_dis_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -545,7 +551,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                             ),
                           ),
 
-                          // Tersier
+                          // PMTB
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.07,
@@ -574,7 +580,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_trw1,
+                                      pmtb_dis_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -589,7 +595,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_trw2,
+                                      pmtb_dis_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -604,7 +610,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_trw3,
+                                      pmtb_dis_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -619,7 +625,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_trw4,
+                                      pmtb_dis_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -634,7 +640,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      tersier_qq_total,
+                                      pmtb_dis_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -646,7 +652,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                             ),
                           ),
 
-                          // TOTAL
+                          // Lainnya
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.07,
@@ -664,7 +670,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                       textAlign: TextAlign.left,
                                       style: const TextStyle(
                                           fontSize: 12,
-                                          fontWeight: FontWeight.bold),
+                                          fontWeight: FontWeight.normal),
                                     ),
                                   ),
                                 ),
@@ -675,7 +681,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_qq_trw1,
+                                      lainnya_dis_trw1,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -690,7 +696,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_qq_trw2,
+                                      lainnya_dis_trw2,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -705,7 +711,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_qq_trw3,
+                                      lainnya_dis_trw3,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -720,7 +726,7 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      total_qq_trw4,
+                                      lainnya_dis_trw4,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -735,7 +741,108 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                                     padding: const EdgeInsets.only(
                                         right: 0, top: 1, bottom: 1),
                                     child: Text(
-                                      qq_total,
+                                      lainnya_dis_total,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          // TOTAL
+                          Container(
+                            width: screenWidth * 1.0,
+                            height: screenHeight * 0.07,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 0.15 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      komponen5,
+                                      textAlign: TextAlign.left,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_dis_trw1,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_dis_trw2,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.16 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_dis_trw3,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_dis_trw4,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_dis_total,
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
                                           fontSize: 12,
@@ -753,58 +860,26 @@ class _LajuadhkLuTrwAState extends State<LajuadhkLuTrwA> {
                           ),
 
                           Container(
-                            padding: const EdgeInsets.all(3),
-                            alignment: Alignment.centerLeft,
-                            child: const Text(
-                              "Keterangan:",
-                              style: TextStyle(
-                                  fontSize: 13,
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Container(
                             padding: const EdgeInsets.all(1),
                             alignment: Alignment.centerLeft,
                             child: RichText(
                               textAlign: TextAlign.left,
                               text: TextSpan(
-                                  text: "Tahun " + thn1,
+                                  text: 'Keterangan:',
                                   style: const TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 12),
-                                  children: const <TextSpan>[
-                                    TextSpan(
-                                        text: ' Angka Sangat Sementara. ',
-                                        style: TextStyle(
-                                            fontSize: 12,
-                                            fontFamily: 'Roboto',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.normal)),
-                                  ]),
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(1),
-                            alignment: Alignment.centerLeft,
-                            child: RichText(
-                              textAlign: TextAlign.left,
-                              text: const TextSpan(
-                                  text: 'q-to-q:',
-                                  style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12),
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text:
-                                            ' Pertumbuhan PDRB pada triwulan tertentu dibandingkan dengan triwulan sebelumnya.',
-                                        style: TextStyle(
-                                            fontSize: 12,
+                                        text: " Tahun " +
+                                            thn1 +
+                                            ' Angka Sementara',
+                                        style: const TextStyle(
+                                            fontSize: 11,
                                             fontFamily: 'Roboto',
                                             color: Colors.black,
-                                            fontWeight: FontWeight.normal)),
+                                            fontWeight: FontWeight.bold)),
                                   ]),
                             ),
                           ),

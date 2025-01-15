@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/lajuyy_lu_adhk/body_lajuadhkyy_lu_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajuqq_pengel_adhk/body_lajuadhkqq_pengel_trw.dart';
 import 'package:flutter/material.dart';
 
-class SeriesLajuadhkyyLuTrw extends StatefulWidget {
-  const SeriesLajuadhkyyLuTrw({super.key});
+class SeriesLajuadhkqqPengelTrw extends StatefulWidget {
+  const SeriesLajuadhkqqPengelTrw({super.key});
 
   @override
-  State<SeriesLajuadhkyyLuTrw> createState() => _SeriesLajuadhkyyLuTrw();
+  State<SeriesLajuadhkqqPengelTrw> createState() => _SeriesLajuadhkqqPengelTrw();
 }
 
-class _SeriesLajuadhkyyLuTrw extends State<SeriesLajuadhkyyLuTrw> {
+class _SeriesLajuadhkqqPengelTrw extends State<SeriesLajuadhkqqPengelTrw> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -44,7 +44,7 @@ class _SeriesLajuadhkyyLuTrw extends State<SeriesLajuadhkyyLuTrw> {
             child: Column(
               children: const [
                 Text(
-                  ' Laju Pertumbuhan (y-on-y) PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
+                  ' Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class _SeriesLajuadhkyyLuTrw extends State<SeriesLajuadhkyyLuTrw> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 12,
-                  child: BodyLajuadhkyyLuTrw(),
+                  child: BodyLajuadhkqqPengelTrw(),
                 ),
               ],
             ),

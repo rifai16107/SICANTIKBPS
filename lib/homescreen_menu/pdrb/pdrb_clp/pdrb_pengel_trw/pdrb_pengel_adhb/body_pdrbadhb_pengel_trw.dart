@@ -70,9 +70,9 @@ class _BodyPdrbadhbPengelTrwState extends State<BodyPdrbadhbPengelTrw> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              String thn1 = isipdrb[index = 0].tahun;
-              String thn2 = isipdrb[index = 4].tahun;
-              String thn3 = isipdrb[index = 8].tahun;
+              String thn1 = isipdrb[index = 15].tahun;
+              String thn2 = isipdrb[index = 20].tahun;
+              String thn3 = isipdrb[index = 25].tahun;
 
               return DefaultTabController(
                 length: 3,
