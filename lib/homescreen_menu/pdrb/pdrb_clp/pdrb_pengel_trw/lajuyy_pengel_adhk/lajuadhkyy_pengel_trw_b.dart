@@ -883,7 +883,8 @@ class _LajuadhkyyPengelTrwBState extends State<LajuadhkyyPengelTrwB> {
                                       fontSize: 12),
                                   children: const <TextSpan>[
                                     TextSpan(
-                                        text: ' Angka Sangat Sangat Sementara. ',
+                                        text:
+                                            ' Angka Sangat Sangat Sementara. ',
                                         style: TextStyle(
                                             fontSize: 12,
                                             fontFamily: 'Roboto',
@@ -898,7 +899,7 @@ class _LajuadhkyyPengelTrwBState extends State<LajuadhkyyPengelTrwB> {
                             child: RichText(
                               textAlign: TextAlign.left,
                               text: const TextSpan(
-                                  text: 'c-to-c:',
+                                  text: 'y-on-y:',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
@@ -906,7 +907,7 @@ class _LajuadhkyyPengelTrwBState extends State<LajuadhkyyPengelTrwB> {
                                   children: <TextSpan>[
                                     TextSpan(
                                         text:
-                                            ' Pertumbuhan jumlah kumulatif PDRB sampai dengan triwulan tertentu dibandingkan dengan jumlah kumulatif PDRB sampai triwulan tertentu tahun sebelumnya.',
+                                            ' Pertumbuhan PDRB pada triwulan tertentu dibandingkan dengan triwulan yang sama pada tahun sebelumnya.',
                                         style: TextStyle(
                                             fontSize: 12,
                                             fontFamily: 'Roboto',

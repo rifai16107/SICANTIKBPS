@@ -898,7 +898,7 @@ class _LajuadhkyyPengelTrwAState extends State<LajuadhkyyPengelTrwA> {
                             child: RichText(
                               textAlign: TextAlign.left,
                               text: const TextSpan(
-                                  text: 'c-to-c:',
+                                  text: 'y-on-y:',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
@@ -906,7 +906,7 @@ class _LajuadhkyyPengelTrwAState extends State<LajuadhkyyPengelTrwA> {
                                   children: <TextSpan>[
                                     TextSpan(
                                         text:
-                                            ' Pertumbuhan jumlah kumulatif PDRB sampai dengan triwulan tertentu dibandingkan dengan jumlah kumulatif PDRB sampai triwulan tertentu tahun sebelumnya.',
+                                            ' Pertumbuhan PDRB pada triwulan tertentu dibandingkan dengan triwulan yang sama pada tahun sebelumnya.',
                                         style: TextStyle(
                                             fontSize: 12,
                                             fontFamily: 'Roboto',
