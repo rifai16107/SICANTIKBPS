@@ -5,6 +5,7 @@ import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel/pdrb_penge
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/pdrb_pengel_trw_content.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_adhb_kabkot/series_pdrbadhb_kabkot.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_adhk_kabkot/series_pdrbadhk_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_trw_kabkot/pdrb_kabkot_trw_content.dart';
 import 'package:bps_cilacap/restAPI/repository_nilai_pdrb.dart';
 import 'package:flutter/material.dart';
 import 'package:bps_cilacap/format_angka.dart';
@@ -471,7 +472,7 @@ class _PdrbContentState extends State<PdrbContent> {
                               Navigator.push(
                                   context,
                                   CustomPageRoute(
-                                      child: const SeriesPdrbadhbKabkot(),
+                                      child: const SeriesPdrbadhkKabkot(),
                                       direction: AxisDirection.left));
                             },
                             child: SizedBox(
@@ -483,7 +484,7 @@ class _PdrbContentState extends State<PdrbContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "PDRB ADHB Menurut Kabupaten/Kota di Jawa Tengah (Triwulanan)",
+                                        "PDRB ADHK Menurut Kabupaten/Kota di Jawa Tengah",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -514,7 +515,7 @@ class _PdrbContentState extends State<PdrbContent> {
                               Navigator.push(
                                   context,
                                   CustomPageRoute(
-                                      child: const SeriesPdrbadhkKabkot(),
+                                      child: const pdrbkabkottrwContent(),
                                       direction: AxisDirection.left));
                             },
                             child: SizedBox(
@@ -526,50 +527,7 @@ class _PdrbContentState extends State<PdrbContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "PDRB ADHK (Tahun 2010=100) Menurut Kabupaten/Kota di Jawa Tengah",
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                    Flexible(
-                                      flex: 1,
-                                      fit: FlexFit.tight,
-                                      child: Icon(
-                                        (Icons.arrow_right),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ),
-                        const Divider(
-                          height: 5,
-                          color: Colors.transparent,
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: ElevatedButton(
-                            style: const ButtonStyle(
-                                backgroundColor:
-                                    MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  CustomPageRoute(
-                                      child: const SeriesPdrbadhkKabkot(),
-                                      direction: AxisDirection.left));
-                            },
-                            child: SizedBox(
-                                width: screenWidth,
-                                height: screenHeight * 0.1,
-                                child: Row(
-                                  children: const [
-                                    Flexible(
-                                      flex: 10,
-                                      fit: FlexFit.tight,
-                                      child: Text(
-                                        "PDRB ADHK (Tahun 2010=100) Menurut Kabupaten/Kota di Jawa Tengah (Triwulanan)",
+                                        "PDRB Triwulanan Menurut Kabupaten/Kota di Jawa Tengah",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),

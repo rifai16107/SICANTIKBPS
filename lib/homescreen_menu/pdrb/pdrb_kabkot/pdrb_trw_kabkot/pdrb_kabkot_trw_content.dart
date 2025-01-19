@@ -1,22 +1,22 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/pdrb_pengel_adhk/series_pdrb_pengel_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/pdrb_pengel_adhb/series_pdrbadhb_pengel_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/dist_pengel_adhb/series_distadhb_pengel_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajuqq_pengel_adhk/series_lajuadhkqq_pengel_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajucc_pengel_adhk/series_lajuadhkcc_pengel_trw.dart';
-import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_pengel_trw/lajuyy_pengel_adhk/series_lajuadhkyy_pengel_trw.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_trw_kabkot/pdrb_adhb/series_trwadhb_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_trw_kabkot/pdrb_adhk/series_trwadhk_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_trw_kabkot/dist_pdrb_kabkot/series_trwdist_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_trw_kabkot/lajutrwcc_kabkot/series_trwlajucc_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_trw_kabkot/lajutrwqq_kabkot/series_trwlajuqq_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_kabkot/pdrb_trw_kabkot/lajutrwyy_kabkot/series_trwlajuyy_kabkot.dart';
 import 'package:flutter/material.dart';
 
-class pdrbpengeltrwContent extends StatefulWidget {
-  const pdrbpengeltrwContent({Key? key}) : super(key: key);
+class pdrbkabkottrwContent extends StatefulWidget {
+  const pdrbkabkottrwContent({Key? key}) : super(key: key);
 
   @override
-  State<pdrbpengeltrwContent> createState() => _pdrbpengeltrwContentState();
+  State<pdrbkabkottrwContent> createState() => _pdrbkabkottrwContentState();
 }
 
-class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
+class _pdrbkabkottrwContentState extends State<pdrbkabkottrwContent> {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -26,7 +26,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'PDRB PENGELUARAN TRIWULANAN',
+          'PDRB TRIWULANAN KAB/KOTA',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -64,7 +64,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                               horizontal: 5,
                             ),
                             child: Text(
-                              "PDRB Triwulanan (Nilai, Distribusi, Laju) Menurut Kabupaten/Kota Di Jawa Tengah",
+                              "PDRB Triwulanan Kabupaten/Kota Di Jawa Tengah",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 15),
                               textAlign: TextAlign.center,
@@ -94,7 +94,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesPdrbPengelTrw(),
+                          child: const SeriesTrwadhkKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -106,7 +106,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "PDRB Triwulanan Atas Dasar Harga Konstan Menurut Pengeluaran",
+                            "PDRB Triwulanan Atas Dasar Harga Konstan Menurut Kabupaten/Kota",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -134,7 +134,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesPdrbadhbPengwlTrw(),
+                          child: const SeriesTrwadhbKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -146,7 +146,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "PDRB Triwulanan Atas Dasar Harga Berlaku Menurut Pengeluaran",
+                            "PDRB Triwulanan Atas Dasar Harga Berlaku Menurut Kabupaten/Kota",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -174,7 +174,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesDistadhbPengelTrw(),
+                          child: const SeriesTrwdistKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -186,7 +186,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Distribusi PDRB Triwulanan Menurut Pengeluaran",
+                            "Distribusi PDRB Triwulanan Menurut Kabupaten/Kota",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -214,7 +214,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesLajuadhkqqPengelTrw(),
+                          child: const SeriesTrwlajuqqKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -226,7 +226,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Pengeluaran (Persen)",
+                            "Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Kabupaten/Kota",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -254,7 +254,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesLajuadhkccPengelTrw(),
+                          child: const SeriesTrwlajuccKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -266,7 +266,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Pengeluaran (Persen)",
+                            "Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Kabupaten/Kota",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -294,7 +294,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesLajuadhkyyPengelTrw(),
+                          child: const SeriesTrwlajuyyKabkot(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -306,7 +306,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Laju Pertumbuhan (y-on-y) PDRB Triwulanan Menurut Pengeluaran (Persen)",
+                            "Laju Pertumbuhan (y-on-y) PDRB Triwulanan Menurut Kabupaten/Kota",
                             textAlign: TextAlign.center,
                           ),
                         ),
