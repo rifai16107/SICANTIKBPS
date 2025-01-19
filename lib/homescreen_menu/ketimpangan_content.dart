@@ -104,24 +104,6 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                           Container(
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.centerLeft,
-                            child: const Text(
-                              "Gini Rasio (Koefisien Gini Ratio)",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.blue),
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(5),
-                            alignment: Alignment.centerLeft,
-                            child: const Text(
-                              "   Ukuran lain yang biasa digunakan untuk mengukur tingkat ketimpangan adalah Angka Gini Rasio atau Koefisien Gini, angka ini berada pada rnage 0 - 1, semakin mendekati '0'  tingkat ketimpangan semakin rendah atau tingkat pemerataan kesejahteraan semakinbaik. Sementara mendekati '1' tingkat ketimpangan semakin tinggi atau tingkat pemerataan kesejahteraan semakini buruk.",
-                              textAlign: TextAlign.justify,
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(5),
-                            alignment: Alignment.centerLeft,
                             child: Column(
                               children: [
                                 const Text(
@@ -140,6 +122,92 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                               ],
                             ),
                           ),
+                          //klasifikasi Kriteria bank dunia
+                          Container(
+                            padding: const EdgeInsets.all(5),
+                            alignment: Alignment.centerLeft,
+                            child: const Text(
+                              "Kriteria ketimpangan Bank Dunia :",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue),
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    padding: const EdgeInsets.only(left: 5),
+                                    width: screenWidth * 0.97,
+                                    child: const Text(
+                                      "Tingkat ketimpangan pendapatan menurut Bank Dunia dapat dikategorikan menjadi tiga, yaitu:",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w600,
+                                          //fontSize: 13,
+                                          ),
+                                      textAlign: TextAlign.left,
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(top:5,left: 9),
+                                    width: screenWidth * 0.97,
+                                    child: const Text(
+                                      "Ketimpangan Tinggi, jika 40% penduduk berpendapatan rendah menerima lebih kecil dari 12% dari jumlah pendapatan",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.normal,
+                                        fontSize: 13,
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(top:5,left: 9),
+                                    width: screenWidth * 0.97,
+                                    child: const Text(
+                                      "Ketimpangan Sedang/Moderat/Menengah, jika 40% penduduk berpendapatan rendah menerima 12%-17% dari jumlah pendapatan",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.normal,
+                                        fontSize: 13,
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(top:5,left: 9),
+                                    width: screenWidth * 0.97,
+                                    child: const Text(
+                                      "Ketimpangan Rendah, jika 40% penduduk berpendapatan rendah menerima lebih dari 17% dari jumlah pendapatan",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.normal,
+                                        fontSize: 13,
+                                      ),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(top:10, bottom:5),
+                            alignment: Alignment.centerLeft,
+                            child: const Text(
+                              "Gini Rasio (Koefisien Gini Ratio)",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue),
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 5),
+                            alignment: Alignment.centerLeft,
+                            child: const Text(
+                              "   Ukuran lain yang biasa digunakan untuk mengukur tingkat ketimpangan adalah Angka Gini Rasio atau Koefisien Gini, angka ini berada pada rnage 0 - 1, semakin mendekati '0'  tingkat ketimpangan semakin rendah atau tingkat pemerataan kesejahteraan semakinbaik. Sementara mendekati '1' tingkat ketimpangan semakin tinggi atau tingkat pemerataan kesejahteraan semakini buruk.",
+                              textAlign: TextAlign.justify,
+                            ),
+                          ),
+                          
                           Container(
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.centerLeft,
@@ -157,6 +225,10 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                               ],
                             ),
                           ),
+                          
+                          
+
+                          //Klasifikasi Gini rasio
                           Container(
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.centerLeft,
@@ -178,7 +250,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                       "Menurut Oshima, Kriteria Ketimpangan Berdasarkan Gini Rasio sebagai berikut:",
                                       style: TextStyle(
                                           fontWeight: FontWeight.w600,
-                                          fontSize: 13),
+                                          fontSize: 14),
                                       textAlign: TextAlign.left,
                                     ),
                                   ),
@@ -189,7 +261,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                       "1. Ketimpangan rendah jika Gini Rasio < 0,35",
                                       style: TextStyle(
                                         fontWeight: FontWeight.normal,
-                                        fontSize: 12,
+                                        fontSize: 13,
                                       ),
                                       textAlign: TextAlign.left,
                                     ),
@@ -201,7 +273,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                       "2. Ketimpangan sedang jika Gini Rasio 0,35 - 0,50",
                                       style: TextStyle(
                                         fontWeight: FontWeight.normal,
-                                        fontSize: 12,
+                                        fontSize: 13,
                                       ),
                                       textAlign: TextAlign.left,
                                     ),
@@ -213,7 +285,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                       "3. Ketimpangan tinggi jika Gini Rasio > 0,50",
                                       style: TextStyle(
                                         fontWeight: FontWeight.normal,
-                                        fontSize: 12,
+                                        fontSize: 13,
                                       ),
                                       textAlign: TextAlign.left,
                                     ),
@@ -252,7 +324,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                       "Menurut Micahel Todaro (Ekonom Italia), Kriteria Ketimpangan Berdasarkan Gini Rasio sebagai berikut:",
                                       style: TextStyle(
                                           fontWeight: FontWeight.w600,
-                                          fontSize: 13),
+                                          fontSize: 14),
                                       textAlign: TextAlign.left,
                                     ),
                                   ),
@@ -263,7 +335,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                       "1. Ketimpangan rendah jika Gini Rasio 0,20 - 0,35",
                                       style: TextStyle(
                                         fontWeight: FontWeight.normal,
-                                        fontSize: 12,
+                                        fontSize: 13,
                                       ),
                                       textAlign: TextAlign.left,
                                     ),
@@ -275,7 +347,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                       "2. Ketimpangan sedang jika Gini Rasio 0,36 - 0,49",
                                       style: TextStyle(
                                         fontWeight: FontWeight.normal,
-                                        fontSize: 12,
+                                        fontSize: 13,
                                       ),
                                       textAlign: TextAlign.left,
                                     ),
@@ -287,7 +359,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                       "3. Ketimpangan tinggi jika Gini Rasio 0,50 - 0,70",
                                       style: TextStyle(
                                         fontWeight: FontWeight.normal,
-                                        fontSize: 12,
+                                        fontSize: 13,
                                       ),
                                       textAlign: TextAlign.left,
                                     ),
