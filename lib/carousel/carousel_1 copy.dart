@@ -113,14 +113,13 @@ class _carouselSlider1State extends State<carouselSlider1> {
                   borderRadius: BorderRadius.circular(5),
                 ),
                 margin: const EdgeInsets.only(top: 0, bottom: 0),
-                width: screenWidth*0.4,
+                width: screenWidth,
                 height: screenHeight,
                 child: Row(
                   children: <Widget>[
-                    SizedBox(
-                      width: screenWidth*0.1,
-                      //fit: FlexFit.tight,
-                      //flex: 1,
+                    Flexible(
+                      fit: FlexFit.tight,
+                      flex: 3,
                       child: SizedBox(
                         width: 55,
                         height: 55,
@@ -130,42 +129,46 @@ class _carouselSlider1State extends State<carouselSlider1> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                        width: screenWidth*0.2,
-                        //fit: FlexFit.tight,
-                        //flex: 1,
+                    Flexible(
+                        fit: FlexFit.tight,
+                        flex: 8,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
                               margin: const EdgeInsets.only(left: 2),
-                              child: const Text(
-                                "INFLASI",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.only(left: 2),
                               child: Text(
-                                "$bln $tahun",
+                                "Inflasi $bln $tahun Kabupaten $kab",
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold),
                               ),
                             ),
-
                             const Divider(),
                             Container(
-                              alignment: Alignment.centerLeft,
+                              alignment: Alignment.centerRight,
                               margin: const EdgeInsets.only(right: 15),
                               child: Text(
-                                "M to M : ${Format.convertTo(mtom1, 2)}%",
+                                "Inflasi Month to Month : ${Format.convertTo(mtom1, 2)}%",
                                 style: const TextStyle(fontSize: 13),
                               ),
                             ),
-                            
+                            Container(
+                              alignment: Alignment.centerRight,
+                              margin: const EdgeInsets.only(right: 15),
+                              child: Text(
+                                "Inflasi Year to Date : ${Format.convertTo(ytod1, 2)}%",
+                                style: const TextStyle(fontSize: 13),
+                              ),
+                            ),
+                            Container(
+                              alignment: Alignment.centerRight,
+                              margin: const EdgeInsets.only(right: 15),
+                              child: Text(
+                                "Inflasi Year on Year : ${Format.convertTo(yony1, 2)}%",
+                                style: const TextStyle(fontSize: 13),
+                              ),
+                            ),
                           ],
                         )),
                   ],

@@ -580,7 +580,7 @@ class _InflasiBulananYonyCState extends State<InflasiBulananYonyC> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 5),
                                     color: Colors.green,
                                     child: const Center(
                                       child: Text(
@@ -599,7 +599,7 @@ class _InflasiBulananYonyCState extends State<InflasiBulananYonyC> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 5),
                                     color: Colors.green,
                                     child: Center(
                                       child: Text(
@@ -617,7 +617,7 @@ class _InflasiBulananYonyCState extends State<InflasiBulananYonyC> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
+                                        horizontal: 2, vertical: 5),
                                     color: Colors.green,
                                     child: Center(
                                       child: Text(
