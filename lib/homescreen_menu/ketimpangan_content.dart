@@ -143,14 +143,15 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                     child: const Text(
                                       "Tingkat ketimpangan pendapatan menurut Bank Dunia dapat dikategorikan menjadi tiga, yaitu:",
                                       style: TextStyle(
-                                          fontWeight: FontWeight.w600,
-                                          //fontSize: 13,
-                                          ),
+                                        fontWeight: FontWeight.w600,
+                                        //fontSize: 13,
+                                      ),
                                       textAlign: TextAlign.left,
                                     ),
                                   ),
                                   Container(
-                                    padding: const EdgeInsets.only(top:5,left: 9),
+                                    padding:
+                                        const EdgeInsets.only(top: 5, left: 9),
                                     width: screenWidth * 0.97,
                                     child: const Text(
                                       "Ketimpangan Tinggi, jika 40% penduduk berpendapatan rendah menerima lebih kecil dari 12% dari jumlah pendapatan",
@@ -162,7 +163,8 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                     ),
                                   ),
                                   Container(
-                                    padding: const EdgeInsets.only(top:5,left: 9),
+                                    padding:
+                                        const EdgeInsets.only(top: 5, left: 9),
                                     width: screenWidth * 0.97,
                                     child: const Text(
                                       "Ketimpangan Sedang/Moderat/Menengah, jika 40% penduduk berpendapatan rendah menerima 12%-17% dari jumlah pendapatan",
@@ -174,7 +176,8 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                                     ),
                                   ),
                                   Container(
-                                    padding: const EdgeInsets.only(top:5,left: 9),
+                                    padding:
+                                        const EdgeInsets.only(top: 5, left: 9),
                                     width: screenWidth * 0.97,
                                     child: const Text(
                                       "Ketimpangan Rendah, jika 40% penduduk berpendapatan rendah menerima lebih dari 17% dari jumlah pendapatan",
@@ -190,7 +193,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                             ],
                           ),
                           Container(
-                            padding: const EdgeInsets.only(top:10, bottom:5),
+                            padding: const EdgeInsets.only(top: 10, bottom: 5),
                             alignment: Alignment.centerLeft,
                             child: const Text(
                               "Gini Rasio (Koefisien Gini Ratio)",
@@ -207,7 +210,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                               textAlign: TextAlign.justify,
                             ),
                           ),
-                          
+
                           Container(
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.centerLeft,
@@ -225,8 +228,6 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                               ],
                             ),
                           ),
-                          
-                          
 
                           //Klasifikasi Gini rasio
                           Container(
@@ -444,7 +445,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(39, 101, 182, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -484,7 +485,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(39, 101, 182, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -524,7 +525,7 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(236, 138, 20, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,

@@ -250,7 +250,7 @@ class _PdrbContentState extends State<PdrbContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                                        Color.fromRGBO(39, 101, 182, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -293,7 +293,7 @@ class _PdrbContentState extends State<PdrbContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                                        Color.fromRGBO(39, 101, 182, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -310,7 +310,7 @@ class _PdrbContentState extends State<PdrbContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "PDRB Kabupaten Cilacap Menurut Lapangan Usaha (Triwulanan)",
+                                        "PDRB Triwulanan Kabupaten Cilacap Menurut Lapangan Usaha",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -336,7 +336,7 @@ class _PdrbContentState extends State<PdrbContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                                        Color.fromRGBO(39, 101, 182, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -380,7 +380,7 @@ class _PdrbContentState extends State<PdrbContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                                        Color.fromRGBO(39, 101, 182, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -397,7 +397,7 @@ class _PdrbContentState extends State<PdrbContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "PDRB Kabupaten Cilacap Menurut Komponen Pengeluaran (Triwulanan)",
+                                        "PDRB Triwulanan Kabupaten Cilacap Menurut Komponen Pengeluaran",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -424,7 +424,7 @@ class _PdrbContentState extends State<PdrbContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                                        Color.fromRGBO(236, 138, 20, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -467,7 +467,7 @@ class _PdrbContentState extends State<PdrbContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                                        Color.fromRGBO(236, 138, 20, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -510,7 +510,7 @@ class _PdrbContentState extends State<PdrbContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
+                                        Color.fromRGBO(236, 138, 20, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,

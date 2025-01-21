@@ -381,7 +381,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(39, 101, 182, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -421,7 +421,7 @@ class _pendidikanContentState extends State<pendidikanContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(236, 138, 20, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,

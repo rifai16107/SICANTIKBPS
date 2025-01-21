@@ -190,7 +190,7 @@ class _inflasiContentState extends State<inflasiContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(39, 101, 182, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -230,7 +230,7 @@ class _inflasiContentState extends State<inflasiContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(39, 101, 182, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -270,12 +270,12 @@ class _inflasiContentState extends State<inflasiContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(39, 101, 182, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesInflasiKota(),
+                          child: const SeriesInflasi(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -287,7 +287,7 @@ class _inflasiContentState extends State<inflasiContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Inflasi 9 (Sembilan) Kota Di Jawa Tengah",
+                            "Series IHK dan Inflasi Kota Cilacap",
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -310,12 +310,12 @@ class _inflasiContentState extends State<inflasiContent> {
               child: ElevatedButton(
                 style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll<Color>(
-                        Color.fromRGBO(10, 100, 31, 0.886))),
+                        Color.fromRGBO(236, 138, 20, 0.882))),
                 onPressed: () {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child: const SeriesInflasi(),
+                          child: const SeriesInflasiKota(),
                           direction: AxisDirection.left));
                 },
                 child: SizedBox(
@@ -327,7 +327,7 @@ class _inflasiContentState extends State<inflasiContent> {
                           flex: 16,
                           fit: FlexFit.tight,
                           child: Text(
-                            "Series IHK dan Inflasi Kota Cilacap",
+                            "Inflasi 9 (Sembilan) Kota Di Jawa Tengah",
                             textAlign: TextAlign.center,
                           ),
                         ),

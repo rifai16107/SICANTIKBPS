@@ -377,51 +377,6 @@ class _IpmContentState extends State<IpmContent> {
                               Navigator.push(
                                   context,
                                   CustomPageRoute(
-                                      child: const SeriesIpmsejateng(),
-                                      direction: AxisDirection.left));
-                            },
-                            child: SizedBox(
-                                width: screenWidth,
-                                height: screenHeight * 0.1,
-                                child: Row(
-                                  children: const [
-                                    Flexible(
-                                      flex: 10,
-                                      fit: FlexFit.tight,
-                                      child: Text(
-                                        "IPM Kabupaten/Kota di Jawa Tengah",
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                    Flexible(
-                                      flex: 1,
-                                      fit: FlexFit.tight,
-                                      child: Icon(
-                                        (Icons.arrow_right),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ),
-
-                        //IPG
-                        const Divider(
-                          height: 5,
-                          color: Colors.transparent,
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: ElevatedButton(
-                            style: const ButtonStyle(
-                                backgroundColor:
-                                    MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  CustomPageRoute(
                                       child: const IpmGenderKabContent(),
                                       direction: AxisDirection.left));
                             },
@@ -460,95 +415,7 @@ class _IpmContentState extends State<IpmContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  CustomPageRoute(
-                                      child: const SeriesIpgkabkot(),
-                                      direction: AxisDirection.left));
-                            },
-                            child: SizedBox(
-                                width: screenWidth,
-                                height: screenHeight * 0.1,
-                                child: Row(
-                                  children: const [
-                                    Flexible(
-                                      flex: 10,
-                                      fit: FlexFit.tight,
-                                      child: Text(
-                                        "[IPG] Indeks Pembangunan Manusia Kabupaten/Kota di Jawa Tengah Menurut Jenis Kelamin",
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                    Flexible(
-                                      flex: 1,
-                                      fit: FlexFit.tight,
-                                      child: Icon(
-                                        (Icons.arrow_right),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ),
-                        const Divider(
-                          height: 5,
-                          color: Colors.transparent,
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: ElevatedButton(
-                            style: const ButtonStyle(
-                                backgroundColor:
-                                    MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(10, 100, 31, 0.886))),
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  CustomPageRoute(
-                                      child: const IpgKabkotJateng(),
-                                      direction: AxisDirection.left));
-                            },
-                            child: SizedBox(
-                                width: screenWidth,
-                                height: screenHeight * 0.1,
-                                child: Row(
-                                  children: const [
-                                    Flexible(
-                                      flex: 10,
-                                      fit: FlexFit.tight,
-                                      child: Text(
-                                        "[IPG] Indeks Pembangunan Gender Kabupaten/Kota di Jawa Tengah",
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                    Flexible(
-                                      flex: 1,
-                                      fit: FlexFit.tight,
-                                      child: Icon(
-                                        (Icons.arrow_right),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ),
-
-                        //IDG
-                        const Divider(
-                          height: 5,
-                          color: Colors.transparent,
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: ElevatedButton(
-                            style: const ButtonStyle(
-                                backgroundColor:
-                                    MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(182, 156, 8, 0.882))),
+                                        Color.fromRGBO(39, 101, 182, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -591,7 +458,142 @@ class _IpmContentState extends State<IpmContent> {
                             style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
-                                        Color.fromRGBO(182, 156, 8, 0.882))),
+                                        Color.fromRGBO(236, 138, 20, 0.882))),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CustomPageRoute(
+                                      child: const SeriesIpmsejateng(),
+                                      direction: AxisDirection.left));
+                            },
+                            child: SizedBox(
+                                width: screenWidth,
+                                height: screenHeight * 0.1,
+                                child: Row(
+                                  children: const [
+                                    Flexible(
+                                      flex: 10,
+                                      fit: FlexFit.tight,
+                                      child: Text(
+                                        "IPM Kabupaten/Kota di Jawa Tengah",
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                    Flexible(
+                                      flex: 1,
+                                      fit: FlexFit.tight,
+                                      child: Icon(
+                                        (Icons.arrow_right),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ),
+
+                        //IPG
+                        const Divider(
+                          height: 5,
+                          color: Colors.transparent,
+                        ),
+
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: ElevatedButton(
+                            style: const ButtonStyle(
+                                backgroundColor:
+                                    MaterialStatePropertyAll<Color>(
+                                        Color.fromRGBO(236, 138, 20, 0.882))),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CustomPageRoute(
+                                      child: const SeriesIpgkabkot(),
+                                      direction: AxisDirection.left));
+                            },
+                            child: SizedBox(
+                                width: screenWidth,
+                                height: screenHeight * 0.1,
+                                child: Row(
+                                  children: const [
+                                    Flexible(
+                                      flex: 10,
+                                      fit: FlexFit.tight,
+                                      child: Text(
+                                        "[IPG] Indeks Pembangunan Manusia Kabupaten/Kota di Jawa Tengah Menurut Jenis Kelamin",
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                    Flexible(
+                                      flex: 1,
+                                      fit: FlexFit.tight,
+                                      child: Icon(
+                                        (Icons.arrow_right),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ),
+                        const Divider(
+                          height: 5,
+                          color: Colors.transparent,
+                        ),
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: ElevatedButton(
+                            style: const ButtonStyle(
+                                backgroundColor:
+                                    MaterialStatePropertyAll<Color>(
+                                        Color.fromRGBO(236, 138, 20, 0.882))),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CustomPageRoute(
+                                      child: const IpgKabkotJateng(),
+                                      direction: AxisDirection.left));
+                            },
+                            child: SizedBox(
+                                width: screenWidth,
+                                height: screenHeight * 0.1,
+                                child: Row(
+                                  children: const [
+                                    Flexible(
+                                      flex: 10,
+                                      fit: FlexFit.tight,
+                                      child: Text(
+                                        "[IPG] Indeks Pembangunan Gender Kabupaten/Kota di Jawa Tengah",
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                    Flexible(
+                                      flex: 1,
+                                      fit: FlexFit.tight,
+                                      child: Icon(
+                                        (Icons.arrow_right),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ),
+
+                        //IDG
+                        const Divider(
+                          height: 5,
+                          color: Colors.transparent,
+                        ),
+
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: ElevatedButton(
+                            style: const ButtonStyle(
+                                backgroundColor:
+                                    MaterialStatePropertyAll<Color>(
+                                        Color.fromRGBO(236, 138, 20, 0.882))),
                             onPressed: () {
                               Navigator.push(
                                   context,
