@@ -74,7 +74,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String kab = "Cilacap";
+              //String kab = "Cilacap";
               String tahun = isiindikatorutama[index = 0].tahun.substring(0, 4);
               String bulan = isiindikatorutama[index = 0].bulan.substring(0, 3);
               String bln = "";
@@ -105,71 +105,141 @@ class _carouselSlider1State extends State<carouselSlider1> {
               }
 
               double mtom1 = double.parse(isiindikatorutama[index = 0].nilai);
-              double yony1 = double.parse(isiindikatorutama[index = 2].nilai);
-              double ytod1 = double.parse(isiindikatorutama[index = 1].nilai);
+              //double yony1 = double.parse(isiindikatorutama[index = 2].nilai);
+              //double ytod1 = double.parse(isiindikatorutama[index = 1].nilai);
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 margin: const EdgeInsets.only(top: 0, bottom: 0),
-                width: screenWidth*0.4,
+                width: screenWidth,
                 height: screenHeight,
                 child: Row(
-                  children: <Widget>[
-                    SizedBox(
-                      width: screenWidth*0.1,
-                      //fit: FlexFit.tight,
-                      //flex: 1,
-                      child: SizedBox(
-                        width: 55,
-                        height: 55,
-                        child: Image.asset(
-                          'assets/images/carousel/inflasi_bulanan_icon.png',
-                          alignment: Alignment.center,
+                      children: [
+                        Container(
+                          alignment: Alignment.bottomCenter,
+                          padding:
+                              const EdgeInsets.only(left: 5, top: 0, right: 5),
+                          width: screenWidth * 0.40,
+                          height: screenHeight * 0.15,
+                          child: Material(
+                            //color: const Color.fromARGB(255, 232, 240, 248),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                            elevation: 10,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: const Color.fromARGB(
+                                        255, 121, 123, 126)),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: InkWell(
+                                splashColor: Colors.blueGrey,
+                                onTap: () {
+                                  
+                                },
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/jumlah_penduduk.png',
+                                      fit: BoxFit.cover,
+                                      width: screenWidth * 0.40,
+                                      height: screenHeight * 0.12,
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.30,
+                                      color: Colors.blue,
+                                      child: const Text(
+                                        'PENDUDUK',
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 11),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    SizedBox(
-                        width: screenWidth*0.2,
-                        //fit: FlexFit.tight,
-                        //flex: 1,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.only(left: 2),
-                              child: const Text(
-                                "INFLASI",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold),
+                        Container(
+                          alignment: Alignment.bottomCenter,
+                          padding:
+                              const EdgeInsets.only(left: 5, top: 0, right: 5),
+                          width: screenWidth * 0.40,
+                          height: screenHeight * 0.15,
+                          child: Material(
+                            //color: const Color.fromARGB(255, 232, 240, 248),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                            elevation: 10,
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: const Color.fromARGB(
+                                        255, 121, 123, 126)),
+                                borderRadius: BorderRadius.circular(10),
                               ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.only(left: 2),
-                              child: Text(
-                                "$bln $tahun",
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
+                              child: InkWell(
+                                onTap: () {
+                                  
+                                },
+                                splashColor: Colors.blueGrey,
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.40,
+                                      color: Color.fromARGB(255, 211, 209, 204),
+                                      child: const Text(
+                                        'INFLASI',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                    Container(
+                                        width: screenWidth * 0.40,
+                                        color: Color.fromARGB(255, 211, 209, 204),
+                                        //margin: const EdgeInsets.only(left: 2, top:5),
+                                        child: const Text(
+                                          "Month to Month:",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                              textAlign: TextAlign.center,
+                                        ),
+                                      ),
+                                      const Divider(),
+                                      SizedBox(
+                                        height: screenHeight*0.055,
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(bottom: 10),
+                                        child: Text(
+                                           " ${Format.convertTo(mtom1, 2)}%",
+                                          style: const TextStyle(fontSize: 20),
+                                        ),
+                                      ),
+                                    //const SizedBox(height:6),
+                                    
 
-                            const Divider(),
-                            Container(
-                              alignment: Alignment.centerLeft,
-                              margin: const EdgeInsets.only(right: 15),
-                              child: Text(
-                                "M to M : ${Format.convertTo(mtom1, 2)}%",
-                                style: const TextStyle(fontSize: 13),
+                                    //const SizedBox(height:10),
+                                  ],
+                                ),
                               ),
                             ),
-                            
-                          ],
-                        )),
-                  ],
-                ),
+                          ),
+                        ),
+                        
+                      ],
+                    ),
               );
             },
           );
