@@ -75,7 +75,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              //String kab = "Cilacap";
+              String kab = "Cilacap";
               String tahun = isiindikatorutama[index = 0].tahun.substring(0, 4);
               String bulan = isiindikatorutama[index = 0].bulan.substring(0, 3);
               String bln = "";
@@ -106,8 +106,8 @@ class _carouselSlider1State extends State<carouselSlider1> {
               }
 
               double mtom1 = double.parse(isiindikatorutama[index = 0].nilai);
-              //double yony1 = double.parse(isiindikatorutama[index = 2].nilai);
-              //double ytod1 = double.parse(isiindikatorutama[index = 1].nilai);
+              double yony1 = double.parse(isiindikatorutama[index = 2].nilai);
+              double ytod1 = double.parse(isiindikatorutama[index = 1].nilai);
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
@@ -132,34 +132,105 @@ class _carouselSlider1State extends State<carouselSlider1> {
                         child: Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                                color:
-                                    const Color.fromARGB(255, 121, 123, 126)),
+                                color: const Color.fromARGB(255, 231, 232, 233),),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            splashColor: Colors.blueGrey,
                             onTap: () {},
+                            splashColor: Colors.blueGrey,
                             child: Column(
-                              mainAxisSize: MainAxisSize.min,
+                              //mainAxisSize: MainAxisSize.min,
                               children: [
-                                Image.asset(
-                                  'assets/images/jumlah_penduduk.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.40,
-                                  height: screenHeight * 0.12,
-                                ),
                                 Container(
-                                  width: screenWidth * 0.30,
-                                  color: Colors.blue,
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    'PENDUDUK',
+                                    "INFLASI (persen)",
                                     style: TextStyle(
-                                        color: Colors.white,
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 11),
+                                        fontSize: 13),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.021,
+                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: Text(
+                                    '$bln $tahun',
+                                    style:
+                                        const TextStyle(
+                                           fontSize: 12,
+                                           fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.022,
+                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    'm-to-m',
+                                    style:
+                                        TextStyle(
+                                           fontSize: 12,
+                                           fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.005,
+                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    '',
+                                    style:
+                                        TextStyle(
+                                           fontSize: 12,
+                                           fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.055,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: SizedBox(
+                                       //width: 95,
+                                       //height: 95,
+                                       child: Image.asset(
+                                          'assets/images/carousel/inflasi_bulanan_icon.png',
+                                        alignment: Alignment.center,
+                                       ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.035,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                        " ${Format.convertTo(mtom1, 2)}",
+                                        style: const TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.blue)
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                //const SizedBox(height:6),
+
+                                //const SizedBox(height:10),
                               ],
                             ),
                           ),
@@ -180,8 +251,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                         child: Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                                color:
-                                    const Color.fromARGB(255, 121, 123, 126)),
+                                color: const Color.fromARGB(255, 231, 232, 233),),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
@@ -192,51 +262,115 @@ class _carouselSlider1State extends State<carouselSlider1> {
                               children: [
                                 Container(
                                   width: screenWidth * 0.40,
-                                  height: screenHeight * 0.030,
-                                  color:
-                                      const Color.fromARGB(255, 211, 209, 204),
+                                  height: screenHeight * 0.025,
+                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    'INFLASI',
+                                    "INFLASI (persen)",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 16),
+                                        fontSize: 13),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
-                                  height: screenHeight * 0.030,
-                                  color:
-                                      const Color.fromARGB(255, 211, 209, 204),
+                                  height: screenHeight * 0.021,
+                                  color: const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
-                                  child: const Text(
-                                    "Month to Month:",
+                                  child: Text(
+                                    '$bln $tahun',
                                     style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                        const TextStyle(
+                                           fontSize: 12,
+                                           fontWeight: FontWeight.normal),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
-
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                 child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.022,
+                                      //color: const Color.fromARGB(255, 231, 232, 233),
+                                      //alignment: Alignment.center,
+                                      //margin: const EdgeInsets.only(top: 0),
+                                      child: const Text(
+                                        "y-to-d",
+                                         textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                           fontSize: 12,
+                                           fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: screenWidth * 0.185,
+                                      height: screenHeight * 0.022,
+                                      //color: const Color.fromARGB(255, 231, 232, 233),
+                                      //alignment: Alignment.center,
+                                      //margin: const EdgeInsets.only(top: 0),
+                                      child: const Text(
+                                        "y-on-y",
+                                         textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                           fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                   
+                                  ],
+                                ),
+                                ),
+                                SizedBox(
+                                  width: screenWidth * 0.40,
+                                 child: Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.365,
+                                      height: screenHeight * 0.005,
+                                      color: const Color.fromARGB(255, 231, 232, 233),
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 0),
+                                      child: const Text(
+                                        " ",
+                                        style: TextStyle(
+                                           fontSize: 12,
+                                           fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                    
+                                  ],
+                                ),
+                                ),
                                 Row(
                                   children: [
                                     Container(
-                                      width: screenWidth * 0.18,
+                                      width: screenWidth * 0.17,
                                       height: screenHeight * 0.035,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 10),
+                                      margin: const EdgeInsets.only(top: 15),
                                       child: Text(
-                                        " ${Format.convertTo(mtom1, 2)}%",
-                                        style: const TextStyle(fontSize: 20),
+                                        " ${Format.convertTo(ytod1, 2)}",
+                                        style: const TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.blue)
                                       ),
                                     ),
                                     Container(
                                       width: screenWidth * 0.18,
                                       height: screenHeight * 0.035,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 10),
+                                      margin: const EdgeInsets.only(top: 15),
                                       child: Text(
-                                        " ${Format.convertTo(mtom1, 2)}%",
-                                        style: const TextStyle(fontSize: 20),
+                                        " ${Format.convertTo(yony1, 2)}",
+                                        style: const TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.blue)
                                       ),
                                     ),
                                   ],
