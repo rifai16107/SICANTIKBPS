@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:bps_cilacap/Icons/bott_nav_icon_icons.dart';
 
 class RepositoryIndikatorUtama {
   final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
@@ -116,130 +117,141 @@ class _carouselSlider1State extends State<carouselSlider1> {
                 width: screenWidth,
                 height: screenHeight,
                 child: Row(
-                      children: [
-                        Container(
-                          alignment: Alignment.bottomCenter,
-                          padding:
-                              const EdgeInsets.only(left: 5, top: 0, right: 5),
-                          width: screenWidth * 0.40,
-                          height: screenHeight * 0.15,
-                          child: Material(
-                            //color: const Color.fromARGB(255, 232, 240, 248),
-                            color: Colors.white,
+                  children: [
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
+                      width: screenWidth * 0.40,
+                      height: screenHeight * 0.15,
+                      child: Material(
+                        //color: const Color.fromARGB(255, 232, 240, 248),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        elevation: 10,
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                                color:
+                                    const Color.fromARGB(255, 121, 123, 126)),
                             borderRadius: BorderRadius.circular(10),
-                            elevation: 10,
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                    color: const Color.fromARGB(
-                                        255, 121, 123, 126)),
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: InkWell(
-                                splashColor: Colors.blueGrey,
-                                onTap: () {
-                                  
-                                },
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/jumlah_penduduk.png',
-                                      fit: BoxFit.cover,
-                                      width: screenWidth * 0.40,
-                                      height: screenHeight * 0.12,
-                                    ),
-                                    Container(
-                                      width: screenWidth * 0.30,
-                                      color: Colors.blue,
-                                      child: const Text(
-                                        'PENDUDUK',
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 11),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ],
+                          ),
+                          child: InkWell(
+                            splashColor: Colors.blueGrey,
+                            onTap: () {},
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Image.asset(
+                                  'assets/images/jumlah_penduduk.png',
+                                  fit: BoxFit.cover,
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.12,
                                 ),
-                              ),
+                                Container(
+                                  width: screenWidth * 0.30,
+                                  color: Colors.blue,
+                                  child: const Text(
+                                    'PENDUDUK',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 11),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                        Container(
-                          alignment: Alignment.bottomCenter,
-                          padding:
-                              const EdgeInsets.only(left: 5, top: 0, right: 5),
-                          width: screenWidth * 0.40,
-                          height: screenHeight * 0.15,
-                          child: Material(
-                            //color: const Color.fromARGB(255, 232, 240, 248),
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                            elevation: 10,
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                    color: const Color.fromARGB(
-                                        255, 121, 123, 126)),
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: InkWell(
-                                onTap: () {
-                                  
-                                },
-                                splashColor: Colors.blueGrey,
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: screenWidth * 0.40,
-                                      color: Color.fromARGB(255, 211, 209, 204),
-                                      child: const Text(
-                                        'INFLASI',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 16),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                    Container(
-                                        width: screenWidth * 0.40,
-                                        color: Color.fromARGB(255, 211, 209, 204),
-                                        //margin: const EdgeInsets.only(left: 2, top:5),
-                                        child: const Text(
-                                          "Month to Month:",
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.bold),
-                                              textAlign: TextAlign.center,
-                                        ),
-                                      ),
-                                      const Divider(),
-                                      SizedBox(
-                                        height: screenHeight*0.055,
-                                        //alignment: Alignment.center,
-                                        //margin: const EdgeInsets.only(bottom: 10),
-                                        child: Text(
-                                           " ${Format.convertTo(mtom1, 2)}%",
-                                          style: const TextStyle(fontSize: 20),
-                                        ),
-                                      ),
-                                    //const SizedBox(height:6),
-                                    
-
-                                    //const SizedBox(height:10),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        
-                      ],
+                      ),
                     ),
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
+                      width: screenWidth * 0.40,
+                      height: screenHeight * 0.15,
+                      child: Material(
+                        //color: const Color.fromARGB(255, 232, 240, 248),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        elevation: 10,
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                                color:
+                                    const Color.fromARGB(255, 121, 123, 126)),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            splashColor: Colors.blueGrey,
+                            child: Column(
+                              //mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.030,
+                                  color:
+                                      const Color.fromARGB(255, 211, 209, 204),
+                                  child: const Text(
+                                    'INFLASI',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.030,
+                                  color:
+                                      const Color.fromARGB(255, 211, 209, 204),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    "Month to Month:",
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.035,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                        " ${Format.convertTo(mtom1, 2)}%",
+                                        style: const TextStyle(fontSize: 20),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.035,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                        " ${Format.convertTo(mtom1, 2)}%",
+                                        style: const TextStyle(fontSize: 20),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                //const SizedBox(height:6),
+
+                                //const SizedBox(height:10),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               );
             },
           );

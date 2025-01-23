@@ -241,6 +241,7 @@ flutter:
      - assets/images/carousel/kemiskinan_icon.png
      - assets/images/carousel/tpt_carousel_icon.png
      - assets/images/carousel/hotel_carousel_icon.png
+     - assets/images/carousel/notepaper.png
      
     #  Modal
      - assets/images/modal/inflasi_modal_1.jpeg
