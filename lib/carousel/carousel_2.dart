@@ -81,66 +81,276 @@ class _carouselSlider2State extends State<carouselSlider2> {
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(5),
                 ),
                 margin: const EdgeInsets.only(top: 0, bottom: 0),
                 width: screenWidth,
                 height: screenHeight,
                 child: Row(
-                  children: <Widget>[
-                    Flexible(
-                      fit: FlexFit.tight,
-                      flex: 3,
-                      child: SizedBox(
-                        width: 55,
-                        height: 55,
-                        child: Image.asset(
-                          'assets/images/carousel/hasil_sp_icon.png',
-                          alignment: Alignment.center,
+                  children: [
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
+                      width: screenWidth * 0.40,
+                      height: screenHeight * 0.15,
+                      child: Material(
+                        //color: const Color.fromARGB(255, 232, 240, 248),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        elevation: 10,
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: const Color.fromARGB(255, 231, 232, 233),
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            splashColor: Colors.blueGrey,
+                            child: Column(
+                              //mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    "PENDUDUK ",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 13),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.021,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: Text(
+                                    ' $tahun ',
+                                    style: const TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.022,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    '(ribu jiwa)',
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.005,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.055,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: SizedBox(
+                                        //width: 95,
+                                        //height: 95,
+                                        child: Image.asset(
+                                          'assets/images/carousel/hasil_sp_icon.png',
+                                          alignment: Alignment.center,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.035,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                          "${Format.convertTo((lkTotal + prTotal) / 1000, 2)} Jiwa",
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                  ],
+                                ),
+                                //const SizedBox(height:6),
+
+                                //const SizedBox(height:10),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                    Flexible(
-                      fit: FlexFit.tight,
-                      flex: 8,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.only(left: 2),
-                            child: Text(
-                              "Penduduk Kab. Cilacap Tahun $tahun (Proyeksi Penduduk)",
-                              style:
-                                  const TextStyle(fontWeight: FontWeight.bold),
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
+                      width: screenWidth * 0.40,
+                      height: screenHeight * 0.15,
+                      child: Material(
+                        //color: const Color.fromARGB(255, 232, 240, 248),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        elevation: 10,
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: const Color.fromARGB(255, 231, 232, 233),
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            splashColor: Colors.blueGrey,
+                            child: Column(
+                              //mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    "PENDUDUK (ribu jiwa)",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 13),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.021,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: Text(
+                                    ' $tahun ',
+                                    style: const TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  child: Row(
+                                    children: [
+                                      SizedBox(
+                                        width: screenWidth * 0.18,
+                                        height: screenHeight * 0.022,
+                                        //color: const Color.fromARGB(255, 231, 232, 233),
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          "y-to-d",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: screenWidth * 0.185,
+                                        height: screenHeight * 0.022,
+                                        //color: const Color.fromARGB(255, 231, 232, 233),
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          "y-on-y",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: screenWidth * 0.40,
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: screenWidth * 0.365,
+                                        height: screenHeight * 0.005,
+                                        color: const Color.fromARGB(
+                                            255, 231, 232, 233),
+                                        alignment: Alignment.center,
+                                        margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          " ",
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.17,
+                                      height: screenHeight * 0.035,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 15),
+                                      child: const Text(" ",
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.035,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 15),
+                                      child: const Text(" ",
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                  ],
+                                ),
+                                //const SizedBox(height:6),
+
+                                //const SizedBox(height:10),
+                              ],
                             ),
                           ),
-                          const Divider(),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Laki - Laki : ${Format.convertTo(lkTotal, 0)} Jiwa",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Perempuan :    ${Format.convertTo(prTotal, 0)} Jiwa",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Total : ${Format.convertTo((lkTotal + prTotal), 0)} Jiwa",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                     ),
                   ],

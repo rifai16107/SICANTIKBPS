@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:bps_cilacap/Icons/bott_nav_icon_icons.dart';
 
 class RepositoryIndikatorUtama {
   final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
@@ -75,7 +74,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String kab = "Cilacap";
+              //String kab = "Cilacap";
               String tahun = isiindikatorutama[index = 0].tahun.substring(0, 4);
               String bulan = isiindikatorutama[index = 0].bulan.substring(0, 3);
               String bln = "";
@@ -132,7 +131,8 @@ class _carouselSlider1State extends State<carouselSlider1> {
                         child: Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                                color: const Color.fromARGB(255, 231, 232, 233),),
+                              color: const Color.fromARGB(255, 231, 232, 233),
+                            ),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
@@ -144,7 +144,8 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.025,
-                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
                                     "INFLASI (persen)",
@@ -157,42 +158,42 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.021,
-                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: Text(
                                     '$bln $tahun',
-                                    style:
-                                        const TextStyle(
-                                           fontSize: 12,
-                                           fontWeight: FontWeight.normal),
+                                    style: const TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.022,
-                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
                                     'm-to-m',
-                                    style:
-                                        TextStyle(
-                                           fontSize: 12,
-                                           fontWeight: FontWeight.normal),
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.005,
-                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
                                     '',
-                                    style:
-                                        TextStyle(
-                                           fontSize: 12,
-                                           fontWeight: FontWeight.normal),
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
@@ -205,12 +206,12 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
                                       child: SizedBox(
-                                       //width: 95,
-                                       //height: 95,
-                                       child: Image.asset(
+                                        //width: 95,
+                                        //height: 95,
+                                        child: Image.asset(
                                           'assets/images/carousel/inflasi_bulanan_icon.png',
-                                        alignment: Alignment.center,
-                                       ),
+                                          alignment: Alignment.center,
+                                        ),
                                       ),
                                     ),
                                     Container(
@@ -219,12 +220,11 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
                                       child: Text(
-                                        " ${Format.convertTo(mtom1, 2)}",
-                                        style: const TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.blue)
-                                      ),
+                                          " ${Format.convertTo(mtom1, 2)}",
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
                                     ),
                                   ],
                                 ),
@@ -251,7 +251,8 @@ class _carouselSlider1State extends State<carouselSlider1> {
                         child: Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                                color: const Color.fromARGB(255, 231, 232, 233),),
+                              color: const Color.fromARGB(255, 231, 232, 233),
+                            ),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
@@ -263,7 +264,8 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.025,
-                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
                                     "INFLASI (persen)",
@@ -276,74 +278,74 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.021,
-                                  color: const Color.fromARGB(255, 231, 232, 233),
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: Text(
                                     '$bln $tahun',
-                                    style:
-                                        const TextStyle(
-                                           fontSize: 12,
-                                           fontWeight: FontWeight.normal),
+                                    style: const TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
-                                  color: const Color.fromARGB(255, 231, 232, 233),
-                                 child: Row(
-                                  children: [
-                                    SizedBox(
-                                      width: screenWidth * 0.18,
-                                      height: screenHeight * 0.022,
-                                      //color: const Color.fromARGB(255, 231, 232, 233),
-                                      //alignment: Alignment.center,
-                                      //margin: const EdgeInsets.only(top: 0),
-                                      child: const Text(
-                                        "y-to-d",
-                                         textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                           fontSize: 12,
-                                           fontWeight: FontWeight.normal),
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  child: Row(
+                                    children: [
+                                      SizedBox(
+                                        width: screenWidth * 0.18,
+                                        height: screenHeight * 0.022,
+                                        //color: const Color.fromARGB(255, 231, 232, 233),
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          "y-to-d",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
                                       ),
-                                    ),
-                                    SizedBox(
-                                      width: screenWidth * 0.185,
-                                      height: screenHeight * 0.022,
-                                      //color: const Color.fromARGB(255, 231, 232, 233),
-                                      //alignment: Alignment.center,
-                                      //margin: const EdgeInsets.only(top: 0),
-                                      child: const Text(
-                                        "y-on-y",
-                                         textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontSize: 12,
-                                           fontWeight: FontWeight.normal),
+                                      SizedBox(
+                                        width: screenWidth * 0.185,
+                                        height: screenHeight * 0.022,
+                                        //color: const Color.fromARGB(255, 231, 232, 233),
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          "y-on-y",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
                                       ),
-                                    ),
-                                   
-                                  ],
-                                ),
+                                    ],
+                                  ),
                                 ),
                                 SizedBox(
                                   width: screenWidth * 0.40,
-                                 child: Row(
-                                  children: [
-                                    Container(
-                                      width: screenWidth * 0.365,
-                                      height: screenHeight * 0.005,
-                                      color: const Color.fromARGB(255, 231, 232, 233),
-                                      alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 0),
-                                      child: const Text(
-                                        " ",
-                                        style: TextStyle(
-                                           fontSize: 12,
-                                           fontWeight: FontWeight.normal),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: screenWidth * 0.365,
+                                        height: screenHeight * 0.005,
+                                        color: const Color.fromARGB(
+                                            255, 231, 232, 233),
+                                        alignment: Alignment.center,
+                                        margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          " ",
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
                                       ),
-                                    ),
-                                    
-                                  ],
-                                ),
+                                    ],
+                                  ),
                                 ),
                                 Row(
                                   children: [
@@ -353,12 +355,11 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 15),
                                       child: Text(
-                                        " ${Format.convertTo(ytod1, 2)}",
-                                        style: const TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.blue)
-                                      ),
+                                          " ${Format.convertTo(ytod1, 2)}",
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
                                     ),
                                     Container(
                                       width: screenWidth * 0.18,
@@ -366,12 +367,11 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 15),
                                       child: Text(
-                                        " ${Format.convertTo(yony1, 2)}",
-                                        style: const TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.blue)
-                                      ),
+                                          " ${Format.convertTo(yony1, 2)}",
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
                                     ),
                                   ],
                                 ),
