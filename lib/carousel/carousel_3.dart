@@ -6,6 +6,7 @@ import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+//carousel Kemiskinan dan TPT
 class RepositoryIndikatorUtama {
   final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
 
@@ -76,83 +77,262 @@ class _carouselSlider3State extends State<carouselSlider3> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String tahunn_1 =
-                  isiindikatorutama[index = 5].tahun.substring(0, 4);
-              String tahunnow =
-                  isiindikatorutama[index = 5].tahun.substring(5, 9);
-
-              double ipmA = double.parse(isiindikatorutama[index = 5].nilai);
-              double ipmB = double.parse(isiindikatorutama[index = 6].nilai);
-              double deltaipm = ipmB - ipmA;
-              String fenomena = "";
-
-              if (deltaipm >= 0) {
-                fenomena = "kenaikan";
-              } else {
-                fenomena = "penurunan";
-              }
+              String tahunMiskin = isiindikatorutama[index = 10].tahun.substring(5, 9);
+              double povertyNow = double.parse(isiindikatorutama[index = 10].nilai);
+              
+              String tahunTpt = isiindikatorutama[index = 14].tahun.substring(5, 9);
+              double tptNow = double.parse(isiindikatorutama[index = 14].nilai);
+            
+             
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(5),
                 ),
-                margin: const EdgeInsets.only(top: 2, bottom: 2),
+                margin: const EdgeInsets.only(top: 0, bottom: 0),
                 width: screenWidth,
                 height: screenHeight,
                 child: Row(
-                  children: <Widget>[
-                    Flexible(
-                      fit: FlexFit.tight,
-                      flex: 3,
-                      child: SizedBox(
-                        width: 55,
-                        height: 55,
-                        child: Image.asset(
-                          'assets/images/carousel/ipm_carousel_icon.png',
-                          alignment: Alignment.center,
+                  children: [
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
+                      width: screenWidth * 0.40,
+                      height: screenHeight * 0.15,
+                      child: Material(
+                        //color: const Color.fromARGB(255, 232, 240, 248),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        elevation: 10,
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: const Color.fromARGB(255, 231, 232, 233),
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            splashColor: Colors.blueGrey,
+                            child: Column(
+                              //mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    "Persentase Penduduk",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12.5),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.022,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    'Miskin (P0)',
+                                    style: TextStyle(
+                                        fontSize: 12.5,
+                                        fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.021,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                child: Text(
+                                    ' $tahunMiskin ',
+                                    style: const TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.005,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.14,
+                                      height: screenHeight * 0.055,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 5),
+                                      child: SizedBox(
+                                        //width: 95,
+                                        //height: 95,
+                                        child: Image.asset(
+                                          'assets/images/carousel/kemiskinan_icon.png',
+                                          alignment: Alignment.center,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.22,
+                                      height: screenHeight * 0.035,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                          Format.convertTo(povertyNow, 2),
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                  ],
+                                ),
+                                //const SizedBox(height:6),
+
+                                //const SizedBox(height:10),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                    Flexible(
-                      fit: FlexFit.tight,
-                      flex: 8,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.only(left: 2),
-                            child: const Text(
-                              "IPM Kabupaten Cilacap",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
+                      width: screenWidth * 0.40,
+                      height: screenHeight * 0.15,
+                      child: Material(
+                        //color: const Color.fromARGB(255, 232, 240, 248),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        elevation: 10,
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: const Color.fromARGB(255, 231, 232, 233),
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            splashColor: Colors.blueGrey,
+                            child: Column(
+                              //mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    "Tingkat Pengangguran ",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12.5),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.022,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    'Terbuka (TPT)',
+                                    style: TextStyle(
+                                        fontSize: 12.5,
+                                        fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.021,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: Text(
+                                    ' $tahunTpt ',
+                                    style: const TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.005,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.14,
+                                      height: screenHeight * 0.055,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 5),
+                                      child: SizedBox(
+                                        //width: 95,
+                                        //height: 95,
+                                        child: Image.asset(
+                                        'assets/images/carousel/tpt_carousel_icon.png',
+                                          alignment: Alignment.center,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.22,
+                                      height: screenHeight * 0.035,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                          Format.convertTo(tptNow, 2),
+                                          style: const TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                  ],
+                                ),
+                                //const SizedBox(height:6),
+
+                                //const SizedBox(height:10),
+                              ],
                             ),
                           ),
-                          const Divider(),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Tahun $tahunnow  tercatat: ${Format.convertTo(ipmB, 2)}",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Tahun $tahunn_1  tercatat: ${Format.convertTo(ipmA, 2)}",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Terjadi $fenomena sebesar: ${Format.convertTo(deltaipm.abs(), 2)}",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                     ),
                   ],

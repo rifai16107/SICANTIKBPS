@@ -4,6 +4,7 @@ import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+//carousel Penduduk dan Gini rasio
 class RepositoryIndikatorUtama {
   final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
 
@@ -78,6 +79,8 @@ class _carouselSlider2State extends State<carouselSlider2> {
               int lkTotal = int.parse(isiindikatorutama[index = 3].nilai);
               int prTotal = int.parse(isiindikatorutama[index = 4].nilai);
 
+              String thnGini = isiindikatorutama[index = 8].tahun.substring(5, 9);
+              double giniRasiothnNow = double.parse(isiindikatorutama[index = 8].nilai);
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
@@ -119,7 +122,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                       const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    "PENDUDUK ",
+                                    "PENDUDUK (jiwa)",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 13),
@@ -147,7 +150,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                       const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    '(ribu jiwa)',
+                                    '',
                                     style: TextStyle(
                                         fontSize: 12,
                                         fontWeight: FontWeight.normal),
@@ -172,10 +175,10 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                 Row(
                                   children: [
                                     Container(
-                                      width: screenWidth * 0.18,
+                                      width: screenWidth * 0.14,
                                       height: screenHeight * 0.055,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 10),
+                                      margin: const EdgeInsets.only(top: 5),
                                       child: SizedBox(
                                         //width: 95,
                                         //height: 95,
@@ -186,14 +189,14 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth * 0.18,
+                                      width: screenWidth * 0.22,
                                       height: screenHeight * 0.035,
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
                                       child: Text(
-                                          "${Format.convertTo((lkTotal + prTotal) / 1000, 2)} Jiwa",
+                                          Format.convertTo((lkTotal + prTotal), 0),
                                           style: const TextStyle(
-                                              fontSize: 16,
+                                              fontSize: 14,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.black)),
                                     ),
@@ -239,7 +242,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                       const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    "PENDUDUK (ribu jiwa)",
+                                    "GINI RASIO",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 13),
@@ -253,7 +256,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                       const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: Text(
-                                    ' $tahun ',
+                                    ' $thnGini ',
                                     style: const TextStyle(
                                         fontSize: 12,
                                         fontWeight: FontWeight.normal),
@@ -262,82 +265,57 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
+                                  height: screenHeight * 0.022,
                                   color:
                                       const Color.fromARGB(255, 231, 232, 233),
-                                  child: Row(
-                                    children: [
-                                      SizedBox(
-                                        width: screenWidth * 0.18,
-                                        height: screenHeight * 0.022,
-                                        //color: const Color.fromARGB(255, 231, 232, 233),
-                                        //alignment: Alignment.center,
-                                        //margin: const EdgeInsets.only(top: 0),
-                                        child: const Text(
-                                          "y-to-d",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: screenWidth * 0.185,
-                                        height: screenHeight * 0.022,
-                                        //color: const Color.fromARGB(255, 231, 232, 233),
-                                        //alignment: Alignment.center,
-                                        //margin: const EdgeInsets.only(top: 0),
-                                        child: const Text(
-                                          "y-on-y",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
-                                        ),
-                                      ),
-                                    ],
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
                                   ),
                                 ),
-                                SizedBox(
+                                Container(
                                   width: screenWidth * 0.40,
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        width: screenWidth * 0.365,
-                                        height: screenHeight * 0.005,
-                                        color: const Color.fromARGB(
-                                            255, 231, 232, 233),
-                                        alignment: Alignment.center,
-                                        margin: const EdgeInsets.only(top: 0),
-                                        child: const Text(
-                                          " ",
-                                          style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
-                                        ),
-                                      ),
-                                    ],
+                                  height: screenHeight * 0.005,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal),
+                                    textAlign: TextAlign.center,
                                   ),
                                 ),
+
                                 Row(
                                   children: [
                                     Container(
-                                      width: screenWidth * 0.17,
-                                      height: screenHeight * 0.035,
+                                      width: screenWidth * 0.14,
+                                      height: screenHeight * 0.055,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 15),
-                                      child: const Text(" ",
-                                          style: TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.black)),
+                                      margin: const EdgeInsets.only(top: 5),
+                                      child: SizedBox(
+                                        //width: 95,
+                                        //height: 95,
+                                        child: Image.asset(
+                                         'assets/images/carousel/ketimpangan_icon.png',
+                                          alignment: Alignment.center,
+                                        ),
+                                      ),
                                     ),
                                     Container(
-                                      width: screenWidth * 0.18,
+                                      width: screenWidth * 0.22,
                                       height: screenHeight * 0.035,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 15),
-                                      child: const Text(" ",
-                                          style: TextStyle(
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                          Format.convertTo(giniRasiothnNow, 3),
+                                          style: const TextStyle(
                                               fontSize: 16,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.black)),

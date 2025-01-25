@@ -1,5 +1,6 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
 
+
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
@@ -76,85 +77,320 @@ class _carouselSlider7State extends State<carouselSlider7> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String thnN1 =
-                  isiindikatorutama[index = 13].tahun.substring(0, 4);
-              String thnNow =
-                  isiindikatorutama[index = 14].tahun.substring(5, 9);
+              //String kab = "Cilacap";
+              
+              String tahun = isiindikatorutama[index = 22].tahun;
+              String triwulan = isiindikatorutama[index = 22].bulan;
+              
+              double pdrTrw = double.parse(isiindikatorutama[index = 22].nilai);
+              double pdrTrwKum = double.parse(isiindikatorutama[index = 23].nilai);
+              double pertumbTrwqtoq = double.parse(isiindikatorutama[index = 24].nilai);
+              double pertumbTrwyony = double.parse(isiindikatorutama[index = 25].nilai);
 
-              double tptN1 = double.parse(isiindikatorutama[index = 13].nilai);
-              double tptNow = double.parse(isiindikatorutama[index = 14].nilai);
-
-              var deltatpt = tptNow - tptN1;
-              String fenomena = "";
-
-              if (deltatpt >= 0) {
-                fenomena = "kenaikan";
-              } else {
-                fenomena = "penurunan";
-              }
-
+              
+              
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(5),
                 ),
                 margin: const EdgeInsets.only(top: 0, bottom: 0),
                 width: screenWidth,
                 height: screenHeight,
                 child: Row(
-                  children: <Widget>[
-                    Flexible(
-                      fit: FlexFit.tight,
-                      flex: 3,
-                      child: SizedBox(
-                        width: 55,
-                        height: 56,
-                        child: Image.asset(
-                          'assets/images/carousel/tpt_carousel_icon.png',
-                          alignment: Alignment.center,
+                  children: [
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
+                      width: screenWidth * 0.40,
+                      height: screenHeight * 0.15,
+                      child: Material(
+                        //color: const Color.fromARGB(255, 232, 240, 248),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        elevation: 10,
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: const Color.fromARGB(255, 231, 232, 233),
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            splashColor: Colors.blueGrey,
+                            child: Column(
+                              //mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.045,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    "PDRB (trilyun Rp) dan Pertumbuhannya",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 13),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: Text(
+                                    'Trw $triwulan $tahun',
+                                    style: const TextStyle(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  child: Row(
+                                    children: [
+                                      SizedBox(
+                                        width: screenWidth * 0.185,
+                                        height: screenHeight * 0.022,
+                                        //color: const Color.fromARGB(255, 231, 232, 233),
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          'Nilai',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: screenWidth * 0.180,
+                                        height: screenHeight * 0.022,
+                                        //color: const Color.fromARGB(255, 231, 232, 233),
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          'q-to-q (%)',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: screenWidth * 0.40,
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: screenWidth * 0.365,
+                                        height: screenHeight * 0.003,
+                                        color: const Color.fromARGB(
+                                            255, 231, 232, 233),
+                                        alignment: Alignment.center,
+                                        margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          " ",
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.185,
+                                      height: screenHeight * 0.025,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                          " ${Format.convertTo(pdrTrw/1000, 2)}",
+                                          style: const TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.025,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                          " ${Format.convertTo(pertumbTrwqtoq, 2)}",
+                                          style: const TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                  ],
+                                ),
+                                //const SizedBox(height:6),
+
+                                //const SizedBox(height:10),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                    Flexible(
-                      fit: FlexFit.tight,
-                      flex: 8,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.only(left: 2),
-                            child: const Text(
-                              "Tingkat Pengangguran Terbuka (TPT) Kabupaten Cilacap",
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
+                      width: screenWidth * 0.40,
+                      height: screenHeight * 0.15,
+                      child: Material(
+                        //color: const Color.fromARGB(255, 232, 240, 248),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        elevation: 10,
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: const Color.fromARGB(255, 231, 232, 233),
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            splashColor: Colors.blueGrey,
+                            child: Column(
+                              //mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.045,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: const Text(
+                                    "PDRB (trilyun Rp) dan Pertumbuhannya",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 13),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: Text(
+                                    's.d. Trw $triwulan $tahun',
+                                    style: const TextStyle(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                Container(
+                                  width: screenWidth * 0.40,
+                                  color:
+                                      const Color.fromARGB(255, 231, 232, 233),
+                                  child: Row(
+                                    children: [
+                                      SizedBox(
+                                        width: screenWidth * 0.185,
+                                        height: screenHeight * 0.022,
+                                        //color: const Color.fromARGB(255, 231, 232, 233),
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          'Nilai',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: screenWidth * 0.180,
+                                        height: screenHeight * 0.022,
+                                        //color: const Color.fromARGB(255, 231, 232, 233),
+                                        //alignment: Alignment.center,
+                                        //margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          'y-on-y (%)',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: screenWidth * 0.40,
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: screenWidth * 0.365,
+                                        height: screenHeight * 0.003,
+                                        color: const Color.fromARGB(
+                                            255, 231, 232, 233),
+                                        alignment: Alignment.center,
+                                        margin: const EdgeInsets.only(top: 0),
+                                        child: const Text(
+                                          " ",
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: screenWidth * 0.185,
+                                      height: screenHeight * 0.025,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                          " ${Format.convertTo(pdrTrwKum/1000, 2)}",
+                                          style: const TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                    Container(
+                                      width: screenWidth * 0.18,
+                                      height: screenHeight * 0.025,
+                                      alignment: Alignment.center,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Text(
+                                          " ${Format.convertTo(pertumbTrwyony, 2)}",
+                                          style: const TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black)),
+                                    ),
+                                  ],
+                                ),
+                                //const SizedBox(height:6),
+
+                                //const SizedBox(height:10),
+                              ],
                             ),
                           ),
-                          const Divider(),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Tahun $thnNow : ${Format.convertTo(tptNow, 2)}%",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Tahun $thnN1 : ${Format.convertTo(tptN1, 2)}%",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                          Container(
-                            alignment: Alignment.centerRight,
-                            margin: const EdgeInsets.only(right: 10),
-                            child: Text(
-                              "Terjadi $fenomena : ${Format.convertTo(deltatpt.abs(), 2)} point %",
-                              style: const TextStyle(fontSize: 13),
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                     ),
                   ],
@@ -169,7 +405,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
           return Container(
             decoration: BoxDecoration(
               color: const Color.fromRGBO(136, 159, 176, 1),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(5),
             ),
             margin: const EdgeInsets.only(top: 3, bottom: 3),
             width: screenWidth,
@@ -180,3 +416,5 @@ class _carouselSlider7State extends State<carouselSlider7> {
     );
   }
 }
+        
+

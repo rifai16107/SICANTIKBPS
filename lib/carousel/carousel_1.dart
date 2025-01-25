@@ -4,6 +4,7 @@ import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+//Carousel Inflasi
 class RepositoryIndikatorUtama {
   final _baseURL = 'https://bps-3301-asap.my.id/api/indikator-utama';
 
@@ -105,8 +106,8 @@ class _carouselSlider1State extends State<carouselSlider1> {
               }
 
               double mtom1 = double.parse(isiindikatorutama[index = 0].nilai);
-              double yony1 = double.parse(isiindikatorutama[index = 2].nilai);
               double ytod1 = double.parse(isiindikatorutama[index = 1].nilai);
+              double yony1 = double.parse(isiindikatorutama[index = 2].nilai);
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
@@ -201,7 +202,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                 Row(
                                   children: [
                                     Container(
-                                      width: screenWidth * 0.18,
+                                      width: screenWidth * 0.14,
                                       height: screenHeight * 0.055,
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
@@ -215,7 +216,7 @@ class _carouselSlider1State extends State<carouselSlider1> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth * 0.18,
+                                      width: screenWidth * 0.22,
                                       height: screenHeight * 0.035,
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),

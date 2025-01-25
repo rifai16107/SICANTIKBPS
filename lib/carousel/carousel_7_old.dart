@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
+
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
@@ -50,16 +52,16 @@ class ModelIndikatorUtama {
   }
 }
 
-class carouselSlider2 extends StatefulWidget {
-  const carouselSlider2({super.key});
+class carouselSlider7_old extends StatefulWidget {
+  const carouselSlider7_old({super.key});
 
   @override
-  State<carouselSlider2> createState() => _carouselSlider2State();
+  State<carouselSlider7_old> createState() => _carouselSlider7_oldState();
 }
 
 RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
 
-class _carouselSlider2State extends State<carouselSlider2> {
+class _carouselSlider7_oldState extends State<carouselSlider7_old> {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
@@ -74,9 +76,22 @@ class _carouselSlider2State extends State<carouselSlider2> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String tahun = isiindikatorutama[index = 3].tahun;
-              int lkTotal = int.parse(isiindikatorutama[index = 3].nilai);
-              int prTotal = int.parse(isiindikatorutama[index = 4].nilai);
+              String thnN1 =
+                  isiindikatorutama[index = 13].tahun.substring(0, 4);
+              String thnNow =
+                  isiindikatorutama[index = 14].tahun.substring(5, 9);
+
+              double tptN1 = double.parse(isiindikatorutama[index = 13].nilai);
+              double tptNow = double.parse(isiindikatorutama[index = 14].nilai);
+
+              var deltatpt = tptNow - tptN1;
+              String fenomena = "";
+
+              if (deltatpt >= 0) {
+                fenomena = "kenaikan";
+              } else {
+                fenomena = "penurunan";
+              }
 
               return Container(
                 decoration: BoxDecoration(
@@ -93,9 +108,9 @@ class _carouselSlider2State extends State<carouselSlider2> {
                       flex: 3,
                       child: SizedBox(
                         width: 55,
-                        height: 55,
+                        height: 56,
                         child: Image.asset(
-                          'assets/images/carousel/hasil_sp_icon.png',
+                          'assets/images/carousel/tpt_carousel_icon.png',
                           alignment: Alignment.center,
                         ),
                       ),
@@ -109,10 +124,9 @@ class _carouselSlider2State extends State<carouselSlider2> {
                         children: [
                           Container(
                             margin: const EdgeInsets.only(left: 2),
-                            child: Text(
-                              "Penduduk Kab. Cilacap Tahun $tahun (Proyeksi Penduduk)",
-                              style:
-                                  const TextStyle(fontWeight: FontWeight.bold),
+                            child: const Text(
+                              "Tingkat Pengangguran Terbuka (TPT) Kabupaten Cilacap",
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ),
                           const Divider(),
@@ -120,7 +134,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Laki - Laki : ${Format.convertTo(lkTotal, 0)} Jiwa",
+                              "Tahun $thnNow : ${Format.convertTo(tptNow, 2)}%",
                               style: const TextStyle(fontSize: 13),
                             ),
                           ),
@@ -128,7 +142,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Perempuan :    ${Format.convertTo(prTotal, 0)} Jiwa",
+                              "Tahun $thnN1 : ${Format.convertTo(tptN1, 2)}%",
                               style: const TextStyle(fontSize: 13),
                             ),
                           ),
@@ -136,7 +150,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                             alignment: Alignment.centerRight,
                             margin: const EdgeInsets.only(right: 10),
                             child: Text(
-                              "Total : ${Format.convertTo((lkTotal + prTotal), 0)} Jiwa",
+                              "Terjadi $fenomena : ${Format.convertTo(deltatpt.abs(), 2)} point %",
                               style: const TextStyle(fontSize: 13),
                             ),
                           ),
@@ -166,6 +180,3 @@ class _carouselSlider2State extends State<carouselSlider2> {
     );
   }
 }
-
-
-// ignore_for_file: camel_case_types

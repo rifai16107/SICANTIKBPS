@@ -51,16 +51,16 @@ class ModelIndikatorUtama {
   }
 }
 
-class carouselSlider8 extends StatefulWidget {
-  const carouselSlider8({super.key});
+class carouselSlider8old extends StatefulWidget {
+  const carouselSlider8old({super.key});
 
   @override
-  State<carouselSlider8> createState() => _carouselSlider8State();
+  State<carouselSlider8old> createState() => _carouselSlider8oldState();
 }
 
 RepositoryIndikatorUtama repositoryindikatorutama = RepositoryIndikatorUtama();
 
-class _carouselSlider8State extends State<carouselSlider8> {
+class _carouselSlider8oldState extends State<carouselSlider8old> {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
