@@ -223,7 +223,7 @@ class _TentangAplikasiState extends State<TentangAplikasi> {
                                   ),
                                   const Center(
                                     child: Text(
-                                      "     Isnaini, S.ST, M.M (Kepala BPS Kabupaten Cilacap)",
+                                      "     Suswandi MSE, MA (Kepala BPS Kabupaten Cilacap)",
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 13,
