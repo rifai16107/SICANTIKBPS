@@ -217,7 +217,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
                                       child: Text(
-                                          " ${Format.convertTo(pdrTrw / 1000, 3)}",
+                                          " ${Format.convertTo(pdrTrw / 1000, 2)}",
                                           style: const TextStyle(
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold,
@@ -364,7 +364,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
                                       child: Text(
-                                          " ${Format.convertTo(pdrTrwKum / 1000, 3)}",
+                                          " ${Format.convertTo(pdrTrwKum / 1000, 2)}",
                                           style: const TextStyle(
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold,
