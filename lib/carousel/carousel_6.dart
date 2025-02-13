@@ -1,6 +1,5 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
 
-
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
@@ -78,16 +77,22 @@ class _carouselSlider6State extends State<carouselSlider6> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //String kab = "Cilacap";
-              
-              String tahunPeSblm = isiindikatorutama[index = 11].tahun.substring(0,4);
-              String tahunPeNow = isiindikatorutama[index = 12].tahun.substring(5,9);
+
+              String tahunPeSblm =
+                  isiindikatorutama[index = 11].tahun.substring(0, 4);
+              String tahunPeNow =
+                  isiindikatorutama[index = 12].tahun.substring(5, 9);
               double peSblm = double.parse(isiindikatorutama[index = 11].nilai);
               double peNow = double.parse(isiindikatorutama[index = 12].nilai);
 
-              String tahunPdrbSblm = isiindikatorutama[index = 20].tahun.substring(0,4);
-              String tahunPdrbNow = isiindikatorutama[index = 21].tahun.substring(5,9);
-              double pdrbSblm = double.parse(isiindikatorutama[index = 20].nilai);
-              double pdrbNow = double.parse(isiindikatorutama[index = 21].nilai);
+              String tahunPdrbSblm =
+                  isiindikatorutama[index = 20].tahun.substring(0, 4);
+              String tahunPdrbNow =
+                  isiindikatorutama[index = 21].tahun.substring(5, 9);
+              double pdrbSblm =
+                  double.parse(isiindikatorutama[index = 20].nilai);
+              double pdrbNow =
+                  double.parse(isiindikatorutama[index = 21].nilai);
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
@@ -129,7 +134,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                                       const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    "PDRB Atas Dasar Harga",
+                                    "PDRB Harga",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 13),
@@ -216,7 +221,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 15),
                                       child: Text(
-                                          " ${Format.convertTo(pdrbSblm/1000, 2)}",
+                                          " ${Format.convertTo(pdrbSblm / 1000, 2)}",
                                           style: const TextStyle(
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold,
@@ -228,7 +233,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 15),
                                       child: Text(
-                                          " ${Format.convertTo(pdrbNow/1000, 2)}",
+                                          " ${Format.convertTo(pdrbNow / 1000, 2)}",
                                           style: const TextStyle(
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold,
@@ -290,7 +295,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                                       const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    'Dengan Migas (persen)',
+                                    'Dengan Migas (%)',
                                     style: TextStyle(
                                         fontSize: 13,
                                         fontWeight: FontWeight.bold),
@@ -310,7 +315,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                                         //alignment: Alignment.center,
                                         //margin: const EdgeInsets.only(top: 0),
                                         child: Text(
-                                            tahunPeSblm,
+                                          tahunPeSblm,
                                           textAlign: TextAlign.center,
                                           style: const TextStyle(
                                               fontSize: 12,
@@ -324,7 +329,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                                         //alignment: Alignment.center,
                                         //margin: const EdgeInsets.only(top: 0),
                                         child: Text(
-                                           tahunPeNow,
+                                          tahunPeNow,
                                           textAlign: TextAlign.center,
                                           style: const TextStyle(
                                               fontSize: 12,
@@ -415,5 +420,3 @@ class _carouselSlider6State extends State<carouselSlider6> {
     );
   }
 }
-        
-
