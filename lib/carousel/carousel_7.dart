@@ -1,6 +1,5 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings
 
-
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
@@ -78,17 +77,18 @@ class _carouselSlider7State extends State<carouselSlider7> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //String kab = "Cilacap";
-              
+
               String tahun = isiindikatorutama[index = 22].tahun;
               String triwulan = isiindikatorutama[index = 22].bulan;
-              
-              double pdrTrw = double.parse(isiindikatorutama[index = 22].nilai);
-              double pdrTrwKum = double.parse(isiindikatorutama[index = 23].nilai);
-              double pertumbTrwqtoq = double.parse(isiindikatorutama[index = 24].nilai);
-              double pertumbTrwyony = double.parse(isiindikatorutama[index = 25].nilai);
 
-              
-              
+              double pdrTrw = double.parse(isiindikatorutama[index = 22].nilai);
+              double pdrTrwKum =
+                  double.parse(isiindikatorutama[index = 23].nilai);
+              double pertumbTrwqtoq =
+                  double.parse(isiindikatorutama[index = 24].nilai);
+              double pertumbTrwyony =
+                  double.parse(isiindikatorutama[index = 25].nilai);
+
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
@@ -217,7 +217,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
                                       child: Text(
-                                          " ${Format.convertTo(pdrTrw/1000, 2)}",
+                                          " ${Format.convertTo(pdrTrw / 1000, 3)}",
                                           style: const TextStyle(
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold,
@@ -364,7 +364,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
                                       child: Text(
-                                          " ${Format.convertTo(pdrTrwKum/1000, 2)}",
+                                          " ${Format.convertTo(pdrTrwKum / 1000, 3)}",
                                           style: const TextStyle(
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold,
@@ -416,5 +416,3 @@ class _carouselSlider7State extends State<carouselSlider7> {
     );
   }
 }
-        
-
