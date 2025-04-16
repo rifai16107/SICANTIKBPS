@@ -22,7 +22,7 @@ class _BodyGrafikInflasiKota extends State<BodyGrafikInflasiKota> {
         child: Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Inflasi dan Andil Inflasi di Cilacap',
+          'Inflasi 9 Kota di Jawa Tengah',
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
