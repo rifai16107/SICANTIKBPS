@@ -6,7 +6,8 @@ class SeriesLajuadhkqqPengelTrw extends StatefulWidget {
   const SeriesLajuadhkqqPengelTrw({super.key});
 
   @override
-  State<SeriesLajuadhkqqPengelTrw> createState() => _SeriesLajuadhkqqPengelTrw();
+  State<SeriesLajuadhkqqPengelTrw> createState() =>
+      _SeriesLajuadhkqqPengelTrw();
 }
 
 class _SeriesLajuadhkqqPengelTrw extends State<SeriesLajuadhkqqPengelTrw> {
@@ -19,7 +20,7 @@ class _SeriesLajuadhkqqPengelTrw extends State<SeriesLajuadhkqqPengelTrw> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "LAJU PDRB LU TRIWULANAN",
+          "LAJU PDRB PENGELUARAN TRIWULANAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
@@ -44,7 +45,7 @@ class _SeriesLajuadhkqqPengelTrw extends State<SeriesLajuadhkqqPengelTrw> {
             child: Column(
               children: const [
                 Text(
-                  ' Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Lapangan Usaha di Kabupaten Cilacap (Persen) ',
+                  ' Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Pengeluaran di Kabupaten Cilacap (Persen) ',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,

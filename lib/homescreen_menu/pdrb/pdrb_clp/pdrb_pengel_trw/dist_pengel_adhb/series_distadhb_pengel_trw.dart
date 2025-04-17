@@ -19,7 +19,7 @@ class _SeriesDistadhbPengelTrw extends State<SeriesDistadhbPengelTrw> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PDRB LU TRIWULANAN",
+          "PDRB PENGELUARAN TRIWULANAN",
           style: TextStyle(fontSize: 16),
         ),
         backgroundColor: Colors.black,
