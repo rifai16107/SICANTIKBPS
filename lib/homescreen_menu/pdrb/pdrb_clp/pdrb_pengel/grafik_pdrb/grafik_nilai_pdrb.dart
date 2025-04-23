@@ -32,25 +32,27 @@ class _GrafikNilaiPdrbState extends State<GrafikNilaiPdrb> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String tahun1 = isipdrb[index = 0].tahun;
+              String tahun1 = isipdrb[index = 10].tahun;
 
-              // Komponen pengeluaran ADHB 2023
-              double konsRutaAdhb = double.parse(isipdrb[index = 0].kons_ruta);
+              // Komponen pengeluaran ADHB 2024
+              double konsRutaAdhb = double.parse(isipdrb[index = 10].kons_ruta);
               double konsLnprtAdhb =
-                  double.parse(isipdrb[index = 0].kons_lnprt);
-              double konsPemAdhb = double.parse(isipdrb[index = 0].kons_pem);
-              double pmtbAdhb = double.parse(isipdrb[index = 0].pmtb);
-              double inventoriAdhb = double.parse(isipdrb[index = 0].inventori);
-              double eksporAdhb = double.parse(isipdrb[index = 0].ekspor);
+                  double.parse(isipdrb[index = 10].kons_lnprt);
+              double konsPemAdhb = double.parse(isipdrb[index = 10].kons_pem);
+              double pmtbAdhb = double.parse(isipdrb[index = 10].pmtb);
+              double inventoriAdhb =
+                  double.parse(isipdrb[index = 10].inventori);
+              double eksporAdhb = double.parse(isipdrb[index = 10].ekspor);
 
-              // Komponen pengeluaran ADHk 2023
-              double konsRutaAdhk = double.parse(isipdrb[index = 5].kons_ruta);
+              // Komponen pengeluaran ADHk 2024
+              double konsRutaAdhk = double.parse(isipdrb[index = 15].kons_ruta);
               double konsLnprtAdhk =
-                  double.parse(isipdrb[index = 5].kons_lnprt);
-              double konsPemAdhk = double.parse(isipdrb[index = 5].kons_pem);
-              double pmtbAdhk = double.parse(isipdrb[index = 5].pmtb);
-              double inventoriAdhk = double.parse(isipdrb[index = 5].inventori);
-              double eksporAdhk = double.parse(isipdrb[index = 5].ekspor);
+                  double.parse(isipdrb[index = 15].kons_lnprt);
+              double konsPemAdhk = double.parse(isipdrb[index = 15].kons_pem);
+              double pmtbAdhk = double.parse(isipdrb[index = 15].pmtb);
+              double inventoriAdhk =
+                  double.parse(isipdrb[index = 15].inventori);
+              double eksporAdhk = double.parse(isipdrb[index = 15].ekspor);
 
               toString();
               data = [
@@ -69,7 +71,7 @@ class _GrafikNilaiPdrbState extends State<GrafikNilaiPdrb> {
                 child: SfCartesianChart(
                     title: ChartTitle(
                         text:
-                            'Nilai Komponen Pengeluaran Konsumsi PDRB ADHB dan ADHK Tahun $tahun1 (Juta Rupiah)',
+                            'Nilai Komponen Pengeluaran Konsumsi PDRB ADHB dan ADHK Tahun $tahun1 (Milyar Rupiah)',
                         // Aligns the chart title to left
                         alignment: ChartAlignment.center,
                         textStyle: const TextStyle(
@@ -92,8 +94,8 @@ class _GrafikNilaiPdrbState extends State<GrafikNilaiPdrb> {
                         numberFormat: NumberFormat.decimalPattern('vi_VN'),
                         majorGridLines: const MajorGridLines(width: 0),
                         minimum: 0,
-                        maximum: 80000000,
-                        interval: 20000000),
+                        maximum: 90000,
+                        interval: 20000),
                     tooltipBehavior: tooltip,
                     series: <CartesianSeries>[
                       BarSeries<_ChartData, String>(

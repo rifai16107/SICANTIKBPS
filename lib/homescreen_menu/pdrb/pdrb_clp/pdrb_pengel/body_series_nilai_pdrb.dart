@@ -30,15 +30,15 @@ class _BodySeriesPdrbPengelState extends State<BodySeriesPdrbPengel> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun n-4
-              String tahunN4 = isipdrb[index = 4].tahun;
+              String tahunN4 = isipdrb[index = 14].tahun;
 
               //tahun n-3 dan n-2
               String tahunN3N2 =
-                  isipdrb[index = 3].tahun + "-" + isipdrb[index = 2].tahun;
+                  isipdrb[index = 13].tahun + "-" + isipdrb[index = 12].tahun;
 
               //tahun n-1 dan n
               String tahunN1N =
-                  isipdrb[index = 1].tahun + "-" + isipdrb[index = 0].tahun;
+                  isipdrb[index = 11].tahun + "-" + isipdrb[index = 10].tahun;
 
               return DefaultTabController(
                 length: 3,

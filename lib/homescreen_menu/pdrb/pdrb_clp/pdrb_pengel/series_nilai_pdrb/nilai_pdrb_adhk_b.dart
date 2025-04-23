@@ -30,31 +30,31 @@ class _PdrbPengelAdhkBState extends State<PdrbPengelAdhkB> {
             return ListView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                //pdrb komp pengeluaran adhk 2020 (n-3)
+                //pdrb komp pengeluaran adhk 2021 (n-3)
                 double kons_ruta_n3 =
-                    double.parse(isipdrb[index = 8].kons_ruta);
+                    double.parse(isipdrb[index = 18].kons_ruta);
                 double kons_lnprt_n3 =
-                    double.parse(isipdrb[index = 8].kons_lnprt);
-                double kons_pem_n3 = double.parse(isipdrb[index = 8].kons_pem);
-                double pmtb_n3 = double.parse(isipdrb[index = 8].pmtb);
+                    double.parse(isipdrb[index = 18].kons_lnprt);
+                double kons_pem_n3 = double.parse(isipdrb[index = 18].kons_pem);
+                double pmtb_n3 = double.parse(isipdrb[index = 18].pmtb);
                 double inventori_n3 =
-                    double.parse(isipdrb[index = 8].inventori);
-                double ekspor_n3 = double.parse(isipdrb[index = 8].ekspor);
-                double total_n3 = double.parse(isipdrb[index = 8].total);
-                String tahun_n3 = isipdrb[index = 8].tahun;
+                    double.parse(isipdrb[index = 18].inventori);
+                double ekspor_n3 = double.parse(isipdrb[index = 18].ekspor);
+                double total_n3 = double.parse(isipdrb[index = 18].total);
+                String tahun_n3 = isipdrb[index = 18].tahun;
 
-                //pdrb komp pengeluaran adhb 2021 (n-2)
+                //pdrb komp pengeluaran adhk 2022 (n-2)
                 double kons_ruta_n2 =
-                    double.parse(isipdrb[index = 7].kons_ruta);
+                    double.parse(isipdrb[index = 17].kons_ruta);
                 double kons_lnprt_n2 =
-                    double.parse(isipdrb[index = 7].kons_lnprt);
-                double kons_pem_n2 = double.parse(isipdrb[index = 7].kons_pem);
-                double pmtb_n2 = double.parse(isipdrb[index = 7].pmtb);
+                    double.parse(isipdrb[index = 17].kons_lnprt);
+                double kons_pem_n2 = double.parse(isipdrb[index = 17].kons_pem);
+                double pmtb_n2 = double.parse(isipdrb[index = 17].pmtb);
                 double inventori_n2 =
-                    double.parse(isipdrb[index = 7].inventori);
-                double ekspor_n2 = double.parse(isipdrb[index = 7].ekspor);
-                double total_n2 = double.parse(isipdrb[index = 7].total);
-                String tahun_n2 = isipdrb[index = 7].tahun;
+                    double.parse(isipdrb[index = 17].inventori);
+                double ekspor_n2 = double.parse(isipdrb[index = 17].ekspor);
+                double total_n2 = double.parse(isipdrb[index = 17].total);
+                String tahun_n2 = isipdrb[index = 17].tahun;
 
                 return Container(
                   padding: const EdgeInsets.all(2),

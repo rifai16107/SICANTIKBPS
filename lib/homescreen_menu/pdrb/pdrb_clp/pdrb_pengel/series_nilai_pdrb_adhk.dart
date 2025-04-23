@@ -45,7 +45,7 @@ class _SeriesPdrbAdhk extends State<SeriesPdrbAdhk> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "PDRB Kabupaten Cilacap Atas Dasar Harga Konstan (2010) Menurut Komponen Pengeluaran (Juta Rupiah)",
+                    "PDRB Kabupaten Cilacap Atas Dasar Harga Konstan (2010) Menurut Komponen Pengeluaran (Milyar Rupiah)",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),

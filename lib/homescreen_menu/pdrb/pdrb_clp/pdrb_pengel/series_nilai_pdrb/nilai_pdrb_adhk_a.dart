@@ -30,18 +30,18 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
             return ListView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                //pdrb komp pengeluaran adhk 2019 (n-4)
+                //pdrb komp pengeluaran adhk 2020 (n-4)
                 double kons_ruta_n4 =
-                    double.parse(isipdrb[index = 9].kons_ruta);
+                    double.parse(isipdrb[index = 19].kons_ruta);
                 double kons_lnprt_n4 =
-                    double.parse(isipdrb[index = 9].kons_lnprt);
-                double kons_pem_n4 = double.parse(isipdrb[index = 9].kons_pem);
-                double pmtb_n4 = double.parse(isipdrb[index = 9].pmtb);
+                    double.parse(isipdrb[index = 19].kons_lnprt);
+                double kons_pem_n4 = double.parse(isipdrb[index = 19].kons_pem);
+                double pmtb_n4 = double.parse(isipdrb[index = 19].pmtb);
                 double inventori_n4 =
-                    double.parse(isipdrb[index = 9].inventori);
-                double ekspor_n4 = double.parse(isipdrb[index = 9].ekspor);
-                double total_n4 = double.parse(isipdrb[index = 9].total);
-                String tahun_n4 = isipdrb[index = 9].tahun;
+                    double.parse(isipdrb[index = 19].inventori);
+                double ekspor_n4 = double.parse(isipdrb[index = 19].ekspor);
+                double total_n4 = double.parse(isipdrb[index = 19].total);
+                String tahun_n4 = isipdrb[index = 19].tahun;
 
                 return Container(
                   padding: const EdgeInsets.all(2),
@@ -119,7 +119,7 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                           horizontal: 4,vertical: 2),
+                                          horizontal: 4, vertical: 2),
                                       child: const Text(
                                         "Pengeluarann Konsumsi Rumahtangga",
                                         textAlign: TextAlign.left,
@@ -149,7 +149,7 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                           horizontal: 4,vertical: 2),
+                                          horizontal: 4, vertical: 2),
                                       child: const Text(
                                         "Pengeluaran Konsumsi LNPRT",
                                         textAlign: TextAlign.left,
@@ -179,7 +179,7 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                           horizontal: 4,vertical: 2),
+                                          horizontal: 4, vertical: 2),
                                       child: const Text(
                                         "Pengeluaran Konsumsi Pemerintah",
                                         textAlign: TextAlign.left,
@@ -210,7 +210,7 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                           horizontal: 4,vertical: 2),
+                                          horizontal: 4, vertical: 2),
                                       child: const Text(
                                         "Pembentukan Modal Tetap Bruto",
                                         textAlign: TextAlign.left,
@@ -241,7 +241,7 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                           horizontal: 4,vertical: 2),
+                                          horizontal: 4, vertical: 2),
                                       child: const Text(
                                         "Perubahan Inventori",
                                         textAlign: TextAlign.left,
@@ -272,7 +272,7 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                           horizontal: 4,vertical: 2),
+                                          horizontal: 4, vertical: 2),
                                       child: const Text(
                                         "Net Eskpor",
                                         textAlign: TextAlign.left,
