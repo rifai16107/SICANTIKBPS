@@ -459,7 +459,17 @@ class FixedColumnWidget extends StatelessWidget {
             ),
           )),
         ]),
-       
+        DataRow(
+            color: MaterialStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+            cells: [
+              DataCell(Text(
+                '33. Jawa Tengah',
+                style: TextStyle(
+                  fontWeight: FontWeight.normal,
+                  fontSize: 13,
+                ),
+              )),
+            ]),
       ],
       showBottomBorder: true,
     );
@@ -577,7 +587,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                             //fontSize: 15),
                           ),
                         ),
-                        numeric: true),    
+                        numeric: true),
                     DataColumn(
                         label: SizedBox(
                           width: screenWidth * 0.12,
@@ -745,28 +755,6 @@ class CatatanWidget extends StatelessWidget {
                       ]),
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.all(1),
-                alignment: Alignment.centerLeft,
-                child: RichText(
-                  textAlign: TextAlign.left,
-                  text: const TextSpan(
-                      text: '*** :',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text: ' Angka Sangat-Sangat Sementara.',
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontFamily: 'Roboto',
-                                color: Colors.black,
-                                fontWeight: FontWeight.normal)),
-                      ]),
-                ),
-              ),
             ],
           ),
         ],
@@ -774,4 +762,3 @@ class CatatanWidget extends StatelessWidget {
     );
   }
 }
-

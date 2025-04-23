@@ -508,31 +508,53 @@ class _LajuPdrbAdhkCState extends State<LajuPdrbAdhkC> {
                               ),
                             ),
                             Container(
-                              alignment: Alignment.centerLeft,
-                              padding: const EdgeInsets.only(
-                                top: 4,
-                                left: 14,
-                                bottom: 0,
-                              ),
-                              child: const Text(
-                                "Tahun 2022 merupakan angka sementara.",
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.normal),
+                              color: Colors.transparent,
+                              width: screenWidth,
+                              //height: screenHeight * 0.055,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      margin: const EdgeInsets.symmetric(
+                                          vertical: 2),
+                                      child: Text(
+                                        " Tahun $tahun_n1 merupakan angka sementara",
+                                        style: const TextStyle(
+                                          fontSize: 11,
+                                          fontStyle: FontStyle.normal,
+                                        ),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                             Container(
-                              alignment: Alignment.centerLeft,
-                              padding: const EdgeInsets.only(
-                                top: 4,
-                                left: 14,
-                                bottom: 0,
-                              ),
-                              child: const Text(
-                                "Tahun 2023 merupakan angka sangat sementara.",
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.normal),
+                              color: Colors.transparent,
+                              width: screenWidth,
+                              //height: screenHeight * 0.055,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      margin: const EdgeInsets.symmetric(
+                                          vertical: 2),
+                                      child: Text(
+                                        " Tahun $tahun_n0 merupakan angka sangat sementara",
+                                        style: const TextStyle(
+                                          fontSize: 11,
+                                          fontStyle: FontStyle.normal,
+                                        ),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                             Container(

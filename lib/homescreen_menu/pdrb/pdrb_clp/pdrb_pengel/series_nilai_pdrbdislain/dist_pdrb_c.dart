@@ -31,7 +31,7 @@ class _DistPdrbAdhbState extends State<DistPdrbAdhbC> {
             return PageView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                //distribusi pdrb komp pengeluaran adhb 2022 (n-1)
+                //distribusi pdrb komp pengeluaran adhb 2023 (n-1)
                 double kons_ruta_n1 =
                     double.parse(isipdrb[index = 1].kons_ruta);
                 double kons_lnprt_n1 =
@@ -44,7 +44,7 @@ class _DistPdrbAdhbState extends State<DistPdrbAdhbC> {
                 double total_n1 = double.parse(isipdrb[index = 1].total);
                 String tahun_n1 = isipdrb[index = 1].tahun;
 
-                //distribusi pdrb komp pengeluaran adhb 2023 (n)
+                //distribusi pdrb komp pengeluaran adhb 2024 (n)
                 double kons_ruta_n0 =
                     double.parse(isipdrb[index = 0].kons_ruta);
                 double kons_lnprt_n0 =
@@ -508,31 +508,53 @@ class _DistPdrbAdhbState extends State<DistPdrbAdhbC> {
                               ),
                             ),
                             Container(
-                              alignment: Alignment.centerLeft,
-                              padding: const EdgeInsets.only(
-                                top: 4,
-                                left: 14,
-                                bottom: 0,
-                              ),
-                              child: const Text(
-                                "Tahun 2022 merupakan angka sementara.",
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.normal),
+                              color: Colors.transparent,
+                              width: screenWidth,
+                              //height: screenHeight * 0.055,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      margin: const EdgeInsets.symmetric(
+                                          vertical: 2),
+                                      child: Text(
+                                        " Tahun $tahun_n1 merupakan angka sementara",
+                                        style: const TextStyle(
+                                          fontSize: 11,
+                                          fontStyle: FontStyle.normal,
+                                        ),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                             Container(
-                              alignment: Alignment.centerLeft,
-                              padding: const EdgeInsets.only(
-                                top: 4,
-                                left: 14,
-                                bottom: 0,
-                              ),
-                              child: const Text(
-                                "Tahun 2023 merupakan angka sangat sementara.",
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.normal),
+                              color: Colors.transparent,
+                              width: screenWidth,
+                              //height: screenHeight * 0.055,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      margin: const EdgeInsets.symmetric(
+                                          vertical: 2),
+                                      child: Text(
+                                        " Tahun $tahun_n0 merupakan angka sangat sementara",
+                                        style: const TextStyle(
+                                          fontSize: 11,
+                                          fontStyle: FontStyle.normal,
+                                        ),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                             Container(

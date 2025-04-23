@@ -125,7 +125,7 @@ class _DistadhbPengelTrwAState extends State<DistadhbPengelTrwA> {
               String lainnya_dis_total = isipdrb[index = 18].dis_total;
               String total_dis_total = isipdrb[index = 19].dis_total;
 
-              String thn1 = isipdrb[index = 15].tahun;
+              //String thn1 = isipdrb[index = 15].tahun;
 
               return Scaffold(
                   body: Column(
@@ -864,18 +864,16 @@ class _DistadhbPengelTrwAState extends State<DistadhbPengelTrwA> {
                             alignment: Alignment.centerLeft,
                             child: RichText(
                               textAlign: TextAlign.left,
-                              text: TextSpan(
+                              text: const TextSpan(
                                   text: 'Keterangan:',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12),
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text: " Tahun " +
-                                            thn1 +
-                                            ' Angka Sementara',
-                                        style: const TextStyle(
+                                        text: ' - ',
+                                        style: TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',
                                             color: Colors.black,

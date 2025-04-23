@@ -459,7 +459,17 @@ class FixedColumnWidget extends StatelessWidget {
             ),
           )),
         ]),
-       
+        DataRow(
+            color: MaterialStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+            cells: [
+              DataCell(Text(
+                '33. Jawa Tengah',
+                style: TextStyle(
+                  fontWeight: FontWeight.normal,
+                  fontSize: 13,
+                ),
+              )),
+            ]),
       ],
       showBottomBorder: true,
     );
@@ -577,8 +587,26 @@ class ScrollableColumnWidget extends StatelessWidget {
                             //fontSize: 15),
                           ),
                         ),
-                        numeric: true),    
-                    
+                        numeric: true),
+                    DataColumn(
+                        label: SizedBox(
+                          width: screenWidth * 0.12,
+                          child: const Text(
+                            'Jumlah',
+                            //maxLines: 2,
+                            //overflow: TextOverflow.ellipsis,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13,
+                            ),
+                            //style: TextStyle(
+                            //fontStyle: FontStyle.italic,
+                            //fontWeight: FontWeight.bold,
+                            //fontSize: 15),
+                          ),
+                        ),
+                        numeric: true),
                   ],
                   rows: List<DataRow>.generate(
                     snapshot.data!.length,
@@ -631,7 +659,16 @@ class ScrollableColumnWidget extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            
+                            DataCell(
+                              Text(
+                                data.total_n3,
+                                style: const TextStyle(
+                                  color: Color.fromARGB(255, 17, 17, 17),
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ),
                           ]);
                     },
                   ).toList(),
@@ -687,7 +724,8 @@ class CatatanWidget extends StatelessWidget {
                           fontSize: 13),
                       children: <TextSpan>[
                         TextSpan(
-                            text: ' Pertumbuhan PDRB pada triwulan tertentu dibandingkan dengan triwulan sebelumnya.',
+                            text:
+                                ' Pertumbuhan PDRB pada triwulan tertentu dibandingkan dengan triwulan sebelumnya.',
                             style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Roboto',
@@ -702,7 +740,29 @@ class CatatanWidget extends StatelessWidget {
                 child: RichText(
                   textAlign: TextAlign.left,
                   text: const TextSpan(
-                      text: '**   :',
+                      text: '*   :',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14),
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: ' Angka Sementara.',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Roboto',
+                                color: Colors.black,
+                                fontWeight: FontWeight.normal)),
+                      ]),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(1),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: const TextSpan(
+                      text: '** :',
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -710,28 +770,6 @@ class CatatanWidget extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                             text: ' Angka Sangat Sementara.',
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontFamily: 'Roboto',
-                                color: Colors.black,
-                                fontWeight: FontWeight.normal)),
-                      ]),
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(1),
-                alignment: Alignment.centerLeft,
-                child: RichText(
-                  textAlign: TextAlign.left,
-                  text: const TextSpan(
-                      text: '*** :',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text: ' Angka Sangat-Sangat Sementara.',
                             style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Roboto',

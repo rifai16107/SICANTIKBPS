@@ -775,7 +775,7 @@ class _LajuadhkccLuTrwAState extends State<LajuadhkccLuTrwA> {
                                       fontSize: 12),
                                   children: const <TextSpan>[
                                     TextSpan(
-                                        text: ' Angka Sangat Sementara. ',
+                                        text: ' Angka Sementara. ',
                                         style: TextStyle(
                                             fontSize: 12,
                                             fontFamily: 'Roboto',

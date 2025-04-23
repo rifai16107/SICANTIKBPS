@@ -125,7 +125,7 @@ class _PdrbPengelTrwAState extends State<PdrbPengelTrwA> {
               String lainnya_total = isipdrb[index = 3].total;
               String total_total = isipdrb[index = 4].total;
 
-              String thn1 = isipdrb[index = 0].tahun;
+              //String thn1 = isipdrb[index = 0].tahun;
 
               return Scaffold(
                   body: Column(
@@ -864,18 +864,16 @@ class _PdrbPengelTrwAState extends State<PdrbPengelTrwA> {
                             alignment: Alignment.centerLeft,
                             child: RichText(
                               textAlign: TextAlign.left,
-                              text: TextSpan(
+                              text: const TextSpan(
                                   text: 'Keterangan:',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12),
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text: " Tahun " +
-                                            thn1 +
-                                            ' Angka Sementara',
-                                        style: const TextStyle(
+                                        text: ' - ',
+                                        style: TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',
                                             color: Colors.black,

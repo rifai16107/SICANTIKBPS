@@ -48,13 +48,11 @@ class BodyTrwadhkKabkot extends StatefulWidget {
   const BodyTrwadhkKabkot({super.key});
 
   @override
-  State<BodyTrwadhkKabkot> createState() =>
-      _BodyTrwadhkKabkotState();
+  State<BodyTrwadhkKabkot> createState() => _BodyTrwadhkKabkotState();
 }
 
 class _BodyTrwadhkKabkotState extends State<BodyTrwadhkKabkot> {
-  RepositoryTrwadhkKabkot repositoryrpdrbtrwkabkot =
-      RepositoryTrwadhkKabkot();
+  RepositoryTrwadhkKabkot repositoryrpdrbtrwkabkot = RepositoryTrwadhkKabkot();
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height -
@@ -89,13 +87,13 @@ class _BodyTrwadhkKabkotState extends State<BodyTrwadhkKabkot> {
                       indicatorColor: Colors.white,
                       tabs: [
                         Tab(
-                          text: '$thn1 *',
+                          text: thn1,
                         ),
                         Tab(
-                          text: '$thn2 **',
+                          text: '$thn2 *',
                         ),
                         Tab(
-                          text: '$thn3 ***',
+                          text: '$thn3 **',
                         ),
                       ],
                     ),

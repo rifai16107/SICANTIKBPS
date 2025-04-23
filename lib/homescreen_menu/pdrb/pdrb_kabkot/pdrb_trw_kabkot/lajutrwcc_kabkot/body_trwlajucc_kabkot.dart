@@ -47,8 +47,7 @@ class BodyTrwlajuccKabkot extends StatefulWidget {
   const BodyTrwlajuccKabkot({super.key});
 
   @override
-  State<BodyTrwlajuccKabkot> createState() =>
-      _BodyTrwlajuccKabkotState();
+  State<BodyTrwlajuccKabkot> createState() => _BodyTrwlajuccKabkotState();
 }
 
 class _BodyTrwlajuccKabkotState extends State<BodyTrwlajuccKabkot> {
@@ -70,7 +69,7 @@ class _BodyTrwlajuccKabkotState extends State<BodyTrwlajuccKabkot> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              
+
               String thn2 = isirumah[index = 0].tahun.substring(5, 9);
               String thn3 = isirumah[index = 0].tahun.substring(10, 14);
 
@@ -88,10 +87,10 @@ class _BodyTrwlajuccKabkotState extends State<BodyTrwlajuccKabkot> {
                       indicatorColor: Colors.white,
                       tabs: [
                         Tab(
-                          text: '$thn2 **',
+                          text: '$thn2 *',
                         ),
                         Tab(
-                          text: '$thn3 ***',
+                          text: '$thn3 **',
                         ),
                       ],
                     ),

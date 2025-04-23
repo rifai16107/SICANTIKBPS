@@ -874,7 +874,7 @@ class _PdrbadhbPengelTrwBState extends State<PdrbadhbPengelTrwB> {
                                     TextSpan(
                                         text: " Tahun " +
                                             thn1 +
-                                            ' Angka Sangat Sementara',
+                                            ' Angka Sementara',
                                         style: const TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',

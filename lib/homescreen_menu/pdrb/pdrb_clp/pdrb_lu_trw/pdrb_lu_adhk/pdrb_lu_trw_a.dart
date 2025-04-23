@@ -134,7 +134,7 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
               String tersier_total = isipdrb[index = 2].total;
               String total_total = isipdrb[index = 3].total;
 
-              String thn1 = isipdrb[index = 0].tahun;
+              //String thn1 = isipdrb[index = 0].tahun;
 
               return Scaffold(
                   body: Column(
@@ -772,18 +772,16 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                             alignment: Alignment.centerLeft,
                             child: RichText(
                               textAlign: TextAlign.left,
-                              text: TextSpan(
+                              text: const TextSpan(
                                   text: 'Keterangan:',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12),
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text: " Tahun " +
-                                            thn1 +
-                                            ' Angka Sementara',
-                                        style: const TextStyle(
+                                        text: '-',
+                                        style: TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',
                                             color: Colors.black,

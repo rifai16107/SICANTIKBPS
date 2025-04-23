@@ -45,7 +45,7 @@ class _SeriesPdrbadhbKabkot extends State<SeriesPdrbadhbKabkot> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "PDRB Atas Dasar Harga Berlaku Menurut Kabupaten/Kota Di Jawa Tengah (Juta Rupiah)",
+                    "PDRB Atas Dasar Harga Berlaku Menurut Kabupaten/Kota Di Jawa Tengah (Milyar Rupiah)",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),

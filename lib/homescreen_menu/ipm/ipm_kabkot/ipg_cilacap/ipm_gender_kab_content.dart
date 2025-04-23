@@ -1972,7 +1972,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                         height: screenHeight * 0.05,
                                         color: Colors.green,
                                         padding: const EdgeInsets.only(
-                                            top: 5, right: 0),
+                                            top: 10, right: 0),
                                         child: SizedBox(
                                           child: Text(
                                             ipgN5.toStringAsFixed(2),
@@ -1994,7 +1994,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                         height: screenHeight * 0.05,
                                         color: Colors.green,
                                         padding: const EdgeInsets.only(
-                                            top: 5, right: 0),
+                                            top: 10, right: 0),
                                         child: SizedBox(
                                           child: Text(
                                             ipgN4.toStringAsFixed(2),
@@ -2015,7 +2015,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                         height: screenHeight * 0.05,
                                         color: Colors.green,
                                         padding: const EdgeInsets.only(
-                                            top: 5, right: 0),
+                                            top: 10, right: 0),
                                         child: SizedBox(
                                           child: Text(
                                             ipgN3.toStringAsFixed(2),
@@ -2036,7 +2036,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                         height: screenHeight * 0.05,
                                         color: Colors.green,
                                         padding: const EdgeInsets.only(
-                                            top: 5, right: 0),
+                                            top: 10, right: 0),
                                         child: SizedBox(
                                           child: Text(
                                             ipgN2.toStringAsFixed(2),
@@ -2057,7 +2057,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                         height: screenHeight * 0.05,
                                         color: Colors.green,
                                         padding: const EdgeInsets.only(
-                                            top: 5, right: 0),
+                                            top: 10, right: 0),
                                         child: SizedBox(
                                           child: Text(
                                             ipgN1.toStringAsFixed(2),
@@ -2104,27 +2104,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                               ],
                             ),
                           ),
-                          SizedBox(
-                            //color: Colors.transparent,
-                            width: screenWidth,
-                            height: screenHeight * 0.028,
-                            child: Row(
-                              children: [
-                                Container(
-                                  margin:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                  child: Text(
-                                    " - Tahun $tahun1 UHH dihitung menggunakan data SP2010.",
-                                    style: const TextStyle(
-                                      fontSize: 11,
-                                      fontStyle: FontStyle.normal,
-                                    ),
-                                    textAlign: TextAlign.left,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+
                           SizedBox(
                             //color: Colors.transparent,
                             width: screenWidth,
@@ -2136,9 +2116,9 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                     top: 2,
                                     bottom: 2,
                                   ),
-                                  child: Text(
-                                    " - Tahun $tahun2 s.d $tahun5 UHH dihitung menggunakan data LFSP2020.",
-                                    style: const TextStyle(
+                                  child: const Text(
+                                    " - UHH dihitung menggunakan data LFSP2020.",
+                                    style: TextStyle(
                                       fontSize: 11,
                                       fontStyle: FontStyle.normal,
                                     ),

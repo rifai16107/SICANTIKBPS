@@ -767,7 +767,7 @@ class _DistadhbLuTrwBState extends State<DistadhbLuTrwB> {
                                     TextSpan(
                                         text: " Tahun " +
                                             thn1 +
-                                            ' Angka Sangat Sementara',
+                                            ' Angka Sementara',
                                         style: const TextStyle(
                                             fontSize: 11,
                                             fontFamily: 'Roboto',

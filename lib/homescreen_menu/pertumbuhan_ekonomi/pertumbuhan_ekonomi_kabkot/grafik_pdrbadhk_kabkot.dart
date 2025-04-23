@@ -72,75 +72,75 @@ class _GrafikPdrbadhkKabkotState extends State<GrafikPdrbadhkKabkot> {
               String kabkota35 = isipdrbadhkkabkot[index = 34].wilayah;
 
               double pdrbadhk1 =
-                  double.parse(isipdrbadhkkabkot[index = 0].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 0].pdrb_adhk5);
               double pdrbadhk2 =
-                  double.parse(isipdrbadhkkabkot[index = 1].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 1].pdrb_adhk5);
               double pdrbadhk3 =
-                  double.parse(isipdrbadhkkabkot[index = 2].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 2].pdrb_adhk5);
               double pdrbadhk4 =
-                  double.parse(isipdrbadhkkabkot[index = 3].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 3].pdrb_adhk5);
               double pdrbadhk5 =
-                  double.parse(isipdrbadhkkabkot[index = 4].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 4].pdrb_adhk5);
               double pdrbadhk6 =
-                  double.parse(isipdrbadhkkabkot[index = 5].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 5].pdrb_adhk5);
               double pdrbadhk7 =
-                  double.parse(isipdrbadhkkabkot[index = 6].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 6].pdrb_adhk5);
               double pdrbadhk8 =
-                  double.parse(isipdrbadhkkabkot[index = 7].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 7].pdrb_adhk5);
               double pdrbadhk9 =
-                  double.parse(isipdrbadhkkabkot[index = 8].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 8].pdrb_adhk5);
               double pdrbadhk10 =
-                  double.parse(isipdrbadhkkabkot[index = 9].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 9].pdrb_adhk5);
               double pdrbadhk11 =
-                  double.parse(isipdrbadhkkabkot[index = 10].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 10].pdrb_adhk5);
               double pdrbadhk12 =
-                  double.parse(isipdrbadhkkabkot[index = 11].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 11].pdrb_adhk5);
               double pdrbadhk13 =
-                  double.parse(isipdrbadhkkabkot[index = 12].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 12].pdrb_adhk5);
               double pdrbadhk14 =
-                  double.parse(isipdrbadhkkabkot[index = 13].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 13].pdrb_adhk5);
               double pdrbadhk15 =
-                  double.parse(isipdrbadhkkabkot[index = 14].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 14].pdrb_adhk5);
               double pdrbadhk16 =
-                  double.parse(isipdrbadhkkabkot[index = 15].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 15].pdrb_adhk5);
               double pdrbadhk17 =
-                  double.parse(isipdrbadhkkabkot[index = 16].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 16].pdrb_adhk5);
               double pdrbadhk18 =
-                  double.parse(isipdrbadhkkabkot[index = 17].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 17].pdrb_adhk5);
               double pdrbadhk19 =
-                  double.parse(isipdrbadhkkabkot[index = 18].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 18].pdrb_adhk5);
               double pdrbadhk20 =
-                  double.parse(isipdrbadhkkabkot[index = 19].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 19].pdrb_adhk5);
               double pdrbadhk21 =
-                  double.parse(isipdrbadhkkabkot[index = 20].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 20].pdrb_adhk5);
               double pdrbadhk22 =
-                  double.parse(isipdrbadhkkabkot[index = 21].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 21].pdrb_adhk5);
               double pdrbadhk23 =
-                  double.parse(isipdrbadhkkabkot[index = 22].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 22].pdrb_adhk5);
               double pdrbadhk24 =
-                  double.parse(isipdrbadhkkabkot[index = 23].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 23].pdrb_adhk5);
               double pdrbadhk25 =
-                  double.parse(isipdrbadhkkabkot[index = 24].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 24].pdrb_adhk5);
               double pdrbadhk26 =
-                  double.parse(isipdrbadhkkabkot[index = 25].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 25].pdrb_adhk5);
               double pdrbadhk27 =
-                  double.parse(isipdrbadhkkabkot[index = 26].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 26].pdrb_adhk5);
               double pdrbadhk28 =
-                  double.parse(isipdrbadhkkabkot[index = 27].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 27].pdrb_adhk5);
               double pdrbadhk29 =
-                  double.parse(isipdrbadhkkabkot[index = 28].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 28].pdrb_adhk5);
               double pdrbadhk30 =
-                  double.parse(isipdrbadhkkabkot[index = 29].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 29].pdrb_adhk5);
               double pdrbadhk31 =
-                  double.parse(isipdrbadhkkabkot[index = 30].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 30].pdrb_adhk5);
               double pdrbadhk32 =
-                  double.parse(isipdrbadhkkabkot[index = 31].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 31].pdrb_adhk5);
               double pdrbadhk33 =
-                  double.parse(isipdrbadhkkabkot[index = 32].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 32].pdrb_adhk5);
               double pdrbadhk34 =
-                  double.parse(isipdrbadhkkabkot[index = 33].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 33].pdrb_adhk5);
               double pdrbadhk35 =
-                  double.parse(isipdrbadhkkabkot[index = 34].pdrb_adhk5) / 1000;
+                  double.parse(isipdrbadhkkabkot[index = 34].pdrb_adhk5);
 
               toString();
               data = [
@@ -246,7 +246,7 @@ class _GrafikPdrbadhkKabkotState extends State<GrafikPdrbadhkKabkot> {
                         // Visibility of legend
                         isVisible: false,
                         textStyle: const TextStyle(
-                        fontSize: 11,
+                          fontSize: 11,
                         ),
                         toggleSeriesVisibility: true,
                         position: LegendPosition.top),

@@ -389,7 +389,7 @@ class _IpmContentState extends State<IpmContent> {
                                       flex: 10,
                                       fit: FlexFit.tight,
                                       child: Text(
-                                        "	[IPG] Indeks Pembangunan Manusia (IPM) Menurut Jenis Kelamin dan IPG Kabupaten Cilacap, 2019-2023",
+                                        "	[IPG] Indeks Pembangunan Manusia (IPM) Menurut Jenis Kelamin dan IPG Kabupaten Cilacap",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
