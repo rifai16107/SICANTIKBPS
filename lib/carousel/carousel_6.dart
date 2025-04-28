@@ -3,6 +3,8 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu/nilai_pdrb.dart';
+import 'package:bps_cilacap/homescreen_menu/pertumbuhan_ekonomi/pertumbuhan_ekonomi_cilacap/pertumbuhan_ekonomi_clp.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -122,7 +124,13 @@ class _carouselSlider6State extends State<carouselSlider6> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const NilaiPdrb();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
@@ -269,7 +277,13 @@ class _carouselSlider6State extends State<carouselSlider6> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const pertumbuhanEkonomiclp();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,

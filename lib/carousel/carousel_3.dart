@@ -3,6 +3,8 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:bps_cilacap/homescreen_menu/kemiskinan/perkembangan_kemiskinan.dart';
+import 'package:bps_cilacap/homescreen_menu/pengangguran/pengangguran_cilacap/perkembangan_pengangguran.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -77,13 +79,15 @@ class _carouselSlider3State extends State<carouselSlider3> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String tahunMiskin = isiindikatorutama[index = 10].tahun.substring(5, 9);
-              double povertyNow = double.parse(isiindikatorutama[index = 10].nilai);
-              
-              String tahunTpt = isiindikatorutama[index = 14].tahun.substring(5, 9);
+              String tahunMiskin =
+                  isiindikatorutama[index = 10].tahun.substring(5, 9);
+              double povertyNow =
+                  double.parse(isiindikatorutama[index = 10].nilai);
+
+              String tahunTpt =
+                  isiindikatorutama[index = 14].tahun.substring(5, 9);
               double tptNow = double.parse(isiindikatorutama[index = 14].nilai);
-            
-             
+
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
@@ -113,7 +117,13 @@ class _carouselSlider3State extends State<carouselSlider3> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const PerkembanganKemiskinan();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
@@ -152,7 +162,7 @@ class _carouselSlider3State extends State<carouselSlider3> {
                                   color:
                                       const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
-                                child: Text(
+                                  child: Text(
                                     ' $tahunMiskin ',
                                     style: const TextStyle(
                                         fontSize: 12,
@@ -233,7 +243,13 @@ class _carouselSlider3State extends State<carouselSlider3> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const PerkembanganPengangguran();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
@@ -280,7 +296,7 @@ class _carouselSlider3State extends State<carouselSlider3> {
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
-                                
+
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.005,
@@ -307,7 +323,7 @@ class _carouselSlider3State extends State<carouselSlider3> {
                                         //width: 95,
                                         //height: 95,
                                         child: Image.asset(
-                                        'assets/images/carousel/tpt_carousel_icon.png',
+                                          'assets/images/carousel/tpt_carousel_icon.png',
                                           alignment: Alignment.center,
                                         ),
                                       ),
@@ -317,8 +333,7 @@ class _carouselSlider3State extends State<carouselSlider3> {
                                       height: screenHeight * 0.035,
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
-                                      child: Text(
-                                          Format.convertTo(tptNow, 2),
+                                      child: Text(Format.convertTo(tptNow, 2),
                                           style: const TextStyle(
                                               fontSize: 16,
                                               fontWeight: FontWeight.bold,

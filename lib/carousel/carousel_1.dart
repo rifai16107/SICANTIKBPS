@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:bps_cilacap/homescreen_menu/inflasi/series_bulanan.dart';
+import 'package:bps_cilacap/homescreen_menu/inflasi/series_inflasi.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -137,7 +139,13 @@ class _carouselSlider1State extends State<carouselSlider1> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const SeriesBulanan();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
@@ -257,7 +265,13 @@ class _carouselSlider1State extends State<carouselSlider1> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const SeriesInflasi();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,

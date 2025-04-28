@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:bps_cilacap/homescreen_menu/jumlah_penduduk/proyeksi_kabkot/series_pendudukkabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/ketimpangan/ketimpangan_gini.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -79,8 +81,10 @@ class _carouselSlider2State extends State<carouselSlider2> {
               int lkTotal = int.parse(isiindikatorutama[index = 3].nilai);
               int prTotal = int.parse(isiindikatorutama[index = 4].nilai);
 
-              String thnGini = isiindikatorutama[index = 8].tahun.substring(5, 9);
-              double giniRasiothnNow = double.parse(isiindikatorutama[index = 8].nilai);
+              String thnGini =
+                  isiindikatorutama[index = 8].tahun.substring(5, 9);
+              double giniRasiothnNow =
+                  double.parse(isiindikatorutama[index = 8].nilai);
               return Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 231, 232, 233),
@@ -110,7 +114,13 @@ class _carouselSlider2State extends State<carouselSlider2> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const SeriesPddkKabkot();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
@@ -194,7 +204,8 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                       alignment: Alignment.center,
                                       margin: const EdgeInsets.only(top: 10),
                                       child: Text(
-                                          Format.convertTo((lkTotal + prTotal), 0),
+                                          Format.convertTo(
+                                              (lkTotal + prTotal), 0),
                                           style: const TextStyle(
                                               fontSize: 14,
                                               fontWeight: FontWeight.bold,
@@ -230,7 +241,13 @@ class _carouselSlider2State extends State<carouselSlider2> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const KetimpanganGini();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
@@ -303,7 +320,7 @@ class _carouselSlider2State extends State<carouselSlider2> {
                                         //width: 95,
                                         //height: 95,
                                         child: Image.asset(
-                                         'assets/images/carousel/ketimpangan_icon.png',
+                                          'assets/images/carousel/ketimpangan_icon.png',
                                           alignment: Alignment.center,
                                         ),
                                       ),

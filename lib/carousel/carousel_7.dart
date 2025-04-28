@@ -3,6 +3,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:bps_cilacap/format_angka.dart';
+import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu_trw/pdrb_lu_adhb/series_pdrbadhb_lu_trw.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -118,7 +119,13 @@ class _carouselSlider7State extends State<carouselSlider7> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const SeriesPdrbadhbLuTrw();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
@@ -265,7 +272,13 @@ class _carouselSlider7State extends State<carouselSlider7> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return const SeriesPdrbadhbLuTrw();
+                                },
+                              ));
+                            },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
