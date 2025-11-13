@@ -17,8 +17,10 @@ class RepositoryIndikatorUtama {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isiindikatorutama) =>
-                ModelIndikatorUtama.fromJson(isiindikatorutama))
+            .map(
+              (isiindikatorutama) =>
+                  ModelIndikatorUtama.fromJson(isiindikatorutama),
+            )
             .toList();
       }
     } catch (isiindikatorutama) {
@@ -35,12 +37,13 @@ class ModelIndikatorUtama {
   final String bulan;
   final String tahun;
 
-  ModelIndikatorUtama(
-      {required this.id,
-      required this.indikator,
-      required this.nilai,
-      required this.bulan,
-      required this.tahun});
+  ModelIndikatorUtama({
+    required this.id,
+    required this.indikator,
+    required this.nilai,
+    required this.bulan,
+    required this.tahun,
+  });
 
   factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
     return ModelIndikatorUtama(
@@ -66,7 +69,8 @@ class _carouselSlider7State extends State<carouselSlider7> {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
@@ -83,12 +87,15 @@ class _carouselSlider7State extends State<carouselSlider7> {
               String triwulan = isiindikatorutama[index = 22].bulan;
 
               double pdrTrw = double.parse(isiindikatorutama[index = 22].nilai);
-              double pdrTrwKum =
-                  double.parse(isiindikatorutama[index = 23].nilai);
-              double pertumbTrwqtoq =
-                  double.parse(isiindikatorutama[index = 24].nilai);
-              double pertumbTrwyony =
-                  double.parse(isiindikatorutama[index = 25].nilai);
+              double pdrTrwKum = double.parse(
+                isiindikatorutama[index = 23].nilai,
+              );
+              double pertumbTrwqtoq = double.parse(
+                isiindikatorutama[index = 24].nilai,
+              );
+              double pertumbTrwyony = double.parse(
+                isiindikatorutama[index = 25].nilai,
+              );
 
               return Container(
                 decoration: BoxDecoration(
@@ -120,11 +127,14 @@ class _carouselSlider7State extends State<carouselSlider7> {
                           ),
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(context, MaterialPageRoute(
-                                builder: (context) {
-                                  return const SeriesPdrbadhbLuTrw();
-                                },
-                              ));
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return const SeriesPdrbadhbLuTrw();
+                                  },
+                                ),
+                              );
                             },
                             splashColor: Colors.blueGrey,
                             child: Column(
@@ -132,41 +142,56 @@ class _carouselSlider7State extends State<carouselSlider7> {
                               children: [
                                 Container(
                                   width: screenWidth * 0.40,
-                                  height: screenHeight * 0.045,
-                                  color:
-                                      const Color.fromARGB(255, 231, 232, 233),
+                                  height: screenHeight * 0.051,
+                                  color: const Color.fromARGB(
+                                    255,
+                                    231,
+                                    232,
+                                    233,
+                                  ),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    "PDRB (trilyun Rp) dan Pertumbuhannya",
+                                    'PDRB (trilyun Rp)\n'
+                                    'dan Pertumbuhannya',
                                     style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 13),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    ),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.025,
-                                  color:
-                                      const Color.fromARGB(255, 231, 232, 233),
+                                  color: const Color.fromARGB(
+                                    255,
+                                    231,
+                                    232,
+                                    233,
+                                  ),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: Text(
                                     'Trw $triwulan $tahun',
                                     style: const TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.bold),
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
-                                  color:
-                                      const Color.fromARGB(255, 231, 232, 233),
+                                  color: const Color.fromARGB(
+                                    255,
+                                    231,
+                                    232,
+                                    233,
+                                  ),
                                   child: Row(
                                     children: [
                                       SizedBox(
                                         width: screenWidth * 0.185,
-                                        height: screenHeight * 0.022,
+                                        height: screenHeight * 0.024,
                                         //color: const Color.fromARGB(255, 231, 232, 233),
                                         //alignment: Alignment.center,
                                         //margin: const EdgeInsets.only(top: 0),
@@ -174,8 +199,9 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                           'Nilai',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
                                       ),
                                       SizedBox(
@@ -188,8 +214,9 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                           'q-to-q (%)',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -203,14 +230,19 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                         width: screenWidth * 0.365,
                                         height: screenHeight * 0.003,
                                         color: const Color.fromARGB(
-                                            255, 231, 232, 233),
+                                          255,
+                                          231,
+                                          232,
+                                          233,
+                                        ),
                                         alignment: Alignment.center,
                                         margin: const EdgeInsets.only(top: 0),
                                         child: const Text(
                                           " ",
                                           style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -222,25 +254,29 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                       width: screenWidth * 0.185,
                                       height: screenHeight * 0.025,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 10),
+                                      margin: const EdgeInsets.only(top: 4),
                                       child: Text(
-                                          " ${Format.convertTo(pdrTrw / 1000, 2)}",
-                                          style: const TextStyle(
-                                              fontSize: 14,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.black)),
+                                        " ${Format.convertTo(pdrTrw / 1000, 2)}",
+                                        style: const TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black,
+                                        ),
+                                      ),
                                     ),
                                     Container(
                                       width: screenWidth * 0.18,
                                       height: screenHeight * 0.025,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 10),
+                                      margin: const EdgeInsets.only(top: 4),
                                       child: Text(
-                                          " ${Format.convertTo(pertumbTrwqtoq, 2)}",
-                                          style: const TextStyle(
-                                              fontSize: 14,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.black)),
+                                        " ${Format.convertTo(pertumbTrwqtoq, 2)}",
+                                        style: const TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black,
+                                        ),
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -273,11 +309,14 @@ class _carouselSlider7State extends State<carouselSlider7> {
                           ),
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(context, MaterialPageRoute(
-                                builder: (context) {
-                                  return const SeriesPdrbadhbLuTrw();
-                                },
-                              ));
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return const SeriesPdrbadhbLuTrw();
+                                  },
+                                ),
+                              );
                             },
                             splashColor: Colors.blueGrey,
                             child: Column(
@@ -285,41 +324,56 @@ class _carouselSlider7State extends State<carouselSlider7> {
                               children: [
                                 Container(
                                   width: screenWidth * 0.40,
-                                  height: screenHeight * 0.045,
-                                  color:
-                                      const Color.fromARGB(255, 231, 232, 233),
+                                  height: screenHeight * 0.051,
+                                  color: const Color.fromARGB(
+                                    255,
+                                    231,
+                                    232,
+                                    233,
+                                  ),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    "PDRB (trilyun Rp) dan Pertumbuhannya",
+                                    'PDRB (trilyun Rp)\n'
+                                    'dan Pertumbuhannya',
                                     style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 13),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    ),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
                                   height: screenHeight * 0.025,
-                                  color:
-                                      const Color.fromARGB(255, 231, 232, 233),
+                                  color: const Color.fromARGB(
+                                    255,
+                                    231,
+                                    232,
+                                    233,
+                                  ),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: Text(
                                     's.d. Trw $triwulan $tahun',
                                     style: const TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.bold),
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                     textAlign: TextAlign.center,
                                   ),
                                 ),
                                 Container(
                                   width: screenWidth * 0.40,
-                                  color:
-                                      const Color.fromARGB(255, 231, 232, 233),
+                                  color: const Color.fromARGB(
+                                    255,
+                                    231,
+                                    232,
+                                    233,
+                                  ),
                                   child: Row(
                                     children: [
                                       SizedBox(
                                         width: screenWidth * 0.185,
-                                        height: screenHeight * 0.022,
+                                        height: screenHeight * 0.024,
                                         //color: const Color.fromARGB(255, 231, 232, 233),
                                         //alignment: Alignment.center,
                                         //margin: const EdgeInsets.only(top: 0),
@@ -327,8 +381,9 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                           'Nilai',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
                                       ),
                                       SizedBox(
@@ -341,8 +396,9 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                           'y-on-y (%)',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -356,14 +412,19 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                         width: screenWidth * 0.365,
                                         height: screenHeight * 0.003,
                                         color: const Color.fromARGB(
-                                            255, 231, 232, 233),
+                                          255,
+                                          231,
+                                          232,
+                                          233,
+                                        ),
                                         alignment: Alignment.center,
                                         margin: const EdgeInsets.only(top: 0),
                                         child: const Text(
                                           " ",
                                           style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -375,25 +436,29 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                       width: screenWidth * 0.185,
                                       height: screenHeight * 0.025,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 10),
+                                      margin: const EdgeInsets.only(top: 4),
                                       child: Text(
-                                          " ${Format.convertTo(pdrTrwKum / 1000, 2)}",
-                                          style: const TextStyle(
-                                              fontSize: 14,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.black)),
+                                        " ${Format.convertTo(pdrTrwKum / 1000, 2)}",
+                                        style: const TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black,
+                                        ),
+                                      ),
                                     ),
                                     Container(
                                       width: screenWidth * 0.18,
                                       height: screenHeight * 0.025,
                                       alignment: Alignment.center,
-                                      margin: const EdgeInsets.only(top: 10),
+                                      margin: const EdgeInsets.only(top: 4),
                                       child: Text(
-                                          " ${Format.convertTo(pertumbTrwyony, 2)}",
-                                          style: const TextStyle(
-                                              fontSize: 14,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.black)),
+                                        " ${Format.convertTo(pertumbTrwyony, 2)}",
+                                        style: const TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black,
+                                        ),
+                                      ),
                                     ),
                                   ],
                                 ),
