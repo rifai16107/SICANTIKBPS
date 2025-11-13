@@ -694,7 +694,7 @@ class _HomeContentState extends State<HomeContent> {
                                           color: Colors.blue,
                                           child: const Text(
                                             'PERTUMBUHAN\n'
-                                            'EKONOMI',
+                                            'EKONOMII',
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
