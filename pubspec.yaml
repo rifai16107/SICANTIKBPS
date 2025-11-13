@@ -1,0 +1,241 @@
+name: bps_cilacap
+description: "BPS Cilacap"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  carousel_slider: ^5.1.1
+  circle_bottom_navigation_bar: ^1.0.0
+  dropdown_button2: ^2.3.9
+  flutter_social_button: ^1.1.6+1
+  upgrader: ^12.3.0
+  new_version_plus: ^0.1.1
+  url_launcher: ^6.3.2
+  expansion_tile_card: ^3.0.0
+  bulleted_list: ^0.0.1+0.1a
+  webview_flutter: ^4.13.0
+  http: ^1.6.0
+  bottom_sheet: ^4.0.4
+  pie_chart: ^5.4.0
+  intl: ^0.20.2
+  syncfusion_flutter_charts: ^31.2.5
+  horizontal_data_table: ^4.3.3
+  linked_scroll_controller: ^0.2.0
+  permission_handler: ^12.0.1
+  flutter_speed_dial: ^7.0.0
+  font_awesome_flutter: ^10.12.0
+  social_media_flutter: ^0.0.2
+  youtube_player_flutter: ^9.1.3
+  audioplayers: ^6.5.1
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.12.0
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Splashscreen
+    - assets/images/SplashscreenSiCANTIK.png
+    
+    # Homescreen
+    - assets/images/inflasi.png
+    - assets/images/ketimpangan.png
+    - assets/images/ketimpangan_clp.png
+    - assets/images/pengangguran.png
+    - assets/images/pertumbuhan_ekonomi.png
+    - assets/images/ketenagakerjaan.png
+    - assets/images/kemiskinan.png
+    - assets/images/pendidikan.png
+    - assets/images/perumahan.png
+    - assets/images/pertanian.png
+    - assets/images/ipm.png
+    - assets/images/pdrb.png
+    - assets/images/jumlah_penduduk.png
+    - assets/images/hasil_st.png
+    - assets/images/hasil_sp.png
+    - assets/images/logo_se2026.png
+    - assets/images/logo.png
+    - assets/images/gedung.jpg
+    - assets/images/logo_berakhlak.png
+    - assets/song/logo_lagu_se.png
+    - assets/song/logo_lagu_mars.png
+      
+    #  Drawer
+    - assets/images/drawer/infografis_icon.png
+    - assets/images/drawer/gis_icon.png
+    - assets/images/drawer/tabel_icon.png
+    - assets/images/drawer/publikasi_icon.png
+    - assets/images/drawer/brs_icon.png
+    - assets/images/drawer/srt_icon.png
+    - assets/images/drawer/konsepdefinisi_icon.png
+    - assets/images/drawer/about_icon.png
+    - assets/images/drawer/keluar_icon.png
+    - assets/images/drawer/selengkapnya_icon.png
+
+    #  Sensus
+    - assets/images/sensus/sensus.png
+    - assets/images/sensus/sensus_tani_23.png
+    - assets/images/sensus/sp_2020.png
+    - assets/images/sensus/sp_2020_lf.png
+    - assets/images/sensus/st_2023.png
+    - assets/images/sensus/st_2023_urban.png
+    - assets/images/sensus/st_2023_milen.png
+    - assets/images/sensus/st_2023_pg_lahan.png
+    - assets/images/sensus/st_2023_pg_gurem.png
+
+    - assets/images/sensus/st_2023_padi.png
+    - assets/images/sensus/st_2023_horti.png
+    - assets/images/sensus/st_2023_kebun.png
+    - assets/images/sensus/st_2023_ternak.png
+    - assets/images/sensus/st_2023_ikan.png
+    - assets/images/sensus/st_2023_hutan.png
+    - assets/images/sensus/st_2023_jasa.png
+
+    - assets/images/sensus/cilacap_1.png
+    - assets/images/sensus/cilacap_2.png
+    - assets/images/sensus/cilacap_3.png
+    - assets/images/sensus/cilacap_4.png
+    - assets/images/sensus/cilacap_5.png
+    - assets/images/sensus/cilacap_6.png
+    - assets/images/sensus/cilacap_7.png
+    - assets/images/sensus/cilacap_8.png
+    - assets/images/sensus/cilacap_9.png
+    - assets/images/sensus/cilacap_10.png
+    - assets/images/sensus/st_2023_sapi.png
+    - assets/images/sensus/st_2023_kerbau.png
+
+    - assets/images/sensus/jateng_1.png
+    - assets/images/sensus/jateng_2.png
+    - assets/images/sensus/jateng_3.png
+    - assets/images/sensus/jateng_4.png
+    - assets/images/sensus/jateng_5.png
+    - assets/images/sensus/jateng_6.png
+    - assets/images/sensus/jateng_7.png
+    - assets/images/sensus/jateng_8.png
+    - assets/images/sensus/jateng_9.png
+    - assets/images/sensus/jateng_10.png
+
+    - assets/images/sensus/indo_1.png
+    - assets/images/sensus/indo_2.png
+    - assets/images/sensus/indo_3.png
+    - assets/images/sensus/indo_4.png
+    - assets/images/sensus/indo_5.png
+    - assets/images/sensus/indo_6.png
+    - assets/images/sensus/indo_7.png
+    - assets/images/sensus/indo_8.png
+    - assets/images/sensus/indo_9.png
+    - assets/images/sensus/indo_10.png
+
+    # Sensus Ekonomi
+    - assets/images/sensus_ekonomi/sensus_ekonomi_2016.jpg
+    - assets/images/sensus_ekonomi/sensus_ekonomi_2016.png
+    - assets/images/sensus_ekonomi/sensus_ekonomi_2026_1.png
+    - assets/images/sensus_ekonomi/sensus_ekonomi_2026_2.png 
+
+    # Slider SE
+    - assets/images/slider/ujicoba_se2026_1.png
+    - assets/images/slider/ujicoba_se2026_2.png
+    - assets/images/slider/ujicoba_se2026_3.png
+    - assets/images/slider/ujicoba_se2026_4.png
+    - assets/images/slider/ujicoba_se2026_5.png
+    - assets/images/slider/ujicoba_se2026_6.png
+      
+
+    
+    # Long Form
+    - assets/images/sensus/longform_sp2020_fertilitas.png
+    - assets/images/sensus/longform_sp2020_mortalitas.png
+    - assets/images/sensus/longform_sp2020_mobilitas.png
+    - assets/images/sensus/longform_sp2020_naker.png
+    - assets/images/sensus/longform_sp2020_pendidikan.png
+    - assets/images/sensus/longform_sp2020_perumahan.png
+
+
+    # homescreen menu
+    - assets/images/homecontent/inflasi_icon.png
+    - assets/images/homecontent/jumlah_penduduk_icon.png
+    - assets/images/homecontent/kemiskinan_icon.png
+    - assets/images/homecontent/ketenagakerjaan_icon.png
+    - assets/images/homecontent/ketimpangan_icon.png
+    - assets/images/homecontent/pengangguran_icon.png
+    - assets/images/homecontent/pertumbuhan_ekonomi_icon.png
+    - assets/images/homecontent/pendidikan_icon.png
+    - assets/images/homecontent/perumahan_icon.png
+    - assets/images/homecontent/ppid_icon.png
+    - assets/images/homecontent/web_icon.png
+
+    # Medsos
+    - assets/images/medsos/fb.png
+    - assets/images/medsos/ig.png
+    - assets/images/medsos/youtube.png
+    - assets/images/medsos/tiktok.png
+    - assets/images/medsos/twitter.png
+    - assets/images/medsos/whatsapp.png
+    - assets/images/medsos/phone.png
+    
+    #  Carousel
+    - assets/images/carousel/inflasi_bulanan_icon.png
+    - assets/images/carousel/ipm_carousel_icon.png
+    - assets/images/carousel/hasil_sp_icon.png
+    - assets/images/carousel/ketimpangan_icon.png
+    - assets/images/carousel/pertumbuhan_icon.png
+    - assets/images/carousel/kemiskinan_icon.png
+    - assets/images/carousel/tpt_carousel_icon.png
+     
+    #  Modal
+    - assets/images/modal/inflasi_modal_1.jpeg
+    - assets/images/modal/inflasi_modal_2.jpeg
+    - assets/images/modal/inflasi_modal_3.jpeg
+    - assets/images/modal/inflasi_modal_4.jpeg
+    - assets/images/modal/apm_modal.jpeg
+    - assets/images/modal/apk_modal.jpeg
+    - assets/images/modal/aps_modal.jpeg
+    - assets/images/modal/amh_modal.jpeg
+    - assets/images/modal/ketimpangan_modal.jpeg
+
+    # Logo Daerah
+    - assets/images/daerah/logo_cilacap.png
+    - assets/images/daerah/logo_jateng.png
+    - assets/images/daerah/peta_cilacap.png
+    
+    # Tentang Aplikasi
+    - assets/images/logobps.png
+    - assets/images/logotimdev.png
+
+    - assets/images/
+    - assets/icon/
+
+  fonts:
+    - family: BottNavIcon
+      fonts:
+       - asset: fonts/BottNavIcon.ttf
+    - family:  BackIcons
+      fonts:
+       - asset: fonts/BackIcons.ttf
+    - family: AboutIcons
+      fonts:
+       - asset: fonts/AboutIcons.ttf
+    - family:  MoreIcons
+      fonts:
+       - asset: fonts/MoreIcons.ttf
+    - family: SuezOne
+      fonts :
+       - asset: fonts/SuezOne-Regular.ttf

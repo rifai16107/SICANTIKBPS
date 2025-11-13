@@ -1,0 +1,817 @@
+// ignore_for_file: camel_case_types, prefer_doubleerpolation_to_compose_strings, non_constant_identifier_names, prefer_interpolation_to_compose_strings
+
+import 'dart:async';
+import 'dart:convert';
+import 'package:flutter/material.dart';
+//import 'package:bps_cilacap/format_angka.dart';
+import 'package:http/http.dart' as http;
+
+//DIST PDRB ADHB 2022-2024
+
+class RepositoryLajuadhkLuTrw {
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-laju';
+
+  Future getData() async {
+    try {
+      final response = await http.get(Uri.parse(_baseURL));
+
+      if (response.statusCode == 200) {
+        var cokk = jsonDecode(response.body);
+        return (cokk['data'] as List)
+            .map((isipdrb) => ModelLajuadhkTrwLu.fromJson(isipdrb))
+            .toList();
+      }
+    } catch (isipdrb) {
+      // ignore: avoid_print
+      print(isipdrb.toString());
+    }
+  }
+}
+
+class ModelLajuadhkTrwLu {
+  final int id;
+  final String komponen;
+  final String qq_trw1;
+  final String qq_trw2;
+  final String qq_trw3;
+  final String qq_trw4;
+  final String qq_total;
+  final String tahun;
+
+  ModelLajuadhkTrwLu(
+      {required this.id,
+      required this.komponen,
+      required this.qq_trw1,
+      required this.qq_trw2,
+      required this.qq_trw3,
+      required this.qq_trw4,
+      required this.qq_total,
+      required this.tahun});
+
+  factory ModelLajuadhkTrwLu.fromJson(Map<String, dynamic> json) {
+    return ModelLajuadhkTrwLu(
+      id: json['id'],
+      komponen: json['komponen'],
+      qq_trw1: json['qq_trw1'],
+      qq_trw2: json['qq_trw2'],
+      qq_trw3: json['qq_trw3'],
+      qq_trw4: json['qq_trw4'],
+      qq_total: json['qq_total'],
+      tahun: json['tahun'],
+    );
+  }
+}
+
+class LajuadhkLuTrwB extends StatefulWidget {
+  const LajuadhkLuTrwB({Key? key}) : super(key: key);
+
+  @override
+  State<LajuadhkLuTrwB> createState() => _LajuadhkLuTrwBState();
+}
+
+RepositoryLajuadhkLuTrw repositoryLajuadhk = RepositoryLajuadhkLuTrw();
+
+class _LajuadhkLuTrwBState extends State<LajuadhkLuTrwB> {
+  @override
+  Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height -
+        MediaQuery.of(context).padding.top -
+        MediaQuery.of(context).padding.bottom;
+    // ignore: unused_local_variable
+    final screenWidth = MediaQuery.of(context).size.width;
+    return Scaffold(
+        body: FutureBuilder(
+      future: repositoryLajuadhk.getData(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          List isipdrb = snapshot.data as List;
+          return PageView.builder(
+            itemCount: 1,
+            itemBuilder: (context, index) {
+              String komponen1 = isipdrb[index = 23].komponen;
+              String komponen2 = isipdrb[index = 24].komponen;
+              String komponen3 = isipdrb[index = 25].komponen;
+              String komponen4 = isipdrb[index = 26].komponen;
+
+              //pdrb trw
+              String primer_qq_trw1 = isipdrb[index = 23].qq_trw1;
+              String sekunder_qq_trw1 = isipdrb[index = 24].qq_trw1;
+              String tersier_qq_trw1 = isipdrb[index = 25].qq_trw1;
+              String total_qq_trw1 = isipdrb[index = 26].qq_trw1;
+
+              String primer_qq_trw2 = isipdrb[index = 23].qq_trw2;
+              String sekunder_qq_trw2 = isipdrb[index = 24].qq_trw2;
+              String tersier_qq_trw2 = isipdrb[index = 25].qq_trw2;
+              String total_qq_trw2 = isipdrb[index = 26].qq_trw2;
+
+              String primer_qq_trw3 = isipdrb[index = 23].qq_trw3;
+              String sekunder_qq_trw3 = isipdrb[index = 24].qq_trw3;
+              String tersier_qq_trw3 = isipdrb[index = 25].qq_trw3;
+              String total_qq_trw3 = isipdrb[index = 26].qq_trw3;
+
+              String primer_qq_trw4 = isipdrb[index = 23].qq_trw4;
+              String sekunder_qq_trw4 = isipdrb[index = 24].qq_trw4;
+              String tersier_qq_trw4 = isipdrb[index = 25].qq_trw4;
+              String total_qq_trw4 = isipdrb[index = 26].qq_trw4;
+
+              String primer_qq_total = isipdrb[index = 23].qq_total;
+              String sekunder_qq_total = isipdrb[index = 24].qq_total;
+              String tersier_qq_total = isipdrb[index = 25].qq_total;
+              String qq_total = isipdrb[index = 26].qq_total;
+
+              String thn1 = isipdrb[index = 23].tahun;
+
+              return Scaffold(
+                  body: Column(
+                children: <Widget>[
+                  //Flexible(
+                  //fit: FlexFit.tight,
+                  //flex: 5,
+                  Container(
+                    width: screenWidth * 1.0,
+                    height: screenHeight * 0.04,
+                    color: Colors.blue,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: screenWidth * 0.20,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 0, top: 10, bottom: 0),
+                            child: const Text(
+                              "Lapangan/",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.78,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 0),
+                            child: const Text(
+                              "Laju Pertumbuhan PDRB dengan Migas",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        const Divider(
+                          thickness: 2,
+                          color: Colors.black,
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //separator
+                  Container(
+                    width: screenWidth * 1.0,
+                    height: screenHeight * 0.005,
+                    color: Colors.blue,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: screenWidth * 0.22,
+                          child: Container(
+                            height: screenHeight * 0.005,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.76,
+                          child: Container(
+                            height: screenHeight * 0.002,
+                            color: Colors.white,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "__",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  Container(
+                    width: screenWidth * 1.0,
+                    height: screenHeight * 0.04,
+                    color: Colors.blue,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: screenWidth * 0.20,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 0, top: 0, bottom: 0),
+                            child: const Text(
+                              "Usaha",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.15,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 15, top: 0, bottom: 0),
+                            child: const Text(
+                              "Trw 1",
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.15,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 15, top: 0, bottom: 0),
+                            child: const Text(
+                              "Trw 2",
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.15,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 10, top: 0, bottom: 0),
+                            child: const Text(
+                              "Trw 3",
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.16,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 10, top: 0, bottom: 0),
+                            child: const Text(
+                              "Trw 4",
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: screenWidth * 0.16,
+                          child: Container(
+                            height: screenHeight * 0.04,
+                            color: Colors.blue,
+                            padding: const EdgeInsets.only(
+                                right: 5, top: 0, bottom: 0),
+                            child: const Text(
+                              "Tahunan",
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  //),
+                  Expanded(
+                    //flex:16,
+                    child: SingleChildScrollView(
+                      //child: Flexible(
+                      //flex: 20,
+                      //fit: FlexFit.tight,
+                      //child: SizedBox(
+                      //width: screenWidth,
+                      //height: screenHeight,
+                      child: Column(
+                        children: [
+                          // Sektor Primer
+                          Container(
+                            width: screenWidth * 1.0,
+                            height: screenHeight * 0.07,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 0.15 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      komponen1,
+                                      textAlign: TextAlign.left,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      primer_qq_trw1,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      primer_qq_trw2,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.16 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      primer_qq_trw3,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      primer_qq_trw4,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      primer_qq_total,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          // Sekunder
+                          Container(
+                            width: screenWidth * 1.0,
+                            height: screenHeight * 0.07,
+                            color: Colors.grey.shade200,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 0.15 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      komponen2,
+                                      textAlign: TextAlign.left,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      sekunder_qq_trw1,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      sekunder_qq_trw2,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.16 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      sekunder_qq_trw3,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      sekunder_qq_trw4,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      sekunder_qq_total,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          // Tersier
+                          Container(
+                            width: screenWidth * 1.0,
+                            height: screenHeight * 0.07,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 0.15 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      komponen3,
+                                      textAlign: TextAlign.left,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      tersier_qq_trw1,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      tersier_qq_trw2,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.16 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      tersier_qq_trw3,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      tersier_qq_trw4,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      tersier_qq_total,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          // TOTAL
+                          Container(
+                            width: screenWidth * 1.0,
+                            height: screenHeight * 0.07,
+                            color: Colors.grey.shade200,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 0.15 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      komponen4,
+                                      textAlign: TextAlign.left,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_qq_trw1,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_qq_trw2,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.16 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_qq_trw3,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.165 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      total_qq_trw4,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 0.18 * screenWidth,
+                                  child: Container(
+                                    color: Colors.transparent,
+                                    padding: const EdgeInsets.only(
+                                        right: 0, top: 1, bottom: 1),
+                                    child: Text(
+                                      qq_total,
+                                      textAlign: TextAlign.right,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          const Divider(
+                            height: 5,
+                            color: Colors.black,
+                          ),
+
+                          Container(
+                            padding: const EdgeInsets.all(1),
+                            alignment: Alignment.centerLeft,
+                            child: RichText(
+                              textAlign: TextAlign.left,
+                              text: TextSpan(
+                                  text: "Tahun " + thn1,
+                                  style: const TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12),
+                                  children: const <TextSpan>[
+                                    TextSpan(
+                                        text: ' Angka Sangat Sementara. ',
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontFamily: 'Roboto',
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.normal)),
+                                  ]),
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(1),
+                            alignment: Alignment.centerLeft,
+                            child: RichText(
+                              textAlign: TextAlign.left,
+                              text: const TextSpan(
+                                  text: 'q-to-q:',
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                        text:
+                                            ' Pertumbuhan PDRB pada triwulan tertentu dibandingkan dengan triwulan sebelumnya.',
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontFamily: 'Roboto',
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.normal)),
+                                  ]),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ));
+            },
+          );
+        }
+        if (snapshot.hasError) {
+          return const Text('Database Error');
+        } else {
+          return const Center(child: CircularProgressIndicator(strokeWidth: 3));
+        }
+      },
+    ));
+  }
+}
