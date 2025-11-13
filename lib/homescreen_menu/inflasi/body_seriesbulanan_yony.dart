@@ -31,17 +31,11 @@ class _BodySeriesInflasiBulananYonyState extends State<BodySeriesInflasiBulananY
             itemCount: 1,
             itemBuilder: (context, index) {
               //Bulan n-2
-              String bulan0 = isiinflasi[index = 0].bulan +
-                  " " +
-                  isiinflasi[index = 0].tahun;
+              String bulan0 = '${isiinflasi[index = 0].bulan} ' ' ${isiinflasi[index = 0].tahun}';
               //Bulan n-1
-              String bulan1 = isiinflasi[index = 2].bulan +
-                  " " +
-                  isiinflasi[index = 2].tahun;
+              String bulan1 = '${isiinflasi[index = 2].bulan} ' ' ${isiinflasi[index = 2].tahun}';
               //Bulan n
-              String bulan2 = isiinflasi[index = 5].bulan +
-                  " " +
-                  (isiinflasi[index = 5].tahun);
+              String bulan2 = '${isiinflasi[index = 4].bulan} ' ' ${isiinflasi[index = 4].tahun}';
 
               return DefaultTabController(
                 length: 3,
