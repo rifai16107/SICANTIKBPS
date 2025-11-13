@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names, library_private_types_in_public_api, use_build_context_synchronously
+// ignore_for_file: non_constant_identifier_names, library_private_types_in_public_api, use_build_context_synchronously, duplicate_ignore
 import 'package:bps_cilacap/Icons/bott_nav_icon_icons.dart';
 //import 'package:bps_cilacap/Icons/about_icons_icons.dart';
 import 'package:circle_bottom_navigation_bar/circle_bottom_navigation_bar.dart';
