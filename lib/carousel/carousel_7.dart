@@ -142,7 +142,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                               children: [
                                 Container(
                                   width: screenWidth * 0.40,
-                                  height: screenHeight * 0.051,
+                                  height: screenHeight * 0.025,
                                   color: const Color.fromARGB(
                                     255,
                                     231,
@@ -150,8 +150,26 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                     233,
                                   ),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
-                                  child: const Text(
-                                    'PDRB (trilyun Rp)\n'
+                                  child: Text(
+                                    'PDRB (trilyun Rp)',
+                                   style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                 Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color: const Color.fromARGB(
+                                    255,
+                                    231,
+                                    232,
+                                    233,
+                                  ),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: Text(
                                     'dan Pertumbuhannya',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -206,7 +224,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                       ),
                                       SizedBox(
                                         width: screenWidth * 0.180,
-                                        height: screenHeight * 0.022,
+                                        height: screenHeight * 0.023,
                                         //color: const Color.fromARGB(255, 231, 232, 233),
                                         //alignment: Alignment.center,
                                         //margin: const EdgeInsets.only(top: 0),
@@ -324,7 +342,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                               children: [
                                 Container(
                                   width: screenWidth * 0.40,
-                                  height: screenHeight * 0.051,
+                                  height: screenHeight * 0.025,
                                   color: const Color.fromARGB(
                                     255,
                                     231,
@@ -332,8 +350,26 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                     233,
                                   ),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
-                                  child: const Text(
-                                    'PDRB (trilyun Rp)\n'
+                                  child: Text(
+                                    'PDRB (trilyun Rp)',
+                                   style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                                 Container(
+                                  width: screenWidth * 0.40,
+                                  height: screenHeight * 0.025,
+                                  color: const Color.fromARGB(
+                                    255,
+                                    231,
+                                    232,
+                                    233,
+                                  ),
+                                  //margin: const EdgeInsets.only(left: 2, top:5),
+                                  child: Text(
                                     'dan Pertumbuhannya',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -388,7 +424,7 @@ class _carouselSlider7State extends State<carouselSlider7> {
                                       ),
                                       SizedBox(
                                         width: screenWidth * 0.180,
-                                        height: screenHeight * 0.022,
+                                        height: screenHeight * 0.023,
                                         //color: const Color.fromARGB(255, 231, 232, 233),
                                         //alignment: Alignment.center,
                                         //margin: const EdgeInsets.only(top: 0),
