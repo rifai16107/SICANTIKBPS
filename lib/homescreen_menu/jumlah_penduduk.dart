@@ -101,7 +101,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                       //Proyeksi Kecamatan
                       Card(
                         elevation: 20,
-                        color: const Color.fromARGB(255, 230, 160, 11),
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                           side: BorderSide(color: Colors.grey),
@@ -137,7 +137,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                                       'Kecamatan Hasil Sensus dan Proyeksi\n'
                                       'Penduduk, (Sumber: BPS)',
                                       style: TextStyle(
-                                        color: Colors.black,
+                                        color: Colors.white,
                                         fontSize: 13.5,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -154,7 +154,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                       //Proyeksi Kelum
                       Card(
                         elevation: 20,
-                        color: const Color.fromARGB(255, 230, 160, 11),
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                           side: BorderSide(color: Colors.grey),
@@ -190,7 +190,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                                       'Kelompok Umur Hasil Sensus dan Proyeksi\n'
                                       'Penduduk, (Sumber: BPS)',
                                       style: TextStyle(
-                                        color: Colors.black,
+                                        color: Colors.white,
                                         fontSize: 13.5,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -208,7 +208,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                       // Penduduk Registrasi Per Kecamatan
                       Card(
                         elevation: 20,
-                        color: const Color.fromARGB(255, 230, 160, 11),
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                           side: BorderSide(color: Colors.grey),
@@ -244,7 +244,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                                       'Kecamatan,Hasil Registrasi Penduduk\n'
                                       '(Sumber: Disdukcapil)',
                                       style: TextStyle(
-                                        color: Colors.black,
+                                        color: Colors.white,
                                         fontSize: 13.5,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -262,7 +262,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                       // Penduduk Registrasi
                       Card(
                         elevation: 20,
-                        color: const Color.fromARGB(255, 230, 160, 11),
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                           side: BorderSide(color: Colors.grey),
@@ -298,7 +298,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                                       'Kelompok Umur, Hasil Registrasi Penduduk\n'
                                       '(Sumber: Disdukcapil)',
                                       style: TextStyle(
-                                        color: Colors.black,
+                                        color: Colors.white,
                                         fontSize: 13.5,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -316,7 +316,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                       //Penduduk Kab/kota di jateng
                       Card(
                         elevation: 20,
-                        color: const Color.fromARGB(255, 230, 160, 11),
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                           side: BorderSide(color: Colors.grey),
@@ -352,7 +352,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                                       'Hasil Registrasi Penduduk\n'
                                       '(Sumber: Disdukcapil)',
                                       style: TextStyle(
-                                        color: Colors.black,
+                                        color: Colors.white,
                                         fontSize: 13.5,
                                         fontWeight: FontWeight.normal,
                                       ),
