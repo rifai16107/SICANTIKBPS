@@ -98,17 +98,16 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                         ),
                       ),
 
-                      //Proyeksi
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(39, 101, 182, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      //Proyeksi Kecamatan
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromARGB(255, 230, 160, 11),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -117,42 +116,51 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.08,
-                            child: Row(
-                              children: const [
-                                Flexible(
-                                  flex: 16,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Penduduk Kabupaten Cilacap Menurut Kecamatan (Hasil Sensus dan Proyeksi Penduduk, Sumber: BPS)",
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(color: Colors.white),
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon(Icons.arrow_right),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  SizedBox(
+                                    width: screenWidth * 0.80,
+                                    child: Text(
+                                      'Penduduk Kabupaten Cilacap Menurut\n'
+                                      'Kecamatan Hasil Sensus dan Proyeksi\n'
+                                      'Penduduk, (Sumber: BPS)',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
                       const Divider(height: 3, color: Colors.transparent),
-
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(39, 101, 182, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      //Proyeksi Kelum
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromARGB(255, 230, 160, 11),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -161,43 +169,52 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.086,
-                            child: Row(
-                              children: const [
-                                Flexible(
-                                  flex: 16,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Penduduk Kabupaten Cilacap Menurut Kelompok Umur (Hasil Sensus dan Proyeksi Penduduk, Sumber: BPS)",
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(color: Colors.white),
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon(Icons.arrow_right),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  SizedBox(
+                                    width: screenWidth * 0.80,
+                                    child: Text(
+                                      'Penduduk Kabupaten Cilacap Menurut\n'
+                                      'Kelompok Umur Hasil Sensus dan Proyeksi\n'
+                                      'Penduduk, (Sumber: BPS)',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
 
                       const Divider(height: 3, color: Colors.transparent),
-                      // Penduduk Registrasi
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(39, 101, 182, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      // Penduduk Registrasi Per Kecamatan
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromARGB(255, 230, 160, 11),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -206,26 +223,36 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.08,
-                            child: Row(
-                              children: const [
-                                Flexible(
-                                  flex: 16,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Penduduk Kabupaten Cilacap Menurut Kecamatan (Hasil Registrasi Penduduk, Sumber: Disdukcapil)",
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(color: Colors.white),
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon(Icons.arrow_right),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  SizedBox(
+                                    width: screenWidth * 0.80,
+                                    child: Text(
+                                      'Penduduk Kabupaten Cilacap Menurut\n'
+                                      'Kecamatan,Hasil Registrasi Penduduk\n'
+                                      '(Sumber: Disdukcapil)',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -233,16 +260,15 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                       const Divider(height: 3, color: Colors.transparent),
 
                       // Penduduk Registrasi
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(39, 101, 182, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromARGB(255, 230, 160, 11),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -251,42 +277,52 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.087,
-                            child: Row(
-                              children: const [
-                                Flexible(
-                                  flex: 16,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Penduduk Kabupaten Cilacap Menurut Kelompok Umur (Hasil Registrasi Penduduk, Sumber: Disdukcapil)",
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(color: Colors.white),
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon(Icons.arrow_right),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  SizedBox(
+                                    width: screenWidth * 0.80,
+                                    child: Text(
+                                      'Penduduk Kabupaten Cilacap Menurut\n'
+                                      'Kelompok Umur, Hasil Registrasi Penduduk\n'
+                                      '(Sumber: Disdukcapil)',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
+
                       const Divider(height: 3, color: Colors.transparent),
                       //Penduduk Kab/kota di jateng
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(236, 138, 20, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromARGB(255, 230, 160, 11),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -295,30 +331,41 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.08,
-                            child: Row(
-                              children: const [
-                                Flexible(
-                                  flex: 16,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Penduduk Kabupaten/Kota di Jawa Tengah (Hasil Sensus dan Proyeksi Penduduk, Sumber: BPS)",
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(color: Colors.white),
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_jateng.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon(Icons.arrow_right),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  SizedBox(
+                                    width: screenWidth * 0.80,
+                                    child: Text(
+                                      'Penduduk Kabupaten/Kota di Jawa Tengah\n'
+                                      'Hasil Registrasi Penduduk\n'
+                                      '(Sumber: Disdukcapil)',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
+
                       Flexible(
                         flex: 1,
                         fit: FlexFit.tight,

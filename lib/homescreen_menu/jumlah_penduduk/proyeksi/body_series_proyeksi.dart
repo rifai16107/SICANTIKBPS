@@ -18,7 +18,8 @@ class _BodySeriesProyeksiState extends State<BodySeriesProyeksi> {
       RepositoryJumlahPendudukKecamatan();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -34,14 +35,22 @@ class _BodySeriesProyeksiState extends State<BodySeriesProyeksi> {
               //Tahun 2023
               String thn5 = isijumlahpenduduk[index = 0].tahun;
               //tahun 2020-2022
-              String thn1 =
-                  isijumlahpenduduk[index = 0].tahun_123.substring(0, 4);
-              String thn2 =
-                  isijumlahpenduduk[index = 0].tahun_123.substring(5, 9);
-              String thn3 =
-                  isijumlahpenduduk[index = 0].tahun_123.substring(10, 14);
-              String thn4 =
-                  isijumlahpenduduk[index = 0].tahun_123.substring(15, 19);
+              String thn1 = isijumlahpenduduk[index = 0].tahun_123.substring(
+                0,
+                4,
+              );
+              String thn2 = isijumlahpenduduk[index = 0].tahun_123.substring(
+                5,
+                9,
+              );
+              String thn3 = isijumlahpenduduk[index = 0].tahun_123.substring(
+                10,
+                14,
+              );
+              String thn4 = isijumlahpenduduk[index = 0].tahun_123.substring(
+                15,
+                19,
+              );
 
               return DefaultTabController(
                 length: 5,
@@ -54,33 +63,27 @@ class _BodySeriesProyeksiState extends State<BodySeriesProyeksi> {
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
-                      indicatorColor: Colors.white,
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
+                      indicatorColor: Colors.orange,
                       tabs: [
-                        Tab(
-                          text: thn1,
-                        ),
-                        Tab(
-                          text: thn2,
-                        ),
-                        Tab(
-                          text: thn3,
-                        ),
-                        Tab(
-                          text: thn4,
-                        ),
-                        Tab(
-                          text: thn5,
-                        ),
+                        Tab(text: thn1),
+                        Tab(text: thn2),
+                        Tab(text: thn3),
+                        Tab(text: thn4),
+                        Tab(text: thn5),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    JumlahPendudukKecamatanA(),
-                    JumlahPendudukKecamatanB(),
-                    JumlahPendudukKecamatanC(),
-                    JumlahPendudukKecamatanD(),
-                    JumlahPendudukKecamatanE(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      JumlahPendudukKecamatanA(),
+                      JumlahPendudukKecamatanB(),
+                      JumlahPendudukKecamatanC(),
+                      JumlahPendudukKecamatanD(),
+                      JumlahPendudukKecamatanE(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -89,11 +92,7 @@ class _BodySeriesProyeksiState extends State<BodySeriesProyeksi> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );
