@@ -136,7 +136,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                 int prTotal = int.parse(isipendudukkecamatan[index = 24].pr);
 
                 return Scaffold(
-                    body: Column(
+                 body: Column(
                   children: <Widget>[
                     //Flexible(
                     //fit: FlexFit.tight,
@@ -250,12 +250,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk1, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -265,12 +265,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr1, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -285,7 +285,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk1 + pr1), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -319,12 +319,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     flex: 2,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk2, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -333,12 +333,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     flex: 2,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr2, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -352,7 +352,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk2 + pr2), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -388,12 +388,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk3, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -403,12 +403,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr3, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -423,7 +423,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk3 + pr3), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -457,12 +457,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     flex: 2,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk4, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -471,12 +471,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     flex: 2,
                                     child: Container(
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr4, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -490,7 +490,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk4 + pr4), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -526,12 +526,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk5, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -541,12 +541,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr5, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -561,7 +561,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk5 + pr5), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -596,12 +596,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk6, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -611,12 +611,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr6, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -631,7 +631,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk6 + pr6), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -667,12 +667,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk7, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -682,12 +682,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr7, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -702,7 +702,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk7 + pr7), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -738,12 +738,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk8, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -753,12 +753,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr8, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -773,7 +773,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk8 + pr8), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -809,12 +809,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk9, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -824,12 +824,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr9, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -844,7 +844,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk9 + pr9), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -880,12 +880,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk10, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -895,12 +895,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr10, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -915,7 +915,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk10 + pr10), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -952,12 +952,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk11, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -967,12 +967,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr11, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -987,7 +987,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk11 + pr11), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1023,12 +1023,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk12, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1038,12 +1038,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr12, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1058,7 +1058,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk12 + pr12), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1094,12 +1094,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk13, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1109,12 +1109,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr13, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1129,7 +1129,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk13 + pr13), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1165,12 +1165,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk14, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1180,12 +1180,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr14, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1200,7 +1200,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk14 + pr14), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1236,12 +1236,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk15, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1251,12 +1251,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr15, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1271,7 +1271,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk15 + pr15), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.normal),
+                                            fontSize: 13,fontWeight: FontWeight.normal),
                                       ),
                                     ),
                                   ),
@@ -1307,11 +1307,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk16, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1322,11 +1323,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr16, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1342,6 +1344,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk16 + pr16), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1378,11 +1381,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk17, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1393,11 +1397,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr17, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1413,6 +1418,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk17 + pr17), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1449,11 +1455,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk18, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1464,11 +1471,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr18, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1484,6 +1492,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk18 + pr18), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1521,11 +1530,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk19, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1536,11 +1546,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr19, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1556,6 +1567,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk19 + pr19), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1592,11 +1604,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk20, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1607,11 +1620,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.grey.shade200,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr20, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1627,6 +1641,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk20 + pr20), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1663,11 +1678,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(lk21, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1678,11 +1694,12 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                     child: Container(
                                       color: Colors.transparent,
                                       padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
+                                          right: 5, top: 1, bottom: 1),
                                       child: Text(
                                         Format.convertTo(pr21, 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1698,6 +1715,7 @@ class _JumlahPendudukKecamatanEState extends State<JumlahPendudukKecamatanE> {
                                         Format.convertTo((lk21 + pr21), 0),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
+                                            fontSize: 13,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),

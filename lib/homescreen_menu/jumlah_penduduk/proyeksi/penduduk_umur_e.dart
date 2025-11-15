@@ -75,86 +75,89 @@ class _JumlahPendudukUmurEState extends State<JumlahPendudukUmurE> {
                         child: Column(
                           children: [
                             Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 3,
-                                  child: Container(
-                                    height: screenHeight * 0.07,
-                                    padding: const EdgeInsets.only(
-                                        left: 2, right: 25),
-                                    color: Colors.green,
-                                    child: const Center(
-                                      child: Text(
-                                        "Kelompok Umur",
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                            children: [
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 3,
+                                child: Container(
+                                  height: screenHeight * 0.07,
+                                  padding:
+                                      const EdgeInsets.only(left: 2, right: 25),
+                                  color: Colors.orange,
+                                  child: const Center(
+                                    child: Text(
+                                      "Kelompok Umur",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
                                 ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    height: screenHeight * 0.07,
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 5, vertical: 10),
-                                    color: Colors.green,
-                                    child: const Center(
-                                      child: Text(
-                                        "Laki-Laki",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  height: screenHeight * 0.07,
+                                  padding: const EdgeInsets.only(
+                                      right: 15, top: 10, bottom:10),
+                                  color: Colors.orange,
+                                  child: const Center(
+                                    child: Text(
+                                      textAlign: TextAlign.center,
+                                      "Laki-Laki  ",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
                                 ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    height: screenHeight * 0.07,
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
-                                    child: const Center(
-                                      child: Text(
-                                        "Perempuan",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  height: screenHeight * 0.07,
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 1, vertical: 10),
+                                  color: Colors.orange,
+                                  child: const Center(
+                                    child: Text(
+                                      "Perempuan",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
                                 ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    height: screenHeight * 0.07,
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
-                                    child: const Center(
-                                      child: Text(
-                                        "      Lk + Pr",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                              ),
+                              Flexible(
+                                fit: FlexFit.tight,
+                                flex: 2,
+                                child: Container(
+                                  height: screenHeight * 0.07,
+                                   padding: const EdgeInsets.only(
+                                      right: 0, top: 10, bottom:10),
+                                  color: Colors.orange,
+                                  child: const Center(
+                                    child: Text(
+                                      textAlign: TextAlign.right,
+                                      "    Lk + Pr",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
+                          ),
                             // 0 - 4
                             Row(
                               children: [
@@ -1155,7 +1158,7 @@ class _JumlahPendudukUmurEState extends State<JumlahPendudukUmurE> {
                                   fit: FlexFit.tight,
                                   flex: 1,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.symmetric(
                                         vertical: 10),
                                     child: const Center(
@@ -1173,7 +1176,7 @@ class _JumlahPendudukUmurEState extends State<JumlahPendudukUmurE> {
                                   fit: FlexFit.tight,
                                   flex: 1,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.symmetric(
                                         vertical: 10),
                                     child: Text(
@@ -1191,7 +1194,7 @@ class _JumlahPendudukUmurEState extends State<JumlahPendudukUmurE> {
                                   fit: FlexFit.tight,
                                   flex: 1,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.symmetric(
                                         vertical: 10),
                                     child: Text(
@@ -1209,7 +1212,7 @@ class _JumlahPendudukUmurEState extends State<JumlahPendudukUmurE> {
                                   fit: FlexFit.tight,
                                   flex: 1,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.symmetric(
                                         vertical: 10),
                                     child: Text(

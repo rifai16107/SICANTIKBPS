@@ -125,1877 +125,1919 @@ class _JumlahPendudukKecamatanDState extends State<JumlahPendudukKecamatanD> {
               int prTotal = int.parse(isipendudukkecamatan[index = 24].pr4);
 
               return Scaffold(
-                  body: Column(
-                children: <Widget>[
-                  //Flexible(
-                  //fit: FlexFit.tight,
-                  //flex: 5,
-                  Container(
-                    width: screenWidth * 1.0,
-                    height: screenHeight * 0.06,
-                    color: Colors.green,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 4,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                right: 10, top: 10, bottom: 10),
-                            child: const Text(
-                              "Kecamatan",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 15, top: 10, bottom: 10),
-                            child: const Text(
-                              "Lk",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 15, top: 10, bottom: 10),
-                            child: const Text(
-                              "Pr",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            padding: const EdgeInsets.only(
-                                left: 15, top: 10, bottom: 10),
-                            child: const Text(
-                              "Lk+Pr",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  //),
-                  Expanded(
-                    //flex:16,
-                    child: SingleChildScrollView(
-                      //child: Flexible(
-                      //flex: 20,
-                      //fit: FlexFit.tight,
-                      //child: SizedBox(
-                      //width: screenWidth,
-                      //height: screenHeight,
-                      child: Column(
+                 body: Column(
+                  children: <Widget>[
+                    //Flexible(
+                    //fit: FlexFit.tight,
+                    //flex: 5,
+                    Container(
+                      width: screenWidth * 1.0,
+                      height: screenHeight * 0.06,
+                      color: Colors.orange,
+                      child: Row(
                         children: [
-                          //First Row
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec1,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk1, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr1, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk1 + pr1), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 4,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  right: 10, top: 10, bottom: 10),
+                              child: const Text(
+                                "Kecamatan",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          //Baris ke 2
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec2,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk2, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr2, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk2 + pr2), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 2,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 15, top: 10, bottom: 10),
+                              child: const Text(
+                                "Lk",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          //Baris 3
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec3,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk3, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr3, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk3 + pr3), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 2,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 15, top: 10, bottom: 10),
+                              child: const Text(
+                                "Pr",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
-
-                          //Baris ke 4
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec4,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk4, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr4, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk4 + pr4), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 5
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec5,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk5, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr5, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk5 + pr5), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 6
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec6,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk6, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr6, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk6 + pr6), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          // Baris 7
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec7,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk7, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr7, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk7 + pr7), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 8
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec8,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk8, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr8, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk8 + pr8), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 9
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec9,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk9, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr9, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk9 + pr9), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 10
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec10,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk10, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr10, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk10 + pr10), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //baris ke 11
-
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec11,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk11, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr11, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk11 + pr11), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 12
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec12,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk12, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr12, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk12 + pr12), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //baris ke 13
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec13,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk13, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr13, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk13 + pr13), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 14
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec14,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk14, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr14, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk14 + pr14), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //baris ke 15
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec15,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk15, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr15, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk15 + pr15), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 16
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec16,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk16, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr16, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk16 + pr16), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 17
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec17,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk17, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr17, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk17 + pr17), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 18
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec18,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk18, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr18, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk18 + pr18), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 19
-
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec19,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk19, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr19, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk19 + pr19), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 20
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec20,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk20, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr20, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk20 + pr20), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 21
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec21,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk21, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr21, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk21 + pr21), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 22
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec22,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk22, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr22, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.grey.shade200,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk22 + pr22), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 23
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.transparent,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec23,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk23, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr23, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.transparent,
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo((lk23 + pr23), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          //Baris ke 24
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.032,
-                            color: Colors.grey.shade200,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      kec24,
-                                      textAlign: TextAlign.left,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(lk24, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 1, bottom: 1),
-                                    child: Text(
-                                      Format.convertTo(pr24, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo((lk24 + pr24), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.normal),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          //Total
-                          Container(
-                            width: screenWidth * 1.0,
-                            height: screenHeight * 0.050,
-                            color: Colors.green,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 4,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 3, bottom: 3),
-                                    child: Text(
-                                      kab,
-                                      textAlign: TextAlign.center,
-                                      style: const TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo(lkTotal, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 10, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo(prTotal, 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 5, top: 3, bottom: 3),
-                                    child: Text(
-                                      Format.convertTo((lkTotal + prTotal), 0),
-                                      textAlign: TextAlign.right,
-                                      style: const TextStyle(
-                                          fontSize: 13,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            alignment: Alignment.centerLeft,
-                            padding: const EdgeInsets.only(
-                              top: 4,
-                              left: 4,
-                              bottom: 10,
-                            ),
-                            child: const Text(
-                              " Sumber Data : Hasil Proyeksi Penduduk dan Sensus Penduduk",
-                              style: TextStyle(
-                                  fontSize: 11, fontWeight: FontWeight.normal),
+                          Flexible(
+                            fit: FlexFit.tight,
+                            flex: 2,
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  left: 15, top: 10, bottom: 10),
+                              child: const Text(
+                                "Lk+Pr",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
                         ],
                       ),
                     ),
-                  ),
-                ],
-              ));
+                    //),
+                    Expanded(
+                      //flex:16,
+                      child: SingleChildScrollView(
+                        //child: Flexible(
+                        //flex: 20,
+                        //fit: FlexFit.tight,
+                        //child: SizedBox(
+                        //width: screenWidth,
+                        //height: screenHeight,
+                        child: Column(
+                          children: [
+                            //First Row
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec1,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk1, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr1, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk1 + pr1), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 2
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec2,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk2, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr2, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk2 + pr2), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris 3
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec3,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk3, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr3, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk3 + pr3), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 4
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec4,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk4, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr4, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk4 + pr4), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 5
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec5,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk5, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr5, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk5 + pr5), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 6
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec6,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk6, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr6, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk6 + pr6), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            // Baris 7
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec7,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk7, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr7, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk7 + pr7), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 8
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec8,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk8, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr8, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk8 + pr8), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 9
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec9,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk9, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr9, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk9 + pr9), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 10
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec10,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk10, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr10, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk10 + pr10), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //baris ke 11
+
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec11,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk11, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr11, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk11 + pr11), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 12
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec12,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk12, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr12, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk12 + pr12), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //baris ke 13
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec13,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk13, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr13, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk13 + pr13), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 14
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec14,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk14, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr14, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk14 + pr14), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //baris ke 15
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec15,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk15, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr15, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk15 + pr15), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 16
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec16,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk16, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr16, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk16 + pr16), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 17
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec17,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk17, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr17, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk17 + pr17), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 18
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec18,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk18, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr18, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk18 + pr18), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 19
+
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec19,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk19, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr19, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk19 + pr19), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 20
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec20,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk20, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr20, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk20 + pr20), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 21
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec21,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk21, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr21, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk21 + pr21), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 22
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec22,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk22, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr22, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.grey.shade200,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk22 + pr22), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 23
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec23,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk23, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr23, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      color: Colors.transparent,
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk23 + pr23), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //Baris ke 24
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.032,
+                              color: Colors.grey.shade200,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 1, bottom: 1),
+                                      child: Text(
+                                        kec24,
+                                        textAlign: TextAlign.left,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(lk24, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo(pr24, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 1, bottom: 1),
+                                      child: Text(
+                                        Format.convertTo((lk24 + pr24), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            //Total
+                            Container(
+                              width: screenWidth * 1.0,
+                              height: screenHeight * 0.050,
+                              color: Colors.orange,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 10, top: 3, bottom: 3),
+                                      child: Text(
+                                        kab,
+                                        textAlign: TextAlign.center,
+                                        style: const TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 3, bottom: 3),
+                                      child: Text(
+                                        Format.convertTo(lkTotal, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 3, bottom: 3),
+                                      child: Text(
+                                        Format.convertTo(prTotal, 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                  Flexible(
+                                    fit: FlexFit.tight,
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.only(
+                                          right: 5, top: 3, bottom: 3),
+                                      child: Text(
+                                        Format.convertTo(
+                                            (lkTotal + prTotal), 0),
+                                        textAlign: TextAlign.right,
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              alignment: Alignment.centerLeft,
+                              padding: const EdgeInsets.only(
+                                top: 4,
+                                left: 4,
+                                bottom: 10,
+                              ),
+                              child: const Text(
+                                " Sumber Data : Hasil Proyeksi Penduduk dan Sensus Penduduk",
+                                style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.normal),
+                              ),
+                            ),
+                            Container(
+                              alignment: Alignment.centerLeft,
+                              padding: const EdgeInsets.only(
+                                top: 50,
+                                left: 4,
+                              ),
+                              child: const Text(
+                                "  ",
+                                style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ));
             },
           );
         }

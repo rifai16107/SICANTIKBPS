@@ -65,7 +65,7 @@ class _BodySeriesProyeksiState extends State<BodySeriesProyeksi> {
                     bottom: TabBar(
                       labelColor: Colors.orange,
                       unselectedLabelColor: Colors.grey,
-                      indicatorColor: Colors.orange,
+                      indicatorColor: Colors.white,
                       tabs: [
                         Tab(text: thn1),
                         Tab(text: thn2),

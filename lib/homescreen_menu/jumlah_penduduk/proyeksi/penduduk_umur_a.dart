@@ -82,7 +82,7 @@ class _JumlahPendudukUmurAState extends State<JumlahPendudukUmurA> {
                                   height: screenHeight * 0.07,
                                   padding:
                                       const EdgeInsets.only(left: 2, right: 25),
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Kelompok Umur",
@@ -100,12 +100,13 @@ class _JumlahPendudukUmurAState extends State<JumlahPendudukUmurA> {
                                 flex: 2,
                                 child: Container(
                                   height: screenHeight * 0.07,
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 5, vertical: 10),
-                                  color: Colors.green,
+                                  padding: const EdgeInsets.only(
+                                      right: 15, top: 10, bottom:10),
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
-                                      "Laki-Laki",
+                                      textAlign: TextAlign.center,
+                                      "Laki-Laki  ",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
@@ -120,11 +121,12 @@ class _JumlahPendudukUmurAState extends State<JumlahPendudukUmurA> {
                                 child: Container(
                                   height: screenHeight * 0.07,
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 10),
-                                  color: Colors.green,
+                                      horizontal: 1, vertical: 10),
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Perempuan",
+                                      textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
@@ -138,12 +140,13 @@ class _JumlahPendudukUmurAState extends State<JumlahPendudukUmurA> {
                                 flex: 2,
                                 child: Container(
                                   height: screenHeight * 0.07,
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 2, vertical: 10),
-                                  color: Colors.green,
+                                   padding: const EdgeInsets.only(
+                                      right: 0, top: 10, bottom:10),
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
-                                      "      Lk + Pr",
+                                      textAlign: TextAlign.right,
+                                      "    Lk + Pr",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
@@ -1154,7 +1157,7 @@ class _JumlahPendudukUmurAState extends State<JumlahPendudukUmurA> {
                                 fit: FlexFit.tight,
                                 flex: 1,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: const Center(
@@ -1172,7 +1175,7 @@ class _JumlahPendudukUmurAState extends State<JumlahPendudukUmurA> {
                                 fit: FlexFit.tight,
                                 flex: 1,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: Text(
@@ -1190,7 +1193,7 @@ class _JumlahPendudukUmurAState extends State<JumlahPendudukUmurA> {
                                 fit: FlexFit.tight,
                                 flex: 1,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: Text(
@@ -1208,7 +1211,7 @@ class _JumlahPendudukUmurAState extends State<JumlahPendudukUmurA> {
                                 fit: FlexFit.tight,
                                 flex: 1,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: Text(
