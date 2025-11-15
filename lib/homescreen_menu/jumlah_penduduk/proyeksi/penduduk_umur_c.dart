@@ -146,7 +146,7 @@ class _JumlahPendudukUmurCState extends State<JumlahPendudukUmurC> {
                                   child: const Center(
                                     child: Text(
                                       textAlign: TextAlign.right,
-                                      "    Lk + Pr",
+                                      "     Lk + Pr",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,

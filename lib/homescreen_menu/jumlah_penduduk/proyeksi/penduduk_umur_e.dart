@@ -147,7 +147,7 @@ class _JumlahPendudukUmurEState extends State<JumlahPendudukUmurE> {
                                   child: const Center(
                                     child: Text(
                                       textAlign: TextAlign.right,
-                                      "    Lk + Pr",
+                                      "     Lk + Pr",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
@@ -1280,6 +1280,7 @@ class _JumlahPendudukUmurEState extends State<JumlahPendudukUmurE> {
                   child: const BodyGrafikPddkKelum(),
                   direction: AxisDirection.left));
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.bar_chart_sharp),
       ),
