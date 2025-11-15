@@ -59,9 +59,7 @@ class _GrafikInflasiBulananYonyState extends State<GrafikInflasiBulananYony> {
               double anif11 =
                   double.parse(isiinflasi[index = 4].perawatan_pribadi);
 
-              String bulan2 = isiinflasi[index = 4].bulan +
-                  " " +
-                  (isiinflasi[index = 4].tahun);
+              String bulan2 = '${isiinflasi[index = 4].bulan} ''${isiinflasi[index = 4].tahun}';
 
               toString();
               data = [

@@ -30,17 +30,11 @@ class _BodySeriesInflasiKotaState extends State<BodySeriesInflasiKota> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //Bulan n-2
-              String bulan0 = isiinflasi[index = 0].bulan +
-                  " " +
-                  isiinflasi[index = 0].tahun;
+              String bulan0 = '${isiinflasi[index = 0].bulan} ''${isiinflasi[index = 0].tahun}';
               //Bulan n-1
-              String bulan1 = isiinflasi[index = 8].bulan +
-                  " " +
-                  isiinflasi[index = 8].tahun;
+              String bulan1 = '${isiinflasi[index = 8].bulan} ''${isiinflasi[index = 8].tahun}';
               //Bulan n
-              String bulan2 = isiinflasi[index = 16].bulan +
-                  " " +
-                  (isiinflasi[index = 16].tahun);
+              String bulan2 = '${isiinflasi[index = 16].bulan} ''${isiinflasi[index = 16].tahun}';
 
               return DefaultTabController(
                 length: 3,
