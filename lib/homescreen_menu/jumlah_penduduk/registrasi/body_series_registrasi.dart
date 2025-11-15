@@ -54,6 +54,8 @@ class _BodySeriesRegistrasiState extends State<BodySeriesRegistrasi> {
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
                         Tab(
