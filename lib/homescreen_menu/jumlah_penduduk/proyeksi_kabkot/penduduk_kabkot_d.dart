@@ -151,7 +151,7 @@ class _JumlahPendudukKabkotDState extends State<JumlahPendudukKabkotD> {
                   Container(
                     width: screenWidth * 1.0,
                     height: screenHeight * 0.06,
-                    color: Colors.green,
+                    color: Colors.orange,
                     child: Row(
                       children: [
                         Flexible(
@@ -2805,7 +2805,7 @@ class _JumlahPendudukKabkotDState extends State<JumlahPendudukKabkotD> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.050,
-                            color: Colors.green,
+                            color: Colors.orange,
                             child: Row(
                               children: [
                                 Flexible(

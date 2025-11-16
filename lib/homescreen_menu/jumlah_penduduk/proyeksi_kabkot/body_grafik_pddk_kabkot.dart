@@ -21,12 +21,12 @@ class _BodyGrafikPddkKabkot extends State<BodyGrafikPddkKabkot> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         title: const Text(
           'Penduduk Kabupaten/Kota se Jawa Tengah',
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
-        leading: IconButton(
+          style: TextStyle(fontSize: 16,color: Colors.white)),
+       leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
@@ -43,7 +43,7 @@ class _BodyGrafikPddkKabkot extends State<BodyGrafikPddkKabkot> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.20,
+                height: screenHeight * 1.45,
                 width: screenWidth * 0.96,
                 child: Column(
                   children: [

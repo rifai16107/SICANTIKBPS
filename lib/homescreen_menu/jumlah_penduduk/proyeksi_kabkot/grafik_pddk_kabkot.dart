@@ -279,7 +279,7 @@ class _GrafikPddkKabkotState extends State<GrafikPddkKabkot> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight,
+                height: screenHeight*1.05,
                 width: screenWidth,
                 child: SfCartesianChart(
                     title: ChartTitle(
@@ -341,6 +341,8 @@ class _GrafikPddkKabkotState extends State<GrafikPddkKabkot> {
                         dataSource: data,
                         xValueMapper: (_ChartData data, _) => data.x,
                         yValueMapper: (_ChartData data, _) => data.y,
+                        //width: 0.8,
+                        //spacing: 0.05,
                         pointColorMapper: (_ChartData data, _) => data.color,
                         // Sorting based on the specified field
                         sortingOrder: SortingOrder.ascending,

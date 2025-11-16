@@ -349,8 +349,8 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                                     width: screenWidth * 0.80,
                                     child: Text(
                                       'Penduduk Kabupaten/Kota di Jawa Tengah\n'
-                                      'Hasil Registrasi Penduduk\n'
-                                      '(Sumber: Disdukcapil)',
+                                      'Hasil Sensus dan Proyeksi\n'
+                                      'Penduduk (Sumber: BPS)',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 13.5,

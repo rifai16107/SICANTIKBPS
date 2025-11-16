@@ -2930,6 +2930,7 @@ class _JumlahPendudukKabkotEState extends State<JumlahPendudukKabkotE> {
                   child: const BodyGrafikPddkKabkot(),
                   direction: AxisDirection.left));
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.bar_chart_sharp),
       ),

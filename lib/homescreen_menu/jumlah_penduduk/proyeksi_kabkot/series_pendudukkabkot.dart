@@ -18,11 +18,11 @@ class _SeriesPddkKabkot extends State<SeriesPddkKabkot> {
         MediaQuery.of(context).padding.bottom;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         title: const Text(
           "PENDUDUK KABUPATEN/KOTA",
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
+          style: TextStyle(fontSize: 16,color: Colors.white)),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
