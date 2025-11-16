@@ -279,7 +279,7 @@ class _GrafikPddkKabkotState extends State<GrafikPddkKabkot> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight*1.05,
+                height: screenHeight*0.9,
                 width: screenWidth,
                 child: SfCartesianChart(
                     title: ChartTitle(
