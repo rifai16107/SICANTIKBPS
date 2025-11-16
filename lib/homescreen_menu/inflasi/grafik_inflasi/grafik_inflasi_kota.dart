@@ -83,9 +83,7 @@ class _GrafikInflasiKotaState extends State<GrafikInflasiKota> {
                 double yony10 = double.parse(isiinflasikota[index = 31].ytoy);
                 double yony11 = double.parse(isiinflasikota[index = 32].ytoy);
 
-              String bulan2 = isiinflasikota[index = 16].bulan +
-                  " " +
-                  (isiinflasikota[index = 16].tahun);
+              String bulan2 = '${isiinflasikota[index = 16].bulan} ''${isiinflasikota[index = 16].tahun}';
 
               toString();
               data = [

@@ -83,6 +83,7 @@ class FixedColumnWidget extends StatelessWidget {
     return DataTable(
       columnSpacing: 5,
       dataRowMinHeight: screenHeight * 0.028,
+      dataRowMaxHeight: screenHeight * 0.028,
       headingRowColor: WidgetStateProperty.all(
         const Color.fromRGBO(34, 150, 243, 1),
       ),
@@ -518,7 +519,8 @@ class ScrollableColumnWidget extends StatelessWidget {
                     ),
                   ),
                   columnSpacing: 10,
-                  dataRowMinHeight: screenHeight * 0.0280,
+                  dataRowMinHeight: screenHeight * 0.028,
+                  dataRowMaxHeight: screenHeight * 0.028,
                   headingTextStyle: const TextStyle(
                     //fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,

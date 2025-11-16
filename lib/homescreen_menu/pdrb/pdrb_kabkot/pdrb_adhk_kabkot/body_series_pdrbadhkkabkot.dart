@@ -31,13 +31,8 @@ class _BodySeriesPdrbadhkKabkotState extends State<BodySeriesPdrbadhkKabkot> {
             itemBuilder: (context, index) {
               //tahun 2019-2023
               String thn1 = isipdrbkabkot[index = 0].tahun.substring(0, 4);
-              String thn23 = isipdrbkabkot[index = 0].tahun.substring(5, 9) +
-                  "-" +
-                  isipdrbkabkot[index = 0].tahun.substring(10, 14);
-              String thn45 = isipdrbkabkot[index = 0].tahun.substring(15, 19) +
-                  "-" +
-                  isipdrbkabkot[index = 0].tahun.substring(20, 24);
-
+              String thn23 = '${isipdrbkabkot[index = 0].tahun.substring(5, 9)}-${isipdrbkabkot[index = 0].tahun.substring(10, 14)}';
+              String thn45 = '${isipdrbkabkot[index = 0].tahun.substring(15, 19)}-${isipdrbkabkot[index = 0].tahun.substring(20, 24)}';
               return DefaultTabController(
                 length: 3,
                 child: Scaffold(

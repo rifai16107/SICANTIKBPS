@@ -77,10 +77,9 @@ class _BodySeriesNakerkabkotUmkState
             itemBuilder: (context, index) {
               //tahun 2019-2023
               String thn_n1 = isinaker[index = 0].tahun.substring(0, 4);
-              String thn_n2_n3 = isinaker[index = 0].tahun.substring(5, 9)+"-"+isinaker[index = 0].tahun.substring(10, 14);
-              String thn_n4_n5 =
-                  isinaker[index = 0].tahun.substring(15, 19)+"-"+isinaker[index = 0].tahun.substring(20, 24);
-  
+              String thn_n2_n3 = '${isinaker[index = 0].tahun.substring(5, 9)}-${isinaker[index = 0].tahun.substring(10, 14)}';
+              String thn_n4_n5 = '${isinaker[index = 0].tahun.substring(15, 19)}-${isinaker[index = 0].tahun.substring(20, 24)}';
+           
               return DefaultTabController(
                 length: 3,
                 child: Scaffold(

@@ -313,7 +313,8 @@ class FixedColumnWidget extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return DataTable(
       columnSpacing: 10,
-      dataRowHeight: screenHeight * 0.028,
+      dataRowMinHeight: screenHeight * 0.028,
+      dataRowMaxHeight: screenHeight * 0.028,
       headingRowColor: WidgetStateProperty.all(Colors.green[300]),
       decoration: const BoxDecoration(
         border: Border(right: BorderSide(color: Colors.grey, width: 0)),
@@ -588,7 +589,8 @@ class ScrollableColumnWidget extends StatelessWidget {
         child: DataTable(
           headingRowColor: WidgetStateProperty.all(Colors.green[300]),
           columnSpacing: 40,
-          dataRowHeight: screenHeight * 0.028,
+          dataRowMinHeight: screenHeight * 0.028,
+          dataRowMaxHeight: screenHeight * 0.028,
           decoration: const BoxDecoration(
             border: Border(right: BorderSide(color: Colors.grey, width: 0)),
           ),

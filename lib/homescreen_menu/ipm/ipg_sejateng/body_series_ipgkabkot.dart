@@ -33,16 +33,10 @@ class _BodySeriesIpgKabkotState extends State<BodySeriesIpgKabkot> {
               String tahunN1 = isiipgkabkot[index = 0].tahun.substring(0, 4);
 
               //tahun n-3 dan n-2
-              String tahunN2N3 = isiipgkabkot[index = 0].tahun.substring(5, 9) +
-                  "-" +
-                  isiipgkabkot[index = 0].tahun.substring(10, 14);
-
+              String tahunN2N3 = '${isiipgkabkot[index = 0].tahun.substring(5, 9)}-${isiipgkabkot[index = 0].tahun.substring(10, 14)}';
               //tahun n-1 dan n
-              String tahunN4N5 =
-                  isiipgkabkot[index = 0].tahun.substring(15, 19) +
-                      "-" +
-                      isiipgkabkot[index = 0].tahun.substring(20, 24);
-
+              String tahunN4N5 = '${isiipgkabkot[index = 0].tahun.substring(15, 19)}-${isiipgkabkot[index = 0].tahun.substring(20, 24)}';
+                         
               return DefaultTabController(
                 length: 3,
                 child: Scaffold(

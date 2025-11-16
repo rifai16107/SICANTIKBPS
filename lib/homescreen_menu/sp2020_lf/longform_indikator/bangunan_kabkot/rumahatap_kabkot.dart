@@ -116,7 +116,8 @@ class FixedColumnWidget extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return DataTable(
       columnSpacing: 10,
-      dataRowHeight: screenHeight * 0.028,
+      dataRowMinHeight: screenHeight * 0.028,
+      dataRowMaxHeight: screenHeight * 0.028,
       headingRowColor: WidgetStateProperty.all(
         const Color.fromRGBO(34, 150, 243, 1),
       ),
@@ -548,7 +549,8 @@ class ScrollableColumnWidget extends StatelessWidget {
                     ),
                   ),
                   columnSpacing: 10,
-                  dataRowHeight: screenHeight * 0.028,
+                  dataRowMinHeight: screenHeight * 0.028,
+                  dataRowMaxHeight: screenHeight * 0.028,
                   headingTextStyle: const TextStyle(
                     //fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.w500,
