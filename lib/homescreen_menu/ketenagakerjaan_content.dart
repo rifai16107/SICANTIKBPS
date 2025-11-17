@@ -23,8 +23,12 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('KETENAGAKERJAAN', style: TextStyle(fontSize: 16)),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
+        title: const Text(
+          'KETENAGAKERJAAN',
+          style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -348,10 +352,10 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
               child: Column(
                 children: [
                   Flexible(
-                    flex: 3,
+                    flex: 1,
                     fit: FlexFit.tight,
                     child: Container(
-                      height: 100,
+                      height: 0.1 * screenHeight,
                       color: Colors.black,
                       child: const Center(
                         child: Padding(
@@ -376,16 +380,15 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                 ],
               ),
             ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(39, 101, 182, 0.882),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -394,40 +397,50 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.1,
-                  child: const Row(
-                    children: [
-                      Flexible(
-                        flex: 10,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Kondisi Ketenagakerjaan Kabupaten Cilacap",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.12,
+                          child: Text(
+                            'Kondisi Ketenagakerjaan Kabupaten Cilacap',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(236, 138, 20, 0.882),
-                  ),
-                ),
-                onPressed: () {
+            const Divider(height: 3, color: Colors.transparent),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -436,30 +449,42 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.1,
-                  child: const Row(
-                    children: [
-                      Flexible(
-                        flex: 10,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Kondisi Ketenagakerjaan Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_jateng.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.12,
+                          child: Text(
+                            'Kondisi Ketenagakerjaan Kabupaten/Kota\n'
+                            'Di Jawa Tengah',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 50, color: Colors.transparent),
+            const Divider(height: 5, color: Colors.transparent),
             Flexible(
               flex: 1,
               fit: FlexFit.tight,

@@ -62,7 +62,7 @@ class _jumlahPendudukState extends State<jumlahPenduduk> {
                         child: Column(
                           children: [
                             Flexible(
-                              flex: 3,
+                              flex: 2,
                               fit: FlexFit.tight,
                               child: Container(
                                 color: Colors.black,
