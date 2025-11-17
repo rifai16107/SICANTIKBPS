@@ -77,7 +77,7 @@ class _IsiAkUmurDState extends State<IsiAkUmurD> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Kelompok Umur                (Tahun)",
@@ -94,7 +94,7 @@ class _IsiAkUmurDState extends State<IsiAkUmurD> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Lk",
@@ -111,7 +111,7 @@ class _IsiAkUmurDState extends State<IsiAkUmurD> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Pr",
@@ -128,7 +128,7 @@ class _IsiAkUmurDState extends State<IsiAkUmurD> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Lk+Pr",
@@ -349,7 +349,7 @@ class _IsiAkUmurDState extends State<IsiAkUmurD> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: const Center(
                                     child: Text(
                                       "Total",
@@ -364,7 +364,7 @@ class _IsiAkUmurDState extends State<IsiAkUmurD> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   //child: Center(
                                   child: Text(
                                     totalLk.toStringAsFixed(2),
@@ -379,7 +379,7 @@ class _IsiAkUmurDState extends State<IsiAkUmurD> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   //child: Center(
                                   child: Text(
                                     totalPr.toStringAsFixed(2),
@@ -394,7 +394,7 @@ class _IsiAkUmurDState extends State<IsiAkUmurD> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   //child: Center(
                                   child: Text(
                                     totalLkPr.toStringAsFixed(2),

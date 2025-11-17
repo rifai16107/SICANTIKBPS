@@ -119,6 +119,8 @@ class _AKKerjaUmurKelaminState extends State<AKKerjaUmurKelamin> {
                                       ),
                                       toolbarHeight: screenHeight * 0.01,
                                       bottom: TabBar(
+                                        labelColor: Colors.orange,
+                                        unselectedLabelColor: Colors.grey,
                                         indicatorColor: Colors.white,
                                         tabs: [
                                           Tab(text: th1),

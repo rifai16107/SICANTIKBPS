@@ -85,7 +85,7 @@ class _IsiAkPendidikanBState extends State<IsiAkPendidikanB> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Tingkat Pendidikan",
@@ -102,7 +102,7 @@ class _IsiAkPendidikanBState extends State<IsiAkPendidikanB> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Lk",
@@ -119,7 +119,7 @@ class _IsiAkPendidikanBState extends State<IsiAkPendidikanB> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Pr",
@@ -136,7 +136,7 @@ class _IsiAkPendidikanBState extends State<IsiAkPendidikanB> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Lk+Pr",
@@ -421,7 +421,7 @@ class _IsiAkPendidikanBState extends State<IsiAkPendidikanB> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: const Center(
                                     child: Text(
                                       "Total",
@@ -436,7 +436,7 @@ class _IsiAkPendidikanBState extends State<IsiAkPendidikanB> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: Center(
                                     child: Text(
                                       totalLK.toStringAsFixed(2),
@@ -451,7 +451,7 @@ class _IsiAkPendidikanBState extends State<IsiAkPendidikanB> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: Center(
                                     child: Text(
                                       totalPR.toStringAsFixed(2),
@@ -466,7 +466,7 @@ class _IsiAkPendidikanBState extends State<IsiAkPendidikanB> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: Center(
                                     child: Text(
                                       totalLKPR.toStringAsFixed(2),

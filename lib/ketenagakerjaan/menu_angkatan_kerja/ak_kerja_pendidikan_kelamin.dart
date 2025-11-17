@@ -121,6 +121,8 @@ class _AKKerjaPendidikanKelaminState extends State<AKKerjaPendidikanKelamin> {
                                       ),
                                       toolbarHeight: screenHeight * 0.01,
                                       bottom: TabBar(
+                                        labelColor: Colors.orange,
+                                        unselectedLabelColor: Colors.grey,
                                         indicatorColor: Colors.white,
                                         tabs: [
                                           Tab(text: th1),

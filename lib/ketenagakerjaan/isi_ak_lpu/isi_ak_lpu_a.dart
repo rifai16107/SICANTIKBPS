@@ -74,7 +74,7 @@ class _IsiAkLpuAState extends State<IsiAkLpuA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Lapangan Pekerjaan     Utama",
@@ -91,7 +91,7 @@ class _IsiAkLpuAState extends State<IsiAkLpuA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Lk",
@@ -108,7 +108,7 @@ class _IsiAkLpuAState extends State<IsiAkLpuA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Pr",
@@ -125,7 +125,7 @@ class _IsiAkLpuAState extends State<IsiAkLpuA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Lk+Pr",
@@ -346,7 +346,7 @@ class _IsiAkLpuAState extends State<IsiAkLpuA> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: const Center(
                                     child: Text(
                                       "Total",
@@ -361,7 +361,7 @@ class _IsiAkLpuAState extends State<IsiAkLpuA> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: Center(
                                     child: Text(
                                       totalLK.toStringAsFixed(2),
@@ -376,7 +376,7 @@ class _IsiAkLpuAState extends State<IsiAkLpuA> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: Center(
                                     child: Text(
                                       totalPR.toStringAsFixed(2),
@@ -391,7 +391,7 @@ class _IsiAkLpuAState extends State<IsiAkLpuA> {
                                 child: Container(
                                   padding: const EdgeInsets.only(
                                       top: 5, left: 5, right: 5),
-                                  height: screenHeight * 0.03,
+                                  height: screenHeight * 0.033,
                                   child: Center(
                                     child: Text(
                                       totalLKPR.toStringAsFixed(2),

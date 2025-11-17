@@ -24,8 +24,10 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ANGKATAN KERJA', style: TextStyle(fontSize: 16)),
+        title: const Text('ANGKATAN KERJA', style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -37,16 +39,10 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
+            
             Flexible(
-              flex: 2,
-              fit: FlexFit.tight,
-              child: Column(
-                children: [
-                  Flexible(
-                    flex: 3,
-                    fit: FlexFit.tight,
                     child: Container(
-                      height: 100,
+                      height: 0.12 * screenHeight,
                       color: Colors.black,
                       child: const Center(
                         child: Padding(
@@ -62,25 +58,21 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                         ),
                       ),
                     ),
-                  ),
-                  Flexible(
-                    fit: FlexFit.tight,
-                    flex: 2,
-                    child: Container(height: 100, color: Colors.transparent),
-                  ),
-                ],
-              ),
             ),
             Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+                    fit: FlexFit.tight,
+                    flex: 1,
+                    child: Container(height: 20, color: Colors.transparent),
+            ),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -89,40 +81,52 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.1,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Persentase Penduduk yang Bekerja menurut Kelompok Umur dan Jenis Kelamin",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          padding: const EdgeInsets.only(right: 20),
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.10,
+                          child: Text(
+                            'Persentase Penduduk yang Bekerja menurut\n' 
+                            'Kelompok Umur dan Jenis Kelamin',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            ), 
+            const Divider(height: 3, color: Colors.transparent),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -131,40 +135,52 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.1,
-                  child: Row(
-                    children: [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Persentase Penduduk yang Bekerja menurut Tingkat Pendidikan dan Jenis Kelamin",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          padding: const EdgeInsets.only(right: 20),
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.10,
+                          child: Text(
+                            'Persentase Penduduk yang Bekerja menurut\n'
+                            'Tingkat Pendidikan dan Jenis Kelamin',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            const Divider(height: 3, color: Colors.transparent),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -173,40 +189,52 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.1,
-                  child: Row(
-                    children: [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Persentase Penduduk yang Bekerja menurut Lapangan Pekerjaan Utama dan Jenis Kelamin",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          padding: const EdgeInsets.only(right: 20),
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.10,
+                          child: Text(
+                            'Persentase Penduduk yang Bekerja menurut\n'
+                            'Lapangan Pekerjaan Utama dan Jenis Kelamin',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            const Divider(height: 3, color: Colors.transparent),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -215,40 +243,52 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.1,
-                  child: Row(
-                    children: [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Tingkat Pengangguran Terbuka menurut Jenis Kelamin",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          padding: const EdgeInsets.only(right: 20),
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.10,
+                          child: Text(
+                            'Tingkat Pengangguran Terbuka\n' 
+                            'menurut Jenis Kelamin',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            const Divider(height: 3, color: Colors.transparent),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -257,25 +297,38 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.1,
-                  child: Row(
-                    children: [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Tingkat Kesempatan Kerja menurut Jenis Kelamin",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          padding: const EdgeInsets.only(right: 20),
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.10,
+                          child: Text(
+                            'Tingkat Kesempatan Kerja\n'
+                            'menurut Jenis Kelamin',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

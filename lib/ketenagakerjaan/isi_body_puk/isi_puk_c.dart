@@ -68,7 +68,7 @@ class _IsiPukCState extends State<IsiPukC> {
                           fit: FlexFit.tight,
                           child: Container(
                             height: screenHeight * 0.05,
-                            color: Colors.green,
+                            color: Colors.orange,
                             child: const Center(
                               child: Text(
                                 "Jenis Kegiatan",
@@ -83,7 +83,7 @@ class _IsiPukCState extends State<IsiPukC> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            color: Colors.green,
+                            color: Colors.orange,
                             height: screenHeight * 0.05,
                             child: const Center(
                               child: Text(
@@ -99,7 +99,7 @@ class _IsiPukCState extends State<IsiPukC> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            color: Colors.green,
+                            color: Colors.orange,
                             height: screenHeight * 0.05,
                             child: const Center(
                               child: Text(
@@ -115,7 +115,7 @@ class _IsiPukCState extends State<IsiPukC> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            color: Colors.green,
+                            color: Colors.orange,
                             height: screenHeight * 0.05,
                             child: const Center(
                               child: Text(
@@ -521,7 +521,7 @@ class _IsiPukCState extends State<IsiPukC> {
                           fit: FlexFit.tight,
                           child: Container(
                             height: screenHeight * 0.05,
-                            color: Colors.green,
+                            color: Colors.orange,
                             //padding: const EdgeInsets.only(
                                 //top: 10, left: 5, right: 5),
                             child: const Center(
@@ -537,7 +537,7 @@ class _IsiPukCState extends State<IsiPukC> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            color: Colors.green,
+                            color: Colors.orange,
                             height: screenHeight * 0.05,
                             child: Center(
                               child: Text(
@@ -553,7 +553,7 @@ class _IsiPukCState extends State<IsiPukC> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            color: Colors.green,
+                            color: Colors.orange,
                             height: screenHeight * 0.05,
                             child: Center(
                               child: Text(
@@ -569,7 +569,7 @@ class _IsiPukCState extends State<IsiPukC> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            color: Colors.green,
+                            color: Colors.orange,
                             height: screenHeight * 0.05,
                             child: Center(
                               child: Text(

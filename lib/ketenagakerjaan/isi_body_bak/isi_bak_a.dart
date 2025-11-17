@@ -99,7 +99,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Jenis Kegiatan",
@@ -114,7 +114,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   height: screenHeight * 0.05,
                                   child: const Center(
                                     child: Text(
@@ -130,7 +130,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   height: screenHeight * 0.05,
                                   child: const Center(
                                     child: Text(
@@ -146,7 +146,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   height: screenHeight * 0.05,
                                   child: const Center(
                                     child: Text(
@@ -692,7 +692,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                       top: 10, left: 5, right: 0),
                                   child: const Text(
@@ -708,7 +708,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                       top: 10, left: 5, right: 0),
                                   height: screenHeight * 0.05,
@@ -727,7 +727,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                       top: 10, left: 5, right: 5),
                                   height: screenHeight * 0.05,
@@ -746,7 +746,7 @@ class _IsiBakAState extends State<IsiBakA> {
                                 flex: 1,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                       top: 10, left: 5, right: 5),
                                   height: screenHeight * 0.05,

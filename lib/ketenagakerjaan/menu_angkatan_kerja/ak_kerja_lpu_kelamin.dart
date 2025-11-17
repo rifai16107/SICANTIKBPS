@@ -119,6 +119,8 @@ class _AKKerjaLPUKelaminState extends State<AKKerjaLPUKelamin> {
                                       ),
                                       toolbarHeight: screenHeight * 0.01,
                                       bottom: TabBar(
+                                        labelColor: Colors.orange,
+                                        unselectedLabelColor: Colors.grey,
                                         indicatorColor: Colors.white,
                                         tabs: [
                                           Tab(text: th1),

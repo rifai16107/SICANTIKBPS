@@ -346,16 +346,9 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: Column(
-                children: [
-                  Flexible(
-                    flex: 1,
-                    fit: FlexFit.tight,
+                Flexible(
                     child: Container(
-                      height: 0.1 * screenHeight,
+                      height: 0.12 * screenHeight,
                       color: Colors.black,
                       child: const Center(
                         child: Padding(
@@ -375,11 +368,10 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
                   Flexible(
                     fit: FlexFit.tight,
                     flex: 1,
-                    child: Container(height: 100, color: Colors.transparent),
+                    child: Container(height: 20, color: Colors.transparent),
                   ),
-                ],
-              ),
-            ),
+                
+            
             Card(
               elevation: 20,
               color: const Color.fromRGBO(236, 138, 20, 0.882),

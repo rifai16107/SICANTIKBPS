@@ -115,9 +115,8 @@ class _AkTPTState extends State<AkTPT> {
 
                 tooltip = TooltipBehavior(enable: true);
 
-                return Container(
-                  height: screenHeight,
-                  color: Colors.transparent,
+                return Expanded(
+                 
                   child: Column(
                     children: [
                       Container(
@@ -139,8 +138,8 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 3,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  height: screenHeight * 0.065,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Jenis Kelamin",
@@ -157,8 +156,8 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th1.toString(),
@@ -174,8 +173,8 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th2.toString(),
@@ -191,8 +190,8 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th3.toString(),
@@ -208,8 +207,8 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th4.toString(),
@@ -225,8 +224,8 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th5.toString(),
@@ -446,7 +445,7 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 3,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 0,
                                     left: 5,
@@ -465,7 +464,7 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -483,7 +482,7 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -501,7 +500,7 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -519,7 +518,7 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -537,7 +536,7 @@ class _AkTPTState extends State<AkTPT> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -581,7 +580,7 @@ class _AkTPTState extends State<AkTPT> {
                                       color: Colors.transparent,
                                     ),
                                     SizedBox(
-                                      height: screenHeight * 0.55,
+                                      height: screenHeight * 0.60,
                                       width: screenWidth,
                                       child: SfCartesianChart(
                                         title: ChartTitle(
@@ -636,7 +635,7 @@ class _AkTPTState extends State<AkTPT> {
                                             dataLabelSettings:
                                                 const DataLabelSettings(
                                                   // Renders the data label
-                                                  isVisible: true,
+                                                  isVisible: false,
                                                   textStyle: TextStyle(
                                                     fontSize: 10,
                                                   ),
@@ -662,7 +661,7 @@ class _AkTPTState extends State<AkTPT> {
                                             dataLabelSettings:
                                                 const DataLabelSettings(
                                                   // Renders the data label
-                                                  isVisible: true,
+                                                  isVisible: false,
                                                   textStyle: TextStyle(
                                                     fontSize: 10,
                                                   ),
@@ -675,7 +674,7 @@ class _AkTPTState extends State<AkTPT> {
                                               80,
                                             ),
                                           ),
-                                          ColumnSeries<_ChartData, String>(
+                                          LineSeries<_ChartData, String>(
                                             dataSource: data,
                                             xValueMapper:
                                                 (_ChartData data, _) => data.x,
@@ -685,6 +684,9 @@ class _AkTPTState extends State<AkTPT> {
                                             //sortingOrder: SortingOrder.descending,
                                             //sortFieldValueMapper: (_ChartData data, _) =>
                                             //data.y,
+                                            markerSettings: const MarkerSettings(
+                                              isVisible: true,
+                                              shape: DataMarkerType.diamond),
                                             dataLabelSettings:
                                                 const DataLabelSettings(
                                                   // Renders the data label
@@ -693,13 +695,9 @@ class _AkTPTState extends State<AkTPT> {
                                                     fontSize: 10,
                                                   ),
                                                 ),
+                                            width: 3,
                                             name: 'TPT Lk+Pr',
-                                            color: const Color.fromARGB(
-                                              255,
-                                              147,
-                                              138,
-                                              236,
-                                            ),
+                                            color: const Color.fromARGB(255, 192, 47, 22),
                                           ),
                                         ],
                                       ),

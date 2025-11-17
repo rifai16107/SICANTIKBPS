@@ -37,7 +37,7 @@ class _BukanAngkatanKerja extends State<BukanAngkatanKerja> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.10,
+              height: screenHeight * 0.11,
               width: screenWidth,
               color: Colors.black,
               child: const Center(

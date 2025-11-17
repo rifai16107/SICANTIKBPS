@@ -115,9 +115,7 @@ class _AkTKKState extends State<AkTKK> {
 
                 tooltip = TooltipBehavior(enable: true);
 
-                return Container(
-                  padding: const EdgeInsets.all(2),
-                  height: screenHeight,
+                return Expanded(
                   //color: Colors.transparent,
                   child: Column(
                     children: [
@@ -140,8 +138,8 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 3,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  height: screenHeight * 0.06,
-                                  color: Colors.green,
+                                  height: screenHeight * 0.065,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "Jenis Kelamin",
@@ -158,8 +156,8 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th1.toString(),
@@ -175,8 +173,8 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th2.toString(),
@@ -192,8 +190,8 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th3.toString(),
@@ -209,8 +207,8 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th4.toString(),
@@ -226,8 +224,8 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
-                                  height: screenHeight * 0.06,
+                                  color: Colors.orange,
+                                  height: screenHeight * 0.065,
                                   child: Center(
                                     child: Text(
                                       th5.toString(),
@@ -447,7 +445,7 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 3,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 0,
                                     left: 5,
@@ -466,7 +464,7 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -484,7 +482,7 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -502,7 +500,7 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -520,7 +518,7 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -538,7 +536,7 @@ class _AkTKKState extends State<AkTKK> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   padding: const EdgeInsets.only(
                                     top: 10,
                                     left: 5,
@@ -582,7 +580,7 @@ class _AkTKKState extends State<AkTKK> {
                                       color: Colors.transparent,
                                     ),
                                     SizedBox(
-                                      height: screenHeight * 0.55,
+                                      height: screenHeight * 0.605,
                                       width: screenWidth,
                                       child: SfCartesianChart(
                                         title: ChartTitle(
@@ -637,7 +635,7 @@ class _AkTKKState extends State<AkTKK> {
                                             dataLabelSettings:
                                                 const DataLabelSettings(
                                                   // Renders the data label
-                                                  isVisible: true,
+                                                  isVisible: false,
                                                   textStyle: TextStyle(
                                                     fontSize: 10,
                                                   ),
@@ -663,7 +661,7 @@ class _AkTKKState extends State<AkTKK> {
                                             dataLabelSettings:
                                                 const DataLabelSettings(
                                                   // Renders the data label
-                                                  isVisible: true,
+                                                  isVisible: false,
                                                   textStyle: TextStyle(
                                                     fontSize: 10,
                                                   ),
@@ -676,7 +674,7 @@ class _AkTKKState extends State<AkTKK> {
                                               80,
                                             ),
                                           ),
-                                          ColumnSeries<_ChartData, String>(
+                                          LineSeries<_ChartData, String>(
                                             dataSource: data,
                                             xValueMapper:
                                                 (_ChartData data, _) => data.x,
@@ -686,6 +684,9 @@ class _AkTKKState extends State<AkTKK> {
                                             //sortingOrder: SortingOrder.descending,
                                             //sortFieldValueMapper: (_ChartData data, _) =>
                                             //data.y,
+                                            markerSettings: const MarkerSettings(
+                                              isVisible: true,
+                                              shape: DataMarkerType.diamond),
                                             dataLabelSettings:
                                                 const DataLabelSettings(
                                                   // Renders the data label
@@ -694,13 +695,9 @@ class _AkTKKState extends State<AkTKK> {
                                                     fontSize: 10,
                                                   ),
                                                 ),
+                                             width: 3,
                                             name: 'TKK Lk+Pr',
-                                            color: const Color.fromARGB(
-                                              255,
-                                              147,
-                                              138,
-                                              236,
-                                            ),
+                                            color: const Color.fromARGB(255, 192, 47, 22),
                                           ),
                                         ],
                                       ),
