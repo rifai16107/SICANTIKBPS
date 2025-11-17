@@ -96,7 +96,7 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                         ),
                         const SizedBox(width: 2),
                         Container(
-                          padding: const EdgeInsets.only(right: 20),
+                          padding: const EdgeInsets.only(right: 10),
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
                           height: screenHeight * 0.10,
@@ -150,7 +150,7 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                         ),
                         const SizedBox(width: 2),
                         Container(
-                          padding: const EdgeInsets.only(right: 20),
+                          padding: const EdgeInsets.only(right: 10),
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
                           height: screenHeight * 0.10,
@@ -204,7 +204,7 @@ class _AngkatanKerjaState extends State<AngkatanKerja> {
                         ),
                         const SizedBox(width: 2),
                         Container(
-                          padding: const EdgeInsets.only(right: 20),
+                          padding: const EdgeInsets.only(right: 10),
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
                           height: screenHeight * 0.10,
