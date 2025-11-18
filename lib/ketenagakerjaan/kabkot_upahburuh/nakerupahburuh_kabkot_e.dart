@@ -2901,6 +2901,7 @@ class _NakerkabkotUpahEState extends State<NakerkabkotUpahE> {
       floatingActionButton: SpeedDial(
           icon: Icons.bar_chart_outlined,
           visible: true,
+          foregroundColor: Colors.orange,
           //mini:true,
           //animatedIcon:AnimatedIcons.menu_close,
           activeIcon: Icons.close,

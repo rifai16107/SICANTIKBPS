@@ -23,9 +23,10 @@ class _BodyGrafikUpahlkprkabkot extends State<BodyGrafikUpahlkprkabkot> {
       appBar: AppBar(
         title: const Text(
           'Rata-Rata Upah Kabupaten/Kota di Jawa Tengah',
-          style: TextStyle(fontSize: 16),
+         style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

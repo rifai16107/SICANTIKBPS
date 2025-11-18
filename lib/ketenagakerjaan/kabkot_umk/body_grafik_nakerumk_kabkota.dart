@@ -23,9 +23,10 @@ class _BodyGrafikNakerumkkabkot extends State<BodyGrafikNakerumkkabkot> {
       appBar: AppBar(
         title: const Text(
           'UMK Kabupaten/Kota di Jawa Tengah',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -43,7 +44,7 @@ class _BodyGrafikNakerumkkabkot extends State<BodyGrafikNakerumkkabkot> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.20,
+                height: screenHeight * 1.45,
                 width: screenWidth * 0.96,
                 child: Column(
                   children: [

@@ -20,8 +20,9 @@ class _SeriesNakerKegiatanKabkot extends State<SeriesNakerKegiatanKabkot> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text("PENDUDUK BEKERJA", style: TextStyle(fontSize: 16)),
+        title: const Text("PENDUDUK BEKERJA", style: TextStyle(fontSize: 16, color: Colors.white)),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -30,10 +31,10 @@ class _SeriesNakerKegiatanKabkot extends State<SeriesNakerKegiatanKabkot> {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(2),
+        padding: const EdgeInsets.all(1),
         children: [
           Container(
-            height: 65,
+            height: 75,
             color: Colors.black,
             child: const Column(
               children: [
@@ -42,7 +43,7 @@ class _SeriesNakerKegiatanKabkot extends State<SeriesNakerKegiatanKabkot> {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 14,
+                    fontSize: 13,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -51,7 +52,7 @@ class _SeriesNakerKegiatanKabkot extends State<SeriesNakerKegiatanKabkot> {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.normal,
-                    fontSize: 12,
+                    fontSize: 11,
                   ),
                 ),
               ],

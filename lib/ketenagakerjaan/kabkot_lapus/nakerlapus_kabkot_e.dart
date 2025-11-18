@@ -79,8 +79,8 @@ class FixedColumnWidget extends StatelessWidget {
       columnSpacing: 5,
       dataRowMinHeight: screenHeight * 0.028,
       dataRowMaxHeight: screenHeight * 0.028,
-      headingRowColor: WidgetStateProperty.all(
-        const Color.fromRGBO(34, 150, 243, 1),
+     headingRowColor: WidgetStateProperty.all(
+        const Color.fromRGBO(243, 145, 34, 1),
       ),
       decoration: const BoxDecoration(
         border: Border(right: BorderSide(color: Colors.grey, width: 1)),
@@ -524,7 +524,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                     color: Colors.white,
                   ),
                   headingRowColor: WidgetStateColor.resolveWith(
-                    (states) => const Color.fromRGBO(34, 150, 243, 1),
+                    (states) => const Color.fromRGBO(243, 145, 34, 1),
                   ),
                   columns: [
                     DataColumn(

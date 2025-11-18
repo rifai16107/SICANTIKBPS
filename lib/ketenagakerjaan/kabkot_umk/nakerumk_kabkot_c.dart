@@ -2218,7 +2218,7 @@ class _NakerkabkotUmkCState extends State<NakerkabkotUmkC> {
                               padding: const EdgeInsets.only(
                                 top: 4,
                                 left: 14,
-                                bottom: 65,
+                                bottom: 80,
                               ),
                               child: const Text(
                                 "UMK 2025 ditetapkan berdasarkan Surat Keputusan Gubernur Jawa Tengah Nomor 561 / 45 Tahun 2024 tanggal 18 Desember 2024 .",
@@ -2246,12 +2246,13 @@ class _NakerkabkotUmkCState extends State<NakerkabkotUmkC> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniStartFloat,
       floatingActionButton: SpeedDial(
-          icon: Icons.bar_chart_outlined,
+          icon: Icons.bar_chart,
           visible: true,
+          foregroundColor: Colors.orange,
           //mini:true,
           //animatedIcon:AnimatedIcons.menu_close,
           activeIcon: Icons.close,
-          buttonSize: const Size(45, 45),
+          buttonSize: const Size(50, 50),
           curve: Curves.elasticInOut,
           direction: SpeedDialDirection.right,
           //animatedIconTheme: const IconThemeData(size: 25),

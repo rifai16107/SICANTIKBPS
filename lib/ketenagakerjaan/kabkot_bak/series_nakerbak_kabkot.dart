@@ -21,9 +21,10 @@ class _SeriesNakerBakkabkot extends State<SeriesNakerBakkabkot> {
       appBar: AppBar(
         title: const Text(
           "BUKAN ANGKATAN KERJA (BAK)",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -35,7 +36,7 @@ class _SeriesNakerBakkabkot extends State<SeriesNakerBakkabkot> {
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: 65,
+            height: 70,
             color: Colors.black,
             child: const Column(
               children: [
@@ -44,7 +45,7 @@ class _SeriesNakerBakkabkot extends State<SeriesNakerBakkabkot> {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 14,
+                    fontSize: 13,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -53,7 +54,7 @@ class _SeriesNakerBakkabkot extends State<SeriesNakerBakkabkot> {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.normal,
-                    fontSize: 12,
+                    fontSize: 11,
                   ),
                 ),
               ],
