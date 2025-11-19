@@ -115,7 +115,7 @@ class _AkTKKState extends State<AkTKK> {
 
                 tooltip = TooltipBehavior(enable: true);
 
-                return Expanded(
+                return SizedBox(
                   //color: Colors.transparent,
                   child: Column(
                     children: [

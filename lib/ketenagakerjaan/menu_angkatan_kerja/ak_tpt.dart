@@ -115,7 +115,7 @@ class _AkTPTState extends State<AkTPT> {
 
                 tooltip = TooltipBehavior(enable: true);
 
-                return Expanded(
+                return SizedBox(
                  
                   child: Column(
                     children: [

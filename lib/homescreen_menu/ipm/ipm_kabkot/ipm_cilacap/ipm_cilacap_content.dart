@@ -133,7 +133,9 @@ class _IpmKabContentState extends State<IpmKabContent> {
                 tooltip2 = TooltipBehavior(enable: true);
                 tooltip3 = TooltipBehavior(enable: true);
 
-                return Expanded(
+                return SizedBox(
+                  //height: screenHeight,
+                  //color: Colors.transparent,
                   child: Column(
                     children: [
                       // IPM UHH LFSP2020
@@ -580,7 +582,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                     left: 10,
                                     right: 0,
                                   ),
-                                  height: screenHeight * 0.05,
+                                  height: screenHeight * 0.06,
                                   child: const Center(
                                     child: Text(
                                       "Pengeluaran per Kapita (juta rp)",
