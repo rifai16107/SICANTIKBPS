@@ -35,8 +35,11 @@ class ModelNakerKabkotFormalin {
   final String wilayah;
   final String tahun;
 
-  ModelNakerKabkotFormalin(
-      {required this.id, required this.wilayah, required this.tahun});
+  ModelNakerKabkotFormalin({
+    required this.id,
+    required this.wilayah,
+    required this.tahun,
+  });
 
   factory ModelNakerKabkotFormalin.fromJson(Map<String, dynamic> json) {
     return ModelNakerKabkotFormalin(
@@ -61,7 +64,8 @@ class _BodySeriesNakerkabkotFormalinState
       RepositoryNakerKabkotFormalin();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -92,33 +96,27 @@ class _BodySeriesNakerkabkotFormalinState
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: thn_n1,
-                        ),
-                        Tab(
-                          text: thn_n2,
-                        ),
-                        Tab(
-                          text: thn_n3,
-                        ),
-                        Tab(
-                          text: thn_n4,
-                        ),
-                        Tab(
-                          text: thn_n5,
-                        ),
+                        Tab(text: thn_n1),
+                        Tab(text: thn_n2),
+                        Tab(text: thn_n3),
+                        Tab(text: thn_n4),
+                        Tab(text: thn_n5),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    NakerkabkotFormalinA(),
-                    NakerkabkotFormalinB(),
-                    NakerkabkotFormalinC(),
-                    NakerkabkotFormalinD(),
-                    NakerkabkotFormalinE()
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      NakerkabkotFormalinA(),
+                      NakerkabkotFormalinB(),
+                      NakerkabkotFormalinC(),
+                      NakerkabkotFormalinD(),
+                      NakerkabkotFormalinE(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -127,11 +125,7 @@ class _BodySeriesNakerkabkotFormalinState
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

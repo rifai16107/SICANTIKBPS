@@ -36,7 +36,7 @@ class _SeriesNakerBakkabkot extends State<SeriesNakerBakkabkot> {
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: 70,
+            height: 74,
             color: Colors.black,
             child: const Column(
               children: [

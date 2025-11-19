@@ -36,14 +36,14 @@ class _SeriesNakerkabkotUpah extends State<SeriesNakerkabkotUpah> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.094,
+              height: screenHeight * 0.099,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
                     "Rata-Rata Upah Buruh/Karyawan/Pegawai Sebulan Menurut Jenis Kelamin dan Kabupaten/Kota di Provinsi Jawa Tengah (Rupiah)",
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(color: Colors.white, fontSize: 14),
                     textAlign: TextAlign.center,
                   ),
                 ),

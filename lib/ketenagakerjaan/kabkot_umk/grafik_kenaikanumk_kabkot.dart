@@ -37,15 +37,16 @@ class ModelNakerKabkotUmk {
   final String umk_n5;
   final String tahun;
 
-  ModelNakerKabkotUmk(
-      {required this.id,
-      required this.wilayah,
-      required this.umk_n1,
-      required this.umk_n2,
-      required this.umk_n3,
-      required this.umk_n4,
-      required this.umk_n5,
-      required this.tahun});
+  ModelNakerKabkotUmk({
+    required this.id,
+    required this.wilayah,
+    required this.umk_n1,
+    required this.umk_n2,
+    required this.umk_n3,
+    required this.umk_n4,
+    required this.umk_n5,
+    required this.tahun,
+  });
 
   factory ModelNakerKabkotUmk.fromJson(Map<String, dynamic> json) {
     return ModelNakerKabkotUmk(
@@ -76,10 +77,12 @@ class _GrafikKenaikanumkkabkotState extends State<GrafikKenaikanumkkabkot> {
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -126,143 +129,178 @@ class _GrafikKenaikanumkkabkotState extends State<GrafikKenaikanumkkabkot> {
               String wilayah34 = isinaker[index = 33].wilayah;
               String wilayah35 = isinaker[index = 34].wilayah;
 
-              double naikUmk1 = (double.parse(isinaker[index = 0].umk_n5) /
+              double naikUmk1 =
+                  (double.parse(isinaker[index = 0].umk_n5) /
                           double.parse(isinaker[index = 0].umk_n4)) *
                       100 -
                   100;
-              double naikUmk2 = (double.parse(isinaker[index = 1].umk_n5) /
+              double naikUmk2 =
+                  (double.parse(isinaker[index = 1].umk_n5) /
                           double.parse(isinaker[index = 1].umk_n4)) *
                       100 -
                   100;
-              double naikUmk3 = (double.parse(isinaker[index = 2].umk_n5) /
+              double naikUmk3 =
+                  (double.parse(isinaker[index = 2].umk_n5) /
                           double.parse(isinaker[index = 2].umk_n4)) *
                       100 -
                   100;
-              double naikUmk4 = (double.parse(isinaker[index = 3].umk_n5) /
+              double naikUmk4 =
+                  (double.parse(isinaker[index = 3].umk_n5) /
                           double.parse(isinaker[index = 3].umk_n4)) *
                       100 -
                   100;
-              double naikUmk5 = (double.parse(isinaker[index = 4].umk_n5) /
+              double naikUmk5 =
+                  (double.parse(isinaker[index = 4].umk_n5) /
                           double.parse(isinaker[index = 4].umk_n4)) *
                       100 -
                   100;
-              double naikUmk6 = (double.parse(isinaker[index = 5].umk_n5) /
+              double naikUmk6 =
+                  (double.parse(isinaker[index = 5].umk_n5) /
                           double.parse(isinaker[index = 5].umk_n4)) *
                       100 -
                   100;
-              double naikUmk7 = (double.parse(isinaker[index = 6].umk_n5) /
+              double naikUmk7 =
+                  (double.parse(isinaker[index = 6].umk_n5) /
                           double.parse(isinaker[index = 6].umk_n4)) *
                       100 -
                   100;
-              double naikUmk8 = (double.parse(isinaker[index = 7].umk_n5) /
+              double naikUmk8 =
+                  (double.parse(isinaker[index = 7].umk_n5) /
                           double.parse(isinaker[index = 7].umk_n4)) *
                       100 -
                   100;
-              double naikUmk9 = (double.parse(isinaker[index = 8].umk_n5) /
+              double naikUmk9 =
+                  (double.parse(isinaker[index = 8].umk_n5) /
                           double.parse(isinaker[index = 8].umk_n4)) *
                       100 -
                   100;
-              double naikUmk10 = (double.parse(isinaker[index = 9].umk_n5) /
+              double naikUmk10 =
+                  (double.parse(isinaker[index = 9].umk_n5) /
                           double.parse(isinaker[index = 9].umk_n4)) *
                       100 -
                   100;
-              double naikUmk11 = (double.parse(isinaker[index = 10].umk_n5) /
+              double naikUmk11 =
+                  (double.parse(isinaker[index = 10].umk_n5) /
                           double.parse(isinaker[index = 10].umk_n4)) *
                       100 -
                   100;
-              double naikUmk12 = (double.parse(isinaker[index = 11].umk_n5) /
+              double naikUmk12 =
+                  (double.parse(isinaker[index = 11].umk_n5) /
                           double.parse(isinaker[index = 11].umk_n4)) *
                       100 -
                   100;
-              double naikUmk13 = (double.parse(isinaker[index = 12].umk_n5) /
+              double naikUmk13 =
+                  (double.parse(isinaker[index = 12].umk_n5) /
                           double.parse(isinaker[index = 12].umk_n4)) *
                       100 -
                   100;
-              double naikUmk14 = (double.parse(isinaker[index = 13].umk_n5) /
+              double naikUmk14 =
+                  (double.parse(isinaker[index = 13].umk_n5) /
                           double.parse(isinaker[index = 13].umk_n4)) *
                       100 -
                   100;
-              double naikUmk15 = (double.parse(isinaker[index = 14].umk_n5) /
+              double naikUmk15 =
+                  (double.parse(isinaker[index = 14].umk_n5) /
                           double.parse(isinaker[index = 14].umk_n4)) *
                       100 -
                   100;
-              double naikUmk16 = (double.parse(isinaker[index = 15].umk_n5) /
+              double naikUmk16 =
+                  (double.parse(isinaker[index = 15].umk_n5) /
                           double.parse(isinaker[index = 15].umk_n4)) *
                       100 -
                   100;
-              double naikUmk17 = (double.parse(isinaker[index = 16].umk_n5) /
+              double naikUmk17 =
+                  (double.parse(isinaker[index = 16].umk_n5) /
                           double.parse(isinaker[index = 16].umk_n4)) *
                       100 -
                   100;
-              double naikUmk18 = (double.parse(isinaker[index = 17].umk_n5) /
+              double naikUmk18 =
+                  (double.parse(isinaker[index = 17].umk_n5) /
                           double.parse(isinaker[index = 17].umk_n4)) *
                       100 -
                   100;
-              double naikUmk19 = (double.parse(isinaker[index = 18].umk_n5) /
+              double naikUmk19 =
+                  (double.parse(isinaker[index = 18].umk_n5) /
                           double.parse(isinaker[index = 18].umk_n4)) *
                       100 -
                   100;
-              double naikUmk20 = (double.parse(isinaker[index = 19].umk_n5) /
+              double naikUmk20 =
+                  (double.parse(isinaker[index = 19].umk_n5) /
                           double.parse(isinaker[index = 19].umk_n4)) *
                       100 -
                   100;
-              double naikUmk21 = (double.parse(isinaker[index = 20].umk_n5) /
+              double naikUmk21 =
+                  (double.parse(isinaker[index = 20].umk_n5) /
                           double.parse(isinaker[index = 20].umk_n4)) *
                       100 -
                   100;
-              double naikUmk22 = (double.parse(isinaker[index = 21].umk_n5) /
+              double naikUmk22 =
+                  (double.parse(isinaker[index = 21].umk_n5) /
                           double.parse(isinaker[index = 21].umk_n4)) *
                       100 -
                   100;
-              double naikUmk23 = (double.parse(isinaker[index = 22].umk_n5) /
+              double naikUmk23 =
+                  (double.parse(isinaker[index = 22].umk_n5) /
                           double.parse(isinaker[index = 22].umk_n4)) *
                       100 -
                   100;
-              double naikUmk24 = (double.parse(isinaker[index = 23].umk_n5) /
+              double naikUmk24 =
+                  (double.parse(isinaker[index = 23].umk_n5) /
                           double.parse(isinaker[index = 23].umk_n4)) *
                       100 -
                   100;
-              double naikUmk25 = (double.parse(isinaker[index = 24].umk_n5) /
+              double naikUmk25 =
+                  (double.parse(isinaker[index = 24].umk_n5) /
                           double.parse(isinaker[index = 24].umk_n4)) *
                       100 -
                   100;
-              double naikUmk26 = (double.parse(isinaker[index = 25].umk_n5) /
+              double naikUmk26 =
+                  (double.parse(isinaker[index = 25].umk_n5) /
                           double.parse(isinaker[index = 25].umk_n4)) *
                       100 -
                   100;
-              double naikUmk27 = (double.parse(isinaker[index = 26].umk_n5) /
+              double naikUmk27 =
+                  (double.parse(isinaker[index = 26].umk_n5) /
                           double.parse(isinaker[index = 26].umk_n4)) *
                       100 -
                   100;
-              double naikUmk28 = (double.parse(isinaker[index = 27].umk_n5) /
-                          double.parse(isinaker[index = 17].umk_n4)) *
+              double naikUmk28 =
+                  (double.parse(isinaker[index = 27].umk_n5) /
+                          double.parse(isinaker[index = 27].umk_n4)) *
                       100 -
                   100;
-              double naikUmk29 = (double.parse(isinaker[index = 28].umk_n5) /
+              double naikUmk29 =
+                  (double.parse(isinaker[index = 28].umk_n5) /
                           double.parse(isinaker[index = 28].umk_n4)) *
                       100 -
                   100;
-              double naikUmk30 = (double.parse(isinaker[index = 29].umk_n5) /
+              double naikUmk30 =
+                  (double.parse(isinaker[index = 29].umk_n5) /
                           double.parse(isinaker[index = 29].umk_n4)) *
                       100 -
                   100;
-              double naikUmk31 = (double.parse(isinaker[index = 30].umk_n5) /
+              double naikUmk31 =
+                  (double.parse(isinaker[index = 30].umk_n5) /
                           double.parse(isinaker[index = 30].umk_n4)) *
                       100 -
                   100;
-              double naikUmk32 = (double.parse(isinaker[index = 31].umk_n5) /
+              double naikUmk32 =
+                  (double.parse(isinaker[index = 31].umk_n5) /
                           double.parse(isinaker[index = 31].umk_n4)) *
                       100 -
                   100;
-              double naikUmk33 = (double.parse(isinaker[index = 32].umk_n5) /
+              double naikUmk33 =
+                  (double.parse(isinaker[index = 32].umk_n5) /
                           double.parse(isinaker[index = 32].umk_n4)) *
                       100 -
                   100;
-              double naikUmk34 = (double.parse(isinaker[index = 33].umk_n5) /
+              double naikUmk34 =
+                  (double.parse(isinaker[index = 33].umk_n5) /
                           double.parse(isinaker[index = 33].umk_n4)) *
                       100 -
                   100;
-              double naikUmk35 = (double.parse(isinaker[index = 34].umk_n5) /
+              double naikUmk35 =
+                  (double.parse(isinaker[index = 34].umk_n5) /
                           double.parse(isinaker[index = 34].umk_n4)) *
                       100 -
                   100;
@@ -314,69 +352,74 @@ class _GrafikKenaikanumkkabkotState extends State<GrafikKenaikanumkkabkot> {
                 height: screenHeight * 0.9,
                 width: screenWidth,
                 child: SfCartesianChart(
-                    title: ChartTitle(
-                        text:
-                            'Kenaikan UMK Kabupaten/Kota di Jawa Tengah Tahun $thn4 - $thn5',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 11,
-                        )),
-                    primaryXAxis: CategoryAxis(
-                        majorGridLines: const MajorGridLines(width: 0),
-                        labelStyle: const TextStyle(
-                          color: Color.fromARGB(255, 12, 12, 12),
-                          fontFamily: 'Roboto',
-                          fontSize: 11,
-                          fontStyle: FontStyle.normal,
-                        )),
-                    legend: Legend(
-                        // Visibility of legend
-                        isVisible: true,
-                        textStyle: const TextStyle(
-                          fontSize: 11,
-                        ),
-                        toggleSeriesVisibility: true,
-                        position: LegendPosition.top),
-                    primaryYAxis: NumericAxis(
-                        title: AxisTitle(
-                            text: 'Kenaikan UMK (persen)',
-                            textStyle: const TextStyle(
-                              color: Color.fromARGB(255, 10, 10, 10),
-                              fontFamily: 'Roboto',
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 11,
-                            )),
-
-                        //numberFormat: NumberFormat.decimalPattern('vi_VN'),
-                        numberFormat: NumberFormat("###,###.##", "vi_VN"),
-                        majorGridLines: const MajorGridLines(width: 1),
-                        minimum: 0,
-                        maximum: 12,
-                        interval: 5),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-
-                        // Sorting based on the specified field
-                        sortingOrder: SortingOrder.ascending,
-                        sortFieldValueMapper: (_ChartData data, _) => data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'Kenaikan UMK (persen)',
-                        color: const Color.fromRGBO(9, 0, 136, 1),
+                  title: ChartTitle(
+                    text:
+                        'Kenaikan UMK Kabupaten/Kota di Jawa Tengah Tahun $thn4 - $thn5',
+                    // Aligns the chart title to left
+                    alignment: ChartAlignment.center,
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 10, 10, 10),
+                      fontFamily: 'Roboto',
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 11,
+                    ),
+                  ),
+                  primaryXAxis: CategoryAxis(
+                    majorGridLines: const MajorGridLines(width: 0),
+                    labelStyle: const TextStyle(
+                      color: Color.fromARGB(255, 12, 12, 12),
+                      fontFamily: 'Roboto',
+                      fontSize: 11,
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                  legend: Legend(
+                    // Visibility of legend
+                    isVisible: true,
+                    textStyle: const TextStyle(fontSize: 11),
+                    toggleSeriesVisibility: true,
+                    position: LegendPosition.top,
+                  ),
+                  primaryYAxis: NumericAxis(
+                    title: AxisTitle(
+                      text: 'Kenaikan UMK (persen)',
+                      textStyle: const TextStyle(
+                        color: Color.fromARGB(255, 10, 10, 10),
+                        fontFamily: 'Roboto',
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 11,
                       ),
-                    ]),
+                    ),
+
+                    //numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                    numberFormat: NumberFormat("###,###.##", "vi_VN"),
+                    majorGridLines: const MajorGridLines(width: 1),
+                    minimum: 0,
+                    maximum: 12,
+                    interval: 5,
+                  ),
+                  tooltipBehavior: tooltip,
+                  series: <CartesianSeries>[
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y,
+
+                      // Sorting based on the specified field
+                      sortingOrder: SortingOrder.ascending,
+                      sortFieldValueMapper: (_ChartData data, _) => data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
+                        isVisible: true,
+                        textStyle: TextStyle(fontSize: 10),
+                      ),
+                      name: 'Kenaikan UMK (persen)',
+                      color: const Color.fromRGBO(9, 0, 136, 1),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -384,10 +427,7 @@ class _GrafikKenaikanumkkabkotState extends State<GrafikKenaikanumkkabkot> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 3,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 3));
       },
     );
   }

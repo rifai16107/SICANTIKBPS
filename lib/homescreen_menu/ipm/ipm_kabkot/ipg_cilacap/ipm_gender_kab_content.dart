@@ -46,31 +46,11 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
             return ListView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String tahun5 =
-                    isiipm[index = 4].created_at[0] +
-                    isiipm[index = 4].created_at[1] +
-                    isiipm[index = 4].created_at[2] +
-                    isiipm[index = 4].created_at[3];
-                String tahun4 =
-                    isiipm[index = 3].created_at[0] +
-                    isiipm[index = 3].created_at[1] +
-                    isiipm[index = 3].created_at[2] +
-                    isiipm[index = 3].created_at[3];
-                String tahun3 =
-                    isiipm[index = 2].created_at[0] +
-                    isiipm[index = 2].created_at[1] +
-                    isiipm[index = 2].created_at[2] +
-                    isiipm[index = 2].created_at[3];
-                String tahun2 =
-                    isiipm[index = 1].created_at[0] +
-                    isiipm[index = 1].created_at[1] +
-                    isiipm[index = 1].created_at[2] +
-                    isiipm[index = 1].created_at[3];
-                String tahun1 =
-                    isiipm[index = 0].created_at[0] +
-                    isiipm[index = 0].created_at[1] +
-                    isiipm[index = 0].created_at[2] +
-                    isiipm[index = 0].created_at[3];
+                String tahun1 = isiipm[index = 0].tahun;
+                String tahun2 = isiipm[index = 1].tahun;
+                String tahun3 = isiipm[index = 2].tahun;
+                String tahun4 = isiipm[index = 3].tahun;
+                String tahun5 = isiipm[index = 4].tahun;
 
                 //Lk+Pr
                 double uhh1 = double.parse(isiipm[index = 0].uhh_lfsp2020);

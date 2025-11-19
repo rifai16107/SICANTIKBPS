@@ -37,14 +37,14 @@ class _SeriesNakerkabkotFormalin extends State<SeriesNakerkabkotFormalin> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.090,
+              height: screenHeight * 0.098,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
                     "Rata-Rata Upah/Gaji Bersih Sebulan Pekerja Formal dan Informal Menurut Kabupaten/Kota di Provinsi Jawa Tengah (Ribuan Rupiah)",
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(color: Colors.white, fontSize: 14),
                     textAlign: TextAlign.center,
                   ),
                 ),

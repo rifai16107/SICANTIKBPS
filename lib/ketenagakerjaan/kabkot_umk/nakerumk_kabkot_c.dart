@@ -40,15 +40,16 @@ class ModelNakerKabkotUmk {
   final String umk_n5;
   final String tahun;
 
-  ModelNakerKabkotUmk(
-      {required this.id,
-      required this.wilayah,
-      required this.umk_n1,
-      required this.umk_n2,
-      required this.umk_n3,
-      required this.umk_n4,
-      required this.umk_n5,
-      required this.tahun});
+  ModelNakerKabkotUmk({
+    required this.id,
+    required this.wilayah,
+    required this.umk_n1,
+    required this.umk_n2,
+    required this.umk_n3,
+    required this.umk_n4,
+    required this.umk_n5,
+    required this.tahun,
+  });
 
   factory ModelNakerKabkotUmk.fromJson(Map<String, dynamic> json) {
     return ModelNakerKabkotUmk(
@@ -76,7 +77,8 @@ RepositoryNakerKabkotUmk repositorynaker = RepositoryNakerKabkotUmk();
 class _NakerkabkotUmkCState extends State<NakerkabkotUmkC> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -202,2037 +204,2471 @@ class _NakerkabkotUmkCState extends State<NakerkabkotUmkC> {
                 String thn5 = isinaker[index = 0].tahun.substring(20, 24);
 
                 return Scaffold(
-                    body: Column(
-                  children: <Widget>[
-                    //Flexible(
-                    //fit: FlexFit.tight,
-                    //flex: 5,
-                    Container(
-                      width: screenWidth * 1.0,
-                      height: screenHeight * 0.065,
-                      color: Colors.blue,
-                      child: Row(
-                        children: [
-                          Flexible(
-                            fit: FlexFit.tight,
-                            flex: 3,
-                            child: Container(
-                              padding: const EdgeInsets.only(
-                                  right: 20, top: 3, bottom: 3),
-                              child: const Text(
-                                "Kabupaten/Kota",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 13,
-                                    color: Colors.white),
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            fit: FlexFit.tight,
-                            flex: 2,
-                            child: Container(
-                              padding: const EdgeInsets.only(
-                                  right: 10, top: 3, bottom: 3),
-                              child: Text(
-                                thn4,
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 13,
-                                    color: Colors.white),
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            fit: FlexFit.tight,
-                            flex: 2,
-                            child: Container(
-                              padding: const EdgeInsets.only(
-                                  right: 5, top: 3, bottom: 3),
-                              child: Text(
-                                thn5,
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 13,
-                                    color: Colors.white),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    //),
-                    Expanded(
-                      //flex:16,
-                      child: SingleChildScrollView(
-                        //child: Flexible(
-                        //flex: 20,
-                        //fit: FlexFit.tight,
-                        //child: SizedBox(
-                        //width: screenWidth,
-                        //height: screenHeight,
-                        child: Column(
+                  body: Column(
+                    children: <Widget>[
+                      //Flexible(
+                      //fit: FlexFit.tight,
+                      //flex: 5,
+                      Container(
+                        width: screenWidth * 1.0,
+                        height: screenHeight * 0.065,
+                        color: const Color.fromRGBO(243, 145, 34, 1),
+                        child: Row(
                           children: [
-                            // Cilacap
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab1,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
+                            Flexible(
+                              fit: FlexFit.tight,
+                              flex: 3,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  right: 20,
+                                  top: 3,
+                                  bottom: 3,
+                                ),
+                                child: const Text(
+                                  "Kabupaten/Kota",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white,
                                   ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_1, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_1, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                                ),
                               ),
                             ),
-
-                            //Banyumas
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab2,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
+                            Flexible(
+                              fit: FlexFit.tight,
+                              flex: 2,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  right: 10,
+                                  top: 3,
+                                  bottom: 3,
+                                ),
+                                child: Text(
+                                  thn4,
+                                  textAlign: TextAlign.center,
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white,
                                   ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_2, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_2, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                                ),
                               ),
                             ),
-
-                            //Purbalingga
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab3,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_3, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_3, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Banjarnegara
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab4,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_4, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_4, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Kebumen
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab5,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_5, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_5, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Purworejo
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab6,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_6, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_6, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 13,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            // Wonosobo
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab7,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_7, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_7, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Magelang
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab8,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_8, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_8, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Boyolali
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab9,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_9, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_9, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Klaten
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab10,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_10, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_10, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Sukoharjo
-
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab11,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_11, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_11, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Wonogiri
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab12,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_12, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_12, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Karanganyar
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab13,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_13, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_13, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Sragen
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab14,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_14, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_14, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Grobogan
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab15,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_15, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_15, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Blora
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab16,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_16, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_16, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Rembang
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab17,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_17, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_17, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Pati
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab18,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_18, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_18, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Kudus
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab19,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_19, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_19, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Jepara
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab20,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_20, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_20, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Demak
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab21,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_21, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_21, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Semarang
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab22,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_22, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.grey.shade200,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_22, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Temanggung
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab23,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_23, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      color: Colors.transparent,
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_23, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Kendal
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab24,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_24, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_24, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Batang
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab25,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_25, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_25, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //umkN5_kalongan
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab26,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_26, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_26, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //umkN3_malang
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab27,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_27, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_27, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Tegal
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab28,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_28, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_28, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Brebes
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab29,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_29, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_29, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            // Kota Magelang
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 0, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab30,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_30, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_30, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Kota Surakarta
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab31,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_31, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_31, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Kota Salatiga
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab32,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_32, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_32, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Kota Semarang
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab33,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_33, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_33, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Kota umkN3_kalongan
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.grey.shade200,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 0, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab34,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_34, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_34, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            //Kota Tegal
-                            Container(
-                              width: screenWidth * 1.0,
-                              height: screenHeight * 0.032,
-                              color: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                    width: 0.34 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        kab35,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN4_35, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 0.31 * screenWidth,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(umkN5_35, 0),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            const Divider(
-                              thickness: 1,
-                              color: Colors.black38,
-                            ),
-                            //Total
-
-                            Container(
-                              alignment: Alignment.centerLeft,
-                              padding: const EdgeInsets.only(
-                                top: 1,
-                                left: 4,
-                                bottom: 0,
-                              ),
-                              child: const Text(
-                                " Keterangan :",
-                                style: TextStyle(
-                                    fontSize: 12, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            Container(
-                              alignment: Alignment.centerLeft,
-                              padding: const EdgeInsets.only(
-                                top: 4,
-                                left: 14,
-                                bottom: 80,
-                              ),
-                              child: const Text(
-                                "UMK 2025 ditetapkan berdasarkan Surat Keputusan Gubernur Jawa Tengah Nomor 561 / 45 Tahun 2024 tanggal 18 Desember 2024 .",
-                                style: TextStyle(
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.normal),
+                            Flexible(
+                              fit: FlexFit.tight,
+                              flex: 2,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  right: 5,
+                                  top: 3,
+                                  bottom: 3,
+                                ),
+                                child: Text(
+                                  thn5,
+                                  textAlign: TextAlign.center,
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                             ),
                           ],
                         ),
                       ),
-                    ),
-                  ],
-                ));
+                      //),
+                      Expanded(
+                        //flex:16,
+                        child: SingleChildScrollView(
+                          //child: Flexible(
+                          //flex: 20,
+                          //fit: FlexFit.tight,
+                          //child: SizedBox(
+                          //width: screenWidth,
+                          //height: screenHeight,
+                          child: Column(
+                            children: [
+                              // Cilacap
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab1,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_1, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_1, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Banyumas
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab2,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_2, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_2, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Purbalingga
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab3,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_3, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_3, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Banjarnegara
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab4,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_4, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_4, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Kebumen
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab5,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_5, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_5, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Purworejo
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab6,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_6, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_6, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 13,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              // Wonosobo
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab7,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_7, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_7, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Magelang
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab8,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_8, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_8, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Boyolali
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab9,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_9, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_9, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Klaten
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab10,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_10, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_10, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Sukoharjo
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab11,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_11, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_11, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Wonogiri
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab12,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_12, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_12, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Karanganyar
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab13,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_13, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_13, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Sragen
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab14,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_14, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_14, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Grobogan
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab15,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_15, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_15, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Blora
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab16,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_16, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_16, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Rembang
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab17,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_17, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_17, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Pati
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab18,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_18, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_18, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Kudus
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab19,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_19, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_19, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Jepara
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab20,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_20, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_20, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Demak
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab21,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_21, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_21, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Semarang
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab22,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_22, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.grey.shade200,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_22, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Temanggung
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab23,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_23, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        color: Colors.transparent,
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_23, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Kendal
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab24,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_24, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_24, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Batang
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab25,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_25, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_25, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //umkN5_kalongan
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab26,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_26, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_26, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //umkN3_malang
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab27,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_27, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_27, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Tegal
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab28,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_28, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_28, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Brebes
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab29,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_29, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_29, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              // Kota Magelang
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 0,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab30,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_30, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_30, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Kota Surakarta
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab31,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_31, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_31, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Kota Salatiga
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab32,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_32, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_32, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Kota Semarang
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab33,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_33, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_33, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Kota umkN3_kalongan
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.grey.shade200,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 0,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab34,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_34, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_34, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                              //Kota Tegal
+                              Container(
+                                width: screenWidth * 1.0,
+                                height: screenHeight * 0.032,
+                                color: Colors.transparent,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 0.34 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          kab35,
+                                          textAlign: TextAlign.left,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN4_35, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 0.31 * screenWidth,
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          right: 10,
+                                          top: 1,
+                                          bottom: 1,
+                                        ),
+                                        child: Text(
+                                          Format.convertTo(umkN5_35, 0),
+                                          textAlign: TextAlign.right,
+                                          style: const TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const Divider(
+                                thickness: 1,
+                                color: Colors.black38,
+                              ),
+
+                              //Total
+                              Container(
+                                alignment: Alignment.centerLeft,
+                                padding: const EdgeInsets.only(
+                                  top: 1,
+                                  left: 4,
+                                  bottom: 0,
+                                ),
+                                child: const Text(
+                                  " Keterangan :",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                alignment: Alignment.centerLeft,
+                                padding: const EdgeInsets.only(
+                                  top: 4,
+                                  left: 14,
+                                  bottom: 80,
+                                ),
+                                child: const Text(
+                                  "UMK 2025 ditetapkan berdasarkan Surat Keputusan Gubernur Jawa Tengah Nomor 561 / 45 Tahun 2024 tanggal 18 Desember 2024 .",
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
               },
             );
           }
@@ -2240,54 +2676,60 @@ class _NakerkabkotUmkCState extends State<NakerkabkotUmkC> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniStartFloat,
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
       floatingActionButton: SpeedDial(
-          icon: Icons.bar_chart,
-          visible: true,
-          foregroundColor: Colors.orange,
-          //mini:true,
-          //animatedIcon:AnimatedIcons.menu_close,
-          activeIcon: Icons.close,
-          buttonSize: const Size(50, 50),
-          curve: Curves.elasticInOut,
-          direction: SpeedDialDirection.right,
-          //animatedIconTheme: const IconThemeData(size: 25),
-          //animatedIcon: AnimatedIcons.list_view,
-          closeManually: false,
-          children: [
-            SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
-              child: const Icon(Icons.bar_chart),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    CustomPageRoute(
-                        child: const BodyGrafikNakerumkkabkot(),
-                        direction: AxisDirection.left));
-              },
-              label: 'UMK Kab/Kota',
-              labelBackgroundColor: Colors.black,
-              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
-            ),
-            SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
-              child: const Icon(Icons.bar_chart),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    CustomPageRoute(
-                        child: const BodyGrafikKenaikanumkkabkot(),
-                        direction: AxisDirection.left));
-              },
-              label: 'Kenaikan UMK',
-              labelBackgroundColor: Colors.black,
-              labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
-            ),
-          ]),
+        icon: Icons.bar_chart,
+        visible: true,
+        foregroundColor: Colors.orange,
+        //mini:true,
+        //animatedIcon:AnimatedIcons.menu_close,
+        activeIcon: Icons.close,
+        buttonSize: const Size(50, 50),
+        curve: Curves.elasticInOut,
+        direction: SpeedDialDirection.up,
+        //animatedIconTheme: const IconThemeData(size: 25),
+        //animatedIcon: AnimatedIcons.list_view,
+        closeManually: false,
+        children: [
+          SpeedDialChild(
+            backgroundColor: Colors.greenAccent,
+            child: const Icon(Icons.bar_chart),
+            onTap: () {
+              Navigator.push(
+                context,
+                CustomPageRoute(
+                  child: const BodyGrafikNakerumkkabkot(),
+                  direction: AxisDirection.left,
+                ),
+              );
+            },
+            label: 'UMK Kab/Kota',
+            labelBackgroundColor: Colors.black,
+            labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+          ),
+          SpeedDialChild(
+            backgroundColor: Colors.greenAccent,
+            child: const Icon(Icons.bar_chart),
+            onTap: () {
+              Navigator.push(
+                context,
+                CustomPageRoute(
+                  child: const BodyGrafikKenaikanumkkabkot(),
+                  direction: AxisDirection.left,
+                ),
+              );
+            },
+            label: 'Kenaikan UMK',
+            labelBackgroundColor: Colors.black,
+            labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -2297,19 +2739,25 @@ class CustomPageRoute extends PageRouteBuilder {
   final AxisDirection direction;
 
   CustomPageRoute({required this.child, this.direction = AxisDirection.left})
-      : super(
-            transitionDuration: const Duration(milliseconds: 200),
-            reverseTransitionDuration: const Duration(milliseconds: 200),
-            pageBuilder: (context, animation, secondaryAnimation) => child);
+    : super(
+        transitionDuration: const Duration(milliseconds: 200),
+        reverseTransitionDuration: const Duration(milliseconds: 200),
+        pageBuilder: (context, animation, secondaryAnimation) => child,
+      );
 
   @override
-  Widget buildTransitions(BuildContext context, Animation<double> animation,
-          Animation<double> secondaryAnimation, Widget child) =>
-      SlideTransition(
-        position: Tween<Offset>(begin: getBeginOffset(), end: Offset.zero)
-            .animate(animation),
-        child: child,
-      );
+  Widget buildTransitions(
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) => SlideTransition(
+    position: Tween<Offset>(
+      begin: getBeginOffset(),
+      end: Offset.zero,
+    ).animate(animation),
+    child: child,
+  );
   Offset getBeginOffset() {
     switch (direction) {
       case AxisDirection.up:
