@@ -49,26 +49,13 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
               double ipmlfPr4 = double.parse(isiipm[index = 13].ipm_lfsp2020);
               double ipmlfPr5 = double.parse(isiipm[index = 14].ipm_lfsp2020);
 
-              String tahun5 = isiipm[index = 4].created_at[0] +
-                  isiipm[index = 4].created_at[1] +
-                  isiipm[index = 4].created_at[2] +
-                  isiipm[index = 4].created_at[3];
-              String tahun4 = isiipm[index = 3].created_at[0] +
-                  isiipm[index = 3].created_at[1] +
-                  isiipm[index = 3].created_at[2] +
-                  isiipm[index = 3].created_at[3];
-              String tahun3 = isiipm[index = 2].created_at[0] +
-                  isiipm[index = 2].created_at[1] +
-                  isiipm[index = 2].created_at[2] +
-                  isiipm[index = 2].created_at[3];
-              String tahun2 = isiipm[index = 1].created_at[0] +
-                  isiipm[index = 1].created_at[1] +
-                  isiipm[index = 1].created_at[2] +
-                  isiipm[index = 1].created_at[3];
-              String tahun1 = isiipm[index = 0].created_at[0] +
-                  isiipm[index = 0].created_at[1] +
-                  isiipm[index = 0].created_at[2] +
-                  isiipm[index = 0].created_at[3];
+              String tahun5 = isiipm[index = 4].tahun;
+              String tahun4 = isiipm[index = 3].tahun; 
+              String tahun3 = isiipm[index = 2].tahun; 
+              String tahun2 = isiipm[index = 1].tahun; 
+              String tahun1 = isiipm[index = 0].tahun;   
+              
+              
               toString();
               data = [
                 _ChartData(tahun1, ipmlfLk1, ipmlfPr1, ipg1),
@@ -80,12 +67,12 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight,
+                height: screenHeight*0.95,
                 width: screenWidth,
                 child: SfCartesianChart(
                     title: ChartTitle(
                         text:
-                            'IPM Menurut Jenis Kelamin dan IPG Kabupaten CIlacap (Tahun $tahun2 s.d. $tahun5 Komponen UHH dihitung dari hasil LFSP2020)',
+                            'IPM Menurut Jenis Kelamin dan IPG Kabupaten Cilacap (Tahun $tahun2 s.d. $tahun5 Komponen UHH dihitung dari hasil LFSP2020)',
                         // Aligns the chart title to left
                         alignment: ChartAlignment.center,
                         textStyle: const TextStyle(
@@ -122,7 +109,7 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
                         dataLabelSettings: const DataLabelSettings(
                             // Renders the data label
                             isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
+                            textStyle: TextStyle(fontSize: 10)),
                         name: 'IPM Laki-laki',
                         color: const Color.fromARGB(255, 240, 164, 50),
                       ),
@@ -137,7 +124,7 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
                         dataLabelSettings: const DataLabelSettings(
                             // Renders the data label
                             isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
+                            textStyle: TextStyle(fontSize: 10)),
                         name: 'IPM Perempuan',
                         color: const Color.fromARGB(255, 112, 236, 29),
                       ),
@@ -152,7 +139,7 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
                         dataLabelSettings: const DataLabelSettings(
                             // Renders the data label
                             isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
+                            textStyle: TextStyle(fontSize: 10)),
                         name: 'IPG Kabupaten Cilacap',
                         color: const Color.fromARGB(255, 17, 21, 240),
                       ),

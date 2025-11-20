@@ -38,23 +38,22 @@ class _BodyGrafikIpmGender extends State<BodyGrafikIpmGender> {
           ),
         ),
       ),
-      body: Container(
+      body: ListView(
         padding: const EdgeInsets.all(5),
-        child: Column(
-          children: [
+        children: [
             Flexible(
               child: SizedBox(
-                height: screenHeight * 0.85,
-                width: screenWidth * 0.95,
+                height: screenHeight * 1.10,
+                width: screenWidth * 0.85,
                 child: const GrafikIpmGender(),
               ),
             ),
             Container(
-              height: screenHeight * 0.10,
+              height: screenHeight * 0.08,
               color: Colors.white,
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 25, horizontal: 5),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
                   child: Text(
                     "Klik Pada Legenda Untuk Menghilangkan/Memunculkan series",
                     style: TextStyle(
@@ -68,6 +67,6 @@ class _BodyGrafikIpmGender extends State<BodyGrafikIpmGender> {
           ],
         ),
       ),
-    ));
+    );
   }
 }
