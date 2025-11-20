@@ -165,7 +165,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.07,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   child: const Center(
                                     child: Text(
                                       "IPM & Komponennya",
@@ -183,7 +183,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   height: screenHeight * 0.07,
                                   child: Center(
                                     child: Text(
@@ -201,7 +201,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   height: screenHeight * 0.07,
                                   child: Center(
                                     child: Text(
@@ -219,7 +219,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   height: screenHeight * 0.07,
                                   child: Center(
                                     child: Text(
@@ -237,7 +237,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   height: screenHeight * 0.07,
                                   child: Center(
                                     child: Text(
@@ -255,7 +255,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 flex: 2,
                                 fit: FlexFit.tight,
                                 child: Container(
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   height: screenHeight * 0.07,
                                   child: Center(
                                     child: Text(
@@ -678,7 +678,8 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
+                                  color: Colors.orange,
+                                  padding: const EdgeInsets.symmetric(vertical:4),
                                   child: const Center(
                                     child: Text(
                                       "IPM",
@@ -687,7 +688,7 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 13,
                                       ),
-                                      textAlign: TextAlign.center,
+                                      textAlign: TextAlign.left,
                                     ),
                                   ),
                                 ),
@@ -697,11 +698,8 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
-                                  padding: const EdgeInsets.only(
-                                    top: 9,
-                                    right: 0,
-                                  ),
+                                  color: Colors.orange,
+                                  padding: const EdgeInsets.symmetric(vertical:5),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf1, 2),
@@ -722,11 +720,8 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
-                                  padding: const EdgeInsets.only(
-                                    top: 9,
-                                    right: 0,
-                                  ),
+                                  color: Colors.orange,
+                                  padding: const EdgeInsets.symmetric(vertical:5),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf2, 2),
@@ -746,11 +741,8 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
-                                  padding: const EdgeInsets.only(
-                                    top: 9,
-                                    right: 0,
-                                  ),
+                                  color: Colors.orange,
+                                  padding: const EdgeInsets.symmetric(vertical:5),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf3, 2),
@@ -770,11 +762,8 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
-                                  padding: const EdgeInsets.only(
-                                    top: 9,
-                                    right: 0,
-                                  ),
+                                  color: Colors.orange,
+                                  padding: const EdgeInsets.symmetric(vertical:5),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf4, 2),
@@ -794,11 +783,8 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 fit: FlexFit.tight,
                                 child: Container(
                                   height: screenHeight * 0.05,
-                                  color: Colors.green,
-                                  padding: const EdgeInsets.only(
-                                    top: 9,
-                                    right: 0,
-                                  ),
+                                  color: Colors.orange,
+                                  padding: const EdgeInsets.symmetric(vertical:5),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf5, 2),
