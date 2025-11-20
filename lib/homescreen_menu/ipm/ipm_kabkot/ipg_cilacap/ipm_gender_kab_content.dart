@@ -2335,7 +2335,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                       SizedBox(
                         //color: Colors.transparent,
                         width: screenWidth,
-                        height: screenHeight * 0.027,
+                        height: screenHeight * 0.029,
                         child: Row(
                           children: [
                             Container(
