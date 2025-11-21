@@ -14,8 +14,10 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
   RepositoryIpm repositoryipm = RepositoryIpm();
   int key = 0;
 
+  late List<_ChartData1> data1;
   late List<_ChartData> data;
   late TooltipBehavior tooltip;
+
   @override
   Widget build(BuildContext context) {
     final screenHeight =
@@ -60,6 +62,13 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
 
               toString();
 
+              data1 = [
+                _ChartData1(tahun1, ipg1),
+                _ChartData1(tahun2, ipg2),
+                _ChartData1(tahun3, ipg3),
+                _ChartData1(tahun4, ipg4),
+                _ChartData1(tahun5, ipg5),
+              ];
               data = [
                 _ChartData(tahun1, ipmlfLk1, ipmlfPr1),
                 _ChartData(tahun2, ipmlfLk2, ipmlfPr2),
@@ -76,7 +85,71 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: screenHeight * 0.70,
+                      height: screenHeight * 0.40,
+                      width: screenWidth,
+                      child: SfCartesianChart(
+                        title: ChartTitle(
+                          text:
+                              'Indeks Pembangunan Gender (IPG) Kabupaten Cilacap\n'
+                              '$tahun1-$tahun5 (tahun)',
+                          // Aligns the chart title to left
+                          alignment: ChartAlignment.center,
+                          textStyle: const TextStyle(
+                            color: Color.fromARGB(255, 10, 10, 10),
+                            fontFamily: 'Roboto',
+                            fontStyle: FontStyle.italic,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 11,
+                          ),
+                        ),
+                        primaryXAxis: CategoryAxis(),
+                        legend: Legend(
+                          // Visibility of legend
+                          overflowMode: LegendItemOverflowMode.wrap,
+                          textStyle: const TextStyle(fontSize: 11),
+                          isVisible: false,
+                          position: LegendPosition.bottom,
+                        ),
+                        primaryYAxis: NumericAxis(
+                          majorGridLines: const MajorGridLines(width: 0),
+                          minimum: 0,
+                          maximum: 100,
+                          interval: 20,
+                        ),
+                        tooltipBehavior: tooltip,
+                        series: <CartesianSeries>[
+                          LineSeries<_ChartData1, String>(
+                            dataSource: data1,
+                            xValueMapper: (_ChartData1 data1, _) => data1.x,
+                            yValueMapper: (_ChartData1 data1, _) => data1.y,
+                            // Sorting based on the specified field
+                            //sortingOrder: SortingOrder.descending,
+                            //sortFieldValueMapper: (_ChartData data, _) =>
+                            //data.y,
+                            markerSettings: const MarkerSettings(
+                              isVisible: true,
+                              shape: DataMarkerType.diamond,
+                            ),
+                            dataLabelSettings: const DataLabelSettings(
+                              // Renders the data label
+                              isVisible: true,
+                              textStyle: TextStyle(fontSize: 10),
+                            ),
+                            width: 3,
+                            name: 'IPG',
+                            color: const Color.fromARGB(255, 9, 168, 89),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const Divider(indent: 3, color: Colors.transparent),
+                    const Divider(
+                      color: Color.fromARGB(255, 233, 215, 215),
+                      height: 10,
+                      thickness: 4,
+                    ),
+                    SizedBox(
+                      height: screenHeight * 0.72,
                       width: screenWidth,
                       child: SfCartesianChart(
                         title: ChartTitle(
@@ -146,7 +219,7 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
                     ),
                     SizedBox(
                       child: const Text(
-                        " Pilih Legend",
+                        " Sentuh legenda untuk menaktifkan/non aktifkan series",
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.normal,
@@ -166,6 +239,12 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
       },
     );
   }
+}
+
+class _ChartData1 {
+  _ChartData1(this.x, this.y);
+  final String x;
+  final double? y;
 }
 
 class _ChartData {

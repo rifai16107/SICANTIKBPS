@@ -873,7 +873,7 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
 
                       // Grafik P1, P2
                       SizedBox(
-                        height: screenHeight * 0.40,
+                        height: screenHeight * 0.50,
                         width: screenWidth,
                         child: SfCartesianChart(
                           title: ChartTitle(

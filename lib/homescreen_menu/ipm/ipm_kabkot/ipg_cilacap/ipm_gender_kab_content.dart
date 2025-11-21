@@ -2399,6 +2399,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.bar_chart_sharp),
       ),
