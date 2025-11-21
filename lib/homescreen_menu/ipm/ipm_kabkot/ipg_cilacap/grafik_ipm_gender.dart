@@ -13,14 +13,17 @@ class GrafikIpmGender extends StatefulWidget {
 class _GrafikIpmGenderState extends State<GrafikIpmGender> {
   RepositoryIpm repositoryipm = RepositoryIpm();
   int key = 0;
+
   late List<_ChartData> data;
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -50,100 +53,108 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
               double ipmlfPr5 = double.parse(isiipm[index = 14].ipm_lfsp2020);
 
               String tahun5 = isiipm[index = 4].tahun;
-              String tahun4 = isiipm[index = 3].tahun; 
-              String tahun3 = isiipm[index = 2].tahun; 
-              String tahun2 = isiipm[index = 1].tahun; 
-              String tahun1 = isiipm[index = 0].tahun;   
-              
-              
+              String tahun4 = isiipm[index = 3].tahun;
+              String tahun3 = isiipm[index = 2].tahun;
+              String tahun2 = isiipm[index = 1].tahun;
+              String tahun1 = isiipm[index = 0].tahun;
+
               toString();
+
               data = [
-                _ChartData(tahun1, ipmlfLk1, ipmlfPr1, ipg1),
-                _ChartData(tahun2, ipmlfLk2, ipmlfPr2, ipg2),
-                _ChartData(tahun3, ipmlfLk3, ipmlfPr3, ipg3),
-                _ChartData(tahun4, ipmlfLk4, ipmlfPr4, ipg4),
-                _ChartData(tahun5, ipmlfLk5, ipmlfPr5, ipg5),
+                _ChartData(tahun1, ipmlfLk1, ipmlfPr1),
+                _ChartData(tahun2, ipmlfLk2, ipmlfPr2),
+                _ChartData(tahun3, ipmlfLk3, ipmlfPr3),
+                _ChartData(tahun4, ipmlfLk4, ipmlfPr4),
+                _ChartData(tahun5, ipmlfLk5, ipmlfPr5),
               ];
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight*0.95,
-                width: screenWidth,
-                child: SfCartesianChart(
-                    title: ChartTitle(
-                        text:
-                            'IPM Menurut Jenis Kelamin dan IPG Kabupaten Cilacap (Tahun $tahun2 s.d. $tahun5 Komponen UHH dihitung dari hasil LFSP2020)',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                        )),
-                    primaryXAxis: CategoryAxis(),
-                    legend: Legend(
-                        // Visibility of legend
-                        overflowMode: LegendItemOverflowMode.wrap,
-                        textStyle: const TextStyle(
-                          fontSize: 11,
+                //height: screenHeight,
+                //width: screenWidth,
+                //Grafik IPM By Jenis Kelamin
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: screenHeight * 0.70,
+                      width: screenWidth,
+                      child: SfCartesianChart(
+                        title: ChartTitle(
+                          text:
+                              'IPM Menurut Jenis Kelamin di Kabupaten Cilacap\n'
+                              '$tahun1-$tahun5 (tahun)',
+                          // Aligns the chart title to left
+                          alignment: ChartAlignment.center,
+                          textStyle: const TextStyle(
+                            color: Color.fromARGB(255, 10, 10, 10),
+                            fontFamily: 'Roboto',
+                            fontStyle: FontStyle.italic,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 11,
+                          ),
                         ),
-                        isVisible: true,
-                        position: LegendPosition.bottom),
-                    primaryYAxis: NumericAxis(
-                        majorGridLines: const MajorGridLines(width: 0),
-                        minimum: 0,
-                        maximum: 100,
-                        interval: 25),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'IPM Laki-laki',
-                        color: const Color.fromARGB(255, 240, 164, 50),
+                        primaryXAxis: CategoryAxis(),
+                        legend: Legend(
+                          // Visibility of legend
+                          overflowMode: LegendItemOverflowMode.wrap,
+                          textStyle: const TextStyle(fontSize: 11),
+                          isVisible: true,
+                          position: LegendPosition.bottom,
+                        ),
+                        primaryYAxis: NumericAxis(
+                          majorGridLines: const MajorGridLines(width: 0),
+                          minimum: 0,
+                          maximum: 100,
+                          interval: 20,
+                        ),
+                        tooltipBehavior: tooltip,
+                        series: <CartesianSeries>[
+                          BarSeries<_ChartData, String>(
+                            dataSource: data,
+                            xValueMapper: (_ChartData data, _) => data.x,
+                            yValueMapper: (_ChartData data, _) => data.y1,
+                            // Sorting based on the specified field
+                            //sortingOrder: SortingOrder.descending,
+                            //sortFieldValueMapper: (_ChartData data, _) =>
+                            //data.y,
+                            dataLabelSettings: const DataLabelSettings(
+                              // Renders the data label
+                              isVisible: true,
+                              textStyle: TextStyle(fontSize: 10),
+                            ),
+                            name: 'IPM Perempuan',
+                            color: const Color.fromARGB(255, 248, 70, 209),
+                          ),
+                          BarSeries<_ChartData, String>(
+                            dataSource: data,
+                            xValueMapper: (_ChartData data, _) => data.x,
+                            yValueMapper: (_ChartData data, _) => data.y,
+                            // Sorting based on the specified field
+                            //sortingOrder: SortingOrder.descending,
+                            //sortFieldValueMapper: (_ChartData data, _) =>
+                            //data.y,
+                            dataLabelSettings: const DataLabelSettings(
+                              // Renders the data label
+                              isVisible: true,
+                              textStyle: TextStyle(fontSize: 10),
+                            ),
+                            name: 'IPM Laki-Laki',
+                            color: const Color.fromARGB(255, 9, 168, 89),
+                          ),
+                        ],
                       ),
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y1,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'IPM Perempuan',
-                        color: const Color.fromARGB(255, 112, 236, 29),
+                    ),
+                    SizedBox(
+                      child: const Text(
+                        " Pilih Legend",
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.normal,
+                        ),
                       ),
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y2,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'IPG Kabupaten Cilacap',
-                        color: const Color.fromARGB(255, 17, 21, 240),
-                      ),
-                    ]),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -151,20 +162,16 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 1,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 1));
       },
     );
   }
 }
 
 class _ChartData {
-  _ChartData(this.x, this.y, this.y1, this.y2);
+  _ChartData(this.x, this.y, this.y1);
 
   final String x;
   final double? y;
   final double? y1;
-  final double? y2;
 }
