@@ -14,49 +14,43 @@ class BodyGrafikTpakKabkot extends StatefulWidget {
 class _BodyGrafikTpakKabkot extends State<BodyGrafikTpakKabkot> {
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.bottom -
         MediaQuery.of(context).padding.top;
     var screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'TPAK Kabupaten/Kota di Jawa Tengah',
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'TPAK Kabupaten/Kota di Jawa Tengah',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          iconTheme: const IconThemeData(color: Colors.white),
+          backgroundColor: Colors.black,
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
           ),
         ),
-      ),
-      body: ListView(
-        children: [
-          Column(
-            children: <Widget>[
-              SizedBox(
-                height: screenHeight * 1.15,
-                width: screenWidth * 0.96,
-                child: Column(
-                  children: [
-                    Flexible(
-                      child: GrafikTpakKabkot(),
-                    ),
-                  ],
+        body: ListView(
+          children: [
+            Column(
+              children: <Widget>[
+                SizedBox(
+                  height: screenHeight * 1.40,
+                  width: screenWidth * 0.96,
+                  child: Column(
+                    children: [Flexible(child: GrafikTpakKabkot())],
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
-    ));
+    );
   }
 }

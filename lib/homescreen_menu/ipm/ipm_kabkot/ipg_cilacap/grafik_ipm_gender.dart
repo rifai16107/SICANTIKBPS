@@ -144,9 +144,9 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
                     ),
                     const Divider(indent: 3, color: Colors.transparent),
                     const Divider(
-                      color: Color.fromARGB(255, 233, 215, 215),
+                      color: Color.fromARGB(255, 247, 244, 244),
                       height: 10,
-                      thickness: 4,
+                      thickness: 2,
                     ),
                     SizedBox(
                       height: screenHeight * 0.72,

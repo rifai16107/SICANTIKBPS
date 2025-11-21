@@ -20,7 +20,8 @@ class _BodySeriesPengangguranKabkotState
       RepositoryPengangguranKabkot();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -34,16 +35,26 @@ class _BodySeriesPengangguranKabkotState
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              String thn1 =
-                  isipenganggurankabkot[index = 0].tahun.substring(0, 4);
-              String thn2 =
-                  isipenganggurankabkot[index = 0].tahun.substring(5, 9);
-              String thn3 =
-                  isipenganggurankabkot[index = 0].tahun.substring(10, 14);
-              String thn4 =
-                  isipenganggurankabkot[index = 0].tahun.substring(15, 19);
-              String thn5 =
-                  isipenganggurankabkot[index = 0].tahun.substring(20, 24);
+              String thn1 = isipenganggurankabkot[index = 0].tahun.substring(
+                0,
+                4,
+              );
+              String thn2 = isipenganggurankabkot[index = 0].tahun.substring(
+                5,
+                9,
+              );
+              String thn3 = isipenganggurankabkot[index = 0].tahun.substring(
+                10,
+                14,
+              );
+              String thn4 = isipenganggurankabkot[index = 0].tahun.substring(
+                15,
+                19,
+              );
+              String thn5 = isipenganggurankabkot[index = 0].tahun.substring(
+                20,
+                24,
+              );
 
               return DefaultTabController(
                 length: 5,
@@ -56,33 +67,27 @@ class _BodySeriesPengangguranKabkotState
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: thn1,
-                        ),
-                        Tab(
-                          text: thn2,
-                        ),
-                        Tab(
-                          text: thn3,
-                        ),
-                        Tab(
-                          text: thn4,
-                        ),
-                        Tab(
-                          text: thn5,
-                        ),
+                        Tab(text: thn1),
+                        Tab(text: thn2),
+                        Tab(text: thn3),
+                        Tab(text: thn4),
+                        Tab(text: thn5),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    PengangguranKabkotA(),
-                    PengangguranKabkotB(),
-                    PengangguranKabkotC(),
-                    PengangguranKabkotD(),
-                    PengangguranKabkotE(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      PengangguranKabkotA(),
+                      PengangguranKabkotB(),
+                      PengangguranKabkotC(),
+                      PengangguranKabkotD(),
+                      PengangguranKabkotE(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -91,11 +96,7 @@ class _BodySeriesPengangguranKabkotState
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );
