@@ -1112,6 +1112,15 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                         ],
                                       ),
                                     ),
+                                     SizedBox(
+                                        child: const Text(
+                                          " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                                          style: TextStyle(
+                                            fontSize: 10, fontStyle: FontStyle.italic,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
                                     const Divider(
                                       indent: 3,
                                       color: Color.fromARGB(0, 43, 41, 41),

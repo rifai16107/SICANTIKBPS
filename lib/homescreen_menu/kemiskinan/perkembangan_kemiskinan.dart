@@ -957,7 +957,7 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
                       child: const Text(
                         " Sentuh legenda untuk mengaktifkan/non aktifkan series",
                         style: TextStyle(
-                          fontSize: 9,
+                          fontSize: 9, fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.normal,
                         ),
                       ),
