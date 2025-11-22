@@ -9,6 +9,7 @@ class ModelKemiskinan {
   final String gk;
   final String created_at;
   final String updated_at;
+  final String tahun;
 
   const ModelKemiskinan({
     required this.id,
@@ -19,6 +20,7 @@ class ModelKemiskinan {
     required this.gk,
     required this.created_at,
     required this.updated_at,
+    required this.tahun,
   });
 
   factory ModelKemiskinan.fromJson(Map<String, dynamic> json) {
@@ -29,7 +31,9 @@ class ModelKemiskinan {
         p1: json['p1'],
         p2: json['p2'],
         gk: json['gk'],
+        tahun: json['tahun'],
         created_at: json['created_at'],
         updated_at: json['updated_at']);
+        
   }
 }

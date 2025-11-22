@@ -311,15 +311,8 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
                                     ),
                                     child: Text(
                                       "Tahun " +
-                                          (isikemiskinan[index = 4]
-                                                      .created_at[0] +
-                                                  isikemiskinan[index = 4]
-                                                      .created_at[1] +
-                                                  isikemiskinan[index = 4]
-                                                      .created_at[2] +
-                                                  isikemiskinan[index = 4]
-                                                      .created_at[3])
-                                              .toString() +
+                                        isikemiskinan[index = 0].tahun.substring(20, 24)
+                                              +
                                           ", penduduk miskin Kabupaten Cilacap tercatat sebanyak " +
                                           isikemiskinan[index = 4].pddk_mskn
                                               .toString() +
