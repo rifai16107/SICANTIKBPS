@@ -630,9 +630,10 @@ class _kemiskinanKabkotBState extends State<kemiskinanKabkotB> {
                           flex: 4,
                           child: Container(
                             padding: const EdgeInsets.only(
-                                right: 3, top: 10, bottom: 10),
+                                right: 3, top: 5, bottom: 5),
                             child: const Text(
-                              "Kabupaten/Kota",
+                              'Kabupaten/\n'
+                              'Kota',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -646,9 +647,10 @@ class _kemiskinanKabkotBState extends State<kemiskinanKabkotB> {
                           flex: 3,
                           child: Container(
                             padding: const EdgeInsets.only(
-                                left: 10, top: 10, bottom: 10),
+                                left: 10, top: 5, bottom: 5),
                             child: const Text(
-                              "Pddk Miskin",
+                              'Pddk\n'
+                              'Miskin',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -662,7 +664,7 @@ class _kemiskinanKabkotBState extends State<kemiskinanKabkotB> {
                           flex: 2,
                           child: Container(
                             padding: const EdgeInsets.only(
-                                left: 0, top: 10, bottom: 10),
+                                left: 0, top: 5, bottom: 5),
                             child: const Text(
                               "P0",
                               textAlign: TextAlign.center,
@@ -678,7 +680,7 @@ class _kemiskinanKabkotBState extends State<kemiskinanKabkotB> {
                           flex: 2,
                           child: Container(
                             padding: const EdgeInsets.only(
-                                left: 5, top: 10, bottom: 10),
+                                left: 5, top: 5, bottom: 5),
                             child: const Text(
                               "GK",
                               textAlign: TextAlign.center,
@@ -694,7 +696,7 @@ class _kemiskinanKabkotBState extends State<kemiskinanKabkotB> {
                           flex: 2,
                           child: Container(
                             padding: const EdgeInsets.only(
-                                left: 10, top: 10, bottom: 10),
+                                left: 10, top: 5, bottom: 5),
                             child: const Text(
                               "P1",
                               textAlign: TextAlign.center,
@@ -710,7 +712,7 @@ class _kemiskinanKabkotBState extends State<kemiskinanKabkotB> {
                           flex: 2,
                           child: Container(
                             padding: const EdgeInsets.only(
-                                left: 5, top: 10, bottom: 10),
+                                left: 5, top: 5, bottom: 5),
                             child: const Text(
                               "P2",
                               textAlign: TextAlign.center,

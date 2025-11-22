@@ -745,99 +745,107 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                               height: screenHeight * 0.032,
                               color: Colors.transparent,
                               child: Row(
-                                children: [
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 4,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          left: 0, right: 0, top: 1, bottom: 1),
-                                      child: Text(
-                                        kabkota1,
-                                        textAlign: TextAlign.left,
-                                        style: const TextStyle(
-                                            fontSize: 12.5,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 3,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 12, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(pmk1, 2),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 12.5,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 12, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(p0_1, 2),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 12.5,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 0, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(gk1, 3),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 12.5,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 6, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(p1_1, 2),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 12.5,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    fit: FlexFit.tight,
-                                    flex: 2,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 10, top: 1, bottom: 1),
-                                      child: Text(
-                                        Format.convertTo(p2_1, 2),
-                                        textAlign: TextAlign.right,
-                                        style: const TextStyle(
-                                            fontSize: 12.5,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                      children: [
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 4,
+                          child: Container(
+                            padding: const EdgeInsets.only(
+                                right: 3, top: 5, bottom: 5),
+                            child: const Text(
+                              'Kabupaten/\n'
+                              'Kota',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 3,
+                          child: Container(
+                            padding: const EdgeInsets.only(
+                                left: 10, top: 5, bottom: 5),
+                            child: const Text(
+                              'Pddk\n'
+                              'Miskin',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 5),
+                            child: const Text(
+                              "P0",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            padding: const EdgeInsets.only(
+                                left: 5, top: 5, bottom: 5),
+                            child: const Text(
+                              "GK",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            padding: const EdgeInsets.only(
+                                left: 10, top: 5, bottom: 5),
+                            child: const Text(
+                              "P1",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            padding: const EdgeInsets.only(
+                                left: 5, top: 5, bottom: 5),
+                            child: const Text(
+                              "P2",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                             ),
 
                             //Banyumas
