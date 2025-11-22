@@ -475,7 +475,7 @@ class _PerkembanganPengangguranState extends State<PerkembanganPengangguran> {
                         ),
                       ),
                       SizedBox(
-                        height: screenHeight * 0.50,
+                        height: screenHeight * 0.60,
                         width: screenWidth,
                         child: SfCartesianChart(
                           title: ChartTitle(
