@@ -171,7 +171,7 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Text(
                                       "Rincian",
                                       textAlign: TextAlign.center,
@@ -187,7 +187,7 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th1,
                                       textAlign: TextAlign.center,
@@ -205,7 +205,7 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th2,
                                       textAlign: TextAlign.center,
@@ -223,7 +223,7 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th3,
                                       textAlign: TextAlign.center,
@@ -241,7 +241,7 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th4,
                                       textAlign: TextAlign.center,
@@ -259,7 +259,7 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th5,
                                       textAlign: TextAlign.center,
@@ -953,6 +953,16 @@ class _PerkembanganKemiskinanState extends State<PerkembanganKemiskinan> {
                           ],
                         ),
                       ),
+                      SizedBox(
+                      child: const Text(
+                        " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                        style: TextStyle(
+                          fontSize: 9,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                    const Divider(indent: 5, color: Colors.transparent),
                     ],
                   ),
                 );

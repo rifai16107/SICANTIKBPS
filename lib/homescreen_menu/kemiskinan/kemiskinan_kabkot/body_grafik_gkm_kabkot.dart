@@ -23,8 +23,9 @@ class _BodyGrafikGkmKabKot extends State<BodyGrafikGkmKabKot> {
       appBar: AppBar(
         title: const Text(
           'Garis Kemiskinan (GK) Kabupaten/Kota',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
+         iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: Colors.black,
         leading: IconButton(
           onPressed: () {
@@ -43,7 +44,7 @@ class _BodyGrafikGkmKabKot extends State<BodyGrafikGkmKabKot> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.20,
+                height: screenHeight * 1.45,
                 width: screenWidth,
                 child: Column(
                   children: [

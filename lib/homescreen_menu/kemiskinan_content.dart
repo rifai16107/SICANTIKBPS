@@ -25,8 +25,10 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('KEMISKINAN', style: TextStyle(fontSize: 16)),
+        title: const Text('KEMISKINAN', style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -298,14 +300,8 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
                   child: Column(
                     children: [
                       Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Column(
-                          children: [
-                            Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Container(
+                        child: Container(
+                                height: 0.15 * screenHeight,
                                 color: Colors.black,
                                 child: Center(
                                   child: Padding(
@@ -346,22 +342,18 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
                             ),
                             Flexible(
                               fit: FlexFit.tight,
-                              flex: 2,
+                              flex: 1,
                               child: Container(color: Colors.transparent),
                             ),
-                          ],
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
                         ),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(39, 101, 182, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -370,67 +362,88 @@ class _kemiskinanContentState extends State<kemiskinanContent> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Perkembangan Kemiskinan Kabupaten Cilacap",
-                                    textAlign: TextAlign.center,
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.12,
+                                    child: Text(
+                                      'Perkembangan Kemiskinan Kabupaten Cilacap',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      const Divider(height: 5, color: Colors.transparent),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(236, 138, 20, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      const Divider(height: 3, color: Colors.transparent),
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
-                                child: const SeriesPengangguranKabkot(),
+                                child: const SeriesKemiskinanKabkot(),
                                 direction: AxisDirection.left,
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: Row(
-                              children: [
-                                const Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Kemiskinan Kabupaten/Kota di Jawa Tengah",
-                                    textAlign: TextAlign.center,
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_jateng.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                const Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.12,
+                                    child: Text(
+                                      'Kemiskinan Kabupaten/Kota di Jawa Tengah',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),

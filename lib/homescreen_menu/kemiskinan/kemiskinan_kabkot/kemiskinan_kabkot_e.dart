@@ -625,7 +625,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                     Container(
                       width: screenWidth * 1.0,
                       height: screenHeight * 0.08,
-                      color: Colors.green,
+                      color: Colors.orange,
                       child: Row(
                         children: [
                           Flexible(
@@ -639,7 +639,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 13,
+                                    fontSize: 12.5,
                                     color: Colors.white),
                               ),
                             ),
@@ -655,7 +655,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 13,
+                                    fontSize: 12.5,
                                     color: Colors.white),
                               ),
                             ),
@@ -671,7 +671,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 13,
+                                    fontSize: 12.5,
                                     color: Colors.white),
                               ),
                             ),
@@ -687,7 +687,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 13,
+                                    fontSize: 12.5,
                                     color: Colors.white),
                               ),
                             ),
@@ -703,7 +703,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 13,
+                                    fontSize: 12.5,
                                     color: Colors.white),
                               ),
                             ),
@@ -719,7 +719,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 13,
+                                    fontSize: 12.5,
                                     color: Colors.white),
                               ),
                             ),
@@ -756,7 +756,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota1,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -771,7 +771,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk1, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -786,7 +786,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_1, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -801,7 +801,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk1, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -816,7 +816,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_1, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -831,7 +831,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_1, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -857,7 +857,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota2,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -872,7 +872,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk2, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -887,7 +887,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_2, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -902,7 +902,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk2, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -917,7 +917,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_2, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -932,7 +932,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_2, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -958,7 +958,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota3,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -973,7 +973,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk3, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -988,7 +988,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_3, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1003,7 +1003,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk3, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1018,7 +1018,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_3, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1033,7 +1033,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_3, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1060,7 +1060,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota4,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1075,7 +1075,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk4, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1090,7 +1090,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_4, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1105,7 +1105,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk4, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1120,7 +1120,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_4, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1135,7 +1135,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_4, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1161,7 +1161,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota5,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1176,7 +1176,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk5, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1191,7 +1191,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_5, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1206,7 +1206,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk5, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1221,7 +1221,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_5, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1236,7 +1236,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_5, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1262,7 +1262,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota6,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1277,7 +1277,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk6, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1292,7 +1292,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_6, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1307,7 +1307,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk6, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1322,7 +1322,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_6, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1337,7 +1337,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_6, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1363,7 +1363,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota7,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1378,7 +1378,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk7, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1393,7 +1393,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_7, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1408,7 +1408,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk7, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1423,7 +1423,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_7, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1438,7 +1438,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_7, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1464,7 +1464,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota8,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1479,7 +1479,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk8, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1494,7 +1494,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_8, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1509,7 +1509,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk8, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1524,7 +1524,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_8, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1539,7 +1539,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_8, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1565,7 +1565,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota9,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1580,7 +1580,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk9, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1595,7 +1595,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_9, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1610,7 +1610,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk9, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1625,7 +1625,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_9, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1640,7 +1640,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_9, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1666,7 +1666,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota10,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1681,7 +1681,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk10, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1696,7 +1696,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_10, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1711,7 +1711,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk10, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1726,7 +1726,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_10, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1741,7 +1741,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_10, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1767,7 +1767,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota11,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1782,7 +1782,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk11, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1797,7 +1797,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_11, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1812,7 +1812,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk11, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1827,7 +1827,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_11, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1842,7 +1842,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_11, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1868,7 +1868,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota12,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1883,7 +1883,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk12, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1898,7 +1898,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_12, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1913,7 +1913,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk12, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1928,7 +1928,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_12, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1943,7 +1943,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_12, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1969,7 +1969,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota13,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1984,7 +1984,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk13, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -1999,7 +1999,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_13, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2014,7 +2014,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk13, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2029,7 +2029,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_13, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2044,7 +2044,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_13, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2070,7 +2070,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota14,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2085,7 +2085,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk14, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2100,7 +2100,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_14, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2115,7 +2115,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk14, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2130,7 +2130,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_14, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2145,7 +2145,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_14, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2171,7 +2171,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota15,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2186,7 +2186,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk15, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2201,7 +2201,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_15, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2216,7 +2216,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk15, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2231,7 +2231,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_15, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2246,7 +2246,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_15, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2272,7 +2272,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota16,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2287,7 +2287,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk16, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2302,7 +2302,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_16, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2317,7 +2317,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk16, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2332,7 +2332,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_16, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2347,7 +2347,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_16, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2373,7 +2373,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota17,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2388,7 +2388,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk17, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2403,7 +2403,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_17, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2418,7 +2418,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk17, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2433,7 +2433,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_17, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2448,7 +2448,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_17, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2474,7 +2474,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota18,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2489,7 +2489,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk18, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2504,7 +2504,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_18, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2519,7 +2519,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk18, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2534,7 +2534,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_18, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2549,7 +2549,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_18, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2575,7 +2575,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota19,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2590,7 +2590,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk19, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2605,7 +2605,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_19, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2620,7 +2620,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk19, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2635,7 +2635,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_19, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2650,7 +2650,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_19, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2676,7 +2676,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota20,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2691,7 +2691,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk20, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2706,7 +2706,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_20, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2721,7 +2721,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk20, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2736,7 +2736,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_20, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2751,7 +2751,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_20, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2777,7 +2777,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota21,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2792,7 +2792,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk21, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2807,7 +2807,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_21, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2822,7 +2822,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk21, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2837,7 +2837,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_21, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2852,7 +2852,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_21, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2878,7 +2878,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota22,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2893,7 +2893,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk22, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2908,7 +2908,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_22, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2923,7 +2923,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk22, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2938,7 +2938,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_22, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2953,7 +2953,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_22, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2979,7 +2979,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota23,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -2994,7 +2994,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk23, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3009,7 +3009,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_23, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3024,7 +3024,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk23, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3039,7 +3039,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_23, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3054,7 +3054,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_23, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3080,7 +3080,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota24,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3095,7 +3095,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk24, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3110,7 +3110,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_24, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3125,7 +3125,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk24, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3140,7 +3140,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_24, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3155,7 +3155,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_24, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3181,7 +3181,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota25,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3196,7 +3196,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk25, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3211,7 +3211,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_25, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3226,7 +3226,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk25, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3241,7 +3241,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_25, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3256,7 +3256,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_25, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3282,7 +3282,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota26,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3297,7 +3297,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk26, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3312,7 +3312,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_26, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3327,7 +3327,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk26, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3342,7 +3342,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_26, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3357,7 +3357,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_26, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3383,7 +3383,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota27,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3398,7 +3398,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk27, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3413,7 +3413,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_27, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3428,7 +3428,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk27, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3443,7 +3443,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_27, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3458,7 +3458,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_27, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3484,7 +3484,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota28,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3499,7 +3499,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk28, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3514,7 +3514,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_28, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3529,7 +3529,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk28, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3544,7 +3544,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_28, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3559,7 +3559,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_28, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3585,7 +3585,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota29,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3600,7 +3600,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk29, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3615,7 +3615,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_29, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3630,7 +3630,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk29, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3645,7 +3645,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_29, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3660,7 +3660,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_29, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3686,7 +3686,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota30,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3701,7 +3701,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk30, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3716,7 +3716,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_30, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3731,7 +3731,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk30, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3746,7 +3746,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_30, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3761,7 +3761,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_30, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3787,7 +3787,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota31,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3802,7 +3802,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk31, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3817,7 +3817,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_31, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3832,7 +3832,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk31, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3847,7 +3847,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_31, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3862,7 +3862,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_31, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3888,7 +3888,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota32,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3903,7 +3903,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk32, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3918,7 +3918,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_32, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3933,7 +3933,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk32, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3948,7 +3948,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_32, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3963,7 +3963,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_32, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -3989,7 +3989,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota33,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4004,7 +4004,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk33, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4019,7 +4019,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_33, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4034,7 +4034,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk33, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4049,7 +4049,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_33, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4064,7 +4064,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_33, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4076,7 +4076,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                             //Kota Pekalongan
                             Container(
                               width: screenWidth * 1.0,
-                              height: screenHeight * 0.049,
+                              height: screenHeight * 0.055,
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
@@ -4090,7 +4090,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota34,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4105,7 +4105,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk34, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4120,7 +4120,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_34, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4135,7 +4135,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk34, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4150,7 +4150,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_34, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4165,7 +4165,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_34, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4191,7 +4191,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota35,
                                         textAlign: TextAlign.left,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4206,7 +4206,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(pmk35, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4221,7 +4221,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p0_35, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4236,7 +4236,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(gk35, 3),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4251,7 +4251,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p1_35, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4266,7 +4266,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         Format.convertTo(p2_35, 2),
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
@@ -4279,7 +4279,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                             Container(
                               width: screenWidth * 1.0,
                               height: screenHeight * 0.050,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: Row(
                                 children: [
                                   Flexible(
@@ -4292,8 +4292,8 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         kabkota36,
                                         textAlign: TextAlign.center,
                                         style: const TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 14,
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 13,
                                             color: Colors.white),
                                       ),
                                     ),
@@ -4309,7 +4309,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
                                             fontWeight: FontWeight.normal,
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             color: Colors.white),
                                       ),
                                     ),
@@ -4325,7 +4325,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
                                             fontWeight: FontWeight.normal,
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             color: Colors.white),
                                       ),
                                     ),
@@ -4341,7 +4341,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
                                             fontWeight: FontWeight.normal,
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             color: Colors.white),
                                       ),
                                     ),
@@ -4357,7 +4357,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
                                             fontWeight: FontWeight.normal,
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             color: Colors.white),
                                       ),
                                     ),
@@ -4373,7 +4373,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
                                             fontWeight: FontWeight.normal,
-                                            fontSize: 13,
+                                            fontSize: 12.5,
                                             color: Colors.white),
                                       ),
                                     ),
@@ -4469,7 +4469,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
                               padding: const EdgeInsets.only(
                                 top: 4,
                                 left: 4,
-                                bottom: 70,
+                                bottom: 75,
                               ),
                               child: const Text(
                                 " Sumber Data : Survei Sosial Ekonomi Nasional (SUSENAS)",
@@ -4498,6 +4498,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
       floatingActionButton: SpeedDial(
           icon: Icons.bar_chart_outlined,
           visible: true,
+          foregroundColor: Colors.orange,
           //mini:true,
           //animatedIcon:AnimatedIcons.menu_close,
           activeIcon: Icons.close,
@@ -4509,7 +4510,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
           closeManually: false,
           children: [
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(
@@ -4523,7 +4524,7 @@ class _kemiskinanKabkotEState extends State<kemiskinanKabkotE> {
               labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
             ),
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(

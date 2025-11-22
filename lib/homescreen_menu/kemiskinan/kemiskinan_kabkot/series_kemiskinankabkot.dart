@@ -2,14 +2,14 @@ import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/kemiskinan/kemiskinan_kabkot/body_series_kemiskinankabkot.dart';
 import 'package:flutter/material.dart';
 
-class SeriesPengangguranKabkot extends StatefulWidget {
-  const SeriesPengangguranKabkot({super.key});
+class SeriesKemiskinanKabkot extends StatefulWidget {
+  const SeriesKemiskinanKabkot({super.key});
 
   @override
-  State<SeriesPengangguranKabkot> createState() => _SeriesPengangguranKabkot();
+  State<SeriesKemiskinanKabkot> createState() => _SeriesKemiskinanKabkot();
 }
 
-class _SeriesPengangguranKabkot extends State<SeriesPengangguranKabkot> {
+class _SeriesKemiskinanKabkot extends State<SeriesKemiskinanKabkot> {
   @override
   Widget build(BuildContext context) {
     final screenHeight =
