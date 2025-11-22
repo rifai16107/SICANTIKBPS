@@ -248,7 +248,7 @@ class _PengangguranKabkotAState extends State<PengangguranKabkotA> {
                   Container(
                     width: screenWidth * 1.0,
                     height: screenHeight * 0.06,
-                    color: Colors.green,
+                    color: Colors.orange,
                     child: Row(
                       children: [
                         Flexible(
@@ -2340,7 +2340,7 @@ class _PengangguranKabkotAState extends State<PengangguranKabkotA> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.050,
-                            color: Colors.green,
+                            color: Colors.orange,
                             child: Row(
                               children: [
                                 Flexible(

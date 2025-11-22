@@ -262,7 +262,7 @@ class _PengangguranKabkotEState extends State<PengangguranKabkotE> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.06,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -2354,7 +2354,7 @@ class _PengangguranKabkotEState extends State<PengangguranKabkotE> {
                               Container(
                                 width: screenWidth * 1.0,
                                 height: screenHeight * 0.050,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: Row(
                                   children: [
                                     Flexible(
@@ -2458,18 +2458,20 @@ class _PengangguranKabkotEState extends State<PengangguranKabkotE> {
         floatingActionButton: SpeedDial(
           icon: Icons.bar_chart_outlined,
           visible:true,
+          foregroundColor: Colors.orange,
           //mini:true, 
           //animatedIcon:AnimatedIcons.menu_close,
           activeIcon: Icons.close,
           buttonSize: const Size (45,45),
           curve: Curves.elasticInOut,
           direction: SpeedDialDirection.right,
+          
           //animatedIconTheme: const IconThemeData(size: 25),
           //animatedIcon: AnimatedIcons.list_view,
           closeManually:false,
           children: [
             SpeedDialChild(
-               backgroundColor: Colors.greenAccent, 
+               backgroundColor: Colors.orangeAccent, 
               child:const Icon(Icons.bar_chart),
               onTap: () {
                   Navigator.push(
@@ -2483,7 +2485,7 @@ class _PengangguranKabkotEState extends State<PengangguranKabkotE> {
               labelStyle:  const TextStyle(color:Colors.white,fontSize: 10),
             ),
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child:const Icon(Icons.bar_chart),
               onTap: () {
                   Navigator.push(

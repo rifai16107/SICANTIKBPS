@@ -219,7 +219,7 @@ class _GrafikIpmGenderState extends State<GrafikIpmGender> {
                     ),
                     SizedBox(
                       child: const Text(
-                        " Sentuh legenda untuk menaktifkan/non aktifkan series",
+                        " Sentuh legenda untuk mengaktifkan/non aktifkan series",
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.normal,

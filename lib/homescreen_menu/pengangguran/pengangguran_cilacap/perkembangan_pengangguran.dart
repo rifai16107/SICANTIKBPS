@@ -126,7 +126,7 @@ class _PerkembanganPengangguranState extends State<PerkembanganPengangguran> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Tahun",
@@ -144,7 +144,7 @@ class _PerkembanganPengangguranState extends State<PerkembanganPengangguran> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "TPAK",
@@ -162,7 +162,7 @@ class _PerkembanganPengangguranState extends State<PerkembanganPengangguran> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "TPT",
@@ -500,11 +500,26 @@ class _PerkembanganPengangguranState extends State<PerkembanganPengangguran> {
                             position: LegendPosition.bottom,
                           ),
                           primaryYAxis: NumericAxis(
+                            //title: AxisTitle(text: 'TAK'),
+                            edgeLabelPlacement: EdgeLabelPlacement.shift,
                             majorGridLines: const MajorGridLines(width: 0),
                             minimum: 0,
                             maximum: 100,
                             interval: 20,
                           ),
+                          axes: <ChartAxis>[
+                            NumericAxis(
+                              opposedPosition: true, // Positions on the opposite side
+                              labelStyle: TextStyle(color: Color.fromARGB(255, 18, 21, 214),),
+                              name: 'secondaryYAxis', // Unique name for the secondary axis
+                              //title: AxisTitle(text: 'TPT'),
+                              majorGridLines: const MajorGridLines(width: 0),
+                                  minimum: 0,
+                                  maximum: 12,
+                                  interval: 3,
+                              // ... other secondary axis properties
+                            ),
+                          ],
                           tooltipBehavior: tooltip,
                           series: <CartesianSeries>[
                             ColumnSeries<_ChartData, String>(
@@ -517,13 +532,14 @@ class _PerkembanganPengangguranState extends State<PerkembanganPengangguran> {
                               //data.y,
                               dataLabelSettings: const DataLabelSettings(
                                 // Renders the data label
+                                labelPosition: ChartDataLabelPosition.inside,
                                 isVisible: true,
                                 textStyle: TextStyle(fontSize: 10),
                               ),
                               name: 'TPAK',
                               color: const Color.fromARGB(255, 240, 164, 50),
                             ),
-                            ColumnSeries<_ChartData, String>(
+                            LineSeries<_ChartData, String>(
                               dataSource: data,
                               xValueMapper: (_ChartData data, _) => data.x,
                               yValueMapper: (_ChartData data, _) => data.y1,
@@ -531,17 +547,35 @@ class _PerkembanganPengangguranState extends State<PerkembanganPengangguran> {
                               //sortingOrder: SortingOrder.descending,
                               //sortFieldValueMapper: (_ChartData data, _) =>
                               //data.y,
+                              markerSettings:
+                                const MarkerSettings(
+                                  isVisible: true,
+                                  shape: DataMarkerType.diamond,
+                                ),
                               dataLabelSettings: const DataLabelSettings(
                                 // Renders the data label
+                                labelPosition: ChartDataLabelPosition.outside,
                                 isVisible: true,
-                                textStyle: TextStyle(fontSize: 10),
+                                textStyle: TextStyle(fontSize: 11, color: Color.fromARGB(255, 18, 21, 214), fontWeight: FontWeight.bold),
                               ),
+                              width:3,
+                              yAxisName: 'secondaryYAxis',
                               name: 'TPT',
-                              color: const Color.fromARGB(255, 170, 240, 80),
+                              color: const Color.fromARGB(255, 18, 21, 214),
                             ),
                           ],
                         ),
                       ),
+                      SizedBox(
+                      child: const Text(
+                        " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                    const Divider(indent: 5, color: Colors.transparent),
                     ],
                   ),
                 );
