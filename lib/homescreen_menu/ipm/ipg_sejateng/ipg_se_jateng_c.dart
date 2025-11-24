@@ -377,7 +377,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.04,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -385,7 +385,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               flex: 4,
                               child: Container(
                                 height: screenHeight * 0.03,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                     right: 15, top: 5, bottom: 0),
                                 child: const Text(
@@ -403,7 +403,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               flex: 4,
                               child: Container(
                                 height: screenHeight * 0.03,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                     left: 10, top: 5, bottom: 2),
                                 child: Text(
@@ -421,7 +421,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               flex: 4,
                               child: Container(
                                 height: screenHeight * 0.03,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                     left: 10, top: 5, bottom: 2),
                                 child: Text(
@@ -440,7 +440,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.04,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -448,7 +448,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               flex: 4,
                               child: Container(
                                 height: screenHeight * 0.04,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                     right: 15, top: 0, bottom: 8),
                                 child: const Text(
@@ -466,7 +466,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.04,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                     left: 10, top: 3, bottom: 5),
                                 child: const Text(
@@ -484,7 +484,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.04,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                     left: 10, top: 3, bottom: 5),
                                 child: const Text(
@@ -502,7 +502,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.04,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                     left: 10, top: 3, bottom: 5),
                                 child: const Text(
@@ -520,7 +520,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.04,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                     left: 10, top: 3, bottom: 5),
                                 child: const Text(
@@ -3668,7 +3668,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
                               Container(
                                 width: screenWidth * 1.0,
                                 height: screenHeight * 0.050,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: Row(
                                   children: [
                                     Flexible(
@@ -3819,6 +3819,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
       floatingActionButton: SpeedDial(
           icon: Icons.bar_chart_outlined,
           visible: true,
+          foregroundColor: Colors.orange,
           //mini:true,
           //animatedIcon:AnimatedIcons.menu_close,
           activeIcon: Icons.close,
@@ -3830,7 +3831,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
           closeManually: false,
           children: [
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(
@@ -3844,7 +3845,7 @@ class _IpgKabkotCState extends State<IpgKabkotC> {
               labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
             ),
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(

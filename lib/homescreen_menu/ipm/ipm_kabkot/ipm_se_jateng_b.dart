@@ -296,22 +296,23 @@ class _IpmKabkotBState extends State<IpmKabkotB> {
                   //Flexible(
                   //fit: FlexFit.tight,
                   //flex: 5,
-                  Container(
+                 Container(
                     width: screenWidth * 1.0,
-                    height: screenHeight * 0.04,
-                    color: Colors.green,
+                    height: screenHeight * 0.08,
+                    color: Colors.orange,
                     child: Row(
                       children: [
                         Flexible(
                           fit: FlexFit.tight,
                           flex: 4,
                           child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
-                                right: 3, top: 10, bottom: 0),
+                                right: 3, top: 5, bottom: 0),
                             child: const Text(
-                              "Kabupaten/",
+                              'Kabupaten/\n'
+                              'Kota',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -324,16 +325,17 @@ class _IpmKabkotBState extends State<IpmKabkotB> {
                           fit: FlexFit.tight,
                           flex: 2,
                           child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
-                                left: 15, top: 5, bottom: 2),
+                                left: 5, top: 5, bottom: 2),
                             child: const Text(
-                              "UHH",
+                              'UHH\n'
+                              '(tahun)',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 13,
+                                  fontSize: 12.5,
                                   color: Colors.white),
                             ),
                           ),
@@ -342,16 +344,17 @@ class _IpmKabkotBState extends State<IpmKabkotB> {
                           fit: FlexFit.tight,
                           flex: 2,
                           child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
-                                left: 15, top: 5, bottom: 2),
+                                left: 5, top: 5, bottom: 2),
                             child: const Text(
-                              "RLS",
+                              'RLS\n'
+                              '(tahun)',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 13,
+                                  fontSize: 12.5,
                                   color: Colors.white),
                             ),
                           ),
@@ -360,16 +363,17 @@ class _IpmKabkotBState extends State<IpmKabkotB> {
                           fit: FlexFit.tight,
                           flex: 2,
                           child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
-                                left: 10, top: 5, bottom: 2),
+                                left: 3, top: 5, bottom: 2),
                             child: const Text(
-                              "HLS",
+                              'HLS\n'
+                              '(tahun)',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 13,
+                                  fontSize: 12.5,
                                   color: Colors.white),
                             ),
                           ),
@@ -378,16 +382,17 @@ class _IpmKabkotBState extends State<IpmKabkotB> {
                           fit: FlexFit.tight,
                           flex: 2,
                           child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
-                                left: 10, top: 5, bottom: 2),
+                                left: 0, top: 5, bottom: 2),
                             child: const Text(
-                              "PPP",
+                              'PPP\n'
+                              '(juta Rp)',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 13,
+                                  fontSize: 12.5,
                                   color: Colors.white),
                             ),
                           ),
@@ -396,129 +401,12 @@ class _IpmKabkotBState extends State<IpmKabkotB> {
                           fit: FlexFit.tight,
                           flex: 2,
                           child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
-                                left: 15, top: 10, bottom: 0),
+                                left: 6, top: 10, bottom: 0),
                             child: const Text(
                               "IPM",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    width: screenWidth * 1.0,
-                    height: screenHeight * 0.04,
-                    color: Colors.green,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 4,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
-                            padding: const EdgeInsets.only(
-                                right: 3, top: 0, bottom: 8),
-                            child: const Text(
-                              "Kota",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
-                            padding: const EdgeInsets.only(
-                                left: 10, top: 5, bottom: 5),
-                            child: const Text(
-                              "(tahun)",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 11,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
-                            padding: const EdgeInsets.only(
-                                left: 10, top: 5, bottom: 5),
-                            child: const Text(
-                              "(tahun)",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 11,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
-                            padding: const EdgeInsets.only(
-                                left: 10, top: 5, bottom: 5),
-                            child: const Text(
-                              "(tahun)",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 11,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
-                            padding: const EdgeInsets.only(
-                                left: 5, top: 5, bottom: 5),
-                            child: const Text(
-                              "(juta Rp)",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 11,
-                                  color: Colors.white),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          fit: FlexFit.tight,
-                          flex: 2,
-                          child: Container(
-                            height: screenHeight * 0.04,
-                            color: Colors.green,
-                            padding: const EdgeInsets.only(
-                                left: 15, top: 0, bottom: 10),
-                            child: const Text(
-                              "",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -4082,7 +3970,7 @@ class _IpmKabkotBState extends State<IpmKabkotB> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.050,
-                            color: Colors.green,
+                            color: Colors.orange,
                             child: Row(
                               children: [
                                 Flexible(

@@ -212,7 +212,7 @@ class _GrafikIpgKabkotState extends State<GrafikIpgKabkot> {
                     primaryYAxis: NumericAxis(
                         majorGridLines: const MajorGridLines(width: 1),
                         minimum: 0,
-                        maximum: 100,
+                        maximum: 120,
                         interval: 20),
                     tooltipBehavior: tooltip,
                     series: <CartesianSeries>[

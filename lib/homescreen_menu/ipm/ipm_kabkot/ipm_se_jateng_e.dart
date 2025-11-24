@@ -303,239 +303,128 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
                       //fit: FlexFit.tight,
                       //flex: 5,
                       Container(
-                        width: screenWidth * 1.0,
-                        height: screenHeight * 0.04,
-                        color: Colors.green,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 4,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    right: 3, top: 10, bottom: 0),
-                                child: const Text(
-                                  "Kabupaten/",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: Colors.white),
-                                ),
-                              ),
+                    width: screenWidth * 1.0,
+                    height: screenHeight * 0.08,
+                    color: Colors.orange,
+                    child: Row(
+                      children: [
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 4,
+                          child: Container(
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
+                            padding: const EdgeInsets.only(
+                                right: 3, top: 5, bottom: 0),
+                            child: const Text(
+                              'Kabupaten/\n'
+                              'Kota',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
+                                  color: Colors.white),
                             ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 15, top: 5, bottom: 2),
-                                child: const Text(
-                                  "UHH",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 15, top: 5, bottom: 2),
-                                child: const Text(
-                                  "RLS",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 10, top: 5, bottom: 2),
-                                child: const Text(
-                                  "HLS",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 10, top: 5, bottom: 2),
-                                child: const Text(
-                                  "PPP",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 15, top: 10, bottom: 0),
-                                child: const Text(
-                                  "IPM",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        width: screenWidth * 1.0,
-                        height: screenHeight * 0.04,
-                        color: Colors.green,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 4,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    right: 3, top: 0, bottom: 8),
-                                child: const Text(
-                                  "Kota",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: Colors.white),
-                                ),
-                              ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
+                            padding: const EdgeInsets.only(
+                                left: 5, top: 5, bottom: 2),
+                            child: const Text(
+                              'UHH\n'
+                              '(tahun)',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
                             ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 10, top: 5, bottom: 5),
-                                child: const Text(
-                                  "(tahun)",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 11,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 10, top: 5, bottom: 5),
-                                child: const Text(
-                                  "(tahun)",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 11,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 10, top: 5, bottom: 5),
-                                child: const Text(
-                                  "(tahun)",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 11,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 5, top: 5, bottom: 5),
-                                child: const Text(
-                                  "(juta Rp)",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 11,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.green,
-                                padding: const EdgeInsets.only(
-                                    left: 15, top: 0, bottom: 10),
-                                child: const Text(
-                                  "",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: Colors.white),
-                                ),
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
+                            padding: const EdgeInsets.only(
+                                left: 5, top: 5, bottom: 2),
+                            child: const Text(
+                              'RLS\n'
+                              '(tahun)',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
+                            padding: const EdgeInsets.only(
+                                left: 3, top: 5, bottom: 2),
+                            child: const Text(
+                              'HLS\n'
+                              '(tahun)',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
+                            padding: const EdgeInsets.only(
+                                left: 0, top: 5, bottom: 2),
+                            child: const Text(
+                              'PPP\n'
+                              '(juta Rp)',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.5,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 2,
+                          child: Container(
+                            height: screenHeight * 0.08,
+                            color: Colors.orange,
+                            padding: const EdgeInsets.only(
+                                left: 6, top: 10, bottom: 0),
+                            child: const Text(
+                              "IPM",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                      
                       //),
                       Expanded(
                         //flex:16,
@@ -4196,7 +4085,7 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
                               Container(
                                 width: screenWidth * 1.0,
                                 height: screenHeight * 0.050,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: Row(
                                   children: [
                                     Flexible(
@@ -4431,8 +4320,9 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
           }),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
       floatingActionButton: SpeedDial(
-          icon: Icons.bar_chart_outlined,
+          icon: Icons.bar_chart,
           visible: true,
+          foregroundColor: Colors.orange,
           //mini:true,
           //animatedIcon:AnimatedIcons.menu_close,
           activeIcon: Icons.close,
@@ -4445,7 +4335,7 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
           closeManually: false,
           children: [
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(
@@ -4462,7 +4352,7 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
               ),
             ),
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(
@@ -4476,7 +4366,7 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
               labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
             ),
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(
@@ -4490,7 +4380,7 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
               labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
             ),
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(
@@ -4504,7 +4394,7 @@ class _IpmKabkotEState extends State<IpmKabkotE> {
               labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
             ),
             SpeedDialChild(
-              backgroundColor: Colors.greenAccent,
+              backgroundColor: Colors.orangeAccent,
               child: const Icon(Icons.bar_chart),
               onTap: () {
                 Navigator.push(

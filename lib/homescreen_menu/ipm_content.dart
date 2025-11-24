@@ -334,8 +334,10 @@ class _IpmContentState extends State<IpmContent> {
                   child: Column(
                     children: [
                       Flexible(
+                        fit: FlexFit.tight,
+                        flex: 4,
                         child: Container(
-                          height: 0.20 * screenHeight,
+                          height: 0.15 * screenHeight,
                           color: Colors.black,
                           child: Center(
                             child: Padding(
@@ -355,11 +357,7 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      Flexible(
-                        fit: FlexFit.tight,
-                        flex: 1,
-                        child: Container(color: Colors.transparent),
-                      ),
+                      const Divider(height: 15, color: Colors.transparent),
                       Card(
                         elevation: 20,
                         color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -394,7 +392,7 @@ class _IpmContentState extends State<IpmContent> {
                                   Container(
                                     alignment: Alignment.center,
                                     width: screenWidth * 0.80,
-                                    height: screenHeight * 0.10,
+                                    height: screenHeight * 0.09,
                                     child: Text(
                                       'Perkembangan IPM Kabupaten Cilacap',
                                       style: TextStyle(
@@ -411,7 +409,7 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      const Divider(height: 1, color: Colors.transparent),
+                      //const Divider(height: 1, color: Colors.transparent),
                       Card(
                         elevation: 20,
                         color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -446,7 +444,7 @@ class _IpmContentState extends State<IpmContent> {
                                   Container(
                                     alignment: Alignment.center,
                                     width: screenWidth * 0.80,
-                                    height: screenHeight * 0.10,
+                                    height: screenHeight * 0.09,
                                     child: Text(
                                       '[IPG] Indeks Pembangunan Manusia\n'
                                       '(IPM) Menurut Jenis Kelamin dan\n'
@@ -465,7 +463,7 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      const Divider(height: 1, color: Colors.transparent),
+                      //const Divider(height: 1, color: Colors.transparent),
                       Card(
                         elevation: 20,
                         color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -500,7 +498,7 @@ class _IpmContentState extends State<IpmContent> {
                                   Container(
                                     alignment: Alignment.center,
                                     width: screenWidth * 0.80,
-                                    height: screenHeight * 0.10,
+                                    height: screenHeight * 0.09,
                                     child: Text(
                                       'Perkembangan IDG Kabupaten Cilacap',
                                       style: TextStyle(
@@ -517,7 +515,7 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      const Divider(height: 1, color: Colors.transparent),
+                     //const Divider(height: 1, color: Colors.transparent),
                       Card(
                         elevation: 20,
                         color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -543,7 +541,7 @@ class _IpmContentState extends State<IpmContent> {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Image.asset(
-                                    'assets/images/daerah/logo_cilacap.png',
+                                    'assets/images/daerah/logo_jateng.png',
                                     fit: BoxFit.cover,
                                     width: screenWidth * 0.12,
                                     height: screenHeight * 0.08,
@@ -552,7 +550,7 @@ class _IpmContentState extends State<IpmContent> {
                                   Container(
                                     alignment: Alignment.center,
                                     width: screenWidth * 0.80,
-                                    height: screenHeight * 0.10,
+                                    height: screenHeight * 0.09,
                                     child: Text(
                                       'IPM Kabupaten/Kota di Jawa Tengah',
                                       style: TextStyle(
@@ -569,61 +567,19 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(236, 138, 20, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const SeriesIpmsejateng(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: const Row(
-                              children: [
-                                Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "IPM Kabupaten/Kota di Jawa Tengah",
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
+                      
 
                       //IPG
-                      const Divider(height: 5, color: Colors.transparent),
-
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(236, 138, 20, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      //const Divider(height: 1, color: Colors.transparent),
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -632,40 +588,50 @@ class _IpmContentState extends State<IpmContent> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: const Row(
-                              children: [
-                                Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "[IPG] Indeks Pembangunan Manusia Kabupaten/Kota di Jawa Tengah Menurut Jenis Kelamin",
-                                    textAlign: TextAlign.center,
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_jateng.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.09,
+                                    child: Text(
+                                      '[IPG] Indeks Pembangunan Manusia Kabupaten/Kota di Jawa Tengah Menurut Jenis Kelamin',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      const Divider(height: 5, color: Colors.transparent),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(236, 138, 20, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      //const Divider(height: 1, color: Colors.transparent),
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -674,43 +640,53 @@ class _IpmContentState extends State<IpmContent> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: const Row(
-                              children: [
-                                Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "[IPG] Indeks Pembangunan Gender Kabupaten/Kota di Jawa Tengah",
-                                    textAlign: TextAlign.center,
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_jateng.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.09,
+                                    child: Text(
+                                      '[IPG] Indeks Pembangunan Gender Kabupaten/Kota di Jawa Tengah',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
+                      
 
                       //IDG
-                      const Divider(height: 5, color: Colors.transparent),
-
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(236, 138, 20, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      //const Divider(height: 1, color: Colors.transparent),
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -719,29 +695,42 @@ class _IpmContentState extends State<IpmContent> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: const Row(
-                              children: [
-                                Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "IDG Kabupaten/Kota di Jawa Tengah",
-                                    textAlign: TextAlign.center,
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_jateng.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.09,
+                                    child: Text(
+                                      'IDG Kabupaten/Kota di Jawa Tengah',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
+
+                      
                       Flexible(
                         flex: 1,
                         fit: FlexFit.tight,

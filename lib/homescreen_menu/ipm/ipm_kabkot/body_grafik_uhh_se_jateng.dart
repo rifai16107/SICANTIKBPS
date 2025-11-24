@@ -23,8 +23,8 @@ class _BodyGrafikUhhSejateng extends State<BodyGrafikUhhSejateng> {
       appBar: AppBar(
         title: const Text(
           'Umur Harapan Hidup (UHH) Kabupaten/Kota se Jawa Tengah',
-          style: TextStyle(fontSize: 16),
-        ),
+        style: TextStyle(fontSize: 16, color: Colors.white)),
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: Colors.black,
         leading: IconButton(
           onPressed: () {
@@ -43,7 +43,7 @@ class _BodyGrafikUhhSejateng extends State<BodyGrafikUhhSejateng> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.20,
+                height: screenHeight * 1.45,
                 width: screenWidth * 0.92,
                 child: Column(
                   children: [

@@ -23,8 +23,8 @@ class _BodyGrafikHlsSejateng extends State<BodyGrafikHlsSejateng> {
       appBar: AppBar(
         title: const Text(
           'Harapan Lama Sekolah (HLS) Kabupaten/Kota se Jawa Tengah',
-          style: TextStyle(fontSize: 16),
-        ),
+        style: TextStyle(fontSize: 16, color: Colors.white)),
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: Colors.black,
         leading: IconButton(
           onPressed: () {
@@ -43,7 +43,7 @@ class _BodyGrafikHlsSejateng extends State<BodyGrafikHlsSejateng> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.20,
+                height: screenHeight * 1.45,
                 width: screenWidth * 0.92,
                 child: Column(
                   children: [

@@ -23,8 +23,8 @@ class _BodyGrafikIpmSejateng extends State<BodyGrafikIpmSejateng> {
       appBar: AppBar(
         title: const Text(
           'IPM Kabupaten/Kota se Jawa Tengah',
-          style: TextStyle(fontSize: 16),
-        ),
+        style: TextStyle(fontSize: 16, color: Colors.white)),
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: Colors.black,
         leading: IconButton(
           onPressed: () {
@@ -43,7 +43,7 @@ class _BodyGrafikIpmSejateng extends State<BodyGrafikIpmSejateng> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.20,
+                height: screenHeight * 1.45,
                 width: screenWidth * 0.92,
                 child: Column(
                   children: [

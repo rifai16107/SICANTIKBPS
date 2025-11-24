@@ -304,7 +304,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.06,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -312,7 +312,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                               flex: 4,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   right: 3,
                                   top: 10,
@@ -334,7 +334,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   left: 15,
                                   top: 10,
@@ -356,7 +356,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   left: 15,
                                   top: 10,
@@ -378,7 +378,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   left: 10,
                                   top: 10,
@@ -400,7 +400,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   left: 10,
                                   top: 10,
@@ -422,7 +422,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   left: 15,
                                   top: 10,
@@ -4870,7 +4870,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
                               Container(
                                 width: screenWidth * 1.0,
                                 height: screenHeight * 0.050,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: Row(
                                   children: [
                                     Flexible(
@@ -5073,6 +5073,7 @@ class _IpgKabkotJatengState extends State<IpgKabkotJateng> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.bar_chart_sharp),
       ),

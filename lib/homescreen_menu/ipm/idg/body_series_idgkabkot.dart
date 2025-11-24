@@ -46,6 +46,8 @@ class _BodySeriesIdgKabkotState extends State<BodySeriesIdgKabkot> {
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       //isScrollable: true,
                       tabs: [

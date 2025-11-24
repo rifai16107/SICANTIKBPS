@@ -40,7 +40,7 @@ class _BodyGrafikIpgprKabkot extends State<BodyGrafikIpgprKabkot> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight * 1.20,
+                  height: screenHeight * 1.45,
                   width: screenWidth * 0.96,
                   child: Column(
                     children: [Flexible(child: GrafikIpgprKabkot())],

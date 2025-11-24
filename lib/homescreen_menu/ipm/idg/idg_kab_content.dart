@@ -529,16 +529,11 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    height: screenHeight * 0.05,
-                                    color: Colors.orange,
-                                    padding: const EdgeInsets.only(
-                                      top: 9,
-                                      right: 0,
-                                    ),
-                                    child: SizedBox(
+                                      alignment: Alignment.centerRight,
+                                      height: screenHeight * 0.05,
+                                      color: Colors.orange,
                                       child: Text(
                                         idg1.toStringAsFixed(2),
-                                        //"$ipm1",
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
                                           color: Colors.white,
@@ -547,7 +542,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                         ),
                                       ),
                                     ),
-                                  ),
+                                  
                                 ),
                                 Flexible(
                                   flex: 2,
@@ -555,10 +550,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     color: Colors.orange,
-                                    padding: const EdgeInsets.only(
-                                      top: 9,
-                                      right: 0,
-                                    ),
+                                    alignment: Alignment.centerRight,
                                     child: SizedBox(
                                       child: Text(
                                         idg2.toStringAsFixed(2),
@@ -578,10 +570,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     color: Colors.orange,
-                                    padding: const EdgeInsets.only(
-                                      top: 9,
-                                      right: 0,
-                                    ),
+                                   alignment: Alignment.centerRight,
                                     child: SizedBox(
                                       child: Text(
                                         idg3.toStringAsFixed(2),
@@ -601,10 +590,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     color: Colors.orange,
-                                    padding: const EdgeInsets.only(
-                                      top: 9,
-                                      right: 0,
-                                    ),
+                                    alignment: Alignment.centerRight,
                                     child: SizedBox(
                                       child: Text(
                                         idg4.toStringAsFixed(2),
@@ -624,10 +610,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     color: Colors.orange,
-                                    padding: const EdgeInsets.only(
-                                      top: 9,
-                                      right: 0,
-                                    ),
+                                    alignment: Alignment.centerRight,
                                     child: SizedBox(
                                       child: Text(
                                         idg5.toStringAsFixed(2),

@@ -360,7 +360,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.02,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -370,7 +370,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 2),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "",
                                   textAlign: TextAlign.center,
@@ -386,7 +386,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Sumbangan",
                                   style: TextStyle(
@@ -402,7 +402,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Perempuan",
                                   style: TextStyle(
@@ -418,7 +418,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Keterlibatan",
                                   style: TextStyle(
@@ -434,7 +434,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Indeks",
                                   style: TextStyle(
@@ -449,7 +449,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.02,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -459,7 +459,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Kabupaten/",
                                   textAlign: TextAlign.center,
@@ -475,7 +475,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Pendapatan",
                                   style: TextStyle(
@@ -491,7 +491,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Sbg Tenaga",
                                   style: TextStyle(
@@ -507,7 +507,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Perempuan",
                                   style: TextStyle(
@@ -523,7 +523,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.02,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Pemberda-",
                                   style: TextStyle(
@@ -538,7 +538,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.03,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -548,7 +548,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Kota",
                                   textAlign: TextAlign.center,
@@ -564,7 +564,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Perempuan",
                                   style: TextStyle(
@@ -580,7 +580,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "Profesional",
                                   style: TextStyle(
@@ -596,7 +596,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 1, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "di Parlemen",
                                   style: TextStyle(
@@ -612,7 +612,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 1, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "yaan Gender",
                                   style: TextStyle(
@@ -627,7 +627,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.03,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -637,7 +637,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 2),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "",
                                   textAlign: TextAlign.center,
@@ -653,7 +653,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "(persen)",
                                   style: TextStyle(
@@ -669,7 +669,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "(persen)",
                                   style: TextStyle(
@@ -685,7 +685,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "(persen)",
                                   style: TextStyle(
@@ -701,7 +701,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                 height: screenHeight * 0.03,
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 2, vertical: 0),
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: const Text(
                                   "(IDG)",
                                   style: TextStyle(
@@ -3452,7 +3452,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                               Container(
                                 width: screenWidth * 1.0,
                                 height: screenHeight * 0.050,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: Row(
                                   children: [
                                     Flexible(
@@ -3489,7 +3489,7 @@ class _IdgKabkotEState extends State<IdgKabkotE> {
                                       fit: FlexFit.tight,
                                       flex: 2,
                                       child: Container(
-                                        color: Colors.green,
+                                        color: Colors.orange,
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 2, vertical: 2),
                                         child: Text(

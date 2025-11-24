@@ -24,8 +24,9 @@ class _BodyGrafikIdg extends State<BodyGrafikIdg> {
         appBar: AppBar(
           title: const Text(
             'IDG Kabupaten Cilacap',
-            style: TextStyle(fontSize: 16),
-          ),
+             style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
+        iconTheme: const IconThemeData(color: Colors.white),
           backgroundColor: Colors.black,
           leading: IconButton(
             onPressed: () {

@@ -206,7 +206,7 @@ class _IpgKabkotAState extends State<IpgKabkotA> {
                   Container(
                     width: screenWidth * 1.0,
                     height: screenHeight * 0.04,
-                    color: Colors.green,
+                    color: Colors.orange,
                     child: Row(
                       children: [
                         Flexible(
@@ -214,7 +214,7 @@ class _IpgKabkotAState extends State<IpgKabkotA> {
                           flex: 4,
                           child: Container(
                             height: screenHeight * 0.03,
-                            color: Colors.green,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
                                 right: 25, top: 5, bottom: 0),
                             child: const Text(
@@ -232,7 +232,7 @@ class _IpgKabkotAState extends State<IpgKabkotA> {
                           flex: 4,
                           child: Container(
                             height: screenHeight * 0.03,
-                            color: Colors.green,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
                                 left: 10, top: 5, bottom: 2),
                             child: Text(
@@ -251,7 +251,7 @@ class _IpgKabkotAState extends State<IpgKabkotA> {
                   Container(
                     width: screenWidth * 1.0,
                     height: screenHeight * 0.04,
-                    color: Colors.green,
+                    color: Colors.orange,
                     child: Row(
                       children: [
                         Flexible(
@@ -259,7 +259,7 @@ class _IpgKabkotAState extends State<IpgKabkotA> {
                           flex: 4,
                           child: Container(
                             height: screenHeight * 0.04,
-                            color: Colors.green,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
                                 right: 25, top: 0, bottom: 8),
                             child: const Text(
@@ -277,7 +277,7 @@ class _IpgKabkotAState extends State<IpgKabkotA> {
                           flex: 2,
                           child: Container(
                             height: screenHeight * 0.04,
-                            color: Colors.green,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
                                 left: 10, top: 3, bottom: 5),
                             child: const Text(
@@ -295,7 +295,7 @@ class _IpgKabkotAState extends State<IpgKabkotA> {
                           flex: 2,
                           child: Container(
                             height: screenHeight * 0.04,
-                            color: Colors.green,
+                            color: Colors.orange,
                             padding: const EdgeInsets.only(
                                 left: 10, top: 3, bottom: 5),
                             child: const Text(
@@ -2288,7 +2288,7 @@ class _IpgKabkotAState extends State<IpgKabkotA> {
                           Container(
                             width: screenWidth * 1.0,
                             height: screenHeight * 0.050,
-                            color: Colors.green,
+                            color: Colors.orange,
                             child: Row(
                               children: [
                                 Flexible(
