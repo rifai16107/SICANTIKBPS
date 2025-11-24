@@ -110,10 +110,11 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   child: Container(
                                     height: screenHeight * 0.08,
                                     width: screenWidth,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
-                                        "IDG & Komponennya",
+                                        'IDG &\n'
+                                        'Komponennya',
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
@@ -128,7 +129,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(
@@ -146,7 +147,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(
@@ -164,7 +165,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(
@@ -182,7 +183,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(
@@ -200,7 +201,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(
@@ -227,7 +228,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                       left: 5,
                                       right: 0,
                                     ),
-                                    height: screenHeight * 0.10,
+                                    height: screenHeight * 0.12,
                                     child: const Center(
                                       child: Text(
                                         "Sumbangan Pendapatan Perempuan (persen)",
@@ -311,6 +312,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                 ),
                               ],
                             ),
+                            const Divider(thickness: 1),
                             Row(
                               children: [
                                 Flexible(
@@ -322,7 +324,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                       left: 5,
                                       right: 0,
                                     ),
-                                    height: screenHeight * 0.10,
+                                    height: screenHeight * 0.12,
                                     child: const Center(
                                       child: Text(
                                         "Perempuan Sebagai Tenaga Profesional (persen)",
@@ -406,6 +408,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                 ),
                               ],
                             ),
+                            const Divider(thickness: 1),
                             Row(
                               children: [
                                 Flexible(
@@ -417,7 +420,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                       left: 5,
                                       right: 0,
                                     ),
-                                    height: screenHeight * 0.1,
+                                    height: screenHeight * 0.12,
                                     child: const Center(
                                       child: Text(
                                         "Keterlibatan Perempuan di Parlemen (persen)",
@@ -508,7 +511,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "IDG",
@@ -527,7 +530,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 9,
                                       right: 0,
@@ -551,7 +554,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 9,
                                       right: 0,
@@ -574,7 +577,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 9,
                                       right: 0,
@@ -597,7 +600,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 9,
                                       right: 0,
@@ -620,7 +623,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 9,
                                       right: 0,
@@ -642,6 +645,25 @@ class _IdgKabContentState extends State<IdgKabContent> {
                             ),
                           ],
                         ),
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            padding: const EdgeInsets.only(
+                              top: 4,
+                              left: 4,
+                              bottom: 0,
+                            ),
+                            child: const Text(
+                              " Sumber Data : Survei Sosial Ekonomi Nasional (Susenas)",
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.normal,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                       const Divider(
                         color: Colors.white,
@@ -672,6 +694,7 @@ class _IdgKabContentState extends State<IdgKabContent> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.bar_chart_sharp),
       ),

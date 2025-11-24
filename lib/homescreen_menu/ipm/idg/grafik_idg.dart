@@ -17,10 +17,12 @@ class _GrafikIdgState extends State<GrafikIdg> {
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -72,98 +74,104 @@ class _GrafikIdgState extends State<GrafikIdg> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight,
+                height: screenHeight * 1.1,
                 width: screenWidth,
                 child: SfCartesianChart(
-                    title: ChartTitle(
-                        text:
-                            'Indek Pemberdayaan Gender (IDG) dan Komponen Pembentuknya di Kabupaten Cilacap',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                        )),
-                    primaryXAxis: CategoryAxis(),
-                    legend: Legend(
-                        // Visibility of legend
-                        overflowMode: LegendItemOverflowMode.wrap,
-                        textStyle: const TextStyle(
-                          fontSize: 11,
-                        ),
+                  title: ChartTitle(
+                    text:
+                        'Indek Pemberdayaan Gender (IDG) dan Komponen Pembentuknya di Kabupaten Cilacap',
+                    // Aligns the chart title to left
+                    alignment: ChartAlignment.center,
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 10, 10, 10),
+                      fontFamily: 'Roboto',
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    ),
+                  ),
+                  primaryXAxis: CategoryAxis(),
+                  legend: Legend(
+                    // Visibility of legend
+                    overflowMode: LegendItemOverflowMode.wrap,
+                    textStyle: const TextStyle(fontSize: 11),
+                    isVisible: true,
+                    position: LegendPosition.bottom,
+                  ),
+                  primaryYAxis: NumericAxis(
+                    majorGridLines: const MajorGridLines(width: 0),
+                    minimum: 0,
+                    maximum: 100,
+                    interval: 25,
+                  ),
+                  tooltipBehavior: tooltip,
+                  series: <CartesianSeries>[
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y,
+                      // Sorting based on the specified field
+                      //sortingOrder: SortingOrder.descending,
+                      //sortFieldValueMapper: (_ChartData data, _) =>
+                      //data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
                         isVisible: true,
-                        position: LegendPosition.bottom),
-                    primaryYAxis: NumericAxis(
-                        majorGridLines: const MajorGridLines(width: 0),
-                        minimum: 0,
-                        maximum: 100,
-                        interval: 25),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
-                        name: 'Nilai Indeks Pemberdayaan Gender (IDG)',
-                        color: const Color.fromARGB(255, 22, 18, 238),
+                        textStyle: TextStyle(fontSize: 11),
                       ),
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y1,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
-                        name: 'Sumbangan Pendapatan Perempuan (persen)',
-                        color: const Color.fromARGB(255, 236, 248, 63),
+                      name: 'Nilai Indeks Pemberdayaan Gender (IDG)',
+                      color: const Color.fromARGB(255, 22, 18, 238),
+                    ),
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y1,
+                      // Sorting based on the specified field
+                      //sortingOrder: SortingOrder.descending,
+                      //sortFieldValueMapper: (_ChartData data, _) =>
+                      //data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
+                        isVisible: true,
+                        textStyle: TextStyle(fontSize: 11),
                       ),
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y2,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
-                        name: 'Perempuan Sebagai Tenaga Profesional (persen)',
-                        color: const Color.fromARGB(255, 243, 65, 11),
+                      name: 'Sumbangan Pendapatan Perempuan (persen)',
+                      color: const Color.fromARGB(255, 236, 248, 63),
+                    ),
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y2,
+                      // Sorting based on the specified field
+                      //sortingOrder: SortingOrder.descending,
+                      //sortFieldValueMapper: (_ChartData data, _) =>
+                      //data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
+                        isVisible: true,
+                        textStyle: TextStyle(fontSize: 11),
                       ),
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y3,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
-                        name: 'Keterlibatan Perempuan di Parlemen (persen)',
-                        color: const Color.fromARGB(255, 19, 209, 35),
+                      name: 'Perempuan Sebagai Tenaga Profesional (persen)',
+                      color: const Color.fromARGB(255, 243, 65, 11),
+                    ),
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y3,
+                      // Sorting based on the specified field
+                      //sortingOrder: SortingOrder.descending,
+                      //sortFieldValueMapper: (_ChartData data, _) =>
+                      //data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
+                        isVisible: true,
+                        textStyle: TextStyle(fontSize: 11),
                       ),
-                    ]),
+                      name: 'Keterlibatan Perempuan di Parlemen (persen)',
+                      color: const Color.fromARGB(255, 19, 209, 35),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -171,10 +179,7 @@ class _GrafikIdgState extends State<GrafikIdg> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 1,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 1));
       },
     );
   }

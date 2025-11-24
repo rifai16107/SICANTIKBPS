@@ -14,60 +14,58 @@ class BodyGrafikIdg extends StatefulWidget {
 class _BodyGrafikIdg extends State<BodyGrafikIdg> {
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.bottom -
         MediaQuery.of(context).padding.top;
     var screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'IDG Kabupaten Cilacap',
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'IDG Kabupaten Cilacap',
+            style: TextStyle(fontSize: 16),
+          ),
+          backgroundColor: Colors.black,
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
           ),
         ),
-      ),
-      body: Container(
-        padding: const EdgeInsets.all(5),
-        child: Column(
+        body: ListView(
+          padding: const EdgeInsets.all(5),
           children: [
-            Flexible(
-              child: SizedBox(
-                height: screenHeight * 0.90,
-                width: screenWidth * 0.95,
-                child: const GrafikIdg(),
-              ),
-            ),
-            SizedBox(
-              height: screenHeight * 0.08,
-              //color: Colors.white,
-              child: Center(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
-                  child: Text(
-                    "Klik Pada Legenda Untuk Menghilangkan/Memunculkan series",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 10,
-                        fontStyle: FontStyle.italic),
+            Column(
+              children: <Widget>[
+                SizedBox(
+                  height: screenHeight * 1,
+                  width: screenWidth * 0.95,
+                  child: const GrafikIdg(),
+                ),
+                SizedBox(
+                  height: screenHeight * 0.08,
+                  //color: Colors.white,
+                  child: Center(
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+                      child: Text(
+                        "Klik Pada Legenda Untuk Menghilangkan/Memunculkan series",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 10,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
-              ),
+              ],
             ),
           ],
         ),
       ),
-    ));
+    );
   }
 }

@@ -18,7 +18,8 @@ class _BodySeriesIpmsejatengState extends State<BodySeriesIpmsejateng> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
@@ -29,16 +30,26 @@ class _BodySeriesIpmsejatengState extends State<BodySeriesIpmsejateng> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              String tahunN1 =
-                  isiipmkabkot[index = 0].tahun_new.substring(20, 24);
-              String tahunN2 =
-                  isiipmkabkot[index = 0].tahun_new.substring(15, 19);
-              String tahunN3 =
-                  isiipmkabkot[index = 0].tahun_new.substring(10, 14);
-              String tahunN4 =
-                  isiipmkabkot[index = 0].tahun_new.substring(5, 9);
-              String tahunN5 =
-                  isiipmkabkot[index = 0].tahun_new.substring(0, 4);
+              String tahunN1 = isiipmkabkot[index = 0].tahun_new.substring(
+                20,
+                24,
+              );
+              String tahunN2 = isiipmkabkot[index = 0].tahun_new.substring(
+                15,
+                19,
+              );
+              String tahunN3 = isiipmkabkot[index = 0].tahun_new.substring(
+                10,
+                14,
+              );
+              String tahunN4 = isiipmkabkot[index = 0].tahun_new.substring(
+                5,
+                9,
+              );
+              String tahunN5 = isiipmkabkot[index = 0].tahun_new.substring(
+                0,
+                4,
+              );
 
               return DefaultTabController(
                 length: 5,
@@ -51,34 +62,28 @@ class _BodySeriesIpmsejatengState extends State<BodySeriesIpmsejateng> {
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       //isScrollable: true,
                       tabs: [
-                        Tab(
-                          text: tahunN1,
-                        ),
-                        Tab(
-                          text: tahunN2,
-                        ),
-                        Tab(
-                          text: tahunN3,
-                        ),
-                        Tab(
-                          text: tahunN4,
-                        ),
-                        Tab(
-                          text: tahunN5,
-                        ),
+                        Tab(text: tahunN1),
+                        Tab(text: tahunN2),
+                        Tab(text: tahunN3),
+                        Tab(text: tahunN4),
+                        Tab(text: tahunN5),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    IpmKabkotA(),
-                    IpmKabkotB(),
-                    IpmKabkotC(),
-                    IpmKabkotD(),
-                    IpmKabkotE(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      IpmKabkotA(),
+                      IpmKabkotB(),
+                      IpmKabkotC(),
+                      IpmKabkotD(),
+                      IpmKabkotE(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -87,11 +92,7 @@ class _BodySeriesIpmsejatengState extends State<BodySeriesIpmsejateng> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

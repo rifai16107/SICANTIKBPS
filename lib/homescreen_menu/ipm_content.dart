@@ -335,7 +335,7 @@ class _IpmContentState extends State<IpmContent> {
                     children: [
                       Flexible(
                         child: Container(
-                          height: 0.15 * screenHeight,
+                          height: 0.20 * screenHeight,
                           color: Colors.black,
                           child: Center(
                             child: Padding(
@@ -411,7 +411,7 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      const Divider(height: 3, color: Colors.transparent),
+                      const Divider(height: 1, color: Colors.transparent),
                       Card(
                         elevation: 20,
                         color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -465,7 +465,7 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      const Divider(height: 3, color: Colors.transparent),
+                      const Divider(height: 1, color: Colors.transparent),
                       Card(
                         elevation: 20,
                         color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -517,8 +517,58 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      const Divider(height: 3, color: Colors.transparent),
-
+                      const Divider(height: 1, color: Colors.transparent),
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              CustomPageRoute(
+                                child: const SeriesIpmsejateng(),
+                                direction: AxisDirection.left,
+                              ),
+                            );
+                          },
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
+                                  ),
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.10,
+                                    child: Text(
+                                      'IPM Kabupaten/Kota di Jawa Tengah',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                       Flexible(
                         flex: 1,
                         fit: FlexFit.tight,
