@@ -419,49 +419,36 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
         child: Column(
           children: [
             Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: Column(
-                children: [
-                  Flexible(
-                    flex: 3,
-                    fit: FlexFit.tight,
-                    child: Container(
-                      height: 100,
-                      color: Colors.black,
-                      child: const Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 2,
-                            horizontal: 5,
-                          ),
-                          child: Text(
-                            "Ketimpangan Pendapatan Penduduk Menurut Kriteria Bank Dunia dan Gini Rasio",
-                            style: TextStyle(color: Colors.white, fontSize: 15),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
+              child: Container(
+                height: 0.12 * screenHeight,
+                color: Colors.black,
+                child: const Center(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 2, horizontal: 5),
+                    child: Text(
+                      'Ketimpangan Pendapatan Penduduk Menurut\n'
+                      'Kriteria Bank Dunia dan Gini Rasio',
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      textAlign: TextAlign.center,
                     ),
                   ),
-                  Flexible(
-                    fit: FlexFit.tight,
-                    flex: 1,
-                    child: Container(height: 100, color: Colors.transparent),
-                  ),
-                ],
+                ),
               ),
             ),
             Flexible(
-              flex: 1,
               fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(39, 101, 182, 0.882),
-                  ),
-                ),
-                onPressed: () {
+              flex: 1,
+              child: Container(height: 100, color: Colors.transparent),
+            ),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -470,41 +457,51 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Tingkat Ketimpangan Kabupaten Cilacap Berdasarkan Kriteria Bank Dunia",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      const Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.11,
+                          child: Text(
+                            'Tingkat Ketimpangan Kabupaten Cilacap\n'
+                            'Berdasarkan Kriteria Bank Dunia',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
             const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(39, 101, 182, 0.882),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -513,41 +510,51 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Tingkat Ketimpangan Kabupaten Cilacap Berdasarkan Angka Gini Rasio",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.11,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      const Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.11,
+                          child: Text(
+                            'Tingkat Ketimpangan Kabupaten Cilacap\n'
+                            'Berdasarkan Angka Gini Rasio',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
             const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(236, 138, 20, 0.882),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -556,30 +563,41 @@ class _ketimpanganContentState extends State<ketimpanganContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Angka Gini Rasio Kabupaten/Kota di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_jateng.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.11,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      const Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.11,
+                          child: Text(
+                            'Angka Gini Rasio Kabupaten/Kota di Jawa Tengah',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
+
             Flexible(
               flex: 1,
               fit: FlexFit.tight,

@@ -186,10 +186,11 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.07,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
-                                        "IPM & Komponennya",
+                                        'IPM &\n'
+                                        'Komponennya',
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
@@ -204,7 +205,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -222,7 +223,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -240,7 +241,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -258,7 +259,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -276,7 +277,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -2191,7 +2192,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "IPG",
@@ -2210,7 +2211,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 10,
                                       right: 0,
@@ -2234,7 +2235,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 10,
                                       right: 0,
@@ -2257,7 +2258,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 10,
                                       right: 0,
@@ -2280,7 +2281,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 10,
                                       right: 0,
@@ -2303,7 +2304,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     padding: const EdgeInsets.only(
                                       top: 10,
                                       right: 0,
@@ -2357,7 +2358,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                       SizedBox(
                         //color: Colors.transparent,
                         width: screenWidth,
-                        height: screenHeight * 0.028,
+                        height: screenHeight * 0.03,
                         child: Row(
                           children: [
                             Container(

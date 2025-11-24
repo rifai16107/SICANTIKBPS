@@ -168,7 +168,8 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                   color: Colors.orange,
                                   child: const Center(
                                     child: Text(
-                                      "IPM & Komponennya",
+                                      'IPM &\n'
+                                      'Komponennya',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
@@ -679,7 +680,9 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 child: Container(
                                   height: screenHeight * 0.05,
                                   color: Colors.orange,
-                                  padding: const EdgeInsets.symmetric(vertical:4),
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 4,
+                                  ),
                                   child: const Center(
                                     child: Text(
                                       "IPM",
@@ -699,7 +702,9 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 child: Container(
                                   height: screenHeight * 0.05,
                                   color: Colors.orange,
-                                  padding: const EdgeInsets.symmetric(vertical:5),
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 5,
+                                  ),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf1, 2),
@@ -721,7 +726,9 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 child: Container(
                                   height: screenHeight * 0.05,
                                   color: Colors.orange,
-                                  padding: const EdgeInsets.symmetric(vertical:5),
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 5,
+                                  ),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf2, 2),
@@ -742,7 +749,9 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 child: Container(
                                   height: screenHeight * 0.05,
                                   color: Colors.orange,
-                                  padding: const EdgeInsets.symmetric(vertical:5),
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 5,
+                                  ),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf3, 2),
@@ -763,7 +772,9 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 child: Container(
                                   height: screenHeight * 0.05,
                                   color: Colors.orange,
-                                  padding: const EdgeInsets.symmetric(vertical:5),
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 5,
+                                  ),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf4, 2),
@@ -784,7 +795,9 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                 child: Container(
                                   height: screenHeight * 0.05,
                                   color: Colors.orange,
-                                  padding: const EdgeInsets.symmetric(vertical:5),
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 5,
+                                  ),
                                   child: SizedBox(
                                     child: Text(
                                       Format.convertTo(ipmlf5, 2),
@@ -1112,15 +1125,16 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                         ],
                                       ),
                                     ),
-                                     SizedBox(
-                                        child: const Text(
-                                          " Sentuh legenda untuk mengaktifkan/non aktifkan series",
-                                          style: TextStyle(
-                                            fontSize: 10, fontStyle: FontStyle.italic,
-                                            fontWeight: FontWeight.normal,
-                                          ),
+                                    SizedBox(
+                                      child: const Text(
+                                        " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontStyle: FontStyle.italic,
+                                          fontWeight: FontWeight.normal,
                                         ),
                                       ),
+                                    ),
                                     const Divider(
                                       indent: 3,
                                       color: Color.fromARGB(0, 43, 41, 41),

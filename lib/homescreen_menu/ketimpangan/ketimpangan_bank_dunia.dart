@@ -53,7 +53,7 @@ class _ketimpanganBankDuniaContentState
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               List isiketimpangan = snapshot.data as List;
-              return PageView.builder(
+              return ListView.builder(
                 itemCount: 1,
                 itemBuilder: (context, index) {
                   String th1 =
@@ -140,14 +140,14 @@ class _ketimpanganBankDuniaContentState
                   ];
                   tooltip = TooltipBehavior(enable: true);
 
-                  return Container(
-                    height: screenHeight,
-                    color: Colors.transparent,
+                  return SizedBox(
+                    //height: screenHeight,
+                    //color: Colors.transparent,
                     child: Column(
                       children: [
                         Container(
                           padding: const EdgeInsets.symmetric(
-                            vertical: 15,
+                            vertical: 10,
                             horizontal: 2,
                           ),
                           child: Text(
@@ -169,11 +169,12 @@ class _ketimpanganBankDuniaContentState
                                   flex: 4,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.07,
                                     color: Colors.green,
                                     child: const Center(
                                       child: Text(
-                                        "Desil Penduduk(%)",
+                                        'Desil\n'
+                                        'Penduduk(%)',
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
@@ -188,7 +189,7 @@ class _ketimpanganBankDuniaContentState
                                   fit: FlexFit.tight,
                                   child: Container(
                                     color: Colors.green,
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
                                         th1.toString(),
@@ -205,7 +206,7 @@ class _ketimpanganBankDuniaContentState
                                   fit: FlexFit.tight,
                                   child: Container(
                                     color: Colors.green,
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
                                         th2.toString(),
@@ -222,7 +223,7 @@ class _ketimpanganBankDuniaContentState
                                   fit: FlexFit.tight,
                                   child: Container(
                                     color: Colors.green,
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
                                         th3.toString(),
@@ -239,7 +240,7 @@ class _ketimpanganBankDuniaContentState
                                   fit: FlexFit.tight,
                                   child: Container(
                                     color: Colors.green,
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
                                         th4.toString(),
@@ -256,7 +257,7 @@ class _ketimpanganBankDuniaContentState
                                   fit: FlexFit.tight,
                                   child: Container(
                                     color: Colors.green,
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
                                         th5.toString(),
@@ -285,7 +286,7 @@ class _ketimpanganBankDuniaContentState
                                     child: const Center(
                                       child: Text(
                                         "Rendah (40%)",
-                                        textAlign: TextAlign.left,
+                                        textAlign: TextAlign.center,
                                       ),
                                     ),
                                   ),
@@ -353,11 +354,11 @@ class _ketimpanganBankDuniaContentState
                                       left: 0,
                                       right: 0,
                                     ),
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.08,
                                     child: const Center(
                                       child: Text(
                                         "Menengah (40%)",
-                                        textAlign: TextAlign.left,
+                                        textAlign: TextAlign.center,
                                       ),
                                     ),
                                   ),
@@ -366,7 +367,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: SizedBox(
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(PddkMenengah1.toString()),
                                     ),
@@ -376,7 +377,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: SizedBox(
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(PddkMenengah2.toString()),
                                     ),
@@ -386,7 +387,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: SizedBox(
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(PddkMenengah3.toString()),
                                     ),
@@ -396,7 +397,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: SizedBox(
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(PddkMenengah4.toString()),
                                     ),
@@ -406,7 +407,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: SizedBox(
-                                    height: screenHeight * 0.06,
+                                    height: screenHeight * 0.08,
                                     child: Center(
                                       child: Text(PddkMenengah5.toString()),
                                     ),
@@ -429,7 +430,7 @@ class _ketimpanganBankDuniaContentState
                                     child: const Center(
                                       child: Text(
                                         "Tinggi (20%)",
-                                        textAlign: TextAlign.left,
+                                        textAlign: TextAlign.center,
                                       ),
                                     ),
                                   ),
@@ -619,8 +620,8 @@ class _ketimpanganBankDuniaContentState
 
                         //Grafik
                         SizedBox(
-                          height: screenHeight * 0.45,
-                          width: screenWidth,
+                          height: screenHeight * 0.65,
+                          width: screenWidth * 0.9,
                           child: SfCartesianChart(
                             title: ChartTitle(
                               text:
@@ -646,12 +647,12 @@ class _ketimpanganBankDuniaContentState
                             primaryYAxis: NumericAxis(
                               majorGridLines: const MajorGridLines(width: 0),
                               minimum: 0,
-                              maximum: 70,
-                              interval: 15,
+                              maximum: 120,
+                              interval: 20,
                             ),
                             tooltipBehavior: tooltip,
                             series: <CartesianSeries>[
-                              ColumnSeries<_ChartData, String>(
+                              StackedColumnSeries<_ChartData, String>(
                                 dataSource: data,
                                 xValueMapper: (_ChartData data, _) => data.x,
                                 yValueMapper: (_ChartData data, _) => data.y,
@@ -667,7 +668,7 @@ class _ketimpanganBankDuniaContentState
                                 name: 'Pddk 40% bawah',
                                 color: const Color.fromARGB(255, 240, 164, 50),
                               ),
-                              ColumnSeries<_ChartData, String>(
+                              StackedColumnSeries<_ChartData, String>(
                                 dataSource: data,
                                 xValueMapper: (_ChartData data, _) => data.x,
                                 yValueMapper: (_ChartData data, _) => data.y1,
@@ -683,7 +684,7 @@ class _ketimpanganBankDuniaContentState
                                 name: 'Pddk 40% menengah',
                                 color: const Color.fromARGB(255, 170, 240, 80),
                               ),
-                              ColumnSeries<_ChartData, String>(
+                              StackedColumnSeries<_ChartData, String>(
                                 dataSource: data,
                                 xValueMapper: (_ChartData data, _) => data.x,
                                 yValueMapper: (_ChartData data, _) => data.y2,
@@ -700,6 +701,16 @@ class _ketimpanganBankDuniaContentState
                                 color: Color.fromARGB(255, 94, 156, 236),
                               ),
                             ],
+                          ),
+                        ),
+                        SizedBox(
+                          child: const Text(
+                            " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],

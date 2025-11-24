@@ -346,32 +346,28 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
         padding: const EdgeInsets.all(2),
         child: Column(
           children: [
-                Flexible(
-                    child: Container(
-                      height: 0.12 * screenHeight,
-                      color: Colors.black,
-                      child: const Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 2,
-                            horizontal: 5,
-                          ),
-                          child: Text(
-                            "Kondisi Ketenagakerjaan Kabupaten Cilacap dan Kabupaten/Kota Lainnya Di Jawa Tengah",
-                            style: TextStyle(color: Colors.white, fontSize: 15),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
+            Flexible(
+              child: Container(
+                height: 0.12 * screenHeight,
+                color: Colors.black,
+                child: const Center(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 2, horizontal: 5),
+                    child: Text(
+                      "Kondisi Ketenagakerjaan Kabupaten Cilacap dan Kabupaten/Kota Lainnya Di Jawa Tengah",
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      textAlign: TextAlign.center,
                     ),
                   ),
-                  Flexible(
-                    fit: FlexFit.tight,
-                    flex: 1,
-                    child: Container(height: 20, color: Colors.transparent),
-                  ),
-                
-            
+                ),
+              ),
+            ),
+            Flexible(
+              fit: FlexFit.tight,
+              flex: 1,
+              child: Container(height: 20, color: Colors.transparent),
+            ),
+
             Card(
               elevation: 20,
               color: const Color.fromRGBO(236, 138, 20, 0.882),

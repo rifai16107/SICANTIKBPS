@@ -334,51 +334,41 @@ class _IpmContentState extends State<IpmContent> {
                   child: Column(
                     children: [
                       Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Column(
-                          children: [
-                            Flexible(
-                              flex: 5,
-                              fit: FlexFit.tight,
-                              child: Container(
-                                color: Colors.black,
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                      vertical: 2,
-                                      horizontal: 5,
-                                    ),
-                                    child: Text(
-                                      "Tahun $tahunipm , IPM Kabupaten Cilacap tercatat sebesar $ipmlf, sementara IPG Kabupaten Cilacap tahun $tahunipg tercatat sebesar $ipg ",
-                                      style: const TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 15,
-                                      ),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                  ),
+                        child: Container(
+                          height: 0.15 * screenHeight,
+                          color: Colors.black,
+                          child: Center(
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 2,
+                                horizontal: 5,
+                              ),
+                              child: Text(
+                                "Tahun $tahunipm , IPM Kabupaten Cilacap tercatat sebesar $ipmlf, sementara IPG Kabupaten Cilacap tahun $tahunipg tercatat sebesar $ipg ",
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
                                 ),
+                                textAlign: TextAlign.center,
                               ),
                             ),
-                            Flexible(
-                              fit: FlexFit.tight,
-                              flex: 2,
-                              child: Container(color: Colors.transparent),
-                            ),
-                          ],
+                          ),
                         ),
                       ),
                       Flexible(
-                        flex: 1,
                         fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(39, 101, 182, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                        flex: 1,
+                        child: Container(color: Colors.transparent),
+                      ),
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -387,40 +377,50 @@ class _IpmContentState extends State<IpmContent> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: const Row(
-                              children: [
-                                Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Perkembangan IPM Kabupaten Cilacap",
-                                    textAlign: TextAlign.center,
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.10,
+                                    child: Text(
+                                      'Perkembangan IPM Kabupaten Cilacap',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      const Divider(height: 5, color: Colors.transparent),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(39, 101, 182, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      const Divider(height: 3, color: Colors.transparent),
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -429,40 +429,52 @@ class _IpmContentState extends State<IpmContent> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: const Row(
-                              children: [
-                                Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "	[IPG] Indeks Pembangunan Manusia (IPM) Menurut Jenis Kelamin dan IPG Kabupaten Cilacap",
-                                    textAlign: TextAlign.center,
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.10,
+                                    child: Text(
+                                      '[IPG] Indeks Pembangunan Manusia\n'
+                                      '(IPM) Menurut Jenis Kelamin dan\n'
+                                      'IPG Kabupaten Cilacap',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      const Divider(height: 5, color: Colors.transparent),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                              Color.fromRGBO(39, 101, 182, 0.882),
-                            ),
-                          ),
-                          onPressed: () {
+                      const Divider(height: 3, color: Colors.transparent),
+                      Card(
+                        elevation: 20,
+                        color: const Color.fromRGBO(236, 138, 20, 0.882),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: BorderSide(color: Colors.grey),
+                        ),
+                        child: InkWell(
+                          onTap: () {
                             Navigator.push(
                               context,
                               CustomPageRoute(
@@ -471,30 +483,42 @@ class _IpmContentState extends State<IpmContent> {
                               ),
                             );
                           },
-                          child: SizedBox(
-                            width: screenWidth,
-                            height: screenHeight * 0.1,
-                            child: const Row(
-                              children: [
-                                Flexible(
-                                  flex: 10,
-                                  fit: FlexFit.tight,
-                                  child: Text(
-                                    "Perkembangan IDG Kabupaten Cilacap",
-                                    textAlign: TextAlign.center,
+                          splashColor: Colors.blueGrey,
+                          child: IntrinsicHeight(
+                            child: Padding(
+                              padding: const EdgeInsets.all(2.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/daerah/logo_cilacap.png',
+                                    fit: BoxFit.cover,
+                                    width: screenWidth * 0.12,
+                                    height: screenHeight * 0.08,
                                   ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  fit: FlexFit.tight,
-                                  child: Icon((Icons.arrow_right)),
-                                ),
-                              ],
+                                  const SizedBox(width: 2),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: screenWidth * 0.80,
+                                    height: screenHeight * 0.10,
+                                    child: Text(
+                                      'Perkembangan IDG Kabupaten Cilacap',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 13.5,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      const Divider(height: 5, color: Colors.transparent),
+                      const Divider(height: 3, color: Colors.transparent),
+
                       Flexible(
                         flex: 1,
                         fit: FlexFit.tight,

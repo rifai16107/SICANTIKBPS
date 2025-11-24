@@ -61,6 +61,7 @@ class _BodyGiniKabkot extends State<BodyGiniKabkot> {
               ),
             );
           },
+          foregroundColor: Colors.orange,
           mini: true,
           child: const Icon(Icons.bar_chart),
         ),
