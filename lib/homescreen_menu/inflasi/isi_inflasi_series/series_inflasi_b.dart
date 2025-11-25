@@ -13,7 +13,8 @@ RepositorySeriesInflasi repositoryseriesinflasi = RepositorySeriesInflasi();
 class _SeriesInflasiBState extends State<SeriesInflasiB> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -107,10 +108,12 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    height: screenHeight * 0.08,
+                                    height: screenHeight * 0.085,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Bulan",
@@ -123,10 +126,12 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.08,
+                                    height: screenHeight * 0.085,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "IHK",
@@ -139,72 +144,66 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.08,
+                                    height: screenHeight * 0.085,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: Column(
-                                        children: const [
-                                          Text(
-                                            "Inflasi",
-                                             style: TextStyle(color: Colors.white),
-                                            textAlign: TextAlign.center,
-                                          ),
-                                          Text(
-                                            "M to M",
-                                             style: TextStyle(color: Colors.white),
-                                          ),
-                                          
-                                        ],
-                                      ),
+                                      children: const [
+                                        Text(
+                                          'Inflasi\n'
+                                          'M to M',
+                                          style: TextStyle(color: Colors.white),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.08,
+                                    height: screenHeight * 0.085,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: Column(
-                                        children: const [
-                                          Text(
-                                            "Inflasi",
-                                             style: TextStyle(color: Colors.white),
-                                            textAlign: TextAlign.center,
-                                          ),
-                                          Text(
-                                            "Y to D",
-                                             style: TextStyle(color: Colors.white),
-                                          ),
-                                          
-                                        ],
-                                      ),
+                                      children: const [
+                                        Text(
+                                          'Inflasi\n'
+                                          'Y to D',
+                                          style: TextStyle(color: Colors.white),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.08,
+                                    height: screenHeight * 0.085,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: Column(
-                                        children: const [
-                                          Text(
-                                            "Inflasi",
-                                             style: TextStyle(color: Colors.white),
-                                            textAlign: TextAlign.center,
-                                          ),
-                                          Text(
-                                            "Y on Y",
-                                             style: TextStyle(color: Colors.white),
-                                          ),
-                                          
-                                        ],
-                                      ),
+                                      children: const [
+                                        Text(
+                                          'Inflasi\n'
+                                          'Y on Y',
+                                          style: TextStyle(color: Colors.white),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -217,47 +216,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan12,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan12),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk12,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk12)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi12,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi12)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod12,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod12)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy12,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy12)),
                                 ),
                               ],
                             ),
@@ -269,47 +252,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan13,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan13),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk13,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk13)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi13,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi13)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod13,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod13)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy13,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy13)),
                                 ),
                               ],
                             ),
@@ -320,47 +287,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan14,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan14),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk14,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk14)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi14,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi14)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod14,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod14)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy14,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy14)),
                                 ),
                               ],
                             ),
@@ -371,45 +322,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan15,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan15),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk15,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk15)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(inflasi15),
-                                  ),
+                                  child: Center(child: Text(inflasi15)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod15,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod15)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy15,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy15)),
                                 ),
                               ],
                             ),
@@ -420,47 +357,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan16,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan16),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk16,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk16)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi16,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi16)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod16,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod16)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy16,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy16)),
                                 ),
                               ],
                             ),
@@ -471,47 +392,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan17,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan17),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk17,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk17)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi17,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi17)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod17,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod17)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy17,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy17)),
                                 ),
                               ],
                             ),
@@ -522,47 +427,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan18,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan18),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk18,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk18)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi18,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi18)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod18,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod18)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy18,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy18)),
                                 ),
                               ],
                             ),
@@ -573,47 +462,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan19,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan19),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk19,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk19)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi19,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi19)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod19,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod19)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy19,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy19)),
                                 ),
                               ],
                             ),
@@ -624,47 +497,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan20,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan20),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk20,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk20)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi20,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi20)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod20,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod20)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy20,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy20)),
                                 ),
                               ],
                             ),
@@ -675,47 +532,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan21,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan21),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk21,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk21)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi21,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi21)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod21,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod21)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy21,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy21)),
                                 ),
                               ],
                             ),
@@ -726,47 +567,31 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan22,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan22),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk22,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk22)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi22,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi22)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod22,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod22)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy22,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy22)),
                                 ),
                               ],
                             ),
@@ -777,53 +602,35 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
                                   flex: 3,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 8, horizontal: 10),
-                                    child: Text(
-                                      bulan23,
+                                      vertical: 8,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(bulan23),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      ihk23,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(ihk23)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      inflasi23,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(inflasi23)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yod23,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yod23)),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  child: Center(
-                                    child: Text(
-                                      yoy23,
-                                    ),
-                                  ),
+                                  child: Center(child: Text(yoy23)),
                                 ),
                               ],
                             ),
-                            const Divider(
-                              thickness: 3,
-                            ),
+                            const Divider(thickness: 3),
                           ],
                         ),
                       ),
@@ -837,7 +644,8 @@ class _SeriesInflasiBState extends State<SeriesInflasiB> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

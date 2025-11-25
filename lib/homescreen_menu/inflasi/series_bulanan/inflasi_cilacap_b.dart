@@ -16,7 +16,8 @@ RepositoryInflasi repositoryinflasi = RepositoryInflasi();
 class _InflasiBulananBState extends State<InflasiBulananB> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -39,10 +40,12 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                 double ihk7 = double.parse(isiinflasi[index = 5].informasi);
                 double ihk8 = double.parse(isiinflasi[index = 5].rekreasi);
                 double ihk9 = double.parse(isiinflasi[index = 5].pendidikan);
-                double ihk10 =
-                    double.parse(isiinflasi[index = 5].penyedia_pangan);
-                double ihk11 =
-                    double.parse(isiinflasi[index = 5].perawatan_pribadi);
+                double ihk10 = double.parse(
+                  isiinflasi[index = 5].penyedia_pangan,
+                );
+                double ihk11 = double.parse(
+                  isiinflasi[index = 5].perawatan_pribadi,
+                );
                 double ihkumum = double.parse(isiinflasi[index = 5].total);
 
                 double tkif1 = double.parse(isiinflasi[index = 4].sembako);
@@ -54,10 +57,12 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                 double tkif7 = double.parse(isiinflasi[index = 4].informasi);
                 double tkif8 = double.parse(isiinflasi[index = 4].rekreasi);
                 double tkif9 = double.parse(isiinflasi[index = 4].pendidikan);
-                double tkif10 =
-                    double.parse(isiinflasi[index = 4].penyedia_pangan);
-                double tkif11 =
-                    double.parse(isiinflasi[index = 4].perawatan_pribadi);
+                double tkif10 = double.parse(
+                  isiinflasi[index = 4].penyedia_pangan,
+                );
+                double tkif11 = double.parse(
+                  isiinflasi[index = 4].perawatan_pribadi,
+                );
                 double totaltingkat = double.parse(isiinflasi[index = 4].total);
 
                 double anif1 = double.parse(isiinflasi[index = 3].sembako);
@@ -69,10 +74,12 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                 double anif7 = double.parse(isiinflasi[index = 3].informasi);
                 double anif8 = double.parse(isiinflasi[index = 3].rekreasi);
                 double anif9 = double.parse(isiinflasi[index = 3].pendidikan);
-                double anif10 =
-                    double.parse(isiinflasi[index = 3].penyedia_pangan);
-                double anif11 =
-                    double.parse(isiinflasi[index = 3].perawatan_pribadi);
+                double anif10 = double.parse(
+                  isiinflasi[index = 3].penyedia_pangan,
+                );
+                double anif11 = double.parse(
+                  isiinflasi[index = 3].perawatan_pribadi,
+                );
                 double totalandil = double.parse(isiinflasi[index = 3].total);
 
                 return Container(
@@ -90,15 +97,19 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
-                                        "Kelompok Pengeluaran",
+                                        'Kelompok\n'
+                                        'Pengeluaran',
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -110,15 +121,18 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "IHK",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -129,15 +143,18 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Inflasi",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -148,15 +165,19 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
-                                        "Andil Inflasi",
+                                        'Andil\n'
+                                        'Inflasi',
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -175,11 +196,12 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Center(
                                         child: Text(
                                           "Makanan, Minuman, Tembakau",
-                                          style: TextStyle(fontSize: 13),
+                                          style: TextStyle(fontSize: 12.5),
                                           textAlign: TextAlign.left,
                                         ),
                                       ),
@@ -191,7 +213,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk1, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -201,7 +223,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif1, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -211,7 +233,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif1, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -230,10 +252,11 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Pakaian & ALas Kaki",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12.5),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -244,7 +267,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk2, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -254,7 +277,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif2, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -264,7 +287,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif2, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -283,12 +306,13 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Center(
                                         child: Text(
                                           "Perumahan, Air, Listrik & Bahan Bakar",
                                           textAlign: TextAlign.left,
-                                          style: TextStyle(fontSize: 13),
+                                          style: TextStyle(fontSize: 12.5),
                                         ),
                                       ),
                                     ),
@@ -299,7 +323,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk3, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -309,7 +333,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif3, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -319,7 +343,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif3, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -330,7 +354,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                             Container(
                               color: Colors.grey.shade200,
                               width: screenWidth,
-                              height: screenHeight * 0.09,
+                              height: screenHeight * 0.095,
                               child: Row(
                                 children: [
                                   Flexible(
@@ -338,11 +362,12 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 0),
+                                        vertical: 0,
+                                      ),
                                       child: const Center(
                                         child: Text(
                                           "Perlengkapan, Peralatan & Pemeliharaan Rutin Rumah Tangga",
-                                          style: TextStyle(fontSize: 13),
+                                          style: TextStyle(fontSize: 12.5),
                                           textAlign: TextAlign.left,
                                         ),
                                       ),
@@ -354,7 +379,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk4, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -364,7 +389,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif4, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -374,7 +399,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif4, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -393,10 +418,11 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Kesehatan",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12.5),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -407,7 +433,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk5, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -417,7 +443,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif5, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -427,7 +453,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif5, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -446,10 +472,11 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Transportasi",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12.5),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -460,7 +487,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk6, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -470,7 +497,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif6, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -480,7 +507,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif6, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -499,10 +526,11 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 0),
+                                        vertical: 0,
+                                      ),
                                       child: const Text(
                                         "Informasi, Komunikasi, Keuangan",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12.5),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -513,7 +541,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk7, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -523,7 +551,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif7, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -533,7 +561,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif7, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -552,10 +580,11 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Rekreasi, Olahraga & Budaya",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12.5),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -566,7 +595,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk8, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -576,7 +605,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif8, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -586,7 +615,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif8, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -605,10 +634,11 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Pendidikan",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12.5),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -619,7 +649,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk9, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -629,7 +659,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif9, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -639,7 +669,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif9, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -658,10 +688,11 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 0),
+                                        vertical: 0,
+                                      ),
                                       child: const Text(
                                         "Penyedia Makanan & Minuman/Restoran",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12.5),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -672,7 +703,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk10, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -682,7 +713,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif10, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -692,7 +723,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif10, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -703,7 +734,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                             Container(
                               color: Colors.transparent,
                               width: screenWidth,
-                              height: screenHeight * 0.055,
+                              height: screenHeight * 0.065,
                               child: Row(
                                 children: [
                                   Flexible(
@@ -711,10 +742,11 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Perawatan Pribadi & Jasa Lainnya",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12.5),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -725,7 +757,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihk11, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -735,7 +767,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif11, 2),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -745,7 +777,7 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif11, 4),
-                                        style: const TextStyle(fontSize: 13),
+                                        style: const TextStyle(fontSize: 12.5),
                                       ),
                                     ),
                                   ),
@@ -761,15 +793,18 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Umum",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -781,15 +816,18 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ihkumum, 2),
                                         style: const TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -800,15 +838,18 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(totaltingkat, 2),
                                         style: const TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -819,15 +860,18 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(totalandil, 4),
                                         style: const TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -847,7 +891,8 @@ class _InflasiBulananBState extends State<InflasiBulananB> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

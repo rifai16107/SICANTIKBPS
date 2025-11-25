@@ -16,7 +16,8 @@ class _BodySeriesInflasiState extends State<BodySeriesInflasi> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -44,26 +45,24 @@ class _BodySeriesInflasiState extends State<BodySeriesInflasi> {
                     ),
                     toolbarHeight: screenHeight * 0.01,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: th3,
-                        ),
-                        Tab(
-                          text: th2,
-                        ),
-                        Tab(
-                          text: th1,
-                        ),
+                        Tab(text: th3),
+                        Tab(text: th2),
+                        Tab(text: th1),
                       ],
                     ),
                   ),
-                  
-                  body: const TabBarView(children: [
-                    SeriesInflasiC(),
-                    SeriesInflasiB(),
-                    SeriesInflasiA(),
-                  ]),
+
+                  body: const TabBarView(
+                    children: [
+                      SeriesInflasiC(),
+                      SeriesInflasiB(),
+                      SeriesInflasiA(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -72,11 +71,7 @@ class _BodySeriesInflasiState extends State<BodySeriesInflasi> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

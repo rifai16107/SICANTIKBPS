@@ -147,7 +147,8 @@ class _SeriesInflasi extends State<SeriesInflasi> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 2, horizontal: 5),
                   child: Text(
-                    "Series IHK dan Inflasi Kota Cilacap 3 (tiga) Tahun terakhir",
+                    'Series IHK dan Inflasi Kota Cilacap\n'
+                    'Dalam 3 (tiga) Tahun terakhir',
                     style: TextStyle(color: Colors.white, fontSize: 15),
                     textAlign: TextAlign.center,
                   ),

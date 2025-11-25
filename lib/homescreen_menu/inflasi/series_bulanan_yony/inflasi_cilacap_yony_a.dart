@@ -14,9 +14,15 @@ class InflasiBulananYonyA extends StatefulWidget {
 RepositoryInflasiYony repositoryinflasi = RepositoryInflasiYony();
 
 class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
+  static const TextStyle myTextStyle = TextStyle(
+    fontSize: 12.5, // Set your desired font size here
+    fontWeight: FontWeight.normal,
+    color: Colors.black,
+  );
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -39,10 +45,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                 double tkif7 = double.parse(isiinflasi[index = 1].informasi);
                 double tkif8 = double.parse(isiinflasi[index = 1].rekreasi);
                 double tkif9 = double.parse(isiinflasi[index = 1].pendidikan);
-                double tkif10 =
-                    double.parse(isiinflasi[index = 1].penyedia_pangan);
-                double tkif11 =
-                    double.parse(isiinflasi[index = 1].perawatan_pribadi);
+                double tkif10 = double.parse(
+                  isiinflasi[index = 1].penyedia_pangan,
+                );
+                double tkif11 = double.parse(
+                  isiinflasi[index = 1].perawatan_pribadi,
+                );
                 double totaltingkat = double.parse(isiinflasi[index = 1].total);
 
                 double anif1 = double.parse(isiinflasi[index = 0].sembako);
@@ -54,10 +62,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                 double anif7 = double.parse(isiinflasi[index = 0].informasi);
                 double anif8 = double.parse(isiinflasi[index = 0].rekreasi);
                 double anif9 = double.parse(isiinflasi[index = 0].pendidikan);
-                double anif10 =
-                    double.parse(isiinflasi[index = 0].penyedia_pangan);
-                double anif11 =
-                    double.parse(isiinflasi[index = 0].perawatan_pribadi);
+                double anif10 = double.parse(
+                  isiinflasi[index = 0].penyedia_pangan,
+                );
+                double anif11 = double.parse(
+                  isiinflasi[index = 0].perawatan_pribadi,
+                );
                 double totalandil = double.parse(isiinflasi[index = 0].total);
 
                 return Container(
@@ -75,14 +85,19 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
-                                        "Kelompok Pengeluaran",
+                                        'Kelompok\n'
+                                        'Pengeluaran',
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12.5,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -94,14 +109,18 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Inflasi",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12.5,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -112,14 +131,19 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
-                                        "Andil Inflasi",
+                                        'Andil\n'
+                                        'Inflasi',
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12.5,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -138,12 +162,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: const Center(
-                                        child: Text(
-                                          "Makanan, Minuman, Tembakau",
-                                          textAlign: TextAlign.left,
-                                        ),
+                                        vertical: 2,
+                                      ),
+                                      child: const Text(
+                                        "Makanan, Minuman, Tembakau",
+                                        textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -153,6 +177,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif1, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -162,6 +187,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif1, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -180,10 +206,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Pakaian & ALas Kaki",
                                         textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -193,6 +221,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif2, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -202,6 +231,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif2, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -220,11 +250,13 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Center(
                                         child: Text(
                                           "Perumahan, Air, Listrik & Bahan Bakar",
                                           textAlign: TextAlign.left,
+                                          style: myTextStyle,
                                         ),
                                       ),
                                     ),
@@ -235,6 +267,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif3, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -244,6 +277,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif3, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -254,7 +288,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                             Container(
                               color: Colors.grey.shade200,
                               width: screenWidth,
-                              height: screenHeight * 0.08,
+                              height: screenHeight * 0.095,
                               child: Row(
                                 children: [
                                   Flexible(
@@ -262,11 +296,13 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 0),
+                                        vertical: 0,
+                                      ),
                                       child: const Center(
                                         child: Text(
                                           "Perlengkapan, Peralatan dan Pemeliharaan Rutin Rumah Tangga",
                                           textAlign: TextAlign.left,
+                                          style: myTextStyle,
                                         ),
                                       ),
                                     ),
@@ -277,6 +313,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif4, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -286,6 +323,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif4, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -304,10 +342,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Kesehatan",
                                         textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -317,6 +357,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif5, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -324,7 +365,10 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     fit: FlexFit.tight,
                                     flex: 2,
                                     child: Center(
-                                      child: Text(Format.convertTo(anif5, 4)),
+                                      child: Text(
+                                        Format.convertTo(anif5, 4),
+                                        style: myTextStyle,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -342,10 +386,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Transportasi",
                                         textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -355,6 +401,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif6, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -364,6 +411,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif6, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -382,10 +430,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 0),
+                                        vertical: 0,
+                                      ),
                                       child: const Text(
                                         "Informasi, Komunikasi, Keuangan",
                                         textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -395,6 +445,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif7, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -404,6 +455,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif7, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -422,10 +474,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Rekreasi, Olahraga & Budaya",
                                         textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -435,6 +489,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif8, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -444,6 +499,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif8, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -462,10 +518,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Pendidikan",
                                         textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -475,6 +533,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif9, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -484,6 +543,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif9, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -502,10 +562,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 0),
+                                        vertical: 0,
+                                      ),
                                       child: const Text(
                                         "Penyedia Makanan & Minuman/Restoran",
                                         textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -515,6 +577,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif10, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -524,6 +587,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif10, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -534,7 +598,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                             Container(
                               color: Colors.transparent,
                               width: screenWidth,
-                              height: screenHeight * 0.055,
+                              height: screenHeight * 0.06,
                               child: Row(
                                 children: [
                                   Flexible(
@@ -542,10 +606,12 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          vertical: 2),
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Perawatan Pribadi & Jasa Lainnya",
                                         textAlign: TextAlign.left,
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -555,6 +621,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(tkif11, 2),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -564,6 +631,7 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(anif11, 4),
+                                        style: myTextStyle,
                                       ),
                                     ),
                                   ),
@@ -579,14 +647,18 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Umum",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12.5,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -598,14 +670,18 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(totaltingkat, 2),
                                         style: const TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -616,14 +692,18 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                   child: Container(
                                     height: screenHeight * 0.05,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 5),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 5,
+                                    ),
+                                    color: Colors.orange,
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(totalandil, 4),
                                         style: const TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12.5,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -640,8 +720,9 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                       child: const Text(
                                         "Catatan:",
                                         style: TextStyle(
-                                            fontWeight: FontWeight.w600,
-                                            fontSize: 12),
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 12,
+                                        ),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -658,8 +739,9 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                       child: const Text(
                                         "Inflasi Year on Year (y-on-y) bulan ke-n mengitung inflasi bulan ke-n tahun N terhadap bulan ke-n tahun (N-1).",
                                         style: TextStyle(
-                                            fontWeight: FontWeight.normal,
-                                            fontSize: 11),
+                                          fontWeight: FontWeight.normal,
+                                          fontSize: 11,
+                                        ),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -693,8 +775,9 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
                                       child: const Text(
                                         " ",
                                         style: TextStyle(
-                                            fontWeight: FontWeight.normal,
-                                            fontSize: 10),
+                                          fontWeight: FontWeight.normal,
+                                          fontSize: 10,
+                                        ),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -715,7 +798,8 @@ class _InflasiBulananYonyAState extends State<InflasiBulananYonyA> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

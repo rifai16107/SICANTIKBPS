@@ -14,7 +14,8 @@ RepositoryInflasiKota repositoryinflasikota = RepositoryInflasiKota();
 class _InflasiKotaBState extends State<InflasiKotaB> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -95,8 +96,10 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Kota Inflasi",
@@ -112,8 +115,10 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "M to M",
@@ -128,8 +133,10 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Y to D",
@@ -144,8 +151,10 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Y on Y",
@@ -163,15 +172,17 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama1.capitalize(),
                                         textAlign: TextAlign.center,
                                         style: const TextStyle(
-                                            color: Colors.green,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.orange,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -183,8 +194,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                     child: Text(
                                       Format.convertTo(mtom1, 2),
                                       style: const TextStyle(
-                                          color: Colors.green,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.orange,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -195,8 +207,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                     child: Text(
                                       Format.convertTo(ytod1, 2),
                                       style: const TextStyle(
-                                          color: Colors.green,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.orange,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -207,8 +220,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                     child: Text(
                                       Format.convertTo(yony1, 2),
                                       style: const TextStyle(
-                                          color: Colors.green,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.orange,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -221,8 +235,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama2.capitalize(),
@@ -235,27 +250,21 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(mtom2, 2),
-                                    ),
+                                    child: Text(Format.convertTo(mtom2, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(ytod2, 2),
-                                    ),
+                                    child: Text(Format.convertTo(ytod2, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(yony2, 2),
-                                    ),
+                                    child: Text(Format.convertTo(yony2, 2)),
                                   ),
                                 ),
                               ],
@@ -267,8 +276,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama9.capitalize(),
@@ -281,27 +291,21 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(mtom9, 2),
-                                    ),
+                                    child: Text(Format.convertTo(mtom9, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(ytod9, 2),
-                                    ),
+                                    child: Text(Format.convertTo(ytod9, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(yony9, 2),
-                                    ),
+                                    child: Text(Format.convertTo(yony9, 2)),
                                   ),
                                 ),
                               ],
@@ -314,8 +318,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama10.capitalize(),
@@ -328,27 +333,21 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(mtom10, 2),
-                                    ),
+                                    child: Text(Format.convertTo(mtom10, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(ytod10, 2),
-                                    ),
+                                    child: Text(Format.convertTo(ytod10, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(yony10, 2),
-                                    ),
+                                    child: Text(Format.convertTo(yony10, 2)),
                                   ),
                                 ),
                               ],
@@ -361,8 +360,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama11.capitalize(),
@@ -375,27 +375,21 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(mtom11, 2),
-                                    ),
+                                    child: Text(Format.convertTo(mtom11, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(ytod11, 2),
-                                    ),
+                                    child: Text(Format.convertTo(ytod11, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(yony11, 2),
-                                    ),
+                                    child: Text(Format.convertTo(yony11, 2)),
                                   ),
                                 ),
                               ],
@@ -407,8 +401,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama3.capitalize(),
@@ -421,27 +416,21 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(mtom3, 2),
-                                    ),
+                                    child: Text(Format.convertTo(mtom3, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(ytod3, 2),
-                                    ),
+                                    child: Text(Format.convertTo(ytod3, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(yony3, 2),
-                                    ),
+                                    child: Text(Format.convertTo(yony3, 2)),
                                   ),
                                 ),
                               ],
@@ -453,8 +442,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama4,
@@ -467,27 +457,21 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(mtom4, 2),
-                                    ),
+                                    child: Text(Format.convertTo(mtom4, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(ytod4, 2),
-                                    ),
+                                    child: Text(Format.convertTo(ytod4, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(yony4, 2),
-                                    ),
+                                    child: Text(Format.convertTo(yony4, 2)),
                                   ),
                                 ),
                               ],
@@ -499,8 +483,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama5,
@@ -513,27 +498,21 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(mtom5, 2),
-                                    ),
+                                    child: Text(Format.convertTo(mtom5, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(ytod5, 2),
-                                    ),
+                                    child: Text(Format.convertTo(ytod5, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(yony5, 2),
-                                    ),
+                                    child: Text(Format.convertTo(yony5, 2)),
                                   ),
                                 ),
                               ],
@@ -545,8 +524,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama6,
@@ -559,27 +539,21 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(mtom6, 2),
-                                    ),
+                                    child: Text(Format.convertTo(mtom6, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(ytod6, 2),
-                                    ),
+                                    child: Text(Format.convertTo(ytod6, 2)),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Center(
-                                    child: Text(
-                                      Format.convertTo(yony6, 2),
-                                    ),
+                                    child: Text(Format.convertTo(yony6, 2)),
                                   ),
                                 ),
                               ],
@@ -591,15 +565,17 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama7,
                                         textAlign: TextAlign.center,
                                         style: const TextStyle(
-                                            color: Colors.blue,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.blue,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -611,8 +587,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                     child: Text(
                                       Format.convertTo(mtom7, 2),
                                       style: const TextStyle(
-                                          color: Colors.blue,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.blue,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -623,8 +600,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                     child: Text(
                                       Format.convertTo(ytod7, 2),
                                       style: const TextStyle(
-                                          color: Colors.blue,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.blue,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -635,8 +613,9 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                     child: Text(
                                       Format.convertTo(yony7, 2),
                                       style: const TextStyle(
-                                          color: Colors.blue,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.blue,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -650,14 +629,16 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   flex: 3,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    color: Colors.orange,
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         nama8.capitalize(),
                                         style: const TextStyle(
-                                            color: Colors.white),
+                                          color: Colors.white,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -668,14 +649,16 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   flex: 2,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    color: Colors.orange,
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(mtom8, 2),
                                         style: const TextStyle(
-                                            color: Colors.white),
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -685,14 +668,16 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   flex: 2,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    color: Colors.orange,
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(ytod8, 2),
                                         style: const TextStyle(
-                                            color: Colors.white),
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -702,14 +687,16 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
                                   flex: 2,
                                   child: Container(
                                     height: screenHeight * 0.05,
-                                    color: Colors.green,
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 8),
+                                    color: Colors.orange,
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
                                     child: Center(
                                       child: Text(
                                         Format.convertTo(yony8, 2),
                                         style: const TextStyle(
-                                            color: Colors.white),
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -729,7 +716,8 @@ class _InflasiKotaBState extends State<InflasiKotaB> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

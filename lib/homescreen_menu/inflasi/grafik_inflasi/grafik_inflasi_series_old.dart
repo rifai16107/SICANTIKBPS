@@ -13,7 +13,7 @@ class GrafikInflasiSeries extends StatefulWidget {
 class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
   RepositorySeriesInflasi repositoryseriesinflasi = RepositorySeriesInflasi();
   int key = 0;
-
+  late List<_ChartData> data;
   late List<_ChartData1> data1;
   late TooltipBehavior tooltip;
   @override
@@ -131,6 +131,20 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
 
               String thn2 = isiseriesinflasi[index = 0].tahun;
               toString();
+              data = [
+                _ChartData("Jan", inflasi0, inflasi12),
+                _ChartData("Feb", inflasi1, inflasi13),
+                _ChartData("Mar", inflasi2, inflasi14),
+                _ChartData("Apr", inflasi3, inflasi15),
+                _ChartData("Mei", inflasi4, inflasi16),
+                _ChartData("Juni", inflasi5, inflasi17),
+                _ChartData("Juli", inflasi6, inflasi18),
+                _ChartData("Agst", inflasi7, inflasi19),
+                _ChartData("Sept", inflasi8, inflasi20),
+                _ChartData("Okt", inflasi9, inflasi21),
+                _ChartData("Nov", inflasi10, inflasi22),
+                _ChartData("Des", inflasi11, inflasi23),
+              ];
 
               if (cekbulan12 != '-') {
                 double inflasi24 = double.parse(
@@ -169,19 +183,20 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi35 = double.parse(
                   isiseriesinflasi[index = 35].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, inflasi28),
-                  _ChartData1("Juni", inflasi5, inflasi17, inflasi29),
-                  _ChartData1("Juli", inflasi6, inflasi18, inflasi30),
-                  _ChartData1("Agst", inflasi7, inflasi19, inflasi31),
-                  _ChartData1("Sept", inflasi8, inflasi20, inflasi32),
-                  _ChartData1("Okt", inflasi9, inflasi21, inflasi33),
-                  _ChartData1("Nov", inflasi10, inflasi22, inflasi34),
-                  _ChartData1("Des", inflasi11, inflasi23, inflasi35),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
+                  _ChartData1("Mei", inflasi28),
+                  _ChartData1("Juni", inflasi29),
+                  _ChartData1("Juli", inflasi30),
+                  _ChartData1("Agst", inflasi31),
+                  _ChartData1("Sept", inflasi32),
+                  _ChartData1("Okt", inflasi33),
+                  _ChartData1("Nov", inflasi34),
+                  _ChartData1("Des", inflasi35),
                 ];
               } else if (cekbulan11 != '-') {
                 double inflasi24 = double.parse(
@@ -217,19 +232,19 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi34 = double.parse(
                   isiseriesinflasi[index = 34].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, inflasi28),
-                  _ChartData1("Juni", inflasi5, inflasi17, inflasi29),
-                  _ChartData1("Juli", inflasi6, inflasi18, inflasi30),
-                  _ChartData1("Agst", inflasi7, inflasi19, inflasi31),
-                  _ChartData1("Sept", inflasi8, inflasi20, inflasi32),
-                  _ChartData1("Okt", inflasi9, inflasi21, inflasi33),
-                  _ChartData1("Nov", inflasi10, inflasi22, inflasi34),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
+                  _ChartData1("Mei", inflasi28),
+                  _ChartData1("Juni", inflasi29),
+                  _ChartData1("Juli", inflasi30),
+                  _ChartData1("Agst", inflasi31),
+                  _ChartData1("Sept", inflasi32),
+                  _ChartData1("Okt", inflasi33),
+                  _ChartData1("Nov", inflasi34),
                 ];
               } else if (cekbulan10 != '-') {
                 double inflasi24 = double.parse(
@@ -264,18 +279,16 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 );
                 toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, inflasi28),
-                  _ChartData1("Juni", inflasi5, inflasi17, inflasi29),
-                  _ChartData1("Juli", inflasi6, inflasi18, inflasi30),
-                  _ChartData1("Agst", inflasi7, inflasi19, inflasi31),
-                  _ChartData1("Sept", inflasi8, inflasi20, inflasi32),
-                  _ChartData1("Okt", inflasi9, inflasi21, inflasi33),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
+                  _ChartData1("Mei", inflasi28),
+                  _ChartData1("Juni", inflasi29),
+                  _ChartData1("Juli", inflasi30),
+                  _ChartData1("Agst", inflasi31),
+                  _ChartData1("Sept", inflasi32),
+                  _ChartData1("Okt", inflasi33),
                 ];
               } else if (cekbulan9 != '-') {
                 double inflasi24 = double.parse(
@@ -305,19 +318,17 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi32 = double.parse(
                   isiseriesinflasi[index = 32].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, inflasi28),
-                  _ChartData1("Juni", inflasi5, inflasi17, inflasi29),
-                  _ChartData1("Juli", inflasi6, inflasi18, inflasi30),
-                  _ChartData1("Agst", inflasi7, inflasi19, inflasi31),
-                  _ChartData1("Sept", inflasi8, inflasi20, inflasi32),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
+                  _ChartData1("Mei", inflasi28),
+                  _ChartData1("Juni", inflasi29),
+                  _ChartData1("Juli", inflasi30),
+                  _ChartData1("Agst", inflasi31),
+                  _ChartData1("Sept", inflasi32),
                 ];
               } else if (cekbulan8 != '-') {
                 double inflasi24 = double.parse(
@@ -344,19 +355,16 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi31 = double.parse(
                   isiseriesinflasi[index = 31].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, inflasi28),
-                  _ChartData1("Juni", inflasi5, inflasi17, inflasi29),
-                  _ChartData1("Juli", inflasi6, inflasi18, inflasi30),
-                  _ChartData1("Agst", inflasi7, inflasi19, inflasi31),
-                  _ChartData1("Sept", inflasi8, inflasi20, null),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
+                  _ChartData1("Mei", inflasi28),
+                  _ChartData1("Juni", inflasi29),
+                  _ChartData1("Juli", inflasi30),
+                  _ChartData1("Agst", inflasi31),
                 ];
               } else if (cekbulan7 != '-') {
                 double inflasi24 = double.parse(
@@ -380,19 +388,15 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi30 = double.parse(
                   isiseriesinflasi[index = 30].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, inflasi28),
-                  _ChartData1("Juni", inflasi5, inflasi17, inflasi29),
-                  _ChartData1("Juli", inflasi6, inflasi18, inflasi30),
-                  _ChartData1("Agst", inflasi7, inflasi19, null),
-                  _ChartData1("Sept", inflasi8, inflasi20, null),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
+                  _ChartData1("Mei", inflasi28),
+                  _ChartData1("Juni", inflasi29),
+                  _ChartData1("Juli", inflasi30),
                 ];
               } else if (cekbulan6 != '-') {
                 double inflasi24 = double.parse(
@@ -413,19 +417,14 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi29 = double.parse(
                   isiseriesinflasi[index = 29].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, inflasi28),
-                  _ChartData1("Juni", inflasi5, inflasi17, inflasi29),
-                  _ChartData1("Juli", inflasi6, inflasi18, null),
-                  _ChartData1("Agst", inflasi7, inflasi19, null),
-                  _ChartData1("Sept", inflasi8, inflasi20, null),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
+                  _ChartData1("Mei", inflasi28),
+                  _ChartData1("Juni", inflasi29),
                 ];
               } else if (cekbulan5 != '-') {
                 double inflasi24 = double.parse(
@@ -443,19 +442,13 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi28 = double.parse(
                   isiseriesinflasi[index = 28].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, inflasi28),
-                  _ChartData1("Juni", inflasi5, inflasi17, null),
-                  _ChartData1("Juli", inflasi6, inflasi18, null),
-                  _ChartData1("Agst", inflasi7, inflasi19, null),
-                  _ChartData1("Sept", inflasi8, inflasi20, null),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
+                  _ChartData1("Mei", inflasi28),
                 ];
               } else if (cekbulan4 != '-') {
                 double inflasi24 = double.parse(
@@ -470,19 +463,12 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi27 = double.parse(
                   isiseriesinflasi[index = 27].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, inflasi27),
-                  _ChartData1("Mei", inflasi4, inflasi16, null),
-                  _ChartData1("Juni", inflasi5, inflasi17, null),
-                  _ChartData1("Juli", inflasi6, inflasi18, null),
-                  _ChartData1("Agst", inflasi7, inflasi19, null),
-                  _ChartData1("Sept", inflasi8, inflasi20, null),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
+                  _ChartData1("Apr", inflasi27),
                 ];
               } else if (cekbulan3 != '-') {
                 double inflasi24 = double.parse(
@@ -494,19 +480,11 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi26 = double.parse(
                   isiseriesinflasi[index = 26].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, inflasi26),
-                  _ChartData1("Apr", inflasi3, inflasi15, null),
-                  _ChartData1("Mei", inflasi4, inflasi16, null),
-                  _ChartData1("Juni", inflasi5, inflasi17, null),
-                  _ChartData1("Juli", inflasi6, inflasi18, null),
-                  _ChartData1("Agst", inflasi7, inflasi19, null),
-                  _ChartData1("Sept", inflasi8, inflasi20, null),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
+                  _ChartData1("Mar", inflasi26),
                 ];
               } else if (cekbulan2 != '-') {
                 double inflasi24 = double.parse(
@@ -515,38 +493,17 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                 double inflasi25 = double.parse(
                   isiseriesinflasi[index = 25].inflasi,
                 );
+                toString();
                 data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, inflasi25),
-                  _ChartData1("Mar", inflasi2, inflasi14, null),
-                  _ChartData1("Apr", inflasi3, inflasi15, null),
-                  _ChartData1("Mei", inflasi4, inflasi16, null),
-                  _ChartData1("Juni", inflasi5, inflasi17, null),
-                  _ChartData1("Juli", inflasi6, inflasi18, null),
-                  _ChartData1("Agst", inflasi7, inflasi19, null),
-                  _ChartData1("Sept", inflasi8, inflasi20, null),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
+                  _ChartData1("Jan", inflasi24),
+                  _ChartData1("Feb", inflasi25),
                 ];
               } else if (cekbulan1 != '-') {
                 double inflasi24 = double.parse(
                   isiseriesinflasi[index = 24].inflasi,
                 );
-                data1 = [
-                  _ChartData1("Jan", inflasi0, inflasi12, inflasi24),
-                  _ChartData1("Feb", inflasi1, inflasi13, null),
-                  _ChartData1("Mar", inflasi2, inflasi14, null),
-                  _ChartData1("Apr", inflasi3, inflasi15, null),
-                  _ChartData1("Mei", inflasi4, inflasi16, null),
-                  _ChartData1("Juni", inflasi5, inflasi17, null),
-                  _ChartData1("Juli", inflasi6, inflasi18, null),
-                  _ChartData1("Agst", inflasi7, inflasi19, null),
-                  _ChartData1("Sept", inflasi8, inflasi20, null),
-                  _ChartData1("Okt", inflasi9, inflasi21, null),
-                  _ChartData1("Nov", inflasi10, inflasi22, null),
-                  _ChartData1("Des", inflasi11, inflasi23, null),
-                ];
+                toString();
+                data1 = [_ChartData1("Jan", inflasi24)];
               }
 
               tooltip = TooltipBehavior(enable: true);
@@ -569,7 +526,7 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                   ),
                   primaryXAxis: CategoryAxis(
                     interval: 1,
-                    labelRotation: -75,
+                    labelRotation: -45,
                     //minorGridLines: const MinorGridLines(width: 1),
                     majorGridLines: const MajorGridLines(width: 1),
                     labelStyle: const TextStyle(
@@ -605,7 +562,7 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                     LineSeries<_ChartData1, String>(
                       dataSource: data1,
                       xValueMapper: (_ChartData1 data1, _) => data1.x,
-                      yValueMapper: (_ChartData1 data1, _) => data1.y2,
+                      yValueMapper: (_ChartData1 data1, _) => data1.y,
                       markerSettings: const MarkerSettings(
                         isVisible: true,
                         shape: DataMarkerType.diamond,
@@ -617,7 +574,7 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                       dataLabelSettings: const DataLabelSettings(
                         // Renders the data label
                         isVisible: true,
-                        labelAlignment: ChartDataLabelAlignment.auto,
+                        labelAlignment: ChartDataLabelAlignment.outer,
                         textStyle: TextStyle(
                           fontSize: 10,
                           fontFamily: 'Roboto',
@@ -627,10 +584,10 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                       name: 'Tahun ke $thnn',
                       color: const Color.fromARGB(255, 141, 24, 4),
                     ),
-                    LineSeries<_ChartData1, String>(
-                      dataSource: data1,
-                      xValueMapper: (_ChartData1 data1, _) => data1.x,
-                      yValueMapper: (_ChartData1 data1, _) => data1.y1,
+                    LineSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y2,
                       markerSettings: const MarkerSettings(
                         isVisible: true,
                         shape: DataMarkerType.pentagon,
@@ -652,10 +609,10 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
                       name: 'Tahun ke $thn1',
                       color: const Color.fromARGB(255, 66, 161, 79),
                     ),
-                    LineSeries<_ChartData1, String>(
-                      dataSource: data1,
-                      xValueMapper: (_ChartData1 data1, _) => data1.x,
-                      yValueMapper: (_ChartData1 data1, _) => data1.y,
+                    LineSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y1,
                       markerSettings: const MarkerSettings(
                         isVisible: true,
                         shape: DataMarkerType.circle,
@@ -692,11 +649,17 @@ class _GrafikInflasiSeriesState extends State<GrafikInflasiSeries> {
   }
 }
 
+class _ChartData {
+  _ChartData(this.x, this.y1, this.y2);
+
+  final String x;
+  final double? y1;
+  final double? y2;
+}
+
 class _ChartData1 {
-  _ChartData1(this.x, this.y, this.y1, this.y2);
+  _ChartData1(this.x, this.y);
 
   final String x;
   final double? y;
-  final double? y1;
-  final double? y2;
 }

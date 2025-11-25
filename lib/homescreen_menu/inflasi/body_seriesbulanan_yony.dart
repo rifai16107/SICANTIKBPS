@@ -12,12 +12,14 @@ class BodySeriesInflasiBulananYony extends StatefulWidget {
       _BodySeriesInflasiBulananYonyState();
 }
 
-class _BodySeriesInflasiBulananYonyState extends State<BodySeriesInflasiBulananYony> {
+class _BodySeriesInflasiBulananYonyState
+    extends State<BodySeriesInflasiBulananYony> {
   RepositoryInflasiYony repositoryinflasi = RepositoryInflasiYony();
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -31,11 +33,17 @@ class _BodySeriesInflasiBulananYonyState extends State<BodySeriesInflasiBulananY
             itemCount: 1,
             itemBuilder: (context, index) {
               //Bulan n-2
-              String bulan0 = '${isiinflasi[index = 0].bulan} ' ' ${isiinflasi[index = 0].tahun}';
+              String bulan0 =
+                  '${isiinflasi[index = 0].bulan} '
+                  ' ${isiinflasi[index = 0].tahun}';
               //Bulan n-1
-              String bulan1 = '${isiinflasi[index = 2].bulan} ' ' ${isiinflasi[index = 2].tahun}';
+              String bulan1 =
+                  '${isiinflasi[index = 2].bulan} '
+                  ' ${isiinflasi[index = 2].tahun}';
               //Bulan n
-              String bulan2 = '${isiinflasi[index = 4].bulan} ' ' ${isiinflasi[index = 4].tahun}';
+              String bulan2 =
+                  '${isiinflasi[index = 4].bulan} '
+                  ' ${isiinflasi[index = 4].tahun}';
 
               return DefaultTabController(
                 length: 3,
@@ -48,26 +56,24 @@ class _BodySeriesInflasiBulananYonyState extends State<BodySeriesInflasiBulananY
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       //isScrollable: true,
                       tabs: [
-                        Tab(
-                          text: bulan2,
-                        ),
-                        Tab(
-                          text: bulan1,
-                        ),
-                        Tab(
-                          text: bulan0,
-                        ),
+                        Tab(text: bulan2),
+                        Tab(text: bulan1),
+                        Tab(text: bulan0),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    InflasiBulananYonyC(),
-                    InflasiBulananYonyB(),
-                    InflasiBulananYonyA(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      InflasiBulananYonyC(),
+                      InflasiBulananYonyB(),
+                      InflasiBulananYonyA(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -76,11 +82,7 @@ class _BodySeriesInflasiBulananYonyState extends State<BodySeriesInflasiBulananY
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );
