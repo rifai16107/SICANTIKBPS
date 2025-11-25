@@ -204,7 +204,7 @@ class _NilaiPdrbState extends State<NilaiPdrb> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight * 0.95,
+                  height: screenHeight * 1.2,
                   width: screenWidth,
                   child: Column(children: [Flexible(child: TabelNilaiPdrb())]),
                 ),
