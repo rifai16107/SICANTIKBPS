@@ -237,6 +237,7 @@ class _PdrbLapUsState extends State<PdrbLapUs> {
               ),
             );
           },
+          foregroundColor: Colors.orange,
           mini: true,
           child: const Icon(Icons.line_axis_rounded),
         ),

@@ -24,8 +24,10 @@ class _DistribusiPdrbState extends State<DistribusiPdrb> {
           appBar: AppBar(
             title: const Text(
               'Distribusi PDRB ADHB',
-              style: TextStyle(fontSize: 16),
-            ),
+              style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
+        
+        iconTheme: const IconThemeData(color: Colors.white),
             actions: [
               IconButton(
                 onPressed: () {

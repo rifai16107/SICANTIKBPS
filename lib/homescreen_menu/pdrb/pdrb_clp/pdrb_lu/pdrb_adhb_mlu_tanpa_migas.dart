@@ -237,6 +237,7 @@ class _PdrbLapUsTanpaMigasState extends State<PdrbLapUsTanpaMigas> {
               ),
             );
           },
+          foregroundColor: Colors.orange,
           mini: true,
           child: const Icon(Icons.line_axis_rounded),
         ),

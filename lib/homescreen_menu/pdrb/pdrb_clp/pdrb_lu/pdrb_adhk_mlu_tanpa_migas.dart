@@ -25,9 +25,10 @@ class _PdrbAdhkLapUsTanpaMigasState extends State<PdrbAdhkLapUsTanpaMigas> {
           appBar: AppBar(
             title: const Text(
               'PDRB ADHK Menurut Lapangan Usaha',
-              style: TextStyle(fontSize: 16),
-            ),
-            backgroundColor: Colors.black,
+               style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
             actions: [
               IconButton(
                 onPressed: () {
@@ -214,6 +215,7 @@ class _PdrbAdhkLapUsTanpaMigasState extends State<PdrbAdhkLapUsTanpaMigas> {
                       child: const BodyGrafikPdrbAdhk(),
                       direction: AxisDirection.left));
             },
+            foregroundColor: Colors.orange,
             mini: true,
             child: const Icon(Icons.line_axis_rounded),
           )),

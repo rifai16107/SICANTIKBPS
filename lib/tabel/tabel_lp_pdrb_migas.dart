@@ -167,7 +167,8 @@ class _TabelLPPdrbMigasState extends State<TabelLPPdrbMigas> {
                             flex: 3,
                             fit: FlexFit.tight,
                             child: Text(
-                              "Lapangan Usaha",
+                              'Lapangan\n'
+                              'Usaha',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.white,
@@ -1336,7 +1337,7 @@ class _TabelLPPdrbMigasState extends State<TabelLPPdrbMigas> {
                     Container(
                       color: Colors.grey.shade200,
                       width: screenWidth * 0.95,
-                      height: screenHeight * 0.05,
+                      height: screenHeight * 0.055,
                       child: Row(
                         children: [
                           const Flexible(

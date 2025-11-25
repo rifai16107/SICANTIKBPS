@@ -25,9 +25,10 @@ class _GrafikSumberPertumbPdrbAdhkState
       appBar: AppBar(
         title: const Text(
           'Sumber Pertumbuhan PDRB ADHK',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           IconButton(
             onPressed: () {

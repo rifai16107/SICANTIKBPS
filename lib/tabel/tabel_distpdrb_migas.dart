@@ -158,7 +158,7 @@ class _TabelDistPdrbMigasState extends State<TabelDistPdrbMigas> {
                 return Column(
                   children: [
                     Container(
-                      color: Colors.green,
+                      color: Colors.orange,
                       width: screenWidth * 0.97,
                       height: screenHeight * 0.06,
                       child: Row(
@@ -167,7 +167,8 @@ class _TabelDistPdrbMigasState extends State<TabelDistPdrbMigas> {
                             flex: 3,
                             fit: FlexFit.tight,
                             child: Text(
-                              "Lapangan Usaha",
+                              'Lapangan\n'
+                              'Usaha',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.white,

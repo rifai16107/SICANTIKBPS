@@ -250,13 +250,13 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
           ],
         ),
         body: Container(
-          padding: const EdgeInsets.all(2),
+          padding: const EdgeInsets.all(1),
           child: Column(
             children: [
-              const Divider(height: 2, color: Colors.transparent),
+              const Divider(height: 1, color: Colors.transparent),
 
               Card(
-                elevation: 20,
+                elevation: 10,
                 color: const Color.fromRGBO(236, 138, 20, 0.882),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -273,23 +273,23 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  child: IntrinsicHeight(
+                  
                     child: Padding(
-                      padding: const EdgeInsets.all(2.0),
+                      padding: const EdgeInsets.all(1.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Image.asset(
                             'assets/images/daerah/logo_cilacap.png',
                             fit: BoxFit.cover,
-                            width: screenWidth * 0.10,
+                            width: screenWidth * 0.09,
                             height: screenHeight * 0.05,
                           ),
                           const SizedBox(width: 2),
                           Container(
                             alignment: Alignment.center,
-                            width: screenWidth * 0.83,
-                            height: screenHeight * 0.06,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
                             child: Text(
                               'Nilai PDRB ADHB dan ADHK Menurut Lap. Usaha',
                               style: TextStyle(
@@ -303,21 +303,18 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                         ],
                       ),
                     ),
-                  ),
+                  
                 ),
               ),
-              const Divider(height: 1, color: Colors.transparent),
-
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -326,40 +323,48 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    child: Row(
-                      children: const [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "PDRB ADHB Menurut Lap. Usaha (dengan Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'PDRB ADHB Menurut Lap. Usaha (dengan Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -368,40 +373,49 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "PDRB ADHB Menurut Lap. Usaha (tanpa Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                 
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'PDRB ADHB Menurut Lap. Usaha (tanpa Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                 
                 ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -410,41 +424,49 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "PDRB ADHK Menurut Lap. Usaha (dengan Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'PDRB ADHK Menurut Lap. Usaha (dengan Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                  
                 ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -453,41 +475,49 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "PDRB ADHK Menurut Lap. Usaha (tanpa Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'PDRB ADHK Menurut Lap. Usaha (tanpa Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                  
                 ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -496,41 +526,49 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Distribusi PDRB ADHB Menurut Lap. Usaha (dengan Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'Distribusi PDRB ADHB Menurut Lap. Usaha (dengan Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                 
                 ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -539,41 +577,49 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Distribusi PDRB ADHB Menurut Lap. Usaha (tanpa Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'Distribusi PDRB ADHB Menurut Lap. Usaha (tanpa Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                  
                 ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -582,41 +628,49 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Sumber Pertumbuhan PDRB ADHK (dengan Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'Sumber Pertumbuhan PDRB ADHK (dengan Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                  
                 ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -625,41 +679,49 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Sumber Pertumbuhan PDRB ADHK (tanpa Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'Sumber Pertumbuhan PDRB ADHK (tanpa Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                 
                 ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -668,41 +730,49 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Laju Pertumbuhan PDRB ADHK (dengan Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'Laju Pertumbuhan PDRB ADHK (dengan Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                 
                 ),
               ),
-              const Divider(height: 2, color: Colors.transparent),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
                     Navigator.push(
                       context,
                       CustomPageRoute(
@@ -711,28 +781,38 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: screenWidth,
-                    height: screenHeight * 0.08,
-                    child: Row(
-                      children: [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Laju Pertumbuhan PDRB ADHK (tanpa Migas)",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
+                  splashColor: Colors.blueGrey,
+                  
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.09,
+                            height: screenHeight * 0.05,
                           ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.85,
+                            height: screenHeight * 0.055,
+                            child: Text(
+                              'Laju Pertumbuhan PDRB ADHK (tanpa Migas)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                  
                 ),
               ),
               Flexible(
@@ -744,27 +824,22 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     children: [
                       Container(
                         width: screenWidth * 0.95,
-                        margin: const EdgeInsets.only(top: 5),
+                        margin: const EdgeInsets.only(top: 2),
                         child: const Text(
                           "Catatan",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
-                      const Divider(color: Colors.transparent, height: 5),
+                      const Divider(color: Colors.transparent, height: 2),
                       SizedBox(
                         width: screenWidth * 0.95,
                         child: const Text(
-                          "- ADHB : Atas Dasar Harga Berlaku.",
-                          style: TextStyle(fontSize: 12),
+                          '- ADHB : Atas Dasar Harga Berlaku.\n'
+                          '- ADHK : Atas dasar Harga Konstan',
+                          style: TextStyle(fontSize: 11),
                         ),
                       ),
-                      SizedBox(
-                        width: screenWidth * 0.95,
-                        child: const Text(
-                          "- ADHK : Atas dasar Harga Konstan",
-                          style: TextStyle(fontSize: 12),
-                        ),
-                      ),
+                      
                     ],
                   ),
                 ),

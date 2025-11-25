@@ -52,7 +52,7 @@ class _GrafikDistPdrbTanpaMigasState extends State<GrafikDistPdrbTanpaMigas> {
                 _ChartData("A-Pertanian", pertanian,
                     const Color.fromARGB(255, 59, 235, 117)),
                 _ChartData("C-Industri", industri,
-                    const Color.fromARGB(8, 45, 58, 245)),
+                    const Color.fromARGB(255, 8, 62, 212)),
                 _ChartData("G-Perdagangan", perdagangan,
                     const Color.fromARGB(255, 241, 64, 41)),
                 _ChartData("F-Konstruksi", konstruksi,

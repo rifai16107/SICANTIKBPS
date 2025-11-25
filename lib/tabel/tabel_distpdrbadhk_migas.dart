@@ -167,7 +167,8 @@ class _TabelDistPdrbAdhkMigasState extends State<TabelDistPdrbAdhkMigas> {
                             flex: 3,
                             fit: FlexFit.tight,
                             child: Text(
-                              "Lapangan Usaha",
+                              'Lapangan\n'
+                              'Usaha',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.white,
