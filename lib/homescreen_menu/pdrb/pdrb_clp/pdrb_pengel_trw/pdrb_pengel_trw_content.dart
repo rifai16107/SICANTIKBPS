@@ -60,7 +60,7 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                             horizontal: 5,
                           ),
                           child: Text(
-                            "PDRB Triwulanan (Nilai, Distribusi, Laju) Menurut Kabupaten/Kota Di Jawa Tengah",
+                            "PDRB Triwulanan Menurut Komponen Pengeluaran di Kabupaten Cilacap",
                             style: TextStyle(color: Colors.white, fontSize: 15),
                             textAlign: TextAlign.center,
                           ),

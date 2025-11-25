@@ -254,6 +254,58 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
           child: Column(
             children: [
               const Divider(height: 2, color: Colors.transparent),
+
+              Card(
+                elevation: 20,
+                color: const Color.fromRGBO(236, 138, 20, 0.882),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                ),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      CustomPageRoute(
+                        child: const NilaiPdrb(),
+                        direction: AxisDirection.left,
+                      ),
+                    );
+                  },
+                  splashColor: Colors.blueGrey,
+                  child: IntrinsicHeight(
+                    child: Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/daerah/logo_cilacap.png',
+                            fit: BoxFit.cover,
+                            width: screenWidth * 0.10,
+                            height: screenHeight * 0.05,
+                          ),
+                          const SizedBox(width: 2),
+                          Container(
+                            alignment: Alignment.center,
+                            width: screenWidth * 0.83,
+                            height: screenHeight * 0.06,
+                            child: Text(
+                              'Nilai PDRB ADHB dan ADHK Menurut Lap. Usaha',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.5,
+                                fontWeight: FontWeight.normal,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
               Flexible(
                 flex: 1,
                 fit: FlexFit.tight,
@@ -296,6 +348,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                 ),
               ),
               const Divider(height: 2, color: Colors.transparent),
+
               Flexible(
                 flex: 1,
                 fit: FlexFit.tight,

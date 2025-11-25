@@ -337,7 +337,7 @@ class _IpmContentState extends State<IpmContent> {
                         fit: FlexFit.tight,
                         flex: 4,
                         child: Container(
-                          height: 0.15 * screenHeight,
+                          height: 0.16 * screenHeight,
                           color: Colors.black,
                           child: Center(
                             child: Padding(
@@ -498,7 +498,7 @@ class _IpmContentState extends State<IpmContent> {
                                   Container(
                                     alignment: Alignment.center,
                                     width: screenWidth * 0.80,
-                                    height: screenHeight * 0.09,
+                                    height: screenHeight * 0.08,
                                     child: Text(
                                       'Perkembangan IDG Kabupaten Cilacap',
                                       style: TextStyle(
@@ -515,7 +515,7 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                     //const Divider(height: 1, color: Colors.transparent),
+                      //const Divider(height: 1, color: Colors.transparent),
                       Card(
                         elevation: 20,
                         color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -550,7 +550,7 @@ class _IpmContentState extends State<IpmContent> {
                                   Container(
                                     alignment: Alignment.center,
                                     width: screenWidth * 0.80,
-                                    height: screenHeight * 0.09,
+                                    height: screenHeight * 0.08,
                                     child: Text(
                                       'IPM Kabupaten/Kota di Jawa Tengah',
                                       style: TextStyle(
@@ -567,7 +567,6 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      
 
                       //IPG
                       //const Divider(height: 1, color: Colors.transparent),
@@ -674,7 +673,6 @@ class _IpmContentState extends State<IpmContent> {
                           ),
                         ),
                       ),
-                      
 
                       //IDG
                       //const Divider(height: 1, color: Colors.transparent),
@@ -712,7 +710,7 @@ class _IpmContentState extends State<IpmContent> {
                                   Container(
                                     alignment: Alignment.center,
                                     width: screenWidth * 0.80,
-                                    height: screenHeight * 0.09,
+                                    height: screenHeight * 0.08,
                                     child: Text(
                                       'IDG Kabupaten/Kota di Jawa Tengah',
                                       style: TextStyle(
@@ -730,7 +728,6 @@ class _IpmContentState extends State<IpmContent> {
                         ),
                       ),
 
-                      
                       Flexible(
                         flex: 1,
                         fit: FlexFit.tight,

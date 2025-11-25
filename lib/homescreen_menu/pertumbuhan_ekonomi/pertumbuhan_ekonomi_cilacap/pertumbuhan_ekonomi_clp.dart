@@ -149,8 +149,8 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                     flex: 1,
                                     fit: FlexFit.tight,
                                     child: Container(
-                                      height: screenHeight * 0.09,
-                                      color: Colors.green,
+                                      height: screenHeight * 0.0975,
+                                      color: Colors.orange,
                                       child: const Center(
                                         child: Text(
                                           "Tahun",
@@ -167,11 +167,13 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                     flex: 1,
                                     fit: FlexFit.tight,
                                     child: Container(
-                                      height: screenHeight * 0.09,
-                                      color: Colors.green,
+                                      height: screenHeight * 0.0975,
+                                      color: Colors.orange,
                                       child: const Center(
                                         child: Text(
-                                          "Pertumbuhan Ekonomi Dengan Migas",
+                                          'Pertumbuhan\n'
+                                          'Ekonomi Dengan\n'
+                                          'Migas',
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold,
@@ -185,11 +187,13 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                     flex: 1,
                                     fit: FlexFit.tight,
                                     child: Container(
-                                      height: screenHeight * 0.09,
-                                      color: Colors.green,
+                                      height: screenHeight * 0.0975,
+                                      color: Colors.orange,
                                       child: const Center(
                                         child: Text(
-                                          "Pertumbuhan Ekonomi Tanpa Migas",
+                                          'Pertumbuhan\n'
+                                          'Ekonomi Tanpa\n'
+                                          'Migas',
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold,

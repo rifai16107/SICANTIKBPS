@@ -38,7 +38,7 @@ class _SeriesPertumbuhanEkonomiKabkot
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.090,
+              height: screenHeight * 0.0995,
               color: Colors.black,
               child: const Center(
                 child: Padding(
