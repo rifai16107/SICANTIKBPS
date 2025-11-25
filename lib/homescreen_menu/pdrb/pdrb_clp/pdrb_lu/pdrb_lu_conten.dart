@@ -306,48 +306,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                   ),
                 ),
               ),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: ElevatedButton(
-                  style: const ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(
-                      Color.fromRGBO(10, 100, 31, 0.886),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      CustomPageRoute(
-                        child: const NilaiPdrb(),
-                        direction: AxisDirection.left,
-                      ),
-                    );
-                  },
-                  child: SizedBox(
-                    width: screenWidth,
-                    child: Row(
-                      children: const [
-                        Flexible(
-                          flex: 16,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            "Nilai PDRB ADHB dan ADHK Menurut Lap. Usaha",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 13),
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Icon(Icons.arrow_right),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              const Divider(height: 2, color: Colors.transparent),
+              const Divider(height: 1, color: Colors.transparent),
 
               Flexible(
                 flex: 1,

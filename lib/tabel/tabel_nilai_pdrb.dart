@@ -104,7 +104,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                 );
 
                 return SizedBox(
-                  //padding: const EdgeInsets.all(2),
+                  height:screenHeight*1.05,//padding: const EdgeInsets.all(2),
                   child: Column(
                     children: [
                       Container(
@@ -127,7 +127,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.07,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: const Center(
                                 child: Text(
                                   "Tahun",
@@ -145,7 +145,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.07,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: const Center(
                                 child: Text(
                                   'PDRB ADHB\n'
@@ -164,7 +164,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.07,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: const Center(
                                 child: Text(
                                   'PDRB ADHB\n'
@@ -389,7 +389,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.07,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: const Center(
                                 child: Text(
                                   "Tahun",
@@ -407,10 +407,10 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.07,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: const Center(
                                 child: Text(
-                                  'PDRB ADHB\n'
+                                  'PDRB ADHK\n'
                                   'Dengan Migas',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -426,10 +426,10 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.07,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: const Center(
                                 child: Text(
-                                  'PDRB ADHB\n'
+                                  'PDRB ADHK\n'
                                   'Tanpa Migas',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -447,7 +447,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                       Container(
                         color: Colors.transparent,
                         width: screenWidth * 0.95,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.045,
                         child: Row(
                           children: [
                             Flexible(
@@ -456,7 +456,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 th1,
                                 textAlign: TextAlign.center,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -465,7 +465,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhkmigas1, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -474,7 +474,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhktanpamigas1, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                           ],
@@ -484,7 +484,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                       Container(
                         color: Colors.grey.shade200,
                         width: screenWidth * 0.95,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.045,
                         child: Row(
                           children: [
                             Flexible(
@@ -493,7 +493,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 th2,
                                 textAlign: TextAlign.center,
-                                style: const TextStyle(fontSize: 13),
+                               style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -502,7 +502,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhkmigas2, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -511,7 +511,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhktanpamigas2, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                           ],
@@ -521,7 +521,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                       Container(
                         color: Colors.transparent,
                         width: screenWidth * 0.95,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.045,
                         child: Row(
                           children: [
                             Flexible(
@@ -530,7 +530,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 th3,
                                 textAlign: TextAlign.center,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -539,7 +539,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhkmigas3, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -548,7 +548,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhktanpamigas3, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                           ],
@@ -558,7 +558,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                       Container(
                         color: Colors.grey.shade200,
                         width: screenWidth * 0.95,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.045,
                         child: Row(
                           children: [
                             Flexible(
@@ -567,7 +567,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 th4,
                                 textAlign: TextAlign.center,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -576,7 +576,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhkmigas4, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -585,7 +585,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhktanpamigas4, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                           ],
@@ -595,7 +595,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                       Container(
                         color: Colors.transparent,
                         width: screenWidth * 0.95,
-                        height: screenHeight * 0.05,
+                        height: screenHeight * 0.045,
                         child: Row(
                           children: [
                             Flexible(
@@ -604,7 +604,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 th5,
                                 textAlign: TextAlign.center,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -613,7 +613,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhkmigas5, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                             Flexible(
@@ -622,7 +622,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               child: Text(
                                 Format.convertTo(nilaiadhktanpamigas5, 2),
                                 textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 13),
+                                style: myTextStyle,
                               ),
                             ),
                           ],
@@ -632,6 +632,9 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                         color: Color.fromARGB(235, 71, 65, 65),
                         thickness: 1,
                       ),
+                      Container(
+                       height: screenHeight * 0.050,
+                      ),  
                     ],
                   ),
                 );
