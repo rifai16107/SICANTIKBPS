@@ -21,9 +21,10 @@ class _SeriesTrwadhkKabkot extends State<SeriesTrwadhkKabkot> {
       appBar: AppBar(
         title: const Text(
           "PDRB TRIWULANAN KAB/KOTA",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

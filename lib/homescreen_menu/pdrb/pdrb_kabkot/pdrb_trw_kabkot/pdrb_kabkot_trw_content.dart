@@ -222,17 +222,15 @@ class _pdrbkabkottrwContentState extends State<pdrbkabkottrwContent> {
                 ),
               ),
             ),
-
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -241,40 +239,49 @@ class _pdrbkabkottrwContentState extends State<pdrbkabkottrwContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Kabupaten/Kota",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_jateng.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.82,
+                          height: screenHeight * 0.08,
+                          child: Text(
+                            'Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Kabupaten/Kota',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            ),     
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -283,40 +290,49 @@ class _pdrbkabkottrwContentState extends State<pdrbkabkottrwContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Kabupaten/Kota",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_jateng.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.82,
+                          height: screenHeight * 0.08,
+                          child: Text(
+                            'Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Kabupaten/Kota',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -325,25 +341,36 @@ class _pdrbkabkottrwContentState extends State<pdrbkabkottrwContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Laju Pertumbuhan (y-on-y) PDRB Triwulanan Menurut Kabupaten/Kota",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_jateng.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.82,
+                          height: screenHeight * 0.08,
+                          child: Text(
+                            'Laju Pertumbuhan (y-to-y) PDRB Triwulanan Menurut Kabupaten/Kota',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
