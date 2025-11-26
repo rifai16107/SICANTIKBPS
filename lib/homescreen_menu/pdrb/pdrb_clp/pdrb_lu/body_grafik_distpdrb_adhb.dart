@@ -205,7 +205,7 @@ class _BodyGrafikDistPdrbMigasState extends State<BodyGrafikDistPdrbMigas> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight * 0.75,
+                  height: screenHeight * 0.80,
                   width: screenWidth,
                   child: Column(
                     children: [Flexible(child: GrafikDistPdrbMigas())],

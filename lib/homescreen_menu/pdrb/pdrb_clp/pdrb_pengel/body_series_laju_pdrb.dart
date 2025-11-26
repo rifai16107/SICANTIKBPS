@@ -16,7 +16,8 @@ class _BodySeriesLajuPdrbState extends State<BodySeriesLajuPdrb> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -33,11 +34,13 @@ class _BodySeriesLajuPdrbState extends State<BodySeriesLajuPdrb> {
               String tahunN4 = isipdrb[index = 9].tahun;
 
               //tahun n-3 dan n-2
-              String tahunN3N2 = '${isipdrb[index = 8].tahun}-${isipdrb[index = 7].tahun}';
+              String tahunN3N2 =
+                  '${isipdrb[index = 8].tahun}-${isipdrb[index = 7].tahun}';
 
               //tahun n-1 dan n
-              String tahunN1N ='${isipdrb[index = 6].tahun}-${isipdrb[index = 5].tahun}';
-                 
+              String tahunN1N =
+                  '${isipdrb[index = 6].tahun}-${isipdrb[index = 5].tahun}';
+
               return DefaultTabController(
                 length: 3,
                 child: Scaffold(
@@ -49,26 +52,24 @@ class _BodySeriesLajuPdrbState extends State<BodySeriesLajuPdrb> {
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       //isScrollable: true,
                       tabs: [
-                        Tab(
-                          text: tahunN4,
-                        ),
-                        Tab(
-                          text: tahunN3N2,
-                        ),
-                        Tab(
-                          text: tahunN1N,
-                        ),
+                        Tab(text: tahunN4),
+                        Tab(text: tahunN3N2),
+                        Tab(text: tahunN1N),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    LajuPdrbAdhkA(),
-                    LajuPdrbAdhkB(),
-                    LajuPdrbAdhkC(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      LajuPdrbAdhkA(),
+                      LajuPdrbAdhkB(),
+                      LajuPdrbAdhkC(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -77,11 +78,7 @@ class _BodySeriesLajuPdrbState extends State<BodySeriesLajuPdrb> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

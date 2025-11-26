@@ -273,37 +273,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'Nilai PDRB ADHB dan ADHK Menurut Lap. Usaha',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'Nilai PDRB ADHB dan ADHK Menurut Lap. Usaha',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  
+                  ),
                 ),
               ),
               Card(
@@ -324,37 +323,37 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'PDRB ADHB Menurut Lap. Usaha (dengan Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'PDRB ADHB Menurut Lap. Usaha (dengan Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
+                ),
               ),
               Card(
                 elevation: 20,
@@ -374,37 +373,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                 
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'PDRB ADHB Menurut Lap. Usaha (tanpa Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'PDRB ADHB Menurut Lap. Usaha (tanpa Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                 
+                  ),
                 ),
               ),
               Card(
@@ -425,37 +423,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'PDRB ADHK Menurut Lap. Usaha (dengan Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'PDRB ADHK Menurut Lap. Usaha (dengan Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  
+                  ),
                 ),
               ),
               Card(
@@ -476,37 +473,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'PDRB ADHK Menurut Lap. Usaha (tanpa Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'PDRB ADHK Menurut Lap. Usaha (tanpa Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  
+                  ),
                 ),
               ),
               Card(
@@ -527,37 +523,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'Distribusi PDRB ADHB Menurut Lap. Usaha (dengan Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.06,
+                          child: Text(
+                            'Distribusi PDRB ADHB Menurut Lap. Usaha (dengan Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                 
+                  ),
                 ),
               ),
               Card(
@@ -578,37 +573,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'Distribusi PDRB ADHB Menurut Lap. Usaha (tanpa Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.06,
+                          child: Text(
+                            'Distribusi PDRB ADHB Menurut Lap. Usaha (tanpa Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  
+                  ),
                 ),
               ),
               Card(
@@ -629,37 +623,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'Sumber Pertumbuhan PDRB ADHK (dengan Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'Sumber Pertumbuhan PDRB ADHK (dengan Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  
+                  ),
                 ),
               ),
               Card(
@@ -680,37 +673,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'Sumber Pertumbuhan PDRB ADHK (tanpa Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'Sumber Pertumbuhan PDRB ADHK (tanpa Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                 
+                  ),
                 ),
               ),
               Card(
@@ -731,37 +723,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'Laju Pertumbuhan PDRB ADHK (dengan Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'Laju Pertumbuhan PDRB ADHK (dengan Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                 
+                  ),
                 ),
               ),
               Card(
@@ -782,37 +773,36 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                     );
                   },
                   splashColor: Colors.blueGrey,
-                  
-                    child: Padding(
-                      padding: const EdgeInsets.all(1.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/daerah/logo_cilacap.png',
-                            fit: BoxFit.cover,
-                            width: screenWidth * 0.09,
-                            height: screenHeight * 0.05,
-                          ),
-                          const SizedBox(width: 2),
-                          Container(
-                            alignment: Alignment.center,
-                            width: screenWidth * 0.85,
-                            height: screenHeight * 0.055,
-                            child: Text(
-                              'Laju Pertumbuhan PDRB ADHK (tanpa Migas)',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.normal,
-                              ),
-                              textAlign: TextAlign.center,
+
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.09,
+                          height: screenHeight * 0.05,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.85,
+                          height: screenHeight * 0.055,
+                          child: Text(
+                            'Laju Pertumbuhan PDRB ADHK (tanpa Migas)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.normal,
                             ),
+                            textAlign: TextAlign.center,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  
+                  ),
                 ),
               ),
               Flexible(
@@ -839,7 +829,6 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                           style: TextStyle(fontSize: 11),
                         ),
                       ),
-                      
                     ],
                   ),
                 ),

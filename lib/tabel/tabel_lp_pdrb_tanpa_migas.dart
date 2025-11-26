@@ -13,7 +13,8 @@ RepositoryLajuPdrbAdhk repositoryLajuPdrbAdhk = RepositoryLajuPdrbAdhk();
 class _TabelLPPdrbTanpaMigasState extends State<TabelLPPdrbTanpaMigas> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     final screenWidth = MediaQuery.of(context).size.width;
@@ -26,23 +27,28 @@ class _TabelLPPdrbTanpaMigasState extends State<TabelLPPdrbTanpaMigas> {
             return ListView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String th1 = isipdrb[index = 9].created_at[0] +
+                String th1 =
+                    isipdrb[index = 9].created_at[0] +
                     isipdrb[index = 9].created_at[1] +
                     isipdrb[index = 9].created_at[2] +
                     isipdrb[index = 9].created_at[3];
-                String th2 = isipdrb[index = 8].created_at[0] +
+                String th2 =
+                    isipdrb[index = 8].created_at[0] +
                     isipdrb[index = 8].created_at[1] +
                     isipdrb[index = 8].created_at[2] +
                     isipdrb[index = 8].created_at[3];
-                String th3 = isipdrb[index = 7].created_at[0] +
+                String th3 =
+                    isipdrb[index = 7].created_at[0] +
                     isipdrb[index = 7].created_at[1] +
                     isipdrb[index = 7].created_at[2] +
                     isipdrb[index = 7].created_at[3];
-                String th4 = isipdrb[index = 6].created_at[0] +
+                String th4 =
+                    isipdrb[index = 6].created_at[0] +
                     isipdrb[index = 6].created_at[1] +
                     isipdrb[index = 6].created_at[2] +
                     isipdrb[index = 6].created_at[3];
-                String th5 = isipdrb[index = 5].created_at[0] +
+                String th5 =
+                    isipdrb[index = 5].created_at[0] +
                     isipdrb[index = 5].created_at[1] +
                     isipdrb[index = 5].created_at[2] +
                     isipdrb[index = 5].created_at[3];
@@ -1344,7 +1350,8 @@ class _TabelLPPdrbTanpaMigasState extends State<TabelLPPdrbTanpaMigas> {
                             flex: 3,
                             fit: FlexFit.tight,
                             child: Text(
-                              "Pertumb. PDRB",
+                              'Pertumb.\n'
+                              'PDRB',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.black,
@@ -1422,13 +1429,16 @@ class _TabelLPPdrbTanpaMigasState extends State<TabelLPPdrbTanpaMigas> {
                       ),
                     ),
                     Container(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 65, horizontal: 2),
-                        child: const Text(
-                          "     ",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                        )),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 65,
+                        horizontal: 2,
+                      ),
+                      child: const Text(
+                        "     ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ],
                 );
               },
@@ -1437,10 +1447,7 @@ class _TabelLPPdrbTanpaMigasState extends State<TabelLPPdrbTanpaMigas> {
           if (snapshot.hasError) {
             return const Text('error');
           }
-          return const Center(
-              child: CircularProgressIndicator(
-            strokeWidth: 1,
-          ));
+          return const Center(child: CircularProgressIndicator(strokeWidth: 1));
         },
       ),
     );

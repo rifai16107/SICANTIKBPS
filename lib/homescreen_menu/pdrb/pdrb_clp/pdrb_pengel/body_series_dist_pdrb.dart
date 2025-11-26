@@ -18,7 +18,8 @@ class _BodySeriesPdrbPengelDislainState
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -35,11 +36,13 @@ class _BodySeriesPdrbPengelDislainState
               String tahunN4 = isipdrb[index = 4].tahun;
 
               //tahun n-3 dan n-2
-              String tahunN3N2 ='${isipdrb[index = 3].tahun}-${isipdrb[index = 2].tahun}';
+              String tahunN3N2 =
+                  '${isipdrb[index = 3].tahun}-${isipdrb[index = 2].tahun}';
 
               //tahun n-1 dan n
-              String tahunN1N ='${isipdrb[index = 1].tahun}-${isipdrb[index = 0].tahun}';
-             
+              String tahunN1N =
+                  '${isipdrb[index = 1].tahun}-${isipdrb[index = 0].tahun}';
+
               return DefaultTabController(
                 length: 3,
                 child: Scaffold(
@@ -51,26 +54,24 @@ class _BodySeriesPdrbPengelDislainState
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       //isScrollable: true,
                       tabs: [
-                        Tab(
-                          text: tahunN4,
-                        ),
-                        Tab(
-                          text: tahunN3N2,
-                        ),
-                        Tab(
-                          text: tahunN1N,
-                        ),
+                        Tab(text: tahunN4),
+                        Tab(text: tahunN3N2),
+                        Tab(text: tahunN1N),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    DistPdrbAdhbA(),
-                    DistPdrbAdhbB(),
-                    DistPdrbAdhbC(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      DistPdrbAdhbA(),
+                      DistPdrbAdhbB(),
+                      DistPdrbAdhbC(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -79,11 +80,7 @@ class _BodySeriesPdrbPengelDislainState
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

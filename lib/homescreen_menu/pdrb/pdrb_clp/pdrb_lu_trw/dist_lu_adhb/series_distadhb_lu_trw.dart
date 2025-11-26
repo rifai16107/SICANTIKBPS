@@ -12,7 +12,8 @@ class SeriesDistadhbLuTrw extends StatefulWidget {
 class _SeriesDistadhbLuTrw extends State<SeriesDistadhbLuTrw> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     final screenWidth = MediaQuery.of(context).size.width;
@@ -20,26 +21,26 @@ class _SeriesDistadhbLuTrw extends State<SeriesDistadhbLuTrw> {
       appBar: AppBar(
         title: const Text(
           "DISTRIBUSI PDRB LU TRIWULANAN",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(
+            fontWeight: FontWeight.normal,
+            fontSize: 16,
+            color: Colors.white,
+          ),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
-          ),
+          icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
         ),
       ),
       body: ListView(
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: 0.09 * screenHeight,
+            height: 0.10 * screenHeight,
             color: Colors.white,
             child: Column(
               children: const [
@@ -52,12 +53,14 @@ class _SeriesDistadhbLuTrw extends State<SeriesDistadhbLuTrw> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Text('',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.normal,
-                      fontSize: 12,
-                    )),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 12,
+                  ),
+                ),
               ],
             ),
           ),

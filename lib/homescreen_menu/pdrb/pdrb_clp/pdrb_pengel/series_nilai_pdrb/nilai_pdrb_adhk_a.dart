@@ -16,7 +16,8 @@ RepositoryPdrbPengel repositorypdrb = RepositoryPdrbPengel();
 class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -31,14 +32,17 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
               itemCount: 1,
               itemBuilder: (context, index) {
                 //pdrb komp pengeluaran adhk 2020 (n-4)
-                double kons_ruta_n4 =
-                    double.parse(isipdrb[index = 19].kons_ruta);
-                double kons_lnprt_n4 =
-                    double.parse(isipdrb[index = 19].kons_lnprt);
+                double kons_ruta_n4 = double.parse(
+                  isipdrb[index = 19].kons_ruta,
+                );
+                double kons_lnprt_n4 = double.parse(
+                  isipdrb[index = 19].kons_lnprt,
+                );
                 double kons_pem_n4 = double.parse(isipdrb[index = 19].kons_pem);
                 double pmtb_n4 = double.parse(isipdrb[index = 19].pmtb);
-                double inventori_n4 =
-                    double.parse(isipdrb[index = 19].inventori);
+                double inventori_n4 = double.parse(
+                  isipdrb[index = 19].inventori,
+                );
                 double ekspor_n4 = double.parse(isipdrb[index = 19].ekspor);
                 double total_n4 = double.parse(isipdrb[index = 19].total);
                 String tahun_n4 = isipdrb[index = 19].tahun;
@@ -58,14 +62,17 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Komponen Pengeluaran",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -77,13 +84,16 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Text(
                                       " ",
                                       style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -93,14 +103,17 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                   child: Container(
                                     height: screenHeight * 0.065,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: Center(
                                       child: Text(
                                         tahun_n4,
                                         style: const TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -119,7 +132,9 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          horizontal: 4, vertical: 2),
+                                        horizontal: 4,
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Pengeluarann Konsumsi Rumahtangga",
                                         textAlign: TextAlign.left,
@@ -149,7 +164,9 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          horizontal: 4, vertical: 2),
+                                        horizontal: 4,
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Pengeluaran Konsumsi LNPRT",
                                         textAlign: TextAlign.left,
@@ -179,7 +196,9 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          horizontal: 4, vertical: 2),
+                                        horizontal: 4,
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Pengeluaran Konsumsi Pemerintah",
                                         textAlign: TextAlign.left,
@@ -210,7 +229,9 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          horizontal: 4, vertical: 2),
+                                        horizontal: 4,
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Pembentukan Modal Tetap Bruto",
                                         textAlign: TextAlign.left,
@@ -241,7 +262,9 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          horizontal: 4, vertical: 2),
+                                        horizontal: 4,
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Perubahan Inventori",
                                         textAlign: TextAlign.left,
@@ -272,7 +295,9 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                     flex: 4,
                                     child: Container(
                                       margin: const EdgeInsets.symmetric(
-                                          horizontal: 4, vertical: 2),
+                                        horizontal: 4,
+                                        vertical: 2,
+                                      ),
                                       child: const Text(
                                         "Net Eskpor",
                                         textAlign: TextAlign.left,
@@ -292,7 +317,6 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                             ),
 
                             // Total/ Nilai PDRB Pengeluaran ADHB
-
                             Row(
                               children: [
                                 Flexible(
@@ -301,14 +325,17 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                   child: Container(
                                     height: screenHeight * 0.06,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "PDRB Pengeluaran",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -320,14 +347,17 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
                                   child: Container(
                                     height: screenHeight * 0.06,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: Text(
                                       Format.convertTo(total_n4, 2),
                                       textAlign: TextAlign.right,
                                       style: const TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -346,7 +376,8 @@ class _PdrbPengelAdhkAState extends State<PdrbPengelAdhkA> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

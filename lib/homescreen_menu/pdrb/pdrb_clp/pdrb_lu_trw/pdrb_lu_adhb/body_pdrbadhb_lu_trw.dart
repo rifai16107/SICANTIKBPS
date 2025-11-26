@@ -32,8 +32,11 @@ class ModelPdrbadhbLuTrw {
   final String komponen;
   final String tahun;
 
-  ModelPdrbadhbLuTrw(
-      {required this.id, required this.komponen, required this.tahun});
+  ModelPdrbadhbLuTrw({
+    required this.id,
+    required this.komponen,
+    required this.tahun,
+  });
 
   factory ModelPdrbadhbLuTrw.fromJson(Map<String, dynamic> json) {
     return ModelPdrbadhbLuTrw(
@@ -55,7 +58,8 @@ class _BodyPdrbadhbLuTrwState extends State<BodyPdrbadhbLuTrw> {
   RepositoryPdrbadhbLuTrw repositoryPdrbadhbLuTrw = RepositoryPdrbadhbLuTrw();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -84,46 +88,23 @@ class _BodyPdrbadhbLuTrwState extends State<BodyPdrbadhbLuTrw> {
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
-                      indicatorColor: Colors.black,
+                      labelColor: Colors.black,
+                      unselectedLabelColor: Colors.grey,
+                      indicatorColor: Colors.orange,
                       tabs: [
-                        Tab(
-                          child: Text(
-                            thn1,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.black),
-                          ),
-                        ),
-                        Tab(
-                          child: Text(
-                            thn2,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.black),
-                          ),
-                        ),
-                        Tab(
-                          child: Text(
-                            thn3,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.black),
-                          ),
-                        ),
+                        Tab(text: thn1),
+                        Tab(text: thn2),
+                        Tab(text: thn3),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    PdrbadhbLuTrwA(),
-                    PdrbadhbLuTrwB(),
-                    PdrbadhbLuTrwC(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      PdrbadhbLuTrwA(),
+                      PdrbadhbLuTrwB(),
+                      PdrbadhbLuTrwC(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -132,11 +113,7 @@ class _BodyPdrbadhbLuTrwState extends State<BodyPdrbadhbLuTrw> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

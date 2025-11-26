@@ -28,9 +28,14 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
       appBar: AppBar(
         title: const Text(
           'PDRB PENGELUARAN TRIWULANAN',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(
+            fontWeight: FontWeight.normal,
+            fontSize: 16,
+            color: Colors.white,
+          ),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -43,39 +48,24 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
         child: Column(
           children: [
             Flexible(
-              flex: 1,
               fit: FlexFit.tight,
-              child: Column(
-                children: [
-                  Flexible(
-                    flex: 4,
-                    fit: FlexFit.tight,
-                    child: Container(
-                      height: 110,
-                      color: Colors.black,
-                      child: const Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 2,
-                            horizontal: 5,
-                          ),
-                          child: Text(
-                            "PDRB Triwulanan Menurut Komponen Pengeluaran di Kabupaten Cilacap",
-                            style: TextStyle(color: Colors.white, fontSize: 15),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
+              flex: 2,
+              child: Container(
+                height: 0.1 * screenHeight,
+                color: Colors.black,
+                child: const Center(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 2, horizontal: 5),
+                    child: Text(
+                      "PDRB Triwulanan Menurut Komponen Pengeluaran di  Kabupaten Cilacap",
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      textAlign: TextAlign.center,
                     ),
                   ),
-                  Flexible(
-                    fit: FlexFit.tight,
-                    flex: 1,
-                    child: Container(height: 100, color: Colors.transparent),
-                  ),
-                ],
+                ),
               ),
             ),
+            Flexible(child: Container(height: 15, color: Colors.transparent)),
             Flexible(
               flex: 1,
               fit: FlexFit.tight,
@@ -328,6 +318,34 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
               ),
             ),
             const Divider(height: 50, color: Colors.transparent),
+            Flexible(
+              flex: 2,
+              fit: FlexFit.tight,
+              child: Container(
+                color: Colors.transparent,
+                child: Column(
+                  children: [
+                    Container(
+                      width: screenWidth * 0.95,
+                      margin: const EdgeInsets.only(top: 1),
+                      child: const Text(
+                        "Catatan",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    const Divider(color: Colors.transparent, height: 1),
+                    SizedBox(
+                      width: screenWidth * 0.95,
+                      child: const Text(
+                        '- ADHB : Atas Dasar Harga Berlaku.\n'
+                        '- ADHK : Atas dasar Harga Konstan',
+                        style: TextStyle(fontSize: 11),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
             Flexible(
               flex: 1,
               fit: FlexFit.tight,

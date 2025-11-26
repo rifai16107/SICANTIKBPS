@@ -32,8 +32,11 @@ class ModelLajuadhkLuTrw {
   final String komponen;
   final String tahun;
 
-  ModelLajuadhkLuTrw(
-      {required this.id, required this.komponen, required this.tahun});
+  ModelLajuadhkLuTrw({
+    required this.id,
+    required this.komponen,
+    required this.tahun,
+  });
 
   factory ModelLajuadhkLuTrw.fromJson(Map<String, dynamic> json) {
     return ModelLajuadhkLuTrw(
@@ -55,7 +58,8 @@ class _BodyLajuadhkccLuTrwState extends State<BodyLajuadhkccLuTrw> {
   RepositoryLajuadhkLuTrw repositoryLajuadhkLuTrw = RepositoryLajuadhkLuTrw();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -84,46 +88,23 @@ class _BodyLajuadhkccLuTrwState extends State<BodyLajuadhkccLuTrw> {
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
-                      indicatorColor: Colors.black,
+                      labelColor: Colors.black,
+                      unselectedLabelColor: Colors.grey,
+                      indicatorColor: Colors.orange,
                       tabs: [
-                        Tab(
-                          child: Text(
-                            thn0,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.black),
-                          ),
-                        ),
-                        Tab(
-                          child: Text(
-                            thn1,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.black),
-                          ),
-                        ),
-                        Tab(
-                          child: Text(
-                            thn2,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                                color: Colors.black),
-                          ),
-                        ),
+                        Tab(text: thn0),
+                        Tab(text: thn1),
+                        Tab(text: thn2),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    LajuadhkccLuTrw1(),
-                    LajuadhkccLuTrwA(),
-                    LajuadhkccLuTrwB(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      LajuadhkccLuTrw1(),
+                      LajuadhkccLuTrwA(),
+                      LajuadhkccLuTrwB(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -132,11 +113,7 @@ class _BodyLajuadhkccLuTrwState extends State<BodyLajuadhkccLuTrw> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

@@ -15,30 +15,32 @@ class LajuPertumbuhanPdrb extends StatefulWidget {
 class _LajuPertumbuhanPdrbState extends State<LajuPertumbuhanPdrb> {
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.bottom -
         MediaQuery.of(context).padding.top;
     var screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-          appBar: AppBar(
-            title: const Text(
-              'Laju Pertumbuhan PDRB ADHK',
-               style: TextStyle(fontSize: 16, color: Colors.white),
-        ),
-        backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white),
-            actions: [
-              IconButton(
-                onPressed: () {
-                  showModalBottomSheet(
-                    backgroundColor: Colors.white,
-                    constraints: BoxConstraints.tight(
-                      Size(screenWidth, screenHeight),
-                    ),
-                    context: context,
-                    builder: (context) {
-                      return ListView(children: [
+        appBar: AppBar(
+          title: const Text(
+            'Laju Pertumbuhan PDRB ADHK',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          backgroundColor: Colors.black,
+          iconTheme: const IconThemeData(color: Colors.white),
+          actions: [
+            IconButton(
+              onPressed: () {
+                showModalBottomSheet(
+                  backgroundColor: Colors.white,
+                  constraints: BoxConstraints.tight(
+                    Size(screenWidth, screenHeight),
+                  ),
+                  context: context,
+                  builder: (context) {
+                    return ListView(
+                      children: [
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
@@ -51,169 +53,195 @@ class _LajuPertumbuhanPdrbState extends State<LajuPertumbuhanPdrb> {
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                              "A = Pertanian, kehutanan, dan perikanan",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("B = Pertambangan dan penggalian",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("C = Industri",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("D = Pengadaan listrik dan gas",
-                              textAlign: TextAlign.justify),
+                            "A = Pertanian, kehutanan, dan perikanan",
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                              "E = Pengadaan air, pengelolaan sampah/limbah dan daur ulang",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("F = Konstruksi",
-                              textAlign: TextAlign.justify),
+                            "B = Pertambangan dan penggalian",
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                              "G = Perdagangan, reparasi mobil/motor",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("H = Transportasi dan pergudangan",
-                              textAlign: TextAlign.justify),
+                            "C = Industri",
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                              "I = Penyediaan akomodasi dan makan minum",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("J = Informasi dan komunikasi",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("K = Jasa keuangan dan asuransi",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("L = Real estate",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("M_N = Jasa perusahaan",
-                              textAlign: TextAlign.justify),
+                            "D = Pengadaan listrik dan gas",
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                              "O = Adm pemerintahan, pertahanan, dam jaminan sosial wajib",
-                              textAlign: TextAlign.justify),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(5),
-                          alignment: Alignment.centerLeft,
-                          child: const Text("P = Jasa pendidikan",
-                              textAlign: TextAlign.justify),
+                            "E = Pengadaan air, pengelolaan sampah/limbah dan daur ulang",
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
                           child: const Text(
-                              "Q = Jasa kesehatan dan kegiatan sosial",
-                              textAlign: TextAlign.justify),
+                            "F = Konstruksi",
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
                         Container(
                           padding: const EdgeInsets.all(5),
                           alignment: Alignment.centerLeft,
-                          child: const Text("R_S_T_U = Jasa lainnya",
-                              textAlign: TextAlign.justify),
+                          child: const Text(
+                            "G = Perdagangan, reparasi mobil/motor",
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
-                      ]);
-                    },
-                  );
-                },
-                icon: const Icon(Icons.info_outlined),
-              ),
-            ],
-            leading: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: const Center(
-                child: Icon(
-                  BackIcons.circle_arrow,
-                  size: 40,
-                ),
-              ),
-            ),
-          ),
-          body: ListView(
-            children: [
-              Column(
-                children: <Widget>[
-                  Container(
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 8, horizontal: 2),
-                      child: const Text(
-                        "Laju Pertumbuhan PDRB ADHK Menurut Lapangan Usaha -Dengan Migas (Persen)",
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,
-                      )),
-                  SizedBox(
-                    height: screenHeight * 0.95,
-                    width: screenWidth,
-                    child: Column(
-                      children: [
-                        Flexible(
-                          child: TabelLPPdrbMigas(),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "H = Transportasi dan pergudangan",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "I = Penyediaan akomodasi dan makan minum",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "J = Informasi dan komunikasi",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "K = Jasa keuangan dan asuransi",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "L = Real estate",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "M_N = Jasa perusahaan",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "O = Adm pemerintahan, pertahanan, dam jaminan sosial wajib",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "P = Jasa pendidikan",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "Q = Jasa kesehatan dan kegiatan sosial",
+                            textAlign: TextAlign.justify,
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.centerLeft,
+                          child: const Text(
+                            "R_S_T_U = Jasa lainnya",
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
                       ],
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-          floatingActionButtonLocation:
-              FloatingActionButtonLocation.startDocked,
-          floatingActionButton: FloatingActionButton(
+                    );
+                  },
+                );
+              },
+              icon: const Icon(Icons.info_outlined),
+            ),
+          ],
+          leading: IconButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  CustomPageRoute(
-                      child: const BodyGrafikLPPdrb(),
-                      direction: AxisDirection.left));
+              Navigator.pop(context);
             },
-            mini: true,
-            child: const Icon(Icons.line_axis_rounded),
-          )),
+            icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
+          ),
+        ),
+        body: ListView(
+          children: [
+            Column(
+              children: <Widget>[
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 8,
+                    horizontal: 2,
+                  ),
+                  child: const Text(
+                    "Laju Pertumbuhan PDRB ADHK Menurut Lapangan Usaha -Dengan Migas (Persen)",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                SizedBox(
+                  height: screenHeight * 0.95,
+                  width: screenWidth,
+                  child: Column(
+                    children: [Flexible(child: TabelLPPdrbMigas())],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              CustomPageRoute(
+                child: const BodyGrafikLPPdrb(),
+                direction: AxisDirection.left,
+              ),
+            );
+          },
+          foregroundColor: Colors.orange,
+          mini: true,
+          child: const Icon(Icons.line_axis_rounded),
+        ),
+      ),
     );
   }
 }
@@ -223,19 +251,25 @@ class CustomPageRoute extends PageRouteBuilder {
   final AxisDirection direction;
 
   CustomPageRoute({required this.child, this.direction = AxisDirection.left})
-      : super(
-            transitionDuration: const Duration(milliseconds: 200),
-            reverseTransitionDuration: const Duration(milliseconds: 200),
-            pageBuilder: (context, animation, secondaryAnimation) => child);
+    : super(
+        transitionDuration: const Duration(milliseconds: 200),
+        reverseTransitionDuration: const Duration(milliseconds: 200),
+        pageBuilder: (context, animation, secondaryAnimation) => child,
+      );
 
   @override
-  Widget buildTransitions(BuildContext context, Animation<double> animation,
-          Animation<double> secondaryAnimation, Widget child) =>
-      SlideTransition(
-        position: Tween<Offset>(begin: getBeginOffset(), end: Offset.zero)
-            .animate(animation),
-        child: child,
-      );
+  Widget buildTransitions(
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) => SlideTransition(
+    position: Tween<Offset>(
+      begin: getBeginOffset(),
+      end: Offset.zero,
+    ).animate(animation),
+    child: child,
+  );
   Offset getBeginOffset() {
     switch (direction) {
       case AxisDirection.up:

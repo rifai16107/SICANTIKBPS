@@ -18,10 +18,12 @@ class _GrafikNilaiPdrbState extends State<GrafikNilaiPdrb> {
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -36,22 +38,26 @@ class _GrafikNilaiPdrbState extends State<GrafikNilaiPdrb> {
 
               // Komponen pengeluaran ADHB 2024
               double konsRutaAdhb = double.parse(isipdrb[index = 10].kons_ruta);
-              double konsLnprtAdhb =
-                  double.parse(isipdrb[index = 10].kons_lnprt);
+              double konsLnprtAdhb = double.parse(
+                isipdrb[index = 10].kons_lnprt,
+              );
               double konsPemAdhb = double.parse(isipdrb[index = 10].kons_pem);
               double pmtbAdhb = double.parse(isipdrb[index = 10].pmtb);
-              double inventoriAdhb =
-                  double.parse(isipdrb[index = 10].inventori);
+              double inventoriAdhb = double.parse(
+                isipdrb[index = 10].inventori,
+              );
               double eksporAdhb = double.parse(isipdrb[index = 10].ekspor);
 
               // Komponen pengeluaran ADHk 2024
               double konsRutaAdhk = double.parse(isipdrb[index = 15].kons_ruta);
-              double konsLnprtAdhk =
-                  double.parse(isipdrb[index = 15].kons_lnprt);
+              double konsLnprtAdhk = double.parse(
+                isipdrb[index = 15].kons_lnprt,
+              );
               double konsPemAdhk = double.parse(isipdrb[index = 15].kons_pem);
               double pmtbAdhk = double.parse(isipdrb[index = 15].pmtb);
-              double inventoriAdhk =
-                  double.parse(isipdrb[index = 15].inventori);
+              double inventoriAdhk = double.parse(
+                isipdrb[index = 15].inventori,
+              );
               double eksporAdhk = double.parse(isipdrb[index = 15].ekspor);
 
               toString();
@@ -66,69 +72,89 @@ class _GrafikNilaiPdrbState extends State<GrafikNilaiPdrb> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight,
-                width: screenWidth,
-                child: SfCartesianChart(
-                    title: ChartTitle(
-                        text:
-                            'Nilai Komponen Pengeluaran Konsumsi PDRB ADHB dan ADHK Tahun $tahun1 (Milyar Rupiah)',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                        )),
-                    primaryXAxis: CategoryAxis(),
-                    legend: Legend(
-                        // Visibility of legend
-                        overflowMode: LegendItemOverflowMode.wrap,
-                        textStyle: const TextStyle(
-                          fontSize: 11,
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: screenHeight * 0.90,
+                      width: screenWidth,
+                      child: SfCartesianChart(
+                        title: ChartTitle(
+                          text:
+                              'Nilai Komponen Pengeluaran Konsumsi PDRB ADHB dan ADHK Tahun $tahun1 (Milyar Rupiah)',
+                          // Aligns the chart title to left
+                          alignment: ChartAlignment.center,
+                          textStyle: const TextStyle(
+                            color: Color.fromARGB(255, 10, 10, 10),
+                            fontFamily: 'Roboto',
+                            fontStyle: FontStyle.italic,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                          ),
                         ),
-                        isVisible: true,
-                        position: LegendPosition.bottom),
-                    primaryYAxis: NumericAxis(
-                        numberFormat: NumberFormat.decimalPattern('vi_VN'),
-                        majorGridLines: const MajorGridLines(width: 0),
-                        minimum: 0,
-                        maximum: 90000,
-                        interval: 20000),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
-                        name: 'PDRB ADHB',
-                        color: const Color.fromARGB(255, 22, 18, 238),
+                        primaryXAxis: CategoryAxis(),
+                        legend: Legend(
+                          // Visibility of legend
+                          overflowMode: LegendItemOverflowMode.wrap,
+                          textStyle: const TextStyle(fontSize: 11),
+                          isVisible: true,
+                          position: LegendPosition.bottom,
+                        ),
+                        primaryYAxis: NumericAxis(
+                          numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                          majorGridLines: const MajorGridLines(width: 0),
+                          minimum: 0,
+                          maximum: 90000,
+                          interval: 20000,
+                        ),
+                        tooltipBehavior: tooltip,
+                        series: <CartesianSeries>[
+                          BarSeries<_ChartData, String>(
+                            dataSource: data,
+                            xValueMapper: (_ChartData data, _) => data.x,
+                            yValueMapper: (_ChartData data, _) => data.y,
+                            // Sorting based on the specified field
+                            //sortingOrder: SortingOrder.descending,
+                            //sortFieldValueMapper: (_ChartData data, _) =>
+                            //data.y,
+                            dataLabelSettings: const DataLabelSettings(
+                              // Renders the data label
+                              isVisible: true,
+                              textStyle: TextStyle(fontSize: 11),
+                            ),
+                            name: 'PDRB ADHB',
+                            color: const Color.fromARGB(255, 22, 18, 238),
+                          ),
+                          BarSeries<_ChartData, String>(
+                            dataSource: data,
+                            xValueMapper: (_ChartData data, _) => data.x,
+                            yValueMapper: (_ChartData data, _) => data.y1,
+                            // Sorting based on the specified field
+                            //sortingOrder: SortingOrder.descending,
+                            //sortFieldValueMapper: (_ChartData data, _) =>
+                            //data.y,
+                            dataLabelSettings: const DataLabelSettings(
+                              // Renders the data label
+                              isVisible: true,
+                              textStyle: TextStyle(fontSize: 11),
+                            ),
+                            name: 'PDRB ADHK',
+                            color: const Color.fromARGB(255, 236, 248, 63),
+                          ),
+                        ],
                       ),
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y1,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 11)),
-                        name: 'PDRB ADHK',
-                        color: const Color.fromARGB(255, 236, 248, 63),
+                    ),
+                    SizedBox(
+                      child: const Text(
+                        " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.normal,
+                        ),
                       ),
-                    ]),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -136,10 +162,7 @@ class _GrafikNilaiPdrbState extends State<GrafikNilaiPdrb> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 1,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 1));
       },
     );
   }
