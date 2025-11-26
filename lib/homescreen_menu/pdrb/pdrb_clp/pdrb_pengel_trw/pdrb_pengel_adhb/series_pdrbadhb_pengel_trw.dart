@@ -12,7 +12,8 @@ class SeriesPdrbadhbPengwlTrw extends StatefulWidget {
 class _SeriesPdrbadhbPengwlTrw extends State<SeriesPdrbadhbPengwlTrw> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     final screenWidth = MediaQuery.of(context).size.width;
@@ -20,19 +21,19 @@ class _SeriesPdrbadhbPengwlTrw extends State<SeriesPdrbadhbPengwlTrw> {
       appBar: AppBar(
         title: const Text(
           "PDRB PENGELUARAN TRIWULANAN",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(
+            fontWeight: FontWeight.normal,
+            fontSize: 16,
+            color: Colors.white,
+          ),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
-          ),
+          icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
         ),
       ),
       body: ListView(
@@ -52,12 +53,14 @@ class _SeriesPdrbadhbPengwlTrw extends State<SeriesPdrbadhbPengwlTrw> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Text('',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.normal,
-                      fontSize: 12,
-                    )),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 12,
+                  ),
+                ),
               ],
             ),
           ),

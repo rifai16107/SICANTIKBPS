@@ -66,58 +66,15 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
               ),
             ),
             Flexible(child: Container(height: 15, color: Colors.transparent)),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    CustomPageRoute(
-                      child: const SeriesPdrbPengelTrw(),
-                      direction: AxisDirection.left,
-                    ),
-                  );
-                },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "PDRB Triwulanan Atas Dasar Harga Konstan Menurut Pengeluaran",
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
-                  ),
-                ),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
               ),
-            ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -126,40 +83,103 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "PDRB Triwulanan Atas Dasar Harga Berlaku Menurut Pengeluaran",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.09,
+                          child: Text(
+                            'PDRB Triwulanan Atas Dasar Harga Berlaku\n'
+                            'Menurut Pengeluaran',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const SeriesPdrbPengelTrw(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.09,
+                          child: Text(
+                            'PDRB Triwulanan Atas Dasar Harga Konstan\n'
+                            'Menurut Pengeluaran',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                onPressed: () {
+              ),
+            ),
+
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -168,40 +188,49 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Distribusi PDRB Triwulanan Menurut Pengeluaran",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.09,
+                          child: Text(
+                            'Distribusi PDRB Triwulanan Menurut Pengeluaran',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -210,40 +239,50 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Laju Pertumbuhan (q-to-q) PDRB Triwulanan Menurut Pengeluaran (Persen)",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.09,
+                          child: Text(
+                            'Laju Pertumbuhan (q-to-q) PDRB Triwulanan\n'
+                            'Menurut Pengeluaran (Persen)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -252,40 +291,50 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Laju Pertumbuhan (c-to-c) PDRB Triwulanan Menurut Pengeluaran (Persen)",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.09,
+                          child: Text(
+                            'Laju Pertumbuhan (c-to-c) PDRB Triwulanan\n'
+                            'Menurut Pengeluaran (Persen)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -294,30 +343,41 @@ class _pdrbpengeltrwContentState extends State<pdrbpengeltrwContent> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.07,
-                  child: Row(
-                    children: const [
-                      Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Laju Pertumbuhan (y-on-y) PDRB Triwulanan Menurut Pengeluaran (Persen)",
-                          textAlign: TextAlign.center,
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
                         ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.09,
+                          child: Text(
+                            'Laju Pertumbuhan (y-to-y) PDRB Triwulanan\n'
+                            'Menurut Pengeluaran (Persen)',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            const Divider(height: 50, color: Colors.transparent),
             Flexible(
               flex: 2,
               fit: FlexFit.tight,

@@ -251,7 +251,6 @@ class _PdrbContentState extends State<PdrbContent> {
                       ),
                       const Divider(height: 15, color: Colors.transparent),
 
-                      //IPG
                       Card(
                         elevation: 20,
                         color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -496,7 +495,8 @@ class _PdrbContentState extends State<PdrbContent> {
                                     width: screenWidth * 0.82,
                                     height: screenHeight * 0.08,
                                     child: Text(
-                                      'PDRB ADHB Menurut Kabupaten/Kota di Jawa Tengah',
+                                      'PDRB ADHB Menurut Kabupaten/Kota\n'
+                                      'di Jawa Tengah',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 13.5,
@@ -548,7 +548,8 @@ class _PdrbContentState extends State<PdrbContent> {
                                     width: screenWidth * 0.82,
                                     height: screenHeight * 0.08,
                                     child: Text(
-                                      'PDRB ADHK Menurut Kabupaten/Kota di Jawa Tengah',
+                                      'PDRB ADHK Menurut Kabupaten/Kota\n'
+                                      'di Jawa Tengah',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 13.5,
@@ -600,7 +601,8 @@ class _PdrbContentState extends State<PdrbContent> {
                                     width: screenWidth * 0.82,
                                     height: screenHeight * 0.08,
                                     child: Text(
-                                      'PDRB Triwulanan Menurut Kabupaten/Kota di Jawa Tengah',
+                                      'PDRB Triwulanan Menurut Kabupaten/Kota\n'
+                                      'di Jawa Tengah',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 13.5,

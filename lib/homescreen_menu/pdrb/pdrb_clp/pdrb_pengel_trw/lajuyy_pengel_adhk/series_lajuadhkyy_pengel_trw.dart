@@ -13,7 +13,8 @@ class SeriesLajuadhkyyPengelTrw extends StatefulWidget {
 class _SeriesLajuadhkyyPengelTrw extends State<SeriesLajuadhkyyPengelTrw> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     final screenWidth = MediaQuery.of(context).size.width;
@@ -21,19 +22,19 @@ class _SeriesLajuadhkyyPengelTrw extends State<SeriesLajuadhkyyPengelTrw> {
       appBar: AppBar(
         title: const Text(
           "LAJU PDRB PENGELUARAN TRIWULANAN",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(
+            fontWeight: FontWeight.normal,
+            fontSize: 16,
+            color: Colors.white,
+          ),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
-          ),
+          icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
         ),
       ),
       body: ListView(
@@ -53,12 +54,14 @@ class _SeriesLajuadhkyyPengelTrw extends State<SeriesLajuadhkyyPengelTrw> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Text('',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.normal,
-                      fontSize: 12,
-                    )),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 12,
+                  ),
+                ),
               ],
             ),
           ),

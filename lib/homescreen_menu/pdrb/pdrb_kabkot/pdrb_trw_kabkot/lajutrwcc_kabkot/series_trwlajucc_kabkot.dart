@@ -6,14 +6,14 @@ class SeriesTrwlajuccKabkot extends StatefulWidget {
   const SeriesTrwlajuccKabkot({super.key});
 
   @override
-  State<SeriesTrwlajuccKabkot> createState() =>
-      _SeriesTrwlajuccKabkot();
+  State<SeriesTrwlajuccKabkot> createState() => _SeriesTrwlajuccKabkot();
 }
 
 class _SeriesTrwlajuccKabkot extends State<SeriesTrwlajuccKabkot> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     final screenWidth = MediaQuery.of(context).size.width;
@@ -21,19 +21,15 @@ class _SeriesTrwlajuccKabkot extends State<SeriesTrwlajuccKabkot> {
       appBar: AppBar(
         title: const Text(
           "PDRB TRIWULANAN KAB/KOTA",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
-          ),
+          icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
         ),
       ),
       body: ListView(
@@ -53,14 +49,15 @@ class _SeriesTrwlajuccKabkot extends State<SeriesTrwlajuccKabkot> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                
+
                 Text(
-                    'geser kolom berisi data ke kiri untuk melihat isian kolom lainnya',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.normal,
-                      fontSize: 12,
-                    )),
+                  'geser kolom berisi data ke kiri untuk melihat isian kolom lainnya',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 12,
+                  ),
+                ),
               ],
             ),
           ),

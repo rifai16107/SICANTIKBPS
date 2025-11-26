@@ -16,7 +16,8 @@ class _BodySeriesPdrbadhbKabkotState extends State<BodySeriesPdrbadhbKabkot> {
   RepositoryPdrbKabkot repositorypdrb = RepositoryPdrbKabkot();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -31,9 +32,11 @@ class _BodySeriesPdrbadhbKabkotState extends State<BodySeriesPdrbadhbKabkot> {
             itemBuilder: (context, index) {
               //tahun 2019-2023
               String thn1 = isipdrbkabkot[index = 0].tahun.substring(0, 4);
-              String thn23 = '${isipdrbkabkot[index = 0].tahun.substring(5, 9)}-${isipdrbkabkot[index = 0].tahun.substring(10, 14)}';
-              String thn45 = '${isipdrbkabkot[index = 0].tahun.substring(15, 19)}-${isipdrbkabkot[index = 0].tahun.substring(20, 24)}';
-             
+              String thn23 =
+                  '${isipdrbkabkot[index = 0].tahun.substring(5, 9)}-${isipdrbkabkot[index = 0].tahun.substring(10, 14)}';
+              String thn45 =
+                  '${isipdrbkabkot[index = 0].tahun.substring(15, 19)}-${isipdrbkabkot[index = 0].tahun.substring(20, 24)}';
+
               return DefaultTabController(
                 length: 3,
                 child: Scaffold(
@@ -45,25 +48,19 @@ class _BodySeriesPdrbadhbKabkotState extends State<BodySeriesPdrbadhbKabkot> {
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: thn1,
-                        ),
-                        Tab(
-                          text: thn23,
-                        ),
-                        Tab(
-                          text: thn45,
-                        ),
+                        Tab(text: thn1),
+                        Tab(text: thn23),
+                        Tab(text: thn45),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    PdrbKabkotA(),
-                    PdrbKabkotBC(),
-                    PdrbKabkotDE(),
-                  ]),
+                  body: const TabBarView(
+                    children: [PdrbKabkotA(), PdrbKabkotBC(), PdrbKabkotDE()],
+                  ),
                 ),
               );
             },
@@ -72,11 +69,7 @@ class _BodySeriesPdrbadhbKabkotState extends State<BodySeriesPdrbadhbKabkot> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

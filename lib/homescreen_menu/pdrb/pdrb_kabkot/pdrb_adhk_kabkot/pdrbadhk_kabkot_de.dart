@@ -17,7 +17,8 @@ RepositoryPdrbKabkot repositorypdrb = RepositoryPdrbKabkot();
 class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -71,147 +72,217 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                 String kab34 = " 75. " + isipdrbkabkot[index = 33].wilayah;
                 String kab35 = " 76. " + isipdrbkabkot[index = 34].wilayah;
 
-                double pdrb1_1 =
-                    double.parse(isipdrbkabkot[index = 0].pdrb_adhk4);
-                double pdrb1_2 =
-                    double.parse(isipdrbkabkot[index = 1].pdrb_adhk4);
-                double pdrb1_3 =
-                    double.parse(isipdrbkabkot[index = 2].pdrb_adhk4);
-                double pdrb1_4 =
-                    double.parse(isipdrbkabkot[index = 3].pdrb_adhk4);
-                double pdrb1_5 =
-                    double.parse(isipdrbkabkot[index = 4].pdrb_adhk4);
-                double pdrb1_6 =
-                    double.parse(isipdrbkabkot[index = 5].pdrb_adhk4);
-                double pdrb1_7 =
-                    double.parse(isipdrbkabkot[index = 6].pdrb_adhk4);
-                double pdrb1_8 =
-                    double.parse(isipdrbkabkot[index = 7].pdrb_adhk4);
-                double pdrb1_9 =
-                    double.parse(isipdrbkabkot[index = 8].pdrb_adhk4);
-                double pdrb1_10 =
-                    double.parse(isipdrbkabkot[index = 9].pdrb_adhk4);
-                double pdrb1_11 =
-                    double.parse(isipdrbkabkot[index = 10].pdrb_adhk4);
-                double pdrb1_12 =
-                    double.parse(isipdrbkabkot[index = 11].pdrb_adhk4);
-                double pdrb1_13 =
-                    double.parse(isipdrbkabkot[index = 12].pdrb_adhk4);
-                double pdrb1_14 =
-                    double.parse(isipdrbkabkot[index = 13].pdrb_adhk4);
-                double pdrb1_15 =
-                    double.parse(isipdrbkabkot[index = 14].pdrb_adhk4);
-                double pdrb1_16 =
-                    double.parse(isipdrbkabkot[index = 15].pdrb_adhk4);
-                double pdrb1_17 =
-                    double.parse(isipdrbkabkot[index = 16].pdrb_adhk4);
-                double pdrb1_18 =
-                    double.parse(isipdrbkabkot[index = 17].pdrb_adhk4);
-                double pdrb1_19 =
-                    double.parse(isipdrbkabkot[index = 18].pdrb_adhk4);
-                double pdrb1_20 =
-                    double.parse(isipdrbkabkot[index = 19].pdrb_adhk4);
-                double pdrb1_21 =
-                    double.parse(isipdrbkabkot[index = 20].pdrb_adhk4);
-                double pdrb1_22 =
-                    double.parse(isipdrbkabkot[index = 21].pdrb_adhk4);
-                double pdrb1_23 =
-                    double.parse(isipdrbkabkot[index = 22].pdrb_adhk4);
-                double pdrb1_24 =
-                    double.parse(isipdrbkabkot[index = 23].pdrb_adhk4);
-                double pdrb1_25 =
-                    double.parse(isipdrbkabkot[index = 24].pdrb_adhk4);
-                double pdrb1_26 =
-                    double.parse(isipdrbkabkot[index = 25].pdrb_adhk4);
-                double pdrb1_27 =
-                    double.parse(isipdrbkabkot[index = 26].pdrb_adhk4);
-                double pdrb1_28 =
-                    double.parse(isipdrbkabkot[index = 27].pdrb_adhk4);
-                double pdrb1_29 =
-                    double.parse(isipdrbkabkot[index = 28].pdrb_adhk4);
-                double pdrb1_30 =
-                    double.parse(isipdrbkabkot[index = 29].pdrb_adhk4);
-                double pdrb1_31 =
-                    double.parse(isipdrbkabkot[index = 30].pdrb_adhk4);
-                double pdrb1_32 =
-                    double.parse(isipdrbkabkot[index = 31].pdrb_adhk4);
-                double pdrb1_33 =
-                    double.parse(isipdrbkabkot[index = 32].pdrb_adhk4);
-                double pdrb1_34 =
-                    double.parse(isipdrbkabkot[index = 33].pdrb_adhk4);
-                double pdrb1_35 =
-                    double.parse(isipdrbkabkot[index = 34].pdrb_adhk4);
+                double pdrb1_1 = double.parse(
+                  isipdrbkabkot[index = 0].pdrb_adhk4,
+                );
+                double pdrb1_2 = double.parse(
+                  isipdrbkabkot[index = 1].pdrb_adhk4,
+                );
+                double pdrb1_3 = double.parse(
+                  isipdrbkabkot[index = 2].pdrb_adhk4,
+                );
+                double pdrb1_4 = double.parse(
+                  isipdrbkabkot[index = 3].pdrb_adhk4,
+                );
+                double pdrb1_5 = double.parse(
+                  isipdrbkabkot[index = 4].pdrb_adhk4,
+                );
+                double pdrb1_6 = double.parse(
+                  isipdrbkabkot[index = 5].pdrb_adhk4,
+                );
+                double pdrb1_7 = double.parse(
+                  isipdrbkabkot[index = 6].pdrb_adhk4,
+                );
+                double pdrb1_8 = double.parse(
+                  isipdrbkabkot[index = 7].pdrb_adhk4,
+                );
+                double pdrb1_9 = double.parse(
+                  isipdrbkabkot[index = 8].pdrb_adhk4,
+                );
+                double pdrb1_10 = double.parse(
+                  isipdrbkabkot[index = 9].pdrb_adhk4,
+                );
+                double pdrb1_11 = double.parse(
+                  isipdrbkabkot[index = 10].pdrb_adhk4,
+                );
+                double pdrb1_12 = double.parse(
+                  isipdrbkabkot[index = 11].pdrb_adhk4,
+                );
+                double pdrb1_13 = double.parse(
+                  isipdrbkabkot[index = 12].pdrb_adhk4,
+                );
+                double pdrb1_14 = double.parse(
+                  isipdrbkabkot[index = 13].pdrb_adhk4,
+                );
+                double pdrb1_15 = double.parse(
+                  isipdrbkabkot[index = 14].pdrb_adhk4,
+                );
+                double pdrb1_16 = double.parse(
+                  isipdrbkabkot[index = 15].pdrb_adhk4,
+                );
+                double pdrb1_17 = double.parse(
+                  isipdrbkabkot[index = 16].pdrb_adhk4,
+                );
+                double pdrb1_18 = double.parse(
+                  isipdrbkabkot[index = 17].pdrb_adhk4,
+                );
+                double pdrb1_19 = double.parse(
+                  isipdrbkabkot[index = 18].pdrb_adhk4,
+                );
+                double pdrb1_20 = double.parse(
+                  isipdrbkabkot[index = 19].pdrb_adhk4,
+                );
+                double pdrb1_21 = double.parse(
+                  isipdrbkabkot[index = 20].pdrb_adhk4,
+                );
+                double pdrb1_22 = double.parse(
+                  isipdrbkabkot[index = 21].pdrb_adhk4,
+                );
+                double pdrb1_23 = double.parse(
+                  isipdrbkabkot[index = 22].pdrb_adhk4,
+                );
+                double pdrb1_24 = double.parse(
+                  isipdrbkabkot[index = 23].pdrb_adhk4,
+                );
+                double pdrb1_25 = double.parse(
+                  isipdrbkabkot[index = 24].pdrb_adhk4,
+                );
+                double pdrb1_26 = double.parse(
+                  isipdrbkabkot[index = 25].pdrb_adhk4,
+                );
+                double pdrb1_27 = double.parse(
+                  isipdrbkabkot[index = 26].pdrb_adhk4,
+                );
+                double pdrb1_28 = double.parse(
+                  isipdrbkabkot[index = 27].pdrb_adhk4,
+                );
+                double pdrb1_29 = double.parse(
+                  isipdrbkabkot[index = 28].pdrb_adhk4,
+                );
+                double pdrb1_30 = double.parse(
+                  isipdrbkabkot[index = 29].pdrb_adhk4,
+                );
+                double pdrb1_31 = double.parse(
+                  isipdrbkabkot[index = 30].pdrb_adhk4,
+                );
+                double pdrb1_32 = double.parse(
+                  isipdrbkabkot[index = 31].pdrb_adhk4,
+                );
+                double pdrb1_33 = double.parse(
+                  isipdrbkabkot[index = 32].pdrb_adhk4,
+                );
+                double pdrb1_34 = double.parse(
+                  isipdrbkabkot[index = 33].pdrb_adhk4,
+                );
+                double pdrb1_35 = double.parse(
+                  isipdrbkabkot[index = 34].pdrb_adhk4,
+                );
 
-                double pdrb2_1 =
-                    double.parse(isipdrbkabkot[index = 0].pdrb_adhk5);
-                double pdrb2_2 =
-                    double.parse(isipdrbkabkot[index = 1].pdrb_adhk5);
-                double pdrb2_3 =
-                    double.parse(isipdrbkabkot[index = 2].pdrb_adhk5);
-                double pdrb2_4 =
-                    double.parse(isipdrbkabkot[index = 3].pdrb_adhk5);
-                double pdrb2_5 =
-                    double.parse(isipdrbkabkot[index = 4].pdrb_adhk5);
-                double pdrb2_6 =
-                    double.parse(isipdrbkabkot[index = 5].pdrb_adhk5);
-                double pdrb2_7 =
-                    double.parse(isipdrbkabkot[index = 6].pdrb_adhk5);
-                double pdrb2_8 =
-                    double.parse(isipdrbkabkot[index = 7].pdrb_adhk5);
-                double pdrb2_9 =
-                    double.parse(isipdrbkabkot[index = 8].pdrb_adhk5);
-                double pdrb2_10 =
-                    double.parse(isipdrbkabkot[index = 9].pdrb_adhk5);
-                double pdrb2_11 =
-                    double.parse(isipdrbkabkot[index = 10].pdrb_adhk5);
-                double pdrb2_12 =
-                    double.parse(isipdrbkabkot[index = 11].pdrb_adhk5);
-                double pdrb2_13 =
-                    double.parse(isipdrbkabkot[index = 12].pdrb_adhk5);
-                double pdrb2_14 =
-                    double.parse(isipdrbkabkot[index = 13].pdrb_adhk5);
-                double pdrb2_15 =
-                    double.parse(isipdrbkabkot[index = 14].pdrb_adhk5);
-                double pdrb2_16 =
-                    double.parse(isipdrbkabkot[index = 15].pdrb_adhk5);
-                double pdrb2_17 =
-                    double.parse(isipdrbkabkot[index = 16].pdrb_adhk5);
-                double pdrb2_18 =
-                    double.parse(isipdrbkabkot[index = 17].pdrb_adhk5);
-                double pdrb2_19 =
-                    double.parse(isipdrbkabkot[index = 18].pdrb_adhk5);
-                double pdrb2_20 =
-                    double.parse(isipdrbkabkot[index = 19].pdrb_adhk5);
-                double pdrb2_21 =
-                    double.parse(isipdrbkabkot[index = 20].pdrb_adhk5);
-                double pdrb2_22 =
-                    double.parse(isipdrbkabkot[index = 21].pdrb_adhk5);
-                double pdrb2_23 =
-                    double.parse(isipdrbkabkot[index = 22].pdrb_adhk5);
-                double pdrb2_24 =
-                    double.parse(isipdrbkabkot[index = 23].pdrb_adhk5);
-                double pdrb2_25 =
-                    double.parse(isipdrbkabkot[index = 24].pdrb_adhk5);
-                double pdrb2_26 =
-                    double.parse(isipdrbkabkot[index = 25].pdrb_adhk5);
-                double pdrb2_27 =
-                    double.parse(isipdrbkabkot[index = 26].pdrb_adhk5);
-                double pdrb2_28 =
-                    double.parse(isipdrbkabkot[index = 27].pdrb_adhk5);
-                double pdrb2_29 =
-                    double.parse(isipdrbkabkot[index = 28].pdrb_adhk5);
-                double pdrb2_30 =
-                    double.parse(isipdrbkabkot[index = 29].pdrb_adhk5);
-                double pdrb2_31 =
-                    double.parse(isipdrbkabkot[index = 30].pdrb_adhk5);
-                double pdrb2_32 =
-                    double.parse(isipdrbkabkot[index = 31].pdrb_adhk5);
-                double pdrb2_33 =
-                    double.parse(isipdrbkabkot[index = 32].pdrb_adhk5);
-                double pdrb2_34 =
-                    double.parse(isipdrbkabkot[index = 33].pdrb_adhk5);
-                double pdrb2_35 =
-                    double.parse(isipdrbkabkot[index = 34].pdrb_adhk5);
+                double pdrb2_1 = double.parse(
+                  isipdrbkabkot[index = 0].pdrb_adhk5,
+                );
+                double pdrb2_2 = double.parse(
+                  isipdrbkabkot[index = 1].pdrb_adhk5,
+                );
+                double pdrb2_3 = double.parse(
+                  isipdrbkabkot[index = 2].pdrb_adhk5,
+                );
+                double pdrb2_4 = double.parse(
+                  isipdrbkabkot[index = 3].pdrb_adhk5,
+                );
+                double pdrb2_5 = double.parse(
+                  isipdrbkabkot[index = 4].pdrb_adhk5,
+                );
+                double pdrb2_6 = double.parse(
+                  isipdrbkabkot[index = 5].pdrb_adhk5,
+                );
+                double pdrb2_7 = double.parse(
+                  isipdrbkabkot[index = 6].pdrb_adhk5,
+                );
+                double pdrb2_8 = double.parse(
+                  isipdrbkabkot[index = 7].pdrb_adhk5,
+                );
+                double pdrb2_9 = double.parse(
+                  isipdrbkabkot[index = 8].pdrb_adhk5,
+                );
+                double pdrb2_10 = double.parse(
+                  isipdrbkabkot[index = 9].pdrb_adhk5,
+                );
+                double pdrb2_11 = double.parse(
+                  isipdrbkabkot[index = 10].pdrb_adhk5,
+                );
+                double pdrb2_12 = double.parse(
+                  isipdrbkabkot[index = 11].pdrb_adhk5,
+                );
+                double pdrb2_13 = double.parse(
+                  isipdrbkabkot[index = 12].pdrb_adhk5,
+                );
+                double pdrb2_14 = double.parse(
+                  isipdrbkabkot[index = 13].pdrb_adhk5,
+                );
+                double pdrb2_15 = double.parse(
+                  isipdrbkabkot[index = 14].pdrb_adhk5,
+                );
+                double pdrb2_16 = double.parse(
+                  isipdrbkabkot[index = 15].pdrb_adhk5,
+                );
+                double pdrb2_17 = double.parse(
+                  isipdrbkabkot[index = 16].pdrb_adhk5,
+                );
+                double pdrb2_18 = double.parse(
+                  isipdrbkabkot[index = 17].pdrb_adhk5,
+                );
+                double pdrb2_19 = double.parse(
+                  isipdrbkabkot[index = 18].pdrb_adhk5,
+                );
+                double pdrb2_20 = double.parse(
+                  isipdrbkabkot[index = 19].pdrb_adhk5,
+                );
+                double pdrb2_21 = double.parse(
+                  isipdrbkabkot[index = 20].pdrb_adhk5,
+                );
+                double pdrb2_22 = double.parse(
+                  isipdrbkabkot[index = 21].pdrb_adhk5,
+                );
+                double pdrb2_23 = double.parse(
+                  isipdrbkabkot[index = 22].pdrb_adhk5,
+                );
+                double pdrb2_24 = double.parse(
+                  isipdrbkabkot[index = 23].pdrb_adhk5,
+                );
+                double pdrb2_25 = double.parse(
+                  isipdrbkabkot[index = 24].pdrb_adhk5,
+                );
+                double pdrb2_26 = double.parse(
+                  isipdrbkabkot[index = 25].pdrb_adhk5,
+                );
+                double pdrb2_27 = double.parse(
+                  isipdrbkabkot[index = 26].pdrb_adhk5,
+                );
+                double pdrb2_28 = double.parse(
+                  isipdrbkabkot[index = 27].pdrb_adhk5,
+                );
+                double pdrb2_29 = double.parse(
+                  isipdrbkabkot[index = 28].pdrb_adhk5,
+                );
+                double pdrb2_30 = double.parse(
+                  isipdrbkabkot[index = 29].pdrb_adhk5,
+                );
+                double pdrb2_31 = double.parse(
+                  isipdrbkabkot[index = 30].pdrb_adhk5,
+                );
+                double pdrb2_32 = double.parse(
+                  isipdrbkabkot[index = 31].pdrb_adhk5,
+                );
+                double pdrb2_33 = double.parse(
+                  isipdrbkabkot[index = 32].pdrb_adhk5,
+                );
+                double pdrb2_34 = double.parse(
+                  isipdrbkabkot[index = 33].pdrb_adhk5,
+                );
+                double pdrb2_35 = double.parse(
+                  isipdrbkabkot[index = 34].pdrb_adhk5,
+                );
 
                 return Scaffold(
                   body: Column(
@@ -219,7 +290,7 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.060,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -228,15 +299,18 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                               child: Container(
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: 2, vertical: 10),
-                                color: Colors.green,
+                                  horizontal: 2,
+                                  vertical: 10,
+                                ),
+                                color: Colors.orange,
                                 child: const Center(
                                   child: Text(
                                     "Kabupaten/Kota",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -247,14 +321,17 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                               child: Container(
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: 2, vertical: 10),
-                                color: Colors.green,
+                                  horizontal: 2,
+                                  vertical: 10,
+                                ),
+                                color: Colors.orange,
                                 child: Center(
                                   child: Text(
                                     thn1,
                                     style: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -265,14 +342,17 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                               child: Container(
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: 2, vertical: 10),
-                                color: Colors.green,
+                                  horizontal: 2,
+                                  vertical: 10,
+                                ),
+                                color: Colors.orange,
                                 child: Center(
                                   child: Text(
                                     thn2,
                                     style: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -296,7 +376,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab1,
                                           textAlign: TextAlign.left,
@@ -337,7 +418,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab2,
                                           textAlign: TextAlign.left,
@@ -378,7 +460,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab3,
                                           textAlign: TextAlign.left,
@@ -419,7 +502,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab4,
                                           textAlign: TextAlign.left,
@@ -460,7 +544,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab5,
                                           textAlign: TextAlign.left,
@@ -501,7 +586,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab6,
                                           textAlign: TextAlign.left,
@@ -542,7 +628,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab7,
                                           textAlign: TextAlign.left,
@@ -583,7 +670,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab8,
                                           textAlign: TextAlign.left,
@@ -624,7 +712,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab9,
                                           textAlign: TextAlign.left,
@@ -665,7 +754,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab10,
                                           textAlign: TextAlign.left,
@@ -706,7 +796,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab11,
                                           textAlign: TextAlign.left,
@@ -747,7 +838,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab12,
                                           textAlign: TextAlign.left,
@@ -788,7 +880,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab13,
                                           textAlign: TextAlign.left,
@@ -829,7 +922,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab14,
                                           textAlign: TextAlign.left,
@@ -870,7 +964,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab15,
                                           textAlign: TextAlign.left,
@@ -911,7 +1006,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab16,
                                           textAlign: TextAlign.left,
@@ -952,7 +1048,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab17,
                                           textAlign: TextAlign.left,
@@ -993,7 +1090,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab18,
                                           textAlign: TextAlign.left,
@@ -1034,7 +1132,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab19,
                                           textAlign: TextAlign.left,
@@ -1075,7 +1174,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab20,
                                           textAlign: TextAlign.left,
@@ -1116,7 +1216,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab21,
                                           textAlign: TextAlign.left,
@@ -1157,7 +1258,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab22,
                                           textAlign: TextAlign.left,
@@ -1198,7 +1300,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab23,
                                           textAlign: TextAlign.left,
@@ -1239,7 +1342,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab24,
                                           textAlign: TextAlign.left,
@@ -1280,7 +1384,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab25,
                                           textAlign: TextAlign.left,
@@ -1321,7 +1426,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab26,
                                           textAlign: TextAlign.left,
@@ -1362,7 +1468,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab27,
                                           textAlign: TextAlign.left,
@@ -1403,7 +1510,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab28,
                                           textAlign: TextAlign.left,
@@ -1444,7 +1552,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab29,
                                           textAlign: TextAlign.left,
@@ -1485,7 +1594,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab30,
                                           textAlign: TextAlign.left,
@@ -1526,7 +1636,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab31,
                                           textAlign: TextAlign.left,
@@ -1567,7 +1678,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab32,
                                           textAlign: TextAlign.left,
@@ -1608,7 +1720,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab33,
                                           textAlign: TextAlign.left,
@@ -1649,7 +1762,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab34,
                                           textAlign: TextAlign.left,
@@ -1690,7 +1804,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 3,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 3),
+                                          vertical: 3,
+                                        ),
                                         child: Text(
                                           kab35,
                                           textAlign: TextAlign.left,
@@ -1725,15 +1840,13 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                               ),
                               Container(
                                 alignment: Alignment.centerLeft,
-                                padding: const EdgeInsets.only(
-                                  top: 4,
-                                  left: 0,
-                                ),
+                                padding: const EdgeInsets.only(top: 4, left: 0),
                                 child: const Text(
                                   " Sumber Data : BPS Provinsi Jawa Tengah",
                                   style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.normal),
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                 ),
                               ),
                               Container(
@@ -1747,7 +1860,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 4,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 2),
+                                          vertical: 2,
+                                        ),
                                         child: const Text(
                                           " Catatan:",
                                           style: TextStyle(
@@ -1773,7 +1887,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 4,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 2),
+                                          vertical: 2,
+                                        ),
                                         child: Text(
                                           " Tahun $thn1 merupakan angka sementara",
                                           style: const TextStyle(
@@ -1798,7 +1913,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                       flex: 4,
                                       child: Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 2),
+                                          vertical: 2,
+                                        ),
                                         child: Text(
                                           " Tahun $thn2 merupakan angka sangat sementara",
                                           style: const TextStyle(
@@ -1821,14 +1937,15 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
                                 child: const Text(
                                   "  ",
                                   style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                 ),
                               ),
                             ],
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 );
@@ -1839,7 +1956,8 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),
@@ -1847,11 +1965,14 @@ class _PdrbadhkKabkotDEState extends State<PdrbadhkKabkotDE> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
-              context,
-              CustomPageRoute(
-                  child: const BodyGrafikPdrbadhkKabkot(),
-                  direction: AxisDirection.left));
+            context,
+            CustomPageRoute(
+              child: const BodyGrafikPdrbadhkKabkot(),
+              direction: AxisDirection.left,
+            ),
+          );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.bar_chart_sharp),
       ),
@@ -1864,19 +1985,25 @@ class CustomPageRoute extends PageRouteBuilder {
   final AxisDirection direction;
 
   CustomPageRoute({required this.child, this.direction = AxisDirection.left})
-      : super(
-            transitionDuration: const Duration(milliseconds: 200),
-            reverseTransitionDuration: const Duration(milliseconds: 200),
-            pageBuilder: (context, animation, secondaryAnimation) => child);
+    : super(
+        transitionDuration: const Duration(milliseconds: 200),
+        reverseTransitionDuration: const Duration(milliseconds: 200),
+        pageBuilder: (context, animation, secondaryAnimation) => child,
+      );
 
   @override
-  Widget buildTransitions(BuildContext context, Animation<double> animation,
-          Animation<double> secondaryAnimation, Widget child) =>
-      SlideTransition(
-        position: Tween<Offset>(begin: getBeginOffset(), end: Offset.zero)
-            .animate(animation),
-        child: child,
-      );
+  Widget buildTransitions(
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) => SlideTransition(
+    position: Tween<Offset>(
+      begin: getBeginOffset(),
+      end: Offset.zero,
+    ).animate(animation),
+    child: child,
+  );
   Offset getBeginOffset() {
     switch (direction) {
       case AxisDirection.up:
