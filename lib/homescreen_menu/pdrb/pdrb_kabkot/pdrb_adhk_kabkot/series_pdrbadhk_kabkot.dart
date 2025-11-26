@@ -36,7 +36,7 @@ class _SeriesPdrbadhkKabkot extends State<SeriesPdrbadhkKabkot> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.092,
+              height: screenHeight * 0.11,
               color: Colors.black,
               child: const Center(
                 child: Padding(
