@@ -16,7 +16,8 @@ RepositoryApmApk repositoryapmapk = RepositoryApmApk();
 class _ApmApkCState extends State<ApmApkC> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -60,13 +61,17 @@ class _ApmApkCState extends State<ApmApkC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Jenjang Pendidikan",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -78,13 +83,17 @@ class _ApmApkCState extends State<ApmApkC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "APM",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -95,13 +104,17 @@ class _ApmApkCState extends State<ApmApkC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "APK",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -115,35 +128,33 @@ class _ApmApkCState extends State<ApmApkC> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
-                                    
-                                      child: Text(
-                                        nama1,
-                                        textAlign: TextAlign.left,
-                                        
-                                      ),
-                                    
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+
+                                    child: Text(
+                                      nama1,
+                                      textAlign: TextAlign.left,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Text(
-                                      Format.convertTo(apm1, 2),
-                                      textAlign: TextAlign.right, 
-                                      ),
-                                  
+                                    Format.convertTo(apm1, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Text(
-                                      Format.convertTo(apk1, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               
+                                    Format.convertTo(apk1, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
 
@@ -154,30 +165,32 @@ class _ApmApkCState extends State<ApmApkC> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal:10),
-                                     child: Text(
-                                        nama2,
-                                        textAlign: TextAlign.left,
-                                     ),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+                                    child: Text(
+                                      nama2,
+                                      textAlign: TextAlign.left,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apm2, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
+                                    Format.convertTo(apm2, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                  
-                                    child: Text(
-                                      Format.convertTo(apk2, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
+
+                                  child: Text(
+                                    Format.convertTo(apk2, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                               ],
                             ),
@@ -189,31 +202,32 @@ class _ApmApkCState extends State<ApmApkC> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    margin:
-                                      const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
                                     child: Text(
-                                        nama3,
-                                        textAlign: TextAlign.left,
-                                      ),
-                                   
+                                      nama3,
+                                      textAlign: TextAlign.left,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apm3, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
+                                    Format.convertTo(apm3, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                   child: Text(
-                                      Format.convertTo(apk3, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                                 ),
+                                  child: Text(
+                                    Format.convertTo(apk3, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
 
@@ -224,59 +238,62 @@ class _ApmApkCState extends State<ApmApkC> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12, horizontal: 10),
-                                    child: Text(
-                                        nama4,
-                                        textAlign: TextAlign.left,
-                                      ),
-                                   ),
-                                ),
-                                Flexible(
-                                  fit: FlexFit.tight,
-                                  flex: 2,
-                                   child: Text(
-                                      Format.convertTo(apm4, 2),
-                                    textAlign: TextAlign.right,
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
                                     ),
+                                    child: Text(
+                                      nama4,
+                                      textAlign: TextAlign.left,
+                                    ),
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apk4, 2),
+                                    Format.convertTo(apm4, 2),
                                     textAlign: TextAlign.right,
-                                    ),
-                                 ),
+                                  ),
+                                ),
+                                Flexible(
+                                  fit: FlexFit.tight,
+                                  flex: 2,
+                                  child: Text(
+                                    Format.convertTo(apk4, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
-                            const Divider(
-                              thickness: 3,
+                            const Divider(thickness: 3),
+                            Row(
+                              children: [
+                                Flexible(
+                                  flex: 1,
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceAround,
+                                    children: [
+                                      Container(
+                                        alignment: Alignment.centerLeft,
+                                        padding: const EdgeInsets.only(
+                                          top: 4,
+                                          left: 4,
+                                        ),
+                                        child: const Text(
+                                          " Sumber Data : Survei Sosial Ekonomi Nasional",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
-                            Row(children: [
-                                      Flexible(
-                                          flex: 1,
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceAround,
-                                            children: [
-                                              Container(
-                                                alignment: Alignment.centerLeft,
-                                                padding: const EdgeInsets.only(
-                                                  top: 4,
-                                                  left: 4,
-                                                ),
-                                                child: const Text(
-                                                  " Sumber Data : Survei Sosial Ekonomi Nasional",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.normal),
-                                                ),
-                                              ),
-                                            ],
-                                          ))
-                                    ]),
                           ],
                         ),
                       ),
@@ -290,7 +307,8 @@ class _ApmApkCState extends State<ApmApkC> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

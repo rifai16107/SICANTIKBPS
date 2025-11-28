@@ -32,8 +32,12 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SARANA PENDIDIKAN', style: TextStyle(fontSize: 16)),
+        title: const Text(
+          'SARANA PENDIDIKAN',
+          style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

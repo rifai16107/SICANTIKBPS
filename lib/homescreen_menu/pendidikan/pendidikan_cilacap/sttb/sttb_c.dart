@@ -16,7 +16,8 @@ RepositorySttb repositorysttb = RepositorySttb();
 class _SttbCState extends State<SttbC> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -53,18 +54,24 @@ class _SttbCState extends State<SttbC> {
                 double sttbPr6 = double.parse(isisttb[index = 17].sttb_pr);
                 double sttbPrTotal = 100;
 
-                double sttbTotal1 =
-                    double.parse(isisttb[index = 12].sttb_total);
-                double sttbTotal2 =
-                    double.parse(isisttb[index = 13].sttb_total);
-                double sttbTotal3 =
-                    double.parse(isisttb[index = 14].sttb_total);
-                double sttbTotal4 =
-                    double.parse(isisttb[index = 15].sttb_total);
-                double sttbTotal5 =
-                    double.parse(isisttb[index = 16].sttb_total);
-                double sttbTotal6 =
-                    double.parse(isisttb[index = 17].sttb_total);
+                double sttbTotal1 = double.parse(
+                  isisttb[index = 12].sttb_total,
+                );
+                double sttbTotal2 = double.parse(
+                  isisttb[index = 13].sttb_total,
+                );
+                double sttbTotal3 = double.parse(
+                  isisttb[index = 14].sttb_total,
+                );
+                double sttbTotal4 = double.parse(
+                  isisttb[index = 15].sttb_total,
+                );
+                double sttbTotal5 = double.parse(
+                  isisttb[index = 16].sttb_total,
+                );
+                double sttbTotal6 = double.parse(
+                  isisttb[index = 17].sttb_total,
+                );
                 double sttbTotal = 100;
 
                 return Container(
@@ -82,14 +89,17 @@ class _SttbCState extends State<SttbC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Jenjang Pendidikan",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -101,14 +111,17 @@ class _SttbCState extends State<SttbC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Lk",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -119,14 +132,17 @@ class _SttbCState extends State<SttbC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Pr",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -137,14 +153,17 @@ class _SttbCState extends State<SttbC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Lk+Pr",
                                         style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold),
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -160,7 +179,9 @@ class _SttbCState extends State<SttbC> {
                                   flex: 4,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 12, horizontal: 10),
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
                                     child: Text(
                                       nama1,
                                       textAlign: TextAlign.left,
@@ -202,7 +223,9 @@ class _SttbCState extends State<SttbC> {
                                   flex: 4,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 12, horizontal: 10),
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
                                     child: Text(
                                       nama2,
                                       textAlign: TextAlign.left,
@@ -244,7 +267,9 @@ class _SttbCState extends State<SttbC> {
                                   flex: 4,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 12, horizontal: 10),
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
                                     child: Text(
                                       nama3,
                                       textAlign: TextAlign.left,
@@ -286,7 +311,9 @@ class _SttbCState extends State<SttbC> {
                                   flex: 4,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 12, horizontal: 10),
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
                                     child: Text(
                                       nama4,
                                       textAlign: TextAlign.left,
@@ -328,7 +355,9 @@ class _SttbCState extends State<SttbC> {
                                   flex: 4,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 12, horizontal: 10),
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
                                     child: Text(
                                       nama5,
                                       textAlign: TextAlign.left,
@@ -370,7 +399,9 @@ class _SttbCState extends State<SttbC> {
                                   flex: 4,
                                   child: Container(
                                     margin: const EdgeInsets.symmetric(
-                                        vertical: 12, horizontal: 10),
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
                                     child: Text(
                                       nama6,
                                       textAlign: TextAlign.left,
@@ -403,9 +434,7 @@ class _SttbCState extends State<SttbC> {
                                 ),
                               ],
                             ),
-                            const Divider(
-                              thickness: 3,
-                            ),
+                            const Divider(thickness: 3),
 
                             // Total
                             Row(
@@ -416,13 +445,16 @@ class _SttbCState extends State<SttbC> {
                                   child: Container(
                                     height: screenHeight * 0.04,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
                                     child: const Center(
                                       child: Text(
                                         "Total",
                                         style: TextStyle(
-                                            color: Color.fromARGB(255, 7, 7, 7),
-                                            fontWeight: FontWeight.bold),
+                                          color: Color.fromARGB(255, 7, 7, 7),
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -434,8 +466,9 @@ class _SttbCState extends State<SttbC> {
                                   child: Text(
                                     Format.convertTo(sttbLkTotal, 2),
                                     style: const TextStyle(
-                                        color: Color.fromARGB(255, 7, 7, 7),
-                                        fontWeight: FontWeight.bold),
+                                      color: Color.fromARGB(255, 7, 7, 7),
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                     textAlign: TextAlign.right,
                                   ),
                                 ),
@@ -445,8 +478,9 @@ class _SttbCState extends State<SttbC> {
                                   child: Text(
                                     Format.convertTo(sttbPrTotal, 2),
                                     style: const TextStyle(
-                                        color: Color.fromARGB(255, 7, 7, 7),
-                                        fontWeight: FontWeight.bold),
+                                      color: Color.fromARGB(255, 7, 7, 7),
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                     textAlign: TextAlign.right,
                                   ),
                                 ),
@@ -456,18 +490,18 @@ class _SttbCState extends State<SttbC> {
                                   child: Text(
                                     Format.convertTo(sttbTotal, 2),
                                     style: const TextStyle(
-                                        color: Color.fromARGB(255, 7, 7, 7),
-                                        fontWeight: FontWeight.bold),
+                                      color: Color.fromARGB(255, 7, 7, 7),
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                     textAlign: TextAlign.right,
                                   ),
                                 ),
                               ],
                             ),
-                            const Divider(
-                              thickness: 3,
-                            ),
-                            Row(children: [
-                              Flexible(
+                            const Divider(thickness: 3),
+                            Row(
+                              children: [
+                                Flexible(
                                   flex: 1,
                                   child: Column(
                                     mainAxisAlignment:
@@ -482,13 +516,16 @@ class _SttbCState extends State<SttbC> {
                                         child: const Text(
                                           " Sumber Data : Survei Sosial Ekonomi Nasional",
                                           style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.normal),
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
                                       ),
                                     ],
-                                  ))
-                            ]),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ],
                         ),
                       ),
@@ -502,7 +539,8 @@ class _SttbCState extends State<SttbC> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

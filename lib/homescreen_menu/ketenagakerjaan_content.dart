@@ -23,12 +23,12 @@ class _ketenagakerjaanContentState extends State<ketenagakerjaanContent> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white),
         title: const Text(
           'KETENAGAKERJAAN',
           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

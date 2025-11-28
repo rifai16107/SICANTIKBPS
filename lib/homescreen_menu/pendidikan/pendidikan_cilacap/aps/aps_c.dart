@@ -16,7 +16,8 @@ RepositoryAps repositoryaps = RepositoryAps();
 class _ApsCState extends State<ApsC> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -44,12 +45,11 @@ class _ApsCState extends State<ApsC> {
                 double apsPr2 = double.parse(isiaps[index = 9].aps_pr);
                 double apsPr3 = double.parse(isiaps[index = 10].aps_pr);
                 double apsPr4 = double.parse(isiaps[index = 11].aps_pr);
-                
+
                 double apsTotal1 = double.parse(isiaps[index = 8].aps_total);
                 double apsTotal2 = double.parse(isiaps[index = 9].aps_total);
                 double apsTotal3 = double.parse(isiaps[index = 10].aps_total);
                 double apsTotal4 = double.parse(isiaps[index = 11].aps_total);
-                
 
                 return Container(
                   padding: const EdgeInsets.all(2),
@@ -66,13 +66,17 @@ class _ApsCState extends State<ApsC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Kelompok Usia",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -84,13 +88,17 @@ class _ApsCState extends State<ApsC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Laki-Laki",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -101,13 +109,17 @@ class _ApsCState extends State<ApsC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Perempuan",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -118,13 +130,17 @@ class _ApsCState extends State<ApsC> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Lk+Pr",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -139,43 +155,41 @@ class _ApsCState extends State<ApsC> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
-                                    
-                                      child: Text(
-                                        nama1,
-                                        textAlign: TextAlign.center,
-                                        
-                                      ),
-                                    
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+
+                                    child: Text(
+                                      nama1,
+                                      textAlign: TextAlign.center,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsLk1, 2),
-                                      textAlign: TextAlign.right, 
-                                      ),
-                                  
+                                    Format.convertTo(apsLk1, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsPr1, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               Flexible(
+                                    Format.convertTo(apsPr1, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
+                                Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsTotal1, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               
+                                    Format.convertTo(apsTotal1, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
 
@@ -186,43 +200,41 @@ class _ApsCState extends State<ApsC> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
-                                    
-                                      child: Text(
-                                        nama2,
-                                        textAlign: TextAlign.center,
-                                        
-                                      ),
-                                    
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+
+                                    child: Text(
+                                      nama2,
+                                      textAlign: TextAlign.center,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsLk2, 2),
-                                      textAlign: TextAlign.right, 
-                                      ),
-                                  
+                                    Format.convertTo(apsLk2, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsPr2, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               Flexible(
+                                    Format.convertTo(apsPr2, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
+                                Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsTotal2, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               
+                                    Format.convertTo(apsTotal2, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
 
@@ -233,43 +245,41 @@ class _ApsCState extends State<ApsC> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
-                                    
-                                      child: Text(
-                                        nama3,
-                                        textAlign: TextAlign.center,
-                                        
-                                      ),
-                                    
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+
+                                    child: Text(
+                                      nama3,
+                                      textAlign: TextAlign.center,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsLk3, 2),
-                                      textAlign: TextAlign.right, 
-                                      ),
-                                  
+                                    Format.convertTo(apsLk3, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsPr3, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               Flexible(
+                                    Format.convertTo(apsPr3, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
+                                Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsTotal3, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               
+                                    Format.convertTo(apsTotal3, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
 
@@ -280,72 +290,71 @@ class _ApsCState extends State<ApsC> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
-                                    
-                                      child: Text(
-                                        nama4,
-                                        textAlign: TextAlign.center,
-                                        
-                                      ),
-                                    
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+
+                                    child: Text(
+                                      nama4,
+                                      textAlign: TextAlign.center,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsLk4, 2),
-                                      textAlign: TextAlign.right, 
-                                      ),
-                                  
+                                    Format.convertTo(apsLk4, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsPr4, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               Flexible(
+                                    Format.convertTo(apsPr4, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
+                                Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(apsTotal4, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               
+                                    Format.convertTo(apsTotal4, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
-                            const Divider(
-                              thickness: 3,
+                            const Divider(thickness: 3),
+                            Row(
+                              children: [
+                                Flexible(
+                                  flex: 1,
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceAround,
+                                    children: [
+                                      Container(
+                                        alignment: Alignment.centerLeft,
+                                        padding: const EdgeInsets.only(
+                                          top: 4,
+                                          left: 4,
+                                        ),
+                                        child: const Text(
+                                          " Sumber Data : Survei Sosial Ekonomi Nasional",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
-                            Row(children: [
-                                      Flexible(
-                                          flex: 1,
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceAround,
-                                            children: [
-                                              Container(
-                                                alignment: Alignment.centerLeft,
-                                                padding: const EdgeInsets.only(
-                                                  top: 4,
-                                                  left: 4,
-                                                ),
-                                                child: const Text(
-                                                  " Sumber Data : Survei Sosial Ekonomi Nasional",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.normal),
-                                                ),
-                                              ),
-                                            ],
-                                          ))
-                                    ]),
                           ],
                         ),
                       ),
@@ -359,7 +368,8 @@ class _ApsCState extends State<ApsC> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

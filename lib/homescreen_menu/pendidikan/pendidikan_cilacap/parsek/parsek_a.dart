@@ -16,7 +16,8 @@ RepositoryParsek repositoryparsek = RepositoryParsek();
 class _ParsekAState extends State<ParsekA> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -33,23 +34,27 @@ class _ParsekAState extends State<ParsekA> {
                 String nama1 = isiparsek[index = 0].nama;
                 String nama2 = isiparsek[index = 1].nama;
                 String nama3 = isiparsek[index = 2].nama;
-                
 
                 double parsekLk1 = double.parse(isiparsek[index = 0].parsek_lk);
                 double parsekLk2 = double.parse(isiparsek[index = 1].parsek_lk);
                 double parsekLk3 = double.parse(isiparsek[index = 2].parsek_lk);
-                double parsekLktotal = parsekLk1+parsekLk2+parsekLk3;
+                double parsekLktotal = parsekLk1 + parsekLk2 + parsekLk3;
 
                 double parsekPr1 = double.parse(isiparsek[index = 0].parsek_pr);
                 double parsekPr2 = double.parse(isiparsek[index = 1].parsek_pr);
                 double parsekPr3 = double.parse(isiparsek[index = 2].parsek_pr);
-                double parsekPrtotal = parsekPr1+parsekPr2+parsekPr3;
-                
-                double parsekTotal1 = double.parse(isiparsek[index = 0].parsek_total);
-                double parsekTotal2 = double.parse(isiparsek[index = 1].parsek_total);
-                double parsekTotal3 = double.parse(isiparsek[index = 2].parsek_total);
-                double parsekTotal = parsekTotal1+parsekTotal2+parsekTotal3;
-                
+                double parsekPrtotal = parsekPr1 + parsekPr2 + parsekPr3;
+
+                double parsekTotal1 = double.parse(
+                  isiparsek[index = 0].parsek_total,
+                );
+                double parsekTotal2 = double.parse(
+                  isiparsek[index = 1].parsek_total,
+                );
+                double parsekTotal3 = double.parse(
+                  isiparsek[index = 2].parsek_total,
+                );
+                double parsekTotal = parsekTotal1 + parsekTotal2 + parsekTotal3;
 
                 return Container(
                   padding: const EdgeInsets.all(2),
@@ -66,13 +71,17 @@ class _ParsekAState extends State<ParsekA> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Partisipasi Sekolah",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -84,13 +93,17 @@ class _ParsekAState extends State<ParsekA> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Lk",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -101,13 +114,17 @@ class _ParsekAState extends State<ParsekA> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Pr",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -118,13 +135,17 @@ class _ParsekAState extends State<ParsekA> {
                                   child: Container(
                                     height: screenHeight * 0.07,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 10),
-                                    color: Colors.green,
+                                      horizontal: 2,
+                                      vertical: 10,
+                                    ),
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Lk+Pr",
-                                        style: TextStyle(color: Colors.white,
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -139,43 +160,41 @@ class _ParsekAState extends State<ParsekA> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
-                                    
-                                      child: Text(
-                                        nama1,
-                                        textAlign: TextAlign.center,
-                                        
-                                      ),
-                                    
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+
+                                    child: Text(
+                                      nama1,
+                                      textAlign: TextAlign.center,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekLk1, 2),
-                                      textAlign: TextAlign.right, 
-                                      ),
-                                  
+                                    Format.convertTo(parsekLk1, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekPr1, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               Flexible(
+                                    Format.convertTo(parsekPr1, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
+                                Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekTotal1, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               
+                                    Format.convertTo(parsekTotal1, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
 
@@ -186,43 +205,41 @@ class _ParsekAState extends State<ParsekA> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
-                                    
-                                      child: Text(
-                                        nama2,
-                                        textAlign: TextAlign.center,
-                                        
-                                      ),
-                                    
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+
+                                    child: Text(
+                                      nama2,
+                                      textAlign: TextAlign.center,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekLk2, 2),
-                                      textAlign: TextAlign.right, 
-                                      ),
-                                  
+                                    Format.convertTo(parsekLk2, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekPr2, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               Flexible(
+                                    Format.convertTo(parsekPr2, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
+                                Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekTotal2, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               
+                                    Format.convertTo(parsekTotal2, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
 
@@ -233,48 +250,44 @@ class _ParsekAState extends State<ParsekA> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 12,horizontal: 10),
-                                    
-                                      child: Text(
-                                        nama3,
-                                        textAlign: TextAlign.center,
-                                        
-                                      ),
-                                    
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 12,
+                                      horizontal: 10,
+                                    ),
+
+                                    child: Text(
+                                      nama3,
+                                      textAlign: TextAlign.center,
+                                    ),
                                   ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekLk3, 2),
-                                      textAlign: TextAlign.right, 
-                                      ),
-                                  
+                                    Format.convertTo(parsekLk3, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekPr3, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               Flexible(
+                                    Format.convertTo(parsekPr3, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
+                                Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekTotal3, 2),
-                                      textAlign: TextAlign.right,
-                                    ),
-                               ),
-                               
+                                    Format.convertTo(parsekTotal3, 2),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
-                             const Divider(
-                              thickness: 3,
-                            ),
+                            const Divider(thickness: 3),
                             // Total
                             Row(
                               children: [
@@ -284,12 +297,16 @@ class _ParsekAState extends State<ParsekA> {
                                   child: Container(
                                     height: screenHeight * 0.04,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 2, vertical: 2),
+                                      horizontal: 2,
+                                      vertical: 2,
+                                    ),
                                     child: const Center(
                                       child: Text(
                                         "Total",
-                                        style: TextStyle(color: Color.fromARGB(255, 7, 7, 7),
-                                        fontWeight: FontWeight.bold),
+                                        style: TextStyle(
+                                          color: Color.fromARGB(255, 7, 7, 7),
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                         textAlign: TextAlign.left,
                                       ),
                                     ),
@@ -298,66 +315,69 @@ class _ParsekAState extends State<ParsekA> {
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
-                                 child: Text(
-                                      
-                                      Format.convertTo(parsekLktotal, 2),
-                                      style: const TextStyle(color: Color.fromARGB(255, 7, 7, 7),
-                                        fontWeight: FontWeight.bold),
-                                      textAlign: TextAlign.right,
-                                       
-                                      ),
-                                  
+                                  child: Text(
+                                    Format.convertTo(parsekLktotal, 2),
+                                    style: const TextStyle(
+                                      color: Color.fromARGB(255, 7, 7, 7),
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.right,
+                                  ),
                                 ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekPrtotal, 2),
-                                      style: const TextStyle(color: Color.fromARGB(255, 7, 7, 7),
-                                        fontWeight: FontWeight.bold),
-                                      textAlign: TextAlign.right,
+                                    Format.convertTo(parsekPrtotal, 2),
+                                    style: const TextStyle(
+                                      color: Color.fromARGB(255, 7, 7, 7),
+                                      fontWeight: FontWeight.bold,
                                     ),
-                               ),
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Text(
-                                      Format.convertTo(parsekTotal, 2),
-                                      style: const TextStyle(color: Color.fromARGB(255, 7, 7, 7),
-                                        fontWeight: FontWeight.bold),
-                                      textAlign: TextAlign.right,
+                                    Format.convertTo(parsekTotal, 2),
+                                    style: const TextStyle(
+                                      color: Color.fromARGB(255, 7, 7, 7),
+                                      fontWeight: FontWeight.bold,
                                     ),
-                               ),
-                               
+                                    textAlign: TextAlign.right,
+                                  ),
+                                ),
                               ],
                             ),
-                            const Divider(
-                              thickness: 3,
+                            const Divider(thickness: 3),
+                            Row(
+                              children: [
+                                Flexible(
+                                  flex: 1,
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceAround,
+                                    children: [
+                                      Container(
+                                        alignment: Alignment.centerLeft,
+                                        padding: const EdgeInsets.only(
+                                          top: 4,
+                                          left: 4,
+                                        ),
+                                        child: const Text(
+                                          " Sumber Data : Survei Sosial Ekonomi Nasional",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
-                            Row(children: [
-                                      Flexible(
-                                          flex: 1,
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceAround,
-                                            children: [
-                                              Container(
-                                                alignment: Alignment.centerLeft,
-                                                padding: const EdgeInsets.only(
-                                                  top: 4,
-                                                  left: 4,
-                                                ),
-                                                child: const Text(
-                                                  " Sumber Data : Survei Sosial Ekonomi Nasional",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.normal),
-                                                ),
-                                              ),
-                                            ],
-                                          ))
-                                    ]),
                           ],
                         ),
                       ),
@@ -371,7 +391,8 @@ class _ParsekAState extends State<ParsekA> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),
@@ -384,4 +405,3 @@ extension MyExtension on String {
     return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
   }
 }
-

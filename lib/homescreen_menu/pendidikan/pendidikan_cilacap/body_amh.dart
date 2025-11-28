@@ -16,7 +16,8 @@ class _BodySeriesAmhState extends State<BodySeriesAmh> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -37,7 +38,6 @@ class _BodySeriesAmhState extends State<BodySeriesAmh> {
                 length: 3,
                 child: Scaffold(
                   appBar: AppBar(
-                    
                     backgroundColor: Colors.black,
                     leading: const Text(
                       " ",
@@ -45,25 +45,17 @@ class _BodySeriesAmhState extends State<BodySeriesAmh> {
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: th1,
-                        ),
-                        Tab(
-                          text: th2,
-                        ),
-                        Tab(
-                          text: th3,
-                        ),
+                        Tab(text: th1),
+                        Tab(text: th2),
+                        Tab(text: th3),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    AmhA(),
-                    AmhB(),
-                    AmhC(),
-                  ]),
+                  body: const TabBarView(children: [AmhA(), AmhB(), AmhC()]),
                 ),
               );
             },
@@ -72,11 +64,7 @@ class _BodySeriesAmhState extends State<BodySeriesAmh> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );
