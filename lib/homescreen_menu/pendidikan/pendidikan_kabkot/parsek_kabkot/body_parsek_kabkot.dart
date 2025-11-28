@@ -18,8 +18,10 @@ class RepositoryPendidikanKabkotParsek {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipendidikan) =>
-                ModelPendidikanKabkotAmh.fromJson(isipendidikan))
+            .map(
+              (isipendidikan) =>
+                  ModelPendidikanKabkotAmh.fromJson(isipendidikan),
+            )
             .toList();
       }
     } catch (isipendidikan) {
@@ -34,8 +36,11 @@ class ModelPendidikanKabkotAmh {
   final String wilayah;
   final String tahun;
 
-  ModelPendidikanKabkotAmh(
-      {required this.id, required this.wilayah, required this.tahun});
+  ModelPendidikanKabkotAmh({
+    required this.id,
+    required this.wilayah,
+    required this.tahun,
+  });
 
   factory ModelPendidikanKabkotAmh.fromJson(Map<String, dynamic> json) {
     return ModelPendidikanKabkotAmh(
@@ -59,7 +64,8 @@ class _BodySeriesParsekKabkotState extends State<BodySeriesParsekKabkot> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -89,33 +95,27 @@ class _BodySeriesParsekKabkotState extends State<BodySeriesParsekKabkot> {
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: thnN1,
-                        ),
-                        Tab(
-                          text: thnN2,
-                        ),
-                        Tab(
-                          text: thnN3,
-                        ),
-                        Tab(
-                          text: thnN4,
-                        ),
-                        Tab(
-                          text: thnN5,
-                        ),
+                        Tab(text: thnN1),
+                        Tab(text: thnN2),
+                        Tab(text: thnN3),
+                        Tab(text: thnN4),
+                        Tab(text: thnN5),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    PendidikanKabkotParsekA(),
-                    PendidikanKabkotParsekB(),
-                    PendidikanKabkotParsekC(),
-                    PendidikanKabkotParsekD(),
-                    PendidikanKabkotParsekE(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      PendidikanKabkotParsekA(),
+                      PendidikanKabkotParsekB(),
+                      PendidikanKabkotParsekC(),
+                      PendidikanKabkotParsekD(),
+                      PendidikanKabkotParsekE(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -124,11 +124,7 @@ class _BodySeriesParsekKabkotState extends State<BodySeriesParsekKabkot> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

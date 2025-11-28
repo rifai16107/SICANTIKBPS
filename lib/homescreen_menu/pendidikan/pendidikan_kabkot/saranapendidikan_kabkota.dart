@@ -193,15 +193,15 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
         child: Column(
           children: [
             Flexible(
-              flex: 2,
+              flex: 3,
               fit: FlexFit.tight,
               child: Column(
                 children: [
                   Flexible(
-                    flex: 2,
+                    flex: 3,
                     fit: FlexFit.tight,
                     child: Container(
-                      height: 100,
+                      //height: 0.25 * screenHeight,
                       color: Colors.black,
                       child: const Center(
                         child: Padding(
@@ -218,24 +218,18 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                       ),
                     ),
                   ),
-                  Flexible(
-                    fit: FlexFit.tight,
-                    flex: 1,
-                    child: Container(height: 100, color: Colors.transparent),
-                  ),
                 ],
               ),
             ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -244,41 +238,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid TK Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid TK Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -287,41 +288,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid RA Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid RA Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -330,41 +338,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid SD Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid SD Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -373,41 +388,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid MI Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid MI Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -416,41 +438,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid SMP Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid SMP Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -459,41 +488,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid MTs Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid MTs Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -502,41 +538,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid SMA Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid SMA Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -545,41 +588,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid SMK Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid SMK Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -588,41 +638,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.09,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Sekolah, Guru dan Murid MA Menurut Kabupaten/Kota Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Sekolah, Guru dan Murid MA Menurut Kabupaten/Kota Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -631,41 +688,48 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.15,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Perguruan Tinggi, Dosen dan Mahasiswa di Bawah Kemendikbudristek Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Perguruan Tinggi, Dosen dan Mahasiswa di Bawah Kemendikbudristek Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(
-                    Color.fromRGBO(10, 100, 31, 0.886),
-                  ),
-                ),
-                onPressed: () {
+            Card(
+              elevation: 10,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
                   Navigator.push(
                     context,
                     CustomPageRoute(
@@ -674,31 +738,40 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.15,
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Flexible(
-                        flex: 16,
-                        fit: FlexFit.tight,
-                        child: Text(
-                          "Jumlah Perguruan Tinggi, Dosen dan Mahasiswa di bawah Kemenag Di Jawa Tengah",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 12.5),
-                        ),
+                      Image.asset(
+                        'assets/images/daerah/logo_jateng.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: screenHeight * 0.05,
                       ),
-                      const Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Icon(Icons.arrow_right),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: screenHeight * 0.06,
+                        child: Text(
+                          'Jumlah Perguruan Tinggi, Dosen dan Mahasiswa di bawah Kemenag Di Jawa Tengah',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            const Divider(height: 3, color: Colors.transparent),
+
             Flexible(
               flex: 1,
               fit: FlexFit.tight,

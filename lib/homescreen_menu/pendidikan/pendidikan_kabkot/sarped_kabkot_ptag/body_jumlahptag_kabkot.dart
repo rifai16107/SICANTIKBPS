@@ -16,8 +16,10 @@ class RepositoryPendidikanKabkotJumlahptag {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isipendidikan) =>
-                ModelPendidikanKabkotJumlahptag.fromJson(isipendidikan))
+            .map(
+              (isipendidikan) =>
+                  ModelPendidikanKabkotJumlahptag.fromJson(isipendidikan),
+            )
             .toList();
       }
     } catch (isipendidikan) {
@@ -32,8 +34,11 @@ class ModelPendidikanKabkotJumlahptag {
   final String wilayah;
   final String tahun;
 
-  ModelPendidikanKabkotJumlahptag(
-      {required this.id, required this.wilayah, required this.tahun});
+  ModelPendidikanKabkotJumlahptag({
+    required this.id,
+    required this.wilayah,
+    required this.tahun,
+  });
 
   factory ModelPendidikanKabkotJumlahptag.fromJson(Map<String, dynamic> json) {
     return ModelPendidikanKabkotJumlahptag(
@@ -59,7 +64,8 @@ class _BodySeriesJumlahptagKabkotState
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -86,21 +92,21 @@ class _BodySeriesJumlahptagKabkotState
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: thnN1,
-                        ),
-                        Tab(
-                          text: thnN2,
-                        ),
+                        Tab(text: thnN1),
+                        Tab(text: thnN2),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    PendidikanKabkotJumlahptagA(),
-                    PendidikanKabkotJumlahptagB(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      PendidikanKabkotJumlahptagA(),
+                      PendidikanKabkotJumlahptagB(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -109,11 +115,7 @@ class _BodySeriesJumlahptagKabkotState
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

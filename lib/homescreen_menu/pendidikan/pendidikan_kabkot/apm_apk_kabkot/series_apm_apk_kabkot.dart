@@ -40,14 +40,14 @@ class _SeriesApmApkKabkot extends State<SeriesApmApkKabkot> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.095,
+              height: screenHeight * 0.1,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
                     "Angka Partisipasi Murni (APM) dan Angka Partisipasi Kasar (APK) SD, SMP dan SMA di Kabupaten/Kota di Jawa Tengah",
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(color: Colors.white, fontSize: 14.5),
                     textAlign: TextAlign.center,
                   ),
                 ),

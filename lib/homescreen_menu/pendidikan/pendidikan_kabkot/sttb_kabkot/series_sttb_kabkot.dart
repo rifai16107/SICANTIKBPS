@@ -40,14 +40,14 @@ class _SeriesSttbKabkot extends State<SeriesSttbKabkot> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.095,
+              height: screenHeight * 0.1,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
                     "Persentase Penduduk Usia 15+ Menurut Pendidikan Tertinggi yang Ditamatkan dan Kabupaten/Kota di Jawa Tengah",
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(color: Colors.white, fontSize: 14.5),
                     textAlign: TextAlign.center,
                   ),
                 ),

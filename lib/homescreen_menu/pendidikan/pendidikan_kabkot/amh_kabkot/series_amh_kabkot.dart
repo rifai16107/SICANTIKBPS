@@ -36,14 +36,14 @@ class _SeriesAmhKabkot extends State<SeriesAmhKabkot> {
         child: Column(
           children: [
             Container(
-              height: screenHeight * 0.095,
+              height: screenHeight * 0.1,
               color: Colors.black,
               child: const Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
                     "Angka Melek Huruf (AMH) Penduduk Usia 15+ Menurut Kelompok Umur Tertentu dan Kabupaten/Kota di Jawa Tengah",
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(color: Colors.white, fontSize: 14.5),
                     textAlign: TextAlign.center,
                   ),
                 ),
