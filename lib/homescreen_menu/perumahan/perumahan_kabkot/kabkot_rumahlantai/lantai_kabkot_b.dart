@@ -97,7 +97,7 @@ class FixedColumnWidget extends StatelessWidget {
       dataRowMinHeight: screenHeight * 0.028,
       dataRowMaxHeight: screenHeight * 0.028,
       headingRowColor: WidgetStateProperty.all(
-        const Color.fromRGBO(34, 150, 243, 1),
+        const Color.fromARGB(255, 255, 165, 0),
       ),
       decoration: const BoxDecoration(
         border: Border(right: BorderSide(color: Colors.grey, width: 1)),
@@ -108,7 +108,8 @@ class FixedColumnWidget extends StatelessWidget {
             width: screenWidth * 0.28,
             child: const Text(
               textAlign: TextAlign.center,
-              'Kabupaten/Kota',
+              'Kabupaten/\n'
+              'Kota',
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
@@ -536,26 +537,24 @@ class ScrollableColumnWidget extends StatelessWidget {
                   headingTextStyle: const TextStyle(
                     //fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
-                    fontSize: 13.0,
+                    fontSize: 12.5,
                     letterSpacing: 0.0,
                     color: Colors.white,
                   ),
                   headingRowColor: WidgetStateColor.resolveWith(
-                    (states) => const Color.fromRGBO(34, 150, 243, 1),
+                    (states) => const Color.fromARGB(255, 255, 165, 0),
                   ),
                   columns: [
                     DataColumn(
                       label: SizedBox(
                         width: screenWidth * 0.15,
                         child: const Text(
-                          'Marmer/Keramik',
+                          'Marmer/\n'
+                          'Granit',
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
+                          
                         ),
                       ),
                       numeric: true,
@@ -568,10 +567,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
+                          
                         ),
                       ),
                       numeric: true,
@@ -582,17 +578,10 @@ class ScrollableColumnWidget extends StatelessWidget {
                         child: Column(
                           children: const [
                             Text(
-                              "Parket/Vinil/",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Karpet/Ubin/",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            Text(
-                              "Tegel/Teraso",
-                              style: TextStyle(color: Colors.white),
+                              'Parket/Vinil/\n'
+                              'Karpet/Ubin/\n'
+                               'Tegel/Teraso',
+                              
                             ),
                           ],
                         ),
@@ -603,38 +592,26 @@ class ScrollableColumnWidget extends StatelessWidget {
                       label: SizedBox(
                         width: screenWidth * 0.14,
                         child: const Text(
-                          'Kayu/Papan',
+                          'Kayu/\n'
+                          'Papan',
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
+                          
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        width: screenWidth * 0.185,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "",
-                              style: TextStyle(color: Colors.white),
+                        width: screenWidth * 0.195,
+                        child: const Text(
+                              'Semen/\n'
+                              'Bata Merah',
+                              maxLines: 3,
+                              overflow: TextOverflow.ellipsis,
                               textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Semen/",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Bata Merah",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                              
                         ),
                       ),
                       numeric: true,
@@ -647,10 +624,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
+                          
                         ),
                       ),
                       numeric: true,
@@ -663,10 +637,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
+                          
                         ),
                       ),
                       numeric: true,
@@ -679,10 +650,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
+                          
                         ),
                       ),
                       numeric: true,
@@ -695,14 +663,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                           //maxLines: 2,
                           //overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
-                          //style: TextStyle(
-                          //fontStyle: FontStyle.italic,
-                          //fontWeight: FontWeight.bold,
-                          //fontSize: 15),
+                          
                         ),
                       ),
                       numeric: true,
@@ -875,7 +836,7 @@ class CatatanWidget extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
-                      fontSize: 13,
+                      fontSize: 12,
                     ),
                   ),
                 ),
@@ -889,7 +850,7 @@ class CatatanWidget extends StatelessWidget {
                     text:
                         'Tanda strip (-), menunjukkan bahwa data bernilai nol (0) mutlak yang berarti tidak ada data/nilai estimasi pada sel tabel tersebut.',
                     style: TextStyle(
-                      fontSize: 12,
+                      fontSize: 11,
                       fontFamily: 'Roboto',
                       color: Colors.black,
                       fontWeight: FontWeight.normal,
@@ -906,7 +867,7 @@ class CatatanWidget extends StatelessWidget {
                     text:
                         'NA (Not Applicable), menunjukkan bahwa data tidak dapat ditampilkan karena nilai relative standard error (RSE) lebih dari 50 persen.',
                     style: TextStyle(
-                      fontSize: 12,
+                      fontSize: 11,
                       fontFamily: 'Roboto',
                       color: Colors.black,
                       fontWeight: FontWeight.normal,

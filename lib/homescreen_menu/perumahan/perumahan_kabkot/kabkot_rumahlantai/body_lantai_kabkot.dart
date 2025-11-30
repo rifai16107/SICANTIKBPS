@@ -85,6 +85,8 @@ class _BodyRumahkabkotLantaiState extends State<BodyRumahkabkotLantai> {
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
                         Tab(

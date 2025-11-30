@@ -21,9 +21,10 @@ class _SeriesRumahbahanbakarKabkot extends State<SeriesRumahbahanbakarKabkot> {
       appBar: AppBar(
         title: const Text(
           "INDIKATOR PERUMAHAN",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -40,7 +41,7 @@ class _SeriesRumahbahanbakarKabkot extends State<SeriesRumahbahanbakarKabkot> {
         padding: const EdgeInsets.all(2),
         children: [
           Container(
-            height: 65,
+            height: 0.135*screenHeight,
             color: Colors.black,
             child: Column(
               children: const [
