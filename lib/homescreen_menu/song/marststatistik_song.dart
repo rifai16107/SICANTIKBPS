@@ -74,9 +74,10 @@ class _LaguMarsStatistikContentState extends State<LaguMarsStatistikContent> {
       appBar: AppBar(
         title: const Text(
           'MARS STATISTIK',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
