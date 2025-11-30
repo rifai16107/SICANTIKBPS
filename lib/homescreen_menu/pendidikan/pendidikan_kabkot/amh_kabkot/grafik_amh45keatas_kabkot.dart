@@ -287,7 +287,7 @@ class _GrafikPendidikanKabkotAmh45keatasState
                         )),
                     legend: Legend(
                         // Visibility of legend
-                        isVisible: true,
+                        isVisible: false,
                         textStyle: const TextStyle(
                           fontSize: 11,
                         ),

@@ -68,7 +68,7 @@ class _GrafikRumahAtapState extends State<GrafikRumahAtap> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                  height: screenHeight * 0.95,
+                  height: screenHeight,
                   width: screenWidth,
                   child: SfCircularChart(
                       title: ChartTitle(
@@ -102,8 +102,8 @@ class _GrafikRumahAtapState extends State<GrafikRumahAtap> {
                           xValueMapper: (_ChartData data, _) => data.x,
                           yValueMapper: (_ChartData data, _) => data.y,
                           pointColorMapper: (_ChartData data, _) => data.color,
-                          radius: '80%',
-                          innerRadius: '35%',
+                          radius: '70%',
+                          innerRadius: '30%',
                           dataLabelSettings: const DataLabelSettings(
                               isVisible: true,
                               labelPosition: ChartDataLabelPosition.outside,

@@ -155,7 +155,7 @@ class _PerumahanAtapState extends State<PerumahanAtap> {
                         ),
                       ),
                       SizedBox(
-                        height: screenHeight * 0.65,
+                        height: screenHeight * 0.75,
                         child: Column(
                           children: [
                             Row(
@@ -168,7 +168,7 @@ class _PerumahanAtapState extends State<PerumahanAtap> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Text(
                                       "Jenis Atap",
                                       textAlign: TextAlign.center,
@@ -187,7 +187,7 @@ class _PerumahanAtapState extends State<PerumahanAtap> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th1,
                                       textAlign: TextAlign.center,
@@ -206,7 +206,7 @@ class _PerumahanAtapState extends State<PerumahanAtap> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th2,
                                       textAlign: TextAlign.center,
@@ -225,7 +225,7 @@ class _PerumahanAtapState extends State<PerumahanAtap> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th3,
                                       textAlign: TextAlign.center,
@@ -843,6 +843,7 @@ class _PerumahanAtapState extends State<PerumahanAtap> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.pie_chart),
       ),

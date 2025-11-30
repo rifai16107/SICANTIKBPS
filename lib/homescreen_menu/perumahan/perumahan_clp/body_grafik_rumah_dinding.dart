@@ -23,9 +23,10 @@ class _BodyGrafikRumahDinding extends State<BodyGrafikRumahDinding> {
       appBar: AppBar(
         title: const Text(
           'Jenis Dinding Terluas',
-          style: TextStyle(fontSize: 16),
+           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -43,7 +44,7 @@ class _BodyGrafikRumahDinding extends State<BodyGrafikRumahDinding> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 0.75,
+                height: screenHeight * 0.95,
                 width: screenWidth,
                 child: Column(
                   children: [

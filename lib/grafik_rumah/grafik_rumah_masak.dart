@@ -98,7 +98,7 @@ class _GrafikRumahMasakState extends State<GrafikRumahMasak> {
                           yValueMapper: (_ChartData data, _) => data.y,
                           //dataLabelMapper: (_ChartData data, _) => "${data.y}%",
                           pointColorMapper: (_ChartData data, _) => data.color,
-                          radius: '85%',
+                          radius: '80%',
                           innerRadius: '35%',
                           dataLabelSettings: const DataLabelSettings(
                               isVisible: true,

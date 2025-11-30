@@ -115,7 +115,7 @@ class _GrafikRumahMinumState extends State<GrafikRumahMinum> {
                           //dataLabelMapper: (_ChartData data, _) => "${data.y}%",
                           pointColorMapper: (_ChartData data, _) => data.color,
                           innerRadius: '35%',
-                          radius: '70%',
+                          radius: '75%',
                           dataLabelSettings: const DataLabelSettings(
                               isVisible: true,
                               labelPosition: ChartDataLabelPosition.outside,

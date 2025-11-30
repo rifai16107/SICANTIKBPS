@@ -177,7 +177,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                         ),
                       ),
                       SizedBox(
-                        height: screenHeight * 0.90,
+                        height: screenHeight * 0.95,
                         child: Column(
                           children: [
                             Row(
@@ -190,7 +190,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                       horizontal: 2,
                                       vertical: 12,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Text(
                                       "Sumber Air Minum",
                                       textAlign: TextAlign.center,
@@ -209,7 +209,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                       horizontal: 2,
                                       vertical: 12,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th1,
                                       textAlign: TextAlign.center,
@@ -228,7 +228,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                       horizontal: 2,
                                       vertical: 12,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th2,
                                       textAlign: TextAlign.center,
@@ -247,7 +247,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                       horizontal: 2,
                                       vertical: 12,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th3,
                                       textAlign: TextAlign.center,
@@ -953,13 +953,14 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
                                       Container(
                                         alignment: Alignment.centerLeft,
                                         padding: const EdgeInsets.only(
-                                          top: 4,
+                                          top: 0,
                                           left: 4,
+                                          bottom:30,
                                         ),
                                         child: const Text(
                                           " Sumber Data : Survei Sosial Ekonomi Nasional",
                                           style: TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -998,6 +999,7 @@ class _PerumahanMinumState extends State<PerumahanMinum> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.pie_chart),
       ),

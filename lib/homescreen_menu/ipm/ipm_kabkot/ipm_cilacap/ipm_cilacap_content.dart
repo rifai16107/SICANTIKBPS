@@ -150,8 +150,8 @@ class _IpmKabContentState extends State<IpmKabContent> {
                           horizontal: 2,
                         ),
                         child: Text(
-                          "Indeks Pembangunan Manusia Kabupaten Cilacap, $tahun1-$tahun5"
-                          " (UHH dihitung dari hasil LF SP2020)",
+                          'Indeks Pembangunan Manusia Kabupaten Cilacap\n' 
+                          'Tahun $tahun1-$tahun5',
                           style: const TextStyle(fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         ),
@@ -830,9 +830,11 @@ class _IpmKabContentState extends State<IpmKabContent> {
                                         bottom: 0,
                                       ),
                                       child: const Text(
-                                        " Sumber Data : Survei Sosial Ekonomi Nasional (Susenas)",
+                                        'Sumber Data :\n'
+                                        'Survei Sosial Ekonomi Nasional (Susenas)\n'
+                                        'Catatan: UHH dihitung dari hasil LF SP2020)',
                                         style: TextStyle(
-                                          fontSize: 11,
+                                          fontSize: 10,
                                           fontWeight: FontWeight.normal,
                                         ),
                                       ),

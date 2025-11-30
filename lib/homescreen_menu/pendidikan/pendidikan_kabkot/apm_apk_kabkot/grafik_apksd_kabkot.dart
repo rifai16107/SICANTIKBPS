@@ -197,7 +197,7 @@ class _GrafikPendidikanKabkotApksdState extends State<GrafikPendidikanKabkotApks
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.9,
+                height: screenHeight*0.9,
                 width: screenWidth,
                 child: SfCartesianChart(
                     title: ChartTitle(
@@ -222,7 +222,7 @@ class _GrafikPendidikanKabkotApksdState extends State<GrafikPendidikanKabkotApks
                         )),
                     legend: Legend(
                         // Visibility of legend
-                        isVisible: true,
+                        isVisible: false,
                         textStyle: const TextStyle(
                           fontSize: 11,
                         ),

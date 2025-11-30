@@ -415,7 +415,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Image.asset(
-                          'assets/images/daerah/logo_cilacap.png',
+                          'assets/images/daerah/logo_jateng.png',
                           fit: BoxFit.cover,
                           width: screenWidth * 0.12,
                           height: screenHeight * 0.08,
@@ -466,7 +466,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Image.asset(
-                          'assets/images/daerah/logo_cilacap.png',
+                          'assets/images/daerah/logo_jateng.png',
                           fit: BoxFit.cover,
                           width: screenWidth * 0.12,
                           height: screenHeight * 0.08,
@@ -517,7 +517,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Image.asset(
-                          'assets/images/daerah/logo_cilacap.png',
+                          'assets/images/daerah/logo_jateng.png',
                           fit: BoxFit.cover,
                           width: screenWidth * 0.12,
                           height: screenHeight * 0.08,
@@ -568,7 +568,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Image.asset(
-                          'assets/images/daerah/logo_cilacap.png',
+                          'assets/images/daerah/logo_jateng.png',
                           fit: BoxFit.cover,
                           width: screenWidth * 0.12,
                           height: screenHeight * 0.08,
@@ -619,7 +619,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Image.asset(
-                          'assets/images/daerah/logo_cilacap.png',
+                          'assets/images/daerah/logo_jateng.png',
                           fit: BoxFit.cover,
                           width: screenWidth * 0.12,
                           height: screenHeight * 0.08,
@@ -670,7 +670,7 @@ class _pendidikanKabkotaState extends State<pendidikanKabkota> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Image.asset(
-                          'assets/images/daerah/logo_cilacap.png',
+                          'assets/images/daerah/logo_jateng.png',
                           fit: BoxFit.cover,
                           width: screenWidth * 0.12,
                           height: screenHeight * 0.08,

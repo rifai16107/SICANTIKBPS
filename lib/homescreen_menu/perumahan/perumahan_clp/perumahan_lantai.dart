@@ -165,7 +165,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                         ),
                       ),
                       SizedBox(
-                        height: screenHeight * 0.65,
+                        height: screenHeight * 0.85,
                         child: Column(
                           children: [
                             Row(
@@ -178,7 +178,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Text(
                                       "Jenis Lantai",
                                       textAlign: TextAlign.center,
@@ -197,7 +197,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th1,
                                       textAlign: TextAlign.center,
@@ -216,7 +216,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th2,
                                       textAlign: TextAlign.center,
@@ -235,7 +235,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th3,
                                       textAlign: TextAlign.center,
@@ -258,7 +258,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 2,
-                                      vertical: 4,
+                                      vertical: 2,
                                     ),
                                     child: Text(
                                       rincian_1,
@@ -273,7 +273,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 2,
-                                      vertical: 4,
+                                      vertical: 2,
                                     ),
                                     child: Text(
                                       Format.convertTo(persentase_1, 2),
@@ -288,7 +288,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 2,
-                                      vertical: 4,
+                                      vertical: 2,
                                     ),
                                     child: Text(
                                       Format.convertTo(persentase_10, 2),
@@ -303,7 +303,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 2,
-                                      vertical: 4,
+                                      vertical: 2,
                                     ),
                                     child: Text(
                                       Format.convertTo(persentase_19, 2),
@@ -727,7 +727,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 2,
-                                      vertical: 2,
+                                      vertical: 1,
                                     ),
                                     child: Text(
                                       rincian_8,
@@ -742,7 +742,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 2,
-                                      vertical: 2,
+                                      vertical: 1,
                                     ),
                                     child: Text(
                                       Format.convertTo(persentase_8, 2),
@@ -757,7 +757,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 2,
-                                      vertical: 2,
+                                      vertical: 1,
                                     ),
                                     child: Text(
                                       Format.convertTo(persentase_17, 2),
@@ -772,7 +772,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 2,
-                                      vertical: 2,
+                                      vertical: 1,
                                     ),
                                     child: Text(
                                       Format.convertTo(persentase_26, 2),
@@ -919,6 +919,7 @@ class _PerumahanLantaiState extends State<PerumahanLantai> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.pie_chart),
       ),

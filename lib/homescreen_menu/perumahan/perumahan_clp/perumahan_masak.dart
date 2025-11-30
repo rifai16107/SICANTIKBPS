@@ -135,7 +135,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                         ),
                       ),
                       SizedBox(
-                        height: screenHeight * 0.60,
+                        height: screenHeight * 0.70,
                         child: Column(
                           children: [
                             Row(
@@ -149,7 +149,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Text(
                                       "Bahan Bakar Memasak",
                                       textAlign: TextAlign.center,
@@ -169,7 +169,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th1,
                                       textAlign: TextAlign.center,
@@ -189,7 +189,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th2,
                                       textAlign: TextAlign.center,
@@ -209,7 +209,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
                                       horizontal: 2,
                                       vertical: 10,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th3,
                                       textAlign: TextAlign.center,
@@ -693,6 +693,7 @@ class _PerumahanMasakState extends State<PerumahanMasak> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.pie_chart),
       ),

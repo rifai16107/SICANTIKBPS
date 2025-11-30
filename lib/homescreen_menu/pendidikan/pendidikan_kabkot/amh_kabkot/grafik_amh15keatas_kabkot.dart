@@ -287,12 +287,12 @@ class _GrafikPendidikanKabkotAmh15keatasState
                         )),
                     legend: Legend(
                         // Visibility of legend
-                        isVisible: true,
+                        isVisible: false,
                         textStyle: const TextStyle(
                           fontSize: 11,
                         ),
                         toggleSeriesVisibility: true,
-                        position: LegendPosition.top),
+                        position: LegendPosition.bottom),
                     primaryYAxis: NumericAxis(
                         title: AxisTitle(
                             text: 'AMH Usia 15+ Tahun (persen)',

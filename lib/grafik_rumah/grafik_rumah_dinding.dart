@@ -93,8 +93,8 @@ class _GrafikRumahDindingState extends State<GrafikRumahDinding> {
                           xValueMapper: (_ChartData data, _) => data.x,
                           yValueMapper: (_ChartData data, _) => data.y,
                           pointColorMapper: (_ChartData data, _) => data.color,
-                          radius: '80%',
-                          innerRadius: '35%',
+                          radius: '72%',
+                          innerRadius: '30%',
                           dataLabelSettings: const DataLabelSettings(
                               isVisible: true,
                               labelPosition: ChartDataLabelPosition.outside,

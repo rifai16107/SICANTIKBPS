@@ -22,9 +22,10 @@ class _BodyGrafikRumahMinumState extends State<BodyGrafikRumahMinum> {
       appBar: AppBar(
         title: const Text(
           'Sumber Air Minum Utama',
-          style: TextStyle(fontSize: 16),
+           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -42,7 +43,7 @@ class _BodyGrafikRumahMinumState extends State<BodyGrafikRumahMinum> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 0.85,
+                height: screenHeight * 0.90,
                 width: screenWidth,
                 child: Column(
                   children: [

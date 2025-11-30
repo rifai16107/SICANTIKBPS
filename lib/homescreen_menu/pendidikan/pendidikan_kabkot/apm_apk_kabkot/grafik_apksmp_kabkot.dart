@@ -222,7 +222,7 @@ class _GrafikPendidikanKabkotApksmpState extends State<GrafikPendidikanKabkotApk
                         )),
                     legend: Legend(
                         // Visibility of legend
-                        isVisible: true,
+                        isVisible: false,
                         textStyle: const TextStyle(
                           fontSize: 11,
                         ),

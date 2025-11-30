@@ -135,7 +135,7 @@ class _PerumahanDindingState extends State<PerumahanDinding> {
                         ),
                       ),
                       SizedBox(
-                        height: screenHeight * 0.60,
+                        height: screenHeight * 0.75,
                         child: Column(
                           children: [
                             Row(
@@ -148,7 +148,7 @@ class _PerumahanDindingState extends State<PerumahanDinding> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Text(
                                       "Jenis Dinding",
                                       textAlign: TextAlign.center,
@@ -167,7 +167,7 @@ class _PerumahanDindingState extends State<PerumahanDinding> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th1,
                                       textAlign: TextAlign.center,
@@ -186,7 +186,7 @@ class _PerumahanDindingState extends State<PerumahanDinding> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th2,
                                       textAlign: TextAlign.center,
@@ -205,7 +205,7 @@ class _PerumahanDindingState extends State<PerumahanDinding> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th3,
                                       textAlign: TextAlign.center,
@@ -688,6 +688,7 @@ class _PerumahanDindingState extends State<PerumahanDinding> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.pie_chart),
       ),

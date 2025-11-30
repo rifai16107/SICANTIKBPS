@@ -23,9 +23,10 @@ class _BodyGrafikSttbKabkot extends State<BodyGrafikSttbKabkot> {
       appBar: AppBar(
         title: const Text(
           'Pendidikan Usia 15+',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

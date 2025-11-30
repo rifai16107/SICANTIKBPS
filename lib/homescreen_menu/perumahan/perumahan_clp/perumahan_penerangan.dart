@@ -128,7 +128,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Text(
                                       "Sumber Penerangan",
                                       textAlign: TextAlign.center,
@@ -147,7 +147,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th1,
                                       textAlign: TextAlign.center,
@@ -166,7 +166,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th2,
                                       textAlign: TextAlign.center,
@@ -185,7 +185,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
                                       horizontal: 2,
                                       vertical: 15,
                                     ),
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: Text(
                                       th3,
                                       textAlign: TextAlign.center,
@@ -536,6 +536,7 @@ class _PerumahanPeneranganState extends State<PerumahanPenerangan> {
             ),
           );
         },
+        foregroundColor: Colors.orange,
         mini: true,
         child: const Icon(Icons.pie_chart),
       ),

@@ -4004,7 +4004,7 @@ class _PendidikanKabkotParsekEState extends State<PendidikanKabkotParsekE> {
                 ),
               );
             },
-            label: 'Tidak Bersekolah LAgi',
+            label: 'Tidak Bersekolah Lagi',
             labelBackgroundColor: Colors.black,
             labelStyle: const TextStyle(color: Colors.white, fontSize: 10),
           ),

@@ -23,9 +23,10 @@ class _BodyGrafikRumahLantaiState extends State<BodyGrafikRumahLantai> {
       appBar: AppBar(
         title: const Text(
           'Jenis Lantai Terluas',
-          style: TextStyle(fontSize: 16),
+           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

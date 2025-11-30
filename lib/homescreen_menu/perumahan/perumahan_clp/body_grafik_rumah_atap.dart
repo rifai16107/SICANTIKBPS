@@ -24,9 +24,10 @@ class _BodyGrafikRumahAtap extends State<BodyGrafikRumahAtap> {
         appBar: AppBar(
           title: const Text(
             'Jenis Atap Terluas',
-            style: TextStyle(fontSize: 16),
-          ),
-          backgroundColor: Colors.black,
+             style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
@@ -39,7 +40,7 @@ class _BodyGrafikRumahAtap extends State<BodyGrafikRumahAtap> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight * 0.75,
+                  height: screenHeight * 0.90,
                   width: screenWidth,
                   child: Column(children: [Flexible(child: GrafikRumahAtap())]),
                 ),

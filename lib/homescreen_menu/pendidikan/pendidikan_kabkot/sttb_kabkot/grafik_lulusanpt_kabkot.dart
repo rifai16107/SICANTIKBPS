@@ -268,7 +268,7 @@ class _GrafikLulusanKabkotSMAPTState extends State<GrafikLulusanKabkotSMAPT> {
                           fontSize: 11,
                         ),
                         toggleSeriesVisibility: true,
-                        position: LegendPosition.top),
+                        position: LegendPosition.bottom),
                     primaryYAxis: NumericAxis(
                         title: AxisTitle(
                             text: 'Persentase Lulusan SMA/PT',
@@ -299,9 +299,9 @@ class _GrafikLulusanKabkotSMAPTState extends State<GrafikLulusanKabkotSMAPT> {
                             // Renders the data label
                             isVisible: true,
                             labelAlignment: ChartDataLabelAlignment.bottom,
-                            textStyle: TextStyle(fontSize: 10)),
+                            textStyle: TextStyle(fontSize: 9, color: Colors.black)),
                         name: 'SMA/Sederajat',
-                        color: const Color.fromRGBO(9, 0, 136, 1),
+                        color: const Color.fromARGB(255, 241, 115, 64),
                       ),
                       StackedBarSeries<_ChartData, String>(
                         dataSource: data,
@@ -314,10 +314,10 @@ class _GrafikLulusanKabkotSMAPTState extends State<GrafikLulusanKabkotSMAPT> {
                         dataLabelSettings: const DataLabelSettings(
                             // Renders the data label
                             isVisible: true,
-                            labelAlignment: ChartDataLabelAlignment.top,
-                            textStyle: TextStyle(fontSize: 10)),
+                            labelAlignment: ChartDataLabelAlignment.auto,
+                            textStyle: TextStyle(fontSize: 9, color: Colors.black)),
                         name: 'Perguruan Tinggi',
-                        color: const Color.fromARGB(255, 226, 18, 29),
+                        color: const Color.fromARGB(255, 211, 236, 97),
                       ),
                     ]),
               );
