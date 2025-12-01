@@ -129,7 +129,7 @@ class _mobilitasContentState extends State<mobilitasContent> {
               child: Column(
                 children: [
                   Flexible(
-                    flex: 2,
+                    flex: 3,
                     fit: FlexFit.tight,
                     child: Container(
                       color: Colors.black,

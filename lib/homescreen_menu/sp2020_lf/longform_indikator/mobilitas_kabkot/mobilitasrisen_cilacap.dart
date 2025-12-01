@@ -34,9 +34,10 @@ class _MobilitasrisenCilacapState extends State<MobilitasrisenCilacap> {
         appBar: AppBar(
           title: const Text(
             'MOBILITAS RISEN',
-            style: TextStyle(fontSize: 16),
-          ),
-          backgroundColor: Colors.black,
+            style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);

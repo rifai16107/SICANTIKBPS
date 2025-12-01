@@ -23,9 +23,10 @@ class _BodyGrafikImrKabKot extends State<BodyGrafikImrKabKot> {
       appBar: AppBar(
         title: const Text(
           'IMR Kabupaten/Kota di Jawa Tengah',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -43,7 +44,7 @@ class _BodyGrafikImrKabKot extends State<BodyGrafikImrKabKot> {
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 1.05,
+                height: screenHeight * 1.5,
                 width: screenWidth * 0.95,
                 child: Column(
                   children: [

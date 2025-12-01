@@ -25,9 +25,10 @@ class _BodyPendidikanKabkot extends State<BodyPendidikanKabkot> {
       appBar: AppBar(
         title: const Text(
           'Penduduk Menurut Pendidikan',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -46,7 +47,7 @@ class _BodyPendidikanKabkot extends State<BodyPendidikanKabkot> {
           Column(
             children: [
               SizedBox(
-                height: screenHeight *1.36,
+                height: screenHeight *1.4,
                 width: screenWidth,
                 child: Column(
                   children: const [

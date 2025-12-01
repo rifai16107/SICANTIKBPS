@@ -29,9 +29,10 @@ class _MortalitasKabkotState extends State<MortalitasKabkot> {
       appBar: AppBar(
         title: const Text(
           'Indikartor Mortalitas Kabupaten/Kota',
-          style: TextStyle(fontSize: 16),
+           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

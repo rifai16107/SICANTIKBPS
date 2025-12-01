@@ -32,9 +32,10 @@ class _PendidikanumurCilacapState extends State<PendidikanumurCilacap> {
         appBar: AppBar(
           title: const Text(
             'PENDIDIKAN UMUR 15+',
-            style: TextStyle(fontSize: 16),
-          ),
-          backgroundColor: Colors.black,
+            style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);

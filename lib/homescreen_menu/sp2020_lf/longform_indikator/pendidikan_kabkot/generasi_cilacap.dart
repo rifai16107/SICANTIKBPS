@@ -367,7 +367,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                         ),
                       ),
                       SizedBox(
-                        //height: screenHeight * 0.06,
+                        //height: screenHeight * 0.075,
                         child: Column(
                           children: [
                             Row(
@@ -376,14 +376,15 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    height: screenHeight * 0.07,
+                                    height: screenHeight * 0.075,
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 20,
                                       vertical: 5,
                                     ),
                                     color: Colors.blue,
                                     child: const Text(
-                                      "Tingkat Pendidikan",
+                                      'Tingkat\n' 
+                                      'Pendidikan',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.white,
@@ -396,7 +397,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
+                                    height: screenHeight * 0.075,
                                     padding: const EdgeInsets.only(
                                       right: 0,
                                       top: 15,
@@ -417,7 +418,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
+                                    height: screenHeight * 0.075,
                                     padding: const EdgeInsets.only(
                                       right: 5,
                                       top: 15,
@@ -438,7 +439,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
+                                    height: screenHeight * 0.075,
                                     padding: const EdgeInsets.only(
                                       right: 5,
                                       top: 5,
@@ -446,7 +447,8 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                     ),
                                     color: Colors.blue,
                                     child: const Text(
-                                      "Gen. Baby Boomer",
+                                      'Gen. Baby\n' 
+                                      'Boomer',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.white,
@@ -459,7 +461,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                             ),
                             Container(
                               width: screenWidth * 1.0,
-                              height: screenHeight * 0.065,
+                              height: screenHeight * 0.075,
                               color: Colors.transparent,
                               child: Row(
                                 children: [
@@ -472,7 +474,8 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                         vertical: 5,
                                       ),
                                       child: const Text(
-                                        "Tidak/belum pernah sekolah",
+                                        'Tidak/belum\n' 
+                                        'pernah sekolah',
                                         textAlign: TextAlign.left,
                                         style: TextStyle(fontSize: 13),
                                       ),
@@ -1300,20 +1303,21 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                         //height: screenHeight * 0.06,
                         child: Column(
                           children: [
-                            Row(
+                             Row(
                               children: [
                                 Flexible(
                                   fit: FlexFit.tight,
                                   flex: 3,
                                   child: Container(
-                                    height: screenHeight * 0.07,
+                                    height: screenHeight * 0.075,
                                     padding: const EdgeInsets.symmetric(
                                       horizontal: 20,
                                       vertical: 5,
                                     ),
                                     color: Colors.blue,
                                     child: const Text(
-                                      "Tingkat Pendidikan",
+                                      'Tingkat\n' 
+                                      'Pendidikan',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.white,
@@ -1326,7 +1330,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
+                                    height: screenHeight * 0.075,
                                     padding: const EdgeInsets.only(
                                       right: 0,
                                       top: 15,
@@ -1347,7 +1351,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
+                                    height: screenHeight * 0.075,
                                     padding: const EdgeInsets.only(
                                       right: 5,
                                       top: 15,
@@ -1368,7 +1372,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                   fit: FlexFit.tight,
                                   flex: 2,
                                   child: Container(
-                                    height: screenHeight * 0.07,
+                                    height: screenHeight * 0.075,
                                     padding: const EdgeInsets.only(
                                       right: 5,
                                       top: 5,
@@ -1376,7 +1380,8 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                     ),
                                     color: Colors.blue,
                                     child: const Text(
-                                      "Gen. Baby Boomer",
+                                      'Gen. Baby\n' 
+                                      'Boomer',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.white,
@@ -1389,7 +1394,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                             ),
                             Container(
                               width: screenWidth * 1.0,
-                              height: screenHeight * 0.065,
+                              height: screenHeight * 0.075,
                               color: Colors.transparent,
                               child: Row(
                                 children: [
@@ -1402,7 +1407,8 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                                         vertical: 5,
                                       ),
                                       child: const Text(
-                                        "Tidak/belum pernah sekolah",
+                                        'Tidak/belum\n'
+                                         'pernah sekolah',
                                         textAlign: TextAlign.left,
                                         style: TextStyle(fontSize: 13),
                                       ),

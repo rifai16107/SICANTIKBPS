@@ -205,7 +205,7 @@ class _GrafikImrKabKotState extends State<GrafikImrKabKot> {
                         )),
                     legend: Legend(
                         // Visibility of legend
-                        isVisible: true,
+                        isVisible: false,
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         numberFormat: NumberFormat.decimalPattern('vi_VN'),
@@ -227,7 +227,7 @@ class _GrafikImrKabKotState extends State<GrafikImrKabKot> {
                             // Renders the data label
                             isVisible: true,
                             labelAlignment: ChartDataLabelAlignment.outer,
-                            textStyle: TextStyle(fontSize: 9.5)),
+                            textStyle: TextStyle(fontSize: 9)),
                         name: 'Nilai IMR',
                         color: const Color.fromRGBO(9, 0, 136, 1),
                       ),

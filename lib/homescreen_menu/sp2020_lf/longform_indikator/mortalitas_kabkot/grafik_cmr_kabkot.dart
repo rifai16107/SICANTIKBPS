@@ -205,7 +205,7 @@ class _GrafikCmrKabKotState extends State<GrafikCmrKabKot> {
                         )),
                     legend: Legend(
                         // Visibility of legend
-                        isVisible: true,
+                        isVisible: false,
                         position: LegendPosition.top),
                     primaryYAxis: NumericAxis(
                         numberFormat: NumberFormat.decimalPattern('vi_VN'),
@@ -226,7 +226,7 @@ class _GrafikCmrKabKotState extends State<GrafikCmrKabKot> {
                         dataLabelSettings: const DataLabelSettings(
                             // Renders the data label
                             isVisible: true,
-                            textStyle: TextStyle(fontSize: 9.5)),
+                            textStyle: TextStyle(fontSize: 9)),
                         name: 'Nilai CMR',
                         color: const Color.fromRGBO(9, 0, 136, 1),
                       ),
