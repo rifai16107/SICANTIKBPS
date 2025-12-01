@@ -349,7 +349,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                         child: const Text(
                           "PENDIDIKAN MENURUT GENERASI DI KABUPATEN CILACAP",
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.bold, color: Colors.blue,
                             fontSize: 14,
                           ),
                         ),
@@ -1282,7 +1282,7 @@ class _PddknGenCilacapState extends State<PddknGenCilacap> {
                         child: const Text(
                           "PENDIDIKAN MENURUT GENERASI DI JAWA TENGAH",
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.bold, color: Colors.blue,
                             fontSize: 14,
                           ),
                         ),
