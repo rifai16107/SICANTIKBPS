@@ -429,7 +429,7 @@ class _LongformContentState extends State<LongformContent> {
                     children: <Widget>[
                       SizedBox(
                         width: screenWidth * 0.95,
-                        height: screenHeight * 0.10,
+                        height: screenHeight * 0.11,
                         child: const Center(
                           child: Text(
                             'HASIL PENDATAAN LONG FORM SENSUS PENDUDUK 2020 KABUPATEN CILACAP DAN JAWA TENGAH.',

@@ -5692,7 +5692,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                               // 30 Kota Magelang
                               Container(
                                 width: screenWidth * 1.0,
-                                height: screenHeight * 0.055,
+                                height: screenHeight * 0.065,
                                 color: Colors.grey.shade200,
                                 child: Row(
                                   children: [
@@ -5850,7 +5850,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                               //31 Kota Surakarta
                               Container(
                                 width: screenWidth * 1.0,
-                                height: screenHeight * 0.055,
+                                height: screenHeight * 0.065,
                                 color: Colors.transparent,
                                 child: Row(
                                   children: [
@@ -6008,7 +6008,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                               //32 Kota Salatiga
                               Container(
                                 width: screenWidth * 1.0,
-                                height: screenHeight * 0.033,
+                                height: screenHeight * 0.065,
                                 color: Colors.grey.shade200,
                                 child: Row(
                                   children: [
@@ -6166,7 +6166,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                               //33 Kota Semarang
                               Container(
                                 width: screenWidth * 1.0,
-                                height: screenHeight * 0.055,
+                                height: screenHeight * 0.065,
                                 color: Colors.transparent,
                                 child: Row(
                                   children: [
@@ -6324,7 +6324,7 @@ class _AsfrKabkotState extends State<AsfrKabkot> {
                               //34 Kota Pekalongan
                               Container(
                                 width: screenWidth * 1.0,
-                                height: screenHeight * 0.055,
+                                height: screenHeight * 0.065,
                                 color: Colors.grey.shade200,
                                 child: Row(
                                   children: [
