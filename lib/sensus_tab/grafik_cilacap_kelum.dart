@@ -160,7 +160,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.80,
+                height: screenHeight * 0.85,
                 width: screenWidth,
                 child: SfCartesianChart(
                   title: ChartTitle(
@@ -220,9 +220,9 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                     //numberFormat: NumberFormat.decimalPattern('en_EN'),
                     numberFormat: NumberFormat.decimalPattern(),
                     majorGridLines: const MajorGridLines(width: 1),
-                    minimum: -90,
-                    maximum: 90,
-                    interval: 30,
+                    minimum: -84,
+                    maximum: 84,
+                    interval: 21,
                     //labelFormat: '{value}K',
                   ),
                   zoomPanBehavior: ZoomPanBehavior(
@@ -247,7 +247,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                   },
                   series: <CartesianSeries>[
                     BarSeries<_ChartData, String>(
-                      width: 0.80,
+                      width: 0.85,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => (data.y),
@@ -259,13 +259,16 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                         // Renders the data label
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.middle,
-                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
+                        textStyle: TextStyle(
+                          fontSize: 9.5,
+                          color: Colors.black,
+                        ),
                       ),
                       name: 'Laki-Laki',
                       color: const Color.fromARGB(255, 108, 138, 236),
                     ),
                     BarSeries<_ChartData, String>(
-                      width: 0.80,
+                      width: 0.85,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => data.y1,
@@ -277,7 +280,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                         // Renders the data label
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.middle,
-                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
+                        textStyle: TextStyle(fontSize: 9, color: Colors.black),
                       ),
                       name: 'Perempuan',
                       color: const Color.fromARGB(255, 238, 83, 103),

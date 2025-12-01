@@ -43,8 +43,10 @@ class RepositorySensusIndoWil {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isisensuspddkwil) =>
-                modelGrafikSensusIndoWil.fromJson(isisensuspddkwil))
+            .map(
+              (isisensuspddkwil) =>
+                  modelGrafikSensusIndoWil.fromJson(isisensuspddkwil),
+            )
             .toList();
       }
     } catch (isisensuspddkwil) {
@@ -68,10 +70,12 @@ class _GrafikSensusIndoWilState extends State<GrafikSensusIndoWil> {
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -231,77 +235,80 @@ class _GrafikSensusIndoWilState extends State<GrafikSensusIndoWil> {
                 height: screenHeight * 0.9,
                 width: screenWidth,
                 child: SfCartesianChart(
-                    title: ChartTitle(
-                        text:
-                            'Penduduk Indonesia Menurut Provinsi Hasil Sensus Penduduk Tahun 2020',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 11,
-                        )),
-                    primaryXAxis: CategoryAxis(
-                        majorGridLines: const MajorGridLines(width: 0),
-                        labelStyle: const TextStyle(
-                          color: Color.fromARGB(255, 12, 12, 12),
-                          fontFamily: 'Roboto',
-                          fontSize: 11,
-                          fontStyle: FontStyle.normal,
-                        )),
-                    legend: Legend(
-                        // Visibility of legend
-                        isVisible: true,
-                        textStyle: const TextStyle(
+                  title: ChartTitle(
+                    text:
+                        'Penduduk Indonesia Menurut Provinsi Hasil Sensus Penduduk Tahun 2020',
+                    // Aligns the chart title to left
+                    alignment: ChartAlignment.center,
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 10, 10, 10),
+                      fontFamily: 'Roboto',
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 11,
+                    ),
+                  ),
+                  primaryXAxis: CategoryAxis(
+                    majorGridLines: const MajorGridLines(width: 0),
+                    labelStyle: const TextStyle(
+                      color: Color.fromARGB(255, 12, 12, 12),
+                      fontFamily: 'Roboto',
+                      fontSize: 11,
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                  legend: Legend(
+                    // Visibility of legend
+                    isVisible: true,
+                    textStyle: const TextStyle(fontSize: 11),
+                    toggleSeriesVisibility: true,
+                    position: LegendPosition.top,
+                  ),
+                  primaryYAxis: NumericAxis(
+                    title: AxisTitle(
+                      text: 'Jumlah Penduduk',
+                      textStyle: const TextStyle(
+                        color: Color.fromARGB(255, 10, 10, 10),
+                        fontFamily: 'Roboto',
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold,
                         fontSize: 11,
-                        ),
-                        toggleSeriesVisibility: true,
-                        position: LegendPosition.top),
-                    primaryYAxis: NumericAxis(
-                        title: AxisTitle(
-                            text: 'Jumlah Penduduk',
-                            textStyle: const TextStyle(
-                              color: Color.fromARGB(255, 10, 10, 10),
-                              fontFamily: 'Roboto',
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 11,
-                            )),
-                        axisLabelFormatter: (AxisLabelRenderDetails args) {
-                          if (args.value < 0) {
-                            return ChartAxisLabel(
-                                '${args.text}M', args.textStyle);
-                          }
-                          return ChartAxisLabel(
-                              '${args.text}M', args.textStyle);
-                          //return ChartAxisLabel(args.text, args.textStyle);
-                        },
-                        //numberFormat: NumberFormat.decimalPattern('vi_VN'),
-                        numberFormat: NumberFormat("###,###.###", "vi_VN"),
-                        majorGridLines: const MajorGridLines(width: 1),
-                        minimum: 0,
-                        maximum: 52,
-                        interval: 10),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-
-                        // Sorting based on the specified field
-                        sortingOrder: SortingOrder.ascending,
-                        sortFieldValueMapper: (_ChartData data, _) => data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'Jumlah Penduduk (Juta Jiwa)',
-                        color: const Color.fromRGBO(9, 0, 136, 1),
                       ),
-                    ]),
+                    ),
+                    axisLabelFormatter: (AxisLabelRenderDetails args) {
+                      if (args.value < 0) {
+                        return ChartAxisLabel('${args.text}M', args.textStyle);
+                      }
+                      return ChartAxisLabel('${args.text}M', args.textStyle);
+                      //return ChartAxisLabel(args.text, args.textStyle);
+                    },
+                    //numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                    numberFormat: NumberFormat("###,###.###", "vi_VN"),
+                    majorGridLines: const MajorGridLines(width: 1),
+                    minimum: 0,
+                    maximum: 52,
+                    interval: 10,
+                  ),
+                  tooltipBehavior: tooltip,
+                  series: <CartesianSeries>[
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y,
+
+                      // Sorting based on the specified field
+                      sortingOrder: SortingOrder.ascending,
+                      sortFieldValueMapper: (_ChartData data, _) => data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
+                        isVisible: true,
+                        textStyle: TextStyle(fontSize: 10),
+                      ),
+                      name: 'Jumlah Penduduk (Juta Jiwa)',
+                      color: const Color.fromARGB(255, 113, 141, 236),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -309,10 +316,7 @@ class _GrafikSensusIndoWilState extends State<GrafikSensusIndoWil> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 3,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 3));
       },
     );
   }

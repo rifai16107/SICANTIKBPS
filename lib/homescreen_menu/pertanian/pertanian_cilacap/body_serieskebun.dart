@@ -15,7 +15,8 @@ class _BodySeriesKebunState extends State<BodySeriesKebun> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -44,22 +45,19 @@ class _BodySeriesKebunState extends State<BodySeriesKebun> {
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       //isScrollable: true,
                       tabs: [
-                        Tab(
-                          text: luaspanen,
-                        ),
-                        Tab(
-                          text: produksi,
-                        ),
+                        Tab(text: luaspanen),
+                        Tab(text: produksi),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    PertanianKebunA(),
-                    PertanianKebunB(),
-                  ]),
+                  body: const TabBarView(
+                    children: [PertanianKebunA(), PertanianKebunB()],
+                  ),
                 ),
               );
             },
@@ -68,11 +66,7 @@ class _BodySeriesKebunState extends State<BodySeriesKebun> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

@@ -34,9 +34,10 @@ class _LongformContentState extends State<LongformContent> {
       appBar: AppBar(
         title: const Text(
           'HASIL PENDATAAN LONG FORM SP2020',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -446,7 +447,7 @@ class _LongformContentState extends State<LongformContent> {
                         width: screenWidth,
                         child: const Center(
                           child: Text(
-                            '(Sentuh icon gambar atau tombol "Selengkapnya...")',
+                            '(Scroll up/down, sentuh icon gambar atau tombol "Selengkapnya...")',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Color.fromRGBO(15, 121, 153, 1),

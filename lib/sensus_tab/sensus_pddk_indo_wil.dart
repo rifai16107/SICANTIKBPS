@@ -17,7 +17,7 @@ class PddkIndoWil extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 0.075 * screenHeight,
+          toolbarHeight: 0.09 * screenHeight,
           flexibleSpace: Center(
             child: Column(
               children: const [

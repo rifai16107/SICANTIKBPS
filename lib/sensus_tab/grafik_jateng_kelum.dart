@@ -188,7 +188,7 @@ class _GrafikPddkJatengKelumState extends State<GrafikPddkJatengKelum> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.80,
+                height: screenHeight * 0.85,
                 width: screenWidth,
                 child: SfCartesianChart(
                   title: ChartTitle(
@@ -276,7 +276,7 @@ class _GrafikPddkJatengKelumState extends State<GrafikPddkJatengKelum> {
                   },
                   series: <CartesianSeries>[
                     BarSeries<_ChartData, String>(
-                      width: 0.80,
+                      width: 0.85,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => (data.y),
@@ -288,13 +288,13 @@ class _GrafikPddkJatengKelumState extends State<GrafikPddkJatengKelum> {
                         // Renders the data label
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.middle,
-                        textStyle: TextStyle(fontSize: 11, color: Colors.black),
+                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
                       ),
                       name: 'Laki-Laki',
                       color: const Color.fromARGB(255, 108, 138, 236),
                     ),
                     BarSeries<_ChartData, String>(
-                      width: 0.80,
+                      width: 0.85,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => data.y1,
@@ -306,7 +306,7 @@ class _GrafikPddkJatengKelumState extends State<GrafikPddkJatengKelum> {
                         // Renders the data label
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.middle,
-                        textStyle: TextStyle(fontSize: 11, color: Colors.black),
+                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
                       ),
                       name: 'Perempuan',
                       color: const Color.fromARGB(255, 238, 83, 103),

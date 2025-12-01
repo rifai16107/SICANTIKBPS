@@ -188,7 +188,7 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.80,
+                height: screenHeight * 0.85,
                 width: screenWidth,
                 child: SfCartesianChart(
                   title: ChartTitle(
@@ -234,8 +234,9 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                         fontSize: 11,
                       ),
                     ),
+                    numberFormat: NumberFormat('0.00'),
                     axisLabelFormatter: (AxisLabelRenderDetails args) {
-                      if (args.value < 0) {
+                      if (args.value != 0) {
                         return ChartAxisLabel(
                           args.value.abs().toString().replaceAll(
                             RegExp(r'[-.]0'),
@@ -244,9 +245,10 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                           args.textStyle,
                         );
                       }
-                      return ChartAxisLabel('${args.text}M', args.textStyle);
+                      return ChartAxisLabel('0M', args.textStyle);
                     },
-                    numberFormat: NumberFormat.decimalPattern(),
+
+                    //numberFormat: NumberFormat.decimalPattern(),
                     majorGridLines: const MajorGridLines(width: 1),
                     minimum: -12,
                     maximum: 12,
@@ -274,7 +276,7 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                   },
                   series: <CartesianSeries>[
                     BarSeries<_ChartData, String>(
-                      width: 0.80,
+                      width: 0.85,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => (data.y),
@@ -286,13 +288,16 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                         // Renders the data label
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.middle,
-                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
+                        textStyle: TextStyle(
+                          fontSize: 9.5,
+                          color: Colors.black,
+                        ),
                       ),
                       name: 'Laki-Laki',
                       color: const Color.fromARGB(255, 108, 138, 236),
                     ),
                     BarSeries<_ChartData, String>(
-                      width: 0.80,
+                      width: 0.85,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => data.y1,
@@ -304,7 +309,11 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                         // Renders the data label
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.middle,
-                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
+                        textStyle: TextStyle(
+                          fontSize: 9.5,
+                          color: Colors.black,
+                          fontFamily: 'RobotoCondensed',
+                        ),
                       ),
                       name: 'Perempuan',
                       color: const Color.fromARGB(255, 238, 83, 103),

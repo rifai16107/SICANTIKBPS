@@ -239,3 +239,8 @@ flutter:
     - family: SuezOne
       fonts :
        - asset: fonts/SuezOne-Regular.ttf
+    - family: FiraExtraCond
+      fonts:
+        - asset: assets/fonts/RobotoCondensed-Regular.ttf
+        - asset: assets/fonts/RobotoCondensed-Bold.ttf
+          weight: 700

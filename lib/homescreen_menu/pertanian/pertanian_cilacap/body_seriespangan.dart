@@ -17,7 +17,8 @@ class _BodySeriesPertanianPanganState extends State<BodySeriesPertanianPangan> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -48,26 +49,24 @@ class _BodySeriesPertanianPanganState extends State<BodySeriesPertanianPangan> {
                     ),
                     toolbarHeight: screenHeight * 0.001,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       //isScrollable: true,
                       tabs: [
-                        Tab(
-                          text: tahun1,
-                        ),
-                        Tab(
-                          text: tahun2,
-                        ),
-                        Tab(
-                          text: tahun3,
-                        ),
+                        Tab(text: tahun1),
+                        Tab(text: tahun2),
+                        Tab(text: tahun3),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    PertanianPanganA(),
-                    PertanianPanganB(),
-                    PertanianPanganC(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      PertanianPanganA(),
+                      PertanianPanganB(),
+                      PertanianPanganC(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -76,11 +75,7 @@ class _BodySeriesPertanianPanganState extends State<BodySeriesPertanianPangan> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );

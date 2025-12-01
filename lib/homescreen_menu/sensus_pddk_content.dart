@@ -31,8 +31,12 @@ class _SensusPddkContentState extends State<SensusPddkContent> {
         MediaQuery.of(context).padding.bottom;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HASIL-HASIL SENSUS', style: TextStyle(fontSize: 16)),
+        title: const Text(
+          'HASIL-HASIL SENSUS',
+          style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -216,7 +220,7 @@ class _SensusPddkContentState extends State<SensusPddkContent> {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
                   width: screenWidth * 0.68,
-                  height: screenHeight * 0.10,
+                  height: screenHeight * 0.11,
                   child: const Text(
                     "Summary Hasil Sensus Penduduk 2020, jumlah penduduk menurut wilayah, jumlah penduduk menurut generasi dan kelompok umur. ",
                     style: TextStyle(
