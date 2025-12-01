@@ -99,7 +99,8 @@ class FixedColumnWidget extends StatelessWidget {
             width: screenWidth * 0.28,
             child: const Text(
               textAlign: TextAlign.center,
-              'Kabupaten/Kota',
+              'Kabupaten/\n'
+              'Kota',
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
@@ -537,7 +538,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                   columns: [
                     DataColumn(
                       label: SizedBox(
-                        width: screenWidth * 0.14,
+                        width: screenWidth * 0.12,
                         child: const Text(
                           'Listrik',
                           maxLines: 3,
@@ -553,48 +554,25 @@ class ScrollableColumnWidget extends StatelessWidget {
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.225,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Elpiji/Gas",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Kota/Biogas",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                        width: screenWidth * 0.205,
+                        child: const Text(
+                          'Elpiji/Gas\n'
+                          'Kota/Biogas',
+                          style: TextStyle(color: Colors.white),
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.205,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "Minyak Tanah/",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Briket/Arang,",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Kayu Bakar",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                        width: screenWidth * 0.225,
+                        child: const Text(
+                          'Minyak Tanah/\n'
+                          'Briket/Arang\n'
+                          'Kayu Bakar',
+                          style: TextStyle(color: Colors.white),
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
@@ -617,24 +595,13 @@ class ScrollableColumnWidget extends StatelessWidget {
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.205,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "Tidak",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Memasak",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "di Rumah",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                        width: screenWidth * 0.16,
+                        child: const Text(
+                          'Tidak/\n'
+                          'Memasak\n'
+                          'Di Rumah',
+                          style: TextStyle(color: Colors.white),
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,

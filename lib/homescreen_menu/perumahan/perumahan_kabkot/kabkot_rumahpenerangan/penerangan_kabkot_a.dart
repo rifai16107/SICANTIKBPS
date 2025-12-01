@@ -93,7 +93,8 @@ class FixedColumnWidget extends StatelessWidget {
             width: screenWidth * 0.28,
             child: const Text(
               textAlign: TextAlign.center,
-              'Kabupaten/Kota',
+              'Kabupaten/\n'
+              'Kota',
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
@@ -521,7 +522,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                   headingTextStyle: const TextStyle(
                     //fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
-                    fontSize: 13.0,
+                    fontSize: 12.5,
                     letterSpacing: 0.0,
                     color: Colors.white,
                   ),
@@ -531,74 +532,33 @@ class ScrollableColumnWidget extends StatelessWidget {
                   columns: [
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.225,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Listrik",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "PLN",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
+                        width: screenWidth * 0.225,
+                        child: const Text(
+                          'Listrik\n'
+                          'PLN',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.225,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Listrik",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Non PLN",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
+                        width: screenWidth * 0.225,
+                        child: const Text(
+                          'Listrik\n'
+                          'Non PLN',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.205,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Bukan",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Listrik",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                        width: screenWidth * 0.225,
+                        child: const Text(
+                          'Bukan\n'
+                          'Listrik',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
@@ -611,14 +571,6 @@ class ScrollableColumnWidget extends StatelessWidget {
                           //maxLines: 2,
                           //overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
-                          //style: TextStyle(
-                          //fontStyle: FontStyle.italic,
-                          //fontWeight: FontWeight.bold,
-                          //fontSize: 15),
                         ),
                       ),
                       numeric: true,

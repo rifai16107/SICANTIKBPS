@@ -102,7 +102,8 @@ class FixedColumnWidget extends StatelessWidget {
             width: screenWidth * 0.28,
             child: const Text(
               textAlign: TextAlign.center,
-              'Kabupaten/Kota',
+              'Kabupaten/\n'
+              'Kota',
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
@@ -540,145 +541,69 @@ class ScrollableColumnWidget extends StatelessWidget {
                   columns: [
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.225,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "Air Kemasan",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Bermerk",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Air Isi Ulang",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
+                        width: screenWidth * 0.225,
+                        child: const Text(
+                          'Air Kemasan\n'
+                          'Bermerk,\n'
+                          'Air Isi Ulang',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.225,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Ledeng",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
+                        width: screenWidth * 0.15,
+                        child: const Text(
+                          'Ledeng',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.205,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Sumur Bor/",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Pompa",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                        width: screenWidth * 0.205,
+                        child: const Text(
+                          'Sumur Bor/\n'
+                          'Pompa',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.205,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "Sumur Terlindung",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Sumur Tak",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            Text(
-                              "Terlindung",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                        width: screenWidth * 0.28,
+                        child: const Text(
+                          'Sumur Terlindung\n'
+                          'Sumur\n'
+                          'Tak Terlindung',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.205,
-                        height: screenHeight * 0.20,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "Mata Air Terlindung",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Mata Air Tak",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            Text(
-                              "Terlindung",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                        width: screenWidth * 0.3,
+                        child: const Text(
+                          'Mata Air Terlin-\n'
+                          'dung, Mata Air\n'
+                          'Tak Terlindung',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        //width: screenWidth * 0.205,
-                        child: Column(
-                          children: const [
-                            Text(
-                              "Air Permukaan,",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "Air Hujan,",
-                              style: TextStyle(color: Colors.white),
-                              textAlign: TextAlign.right,
-                            ),
-                            Text(
-                              "Lainnya",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
+                        width: screenWidth * 0.23,
+                        child: const Text(
+                          'Air Permukaan,\n'
+                          'Air Hujan\n'
+                          'Lainnya',
+                          textAlign: TextAlign.center,
                         ),
                       ),
                       numeric: true,

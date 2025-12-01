@@ -32,8 +32,11 @@ class ModelRumahkabkotAirminum {
   final String wilayah;
   final String tahun;
 
-  ModelRumahkabkotAirminum(
-      {required this.id, required this.wilayah, required this.tahun});
+  ModelRumahkabkotAirminum({
+    required this.id,
+    required this.wilayah,
+    required this.tahun,
+  });
 
   factory ModelRumahkabkotAirminum.fromJson(Map<String, dynamic> json) {
     return ModelRumahkabkotAirminum(
@@ -57,7 +60,8 @@ class _BodyRumahkabkotAirminumState extends State<BodyRumahkabkotAirminum> {
       RepositoryRumahkabkotAirminum();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -86,25 +90,23 @@ class _BodyRumahkabkotAirminumState extends State<BodyRumahkabkotAirminum> {
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: thn1,
-                        ),
-                        Tab(
-                          text: thn2,
-                        ),
-                        Tab(
-                          text: thn3,
-                        ),
+                        Tab(text: thn1),
+                        Tab(text: thn2),
+                        Tab(text: thn3),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    RumahkabkotAirminumA(),
-                    RumahkabkotAirminumB(),
-                    RumahkabkotAirminumC(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      RumahkabkotAirminumA(),
+                      RumahkabkotAirminumB(),
+                      RumahkabkotAirminumC(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -113,11 +115,7 @@ class _BodyRumahkabkotAirminumState extends State<BodyRumahkabkotAirminum> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );
