@@ -460,16 +460,28 @@ class _LifetimeKabkotState extends State<LifetimeKabkot> {
                       //flex: 5,
                       Container(
                           width: screenWidth * 1.0,
-                          height: screenHeight * 0.12,
+                          height: 65,
                           padding: const EdgeInsets.only(
-                            left: 2,
-                            right: 10,
-                            top: 10,
-                            bottom: 10,
+                            left: 1,
+                            right: 1,
+                            top: 2,
+                            bottom: 1,
                           ),
                           child: const Text(
                             "Migrasi Seumur Hidup (Life time) Kabupaten/Kota Di Jawa Tengah (Menurut Generasi), Hasil Pendataan Long Form SP2020 ",
                             style: TextStyle(fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          )),
+                          Container(
+                           padding: const EdgeInsets.only(
+                            left: 1,
+                            right: 1,
+                            top: 1,
+                            bottom: 2,
+                          ),
+                          child: const Text(
+                            'Scroll ke atas dan ke bawah pada data, untuk melihat data kab/kota lainnya',
+                            style: TextStyle(fontSize: 10, fontStyle: FontStyle.italic),
                             textAlign: TextAlign.center,
                           )),
                       Container(

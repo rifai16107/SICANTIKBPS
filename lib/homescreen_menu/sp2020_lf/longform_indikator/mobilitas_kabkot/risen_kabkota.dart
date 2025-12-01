@@ -460,18 +460,33 @@ class _RisenKabkotState extends State<RisenKabkot> {
                       //flex: 5,
                       Container(
                           width: screenWidth * 1.0,
-                          height: screenHeight * 0.12,
+                          height: 60,
                           padding: const EdgeInsets.only(
-                            left: 2,
-                            right: 10,
-                            top: 10,
-                            bottom: 10,
+                            left: 1,
+                            right: 1,
+                            top: 2,
+                            bottom: 1,
                           ),
-                          child: const Text(
-                            "Migrasi Risen Kabupaten/Kota Di Jawa Tengah (Menurut Generasi), Hasil Pendataan Long Form SP2020 ",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                          child: RichText(
                             textAlign: TextAlign.center,
-                          )),
+                            text: TextSpan(
+                              text:
+                               'Migrasi Risen Kabupaten/Kota Di Jawa Tengah (Menurut Generasi), Hasil Pendataan Long Form SP2020\n',
+                                style: const TextStyle(fontWeight: FontWeight.bold,color: Colors.black,),
+                            
+                          children: <TextSpan>[
+                            TextSpan(
+                              text: '(Scroll ke atas dan ke bawah pada data, untuk melihat data kab/kota lainnya)',
+                              style: const TextStyle(
+                                fontWeight: FontWeight.normal,
+                                fontSize: 10,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                          )
+                          )
+                         ),
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.04,

@@ -212,9 +212,9 @@ class _MortalitasKabkotState extends State<MortalitasKabkot> {
                           height: screenHeight * 0.1,
                           padding: const EdgeInsets.only(
                             left: 5,
-                            right: 20,
-                            top: 10,
-                            bottom: 10,
+                            right: 5,
+                            top: 5,
+                            bottom: 5,
                           ),
                           child: const Text(
                             "IMR, CMR dan U5MR Kabupaten/Kota Di Jawa Tengah, Hasil Pendataan Long Form SP2020 ",
