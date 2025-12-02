@@ -23,9 +23,10 @@ class _BodySensusUtpJk extends State<BodySensusUtpJk> {
             appBar: AppBar(
               title: const Text(
                 'UTP Menurut Jenis Kelamin Pengelola UTP',
-                style: TextStyle(fontSize: 16),
-              ),
-              backgroundColor: Colors.black,
+                style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
+                backgroundColor: Colors.black,
+                iconTheme: const IconThemeData(color: Colors.white),
               leading: IconButton(
                 onPressed: () {
                   Navigator.pop(context);

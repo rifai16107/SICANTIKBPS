@@ -33,8 +33,10 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
         MediaQuery.of(context).padding.bottom;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HASIL-HASIL SENSUS', style: TextStyle(fontSize: 16)),
-        backgroundColor: Colors.black,
+        title: const Text('HASIL-HASIL SENSUS', style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
+                backgroundColor: Colors.black,
+                iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

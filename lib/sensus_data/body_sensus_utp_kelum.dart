@@ -22,9 +22,10 @@ class _BodySensusUtpKelum extends State<BodySensusUtpKelum> {
       appBar: AppBar(
         title: const Text(
           'UTP Menurut Kelompok Umur Pengelola',
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
+          style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
+                backgroundColor: Colors.black,
+                iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

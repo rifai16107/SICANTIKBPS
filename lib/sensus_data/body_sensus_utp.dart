@@ -22,9 +22,10 @@ class _BodySensusUtp extends State<BodySensusUtp> {
       appBar: AppBar(
         title: const Text(
           'UTP Menurut Sub Sektor',
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
+          style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
+                backgroundColor: Colors.black,
+                iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

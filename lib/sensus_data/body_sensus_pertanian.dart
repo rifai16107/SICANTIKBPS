@@ -44,6 +44,8 @@ class _BodySensusPertanianState extends State<BodySensusPertanian> {
                     ),
                     toolbarHeight: screenHeight * 0.002,
                     bottom: TabBar(
+                      labelColor: Colors.orange,
+                      unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       //isScrollable: true,
                       tabs: [
