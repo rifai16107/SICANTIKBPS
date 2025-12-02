@@ -182,7 +182,7 @@ class _HomeContentState extends State<HomeContent> {
                                         ),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'PENDUDUK',
                                             style: TextStyle(
@@ -250,7 +250,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'TENAGA KERJA',
                                             style: TextStyle(
@@ -320,7 +320,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'PENGANGGURAN',
                                             style: TextStyle(
@@ -401,7 +401,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'KEMISKINAN',
                                             style: TextStyle(
@@ -470,7 +470,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'GINI RASIO &\n'
                                             'KETIMPANGAN',
@@ -541,7 +541,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'IPM, IPG & IDG',
                                             style: TextStyle(
@@ -622,7 +622,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'INFLASI',
                                             style: TextStyle(
@@ -691,7 +691,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'PERTUMBUHAN\n'
                                             'EKONOMI',
@@ -762,7 +762,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'PDRB',
                                             style: TextStyle(
@@ -843,7 +843,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'PENDIDIKAN',
                                             style: TextStyle(
@@ -912,7 +912,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'PERUMAHAN',
                                             style: TextStyle(
@@ -982,7 +982,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.30,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'PERTANIAN',
                                             style: TextStyle(
@@ -1064,7 +1064,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.44,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'MARS STATISTIK',
                                             style: TextStyle(
@@ -1132,7 +1132,7 @@ class _HomeContentState extends State<HomeContent> {
                                         //const SizedBox(height:6),
                                         Container(
                                           width: screenWidth * 0.44,
-                                          color: Colors.blue,
+                                          color: Colors.orange,
                                           child: const Text(
                                             'THEME SONG SE2026',
                                             style: TextStyle(
