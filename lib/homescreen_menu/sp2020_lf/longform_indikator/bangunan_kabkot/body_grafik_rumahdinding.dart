@@ -24,9 +24,10 @@ class _BodyGrafikRumahdindingLF extends State<BodyGrafikRumahdindingLF> {
       appBar: AppBar(
         title: const Text(
           'Jenis Dinding Terluas',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

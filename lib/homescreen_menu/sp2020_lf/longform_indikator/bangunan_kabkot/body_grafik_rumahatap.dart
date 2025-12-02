@@ -24,9 +24,10 @@ class _BodyGrafikRumahatapLF extends State<BodyGrafikRumahatapLF> {
       appBar: AppBar(
         title: const Text(
           'Jenis Atap Terluas',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

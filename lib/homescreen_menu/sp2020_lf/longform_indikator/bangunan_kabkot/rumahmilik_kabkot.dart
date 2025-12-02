@@ -11,13 +11,13 @@ class RumahmilikKabkot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
+    //double screenHeight = MediaQuery.of(context).size.height;
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 0.088 * screenHeight,
+          toolbarHeight: 80,
           flexibleSpace: Center(
             child: Column(
               children: const [
@@ -35,7 +35,7 @@ class RumahmilikKabkot extends StatelessWidget {
                   style: TextStyle(
                     color: Color.fromARGB(255, 17, 17, 17),
                     fontWeight: FontWeight.normal,
-                    fontSize: 11,
+                    fontSize: 10,
                   ),
                 ),
               ],
