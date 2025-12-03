@@ -21,9 +21,10 @@ class _SensusPertanianState extends State<SensusPertanian> {
       appBar: AppBar(
         title: const Text(
           "HASIL PENCACAHAN LENGKAP ST2023",
-          style: TextStyle(fontSize: 14),
+          style: TextStyle(fontSize: 14, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

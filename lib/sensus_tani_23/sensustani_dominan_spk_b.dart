@@ -15,7 +15,8 @@ RepositorySensusTaniDominanSpk repositorysensustanidominspk =
 class _DominanSpkBState extends State<DominanSpkB> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
 
@@ -34,20 +35,38 @@ class _DominanSpkBState extends State<DominanSpkB> {
 
                 String thn = isisensustani[index = 1].tahun;
 
-                int terbanyak_1 = int.parse(isisensustani[index = 1].terbanyak_1);
-                int terbanyak_2 = int.parse(isisensustani[index = 1].terbanyak_2);
-                int terbanyak_3 = int.parse(isisensustani[index = 1].terbanyak_3);
-                int terbanyak_4 = int.parse(isisensustani[index = 1].terbanyak_4);
-                int terbanyak_5 = int.parse(isisensustani[index = 1].terbanyak_5);
-                int terbanyak_6 = int.parse(isisensustani[index = 1].terbanyak_6);
-                int terbanyak_7 = int.parse(isisensustani[index = 1].terbanyak_7);
-                int terbanyak_8 = int.parse(isisensustani[index = 1].terbanyak_8);
-                int terbanyak_9 = int.parse(isisensustani[index = 1].terbanyak_9);
-                int terbanyak_10 = int.parse(isisensustani[index = 1].terbanyak_10);
+                int terbanyak_1 = int.parse(
+                  isisensustani[index = 1].terbanyak_1,
+                );
+                int terbanyak_2 = int.parse(
+                  isisensustani[index = 1].terbanyak_2,
+                );
+                int terbanyak_3 = int.parse(
+                  isisensustani[index = 1].terbanyak_3,
+                );
+                int terbanyak_4 = int.parse(
+                  isisensustani[index = 1].terbanyak_4,
+                );
+                int terbanyak_5 = int.parse(
+                  isisensustani[index = 1].terbanyak_5,
+                );
+                int terbanyak_6 = int.parse(
+                  isisensustani[index = 1].terbanyak_6,
+                );
+                int terbanyak_7 = int.parse(
+                  isisensustani[index = 1].terbanyak_7,
+                );
+                int terbanyak_8 = int.parse(
+                  isisensustani[index = 1].terbanyak_8,
+                );
+                int terbanyak_9 = int.parse(
+                  isisensustani[index = 1].terbanyak_9,
+                );
+                int terbanyak_10 = int.parse(
+                  isisensustani[index = 1].terbanyak_10,
+                );
                 int sapi = int.parse(isisensustani[index = 1].sapi);
                 int kerbau = int.parse(isisensustani[index = 1].kerbau);
-
-                
 
                 return Container(
                   color: const Color.fromARGB(223, 190, 219, 197),
@@ -55,7 +74,7 @@ class _DominanSpkBState extends State<DominanSpkB> {
                   child: Column(
                     children: <Widget>[
                       Container(
-                        height: screenHeight * 0.10,
+                        height: 80,
                         margin: const EdgeInsets.only(bottom: 5),
                         color: Colors.transparent,
                         child: Center(
@@ -63,16 +82,15 @@ class _DominanSpkBState extends State<DominanSpkB> {
                             'Sepuluh Komoditas Pertanian yang Paling Banyak Diusahakan serta Jumlah Sapi dan Kerbau  Hasil Sensus Pertanian $thn di Jawa Tengah: ',
                             textAlign: TextAlign.center,
                             style: const TextStyle(
-                                fontFamily: 'Robo',
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600),
+                              fontFamily: 'Robo',
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
                       ),
-                       const Divider(
-                        thickness: 3,
-                      ),                  
-                      //Dominan 1                  
+                      const Divider(thickness: 3),
+                      //Dominan 1
                       Row(
                         children: [
                           Column(
@@ -82,13 +100,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '1',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -98,9 +116,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Padi Sawah Inbrida',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -119,21 +138,21 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_1.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_1.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
-                      
+                      const Divider(thickness: 1),
+
                       //dominan 2
                       Row(
                         children: [
@@ -144,13 +163,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '2',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -160,9 +179,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Ayam Kampung Biasa',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -181,22 +201,22 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_2.png',
-                              //width: 75,
-                              height: 50 ,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_2.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
 
-                    //dominan 3
+                      //dominan 3
                       Row(
                         children: [
                           Column(
@@ -206,13 +226,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '3',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -222,9 +242,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Kambing Potong',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -243,22 +264,22 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_3.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_3.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
-                      
-                      //dominan 4 
+                      const Divider(thickness: 1),
+
+                      //dominan 4
                       Row(
                         children: [
                           Column(
@@ -268,13 +289,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '4',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -284,9 +305,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Jagung Hibrida',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -305,20 +327,20 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_4.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_4.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
 
                       //dominan 5
                       Row(
@@ -330,13 +352,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '5',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -346,9 +368,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Sapi Potong',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -367,21 +390,20 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_5.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_5.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
-
+                      const Divider(thickness: 1),
 
                       //dominan 6
                       Row(
@@ -393,13 +415,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '6',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -409,9 +431,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Sengon/Jeunjing/Albasia',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -430,20 +453,20 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_6.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_6.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
 
                       //dominan 7
                       Row(
@@ -455,13 +478,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '7',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -471,9 +494,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Kelapa',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -492,20 +516,20 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_7.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_7.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
 
                       //dominan 8
                       Row(
@@ -517,13 +541,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '8',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -533,9 +557,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Jati',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -554,20 +579,20 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_8.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_8.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
-                      ), 
-                      const Divider(
-                        thickness: 1,
                       ),
+                      const Divider(thickness: 1),
 
                       //dominan 9
                       Row(
@@ -579,13 +604,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '9',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -595,9 +620,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Ubi Kayu',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -616,20 +642,20 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_9.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_9.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
-                      ), 
-                      const Divider(
-                        thickness: 1,
                       ),
+                      const Divider(thickness: 1),
 
                       //dominan 10
                       Row(
@@ -641,13 +667,13 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   '10',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 35),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 35,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
-                             
                             ],
                           ),
                           Column(
@@ -657,9 +683,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Mahoni',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -678,21 +705,21 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/jateng_10.png',
-                              //width: 75,
-                              height: 50,
-                            ),
-                          ]),
+
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/jateng_10.png',
+                                //width: 75,
+                                height: 50,
+                              ),
+                            ],
+                          ),
                         ],
-                      ), 
-                      const Divider(
-                        thickness: 1,
                       ),
-                      
+                      const Divider(thickness: 1),
+
                       //SAPI
                       Row(
                         children: [
@@ -703,9 +730,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Jumlah Sapi (mencakup Sapi Potong dan Perah):',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.right,
                                 ),
                               ),
@@ -722,31 +750,33 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/st_2023_sapi.png',
-                              //width: 75,
-                              height: 70,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/st_2023_sapi.png',
+                                //width: 75,
+                                height: 70,
+                              ),
+                            ],
+                          ),
                         ],
-                      ), 
-                      const Divider(
-                        thickness: 1,
                       ),
+                      const Divider(thickness: 1),
 
                       // KERBAU
                       Row(
                         children: [
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.30,
-                              './assets/images/sensus/st_2023_kerbau.png',
-                              //width: 75,
-                              height: 70,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.30,
+                                './assets/images/sensus/st_2023_kerbau.png',
+                                //width: 75,
+                                height: 70,
+                              ),
+                            ],
+                          ),
                           Column(
                             children: [
                               SizedBox(
@@ -754,9 +784,10 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   'Jumlah Kerbau, tercatat sebanyak:',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -773,12 +804,9 @@ class _DominanSpkBState extends State<DominanSpkB> {
                               ),
                             ],
                           ),
-                          
                         ],
-                      ), 
-                      const Divider(
-                        thickness: 1,
                       ),
+                      const Divider(thickness: 1),
                       Row(
                         children: [
                           Column(
@@ -788,8 +816,9 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   "Catatan:",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 12),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 12,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -806,8 +835,9 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   "Satu Rumah Tangga Usaha Pertanian (RTUP) dapat terdiri atas satu Usaha Pertanian Perorangan (UTP) atau lebih.",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.normal,
-                                      fontSize: 10),
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 10,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -832,8 +862,9 @@ class _DominanSpkBState extends State<DominanSpkB> {
                                 child: const Text(
                                   " ",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.normal,
-                                      fontSize: 10),
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 10,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -851,7 +882,8 @@ class _DominanSpkBState extends State<DominanSpkB> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

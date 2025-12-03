@@ -77,7 +77,7 @@ class _SensusTaniAState extends State<SensusTaniA> {
                   child: Column(
                     children: <Widget>[
                       Container(
-                        height: 115,
+                        height: 120,
                         margin: const EdgeInsets.only(bottom: 2),
                         color: Colors.transparent,
                         child: Center(
