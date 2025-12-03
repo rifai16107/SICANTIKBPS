@@ -15,7 +15,8 @@ RepositorySensusTaniMilenial repositorysensustanimilenial =
 class _MilenialUrbanCState extends State<MilenialUrbanC> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
 
@@ -35,12 +36,15 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                 String thn = isisensustani[index = 2].tahun;
 
                 int petani = int.parse(isisensustani[index = 2].petani);
-                int petaniPglahan =
-                    int.parse(isisensustani[index = 2].petani_pg_lahan);
-                int petaniGurem =
-                    int.parse(isisensustani[index = 2].petani_gurem);
-                int petaniMilenial1939 =
-                    int.parse(isisensustani[index = 2].petani_milenial_1939);
+                int petaniPglahan = int.parse(
+                  isisensustani[index = 2].petani_pg_lahan,
+                );
+                int petaniGurem = int.parse(
+                  isisensustani[index = 2].petani_gurem,
+                );
+                int petaniMilenial1939 = int.parse(
+                  isisensustani[index = 2].petani_milenial_1939,
+                );
                 int urbanRtup = int.parse(isisensustani[index = 2].urban_rtup);
                 int urbanUtp = int.parse(isisensustani[index = 2].urban_utp);
                 int jumlahUtp = int.parse(isisensustani[index = 2].jumlah_utp);
@@ -56,30 +60,33 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                   child: Column(
                     children: <Widget>[
                       Container(
-                        height: screenHeight * 0.15,
-                        margin: const EdgeInsets.only(bottom: 5),
+                        height: 110,
+                        margin: const EdgeInsets.only(top: 5, bottom: 5),
                         color: Colors.transparent,
                         child: Center(
                           child: Text(
                             'Usaha Pertanian Perorangan (UTP), Perusahaan Pertanian Berbadan Hukum (UPB), Usaha Pertanian Lainnya (UTL), Petani Milenial, Urban Farming dan Petani Pengguna Lahan Hasil Sensus Pertanian $thn di Indonesia: ',
                             textAlign: TextAlign.center,
                             style: const TextStyle(
-                                fontFamily: 'Robo',
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600),
+                              fontFamily: 'Robo',
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
                       ),
                       Row(
                         children: [
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.25,
-                              './assets/images/sensus/st_2023.png',
-                              //width: 75,
-                              height: 72,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.25,
+                                './assets/images/sensus/st_2023.png',
+                                //width: 75,
+                                height: 72,
+                              ),
+                            ],
+                          ),
                           Column(
                             children: [
                               SizedBox(
@@ -87,8 +94,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: Text(
                                   'Jumlah Usaha Pertanian Peorangan (UTP) sebanyak ${Format.convertTo(jumlahUtp, 0)} unit',
                                   style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -107,19 +115,19 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                           ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
                       Row(
                         children: [
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.25,
-                              './assets/images/sensus/st_2023.png',
-                              //width: 75,
-                              height: 72,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.25,
+                                './assets/images/sensus/st_2023.png',
+                                //width: 75,
+                                height: 72,
+                              ),
+                            ],
+                          ),
                           Column(
                             children: [
                               SizedBox(
@@ -127,8 +135,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: Text(
                                   'Jumlah Perusahaan Pertanian Berbadan Hukum (UPB) sebanyak ${Format.convertTo(jumlahUpb, 0)} unit',
                                   style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -147,19 +156,19 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                           ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
                       Row(
                         children: [
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.25,
-                              './assets/images/sensus/st_2023.png',
-                              //width: 75,
-                              height: 72,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.25,
+                                './assets/images/sensus/st_2023.png',
+                                //width: 75,
+                                height: 72,
+                              ),
+                            ],
+                          ),
                           Column(
                             children: [
                               SizedBox(
@@ -167,8 +176,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: Text(
                                   'Jumlah Usaha Pertanian Lainnya (UTL) sebanyak sebanyak ${Format.convertTo(jumlahUtl, 0)} unit',
                                   style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -187,9 +197,7 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                           ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 2,
-                      ),
+                      const Divider(thickness: 2),
                       Row(
                         children: [
                           Column(
@@ -199,9 +207,10 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: const Text(
                                   'PETANI MILENIAL',
                                   style: TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FontStyle.italic,
-                                      fontSize: 15),
+                                    fontWeight: FontWeight.w600,
+                                    fontStyle: FontStyle.italic,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -225,8 +234,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: Text(
                                   Format.convertTo(petaniMilenial1939, 0),
                                   style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 17),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 17,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -243,19 +253,19 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                               ),
                             ],
                           ),
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.25,
-                              './assets/images/sensus/st_2023_milen.png',
-                              //width: 75,
-                              height: 80,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.25,
+                                './assets/images/sensus/st_2023_milen.png',
+                                //width: 75,
+                                height: 80,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
                       Row(
                         children: [
                           Column(
@@ -265,9 +275,10 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: const Text(
                                   'URBAN FARMING',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -291,8 +302,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: Text(
                                   'Jumlah RTUP ${Format.convertTo(urbanRtup, 0)}',
                                   style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -300,9 +312,7 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 width: screenWidth * 0.35,
                                 child: const Text(
                                   'rumah tangga',
-                                  style: TextStyle(
-                                    fontSize: 14,
-                                  ),
+                                  style: TextStyle(fontSize: 14),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -311,9 +321,10 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: Text(
                                   'Jumlah UTP ${Format.convertTo(urbanUtp, 0)}',
                                   style: const TextStyle(
-                                      color: Color.fromRGBO(15, 121, 153, 1),
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    color: Color.fromRGBO(15, 121, 153, 1),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -330,19 +341,19 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                               ),
                             ],
                           ),
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.25,
-                              './assets/images/sensus/st_2023_urban.png',
-                              //width: 75,
-                              height: 80,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.25,
+                                './assets/images/sensus/st_2023_urban.png',
+                                //width: 75,
+                                height: 80,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
                       Row(
                         children: [
                           Column(
@@ -352,9 +363,10 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: const Text(
                                   'JUMLAH PETANI DAN PETANI PENGGUNA LAHAN',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -378,8 +390,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: Text(
                                   'Jumlah Petani: ${Format.convertTo(petani, 0)}',
                                   style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -397,20 +410,20 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                               ),
                             ],
                           ),
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.25,
-                              './assets/images/sensus/st_2023_pg_lahan.png',
-                              //width: 75,
-                              height: 80,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.25,
+                                './assets/images/sensus/st_2023_pg_lahan.png',
+                                //width: 75,
+                                height: 80,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
 
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
                       //catatan
                       Row(
                         children: [
@@ -421,9 +434,10 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: const Text(
                                   'PETANI GUREM',
                                   style: TextStyle(
-                                      fontStyle: FontStyle.italic,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -447,8 +461,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: Text(
                                   'Petani Gurem: ${Format.convertTo(petaniGurem, 0)}',
                                   style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 15),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -465,20 +480,20 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                               ),
                             ],
                           ),
-                          Column(children: [
-                            Image.asset(
-                              width: screenWidth * 0.25,
-                              './assets/images/sensus/st_2023_pg_gurem.png',
-                              //width: 75,
-                              height: 80,
-                            ),
-                          ]),
+                          Column(
+                            children: [
+                              Image.asset(
+                                width: screenWidth * 0.25,
+                                './assets/images/sensus/st_2023_pg_gurem.png',
+                                //width: 75,
+                                height: 80,
+                              ),
+                            ],
+                          ),
                         ],
                       ),
 
-                      const Divider(
-                        thickness: 1,
-                      ),
+                      const Divider(thickness: 1),
                       Row(
                         children: [
                           Column(
@@ -488,8 +503,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: const Text(
                                   "Catatan:",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 12),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 12,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -506,14 +522,13 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: const Text(
                                   "Satu Rumah Tangga Usaha Pertanian (RTUP) dapat terdiri atas satu Usaha Pertanian Perorangan (UTP) atau lebih.",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.normal,
-                                      fontSize: 10),
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 10,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
-                              const Divider(
-                                  thickness: 1,
-                                ),
+                              const Divider(thickness: 1),
                               SizedBox(
                                 width: screenWidth * 0.97,
                                 child: const Text(
@@ -521,9 +536,7 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                   style: TextStyle(fontSize: 10),
                                 ),
                               ),
-                               const Divider(
-                                  thickness: 1,
-                                ),
+                              const Divider(thickness: 1),
                               SizedBox(
                                 width: screenWidth * 0.97,
                                 child: const Text(
@@ -545,8 +558,9 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
                                 child: const Text(
                                   " ",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.normal,
-                                      fontSize: 10),
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 10,
+                                  ),
                                   textAlign: TextAlign.left,
                                 ),
                               ),
@@ -564,7 +578,8 @@ class _MilenialUrbanCState extends State<MilenialUrbanC> {
             return const Text('Database Error');
           } else {
             return const Center(
-                child: CircularProgressIndicator(strokeWidth: 3));
+              child: CircularProgressIndicator(strokeWidth: 3),
+            );
           }
         },
       ),

@@ -11,13 +11,12 @@ class Upb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 0.075 * screenHeight,
+          toolbarHeight: 60,
           flexibleSpace: Center(
             child: Column(
               children: const [

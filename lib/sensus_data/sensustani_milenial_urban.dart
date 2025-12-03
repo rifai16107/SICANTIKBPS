@@ -13,35 +13,33 @@ class SensusMilenial extends StatefulWidget {
 class _SensusMilenialState extends State<SensusMilenial> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return Scaffold(
       appBar: AppBar(
         title: const Text(
           "HASIL PENCACAHAN LENGKAP ST2023 (Tahap 1)",
-          style: TextStyle(fontSize: 14),
+          style: TextStyle(fontSize: 14, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
-          ),
+          icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
         ),
         actions: [
           IconButton(
-              onPressed: () {
-                showModalBottomSheet(
-                  backgroundColor: Colors.white,
-                  context: context,
-                  builder: (context) {
-                    return ListView(children: [
+            onPressed: () {
+              showModalBottomSheet(
+                backgroundColor: Colors.white,
+                context: context,
+                builder: (context) {
+                  return ListView(
+                    children: [
                       Column(
                         children: [
                           Container(
@@ -381,7 +379,7 @@ class _SensusMilenialState extends State<SensusMilenial> {
                             ),
                           ),
                           const Divider(),
-                          
+
                           Container(
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.centerLeft,
@@ -505,7 +503,7 @@ class _SensusMilenialState extends State<SensusMilenial> {
                             ),
                           ),
                           const Divider(),
-                         Container(
+                          Container(
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.centerLeft,
                             child: const Text(
@@ -609,11 +607,13 @@ class _SensusMilenialState extends State<SensusMilenial> {
                           const Divider(),
                         ],
                       ),
-                    ]);
-                  },
-                );
-              },
-              icon: const Icon(Icons.info_outlined))
+                    ],
+                  );
+                },
+              );
+            },
+            icon: const Icon(Icons.info_outlined),
+          ),
         ],
       ),
       body: Container(
