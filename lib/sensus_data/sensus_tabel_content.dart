@@ -35,9 +35,10 @@ class _SensusTabelContentState extends State<SensusTabelContent> {
       appBar: AppBar(
         title: const Text(
           'TABULASI HASIL ST2023',
-          style: TextStyle(fontSize: 15),
-        ),
-        backgroundColor: Colors.black,
+          style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
+                backgroundColor: Colors.black,
+                iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

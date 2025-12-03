@@ -25,9 +25,10 @@ class _BodyRumahlantaiKabkot extends State<BodyRumahlantaiKabkot> {
       appBar: AppBar(
         title: const Text(
           'Jenis Lantai Terluas',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

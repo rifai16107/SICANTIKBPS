@@ -22,9 +22,10 @@ class _BodySensusRtupKelum extends State<BodySensusRtupKelum> {
       appBar: AppBar(
         title: const Text(
           'RTUP Menurut Kelompok Umur KRT',
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
+          style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
+                backgroundColor: Colors.black,
+                iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

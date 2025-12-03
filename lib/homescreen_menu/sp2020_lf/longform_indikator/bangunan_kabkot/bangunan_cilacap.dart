@@ -122,9 +122,10 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                   fit: FlexFit.tight,
                                   flex: 4,
                                   child: Container(
-                                    padding: const EdgeInsets.symmetric(
-                                      horizontal: 20,
-                                      vertical: 15,
+                                    padding: const EdgeInsets.only(
+                                      right: 0,
+                                      top: 15,
+                                      bottom: 15,
                                     ),
                                     color: Colors.green,
                                     child: const Text(
@@ -235,7 +236,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                             ),
                             Container(
                               width: screenWidth * 1.0,
-                              height: screenHeight * 0.11,
+                              height: screenHeight * 0.12,
                               color: Colors.grey.shade200,
                               child: Row(
                                 children: [
@@ -243,9 +244,9 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                     fit: FlexFit.tight,
                                     flex: 4,
                                     child: Container(
-                                      padding: const EdgeInsets.symmetric(
+                                       padding: const EdgeInsets.symmetric(
                                         horizontal: 5,
-                                        vertical: 10,
+                                        vertical: 5,
                                       ),
                                       child: const Text(
                                         "Persentase bangunan yang dindingnya memenuhi syarat ketahanan bangunan",
@@ -292,7 +293,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                             ),
                             Container(
                               width: screenWidth * 1.0,
-                              height: screenHeight * 0.11,
+                              height: screenHeight * 0.12,
                               color: Colors.transparent,
                               child: Row(
                                 children: [
@@ -302,7 +303,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                     child: Container(
                                       padding: const EdgeInsets.symmetric(
                                         horizontal: 5,
-                                        vertical: 10,
+                                        vertical: 5,
                                       ),
                                       child: const Text(
                                         "Persentase bangunan yang lantainya memenuhi syarat ketahanan bangunan",
@@ -349,7 +350,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                             ),
                             Container(
                               width: screenWidth * 1.0,
-                              height: screenHeight * 0.11,
+                              height: screenHeight * 0.12,
                               color: Colors.green,
                               child: Row(
                                 children: [
@@ -359,7 +360,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                     child: Container(
                                       padding: const EdgeInsets.symmetric(
                                         horizontal: 5,
-                                        vertical: 10,
+                                        vertical: 5,
                                       ),
                                       child: const Text(
                                         "Persentase bangunan tempat tinggal memenuhi syarat ketahanan bangunan",
@@ -448,7 +449,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                             padding: 4,
                             itemPadding: 5,
                             overflowMode: LegendItemOverflowMode.wrap,
-                            textStyle: const TextStyle(fontSize: 10.5),
+                            textStyle: const TextStyle(fontSize: 10),
                             isVisible: true,
                             position: LegendPosition.bottom,
                           ),
@@ -465,6 +466,8 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                               dataSource: data,
                               xValueMapper: (_ChartData data, _) => data.x,
                               yValueMapper: (_ChartData data, _) => data.y,
+                              width: 0.9,
+                              spacing: 0.0,
                               // Sorting based on the specified field
                               //sortingOrder: SortingOrder.descending,
                               //sortFieldValueMapper: (_ChartData data, _) =>
@@ -473,7 +476,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                 // Renders the data label
                                 isVisible: true,
                                 labelAlignment: ChartDataLabelAlignment.outer,
-                                textStyle: TextStyle(fontSize: 11),
+                                textStyle: TextStyle(fontSize: 9),
                               ),
                               name:
                                   'Bangunan yg atapnya memenuhi syarat ketahanan bangunan',
@@ -483,6 +486,8 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                               dataSource: data,
                               xValueMapper: (_ChartData data, _) => data.x,
                               yValueMapper: (_ChartData data, _) => data.y1,
+                              width: 0.9,
+                              spacing: 0.0,
                               // Sorting based on the specified field
                               //sortingOrder: SortingOrder.descending,
                               //sortFieldValueMapper: (_ChartData data, _) =>
@@ -491,7 +496,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                 // Renders the data label
                                 labelAlignment: ChartDataLabelAlignment.outer,
                                 isVisible: true,
-                                textStyle: TextStyle(fontSize: 11),
+                                textStyle: TextStyle(fontSize: 9),
                               ),
                               name:
                                   'Bangunan yg dindingnya memenuhi syarat ketahanan bangunan',
@@ -501,6 +506,8 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                               dataSource: data,
                               xValueMapper: (_ChartData data, _) => data.x,
                               yValueMapper: (_ChartData data, _) => data.y2,
+                              width: 0.9,
+                              spacing: 0.0,
                               // Sorting based on the specified field
                               //sortingOrder: SortingOrder.descending,
                               //sortFieldValueMapper: (_ChartData data, _) =>
@@ -509,7 +516,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                 // Renders the data label
                                 labelAlignment: ChartDataLabelAlignment.outer,
                                 isVisible: true,
-                                textStyle: TextStyle(fontSize: 11),
+                                textStyle: TextStyle(fontSize: 9),
                               ),
                               name:
                                   'Bangunan yg lantainya memenuhi syarat ketahanan bangunan',
@@ -519,6 +526,8 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                               dataSource: data,
                               xValueMapper: (_ChartData data, _) => data.x,
                               yValueMapper: (_ChartData data, _) => data.y3,
+                              width: 0.9,
+                              spacing: 0.0,
                               // Sorting based on the specified field
                               //sortingOrder: SortingOrder.descending,
                               //sortFieldValueMapper: (_ChartData data, _) =>
@@ -527,7 +536,7 @@ class _BangunanCilacapState extends State<BangunanCilacap> {
                                 // Renders the data label
                                 labelAlignment: ChartDataLabelAlignment.outer,
                                 isVisible: true,
-                                textStyle: TextStyle(fontSize: 11),
+                                textStyle: TextStyle(fontSize: 9),
                               ),
                               name:
                                   'Bangunan tempat tinggal yg memenuhi syarat ketahanan bangunan',
