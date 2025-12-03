@@ -23,9 +23,10 @@ class _BodyGrafikUrbanMilenial extends State<BodyGrafikUrbanMilenial> {
       appBar: AppBar(
         title: const Text(
           'Petani Milenial Usia 19-39 Tahun',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

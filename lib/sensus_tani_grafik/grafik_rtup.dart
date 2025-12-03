@@ -18,7 +18,7 @@ class modelSensusTaniRtup {
   final String hutan_rtup;
   final String jasa_rtup;
   final String tahun;
- 
+
   const modelSensusTaniRtup({
     required this.id,
     required this.kecamatan,
@@ -31,7 +31,6 @@ class modelSensusTaniRtup {
     required this.hutan_rtup,
     required this.jasa_rtup,
     required this.tahun,
-    
   });
 
   factory modelSensusTaniRtup.fromJson(Map<String, dynamic> json) {
@@ -47,13 +46,13 @@ class modelSensusTaniRtup {
       hutan_rtup: json['hutan_rtup'],
       jasa_rtup: json['jasa_rtup'],
       tahun: json['tahun'],
-      );
-    }
+    );
+  }
 }
 
 class RepositorySensusTaniRtup {
   final _baseURL = 'https://bps-3301-asap.my.id/api/sensus-tani-rtup';
-Future getData() async {
+  Future getData() async {
     try {
       final response = await http.get(Uri.parse(_baseURL));
       if (response.statusCode == 200) {
@@ -69,7 +68,6 @@ Future getData() async {
   }
 }
 
-
 class GrafikRtup extends StatefulWidget {
   const GrafikRtup({Key? key}) : super(key: key);
 
@@ -84,10 +82,12 @@ class _GrafikRtupState extends State<GrafikRtup> {
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -98,7 +98,6 @@ class _GrafikRtupState extends State<GrafikRtup> {
           return PageView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              
               String kecamatan1 = isisensustani[index = 0].kecamatan;
               String kecamatan2 = isisensustani[index = 1].kecamatan;
               String kecamatan3 = isisensustani[index = 2].kecamatan;
@@ -123,7 +122,7 @@ class _GrafikRtupState extends State<GrafikRtup> {
               String kecamatan22 = isisensustani[index = 21].kecamatan;
               String kecamatan23 = isisensustani[index = 22].kecamatan;
               String kecamatan24 = isisensustani[index = 23].kecamatan;
-              
+
               double rtup1 = double.parse(isisensustani[index = 0].rtup);
               double rtup2 = double.parse(isisensustani[index = 1].rtup);
               double rtup3 = double.parse(isisensustani[index = 2].rtup);
@@ -148,10 +147,8 @@ class _GrafikRtupState extends State<GrafikRtup> {
               double rtup22 = double.parse(isisensustani[index = 21].rtup);
               double rtup23 = double.parse(isisensustani[index = 22].rtup);
               double rtup24 = double.parse(isisensustani[index = 23].rtup);
-           
-              
 
-              String tahun = isisensustani[index=0].tahun;
+              String tahun = isisensustani[index = 0].tahun;
 
               toString();
               data = [
@@ -179,74 +176,76 @@ class _GrafikRtupState extends State<GrafikRtup> {
                 _ChartData(kecamatan22, rtup22),
                 _ChartData(kecamatan23, rtup23),
                 _ChartData(kecamatan24, rtup24),
-                
               ];
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight*0.9,
+                height: screenHeight * 0.9,
                 width: screenWidth,
                 child: SfCartesianChart(
-                    title: ChartTitle(
-                        text: 'Jumlah Rumah Tangga Usaha Pertanian (RTUP) Menurut Kecamatan Hasil Sensus Pertanian $tahun',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                        )),
-                    primaryXAxis: CategoryAxis(
-                        majorGridLines: const MajorGridLines(width: 0),
-                        labelStyle: const TextStyle(
-                          color: Color.fromARGB(255, 12, 12, 12),
-                          fontFamily: 'Roboto',
-                          fontSize: 11,
-                          fontStyle: FontStyle.normal,
-                        )),
-                    legend: Legend(
-                        // Visibility of legend
+                  title: ChartTitle(
+                    text:
+                        'Jumlah Rumah Tangga Usaha Pertanian (RTUP) Menurut Kecamatan Hasil Sensus Pertanian $tahun',
+                    // Aligns the chart title to left
+                    alignment: ChartAlignment.center,
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 10, 10, 10),
+                      fontFamily: 'Roboto',
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    ),
+                  ),
+                  primaryXAxis: CategoryAxis(
+                    majorGridLines: const MajorGridLines(width: 0),
+                    labelStyle: const TextStyle(
+                      color: Color.fromARGB(255, 12, 12, 12),
+                      fontFamily: 'Roboto',
+                      fontSize: 11,
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                  legend: Legend(
+                    // Visibility of legend
+                    isVisible: true,
+                    textStyle: const TextStyle(fontSize: 12),
+                    toggleSeriesVisibility: true,
+                    overflowMode: LegendItemOverflowMode.wrap,
+                    position: LegendPosition.bottom,
+                  ),
+                  primaryYAxis: NumericAxis(
+                    numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                    majorGridLines: const MajorGridLines(width: 1),
+                    minimum: 0,
+                    maximum: 22000,
+                    interval: 5000,
+                  ),
+                  zoomPanBehavior: ZoomPanBehavior(
+                    enableDoubleTapZooming: true,
+                    enablePinching: true,
+                    // Enables the selection zooming
+                    enableSelectionZooming: true,
+                  ),
+                  tooltipBehavior: tooltip,
+                  series: <CartesianSeries>[
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y,
+                      // Sorting based on the specified field
+                      sortingOrder: SortingOrder.ascending,
+                      sortFieldValueMapper: (_ChartData data, _) => data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
                         isVisible: true,
-                        textStyle: const TextStyle(
-                          fontSize: 12,
-                        ),
-                        toggleSeriesVisibility: true,
-                        overflowMode: LegendItemOverflowMode.wrap,
-                        position: LegendPosition.bottom),
-                    primaryYAxis: NumericAxis(
-                        numberFormat: NumberFormat.decimalPattern('vi_VN'),
-                        majorGridLines: const MajorGridLines(width: 1),
-                        minimum: 0,
-                        maximum: 22000,
-                        interval: 5000),
-                    zoomPanBehavior: ZoomPanBehavior(
-                        enableDoubleTapZooming: true,
-                        enablePinching: true,
-                        // Enables the selection zooming
-                        enableSelectionZooming: true),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-                        // Sorting based on the specified field
-                        sortingOrder: SortingOrder.ascending,
-                        sortFieldValueMapper: (_ChartData data, _) =>
-                        data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            labelAlignment: ChartDataLabelAlignment.outer,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'Jumlah RTUP (rumah tangga)',
-                        color: const Color.fromARGB(255, 238, 195, 56),
+                        labelAlignment: ChartDataLabelAlignment.outer,
+                        textStyle: TextStyle(fontSize: 10),
                       ),
-                      
-                      
-                    ]),
+                      name: 'Jumlah RTUP (rumah tangga)',
+                      color: const Color.fromARGB(255, 238, 195, 56),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -254,10 +253,7 @@ class _GrafikRtupState extends State<GrafikRtup> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 3,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 3));
       },
     );
   }
@@ -268,5 +264,4 @@ class _ChartData {
 
   final String x;
   final double y;
-  
 }

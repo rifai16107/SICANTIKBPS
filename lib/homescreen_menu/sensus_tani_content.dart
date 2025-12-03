@@ -33,10 +33,12 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
         MediaQuery.of(context).padding.bottom;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HASIL-HASIL SENSUS', style: TextStyle(fontSize: 16, color: Colors.white),
-                ),
-                backgroundColor: Colors.black,
-                iconTheme: const IconThemeData(color: Colors.white),
+        title: const Text(
+          'HASIL-HASIL SENSUS',
+          style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -137,7 +139,7 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
           //animasi atas
           SizedBox(
             width: screenWidth * 0.95,
-            height: screenHeight * 0.14,
+            height: 70,
             child: const Center(
               child: Text(
                 'HASIL-HASIL SENSUS PERTANIAN 2023 (ST2023) DAPAT ANDA LIHAT DISINI.',
@@ -173,13 +175,12 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
           //summary 1
           SizedBox(
             width: screenWidth,
-            height: screenHeight * 0.11,
+            height: 75,
             child: Row(
               children: [
                 Container(
                   padding: const EdgeInsets.only(left: 4, top: 2, right: 12),
                   width: screenWidth * 0.30,
-                  height: screenHeight * 0.10,
                   child: ElevatedButton(
                     style: ButtonStyle(
                       shape: WidgetStateProperty.all<RoundedRectangleBorder>(
@@ -217,7 +218,6 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                     right: 2,
                   ),
                   width: screenWidth * 0.70,
-                  height: screenHeight * 0.10,
                   child: const Center(
                     child: Text(
                       "Summary Hasil Sensus Pertanian 2023: Jumlah RUTP dan Jumlah UTP per Sub sektor. ",
@@ -237,13 +237,12 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
           //summary 2
           SizedBox(
             width: screenWidth,
-            height: screenHeight * 0.11,
+            height: 80,
             child: Row(
               children: [
                 Container(
                   padding: const EdgeInsets.only(left: 4, top: 2, right: 12),
                   width: screenWidth * 0.30,
-                  height: screenHeight * 0.11,
                   child: ElevatedButton(
                     style: ButtonStyle(
                       shape: WidgetStateProperty.all<RoundedRectangleBorder>(
@@ -281,8 +280,6 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                     right: 2,
                   ),
                   width: screenWidth * 0.70,
-                  //height:200,
-                  height: screenHeight * 0.13,
                   child: const Center(
                     child: Text(
                       "Summary Hasil Sensus Pertanian 2023: Jumlah UTP, UPB, UTL, Jumlah Petani Milenial, Petani Pengguna Lahan dan Petani Gurem. ",
@@ -303,13 +300,12 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
           //summary 3
           SizedBox(
             width: screenWidth,
-            height: screenHeight * 0.11,
+            height: 80,
             child: Row(
               children: [
                 Container(
                   padding: const EdgeInsets.only(left: 4, top: 2, right: 12),
                   width: screenWidth * 0.30,
-                  height: screenHeight * 0.10,
                   child: ElevatedButton(
                     style: ButtonStyle(
                       shape: WidgetStateProperty.all<RoundedRectangleBorder>(
@@ -347,8 +343,6 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                     right: 2,
                   ),
                   width: screenWidth * 0.70,
-                  //height:200,
-                  height: screenHeight * 0.12,
                   child: const Center(
                     child: Text(
                       "Summary Hasil Sensus Pertanian 2023: 10 (Sepuluh) Komoditas pertanian terbanyak yang diusahakan serta Jumlah Sapi dan Kerbau. ",
@@ -368,13 +362,12 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
           //tabulasi ST2023
           SizedBox(
             width: screenWidth,
-            height: screenHeight * 0.11,
+            height: 75,
             child: Row(
               children: [
                 Container(
                   padding: const EdgeInsets.only(left: 4, top: 2, right: 12),
                   width: screenWidth * 0.30,
-                  height: screenHeight * 0.10,
                   child: ElevatedButton(
                     style: ButtonStyle(
                       shape: WidgetStateProperty.all<RoundedRectangleBorder>(
@@ -407,7 +400,6 @@ class _SensusTaniContentState extends State<SensusTaniContent> {
                 Container(
                   padding: const EdgeInsets.only(left: 12, top: 2, bottom: 2),
                   width: screenWidth * 0.70,
-                  height: screenHeight * 0.10,
                   child: const Center(
                     child: Text(
                       "Tabulasi Hasil Sensus Pertanian 2023.                     ",

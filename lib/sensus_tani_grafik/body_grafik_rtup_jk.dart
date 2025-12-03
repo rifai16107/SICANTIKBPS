@@ -14,49 +14,55 @@ class BodyGrafikRtupJk extends StatefulWidget {
 class _BodyGrafikRtupJk extends State<BodyGrafikRtupJk> {
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.bottom -
         MediaQuery.of(context).padding.top;
     var screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'RTUP Menurut Jenis Kelamin KRT',
-          style: TextStyle(fontSize: 16),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'RTUP Menurut Jenis Kelamin KRT',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          backgroundColor: Colors.black,
+          iconTheme: const IconThemeData(color: Colors.white),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
+          ),
         ),
-        backgroundColor: Colors.black,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
+        body: ListView(
+          children: [
+            Column(
+              children: <Widget>[
+                SizedBox(
+                  height: screenHeight * 1.2,
+                  width: screenWidth * 0.98,
+                  child: Column(
+                    children: [Flexible(child: const GrafikRtupJk())],
+                  ),
+                ),
+              ],
             ),
-          ),
+            SizedBox(
+              child: const Text(
+                " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                style: TextStyle(
+                  fontSize: 10,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.normal,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            const Divider(indent: 3, color: Colors.transparent),
+          ],
         ),
       ),
-      body: ListView(
-        children: [
-         Column(
-          children: <Widget>[
-           SizedBox(
-                height: screenHeight * 0.9,
-                width: screenWidth*0.98,
-                child: Column(
-                  children:[
-                    Flexible(
-                     child: const GrafikRtupJk(),
-                    ),
-                  ],
-                ),    
-          ),
-        ],
-        ),
-      ],
-      ),
-    ));
+    );
   }
 }

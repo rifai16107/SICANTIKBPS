@@ -630,554 +630,537 @@ class _SensusTabelContentState extends State<SensusTabelContent> {
           ),
         ],
       ),
-      body: Scaffold(
-        body: Column(
-          children: <Widget>[
-            SizedBox(
-              width: screenWidth * 0.98,
-              height: 50,
-              child: RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(
-                  text:
-                      'Hasil Pencacahan Lengkap Sensus Pertanian 2023 Kabupaten Cilacap (-Tahap 1)\n',
-                  style: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-
-                  children: <TextSpan>[
-                    TextSpan(
-                      text:
-                          '(Scroll ke atas dan ke bawah jika pilihan menu belum terlihat semua)',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 11,
-                        color: Colors.black,
+      body: SizedBox(
+        height: screenHeight * 1.3,
+        //padding: const EdgeInsets.all(2),
+        child: Column(
+          children: [
+            Flexible(
+              flex: 16,
+              fit: FlexFit.tight,
+              child: Container(
+                color: Colors.black,
+                child: const Center(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 0, horizontal: 3),
+                    child: Text(
+                      "Hasil Pencacahan Lengkap Sensus Pertanian 2023 Kabupaten Cilacap (-Tahap 1)",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
                       ),
+                      textAlign: TextAlign.center,
                     ),
-                  ],
+                  ),
                 ),
               ),
             ),
-            Divider(height: screenHeight * 0.03, thickness: 2),
-            Expanded(
-              flex: 90,
-              child: Scrollbar(
-                thickness: 6,
-                thumbVisibility: true,
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      //Card 1 Fertilitas
-                      Container(width: MediaQuery.of(context).size.width),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusRtup(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusRtup(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
 
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah Rumah Tangga Usaha Pertanian (RTUP) dan RTUP Menurut Subsektor Pertanian yang Diusahakan di Kabupaten Cilacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 45,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 55,
+                        child: Text(
+                          'Jumlah Rumah Tangga Usaha Pertanian (RTUP) dan RTUP Menurut Subsektor Pertanian yang Diusahakan di Kabupaten Cilacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
                           ),
+                          textAlign: TextAlign.center,
                         ),
                       ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusRtupKelum(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah RTUP Menurut Kelompok Umur Kepala Rumah Tangga di Kabupaten Cilacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusRtupJk(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah Kepala Rumah Tangga dari RTUP Menurut Jenis Kelamin di Kabupaten Cilacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusUtp(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah Usaha Pertanian Perorangan (UTP) dan UTP Menurut Subsektor Pertanian Yang Diusahakan di Kabupaten Cilacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusUtpKelum(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah UTP Menurut Kelompok Umur Pengelola UTP  di Kabupaten Cilacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusUtpJk(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah UTP Menurut Jenis Kelamin Pengelola UTP di Kabupaten Cilacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusUpb(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah Perusahaan Pertanian Berbadan Hukum (UPB) Menurut Subsektor di Kabupaten Cilacap (unit), 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusUtl(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah Usaha Pertanian Lainnya (UTL) Menurut Subsektor di Kabupaten Cilacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusGurem(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah RTUP, UTP, Petani Pengguna Lahan dan RTUP, UTP, Petani Gurem di Kabupaten CIlacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Card(
-                        elevation: 5,
-                        color: const Color.fromRGBO(236, 138, 20, 0.882),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                          side: BorderSide(color: Colors.grey),
-                        ),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              CustomPageRoute(
-                                child: const BodySensusUrbanMilenial(),
-                                direction: AxisDirection.left,
-                              ),
-                            );
-                          },
-                          splashColor: Colors.blueGrey,
-
-                          child: Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/images/daerah/logo_cilacap.png',
-                                  fit: BoxFit.cover,
-                                  width: screenWidth * 0.09,
-                                  height: 45,
-                                ),
-                                const SizedBox(width: 2),
-                                Container(
-                                  alignment: Alignment.center,
-                                  width: screenWidth * 0.80,
-                                  height: 55,
-                                  child: Text(
-                                    'Jumlah RTUP, UTP Urban Farming  dan Petani Milenial di Kabupaten Cilacap, 2023',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.5,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Divider(height: screenHeight * 0.08),
                     ],
                   ),
                 ),
               ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusRtupKelum(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 32,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 38,
+                        child: Text(
+                          'Jumlah RTUP Menurut Kelompok Umur Kepala Rumah Tangga di Kabupaten Cilacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusRtupJk(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 32,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 38,
+                        child: Text(
+                          'Jumlah Kepala Rumah Tangga dari RTUP Menurut Jenis Kelamin di Kabupaten Cilacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusUtp(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 45,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 55,
+                        child: Text(
+                          'Jumlah Usaha Pertanian Perorangan (UTP) dan UTP Menurut Subsektor Pertanian Yang Diusahakan di Kabupaten Cilacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusUtpKelum(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 32,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 38,
+                        child: Text(
+                          'Jumlah UTP Menurut Kelompok Umur Pengelola UTP  di Kabupaten Cilacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusUtpJk(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 32,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 38,
+                        child: Text(
+                          'Jumlah UTP Menurut Jenis Kelamin Pengelola UTP di Kabupaten Cilacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusUpb(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 32,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 38,
+                        child: Text(
+                          'Jumlah Perusahaan Pertanian Berbadan Hukum (UPB) Menurut Subsektor di Kabupaten Cilacap (unit), 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusUtl(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 32,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 38,
+                        child: Text(
+                          'Jumlah Usaha Pertanian Lainnya (UTL) Menurut Subsektor di Kabupaten Cilacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusGurem(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 32,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 38,
+                        child: Text(
+                          'Jumlah RTUP, UTP, Petani Pengguna Lahan dan RTUP, UTP, Petani Gurem di Kabupaten CIlacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
+                      child: const BodySensusUrbanMilenial(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Image.asset(
+                        'assets/images/daerah/logo_cilacap.png',
+                        fit: BoxFit.cover,
+                        width: screenWidth * 0.09,
+                        height: 32,
+                      ),
+                      const SizedBox(width: 2),
+                      Container(
+                        alignment: Alignment.center,
+                        width: screenWidth * 0.85,
+                        height: 38,
+                        child: Text(
+                          'Jumlah RTUP, UTP Urban Farming  dan Petani Milenial di Kabupaten Cilacap, 2023',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+
+            Flexible(
+              flex: 1,
+              fit: FlexFit.tight,
+              child: Container(color: Colors.transparent),
             ),
           ],
         ),

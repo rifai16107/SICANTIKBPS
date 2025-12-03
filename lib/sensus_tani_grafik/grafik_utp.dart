@@ -82,10 +82,12 @@ class _GrafikUtpState extends State<GrafikUtp> {
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -181,64 +183,69 @@ class _GrafikUtpState extends State<GrafikUtp> {
                 height: screenHeight * 0.9,
                 width: screenWidth,
                 child: SfCartesianChart(
-                    title: ChartTitle(
-                        text:
-                            'Jumlah Usaha Pertanian Perorangan (UTP) Menurut Kecamatan Hasil Sensus Pertanian $tahun',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                        )),
-                    primaryXAxis: CategoryAxis(
-                        majorGridLines: const MajorGridLines(width: 0),
-                        labelStyle: const TextStyle(
-                          color: Color.fromARGB(255, 12, 12, 12),
-                          fontFamily: 'Roboto',
-                          fontSize: 11,
-                          fontStyle: FontStyle.normal,
-                        )),
-                    legend: Legend(
-                        // Visibility of legend
+                  title: ChartTitle(
+                    text:
+                        'Jumlah Usaha Pertanian Perorangan (UTP) Menurut Kecamatan Hasil Sensus Pertanian $tahun',
+                    // Aligns the chart title to left
+                    alignment: ChartAlignment.center,
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 10, 10, 10),
+                      fontFamily: 'Roboto',
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    ),
+                  ),
+                  primaryXAxis: CategoryAxis(
+                    majorGridLines: const MajorGridLines(width: 0),
+                    labelStyle: const TextStyle(
+                      color: Color.fromARGB(255, 12, 12, 12),
+                      fontFamily: 'Roboto',
+                      fontSize: 11,
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                  legend: Legend(
+                    // Visibility of legend
+                    isVisible: true,
+                    textStyle: const TextStyle(fontSize: 12),
+                    toggleSeriesVisibility: true,
+                    overflowMode: LegendItemOverflowMode.wrap,
+                    position: LegendPosition.bottom,
+                  ),
+                  primaryYAxis: NumericAxis(
+                    numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                    majorGridLines: const MajorGridLines(width: 1),
+                    minimum: 0,
+                    maximum: 23000,
+                    interval: 5000,
+                  ),
+                  zoomPanBehavior: ZoomPanBehavior(
+                    enableDoubleTapZooming: true,
+                    enablePinching: true,
+                    // Enables the selection zooming
+                    enableSelectionZooming: true,
+                  ),
+                  tooltipBehavior: tooltip,
+                  series: <CartesianSeries>[
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y,
+                      // Sorting based on the specified field
+                      sortingOrder: SortingOrder.ascending,
+                      sortFieldValueMapper: (_ChartData data, _) => data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
                         isVisible: true,
-                        textStyle: const TextStyle(
-                          fontSize: 12,
-                        ),
-                        toggleSeriesVisibility: true,
-                        overflowMode: LegendItemOverflowMode.wrap,
-                        position: LegendPosition.bottom),
-                    primaryYAxis: NumericAxis(
-                        numberFormat: NumberFormat.decimalPattern('vi_VN'),
-                        majorGridLines: const MajorGridLines(width: 1),
-                        minimum: 0,
-                        maximum: 22000,
-                        interval: 5000),
-                    zoomPanBehavior: ZoomPanBehavior(
-                        enableDoubleTapZooming: true,
-                        enablePinching: true,
-                        // Enables the selection zooming
-                        enableSelectionZooming: true),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-                        // Sorting based on the specified field
-                        sortingOrder: SortingOrder.ascending,
-                        sortFieldValueMapper: (_ChartData data, _) => data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            labelAlignment: ChartDataLabelAlignment.outer,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'Jumlah UTP (unit usaha)',
-                        color: const Color.fromARGB(255, 12, 224, 58),
+                        labelAlignment: ChartDataLabelAlignment.outer,
+                        textStyle: TextStyle(fontSize: 10),
                       ),
-                    ]),
+                      name: 'Jumlah UTP (unit usaha)',
+                      color: const Color.fromARGB(255, 12, 224, 58),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -246,10 +253,7 @@ class _GrafikUtpState extends State<GrafikUtp> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 3,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 3));
       },
     );
   }

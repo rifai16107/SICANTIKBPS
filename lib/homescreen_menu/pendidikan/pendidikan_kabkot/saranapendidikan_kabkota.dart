@@ -193,32 +193,20 @@ class _saranapendidikanKabkotaState extends State<saranapendidikanKabkota> {
         child: Column(
           children: [
             Flexible(
-              flex: 3,
+              flex: 6,
               fit: FlexFit.tight,
-              child: Column(
-                children: [
-                  Flexible(
-                    flex: 3,
-                    fit: FlexFit.tight,
-                    child: Container(
-                      //height: 0.25 * screenHeight,
-                      color: Colors.black,
-                      child: const Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 2,
-                            horizontal: 5,
-                          ),
-                          child: Text(
-                            "Jumlah Sekolah, Guru dan Murid Menurut Jenjang Pendidikan dan Kabupaten/Kota di Jawa Tengah",
-                            style: TextStyle(color: Colors.white, fontSize: 15),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
+              child: Container(
+                color: Colors.black,
+                child: const Center(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 2, horizontal: 5),
+                    child: Text(
+                      "Jumlah Sekolah, Guru dan Murid Menurut Jenjang Pendidikan dan Kabupaten/Kota di Jawa Tengah",
+                      style: TextStyle(color: Colors.white, fontSize: 14.5),
+                      textAlign: TextAlign.center,
                     ),
                   ),
-                ],
+                ),
               ),
             ),
             Card(

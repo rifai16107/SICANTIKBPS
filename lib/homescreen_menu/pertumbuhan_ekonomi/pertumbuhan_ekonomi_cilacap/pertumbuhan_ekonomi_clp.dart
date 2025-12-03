@@ -120,488 +120,444 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                   ];
                   tooltip = TooltipBehavior(enable: true);
 
-                  return Container(
-                    height: screenHeight,
-                    color: Colors.transparent,
+                  return SizedBox(
                     child: Column(
                       children: [
-                        Flexible(
-                          flex: 2,
-                          fit: FlexFit.tight,
-                          child: Column(
-                            children: [
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                  vertical: 10,
-                                  horizontal: 2,
-                                ),
-                                child: Text(
-                                  "Pertumbuhan Ekonomi Kabupaten Cilacap (Dihitung berdasarkan Pertumbuhan PDRB ADHK), $thA-$thE",
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                              Row(
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      height: screenHeight * 0.0975,
-                                      color: Colors.orange,
-                                      child: const Center(
-                                        child: Text(
-                                          "Tahun",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      height: screenHeight * 0.0975,
-                                      color: Colors.orange,
-                                      child: const Center(
-                                        child: Text(
-                                          'Pertumbuhan\n'
-                                          'Ekonomi Dengan\n'
-                                          'Migas',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      height: screenHeight * 0.0975,
-                                      color: Colors.orange,
-                                      child: const Center(
-                                        child: Text(
-                                          'Pertumbuhan\n'
-                                          'Ekonomi Tanpa\n'
-                                          'Migas',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              //TAHUN A
-                              Row(
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          thA,
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeMigasA.toStringAsFixed(2),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeNonMigasA.toString(),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              //TAHUN B
-                              Row(
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          thB,
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeMigasB.toStringAsFixed(2),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeNonMigasB.toString(),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              //TAHUN C
-                              Row(
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          thC,
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeMigasC.toStringAsFixed(2),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeNonMigasC.toString(),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              //TAHUN D
-                              Row(
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          thD,
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeMigasD.toStringAsFixed(2),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeNonMigasD.toString(),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              //TAHUN E
-                              Row(
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          thE,
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeMigasE.toStringAsFixed(2),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    flex: 1,
-                                    fit: FlexFit.tight,
-                                    child: Container(
-                                      padding: const EdgeInsets.only(
-                                        top: 10,
-                                        left: 5,
-                                        right: 5,
-                                      ),
-                                      height: screenHeight * 0.05,
-                                      child: Center(
-                                        child: Text(
-                                          PeNonMigasE.toString(),
-                                          textAlign: TextAlign.left,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const Divider(
-                                color: Color.fromARGB(235, 71, 65, 65),
-                              ),
-                              SizedBox(
-                                height: screenHeight * 0.45,
-                                width: screenWidth,
-                                child: SfCartesianChart(
-                                  title: ChartTitle(
-                                    text:
-                                        'Distribusi Persentase Pendapatan Penduduk Kabupaten Cilacap menurut Kriteria Bank Dunia, $thA-$thE',
-                                    // Aligns the chart title to left
-                                    alignment: ChartAlignment.center,
-                                    textStyle: const TextStyle(
-                                      color: Color.fromARGB(255, 10, 10, 10),
-                                      fontFamily: 'Roboto',
-                                      fontStyle: FontStyle.italic,
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 5,
+                            horizontal: 2,
+                          ),
+                          child: Text(
+                            "Pertumbuhan Ekonomi Kabupaten Cilacap (Dihitung berdasarkan Pertumbuhan PDRB ADHK), $thA-$thE",
+                            style: const TextStyle(
+                              //fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                height: screenHeight * 0.0975,
+                                color: Colors.orange,
+                                child: const Center(
+                                  child: Text(
+                                    "Tahun",
+                                    style: TextStyle(
+                                      color: Colors.white,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 11,
                                     ),
+                                    textAlign: TextAlign.center,
                                   ),
-                                  primaryXAxis: CategoryAxis(),
-                                  legend: Legend(
-                                    // Visibility of legend
-                                    overflowMode: LegendItemOverflowMode.wrap,
-                                    textStyle: const TextStyle(fontSize: 11),
-                                    isVisible: true,
-                                    position: LegendPosition.bottom,
-                                  ),
-                                  primaryYAxis: NumericAxis(
-                                    majorGridLines: const MajorGridLines(
-                                      width: 0,
-                                    ),
-                                    minimum: -15,
-                                    maximum: 15,
-                                    interval: 5,
-                                  ),
-                                  tooltipBehavior: tooltip,
-                                  series: <CartesianSeries>[
-                                    LineSeries<_ChartData, String>(
-                                      dataSource: data,
-                                      xValueMapper: (_ChartData data, _) =>
-                                          data.x,
-                                      yValueMapper: (_ChartData data, _) =>
-                                          data.y,
-                                      markerSettings: const MarkerSettings(
-                                        isVisible: true,
-                                        shape: DataMarkerType.circle,
-                                      ),
-                                      // Sorting based on the specified field
-                                      //sortingOrder: SortingOrder.descending,
-                                      //sortFieldValueMapper: (_ChartData data, _) =>
-                                      //data.y,
-                                      dataLabelSettings:
-                                          const DataLabelSettings(
-                                            // Renders the data label
-                                            isVisible: true,
-                                            labelAlignment:
-                                                ChartDataLabelAlignment.bottom,
-                                            textStyle: TextStyle(fontSize: 10),
-                                          ),
-                                      name: 'Dengan Migas',
-                                      width: 3,
-                                      color: const Color.fromARGB(
-                                        255,
-                                        240,
-                                        164,
-                                        50,
-                                      ),
-                                    ),
-                                    LineSeries<_ChartData, String>(
-                                      dataSource: data,
-                                      xValueMapper: (_ChartData data, _) =>
-                                          data.x,
-                                      yValueMapper: (_ChartData data, _) =>
-                                          data.y1,
-                                      markerSettings: const MarkerSettings(
-                                        isVisible: true,
-                                        shape: DataMarkerType.diamond,
-                                      ),
-                                      // Sorting based on the specified field
-                                      //sortingOrder: SortingOrder.descending,
-                                      //sortFieldValueMapper: (_ChartData data, _) =>
-                                      //data.y,
-                                      dataLabelSettings:
-                                          const DataLabelSettings(
-                                            // Renders the data label
-                                            isVisible: true,
-                                            labelAlignment:
-                                                ChartDataLabelAlignment.top,
-                                            textStyle: TextStyle(fontSize: 10),
-                                          ),
-                                      name: 'Tanpa Migas',
-                                      width: 3,
-                                      color: const Color.fromARGB(
-                                        255,
-                                        170,
-                                        240,
-                                        80,
-                                      ),
-                                    ),
-                                  ],
                                 ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                height: screenHeight * 0.0975,
+                                color: Colors.orange,
+                                child: const Center(
+                                  child: Text(
+                                    'Pertumbuhan\n'
+                                    'Ekonomi Dengan\n'
+                                    'Migas',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                height: screenHeight * 0.0975,
+                                color: Colors.orange,
+                                child: const Center(
+                                  child: Text(
+                                    'Pertumbuhan\n'
+                                    'Ekonomi Tanpa\n'
+                                    'Migas',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        //TAHUN A
+                        Row(
+                          children: [
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(thA, textAlign: TextAlign.left),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeMigasA.toStringAsFixed(2),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeNonMigasA.toString(),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        //TAHUN B
+                        Row(
+                          children: [
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(thB, textAlign: TextAlign.left),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeMigasB.toStringAsFixed(2),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeNonMigasB.toString(),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        //TAHUN C
+                        Row(
+                          children: [
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(thC, textAlign: TextAlign.left),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeMigasC.toStringAsFixed(2),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeNonMigasC.toString(),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        //TAHUN D
+                        Row(
+                          children: [
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(thD, textAlign: TextAlign.left),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeMigasD.toStringAsFixed(2),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeNonMigasD.toString(),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        //TAHUN E
+                        Row(
+                          children: [
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(thE, textAlign: TextAlign.left),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeMigasE.toStringAsFixed(2),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              fit: FlexFit.tight,
+                              child: Container(
+                                padding: const EdgeInsets.only(
+                                  top: 10,
+                                  left: 5,
+                                  right: 5,
+                                ),
+                                height: screenHeight * 0.05,
+                                child: Center(
+                                  child: Text(
+                                    PeNonMigasE.toString(),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const Divider(color: Color.fromARGB(235, 71, 65, 65)),
+                        SizedBox(
+                          height: screenHeight * 0.55,
+                          width: screenWidth,
+                          child: SfCartesianChart(
+                            title: ChartTitle(
+                              text:
+                                  'Pertumbuhan Ekonomi Kabupaten Cilacap\n'
+                                  'Tahun $thA-$thE',
+                              // Aligns the chart title to left
+                              alignment: ChartAlignment.center,
+                              textStyle: const TextStyle(
+                                color: Color.fromARGB(255, 10, 10, 10),
+                                fontFamily: 'Roboto',
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 11.5,
+                              ),
+                            ),
+                            primaryXAxis: CategoryAxis(),
+                            legend: Legend(
+                              // Visibility of legend
+                              overflowMode: LegendItemOverflowMode.wrap,
+                              textStyle: const TextStyle(fontSize: 11),
+                              isVisible: true,
+                              position: LegendPosition.bottom,
+                            ),
+                            primaryYAxis: NumericAxis(
+                              majorGridLines: const MajorGridLines(width: 0),
+                              minimum: -15,
+                              maximum: 15,
+                              interval: 5,
+                            ),
+                            tooltipBehavior: tooltip,
+                            series: <CartesianSeries>[
+                              LineSeries<_ChartData, String>(
+                                dataSource: data,
+                                xValueMapper: (_ChartData data, _) => data.x,
+                                yValueMapper: (_ChartData data, _) => data.y,
+                                markerSettings: const MarkerSettings(
+                                  isVisible: true,
+                                  shape: DataMarkerType.circle,
+                                ),
+                                // Sorting based on the specified field
+                                //sortingOrder: SortingOrder.descending,
+                                //sortFieldValueMapper: (_ChartData data, _) =>
+                                //data.y,
+                                dataLabelSettings: const DataLabelSettings(
+                                  // Renders the data label
+                                  isVisible: true,
+                                  labelAlignment:
+                                      ChartDataLabelAlignment.bottom,
+                                  textStyle: TextStyle(fontSize: 10),
+                                ),
+                                name: 'Dengan Migas',
+                                width: 3,
+                                color: const Color.fromARGB(255, 240, 164, 50),
+                              ),
+                              LineSeries<_ChartData, String>(
+                                dataSource: data,
+                                xValueMapper: (_ChartData data, _) => data.x,
+                                yValueMapper: (_ChartData data, _) => data.y1,
+                                markerSettings: const MarkerSettings(
+                                  isVisible: true,
+                                  shape: DataMarkerType.diamond,
+                                ),
+                                // Sorting based on the specified field
+                                //sortingOrder: SortingOrder.descending,
+                                //sortFieldValueMapper: (_ChartData data, _) =>
+                                //data.y,
+                                dataLabelSettings: const DataLabelSettings(
+                                  // Renders the data label
+                                  isVisible: true,
+                                  labelAlignment: ChartDataLabelAlignment.top,
+                                  textStyle: TextStyle(fontSize: 10),
+                                ),
+                                name: 'Tanpa Migas',
+                                width: 3,
+                                color: const Color.fromARGB(255, 170, 240, 80),
                               ),
                             ],
                           ),

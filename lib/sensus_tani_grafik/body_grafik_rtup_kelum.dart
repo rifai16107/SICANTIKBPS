@@ -14,49 +14,41 @@ class BodyGrafikRtupKelum extends StatefulWidget {
 class _BodyGrafikRtupKelum extends State<BodyGrafikRtupKelum> {
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.bottom -
         MediaQuery.of(context).padding.top;
     var screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'RTUP Menurut Kelompok Umur KRT',
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'RTUP Menurut Kelompok Umur KRT',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          backgroundColor: Colors.black,
+          iconTheme: const IconThemeData(color: Colors.white),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
           ),
         ),
-      ),
-      body: ListView(
-        children: [
-          Column(
-            children: <Widget>[
-              SizedBox(
-                height: screenHeight*0.85,
-                width: screenWidth * 0.95,
-                child: Column(
-                  children: [
-                    Flexible(
-                      child: GrafikRtupKelum(),
-                    ),
-                  ],
+        body: ListView(
+          children: [
+            Column(
+              children: <Widget>[
+                SizedBox(
+                  height: screenHeight * 0.85,
+                  width: screenWidth * 0.95,
+                  child: Column(children: [Flexible(child: GrafikRtupKelum())]),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
-    ));
+    );
   }
 }

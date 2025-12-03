@@ -14,61 +14,55 @@ class BodyGrafikUtpJk extends StatefulWidget {
 class _BodyGrafikUtpJk extends State<BodyGrafikUtpJk> {
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.bottom -
         MediaQuery.of(context).padding.top;
     var screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'UTP Menurut Jenis Kelamin Pengelola UTP',
-          style: TextStyle(fontSize: 16),
-        ),
-        backgroundColor: Colors.black,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'UTP Menurut Jenis Kelamin Pengelola UTP',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          backgroundColor: Colors.black,
+          iconTheme: const IconThemeData(color: Colors.white),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
           ),
         ),
-      ),
-      body: Container(
-        padding: const EdgeInsets.all(2),
-        child: Column(
+        body: ListView(
           children: [
-           
-            Flexible(
-              child: SizedBox(
-                height: screenHeight * 0.97,
-                width: screenWidth*0.98,
-                child: const GrafikUtpJk(),
-              ),
-            ),
-             Container(
-              height: screenHeight * 0.035,
-              color: Colors.white,
-              child:  Center(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 2),
-                  child: Text(
-                    "Tekan/sentuh Pada Legenda Untuk Mengaktifkan/Menonaktifkan series data",
-                    style: TextStyle(
-                      color: Colors.black, 
-                      fontSize: 10,
-                      fontStyle: FontStyle.italic),
+            Column(
+              children: <Widget>[
+                SizedBox(
+                  child: SizedBox(
+                    height: screenHeight * 1.2,
+                    width: screenWidth * 0.98,
+                    child: const GrafikUtpJk(),
                   ),
                 ),
+              ],
+            ),
+            SizedBox(
+              child: const Text(
+                " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                style: TextStyle(
+                  fontSize: 10,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.normal,
+                ),
+                textAlign: TextAlign.center,
               ),
             ),
+            const Divider(indent: 3, color: Colors.transparent),
           ],
         ),
       ),
-    ));
+    );
   }
 }

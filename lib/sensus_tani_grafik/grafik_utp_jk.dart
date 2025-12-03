@@ -44,7 +44,8 @@ class RepositorySensusTaniUtpJk {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
             .map(
-                (isisensustani) => modelSensusTaniUtpJk.fromJson(isisensustani))
+              (isisensustani) => modelSensusTaniUtpJk.fromJson(isisensustani),
+            )
             .toList();
       }
     } catch (isisensustani) {
@@ -68,10 +69,12 @@ class _GrafikUtpJkState extends State<GrafikUtpJk> {
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -192,86 +195,89 @@ class _GrafikUtpJkState extends State<GrafikUtpJk> {
                 height: screenHeight,
                 width: screenWidth,
                 child: SfCartesianChart(
-                    title: ChartTitle(
-                        text:
-                            'Jumlah Pengelola UTP Menurut Jenis Kelamin di Kabupaten Cilacap Hasil Sensus Pertanian $tahun',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                        )),
-                    primaryXAxis: CategoryAxis(
-                        majorGridLines: const MajorGridLines(width: 0),
-                        labelStyle: const TextStyle(
-                          color: Color.fromARGB(255, 12, 12, 12),
-                          fontFamily: 'Roboto',
-                          fontSize: 11,
-                          fontStyle: FontStyle.normal,
-                        )),
-                    legend: Legend(
-                        // Visibility of legend
+                  title: ChartTitle(
+                    text:
+                        'Jumlah Pengelola UTP Menurut Jenis Kelamin di Kabupaten Cilacap Hasil Sensus Pertanian $tahun',
+                    // Aligns the chart title to left
+                    alignment: ChartAlignment.center,
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 10, 10, 10),
+                      fontFamily: 'Roboto',
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    ),
+                  ),
+                  primaryXAxis: CategoryAxis(
+                    majorGridLines: const MajorGridLines(width: 0),
+                    labelStyle: const TextStyle(
+                      color: Color.fromARGB(255, 12, 12, 12),
+                      fontFamily: 'Roboto',
+                      fontSize: 11,
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                  legend: Legend(
+                    // Visibility of legend
+                    isVisible: true,
+                    textStyle: const TextStyle(fontSize: 11),
+                    toggleSeriesVisibility: true,
+                    overflowMode: LegendItemOverflowMode.wrap,
+                    position: LegendPosition.bottom,
+                  ),
+                  primaryYAxis: NumericAxis(
+                    numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                    majorGridLines: const MajorGridLines(width: 1),
+                    minimum: 0,
+                    maximum: 22000,
+                    interval: 5000,
+                  ),
+                  zoomPanBehavior: ZoomPanBehavior(
+                    enableDoubleTapZooming: true,
+                    enablePinching: true,
+                    // Enables the selection zooming
+                    enableSelectionZooming: true,
+                  ),
+                  tooltipBehavior: tooltip,
+                  series: <CartesianSeries>[
+                    StackedBarSeries<_ChartData, String>(
+                      width: 0.80,
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y,
+                      // Sorting based on the specified field
+                      //sortingOrder: SortingOrder.descending,
+                      //sortFieldValueMapper: (_ChartData data, _) =>
+                      //data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
                         isVisible: true,
-                        textStyle: const TextStyle(
-                          fontSize: 11,
-                        ),
-                        toggleSeriesVisibility: true,
-                        overflowMode: LegendItemOverflowMode.wrap,
-                        position: LegendPosition.bottom),
-                    primaryYAxis: NumericAxis(
-                        numberFormat: NumberFormat.decimalPattern('vi_VN'),
-                        majorGridLines: const MajorGridLines(width: 1),
-                        minimum: 0,
-                        maximum: 22000,
-                        interval: 5000),
-                    zoomPanBehavior: ZoomPanBehavior(
-                        enableDoubleTapZooming: true,
-                        enablePinching: true,
-                        // Enables the selection zooming
-                        enableSelectionZooming: true),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      StackedBarSeries<_ChartData, String>(
-                        width: 0.80,
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            labelAlignment: ChartDataLabelAlignment.middle,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'Laki-Laki',
-                        color: const Color.fromARGB(255, 24, 74, 240),
+                        labelAlignment: ChartDataLabelAlignment.bottom,
+                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
                       ),
-                      StackedBarSeries<_ChartData, String>(
-                        width: 0.80,
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y1,
-                        // Sorting based on the specified field
-                        //sortingOrder: SortingOrder.descending,
-                        //sortFieldValueMapper: (_ChartData data, _) =>
-                        //data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            labelAlignment: ChartDataLabelAlignment.bottom,
-                            textStyle: TextStyle(
-                              fontSize: 10,
-                              color: Colors.black,
-                            )),
-                        name: 'Perempuan',
-                        color: const Color.fromARGB(255, 53, 240, 53),
+                      name: 'Laki-Laki',
+                      color: const Color.fromARGB(255, 112, 138, 226),
+                    ),
+                    StackedBarSeries<_ChartData, String>(
+                      width: 0.80,
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y1,
+                      // Sorting based on the specified field
+                      //sortingOrder: SortingOrder.descending,
+                      //sortFieldValueMapper: (_ChartData data, _) =>
+                      //data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
+                        isVisible: true,
+                        labelAlignment: ChartDataLabelAlignment.bottom,
+                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
                       ),
-                    ]),
+                      name: 'Perempuan',
+                      color: const Color.fromARGB(255, 53, 240, 53),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -279,10 +285,7 @@ class _GrafikUtpJkState extends State<GrafikUtpJk> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 3,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 3));
       },
     );
   }
