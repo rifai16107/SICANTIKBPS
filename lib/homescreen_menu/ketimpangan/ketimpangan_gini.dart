@@ -104,7 +104,7 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.06,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: const Center(
                                 child: Text(
                                   "Tahun",
@@ -123,7 +123,7 @@ class _KetimpanganGiniState extends State<KetimpanganGini> {
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.06,
-                              color: Colors.green,
+                              color: Colors.orange,
                               child: const Center(
                                 child: Text(
                                   "Gini Rasio",

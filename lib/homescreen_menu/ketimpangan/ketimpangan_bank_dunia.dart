@@ -170,7 +170,7 @@ class _ketimpanganBankDuniaContentState
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.07,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         'Desil\n'
@@ -188,7 +188,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -205,7 +205,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -222,7 +222,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -239,7 +239,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -256,7 +256,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.07,
                                     child: Center(
                                       child: Text(
@@ -494,7 +494,7 @@ class _ketimpanganBankDuniaContentState
                                   fit: FlexFit.tight,
                                   child: Container(
                                     height: screenHeight * 0.06,
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     child: const Center(
                                       child: Text(
                                         "Jumlah",
@@ -511,7 +511,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.06,
                                     child: Center(
                                       child: Text(
@@ -531,7 +531,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.06,
                                     child: Center(
                                       child: Text(
@@ -551,7 +551,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.06,
                                     child: Center(
                                       child: Text(
@@ -571,7 +571,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.06,
                                     child: Center(
                                       child: Text(
@@ -591,7 +591,7 @@ class _ketimpanganBankDuniaContentState
                                   flex: 2,
                                   fit: FlexFit.tight,
                                   child: Container(
-                                    color: Colors.green,
+                                    color: Colors.orange,
                                     height: screenHeight * 0.06,
                                     child: Center(
                                       child: Text(
