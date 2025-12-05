@@ -474,7 +474,7 @@ class _GiniKabkotState extends State<GiniKabkot> {
                       Container(
                         width: screenWidth * 1.0,
                         height: screenHeight * 0.06,
-                        color: Colors.green,
+                        color: Colors.orange,
                         child: Row(
                           children: [
                             Flexible(
@@ -482,7 +482,7 @@ class _GiniKabkotState extends State<GiniKabkot> {
                               flex: 4,
                               child: Container(
                                 height: screenHeight * 0.065,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   right: 3,
                                   top: 2,
@@ -505,7 +505,7 @@ class _GiniKabkotState extends State<GiniKabkot> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   left: 15,
                                   top: 10,
@@ -527,7 +527,7 @@ class _GiniKabkotState extends State<GiniKabkot> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   left: 15,
                                   top: 10,
@@ -549,7 +549,7 @@ class _GiniKabkotState extends State<GiniKabkot> {
                               flex: 2,
                               child: Container(
                                 height: screenHeight * 0.06,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 padding: const EdgeInsets.only(
                                   left: 10,
                                   top: 10,
@@ -3666,7 +3666,7 @@ class _GiniKabkotState extends State<GiniKabkot> {
                               Container(
                                 width: screenWidth * 1.0,
                                 height: screenHeight * 0.050,
-                                color: Colors.green,
+                                color: Colors.orange,
                                 child: Row(
                                   children: [
                                     Flexible(
