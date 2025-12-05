@@ -14,65 +14,57 @@ class BodyGrafikUrbanMilenial extends StatefulWidget {
 class _BodyGrafikUrbanMilenial extends State<BodyGrafikUrbanMilenial> {
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.bottom -
         MediaQuery.of(context).padding.top;
     var screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Petani Milenial Usia 19-39 Tahun',
-          style: TextStyle(fontSize: 16, color: Colors.white),
-        ),
-        backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white),
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Center(
-            child: Icon(
-              BackIcons.circle_arrow,
-              size: 40,
-            ),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'Petani Milenial Usia 19-39 Tahun',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          backgroundColor: Colors.black,
+          iconTheme: const IconThemeData(color: Colors.white),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
           ),
         ),
-      ),
-      body: ListView(
-       children: [
-           
+        body: ListView(
+          children: [
             Column(
               children: <Widget>[
                 SizedBox(
-                height: screenHeight * 0.95,
-                width: screenWidth*0.95,
-                child: Column(
-                  children:[
-                    Flexible(
-                     child: const GrafikUrbanMilenial(),
-                    ),
-                  ],
+                  height: screenHeight * 1.2,
+                  width: screenWidth * 0.95,
+                  child: Column(
+                    children: [Flexible(child: const GrafikUrbanMilenial())],
+                  ),
                 ),
-              ),
-             ], 
+              ],
             ),
-             SizedBox(
+            SizedBox(
               height: screenHeight * 0.035,
-              child:  Center(
+              child: Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 2, horizontal: 2),
                   child: Text(
                     "Tekan/sentuh Pada Legenda Untuk Mengaktifkan/Menonaktifkan series data",
                     style: TextStyle(
-                      color: Colors.black, 
+                      color: Colors.black,
                       fontSize: 10,
-                      fontStyle: FontStyle.italic),
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
                 ),
               ),
             ),
-  
+            const Divider(indent: 3, color: Colors.transparent),
           ],
         ),
       ),

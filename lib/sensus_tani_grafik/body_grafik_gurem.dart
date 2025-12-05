@@ -35,36 +35,32 @@ class _BodyGrafikGurem extends State<BodyGrafikGurem> {
             icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
           ),
         ),
-        body: Container(
-          padding: const EdgeInsets.all(2),
-          child: Column(
-            children: [
-              Flexible(
-                child: SizedBox(
-                  height: screenHeight * 1.3,
-                  width: screenWidth * 0.95,
-                  child: const GrafikGurem(),
-                ),
-              ),
-              Container(
-                height: screenHeight * 0.035,
-                color: Colors.white,
-                child: Center(
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 2, horizontal: 2),
-                    child: Text(
-                      "Tekan/sentuh Pada Legenda Untuk Mengaktifkan/Menonaktifkan series data",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 10,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
+        body: ListView(
+          children: [
+            Column(
+              children: <Widget>[
+                SizedBox(
+                  child: SizedBox(
+                    height: screenHeight * 1.2,
+                    width: screenWidth * 0.95,
+                    child: const GrafikGurem(),
                   ),
                 ),
+              ],
+            ),
+            SizedBox(
+              child: const Text(
+                " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                style: TextStyle(
+                  fontSize: 10,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.normal,
+                ),
+                textAlign: TextAlign.center,
               ),
-            ],
-          ),
+            ),
+            const Divider(indent: 3, color: Colors.transparent),
+          ],
         ),
       ),
     );
