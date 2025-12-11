@@ -40,7 +40,7 @@ class _BodyGrafikPddkKecamatan extends State<BodyGrafikPddkKecamatan> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight,
+                  height: screenHeight * 1.15,
                   width: screenWidth * 0.96,
                   child: Column(
                     children: [Flexible(child: GrafikPddkKecamatan())],
