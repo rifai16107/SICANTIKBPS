@@ -152,6 +152,8 @@ class _GrafikInflasiKotaState extends State<GrafikInflasiKota> {
                         dataSource: data,
                         xValueMapper: (_ChartData data, _) => data.x,
                         yValueMapper: (_ChartData data, _) => data.y,
+                        width: 1,
+                        spacing: 0.1,
                         // Sorting based on the specified field
                         //sortingOrder: SortingOrder.descending,
                         //sortFieldValueMapper: (_ChartData data, _) =>
@@ -160,7 +162,7 @@ class _GrafikInflasiKotaState extends State<GrafikInflasiKota> {
                             // Renders the data label
                             isVisible: true,
                             labelAlignment: ChartDataLabelAlignment.outer,
-                            textStyle: TextStyle(fontSize: 10)),
+                            textStyle: TextStyle(fontSize: 9)),
                         name: 'Inflasi M to M',
                         color: const Color.fromARGB(255, 238, 195, 56),
                       ),
@@ -168,6 +170,8 @@ class _GrafikInflasiKotaState extends State<GrafikInflasiKota> {
                         dataSource: data,
                         xValueMapper: (_ChartData data, _) => data.x,
                         yValueMapper: (_ChartData data, _) => data.y1,
+                        width: 1,
+                        spacing: 0.1,
                         // Sorting based on the specified field
                         //sortingOrder: SortingOrder.descending,
                         //sortFieldValueMapper: (_ChartData data, _) =>
@@ -175,8 +179,8 @@ class _GrafikInflasiKotaState extends State<GrafikInflasiKota> {
                         dataLabelSettings: const DataLabelSettings(
                             // Renders the data label
                             isVisible: true,
-                            labelAlignment: ChartDataLabelAlignment.auto,
-                            textStyle: TextStyle(fontSize: 10)),
+                            labelAlignment: ChartDataLabelAlignment.top,
+                            textStyle: TextStyle(fontSize: 9)),
                         name: 'Inflasi Y to Date',
                         color: const Color.fromARGB(255, 94, 214, 130),
                       ),
@@ -184,6 +188,8 @@ class _GrafikInflasiKotaState extends State<GrafikInflasiKota> {
                         dataSource: data,
                         xValueMapper: (_ChartData data, _) => data.x,
                         yValueMapper: (_ChartData data, _) => data.y2,
+                        width: 1,
+                        spacing: 0.1,
                         // Sorting based on the specified field
                         //sortingOrder: SortingOrder.descending,
                         //sortFieldValueMapper: (_ChartData data, _) =>
@@ -191,8 +197,8 @@ class _GrafikInflasiKotaState extends State<GrafikInflasiKota> {
                         dataLabelSettings: const DataLabelSettings(
                             // Renders the data label
                             isVisible: true,
-                            labelAlignment: ChartDataLabelAlignment.auto,
-                            textStyle: TextStyle(fontSize: 10)),
+                            labelAlignment: ChartDataLabelAlignment.outer,
+                            textStyle: TextStyle(fontSize: 9)),
                         name: 'Inflasi Y on Y',
                         color: const Color.fromARGB(255, 241, 85, 93),
                       ),
