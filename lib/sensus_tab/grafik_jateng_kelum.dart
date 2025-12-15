@@ -188,7 +188,7 @@ class _GrafikPddkJatengKelumState extends State<GrafikPddkJatengKelum> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.80,
+                height: screenHeight * 0.78,
                 width: screenWidth,
                 child: SfCartesianChart(
                   title: ChartTitle(
@@ -276,7 +276,7 @@ class _GrafikPddkJatengKelumState extends State<GrafikPddkJatengKelum> {
                   },
                   series: <CartesianSeries>[
                     BarSeries<_ChartData, String>(
-                      width: 0.85,
+                      width: 0.80,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => (data.y),
@@ -294,7 +294,7 @@ class _GrafikPddkJatengKelumState extends State<GrafikPddkJatengKelum> {
                       color: const Color.fromARGB(255, 108, 138, 236),
                     ),
                     BarSeries<_ChartData, String>(
-                      width: 0.85,
+                      width: 0.80,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => data.y1,

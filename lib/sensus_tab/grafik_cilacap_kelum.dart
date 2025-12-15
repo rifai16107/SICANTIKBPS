@@ -160,7 +160,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.80,
+                height: screenHeight * 0.78,
                 width: screenWidth,
                 child: SfCartesianChart(
                   title: ChartTitle(
@@ -247,7 +247,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                   },
                   series: <CartesianSeries>[
                     BarSeries<_ChartData, String>(
-                      width: 0.85,
+                      width: 0.80,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => (data.y),
@@ -260,7 +260,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.bottom,
                         textStyle: TextStyle(
-                          fontSize: 9.5,
+                          fontSize: 10,
                           color: Colors.black,
                         ),
                       ),
@@ -268,7 +268,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                       color: const Color.fromARGB(255, 108, 138, 236),
                     ),
                     BarSeries<_ChartData, String>(
-                      width: 0.85,
+                      width: 0.80,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => data.y1,
@@ -280,7 +280,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                         // Renders the data label
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.bottom,
-                        textStyle: TextStyle(fontSize: 9, color: Colors.black),
+                        textStyle: TextStyle(fontSize: 10, color: Colors.black),
                       ),
                       name: 'Perempuan',
                       color: const Color.fromARGB(255, 238, 83, 103),

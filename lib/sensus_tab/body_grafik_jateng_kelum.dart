@@ -41,7 +41,7 @@ class _BodyGrafikPddkJatengKelum extends State<BodyGrafikPddkJatengKelum> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight * 0.82,
+                  height: screenHeight * 0.80,
                   width: screenWidth * 1,
                   child: Column(
                     children: [Flexible(child: GrafikPddkJatengKelum())],

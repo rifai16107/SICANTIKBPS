@@ -188,7 +188,7 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.80,
+                height: screenHeight * 0.78,
                 width: screenWidth,
                 child: SfCartesianChart(
                   title: ChartTitle(
@@ -276,7 +276,7 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                   },
                   series: <CartesianSeries>[
                     BarSeries<_ChartData, String>(
-                      width: 0.85,
+                      width: 0.80,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => (data.y),
@@ -289,7 +289,7 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.bottom,
                         textStyle: TextStyle(
-                          fontSize: 9.5,
+                          fontSize: 10,
                           color: Colors.black,
                         ),
                       ),
@@ -297,7 +297,7 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                       color: const Color.fromARGB(255, 108, 138, 236),
                     ),
                     BarSeries<_ChartData, String>(
-                      width: 0.85,
+                      width: 0.80,
                       dataSource: data,
                       xValueMapper: (_ChartData data, _) => data.x,
                       yValueMapper: (_ChartData data, _) => data.y1,
@@ -310,7 +310,7 @@ class _GrafikPddkIndoKelumState extends State<GrafikPddkIndoKelum> {
                         isVisible: true,
                         labelAlignment: ChartDataLabelAlignment.bottom,
                         textStyle: TextStyle(
-                          fontSize: 9.5,
+                          fontSize: 10,
                           color: Colors.black,
                           fontFamily: 'RobotoCondensed',
                         ),

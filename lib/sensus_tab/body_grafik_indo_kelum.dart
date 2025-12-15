@@ -40,7 +40,7 @@ class _BodyGrafikPddkIndoKelum extends State<BodyGrafikPddkIndoKelum> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight * 0.82,
+                  height: screenHeight * 0.80,
                   width: screenWidth * 1,
                   child: Column(
                     children: [Flexible(child: GrafikPddkIndoKelum())],

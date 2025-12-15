@@ -110,7 +110,7 @@ class _GrafikPddkKelumState extends State<GrafikPddkKelum> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.80,
+                height: screenHeight * 0.78,
                 width: screenWidth * 1,
                 child: SfCartesianChart(
                   title: ChartTitle(
