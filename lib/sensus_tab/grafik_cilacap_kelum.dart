@@ -160,7 +160,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
               tooltip = TooltipBehavior(enable: true);
 
               return SizedBox(
-                height: screenHeight * 0.85,
+                height: screenHeight * 0.80,
                 width: screenWidth,
                 child: SfCartesianChart(
                   title: ChartTitle(
@@ -258,7 +258,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                       dataLabelSettings: const DataLabelSettings(
                         // Renders the data label
                         isVisible: true,
-                        labelAlignment: ChartDataLabelAlignment.middle,
+                        labelAlignment: ChartDataLabelAlignment.bottom,
                         textStyle: TextStyle(
                           fontSize: 9.5,
                           color: Colors.black,
@@ -279,7 +279,7 @@ class _GrafikPddkCilacapKelumState extends State<GrafikPddkCilacapKelum> {
                       dataLabelSettings: const DataLabelSettings(
                         // Renders the data label
                         isVisible: true,
-                        labelAlignment: ChartDataLabelAlignment.middle,
+                        labelAlignment: ChartDataLabelAlignment.bottom,
                         textStyle: TextStyle(fontSize: 9, color: Colors.black),
                       ),
                       name: 'Perempuan',

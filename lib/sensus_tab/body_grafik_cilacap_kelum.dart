@@ -41,8 +41,8 @@ class _BodyGrafikPddkCilacapKelum extends State<BodyGrafikPddkCilacapKelum> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight,
-                  width: screenWidth,
+                  height: screenHeight * 0.82,
+                  width: screenWidth * 1,
                   child: Column(
                     children: [Flexible(child: GrafikPddkCilacapKelum())],
                   ),
@@ -51,6 +51,14 @@ class _BodyGrafikPddkCilacapKelum extends State<BodyGrafikPddkCilacapKelum> {
             ),
             Column(
               children: [
+                SizedBox(
+                  width: screenWidth * 0.97,
+                  child: const Text(
+                    "  ",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 11),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
                 SizedBox(
                   width: screenWidth * 0.97,
                   child: const Text(

@@ -178,7 +178,7 @@ class _SensusPddkContentState extends State<SensusPddkContent> {
           //First Row
           SizedBox(
             width: screenWidth,
-            height: screenHeight * 0.12,
+            height: 80,
             //color: Colors.transparent,
             child: Row(
               children: [
@@ -186,7 +186,7 @@ class _SensusPddkContentState extends State<SensusPddkContent> {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
                   width: screenWidth * 0.30,
-                  height: screenHeight * 0.10,
+                  height: 70,
                   child: ElevatedButton(
                     style: ButtonStyle(
                       shape: WidgetStateProperty.all<RoundedRectangleBorder>(
@@ -220,7 +220,7 @@ class _SensusPddkContentState extends State<SensusPddkContent> {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
                   width: screenWidth * 0.68,
-                  height: screenHeight * 0.11,
+                  height: 80,
                   child: const Text(
                     "Summary Hasil Sensus Penduduk 2020, jumlah penduduk menurut wilayah, jumlah penduduk menurut generasi dan kelompok umur. ",
                     style: TextStyle(
@@ -238,7 +238,7 @@ class _SensusPddkContentState extends State<SensusPddkContent> {
           //Baris ke 2, hasil Long
           SizedBox(
             width: screenWidth,
-            height: screenHeight * 0.12,
+            height: 80,
             //color: Colors.transparent,
             child: Row(
               children: [
@@ -246,7 +246,7 @@ class _SensusPddkContentState extends State<SensusPddkContent> {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
                   width: screenWidth * 0.30,
-                  height: screenHeight * 0.10,
+                  height: 70,
                   child: ElevatedButton(
                     style: ButtonStyle(
                       shape: WidgetStateProperty.all<RoundedRectangleBorder>(
@@ -280,7 +280,7 @@ class _SensusPddkContentState extends State<SensusPddkContent> {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(left: 5, top: 0, right: 5),
                   width: screenWidth * 0.68,
-                  height: screenHeight * 0.10,
+                  height: 80,
                   child: const Text(
                     "Hasil Sensus Penduduk 2020 Long Form, Indikator Fertilitas, Mortalitas, Pendidikan, Ketenagakerjaan dan Perumahan ",
                     style: TextStyle(

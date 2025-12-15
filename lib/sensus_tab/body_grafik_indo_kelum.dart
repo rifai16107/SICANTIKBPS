@@ -40,8 +40,8 @@ class _BodyGrafikPddkIndoKelum extends State<BodyGrafikPddkIndoKelum> {
             Column(
               children: <Widget>[
                 SizedBox(
-                  height: screenHeight,
-                  width: screenWidth * 0.98,
+                  height: screenHeight * 0.82,
+                  width: screenWidth * 1,
                   child: Column(
                     children: [Flexible(child: GrafikPddkIndoKelum())],
                   ),
@@ -50,6 +50,14 @@ class _BodyGrafikPddkIndoKelum extends State<BodyGrafikPddkIndoKelum> {
             ),
             Column(
               children: [
+                SizedBox(
+                  width: screenWidth * 0.97,
+                  child: const Text(
+                    "  ",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 11),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
                 SizedBox(
                   width: screenWidth * 0.97,
                   child: const Text(
