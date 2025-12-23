@@ -34,6 +34,7 @@ class ModelNakerKabkotFormalin {
   final String formal_n1;
   final String informal_n1;
   final String tahun;
+  final String keterangan;
 
   ModelNakerKabkotFormalin({
     required this.id,
@@ -41,6 +42,7 @@ class ModelNakerKabkotFormalin {
     required this.formal_n1,
     required this.informal_n1,
     required this.tahun,
+    required this.keterangan,
   });
 
   factory ModelNakerKabkotFormalin.fromJson(Map<String, dynamic> json) {
@@ -50,6 +52,7 @@ class ModelNakerKabkotFormalin {
       formal_n1: json['formal_n1'],
       informal_n1: json['informal_n1'],
       tahun: json['tahun'],
+      keterangan: json['keterangan'],
     );
   }
 }
@@ -264,7 +267,7 @@ class _NakerkabkotFormalinAState extends State<NakerkabkotFormalinA> {
                   isinaker[index = 35].informal_n1,
                 );
 
-                //String thn2 = isinaker[index = 0].tahun.substring(5, 9);
+                String keterangan = isinaker[index = 0].keterangan;
                 //String thn3 = isinaker[index = 0].tahun.substring(10, 14);
 
                 return Scaffold(
@@ -2774,7 +2777,8 @@ class _NakerkabkotFormalinAState extends State<NakerkabkotFormalinA> {
                                     children: <TextSpan>[
                                       TextSpan(
                                         text:
-                                            ' Survei Angkatan Kerja Nasional (Sakernas)',
+                                            ' Survei Angkatan Kerja Nasional (Sakernas)\n'
+                                            'Keterangan:',
                                         style: TextStyle(
                                           fontSize: 11,
                                           fontFamily: 'Roboto',
@@ -2785,6 +2789,23 @@ class _NakerkabkotFormalinAState extends State<NakerkabkotFormalinA> {
                                     ],
                                   ),
                                 ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(1),
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  keterangan,
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontFamily: 'Roboto',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                              const Divider(
+                                color: Colors.transparent,
+                                height: 60,
                               ),
                             ],
                           ),

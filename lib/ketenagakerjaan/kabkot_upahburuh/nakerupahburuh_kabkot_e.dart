@@ -39,6 +39,7 @@ class ModelNakerKabkotUpah {
   final String pr_n5;
   final String lkpr_n5;
   final String tahun;
+  final String keterangan;
 
   ModelNakerKabkotUpah({
     required this.id,
@@ -47,6 +48,7 @@ class ModelNakerKabkotUpah {
     required this.pr_n5,
     required this.lkpr_n5,
     required this.tahun,
+    required this.keterangan,
   });
 
   factory ModelNakerKabkotUpah.fromJson(Map<String, dynamic> json) {
@@ -57,6 +59,7 @@ class ModelNakerKabkotUpah {
       pr_n5: json['pr_n5'],
       lkpr_n5: json['lkpr_n5'],
       tahun: json['tahun'],
+      keterangan: json['keterangan'],
     );
   }
 }
@@ -236,7 +239,7 @@ class _NakerkabkotUpahEState extends State<NakerkabkotUpahE> {
                 double lkpr_35 = double.parse(isinaker[index = 34].lkpr_n5);
                 double lkpr_36 = double.parse(isinaker[index = 35].lkpr_n5);
 
-                //String thn1 = isinaker[index = 0].tahun.substring(0, 4);
+                String keterangan = isinaker[index = 0].keterangan;
 
                 return Scaffold(
                   body: Column(
@@ -3450,11 +3453,7 @@ class _NakerkabkotUpahEState extends State<NakerkabkotUpahE> {
                               ),
 
                               Container(
-                                padding: const EdgeInsets.only(
-                                  top: 4,
-                                  left: 4,
-                                  bottom: 90,
-                                ),
+                                padding: const EdgeInsets.all(1),
                                 alignment: Alignment.centerLeft,
                                 child: RichText(
                                   textAlign: TextAlign.left,
@@ -3468,7 +3467,8 @@ class _NakerkabkotUpahEState extends State<NakerkabkotUpahE> {
                                     children: <TextSpan>[
                                       TextSpan(
                                         text:
-                                            ' Survei Angkatan Kerja Nasional (Sakernas)',
+                                            ' Survei Angkatan Kerja Nasional (Sakernas)\n'
+                                            'Keterangan:',
                                         style: TextStyle(
                                           fontSize: 11,
                                           fontFamily: 'Roboto',
@@ -3479,6 +3479,23 @@ class _NakerkabkotUpahEState extends State<NakerkabkotUpahE> {
                                     ],
                                   ),
                                 ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(1),
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  keterangan,
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontFamily: 'Roboto',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                              const Divider(
+                                color: Colors.transparent,
+                                height: 60,
                               ),
                             ],
                           ),

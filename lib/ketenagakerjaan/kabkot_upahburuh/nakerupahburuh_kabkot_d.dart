@@ -35,6 +35,7 @@ class ModelNakerKabkotUpah {
   final String pr_n4;
   final String lkpr_n4;
   final String tahun;
+  final String keterangan;
 
   ModelNakerKabkotUpah({
     required this.id,
@@ -43,6 +44,7 @@ class ModelNakerKabkotUpah {
     required this.pr_n4,
     required this.lkpr_n4,
     required this.tahun,
+    required this.keterangan,
   });
 
   factory ModelNakerKabkotUpah.fromJson(Map<String, dynamic> json) {
@@ -53,6 +55,7 @@ class ModelNakerKabkotUpah {
       pr_n4: json['pr_n4'],
       lkpr_n4: json['lkpr_n4'],
       tahun: json['tahun'],
+      keterangan: json['keterangan'],
     );
   }
 }
@@ -232,7 +235,7 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
                 double lkpr_35 = double.parse(isinaker[index = 34].lkpr_n4);
                 double lkpr_36 = double.parse(isinaker[index = 35].lkpr_n4);
 
-                //String thn1 = isinaker[index = 0].tahun.substring(0, 4);
+                String keterangan = isinaker[index = 0].keterangan;
 
                 return Scaffold(
                   body: Column(
@@ -3460,7 +3463,8 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
                                     children: <TextSpan>[
                                       TextSpan(
                                         text:
-                                            ' Survei Angkatan Kerja Nasional (Sakernas)',
+                                            ' Survei Angkatan Kerja Nasional (Sakernas)\n'
+                                            'Keterangan:',
                                         style: TextStyle(
                                           fontSize: 11,
                                           fontFamily: 'Roboto',
@@ -3471,6 +3475,23 @@ class _NakerkabkotUpahDState extends State<NakerkabkotUpahD> {
                                     ],
                                   ),
                                 ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(1),
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  keterangan,
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontFamily: 'Roboto',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                              const Divider(
+                                color: Colors.transparent,
+                                height: 60,
                               ),
                             ],
                           ),
