@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "D:/Kantor/SICANTIKBPS/linux"
+    "cmake.sourceDirectory": "D:/Kantor/SICANTIKBPS/linux",
+    "cmake.ignoreCMakeListsMissing": true
 }
