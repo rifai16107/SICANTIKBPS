@@ -2653,7 +2653,7 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                   bottom: 0,
                                 ),
                                 child: const Text(
-                                  "UMK 2026 ditetapkan berdasarkan Keputusan Gubernur Nomor 100.3.3.1/505. UMP Jawa Tengah 2026.",
+                                  "UMK 2026 ditetapkan berdasarkan Keputusan Gubernur Nomor 100.3.3.1/505.",
                                   style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.normal,
