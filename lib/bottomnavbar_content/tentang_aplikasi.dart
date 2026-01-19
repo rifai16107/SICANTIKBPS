@@ -165,7 +165,7 @@ class _TentangAplikasiState extends State<TentangAplikasi> {
                               height: screenHeight * 0.05,
                               alignment: Alignment.centerLeft,
                               child: const Text(
-                                '  Version 8.0.0',
+                                '  Version 8.1.0',
                                 //version,
                                 style: TextStyle(
                                   color: Colors.black,
