@@ -23,7 +23,7 @@ class _NilaiPdrbState extends State<NilaiPdrb> {
       child: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Nilai PDRB ADHB dan ADHK Menurut Lapangan Usaha',
+            'Nilai PDRB ADHB dan ADHK',
             style: TextStyle(fontSize: 16, color: Colors.white),
           ),
           backgroundColor: Colors.black,

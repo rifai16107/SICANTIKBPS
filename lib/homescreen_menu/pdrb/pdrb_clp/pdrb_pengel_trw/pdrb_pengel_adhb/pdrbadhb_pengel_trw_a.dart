@@ -156,7 +156,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
+                                    fontSize: 12,
                                     color: Colors.white,
                                   ),
                                 ),
@@ -177,7 +177,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
+                                    fontSize: 12,
                                     color: Colors.white,
                                   ),
                                 ),
@@ -262,7 +262,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
+                                    fontSize: 12,
                                     color: Colors.white,
                                   ),
                                 ),
@@ -427,7 +427,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konsruta_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -446,7 +446,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konsruta_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -465,7 +465,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konsruta_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -484,7 +484,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konsruta_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -503,7 +503,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konsruta_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -552,7 +552,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konspem_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -571,7 +571,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konspem_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -590,7 +590,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konspem_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -609,7 +609,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konspem_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -628,7 +628,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           konspem_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -658,7 +658,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           komponen3,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -677,7 +677,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           pmtb_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -696,7 +696,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           pmtb_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -715,7 +715,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           pmtb_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -734,7 +734,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           pmtb_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -753,7 +753,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           pmtb_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -783,7 +783,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           komponen4,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -802,7 +802,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           lainnya_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -821,7 +821,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           lainnya_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -840,7 +840,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           lainnya_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -859,7 +859,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           lainnya_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -878,7 +878,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           lainnya_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -908,7 +908,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           komponen5,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
@@ -927,7 +927,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           total_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -946,7 +946,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           total_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -965,7 +965,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           total_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -984,7 +984,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           total_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -1003,7 +1003,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                           total_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -1025,7 +1025,7 @@ class _PdrbadhbPengelTrwAState extends State<PdrbadhbPengelTrwA> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 12,
+                                      fontSize: 11.5,
                                     ),
                                     children: <TextSpan>[
                                       TextSpan(

@@ -55,22 +55,6 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                   isipdrb[index = 4].nilai_adhb_migas,
                 );
 
-                double nilaiadhbtanpamigas1 = double.parse(
-                  isipdrb[index = 0].nilai_adhb_tanpa_migas,
-                );
-                double nilaiadhbtanpamigas2 = double.parse(
-                  isipdrb[index = 1].nilai_adhb_tanpa_migas,
-                );
-                double nilaiadhbtanpamigas3 = double.parse(
-                  isipdrb[index = 2].nilai_adhb_tanpa_migas,
-                );
-                double nilaiadhbtanpamigas4 = double.parse(
-                  isipdrb[index = 3].nilai_adhb_tanpa_migas,
-                );
-                double nilaiadhbtanpamigas5 = double.parse(
-                  isipdrb[index = 4].nilai_adhb_tanpa_migas,
-                );
-
                 double nilaiadhkmigas1 = double.parse(
                   isipdrb[index = 0].nilai_adhk_migas,
                 );
@@ -87,23 +71,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                   isipdrb[index = 4].nilai_adhk_migas,
                 );
 
-                double nilaiadhktanpamigas1 = double.parse(
-                  isipdrb[index = 0].nilai_adhk_tanpa_migas,
-                );
-                double nilaiadhktanpamigas2 = double.parse(
-                  isipdrb[index = 1].nilai_adhk_tanpa_migas,
-                );
-                double nilaiadhktanpamigas3 = double.parse(
-                  isipdrb[index = 2].nilai_adhk_tanpa_migas,
-                );
-                double nilaiadhktanpamigas4 = double.parse(
-                  isipdrb[index = 3].nilai_adhk_tanpa_migas,
-                );
-                double nilaiadhktanpamigas5 = double.parse(
-                  isipdrb[index = 4].nilai_adhk_tanpa_migas,
-                );
-
-                return SizedBox(
+              return SizedBox(
                   height:screenHeight*1.05,//padding: const EdgeInsets.all(2),
                   child: Column(
                     children: [
@@ -115,7 +83,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                           bottom: 5,
                         ),
                         child: Text(
-                          "Nilai PDRB Kabupaten Cilacap Atas Dasar Harga Berlaku (ADHB) Menurut Lapangan Usaha (Juta Rp), $th1-$th5",
+                          "Nilai PDRB Kabupaten Cilacap Atas Dasar harga Berlaku (ADHB) dan Atas Dasar Harga Konstan (ADHK), (Milyar Rp), $th1-$th5",
                           style: const TextStyle(fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         ),
@@ -141,15 +109,14 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                             ),
                           ),
                           Flexible(
-                            flex: 3,
+                            flex: 2,
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.07,
                               color: Colors.orange,
                               child: const Center(
                                 child: Text(
-                                  'PDRB ADHB\n'
-                                  'Dengan Migas',
+                                  'PDRB ADHB',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
@@ -160,15 +127,14 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                             ),
                           ),
                           Flexible(
-                            flex: 3,
+                            flex: 2,
                             fit: FlexFit.tight,
                             child: Container(
                               height: screenHeight * 0.07,
                               color: Colors.orange,
                               child: const Center(
                                 child: Text(
-                                  'PDRB ADHB\n'
-                                  'Tanpa Migas',
+                                  'PDRB ADHK',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
@@ -178,7 +144,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               ),
                             ),
                           ),
-                        ],
+                          ],
                       ),
                       // <-- 2020
                       Container(
@@ -197,7 +163,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               ),
                             ),
                             Flexible(
-                              flex: 4,
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
                                 Format.convertTo(nilaiadhbmigas1, 2),
@@ -206,14 +172,15 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               ),
                             ),
                             Flexible(
-                              flex: 4,
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
-                                Format.convertTo(nilaiadhbtanpamigas1, 2),
+                                Format.convertTo(nilaiadhkmigas1, 2),
                                 textAlign: TextAlign.right,
                                 style: myTextStyle,
                               ),
                             ),
+                            
                           ],
                         ),
                       ),
@@ -234,7 +201,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               ),
                             ),
                             Flexible(
-                              flex: 4,
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
                                 Format.convertTo(nilaiadhbmigas2, 2),
@@ -242,15 +209,16 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                                 style: myTextStyle,
                               ),
                             ),
-                            Flexible(
-                              flex: 4,
+                             Flexible(
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
-                                Format.convertTo(nilaiadhbtanpamigas2, 2),
+                                Format.convertTo(nilaiadhkmigas2, 2),
                                 textAlign: TextAlign.right,
                                 style: myTextStyle,
                               ),
                             ),
+                            
                           ],
                         ),
                       ),
@@ -271,7 +239,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               ),
                             ),
                             Flexible(
-                              flex: 4,
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
                                 Format.convertTo(nilaiadhbmigas3, 2),
@@ -279,11 +247,11 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                                 style: myTextStyle,
                               ),
                             ),
-                            Flexible(
-                              flex: 4,
+                             Flexible(
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
-                                Format.convertTo(nilaiadhbtanpamigas3, 2),
+                                Format.convertTo(nilaiadhkmigas3, 2),
                                 textAlign: TextAlign.right,
                                 style: myTextStyle,
                               ),
@@ -308,7 +276,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               ),
                             ),
                             Flexible(
-                              flex: 4,
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
                                 Format.convertTo(nilaiadhbmigas4, 2),
@@ -316,11 +284,11 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                                 style: myTextStyle,
                               ),
                             ),
-                            Flexible(
-                              flex: 4,
+                             Flexible(
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
-                                Format.convertTo(nilaiadhbtanpamigas4, 2),
+                                Format.convertTo(nilaiadhkmigas4, 2),
                                 textAlign: TextAlign.right,
                                 style: myTextStyle,
                               ),
@@ -345,7 +313,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                               ),
                             ),
                             Flexible(
-                              flex: 4,
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
                                 Format.convertTo(nilaiadhbmigas5, 2),
@@ -353,262 +321,8 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                                 style: myTextStyle,
                               ),
                             ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhbtanpamigas5, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Divider(
-                        color: Color.fromARGB(235, 71, 65, 65),
-                        thickness: 1,
-                      ),
-                      Container(
-                        padding: const EdgeInsets.only(
-                          left: 1,
-                          right: 1,
-                          top: 10,
-                          bottom: 5,
-                        ),
-                        child: Text(
-                          "Nilai PDRB Kabupaten Cilacap Atas Dasar Harga Konstan (ADHK) Menurut Lapangan Usaha (Juta Rp), $th1-$th5",
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      Row(
-                        children: [
-                          Flexible(
-                            flex: 2,
-                            fit: FlexFit.tight,
-                            child: Container(
-                              height: screenHeight * 0.07,
-                              color: Colors.orange,
-                              child: const Center(
-                                child: Text(
-                                  "Tahun",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            flex: 3,
-                            fit: FlexFit.tight,
-                            child: Container(
-                              height: screenHeight * 0.07,
-                              color: Colors.orange,
-                              child: const Center(
-                                child: Text(
-                                  'PDRB ADHK\n'
-                                  'Dengan Migas',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            flex: 3,
-                            fit: FlexFit.tight,
-                            child: Container(
-                              height: screenHeight * 0.07,
-                              color: Colors.orange,
-                              child: const Center(
-                                child: Text(
-                                  'PDRB ADHK\n'
-                                  'Tanpa Migas',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-
-                      // <-- 2018 ADHK
-                      Container(
-                        color: Colors.transparent,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th1,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas1, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhktanpamigas1, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      // <-- 2019
-                      Container(
-                        color: Colors.grey.shade200,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th2,
-                                textAlign: TextAlign.center,
-                               style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas2, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhktanpamigas2, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      // <-- 2020
-                      Container(
-                        color: Colors.transparent,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th3,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas3, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhktanpamigas3, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      // <-- 2021
-                      Container(
-                        color: Colors.grey.shade200,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th4,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas4, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhktanpamigas4, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      // <-- 2022
-                      Container(
-                        color: Colors.transparent,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th5,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 4,
+                             Flexible(
+                              flex: 3,
                               fit: FlexFit.tight,
                               child: Text(
                                 Format.convertTo(nilaiadhkmigas5, 2),
@@ -616,15 +330,6 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                                 style: myTextStyle,
                               ),
                             ),
-                            Flexible(
-                              flex: 4,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhktanpamigas5, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
                           ],
                         ),
                       ),
@@ -632,6 +337,8 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                         color: Color.fromARGB(235, 71, 65, 65),
                         thickness: 1,
                       ),
+                      
+                      
                       Container(
                        height: screenHeight * 0.050,
                       ),  

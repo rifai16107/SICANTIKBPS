@@ -94,29 +94,14 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                     isipdrb[index = 4].ekonomi_migas,
                   );
 
-                  double PeNonMigasA = double.parse(
-                    isipdrb[index = 0].ekonomi_nonmigas,
-                  );
-                  double PeNonMigasB = double.parse(
-                    isipdrb[index = 1].ekonomi_nonmigas,
-                  );
-                  double PeNonMigasC = double.parse(
-                    isipdrb[index = 2].ekonomi_nonmigas,
-                  );
-                  double PeNonMigasD = double.parse(
-                    isipdrb[index = 3].ekonomi_nonmigas,
-                  );
-                  double PeNonMigasE = double.parse(
-                    isipdrb[index = 4].ekonomi_nonmigas,
-                  );
-
+                  
                   toString();
                   data = [
-                    _ChartData(thA, PeMigasA, PeNonMigasA),
-                    _ChartData(thB, PeMigasB, PeNonMigasB),
-                    _ChartData(thC, PeMigasC, PeNonMigasC),
-                    _ChartData(thD, PeMigasD, PeNonMigasD),
-                    _ChartData(thE, PeMigasE, PeNonMigasE),
+                    _ChartData(thA, PeMigasA),
+                    _ChartData(thB, PeMigasB),
+                    _ChartData(thC, PeMigasC),
+                    _ChartData(thD, PeMigasD),
+                    _ChartData(thE, PeMigasE),
                   ];
                   tooltip = TooltipBehavior(enable: true);
 
@@ -143,7 +128,7 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                               flex: 1,
                               fit: FlexFit.tight,
                               child: Container(
-                                height: screenHeight * 0.0975,
+                                height: 45,
                                 color: Colors.orange,
                                 child: const Center(
                                   child: Text(
@@ -161,13 +146,12 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                               flex: 1,
                               fit: FlexFit.tight,
                               child: Container(
-                                height: screenHeight * 0.0975,
+                                height: 45,
                                 color: Colors.orange,
                                 child: const Center(
                                   child: Text(
                                     'Pertumbuhan\n'
-                                    'Ekonomi Dengan\n'
-                                    'Migas',
+                                    'Ekonomi',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
@@ -177,26 +161,7 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                 ),
                               ),
                             ),
-                            Flexible(
-                              flex: 1,
-                              fit: FlexFit.tight,
-                              child: Container(
-                                height: screenHeight * 0.0975,
-                                color: Colors.orange,
-                                child: const Center(
-                                  child: Text(
-                                    'Pertumbuhan\n'
-                                    'Ekonomi Tanpa\n'
-                                    'Migas',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ),
-                            ),
+                            
                           ],
                         ),
                         //TAHUN A
@@ -235,24 +200,7 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                 ),
                               ),
                             ),
-                            Flexible(
-                              flex: 1,
-                              fit: FlexFit.tight,
-                              child: Container(
-                                padding: const EdgeInsets.only(
-                                  top: 10,
-                                  left: 5,
-                                  right: 5,
-                                ),
-                                height: screenHeight * 0.05,
-                                child: Center(
-                                  child: Text(
-                                    PeNonMigasA.toString(),
-                                    textAlign: TextAlign.left,
-                                  ),
-                                ),
-                              ),
-                            ),
+                            
                           ],
                         ),
                         //TAHUN B
@@ -291,24 +239,7 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                 ),
                               ),
                             ),
-                            Flexible(
-                              flex: 1,
-                              fit: FlexFit.tight,
-                              child: Container(
-                                padding: const EdgeInsets.only(
-                                  top: 10,
-                                  left: 5,
-                                  right: 5,
-                                ),
-                                height: screenHeight * 0.05,
-                                child: Center(
-                                  child: Text(
-                                    PeNonMigasB.toString(),
-                                    textAlign: TextAlign.left,
-                                  ),
-                                ),
-                              ),
-                            ),
+                            
                           ],
                         ),
                         //TAHUN C
@@ -347,24 +278,7 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                 ),
                               ),
                             ),
-                            Flexible(
-                              flex: 1,
-                              fit: FlexFit.tight,
-                              child: Container(
-                                padding: const EdgeInsets.only(
-                                  top: 10,
-                                  left: 5,
-                                  right: 5,
-                                ),
-                                height: screenHeight * 0.05,
-                                child: Center(
-                                  child: Text(
-                                    PeNonMigasC.toString(),
-                                    textAlign: TextAlign.left,
-                                  ),
-                                ),
-                              ),
-                            ),
+                            
                           ],
                         ),
                         //TAHUN D
@@ -403,24 +317,7 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                 ),
                               ),
                             ),
-                            Flexible(
-                              flex: 1,
-                              fit: FlexFit.tight,
-                              child: Container(
-                                padding: const EdgeInsets.only(
-                                  top: 10,
-                                  left: 5,
-                                  right: 5,
-                                ),
-                                height: screenHeight * 0.05,
-                                child: Center(
-                                  child: Text(
-                                    PeNonMigasD.toString(),
-                                    textAlign: TextAlign.left,
-                                  ),
-                                ),
-                              ),
-                            ),
+                            
                           ],
                         ),
                         //TAHUN E
@@ -459,24 +356,7 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                 ),
                               ),
                             ),
-                            Flexible(
-                              flex: 1,
-                              fit: FlexFit.tight,
-                              child: Container(
-                                padding: const EdgeInsets.only(
-                                  top: 10,
-                                  left: 5,
-                                  right: 5,
-                                ),
-                                height: screenHeight * 0.05,
-                                child: Center(
-                                  child: Text(
-                                    PeNonMigasE.toString(),
-                                    textAlign: TextAlign.left,
-                                  ),
-                                ),
-                              ),
-                            ),
+                            
                           ],
                         ),
                         const Divider(color: Color.fromARGB(235, 71, 65, 65)),
@@ -537,28 +417,6 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
                                 width: 3,
                                 color: const Color.fromARGB(255, 240, 164, 50),
                               ),
-                              LineSeries<_ChartData, String>(
-                                dataSource: data,
-                                xValueMapper: (_ChartData data, _) => data.x,
-                                yValueMapper: (_ChartData data, _) => data.y1,
-                                markerSettings: const MarkerSettings(
-                                  isVisible: true,
-                                  shape: DataMarkerType.diamond,
-                                ),
-                                // Sorting based on the specified field
-                                //sortingOrder: SortingOrder.descending,
-                                //sortFieldValueMapper: (_ChartData data, _) =>
-                                //data.y,
-                                dataLabelSettings: const DataLabelSettings(
-                                  // Renders the data label
-                                  isVisible: true,
-                                  labelAlignment: ChartDataLabelAlignment.top,
-                                  textStyle: TextStyle(fontSize: 10),
-                                ),
-                                name: 'Tanpa Migas',
-                                width: 3,
-                                color: const Color.fromARGB(255, 170, 240, 80),
-                              ),
                             ],
                           ),
                         ),
@@ -582,9 +440,9 @@ class _pertumbuhanEkonomiclpState extends State<pertumbuhanEkonomiclp> {
 }
 
 class _ChartData {
-  _ChartData(this.x, this.y, this.y1);
+  _ChartData(this.x, this.y);
 
   final String x;
   final double? y;
-  final double? y1;
+  
 }
