@@ -291,7 +291,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                           width: screenWidth * 0.85,
                           height: screenHeight * 0.055,
                           child: Text(
-                            'Nilai PDRB ADHB dan ADHK Menurut Lap. Usaha',
+                            'Nilai PDRB ADHB dan ADHK Kabupaten Cilacap',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 12.5,
