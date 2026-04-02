@@ -51,7 +51,7 @@ final Uri _url5 = Uri.parse('https://www.tiktok.com/@bpscilacap');
 final Uri _url6 = Uri.parse('https://www.facebook.com/bpscilacap');
 final Uri _url7 = Uri.parse('https://twitter.com/bpscilacap');
 final Uri phoneNumber = Uri.parse('tel:282534328');
-final Uri whatsApp = Uri.parse('https://wa.me/6285162823301');
+final Uri whatsApp = Uri.parse('https://wa.me/628567873301');
 
 class _HomeContentState extends State<HomeContent> {
   final List<Widget> carouselList = [
