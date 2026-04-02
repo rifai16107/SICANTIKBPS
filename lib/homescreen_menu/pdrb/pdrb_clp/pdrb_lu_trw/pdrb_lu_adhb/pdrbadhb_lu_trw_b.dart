@@ -417,7 +417,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           "Sektor " + komponen1,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -436,7 +436,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           primer_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -455,7 +455,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           primer_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -474,7 +474,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           primer_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -493,7 +493,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           primer_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -512,7 +512,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           primer_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -542,7 +542,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           "Sektor " + komponen2,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -561,7 +561,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           sekunder_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -580,7 +580,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           sekunder_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -599,7 +599,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           sekunder_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -618,7 +618,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           sekunder_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -637,7 +637,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           sekunder_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -667,7 +667,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           "Sektor " + komponen3,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -686,7 +686,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           tersier_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -705,7 +705,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           tersier_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -724,7 +724,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           tersier_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -743,7 +743,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           tersier_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -762,7 +762,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           tersier_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -792,7 +792,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           komponen4,
                                           textAlign: TextAlign.left,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
@@ -811,7 +811,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           total_trw1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -830,7 +830,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           total_trw2,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -849,7 +849,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           total_trw3,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -868,7 +868,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           total_trw4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -887,7 +887,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                           total_total,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
-                                            fontSize: 12,
+                                            fontSize: 11.5,
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -909,7 +909,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                     style: const TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 12,
+                                      fontSize: 11.5,
                                     ),
                                     children: <TextSpan>[
                                       TextSpan(

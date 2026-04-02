@@ -35,6 +35,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
             return PageView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
+                String thn1 = isiPertumbuhanEknomikabkot[index = 0].tahun.substring(15, 19);
+                String thn2 = isiPertumbuhanEknomikabkot[index = 0].tahun.substring(20, 24);
                 String kab1 =
                     "01. " + isiPertumbuhanEknomikabkot[index = 0].wilayah;
                 String kab2 =
@@ -2841,8 +2843,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                   left: 14,
                                   bottom: 0,
                                 ),
-                                child: const Text(
-                                  "Tahun 2022 merupakan angka sementara.",
+                                child: Text(
+                                  " Tahun $thn1 merupakan angka sementara",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontWeight: FontWeight.normal,
@@ -2856,8 +2858,8 @@ class _PertumbuhanEknomiKabkotEState extends State<PertumbuhanEknomiKabkotE> {
                                   left: 14,
                                   bottom: 0,
                                 ),
-                                child: const Text(
-                                  "Tahun 2023 merupakan angka sangat sementara.",
+                                child: Text(
+                                  " Tahun $thn2 merupakan angka sangat sementara",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontWeight: FontWeight.normal,

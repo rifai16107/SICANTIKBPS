@@ -1,6 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:bps_cilacap/restAPI/repository_ipm.dart';
+import 'package:bps_cilacap/format_angka.dart';
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/ipm/ipm_kabkot/ipg_cilacap/body_grafik_ipm_gender.dart';
 import 'package:flutter/material.dart';
@@ -1384,7 +1385,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     padding: const EdgeInsets.only(
-                                      top: 0,
+                                      top: 10,
                                       left: 2,
                                       right: 0,
                                     ),
@@ -1395,15 +1396,15 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                       223,
                                       233,
                                     ),
-                                    child: const Center(
-                                      child: Text(
-                                        "Pengeluaran per Kapita/PPP (juta rp)",
+                                     child: const Text(
+                                        "PPP (juta rp)",
                                         style: TextStyle(
                                           fontSize: 12,
                                           fontWeight: FontWeight.bold,
                                         ),
-                                      ),
-                                    ),
+                                        //textAlign: TextAlign.left,
+                                     ),
+                                    
                                   ),
                                 ),
                                 Flexible(
@@ -1424,7 +1425,7 @@ class _IpmGenderKabContentState extends State<IpmGenderKabContent> {
                                     ),
                                     child: SizedBox(
                                       child: Text(
-                                        ppp1.toStringAsFixed(3),
+                                        " ${Format.convertTo(ppp1, 3)}",
                                         textAlign: TextAlign.right,
                                         style: const TextStyle(
                                           fontSize: 12,
