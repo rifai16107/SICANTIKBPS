@@ -251,9 +251,9 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
               const Divider(height: 1, color: Colors.transparent),
               Flexible(
                 fit: FlexFit.tight,
-                flex: 2,
+                flex: 1,
                 child: Container(
-                  height: 0.1 * screenHeight,
+                  height: 80,
                   color: Colors.black,
                   child: const Center(
                     child: Padding(
@@ -302,7 +302,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                         Container(
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
-                          height: screenHeight * 0.09,
+                          height: screenHeight * 0.085,
                           child: Text(
                             'Nilai PDRB ADHB dan ADHK Kabupaten Cilacap',
                             style: TextStyle(
@@ -352,7 +352,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                         Container(
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
-                          height: screenHeight * 0.09,
+                          height: screenHeight * 0.085,
                           child: Text(
                             'PDRB ADHB Menurut Lap. Usaha (dengan Migas)',
                             style: TextStyle(
@@ -403,7 +403,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                         Container(
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
-                          height: screenHeight * 0.09,
+                          height: screenHeight * 0.085,
                           child: Text(
                             'PDRB ADHK Menurut Lap. Usaha (dengan Migas)',
                             style: TextStyle(
@@ -454,7 +454,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                         Container(
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
-                          height: screenHeight * 0.09,
+                          height: screenHeight * 0.085,
                           child: Text(
                             'Distribusi PDRB ADHB Menurut Lapangan Usaha',
                             style: TextStyle(
@@ -505,7 +505,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                         Container(
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
-                          height: screenHeight * 0.09,
+                          height: screenHeight * 0.085,
                           child: Text(
                             'Sumber Pertumbuhan PDRB ADHK (dengan Migas)',
                             style: TextStyle(
@@ -555,7 +555,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                         Container(
                           alignment: Alignment.center,
                           width: screenWidth * 0.80,
-                          height: screenHeight * 0.09,
+                          height: screenHeight * 0.085,
                           child: Text(
                             'Laju Pertumbuhan PDRB ADHK (dengan Migas)',
                             style: TextStyle(
