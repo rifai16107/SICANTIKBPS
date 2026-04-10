@@ -354,7 +354,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                           width: screenWidth * 0.80,
                           height: screenHeight * 0.085,
                           child: Text(
-                            'PDRB ADHB Menurut Lap. Usaha (dengan Migas)',
+                            'PDRB ADHB Menurut Lapangan Usaha',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 12.5,
@@ -405,7 +405,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                           width: screenWidth * 0.80,
                           height: screenHeight * 0.085,
                           child: Text(
-                            'PDRB ADHK Menurut Lap. Usaha (dengan Migas)',
+                            'PDRB ADHK Menurut Lapangan Usaha',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 12.5,
@@ -507,7 +507,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                           width: screenWidth * 0.80,
                           height: screenHeight * 0.085,
                           child: Text(
-                            'Sumber Pertumbuhan PDRB ADHK (dengan Migas)',
+                            'Sumber Pertumbuhan PDRB ADHK',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 12.5,
@@ -557,7 +557,7 @@ class _PdrbLuContentState extends State<PdrbLuContent> {
                           width: screenWidth * 0.80,
                           height: screenHeight * 0.085,
                           child: Text(
-                            'Laju Pertumbuhan PDRB ADHK (dengan Migas)',
+                            'Laju Pertumbuhan PDRB ADHK',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 12.5,
