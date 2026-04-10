@@ -2,7 +2,7 @@
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/pdrb/pdrb_clp/pdrb_lu/body_grafik_sumber_pertumbadhk.dart';
-import 'package:bps_cilacap/tabel/tabel_distpdrbadhk_migas.dart';
+import 'package:bps_cilacap/tabel/tabel_sumberpertumb.dart';
 import 'package:flutter/material.dart';
 
 class SumberPertumbPdrbAdhk extends StatefulWidget {

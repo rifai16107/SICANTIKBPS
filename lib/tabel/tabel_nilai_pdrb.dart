@@ -410,7 +410,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                     numberFormat: NumberFormat.decimalPattern(),
                             majorGridLines: const MajorGridLines(width: 0),
                             minimum: 0,
-                            maximum: 250,
+                            maximum: 200,
                             interval: 50,
                           ),
                           tooltipBehavior: tooltip,
