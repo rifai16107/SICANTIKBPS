@@ -210,7 +210,8 @@ class _PdrbLapUsState extends State<PdrbLapUs> {
                     horizontal: 2,
                   ),
                   child: const Text(
-                    "PDRB Kabupaten Cilacap ADHB Menurut Lapangan Usaha -Dengan Migas (Trilyun Rp)",
+                    'PDRB Kabupaten Cilacap ADHB\n'
+                    'Menurut Lapangan Usaha(Trilyun Rp)',
                     style: TextStyle(fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
