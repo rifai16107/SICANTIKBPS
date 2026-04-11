@@ -85,7 +85,7 @@ class _GrafikDistPdrbMigasState extends State<GrafikDistPdrbMigas> {
                 child: SfCircularChart(
                   title: ChartTitle(
                     text:
-                        'Distribusi PDRB ADHB Kabupaten Cilacap Menurut Lapangan Usaha Tahun $th1, -Dengan Migas (Persen)',
+                        'Distribusi PDRB ADHB Kabupaten Cilacap Menurut Lapangan Usaha Tahun $th1, (Persen)',
                     // Aligns the chart title to left
                     alignment: ChartAlignment.center,
                     textStyle: const TextStyle(

@@ -143,7 +143,7 @@ class _grafikPdrbAdhkState extends State<grafikPdrbAdhk> {
                         isVisible: true,
                         textStyle: TextStyle(fontSize: 11),
                       ),
-                      name: 'Dengan Migas (Trilyun Rupiah)',
+                      name: 'Nilai PDRB ADHK (Trilyun Rupiah)',
                       width: 3,
                       color: const Color.fromARGB(255, 40, 224, 40),
                     ),

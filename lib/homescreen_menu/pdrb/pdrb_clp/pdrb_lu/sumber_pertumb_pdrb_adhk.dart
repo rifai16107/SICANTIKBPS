@@ -210,7 +210,7 @@ class _SumberPertumbPdrbAdhkState extends State<SumberPertumbPdrbAdhk> {
                     horizontal: 2,
                   ),
                   child: const Text(
-                    "Sumber Pertumbuhan PDRB ADHK Kabupaten Cilacap Menurut Lapangan Usaha -Dengan Migas (Persen)",
+                    "Sumber Pertumbuhan PDRB ADHK Kabupaten Cilacap Menurut Lapangan Usaha (Persen)",
                     style: TextStyle(fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),

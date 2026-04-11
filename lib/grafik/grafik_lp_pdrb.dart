@@ -68,20 +68,14 @@ class _GrafikLPPdrbState extends State<GrafikLPPdrb> {
               double total4 = double.parse(isipdrb[index = 1].total);
               double total5 = double.parse(isipdrb[index = 0].total);
 
-              double totalnonmigas1 = double.parse(isipdrb[index = 9].total);
-              double totalnonmigas2 = double.parse(isipdrb[index = 8].total);
-              double totalnonmigas3 = double.parse(isipdrb[index = 7].total);
-              double totalnonmigas4 = double.parse(isipdrb[index = 6].total);
-              double totalnonmigas5 = double.parse(isipdrb[index = 5].total);
-
               toString();
 
               data = [
-                _ChartData(th1, total1, totalnonmigas1),
-                _ChartData(th2, total2, totalnonmigas2),
-                _ChartData(th3, total3, totalnonmigas3),
-                _ChartData(th4, total4, totalnonmigas4),
-                _ChartData(th5, total5, totalnonmigas5),
+                _ChartData(th1, total1),
+                _ChartData(th2, total2),
+                _ChartData(th3, total3),
+                _ChartData(th4, total4),
+                _ChartData(th5, total5),
               ];
               tooltip = TooltipBehavior(enable: true);
               return SizedBox(
@@ -89,7 +83,8 @@ class _GrafikLPPdrbState extends State<GrafikLPPdrb> {
                 width: screenWidth,
                 child: SfCartesianChart(
                   title: ChartTitle(
-                    text: 'Pertumbuhan PDRB Kabupaten Cilacap ADHK , (Persen)',
+                    text: 'Pertumbuhan PDRB Kabupaten Cilacap\n' 
+                          'Atas Dasar Harga Konstan, (Persen)',
                     // Aligns the chart title to left
                     alignment: ChartAlignment.center,
                     textStyle: const TextStyle(
@@ -101,6 +96,13 @@ class _GrafikLPPdrbState extends State<GrafikLPPdrb> {
                     ),
                   ),
                   primaryXAxis: CategoryAxis(
+                    title: AxisTitle(text: 'Tahun',
+                      textStyle: TextStyle(
+                      fontFamily: 'Roboto',
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                    )),
                     majorGridLines: const MajorGridLines(width: 0),
                     labelStyle: const TextStyle(
                       color: Color.fromARGB(255, 12, 12, 12),
@@ -111,7 +113,7 @@ class _GrafikLPPdrbState extends State<GrafikLPPdrb> {
                   ),
                   legend: Legend(
                     // Visibility of legend
-                    isVisible: true,
+                    isVisible: false,
                     textStyle: const TextStyle(fontSize: 11),
                     toggleSeriesVisibility: true,
                     overflowMode: LegendItemOverflowMode.wrap,
@@ -140,35 +142,14 @@ class _GrafikLPPdrbState extends State<GrafikLPPdrb> {
                       dataLabelSettings: const DataLabelSettings(
                         // Renders the data label
                         isVisible: true,
-                        labelAlignment: ChartDataLabelAlignment.bottom,
+                        labelAlignment: ChartDataLabelAlignment.auto,
                         textStyle: TextStyle(fontSize: 11),
                       ),
-                      name: 'Dengan Migas (Trilyun Rupiah)',
+                      name: 'Pertumbuhan (Persen)',
                       width: 3,
                       color: const Color.fromARGB(255, 40, 224, 40),
                     ),
-                    LineSeries<_ChartData, String>(
-                      dataSource: data,
-                      xValueMapper: (_ChartData data, _) => data.x,
-                      yValueMapper: (_ChartData data, _) => data.y1,
-                      // Sorting based on the specified field
-                      //sortingOrder: SortingOrder.descending,
-                      //sortFieldValueMapper: (_ChartData data, _) =>
-                      //data.y,
-                      markerSettings: const MarkerSettings(
-                        isVisible: true,
-                        shape: DataMarkerType.circle,
-                      ),
-                      dataLabelSettings: const DataLabelSettings(
-                        // Renders the data label
-                        isVisible: true,
-                        labelAlignment: ChartDataLabelAlignment.top,
-                        textStyle: TextStyle(fontSize: 11),
-                      ),
-                      name: 'Tanpa Migas (Trilyun Rupiah)',
-                      width: 3,
-                      color: const Color.fromARGB(255, 241, 31, 31),
-                    ),
+                    
                   ],
                 ),
               );
@@ -185,9 +166,8 @@ class _GrafikLPPdrbState extends State<GrafikLPPdrb> {
 }
 
 class _ChartData {
-  _ChartData(this.x, this.y, this.y1);
+  _ChartData(this.x, this.y);
 
   final String x;
   final double y;
-  final double y1;
 }

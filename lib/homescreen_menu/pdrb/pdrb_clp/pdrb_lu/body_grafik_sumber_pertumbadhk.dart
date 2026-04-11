@@ -179,7 +179,7 @@ class _GrafikSumberPertumbPdrbAdhkState
           Column(
             children: <Widget>[
               SizedBox(
-                height: screenHeight * 0.9,
+                height: screenHeight * 0.95,
                 width: screenWidth * 0.95,
                 child: Column(
                   children: [

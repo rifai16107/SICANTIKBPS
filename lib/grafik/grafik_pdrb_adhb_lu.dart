@@ -144,7 +144,7 @@ class _grafikPdrbAdhbState extends State<grafikPdrbAdhb> {
                         isVisible: true,
                         textStyle: TextStyle(fontSize: 11),
                       ),
-                      name: 'Nilai PDRB (Trilyun Rupiah)',
+                      name: 'Nilai PDRB ADHB (Trilyun Rupiah)',
                       width: 3,
                       color: const Color.fromARGB(255, 40, 224, 40),
                     ),
