@@ -211,7 +211,8 @@ class _DistribusiPdrbState extends State<DistribusiPdrb> {
                     horizontal: 2,
                   ),
                   child: const Text(
-                    "Distribusi PDRB ADHB Kabupaten Cilacap Menurut Lapangan Usaha -Dengan Migas (Persen)",
+                    'Distribusi PDRB ADHB Kabupaten Cilacap\n' 
+                    'Menurut Lapangan Usaha (Persen)',
                     style: TextStyle(fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),

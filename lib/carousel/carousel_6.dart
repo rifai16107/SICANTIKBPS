@@ -309,7 +309,7 @@ class _carouselSlider6State extends State<carouselSlider6> {
                                       const Color.fromARGB(255, 231, 232, 233),
                                   //margin: const EdgeInsets.only(left: 2, top:5),
                                   child: const Text(
-                                    'Dengan Migas (%)',
+                                    '(%)',
                                     style: TextStyle(
                                         fontSize: 13,
                                         fontWeight: FontWeight.bold),

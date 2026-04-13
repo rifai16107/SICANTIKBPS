@@ -238,7 +238,7 @@ class _PdrbContentState extends State<PdrbContent> {
                                 horizontal: 5,
                               ),
                               child: Text(
-                                "Tahun $tahun , PDRB ADHB (Dengan Migas) Kabupaten Cilacap tercatat sebesar ${Format.convertTo(nilaiadhbmigas5, 2)}, sedangkan PDRB ADHK (Dengan Migas) sebesar ${Format.convertTo(nilaiadhkmigas5, 2)} (dalam Juta Rp)",
+                                "Tahun $tahun , PDRB ADHB Kabupaten Cilacap tercatat sebesar ${Format.convertTo(nilaiadhbmigas5, 2)}, sedangkan PDRB ADHK sebesar ${Format.convertTo(nilaiadhkmigas5, 2)} (dalam Juta Rp)",
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 15,

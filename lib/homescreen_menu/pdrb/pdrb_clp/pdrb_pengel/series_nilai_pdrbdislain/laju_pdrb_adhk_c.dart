@@ -41,10 +41,8 @@ class _LajuPdrbAdhkCState extends State<LajuPdrbAdhkC> {
                 );
                 double kons_pem_n1 = double.parse(isipdrb[index = 6].kons_pem);
                 double pmtb_n1 = double.parse(isipdrb[index = 6].pmtb);
-                double inventori_n1 = double.parse(
-                  isipdrb[index = 6].inventori,
-                );
-                double ekspor_n1 = double.parse(isipdrb[index = 6].ekspor);
+                String inventori_n1 = isipdrb[index = 6].inventori;
+                String ekspor_n1 = isipdrb[index = 6].ekspor;
                 double total_n1 = double.parse(isipdrb[index = 6].total);
                 String tahun_n1 = isipdrb[index = 6].tahun;
 
@@ -57,10 +55,8 @@ class _LajuPdrbAdhkCState extends State<LajuPdrbAdhkC> {
                 );
                 double kons_pem_n0 = double.parse(isipdrb[index = 5].kons_pem);
                 double pmtb_n0 = double.parse(isipdrb[index = 5].pmtb);
-                double inventori_n0 = double.parse(
-                  isipdrb[index = 5].inventori,
-                );
-                double ekspor_n0 = double.parse(isipdrb[index = 5].ekspor);
+                String inventori_n0 = isipdrb[index = 5].inventori;
+                String ekspor_n0 = isipdrb[index = 5].ekspor;
                 double total_n0 = double.parse(isipdrb[index = 5].total);
                 String tahun_n0 = isipdrb[index = 5].tahun;
 
@@ -424,7 +420,7 @@ class _LajuPdrbAdhkCState extends State<LajuPdrbAdhkC> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(inventori_n1, 2),
+                                          inventori_n1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -442,7 +438,7 @@ class _LajuPdrbAdhkCState extends State<LajuPdrbAdhkC> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(inventori_n0, 2),
+                                          inventori_n0,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -484,7 +480,7 @@ class _LajuPdrbAdhkCState extends State<LajuPdrbAdhkC> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(ekspor_n1, 2),
+                                          ekspor_n1,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -502,7 +498,7 @@ class _LajuPdrbAdhkCState extends State<LajuPdrbAdhkC> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(ekspor_n0, 2),
+                                          ekspor_n0,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontWeight: FontWeight.normal,

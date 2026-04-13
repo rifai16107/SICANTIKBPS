@@ -40,10 +40,8 @@ class _LajuPdrbAdhkAState extends State<LajuPdrbAdhkA> {
                 );
                 double kons_pem_n4 = double.parse(isipdrb[index = 9].kons_pem);
                 double pmtb_n4 = double.parse(isipdrb[index = 9].pmtb);
-                double inventori_n4 = double.parse(
-                  isipdrb[index = 9].inventori,
-                );
-                double ekspor_n4 = double.parse(isipdrb[index = 9].ekspor);
+                String inventori_n4 = isipdrb[index = 9].inventori;
+                String ekspor_n4 = isipdrb[index = 9].ekspor;
                 double total_n4 = double.parse(isipdrb[index = 9].total);
                 String tahun_n4 = isipdrb[index = 9].tahun;
 
@@ -313,7 +311,7 @@ class _LajuPdrbAdhkAState extends State<LajuPdrbAdhkA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(inventori_n4, 2),
+                                          inventori_n4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -355,7 +353,7 @@ class _LajuPdrbAdhkAState extends State<LajuPdrbAdhkA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(ekspor_n4, 2),
+                                         ekspor_n4,
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,

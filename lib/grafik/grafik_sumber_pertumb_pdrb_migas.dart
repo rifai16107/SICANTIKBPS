@@ -85,7 +85,7 @@ class _GrafikDistPdrbAdhkMigasState extends State<GrafikDistPdrbAdhkMigas> {
                 child: SfCartesianChart(
                   title: ChartTitle(
                     text:
-                        'Sumber Pertumbuhan PDRB ADHK Kabupaten Cilacap Menurut Lapangan Usaha -Dengan Migas (Persen) Tahun $th1',
+                        'Sumber Pertumbuhan PDRB ADHK Kabupaten Cilacap Menurut Lapangan Usaha (Persen) Tahun $th1',
                     // Aligns the chart title to left
                     alignment: ChartAlignment.center,
                     textStyle: const TextStyle(
@@ -109,7 +109,7 @@ class _GrafikDistPdrbAdhkMigasState extends State<GrafikDistPdrbAdhkMigas> {
                   primaryYAxis: NumericAxis(
                     majorGridLines: const MajorGridLines(width: 1),
                     minimum: -1,
-                    maximum: 5,
+                    maximum: 3,
                     interval: 1,
                   ),
                   tooltipBehavior: tooltip,

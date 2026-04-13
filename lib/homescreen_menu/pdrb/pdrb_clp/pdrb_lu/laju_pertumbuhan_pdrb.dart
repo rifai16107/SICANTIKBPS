@@ -210,7 +210,7 @@ class _LajuPertumbuhanPdrbState extends State<LajuPertumbuhanPdrb> {
                     horizontal: 2,
                   ),
                   child: const Text(
-                    "Laju Pertumbuhan PDRB ADHK Menurut Lapangan Usaha -Dengan Migas (Persen)",
+                    "Laju Pertumbuhan PDRB ADHK Menurut Lapangan Usaha (Persen)",
                     style: TextStyle(fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
