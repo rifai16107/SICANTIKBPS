@@ -74,18 +74,40 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                 double nilaiadhkmigas5 = double.parse(
                   isipdrb[index = 4].nilai_adhk_migas,
                 );
-              toString();
+                toString();
                 data = [
-                  _ChartData(th1, nilaiadhbmigas1/1000, nilaiadhkmigas1/1000),
-                  _ChartData(th2, nilaiadhbmigas2/1000, nilaiadhkmigas2/1000),
-                  _ChartData(th3, nilaiadhbmigas3/1000, nilaiadhkmigas3/1000),
-                  _ChartData(th4, nilaiadhbmigas4/1000, nilaiadhkmigas4/1000),
-                  _ChartData(th5, nilaiadhbmigas5/1000, nilaiadhkmigas5/1000),
+                  _ChartData(
+                    th1,
+                    nilaiadhbmigas1 / 1000,
+                    nilaiadhkmigas1 / 1000,
+                  ),
+                  _ChartData(
+                    th2,
+                    nilaiadhbmigas2 / 1000,
+                    nilaiadhkmigas2 / 1000,
+                  ),
+                  _ChartData(
+                    th3,
+                    nilaiadhbmigas3 / 1000,
+                    nilaiadhkmigas3 / 1000,
+                  ),
+                  _ChartData(
+                    th4,
+                    nilaiadhbmigas4 / 1000,
+                    nilaiadhkmigas4 / 1000,
+                  ),
+                  _ChartData(
+                    th5,
+                    nilaiadhbmigas5 / 1000,
+                    nilaiadhkmigas5 / 1000,
+                  ),
                 ];
                 tooltip = TooltipBehavior(enable: true);
-              
-              return Container(
-                  padding: const EdgeInsets.all(2),//padding: const EdgeInsets.all(2),
+
+                return Container(
+                  padding: const EdgeInsets.all(
+                    2,
+                  ), //padding: const EdgeInsets.all(2),
                   child: Column(
                     children: [
                       Container(
@@ -99,263 +121,281 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                     SizedBox(
-                      child: Column(
-                        children: [
-                      Row(
-                        children: [
-                          Flexible(
-                            flex: 2,
-                            fit: FlexFit.tight,
-                            child: Container(
-                              height: screenHeight * 0.05,
-                              color: Colors.orange,
-                              child: const Center(
-                                child: Text(
-                                  "Tahun",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
+                      SizedBox(
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Flexible(
+                                  flex: 2,
+                                  fit: FlexFit.tight,
+                                  child: Container(
+                                    height: screenHeight * 0.05,
+                                    color: Colors.orange,
+                                    child: const Center(
+                                      child: Text(
+                                        "Tahun",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
                                   ),
-                                  textAlign: TextAlign.center,
                                 ),
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            flex: 2,
-                            fit: FlexFit.tight,
-                            child: Container(
-                              height: screenHeight * 0.05,
-                              color: Colors.orange,
-                              child: const Center(
-                                child: Text(
-                                  'PDRB ADHB',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
+                                Flexible(
+                                  flex: 2,
+                                  fit: FlexFit.tight,
+                                  child: Container(
+                                    height: screenHeight * 0.05,
+                                    color: Colors.orange,
+                                    child: const Center(
+                                      child: Text(
+                                        'PDRB ADHB',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
                                   ),
-                                  textAlign: TextAlign.center,
                                 ),
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            flex: 2,
-                            fit: FlexFit.tight,
-                            child: Container(
-                              height: screenHeight * 0.05,
-                              color: Colors.orange,
-                              child: const Center(
-                                child: Text(
-                                  'PDRB ADHK',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
+                                Flexible(
+                                  flex: 2,
+                                  fit: FlexFit.tight,
+                                  child: Container(
+                                    height: screenHeight * 0.05,
+                                    color: Colors.orange,
+                                    child: const Center(
+                                      child: Text(
+                                        'PDRB ADHK',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
                                   ),
-                                  textAlign: TextAlign.center,
                                 ),
+                              ],
+                            ),
+                            // <-- 2020
+                            Container(
+                              color: Colors.transparent,
+                              width: screenWidth * 0.95,
+                              height: screenHeight * 0.045,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    flex: 2,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      th1,
+                                      textAlign: TextAlign.center,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhbmigas1, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhkmigas1, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                          ),
-                          ],
-                      ),
-                      // <-- 2020
-                      Container(
-                        color: Colors.transparent,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th1,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
+                            // <-- 2021
+                            Container(
+                              color: Colors.grey.shade200,
+                              width: screenWidth * 0.95,
+                              height: screenHeight * 0.045,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    flex: 2,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      th2,
+                                      textAlign: TextAlign.center,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhbmigas2, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhkmigas2, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhbmigas1, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
+                            // <-- 2022
+                            Container(
+                              color: Colors.transparent,
+                              width: screenWidth * 0.95,
+                              height: screenHeight * 0.045,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    flex: 2,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      th3,
+                                      textAlign: TextAlign.center,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhbmigas3, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhkmigas3, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas1, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
+                            // <-- 2023
+                            Container(
+                              color: Colors.grey.shade200,
+                              width: screenWidth * 0.95,
+                              height: screenHeight * 0.045,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    flex: 2,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      th4,
+                                      textAlign: TextAlign.center,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhbmigas4, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhkmigas4, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            
+                            // <-- 2024
+                            Container(
+                              color: Colors.transparent,
+                              width: screenWidth * 0.95,
+                              height: screenHeight * 0.040,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    flex: 2,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      th5,
+                                      textAlign: TextAlign.center,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhbmigas5, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 3,
+                                    fit: FlexFit.tight,
+                                    child: Text(
+                                      Format.convertTo(nilaiadhkmigas5, 2),
+                                      textAlign: TextAlign.right,
+                                      style: myTextStyle,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Divider(
+                              color: Color.fromARGB(235, 71, 65, 65),
+                              thickness: 1,
+                            ),
+                            Row(
+                              children: [
+                                Flexible(
+                                  fit: FlexFit.tight,
+                                  flex: 4,
+                                  child: Container(
+                                    margin: const EdgeInsets.symmetric(
+                                      vertical: 2,
+                                    ),
+                                    child: Text(
+                                      'Tahun $th4 merupakan angka sementara\n'
+                                      'Tahun $th5 merupakan angka sangat sementara',
+                                      style: const TextStyle(
+                                        fontSize: 11,
+                                        fontStyle: FontStyle.normal,
+                                      ),
+                                      textAlign: TextAlign.left,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Container(height: 10),
                           ],
                         ),
-                      ),
-                      // <-- 2021
-                      Container(
-                        color: Colors.grey.shade200,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th2,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhbmigas2, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                             Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas2, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            
-                          ],
-                        ),
-                      ),
-                      // <-- 2022
-                      Container(
-                        color: Colors.transparent,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th3,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhbmigas3, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                             Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas3, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      // <-- 2023
-                      Container(
-                        color: Colors.grey.shade200,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th4,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhbmigas4, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                             Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas4, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      // <-- 2024
-                      Container(
-                        color: Colors.transparent,
-                        width: screenWidth * 0.95,
-                        height: screenHeight * 0.045,
-                        child: Row(
-                          children: [
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                th5,
-                                textAlign: TextAlign.center,
-                                style: myTextStyle,
-                              ),
-                            ),
-                            Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhbmigas5, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                             Flexible(
-                              flex: 3,
-                              fit: FlexFit.tight,
-                              child: Text(
-                                Format.convertTo(nilaiadhkmigas5, 2),
-                                textAlign: TextAlign.right,
-                                style: myTextStyle,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Divider(
-                        color: Color.fromARGB(235, 71, 65, 65),
-                        thickness: 1,
-                      ),
-                      Container(
-                       height: screenHeight * 0.010,
-                      ),
-                        ],
-                       ),
                       ),
                       SizedBox(
                         height: screenHeight * 0.45,
@@ -363,7 +403,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                         child: SfCartesianChart(
                           title: ChartTitle(
                             text:
-                                'Nilai PDRB ADHB dan ADHK Kabupaten Cilacap\n' 
+                                'Nilai PDRB ADHB dan ADHK Kabupaten Cilacap\n'
                                 '(Milyar Rp), $th1-$th5',
                             // Aligns the chart title to left
                             alignment: ChartAlignment.center,
@@ -385,29 +425,32 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                           ),
                           primaryYAxis: NumericAxis(
                             title: AxisTitle(
-                      text: '',
-                      textStyle: const TextStyle(
-                        color: Color.fromARGB(255, 10, 10, 10),
-                        fontFamily: 'Roboto',
-                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 11,
-                      ),
-                    ),
-                    axisLabelFormatter: (AxisLabelRenderDetails args) {
-                      if (args.value < 0) {
-                        return ChartAxisLabel(
-                          args.value.abs().toString().replaceAll(
-                            RegExp(r'[-.]0'),
-                            'K',
-                          ),
-                          args.textStyle,
-                        );
-                      }
-                      return ChartAxisLabel('${args.text}K', args.textStyle);
-                    },
-                    //numberFormat: NumberFormat.decimalPattern('en_EN'),
-                    numberFormat: NumberFormat.decimalPattern(),
+                              text: '',
+                              textStyle: const TextStyle(
+                                color: Color.fromARGB(255, 10, 10, 10),
+                                fontFamily: 'Roboto',
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 11,
+                              ),
+                            ),
+                            axisLabelFormatter: (AxisLabelRenderDetails args) {
+                              if (args.value < 0) {
+                                return ChartAxisLabel(
+                                  args.value.abs().toString().replaceAll(
+                                    RegExp(r'[-.]0'),
+                                    'K',
+                                  ),
+                                  args.textStyle,
+                                );
+                              }
+                              return ChartAxisLabel(
+                                '${args.text}K',
+                                args.textStyle,
+                              );
+                            },
+                            //numberFormat: NumberFormat.decimalPattern('en_EN'),
+                            numberFormat: NumberFormat.decimalPattern(),
                             majorGridLines: const MajorGridLines(width: 0),
                             minimum: 0,
                             maximum: 250,
@@ -453,18 +496,18 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
                         ),
                       ),
                       SizedBox(
-                      child: const Text(
-                        " Sentuh legenda untuk mengaktifkan/non aktifkan series",
-                        style: TextStyle(
-                          fontSize: 9, fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.normal,
+                        child: const Text(
+                          " Sentuh legenda untuk mengaktifkan/non aktifkan series",
+                          style: TextStyle(
+                            fontSize: 9,
+                            fontStyle: FontStyle.italic,
+                            fontWeight: FontWeight.normal,
+                          ),
                         ),
                       ),
-                    ),
-                    const Divider(indent: 5, color: Colors.transparent),  
+                      const Divider(indent: 5, color: Colors.transparent),
                     ],
                   ),
-                  
                 );
               },
             );
@@ -478,6 +521,7 @@ class _TabelNilaiPdrbState extends State<TabelNilaiPdrb> {
     );
   }
 }
+
 class _ChartData {
   _ChartData(this.x, this.y, this.y1);
   final String x;

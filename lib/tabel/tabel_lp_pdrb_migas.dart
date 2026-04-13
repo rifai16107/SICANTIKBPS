@@ -164,7 +164,7 @@ class _TabelLPPdrbMigasState extends State<TabelLPPdrbMigas> {
                 return Column(
                   children: [
                     Container(
-                      color: Colors.green,
+                      color: Colors.orange,
                       width: screenWidth * 0.97,
                       height: screenHeight * 0.06,
                       child: Row(
@@ -1427,6 +1427,26 @@ class _TabelLPPdrbMigasState extends State<TabelLPPdrbMigas> {
                           ),
                         ],
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 4,
+                          child: Container(
+                            margin: const EdgeInsets.symmetric(vertical: 2),
+                            child: Text(
+                              'Tahun $th4 merupakan angka sementara\n'
+                              'Tahun $th5 merupakan angka sangat sementara',
+                              style: const TextStyle(
+                                fontSize: 11,
+                                fontStyle: FontStyle.normal,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(

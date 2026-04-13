@@ -13,7 +13,8 @@ RepositoryPdrb repositorypdrb = RepositoryPdrb();
 class _TabelPdrbLUMigasState extends State<TabelPdrbLUMigas> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     final screenWidth = MediaQuery.of(context).size.width;
@@ -26,23 +27,28 @@ class _TabelPdrbLUMigasState extends State<TabelPdrbLUMigas> {
             return ListView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String th1 = isipdrb[index = 4].created_at[0] +
+                String th1 =
+                    isipdrb[index = 4].created_at[0] +
                     isipdrb[index = 4].created_at[1] +
                     isipdrb[index = 4].created_at[2] +
                     isipdrb[index = 4].created_at[3];
-                String th2 = isipdrb[index = 3].created_at[0] +
+                String th2 =
+                    isipdrb[index = 3].created_at[0] +
                     isipdrb[index = 3].created_at[1] +
                     isipdrb[index = 3].created_at[2] +
                     isipdrb[index = 3].created_at[3];
-                String th3 = isipdrb[index = 2].created_at[0] +
+                String th3 =
+                    isipdrb[index = 2].created_at[0] +
                     isipdrb[index = 2].created_at[1] +
                     isipdrb[index = 2].created_at[2] +
                     isipdrb[index = 2].created_at[3];
-                String th4 = isipdrb[index = 1].created_at[0] +
+                String th4 =
+                    isipdrb[index = 1].created_at[0] +
                     isipdrb[index = 1].created_at[1] +
                     isipdrb[index = 1].created_at[2] +
                     isipdrb[index = 1].created_at[3];
-                String th5 = isipdrb[index = 0].created_at[0] +
+                String th5 =
+                    isipdrb[index = 0].created_at[0] +
                     isipdrb[index = 0].created_at[1] +
                     isipdrb[index = 0].created_at[2] +
                     isipdrb[index = 0].created_at[3];
@@ -168,7 +174,7 @@ class _TabelPdrbLUMigasState extends State<TabelPdrbLUMigas> {
                             fit: FlexFit.tight,
                             child: Text(
                               'Lapangan\n'
-                               'Usaha',
+                              'Usaha',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.white,
@@ -1421,14 +1427,37 @@ class _TabelPdrbLUMigasState extends State<TabelPdrbLUMigas> {
                         ],
                       ),
                     ),
+                    Row(
+                      children: [
+                        Flexible(
+                          fit: FlexFit.tight,
+                          flex: 4,
+                          child: Container(
+                            margin: const EdgeInsets.symmetric(vertical: 2),
+                            child: Text(
+                              'Tahun $th4 merupakan angka sementara\n'
+                              'Tahun $th5 merupakan angka sangat sementara',
+                              style: const TextStyle(
+                                fontSize: 11,
+                                fontStyle: FontStyle.normal,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                     Container(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 65, horizontal: 2),
-                        child: const Text(
-                          "     ",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                        )),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 65,
+                        horizontal: 2,
+                      ),
+                      child: const Text(
+                        "     ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ],
                 );
               },
@@ -1437,10 +1466,7 @@ class _TabelPdrbLUMigasState extends State<TabelPdrbLUMigas> {
           if (snapshot.hasError) {
             return const Text('error');
           }
-          return const Center(
-              child: CircularProgressIndicator(
-            strokeWidth: 1,
-          ));
+          return const Center(child: CircularProgressIndicator(strokeWidth: 1));
         },
       ),
     );
