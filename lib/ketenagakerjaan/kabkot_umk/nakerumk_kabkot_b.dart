@@ -2650,10 +2650,10 @@ class _NakerkabkotUmkBState extends State<NakerkabkotUmkB> {
                                 padding: const EdgeInsets.only(
                                   top: 4,
                                   left: 14,
-                                  bottom: 0,
+                                  bottom: 25,
                                 ),
                                 child: const Text(
-                                  "UMK 2026 ditetapkan berdasarkan Keputusan Gubernur Nomor 100.3.3.1/505.",
+                                  "UMK 2026 ditetapkan berdasarkan Keputusan Gubernur Nomor 100.3.3.1/505 Tahun 2025 tanggal 24 Desember 2025.",
                                   style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.normal,

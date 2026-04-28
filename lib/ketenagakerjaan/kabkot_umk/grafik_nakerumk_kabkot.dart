@@ -37,15 +37,16 @@ class ModelNakerKabkotUmk {
   final String umk_n5;
   final String tahun;
 
-  ModelNakerKabkotUmk(
-      {required this.id,
-      required this.wilayah,
-      required this.umk_n1,
-      required this.umk_n2,
-      required this.umk_n3,
-      required this.umk_n4,
-      required this.umk_n5,
-      required this.tahun});
+  ModelNakerKabkotUmk({
+    required this.id,
+    required this.wilayah,
+    required this.umk_n1,
+    required this.umk_n2,
+    required this.umk_n3,
+    required this.umk_n4,
+    required this.umk_n5,
+    required this.tahun,
+  });
 
   factory ModelNakerKabkotUmk.fromJson(Map<String, dynamic> json) {
     return ModelNakerKabkotUmk(
@@ -75,10 +76,12 @@ class _GrafikNakerumkkabkotState extends State<GrafikNakerumkkabkot> {
   late TooltipBehavior tooltip;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
         MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
     return FutureBuilder(
@@ -207,76 +210,79 @@ class _GrafikNakerumkkabkotState extends State<GrafikNakerumkkabkot> {
                 height: screenHeight * 0.9,
                 width: screenWidth,
                 child: SfCartesianChart(
-                    title: ChartTitle(
-                        text: 'UMK Kabupaten/Kota di Jawa Tengah Tahun $thn5',
-                        // Aligns the chart title to left
-                        alignment: ChartAlignment.center,
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 10, 10, 10),
-                          fontFamily: 'Roboto',
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 11,
-                        )),
-                    primaryXAxis: CategoryAxis(
-                        majorGridLines: const MajorGridLines(width: 0),
-                        labelStyle: const TextStyle(
-                          color: Color.fromARGB(255, 12, 12, 12),
-                          fontFamily: 'Roboto',
-                          fontSize: 11,
-                          fontStyle: FontStyle.normal,
-                        )),
-                    legend: Legend(
-                        // Visibility of legend
-                        isVisible: true,
-                        textStyle: const TextStyle(
-                          fontSize: 11,
-                        ),
-                        toggleSeriesVisibility: true,
-                        position: LegendPosition.top),
-                    primaryYAxis: NumericAxis(
-                        title: AxisTitle(
-                            text: 'Nilai UMK (000 Rp)',
-                            textStyle: const TextStyle(
-                              color: Color.fromARGB(255, 10, 10, 10),
-                              fontFamily: 'Roboto',
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 11,
-                            )),
-                        axisLabelFormatter: (AxisLabelRenderDetails args) {
-                          if (args.value < 0) {
-                            return ChartAxisLabel(
-                                '${args.text}K', args.textStyle);
-                          }
-                          return ChartAxisLabel(
-                              '${args.text}K', args.textStyle);
-                          //return ChartAxisLabel(args.text, args.textStyle);
-                        },
-                        //numberFormat: NumberFormat.decimalPattern('vi_VN'),
-                        numberFormat: NumberFormat("###,###.##", "vi_VN"),
-                        majorGridLines: const MajorGridLines(width: 1),
-                        minimum: 0,
-                        maximum: 5500,
-                        interval: 1000),
-                    tooltipBehavior: tooltip,
-                    series: <CartesianSeries>[
-                      BarSeries<_ChartData, String>(
-                        dataSource: data,
-                        xValueMapper: (_ChartData data, _) => data.x,
-                        yValueMapper: (_ChartData data, _) => data.y,
-
-                        // Sorting based on the specified field
-                        sortingOrder: SortingOrder.ascending,
-                        sortFieldValueMapper: (_ChartData data, _) => data.y,
-                        dataLabelSettings: const DataLabelSettings(
-                            // Renders the data label
-                            isVisible: true,
-                            textStyle: TextStyle(fontSize: 10)),
-                        name: 'Nilai UMK (000 Rupiah)',
-                        color: const Color.fromRGBO(9, 0, 136, 1),
+                  title: ChartTitle(
+                    text: 'UMK Kabupaten/Kota di Jawa Tengah Tahun $thn5',
+                    // Aligns the chart title to left
+                    alignment: ChartAlignment.center,
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 10, 10, 10),
+                      fontFamily: 'Roboto',
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 11,
+                    ),
+                  ),
+                  primaryXAxis: CategoryAxis(
+                    majorGridLines: const MajorGridLines(width: 0),
+                    labelStyle: const TextStyle(
+                      color: Color.fromARGB(255, 12, 12, 12),
+                      fontFamily: 'Roboto',
+                      fontSize: 11,
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                  legend: Legend(
+                    // Visibility of legend
+                    isVisible: false,
+                    textStyle: const TextStyle(fontSize: 11),
+                    toggleSeriesVisibility: true,
+                    position: LegendPosition.top,
+                  ),
+                  primaryYAxis: NumericAxis(
+                    title: AxisTitle(
+                      text: 'Nilai UMK (000 Rp)',
+                      textStyle: const TextStyle(
+                        color: Color.fromARGB(255, 10, 10, 10),
+                        fontFamily: 'Roboto',
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 11,
                       ),
-                    ]),
+                    ),
+                    axisLabelFormatter: (AxisLabelRenderDetails args) {
+                      if (args.value < 0) {
+                        return ChartAxisLabel('${args.text}K', args.textStyle);
+                      }
+                      return ChartAxisLabel('${args.text}K', args.textStyle);
+                      //return ChartAxisLabel(args.text, args.textStyle);
+                    },
+                    //numberFormat: NumberFormat.decimalPattern('vi_VN'),
+                    numberFormat: NumberFormat("###,###.##", "vi_VN"),
+                    majorGridLines: const MajorGridLines(width: 1),
+                    minimum: 0,
+                    maximum: 5500,
+                    interval: 1000,
+                  ),
+                  tooltipBehavior: tooltip,
+                  series: <CartesianSeries>[
+                    BarSeries<_ChartData, String>(
+                      dataSource: data,
+                      xValueMapper: (_ChartData data, _) => data.x,
+                      yValueMapper: (_ChartData data, _) => data.y,
+
+                      // Sorting based on the specified field
+                      sortingOrder: SortingOrder.ascending,
+                      sortFieldValueMapper: (_ChartData data, _) => data.y,
+                      dataLabelSettings: const DataLabelSettings(
+                        // Renders the data label
+                        isVisible: true,
+                        textStyle: TextStyle(fontSize: 10),
+                      ),
+                      name: 'Nilai UMK (000 Rupiah)',
+                      color: const Color.fromRGBO(9, 0, 136, 1),
+                    ),
+                  ],
+                ),
               );
             },
           );
@@ -284,10 +290,7 @@ class _GrafikNakerumkkabkotState extends State<GrafikNakerumkkabkot> {
         if (snapshot.hasError) {
           return const Text("Database Error");
         }
-        return const Center(
-            child: CircularProgressIndicator(
-          strokeWidth: 1,
-        ));
+        return const Center(child: CircularProgressIndicator(strokeWidth: 1));
       },
     );
   }

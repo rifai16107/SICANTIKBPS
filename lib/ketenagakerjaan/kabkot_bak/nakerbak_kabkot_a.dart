@@ -4,10 +4,10 @@ import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const NakerkabkotKegiatanA());
+void main() => runApp(const NakerkabkotBakA());
 
-class NakerkabkotKegiatanA extends StatelessWidget {
-  const NakerkabkotKegiatanA({super.key});
+class NakerkabkotBakA extends StatelessWidget {
+  const NakerkabkotBakA({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,8 +43,6 @@ Future<List<Data>> fetchData() async {
 class Data {
   final int id;
   final String wilayah;
-  final String bekerja_n1;
-  final String penganggur_n1;
   final String sekolah_n1;
   final String urusruta_n1;
   final String lainnya_n1;
@@ -53,8 +51,6 @@ class Data {
   Data({
     required this.id,
     required this.wilayah,
-    required this.bekerja_n1,
-    required this.penganggur_n1,
     required this.sekolah_n1,
     required this.urusruta_n1,
     required this.lainnya_n1,
@@ -65,8 +61,6 @@ class Data {
     return Data(
       id: json['id'],
       wilayah: json['wilayah'],
-      bekerja_n1: json['bekerja_n1'],
-      penganggur_n1: json['penganggur_n1'],
       sekolah_n1: json['sekolah_n1'],
       urusruta_n1: json['urusruta_n1'],
       lainnya_n1: json['lainnya_n1'],
@@ -521,7 +515,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                   ),
                   columnSpacing: 10,
                   dataRowMinHeight: screenHeight * 0.028,
-                  dataRowMaxHeight: screenHeight * 0.028,
+                  dataRowMaxHeight: screenHeight * 0.0280,
                   headingTextStyle: const TextStyle(
                     //fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
@@ -537,7 +531,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                       label: SizedBox(
                         width: screenWidth * 0.20,
                         child: const Text(
-                          'Bekerja',
+                          'Sekolah',
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
@@ -553,7 +547,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                       label: SizedBox(
                         width: screenWidth * 0.21,
                         child: const Text(
-                          'Pengangguran',
+                          'Urus Rumah tangga',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
@@ -569,7 +563,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                       label: SizedBox(
                         width: screenWidth * 0.20,
                         child: const Text(
-                          'Bukan Angkatan Kerja',
+                          'Lainnya',
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
@@ -618,7 +612,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         DataCell(
                           Text(
                             (Format.convertTo(
-                              double.tryParse(data.bekerja_n1),
+                              double.tryParse(data.sekolah_n1),
                               0,
                             )),
                             style: const TextStyle(
@@ -631,7 +625,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         DataCell(
                           Text(
                             (Format.convertTo(
-                              double.tryParse(data.penganggur_n1),
+                              double.tryParse(data.urusruta_n1),
                               0,
                             )),
                             style: const TextStyle(
@@ -645,9 +639,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         DataCell(
                           Text(
                             (Format.convertTo(
-                              (double.tryParse(data.sekolah_n1)! +
-                                  double.tryParse(data.urusruta_n1)! +
-                                  double.tryParse(data.lainnya_n1)!),
+                              double.tryParse(data.lainnya_n1),
                               0,
                             )),
                             style: const TextStyle(
@@ -660,9 +652,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         DataCell(
                           Text(
                             (Format.convertTo(
-                              (double.tryParse(data.bekerja_n1)! +
-                                  double.tryParse(data.penganggur_n1)! +
-                                  double.tryParse(data.sekolah_n1)! +
+                              (double.tryParse(data.sekolah_n1)! +
                                   double.tryParse(data.urusruta_n1)! +
                                   double.tryParse(data.lainnya_n1)!),
                               0,
@@ -700,7 +690,7 @@ class CatatanWidget extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return SizedBox(
       width: screenWidth,
-      height: 0.30 * screenHeight,
+      height: 0.25 * screenHeight,
       child: Column(
         children: [
           Column(
@@ -740,33 +730,6 @@ class CatatanWidget extends StatelessWidget {
                     fontSize: 14,
                     color: Colors.blue,
                     fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(1),
-                alignment: Alignment.centerLeft,
-                child: RichText(
-                  textAlign: TextAlign.left,
-                  text: const TextSpan(
-                    text: 'Angkatan Kerja (AK):',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 13,
-                    ),
-                    children: <TextSpan>[
-                      TextSpan(
-                        text:
-                            ' Penduduk Usia 15+ yang Bekerja dan Pengangguran.',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontFamily: 'Roboto',
-                          color: Colors.black,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ),
-                    ],
                   ),
                 ),
               ),

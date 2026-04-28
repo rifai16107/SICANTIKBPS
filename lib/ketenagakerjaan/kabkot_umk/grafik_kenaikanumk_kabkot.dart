@@ -354,7 +354,8 @@ class _GrafikKenaikanumkkabkotState extends State<GrafikKenaikanumkkabkot> {
                 child: SfCartesianChart(
                   title: ChartTitle(
                     text:
-                        'Kenaikan UMK Kabupaten/Kota di Jawa Tengah Tahun $thn4 - $thn5',
+                        'Kenaikan UMK Kabupaten/Kota di Jawa Tengah\n'
+                        'Tahun $thn4 - $thn5',
                     // Aligns the chart title to left
                     alignment: ChartAlignment.center,
                     textStyle: const TextStyle(
@@ -376,7 +377,7 @@ class _GrafikKenaikanumkkabkotState extends State<GrafikKenaikanumkkabkot> {
                   ),
                   legend: Legend(
                     // Visibility of legend
-                    isVisible: true,
+                    isVisible: false,
                     textStyle: const TextStyle(fontSize: 11),
                     toggleSeriesVisibility: true,
                     position: LegendPosition.top,

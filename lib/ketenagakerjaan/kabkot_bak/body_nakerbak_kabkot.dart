@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:bps_cilacap/ketenagakerjaan/kabkot_bak/nakerbak_kabkot_a.dart';
 import 'package:bps_cilacap/ketenagakerjaan/kabkot_bak/nakerbak_kabkot_b.dart';
 import 'package:bps_cilacap/ketenagakerjaan/kabkot_bak/nakerbak_kabkot_c.dart';
 import 'package:bps_cilacap/ketenagakerjaan/kabkot_bak/nakerbak_kabkot_d.dart';
@@ -36,13 +37,14 @@ class ModelNakerKabkotBak {
   final String bak_n1;
   final String tahun;
 
-  ModelNakerKabkotBak(
-      {required this.id,
-      required this.wilayah,
-      required this.bekerja_n1,
-      required this.penganggur_n1,
-      required this.bak_n1,
-      required this.tahun});
+  ModelNakerKabkotBak({
+    required this.id,
+    required this.wilayah,
+    required this.bekerja_n1,
+    required this.penganggur_n1,
+    required this.bak_n1,
+    required this.tahun,
+  });
 
   factory ModelNakerKabkotBak.fromJson(Map<String, dynamic> json) {
     return ModelNakerKabkotBak(
@@ -67,7 +69,8 @@ class _BodyNakerKabkotBakState extends State<BodyNakerKabkotBak> {
   RepositoryNakerKabkotBak repositoryNakerKabkot = RepositoryNakerKabkotBak();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -81,14 +84,14 @@ class _BodyNakerKabkotBakState extends State<BodyNakerKabkotBak> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              //String thn1 = isinaker[index = 0].tahun.substring(0, 4);
+              String thn1 = isinaker[index = 0].tahun.substring(0, 4);
               String thn2 = isinaker[index = 0].tahun.substring(5, 9);
               String thn3 = isinaker[index = 0].tahun.substring(10, 14);
               String thn4 = isinaker[index = 0].tahun.substring(15, 19);
               String thn5 = isinaker[index = 0].tahun.substring(20, 24);
 
               return DefaultTabController(
-                length: 4,
+                length: 5,
                 child: Scaffold(
                   appBar: AppBar(
                     backgroundColor: Colors.black,
@@ -102,27 +105,23 @@ class _BodyNakerKabkotBakState extends State<BodyNakerKabkotBak> {
                       unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: thn2,
-                        ),
-                        Tab(
-                          text: thn3,
-                        ),
-                        Tab(
-                          text: thn4,
-                        ),
-                        Tab(
-                          text: thn5,
-                        ),
+                        Tab(text: thn1),
+                        Tab(text: thn2),
+                        Tab(text: thn3),
+                        Tab(text: thn4),
+                        Tab(text: thn5),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    NakerkabkotBakB(),
-                    NakerkabkotBakC(),
-                    NakerkabkotBakD(),
-                    NakerkabkotBakE(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      NakerkabkotBakA(),
+                      NakerkabkotBakB(),
+                      NakerkabkotBakC(),
+                      NakerkabkotBakD(),
+                      NakerkabkotBakE(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -131,11 +130,7 @@ class _BodyNakerKabkotBakState extends State<BodyNakerKabkotBak> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );
