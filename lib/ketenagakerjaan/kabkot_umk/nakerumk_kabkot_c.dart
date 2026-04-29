@@ -39,6 +39,7 @@ class ModelNakerKabkotUmk {
   final String umk_n4;
   final String umk_n5;
   final String tahun;
+  String keterangan;
 
   ModelNakerKabkotUmk({
     required this.id,
@@ -49,6 +50,7 @@ class ModelNakerKabkotUmk {
     required this.umk_n4,
     required this.umk_n5,
     required this.tahun,
+    required this.keterangan,
   });
 
   factory ModelNakerKabkotUmk.fromJson(Map<String, dynamic> json) {
@@ -61,6 +63,7 @@ class ModelNakerKabkotUmk {
       umk_n4: json['umk_n4'],
       umk_n5: json['umk_n5'],
       tahun: json['tahun'],
+      keterangan: json['keterangan'],
     );
   }
 }
@@ -202,6 +205,7 @@ class _NakerkabkotUmkCState extends State<NakerkabkotUmkC> {
 
                 String thn4 = isinaker[index = 0].tahun.substring(15, 19);
                 String thn5 = isinaker[index = 0].tahun.substring(20, 24);
+                String keterangan = isinaker[index = 0].keterangan;
 
                 return Scaffold(
                   body: Column(
@@ -2654,8 +2658,8 @@ class _NakerkabkotUmkCState extends State<NakerkabkotUmkC> {
                                   left: 14,
                                   bottom: 85,
                                 ),
-                                child: const Text(
-                                  "UMK 2026 ditetapkan berdasarkan Keputusan Gubernur Nomor 100.3.3.1/505 Tahun 2025 tanggal 24 Desember 2025.",
+                                child: Text(
+                                  keterangan,
                                   style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.normal,

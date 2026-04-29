@@ -42,7 +42,7 @@ class _SeriesNakerkabkotUpah extends State<SeriesNakerkabkotUpah> {
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 0, horizontal: 2),
                   child: Text(
-                    "Rata-Rata Upah Buruh/Karyawan/Pegawai Sebulan Menurut Jenis Kelamin dan Kabupaten/Kota di Provinsi Jawa Tengah (Rupiah)",
+                    "Rata-Rata Upah Buruh/Karyawan/Pegawai Sebulan Menurut Jenis Kelamin dan Kabupaten/Kota di Provinsi Jawa Tengah (Ribuan Rupiah)",
                     style: TextStyle(color: Colors.white, fontSize: 14),
                     textAlign: TextAlign.center,
                   ),

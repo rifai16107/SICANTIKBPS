@@ -124,116 +124,152 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                 String kab35 = "76. " + isinaker[index = 34].wilayah;
                 String kab36 = "    " + isinaker[index = 35].wilayah;
 
-                double lk_1 = double.parse(isinaker[index = 0].lk_n1);
-                double lk_2 = double.parse(isinaker[index = 1].lk_n1);
-                double lk_3 = double.parse(isinaker[index = 2].lk_n1);
-                double lk_4 = double.parse(isinaker[index = 3].lk_n1);
-                double lk_5 = double.parse(isinaker[index = 4].lk_n1);
-                double lk_6 = double.parse(isinaker[index = 5].lk_n1);
-                double lk_7 = double.parse(isinaker[index = 6].lk_n1);
-                double lk_8 = double.parse(isinaker[index = 7].lk_n1);
-                double lk_9 = double.parse(isinaker[index = 8].lk_n1);
-                double lk_10 = double.parse(isinaker[index = 9].lk_n1);
-                double lk_11 = double.parse(isinaker[index = 10].lk_n1);
-                double lk_12 = double.parse(isinaker[index = 11].lk_n1);
-                double lk_13 = double.parse(isinaker[index = 12].lk_n1);
-                double lk_14 = double.parse(isinaker[index = 13].lk_n1);
-                double lk_15 = double.parse(isinaker[index = 14].lk_n1);
-                double lk_16 = double.parse(isinaker[index = 15].lk_n1);
-                double lk_17 = double.parse(isinaker[index = 16].lk_n1);
-                double lk_18 = double.parse(isinaker[index = 17].lk_n1);
-                double lk_19 = double.parse(isinaker[index = 18].lk_n1);
-                double lk_20 = double.parse(isinaker[index = 19].lk_n1);
-                double lk_21 = double.parse(isinaker[index = 20].lk_n1);
-                double lk_22 = double.parse(isinaker[index = 21].lk_n1);
-                double lk_23 = double.parse(isinaker[index = 22].lk_n1);
-                double lk_24 = double.parse(isinaker[index = 23].lk_n1);
-                double lk_25 = double.parse(isinaker[index = 24].lk_n1);
-                double lk_26 = double.parse(isinaker[index = 25].lk_n1);
-                double lk_27 = double.parse(isinaker[index = 26].lk_n1);
-                double lk_28 = double.parse(isinaker[index = 27].lk_n1);
-                double lk_29 = double.parse(isinaker[index = 28].lk_n1);
-                double lk_30 = double.parse(isinaker[index = 29].lk_n1);
-                double lk_31 = double.parse(isinaker[index = 30].lk_n1);
-                double lk_32 = double.parse(isinaker[index = 31].lk_n1);
-                double lk_33 = double.parse(isinaker[index = 32].lk_n1);
-                double lk_34 = double.parse(isinaker[index = 33].lk_n1);
-                double lk_35 = double.parse(isinaker[index = 34].lk_n1);
-                double lk_36 = double.parse(isinaker[index = 35].lk_n1);
+                double lk_1 = double.parse(isinaker[index = 0].lk_n1) / 1000;
+                double lk_2 = double.parse(isinaker[index = 1].lk_n1) / 1000;
+                double lk_3 = double.parse(isinaker[index = 2].lk_n1) / 1000;
+                double lk_4 = double.parse(isinaker[index = 3].lk_n1) / 1000;
+                double lk_5 = double.parse(isinaker[index = 4].lk_n1) / 1000;
+                double lk_6 = double.parse(isinaker[index = 5].lk_n1) / 1000;
+                double lk_7 = double.parse(isinaker[index = 6].lk_n1) / 1000;
+                double lk_8 = double.parse(isinaker[index = 7].lk_n1) / 1000;
+                double lk_9 = double.parse(isinaker[index = 8].lk_n1) / 1000;
+                double lk_10 = double.parse(isinaker[index = 9].lk_n1) / 1000;
+                double lk_11 = double.parse(isinaker[index = 10].lk_n1) / 1000;
+                double lk_12 = double.parse(isinaker[index = 11].lk_n1) / 1000;
+                double lk_13 = double.parse(isinaker[index = 12].lk_n1) / 1000;
+                double lk_14 = double.parse(isinaker[index = 13].lk_n1) / 1000;
+                double lk_15 = double.parse(isinaker[index = 14].lk_n1) / 1000;
+                double lk_16 = double.parse(isinaker[index = 15].lk_n1) / 1000;
+                double lk_17 = double.parse(isinaker[index = 16].lk_n1) / 1000;
+                double lk_18 = double.parse(isinaker[index = 17].lk_n1) / 1000;
+                double lk_19 = double.parse(isinaker[index = 18].lk_n1) / 1000;
+                double lk_20 = double.parse(isinaker[index = 19].lk_n1) / 1000;
+                double lk_21 = double.parse(isinaker[index = 20].lk_n1) / 1000;
+                double lk_22 = double.parse(isinaker[index = 21].lk_n1) / 1000;
+                double lk_23 = double.parse(isinaker[index = 22].lk_n1) / 1000;
+                double lk_24 = double.parse(isinaker[index = 23].lk_n1) / 1000;
+                double lk_25 = double.parse(isinaker[index = 24].lk_n1) / 1000;
+                double lk_26 = double.parse(isinaker[index = 25].lk_n1) / 1000;
+                double lk_27 = double.parse(isinaker[index = 26].lk_n1) / 1000;
+                double lk_28 = double.parse(isinaker[index = 27].lk_n1) / 1000;
+                double lk_29 = double.parse(isinaker[index = 28].lk_n1) / 1000;
+                double lk_30 = double.parse(isinaker[index = 29].lk_n1) / 1000;
+                double lk_31 = double.parse(isinaker[index = 30].lk_n1) / 1000;
+                double lk_32 = double.parse(isinaker[index = 31].lk_n1) / 1000;
+                double lk_33 = double.parse(isinaker[index = 32].lk_n1) / 1000;
+                double lk_34 = double.parse(isinaker[index = 33].lk_n1) / 1000;
+                double lk_35 = double.parse(isinaker[index = 34].lk_n1) / 1000;
+                double lk_36 = double.parse(isinaker[index = 35].lk_n1) / 1000;
 
-                double pr_1 = double.parse(isinaker[index = 0].pr_n1);
-                double pr_2 = double.parse(isinaker[index = 1].pr_n1);
-                double pr_3 = double.parse(isinaker[index = 2].pr_n1);
-                double pr_4 = double.parse(isinaker[index = 3].pr_n1);
-                double pr_5 = double.parse(isinaker[index = 4].pr_n1);
-                double pr_6 = double.parse(isinaker[index = 5].pr_n1);
-                double pr_7 = double.parse(isinaker[index = 6].pr_n1);
-                double pr_8 = double.parse(isinaker[index = 7].pr_n1);
-                double pr_9 = double.parse(isinaker[index = 8].pr_n1);
-                double pr_10 = double.parse(isinaker[index = 9].pr_n1);
-                double pr_11 = double.parse(isinaker[index = 10].pr_n1);
-                double pr_12 = double.parse(isinaker[index = 11].pr_n1);
-                double pr_13 = double.parse(isinaker[index = 12].pr_n1);
-                double pr_14 = double.parse(isinaker[index = 13].pr_n1);
-                double pr_15 = double.parse(isinaker[index = 14].pr_n1);
-                double pr_16 = double.parse(isinaker[index = 15].pr_n1);
-                double pr_17 = double.parse(isinaker[index = 16].pr_n1);
-                double pr_18 = double.parse(isinaker[index = 17].pr_n1);
-                double pr_19 = double.parse(isinaker[index = 18].pr_n1);
-                double pr_20 = double.parse(isinaker[index = 19].pr_n1);
-                double pr_21 = double.parse(isinaker[index = 20].pr_n1);
-                double pr_22 = double.parse(isinaker[index = 21].pr_n1);
-                double pr_23 = double.parse(isinaker[index = 22].pr_n1);
-                double pr_24 = double.parse(isinaker[index = 23].pr_n1);
-                double pr_25 = double.parse(isinaker[index = 24].pr_n1);
-                double pr_26 = double.parse(isinaker[index = 25].pr_n1);
-                double pr_27 = double.parse(isinaker[index = 26].pr_n1);
-                double pr_28 = double.parse(isinaker[index = 27].pr_n1);
-                double pr_29 = double.parse(isinaker[index = 28].pr_n1);
-                double pr_30 = double.parse(isinaker[index = 29].pr_n1);
-                double pr_31 = double.parse(isinaker[index = 30].pr_n1);
-                double pr_32 = double.parse(isinaker[index = 31].pr_n1);
-                double pr_33 = double.parse(isinaker[index = 32].pr_n1);
-                double pr_34 = double.parse(isinaker[index = 33].pr_n1);
-                double pr_35 = double.parse(isinaker[index = 34].pr_n1);
-                double pr_36 = double.parse(isinaker[index = 35].pr_n1);
+                double pr_1 = double.parse(isinaker[index = 0].pr_n1) / 1000;
+                double pr_2 = double.parse(isinaker[index = 1].pr_n1) / 1000;
+                double pr_3 = double.parse(isinaker[index = 2].pr_n1) / 1000;
+                double pr_4 = double.parse(isinaker[index = 3].pr_n1) / 1000;
+                double pr_5 = double.parse(isinaker[index = 4].pr_n1) / 1000;
+                double pr_6 = double.parse(isinaker[index = 5].pr_n1) / 1000;
+                double pr_7 = double.parse(isinaker[index = 6].pr_n1) / 1000;
+                double pr_8 = double.parse(isinaker[index = 7].pr_n1) / 1000;
+                double pr_9 = double.parse(isinaker[index = 8].pr_n1) / 1000;
+                double pr_10 = double.parse(isinaker[index = 9].pr_n1) / 1000;
+                double pr_11 = double.parse(isinaker[index = 10].pr_n1) / 1000;
+                double pr_12 = double.parse(isinaker[index = 11].pr_n1) / 1000;
+                double pr_13 = double.parse(isinaker[index = 12].pr_n1) / 1000;
+                double pr_14 = double.parse(isinaker[index = 13].pr_n1) / 1000;
+                double pr_15 = double.parse(isinaker[index = 14].pr_n1) / 1000;
+                double pr_16 = double.parse(isinaker[index = 15].pr_n1) / 1000;
+                double pr_17 = double.parse(isinaker[index = 16].pr_n1) / 1000;
+                double pr_18 = double.parse(isinaker[index = 17].pr_n1) / 1000;
+                double pr_19 = double.parse(isinaker[index = 18].pr_n1) / 1000;
+                double pr_20 = double.parse(isinaker[index = 19].pr_n1) / 1000;
+                double pr_21 = double.parse(isinaker[index = 20].pr_n1) / 1000;
+                double pr_22 = double.parse(isinaker[index = 21].pr_n1) / 1000;
+                double pr_23 = double.parse(isinaker[index = 22].pr_n1) / 1000;
+                double pr_24 = double.parse(isinaker[index = 23].pr_n1) / 1000;
+                double pr_25 = double.parse(isinaker[index = 24].pr_n1) / 1000;
+                double pr_26 = double.parse(isinaker[index = 25].pr_n1) / 1000;
+                double pr_27 = double.parse(isinaker[index = 26].pr_n1) / 1000;
+                double pr_28 = double.parse(isinaker[index = 27].pr_n1) / 1000;
+                double pr_29 = double.parse(isinaker[index = 28].pr_n1) / 1000;
+                double pr_30 = double.parse(isinaker[index = 29].pr_n1) / 1000;
+                double pr_31 = double.parse(isinaker[index = 30].pr_n1) / 1000;
+                double pr_32 = double.parse(isinaker[index = 31].pr_n1) / 1000;
+                double pr_33 = double.parse(isinaker[index = 32].pr_n1) / 1000;
+                double pr_34 = double.parse(isinaker[index = 33].pr_n1) / 1000;
+                double pr_35 = double.parse(isinaker[index = 34].pr_n1) / 1000;
+                double pr_36 = double.parse(isinaker[index = 35].pr_n1) / 1000;
 
-                double lkpr_1 = double.parse(isinaker[index = 0].lkpr_n1);
-                double lkpr_2 = double.parse(isinaker[index = 1].lkpr_n1);
-                double lkpr_3 = double.parse(isinaker[index = 2].lkpr_n1);
-                double lkpr_4 = double.parse(isinaker[index = 3].lkpr_n1);
-                double lkpr_5 = double.parse(isinaker[index = 4].lkpr_n1);
-                double lkpr_6 = double.parse(isinaker[index = 5].lkpr_n1);
-                double lkpr_7 = double.parse(isinaker[index = 6].lkpr_n1);
-                double lkpr_8 = double.parse(isinaker[index = 7].lkpr_n1);
-                double lkpr_9 = double.parse(isinaker[index = 8].lkpr_n1);
-                double lkpr_10 = double.parse(isinaker[index = 9].lkpr_n1);
-                double lkpr_11 = double.parse(isinaker[index = 10].lkpr_n1);
-                double lkpr_12 = double.parse(isinaker[index = 11].lkpr_n1);
-                double lkpr_13 = double.parse(isinaker[index = 12].lkpr_n1);
-                double lkpr_14 = double.parse(isinaker[index = 13].lkpr_n1);
-                double lkpr_15 = double.parse(isinaker[index = 14].lkpr_n1);
-                double lkpr_16 = double.parse(isinaker[index = 15].lkpr_n1);
-                double lkpr_17 = double.parse(isinaker[index = 16].lkpr_n1);
-                double lkpr_18 = double.parse(isinaker[index = 17].lkpr_n1);
-                double lkpr_19 = double.parse(isinaker[index = 18].lkpr_n1);
-                double lkpr_20 = double.parse(isinaker[index = 19].lkpr_n1);
-                double lkpr_21 = double.parse(isinaker[index = 20].lkpr_n1);
-                double lkpr_22 = double.parse(isinaker[index = 21].lkpr_n1);
-                double lkpr_23 = double.parse(isinaker[index = 22].lkpr_n1);
-                double lkpr_24 = double.parse(isinaker[index = 23].lkpr_n1);
-                double lkpr_25 = double.parse(isinaker[index = 24].lkpr_n1);
-                double lkpr_26 = double.parse(isinaker[index = 25].lkpr_n1);
-                double lkpr_27 = double.parse(isinaker[index = 26].lkpr_n1);
-                double lkpr_28 = double.parse(isinaker[index = 27].lkpr_n1);
-                double lkpr_29 = double.parse(isinaker[index = 28].lkpr_n1);
-                double lkpr_30 = double.parse(isinaker[index = 29].lkpr_n1);
-                double lkpr_31 = double.parse(isinaker[index = 30].lkpr_n1);
-                double lkpr_32 = double.parse(isinaker[index = 31].lkpr_n1);
-                double lkpr_33 = double.parse(isinaker[index = 32].lkpr_n1);
-                double lkpr_34 = double.parse(isinaker[index = 33].lkpr_n1);
-                double lkpr_35 = double.parse(isinaker[index = 34].lkpr_n1);
-                double lkpr_36 = double.parse(isinaker[index = 35].lkpr_n1);
+                double lkpr_1 =
+                    double.parse(isinaker[index = 0].lkpr_n1) / 1000;
+                double lkpr_2 =
+                    double.parse(isinaker[index = 1].lkpr_n1) / 1000;
+                double lkpr_3 =
+                    double.parse(isinaker[index = 2].lkpr_n1) / 1000;
+                double lkpr_4 =
+                    double.parse(isinaker[index = 3].lkpr_n1) / 1000;
+                double lkpr_5 =
+                    double.parse(isinaker[index = 4].lkpr_n1) / 1000;
+                double lkpr_6 =
+                    double.parse(isinaker[index = 5].lkpr_n1) / 1000;
+                double lkpr_7 =
+                    double.parse(isinaker[index = 6].lkpr_n1) / 1000;
+                double lkpr_8 =
+                    double.parse(isinaker[index = 7].lkpr_n1) / 1000;
+                double lkpr_9 =
+                    double.parse(isinaker[index = 8].lkpr_n1) / 1000;
+                double lkpr_10 =
+                    double.parse(isinaker[index = 9].lkpr_n1) / 1000;
+                double lkpr_11 =
+                    double.parse(isinaker[index = 10].lkpr_n1) / 1000;
+                double lkpr_12 =
+                    double.parse(isinaker[index = 11].lkpr_n1) / 1000;
+                double lkpr_13 =
+                    double.parse(isinaker[index = 12].lkpr_n1) / 1000;
+                double lkpr_14 =
+                    double.parse(isinaker[index = 13].lkpr_n1) / 1000;
+                double lkpr_15 =
+                    double.parse(isinaker[index = 14].lkpr_n1) / 1000;
+                double lkpr_16 =
+                    double.parse(isinaker[index = 15].lkpr_n1) / 1000;
+                double lkpr_17 =
+                    double.parse(isinaker[index = 16].lkpr_n1) / 1000;
+                double lkpr_18 =
+                    double.parse(isinaker[index = 17].lkpr_n1) / 1000;
+                double lkpr_19 =
+                    double.parse(isinaker[index = 18].lkpr_n1) / 1000;
+                double lkpr_20 =
+                    double.parse(isinaker[index = 19].lkpr_n1) / 1000;
+                double lkpr_21 =
+                    double.parse(isinaker[index = 20].lkpr_n1) / 1000;
+                double lkpr_22 =
+                    double.parse(isinaker[index = 21].lkpr_n1) / 1000;
+                double lkpr_23 =
+                    double.parse(isinaker[index = 22].lkpr_n1) / 1000;
+                double lkpr_24 =
+                    double.parse(isinaker[index = 23].lkpr_n1) / 1000;
+                double lkpr_25 =
+                    double.parse(isinaker[index = 24].lkpr_n1) / 1000;
+                double lkpr_26 =
+                    double.parse(isinaker[index = 25].lkpr_n1) / 1000;
+                double lkpr_27 =
+                    double.parse(isinaker[index = 26].lkpr_n1) / 1000;
+                double lkpr_28 =
+                    double.parse(isinaker[index = 27].lkpr_n1) / 1000;
+                double lkpr_29 =
+                    double.parse(isinaker[index = 28].lkpr_n1) / 1000;
+                double lkpr_30 =
+                    double.parse(isinaker[index = 29].lkpr_n1) / 1000;
+                double lkpr_31 =
+                    double.parse(isinaker[index = 30].lkpr_n1) / 1000;
+                double lkpr_32 =
+                    double.parse(isinaker[index = 31].lkpr_n1) / 1000;
+                double lkpr_33 =
+                    double.parse(isinaker[index = 32].lkpr_n1) / 1000;
+                double lkpr_34 =
+                    double.parse(isinaker[index = 33].lkpr_n1) / 1000;
+                double lkpr_35 =
+                    double.parse(isinaker[index = 34].lkpr_n1) / 1000;
+                double lkpr_36 =
+                    double.parse(isinaker[index = 35].lkpr_n1) / 1000;
 
                 String keterangan = isinaker[index = 0].keterangan;
 
@@ -380,7 +416,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_1, 0),
+                                          Format.convertTo(lk_1, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -399,7 +435,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_1, 0),
+                                          Format.convertTo(pr_1, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -418,7 +454,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_1, 0),
+                                          Format.convertTo(lkpr_1, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -465,7 +501,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_2, 0),
+                                          Format.convertTo(lk_2, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -484,7 +520,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_2, 0),
+                                          Format.convertTo(pr_2, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -503,7 +539,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_2, 0),
+                                          Format.convertTo(lkpr_2, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -552,7 +588,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_3, 0),
+                                          Format.convertTo(lk_3, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -571,7 +607,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_3, 0),
+                                          Format.convertTo(pr_3, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -590,7 +626,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_3, 0),
+                                          Format.convertTo(lkpr_3, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -637,7 +673,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_4, 0),
+                                          Format.convertTo(lk_4, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -656,7 +692,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_4, 0),
+                                          Format.convertTo(pr_4, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -675,7 +711,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_4, 0),
+                                          Format.convertTo(lkpr_4, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -724,7 +760,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_5, 0),
+                                          Format.convertTo(lk_5, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -743,7 +779,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_5, 0),
+                                          Format.convertTo(pr_5, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -762,7 +798,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_5, 0),
+                                          Format.convertTo(lkpr_5, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -810,7 +846,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_6, 0),
+                                          Format.convertTo(lk_6, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -829,7 +865,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_6, 0),
+                                          Format.convertTo(pr_6, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -848,7 +884,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_6, 0),
+                                          Format.convertTo(lkpr_6, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -897,7 +933,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_7, 0),
+                                          Format.convertTo(lk_7, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -916,7 +952,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_7, 0),
+                                          Format.convertTo(pr_7, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -935,7 +971,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_7, 0),
+                                          Format.convertTo(lkpr_7, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -984,7 +1020,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_8, 0),
+                                          Format.convertTo(lk_8, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1003,7 +1039,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_8, 0),
+                                          Format.convertTo(pr_8, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1022,7 +1058,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_8, 0),
+                                          Format.convertTo(lkpr_8, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1071,7 +1107,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_9, 0),
+                                          Format.convertTo(lk_9, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1090,7 +1126,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_9, 0),
+                                          Format.convertTo(pr_9, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1109,7 +1145,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_9, 0),
+                                          Format.convertTo(lkpr_9, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1158,7 +1194,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_10, 0),
+                                          Format.convertTo(lk_10, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1177,7 +1213,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_10, 0),
+                                          Format.convertTo(pr_10, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1196,7 +1232,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_10, 0),
+                                          Format.convertTo(lkpr_10, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1245,7 +1281,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_11, 0),
+                                          Format.convertTo(lk_11, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1264,7 +1300,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_11, 0),
+                                          Format.convertTo(pr_11, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1283,7 +1319,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_11, 0),
+                                          Format.convertTo(lkpr_11, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1332,7 +1368,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_12, 0),
+                                          Format.convertTo(lk_12, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1351,7 +1387,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_12, 0),
+                                          Format.convertTo(pr_12, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1370,7 +1406,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_12, 0),
+                                          Format.convertTo(lkpr_12, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1419,7 +1455,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_13, 0),
+                                          Format.convertTo(lk_13, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1438,7 +1474,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_13, 0),
+                                          Format.convertTo(pr_13, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1457,7 +1493,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_13, 0),
+                                          Format.convertTo(lkpr_13, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1506,7 +1542,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_14, 0),
+                                          Format.convertTo(lk_14, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1525,7 +1561,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_14, 0),
+                                          Format.convertTo(pr_14, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1544,7 +1580,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_14, 0),
+                                          Format.convertTo(lkpr_14, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1593,7 +1629,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_15, 0),
+                                          Format.convertTo(lk_15, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1612,7 +1648,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_15, 0),
+                                          Format.convertTo(pr_15, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1631,7 +1667,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_15, 0),
+                                          Format.convertTo(lkpr_15, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1680,7 +1716,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_16, 0),
+                                          Format.convertTo(lk_16, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1699,7 +1735,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_16, 0),
+                                          Format.convertTo(pr_16, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1718,7 +1754,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_16, 0),
+                                          Format.convertTo(lkpr_16, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1767,7 +1803,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_17, 0),
+                                          Format.convertTo(lk_17, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1786,7 +1822,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_17, 0),
+                                          Format.convertTo(pr_17, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1805,7 +1841,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_17, 0),
+                                          Format.convertTo(lkpr_17, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1854,7 +1890,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_18, 0),
+                                          Format.convertTo(lk_18, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1873,7 +1909,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_18, 0),
+                                          Format.convertTo(pr_18, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1892,7 +1928,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_18, 0),
+                                          Format.convertTo(lkpr_18, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1941,7 +1977,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_19, 0),
+                                          Format.convertTo(lk_19, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1960,7 +1996,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_19, 0),
+                                          Format.convertTo(pr_19, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -1979,7 +2015,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_19, 0),
+                                          Format.convertTo(lkpr_19, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2028,7 +2064,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_20, 0),
+                                          Format.convertTo(lk_20, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2047,7 +2083,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_20, 0),
+                                          Format.convertTo(pr_20, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2066,7 +2102,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_20, 0),
+                                          Format.convertTo(lkpr_20, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2115,7 +2151,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_21, 0),
+                                          Format.convertTo(lk_21, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2134,7 +2170,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_21, 0),
+                                          Format.convertTo(pr_21, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2153,7 +2189,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_21, 0),
+                                          Format.convertTo(lkpr_21, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2202,7 +2238,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_22, 0),
+                                          Format.convertTo(lk_22, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2221,7 +2257,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_22, 0),
+                                          Format.convertTo(pr_22, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2240,7 +2276,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_22, 0),
+                                          Format.convertTo(lkpr_22, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2289,7 +2325,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_23, 0),
+                                          Format.convertTo(lk_23, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2308,7 +2344,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_23, 0),
+                                          Format.convertTo(pr_23, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2327,7 +2363,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_23, 0),
+                                          Format.convertTo(lkpr_23, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2374,7 +2410,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_24, 0),
+                                          Format.convertTo(lk_24, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2393,7 +2429,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_24, 0),
+                                          Format.convertTo(pr_24, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2412,7 +2448,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_24, 0),
+                                          Format.convertTo(lkpr_24, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2459,7 +2495,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_25, 0),
+                                          Format.convertTo(lk_25, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2478,7 +2514,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_25, 0),
+                                          Format.convertTo(pr_25, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2497,7 +2533,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_25, 0),
+                                          Format.convertTo(lkpr_25, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2544,7 +2580,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_26, 0),
+                                          Format.convertTo(lk_26, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2563,7 +2599,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_26, 0),
+                                          Format.convertTo(pr_26, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2582,7 +2618,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_26, 0),
+                                          Format.convertTo(lkpr_26, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2629,7 +2665,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_27, 0),
+                                          Format.convertTo(lk_27, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2648,7 +2684,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_27, 0),
+                                          Format.convertTo(pr_27, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2667,7 +2703,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_27, 0),
+                                          Format.convertTo(lkpr_27, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2714,7 +2750,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_28, 0),
+                                          Format.convertTo(lk_28, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2733,7 +2769,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_28, 0),
+                                          Format.convertTo(pr_28, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2752,7 +2788,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_28, 0),
+                                          Format.convertTo(lkpr_28, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2799,7 +2835,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_29, 0),
+                                          Format.convertTo(lk_29, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2818,7 +2854,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_29, 0),
+                                          Format.convertTo(pr_29, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2837,7 +2873,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_29, 0),
+                                          Format.convertTo(lkpr_29, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2884,7 +2920,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_30, 0),
+                                          Format.convertTo(lk_30, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2903,7 +2939,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_30, 0),
+                                          Format.convertTo(pr_30, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2922,7 +2958,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_30, 0),
+                                          Format.convertTo(lkpr_30, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2969,7 +3005,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_31, 0),
+                                          Format.convertTo(lk_31, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -2988,7 +3024,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_31, 0),
+                                          Format.convertTo(pr_31, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3007,7 +3043,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_31, 0),
+                                          Format.convertTo(lkpr_31, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3054,7 +3090,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_32, 0),
+                                          Format.convertTo(lk_32, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3073,7 +3109,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_32, 0),
+                                          Format.convertTo(pr_32, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3092,7 +3128,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_32, 0),
+                                          Format.convertTo(lkpr_32, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3139,7 +3175,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_33, 0),
+                                          Format.convertTo(lk_33, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3158,7 +3194,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_33, 0),
+                                          Format.convertTo(pr_33, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3177,7 +3213,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_33, 0),
+                                          Format.convertTo(lkpr_33, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3224,7 +3260,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_34, 0),
+                                          Format.convertTo(lk_34, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3243,7 +3279,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_34, 0),
+                                          Format.convertTo(pr_34, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3262,7 +3298,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_34, 0),
+                                          Format.convertTo(lkpr_34, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3309,7 +3345,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_35, 0),
+                                          Format.convertTo(lk_35, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3328,7 +3364,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_35, 0),
+                                          Format.convertTo(pr_35, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3347,7 +3383,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_35, 0),
+                                          Format.convertTo(lkpr_35, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3395,7 +3431,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lk_36, 0),
+                                          Format.convertTo(lk_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3414,7 +3450,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(pr_36, 0),
+                                          Format.convertTo(pr_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
@@ -3434,7 +3470,7 @@ class _NakerkabkotUpahAState extends State<NakerkabkotUpahA> {
                                           bottom: 1,
                                         ),
                                         child: Text(
-                                          Format.convertTo(lkpr_36, 0),
+                                          Format.convertTo(lkpr_36, 2),
                                           textAlign: TextAlign.right,
                                           style: const TextStyle(
                                             fontSize: 13,
