@@ -33,18 +33,19 @@ class ModelBknAngkatanKerja {
 
   factory ModelBknAngkatanKerja.fromJson(Map<String, dynamic> json) {
     return ModelBknAngkatanKerja(
-        id: json['id'],
-        gender: json['gender'],
-        tahun: json['tahun'],
-        angkatan_kerja: json['angkatan_kerja'],
-        bekerja: json['bekerja'],
-        pengangguran: json['pengangguran'],
-        bkn_angkatan_kerja: json['bkn_angkatan_kerja'],
-        sekolah: json['sekolah'],
-        urus_ruta: json['urus_ruta'],
-        lainnya: json['lainnya'],
-        jumlah: json['jumlah'],
-        created_at: json['created_at'],
-        updated_at: json['updated_at']);
+      id: json['id'],
+      gender: json['gender'],
+      tahun: json['tahun'],
+      angkatan_kerja: json['angkatan_kerja'],
+      bekerja: json['bekerja'],
+      pengangguran: json['pengangguran'],
+      bkn_angkatan_kerja: json['bkn_angkatan_kerja'],
+      sekolah: json['sekolah'],
+      urus_ruta: json['urus_ruta'],
+      lainnya: json['lainnya'],
+      jumlah: json['jumlah'],
+      created_at: json['created_at'],
+      updated_at: json['updated_at'],
+    );
   }
 }

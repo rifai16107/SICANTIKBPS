@@ -12,7 +12,10 @@ class RepositoryBknAngkatanKerja {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isibknangkerja) => ModelBknAngkatanKerja.fromJson(isibknangkerja))
+            .map(
+              (isibknangkerja) =>
+                  ModelBknAngkatanKerja.fromJson(isibknangkerja),
+            )
             .toList();
       }
     } catch (isibknangkerja) {
