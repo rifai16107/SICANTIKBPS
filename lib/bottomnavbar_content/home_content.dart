@@ -125,6 +125,289 @@ class _HomeContentState extends State<HomeContent> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
+                      // IPKP dan IPAK
+                      Container(
+                        width: screenWidth * 0.94,
+                        height: screenHeight * 0.19,
+                        color: const Color.fromARGB(0, 243, 235, 235),
+                        child: Row(
+                          children: [
+                            Container(
+                              alignment: Alignment.bottomCenter,
+                              padding: const EdgeInsets.only(
+                                left: 5,
+                                top: 5,
+                                right: 5,
+                              ),
+                              width: screenWidth * 0.47,
+                              height: screenHeight * 0.19,
+                              child: Material(
+                                //color: const Color.fromARGB(255, 232, 240, 248),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                                elevation: 10,
+                                clipBehavior: Clip.antiAliasWithSaveLayer,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromARGB(
+                                      255,
+                                      180,
+                                      179,
+                                      175,
+                                    ),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: InkWell(
+                                    splashColor: Colors.blueGrey,
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return const jumlahPenduduk();
+                                          },
+                                        ),
+                                      );
+                                    },
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Container(
+                                          width: screenWidth * 0.47,
+                                          height: screenHeight * 0.09,
+                                          padding: const EdgeInsets.only(
+                                            left: 0,
+                                            top: 0,
+                                            right: 25,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            252,
+                                            251,
+                                            249,
+                                          ),
+                                          child: const Text(
+                                            'INDEKS\n'
+                                            'PERSEPSI\n'
+                                            'KUALITAS\n'
+                                            'PELAYANAN',
+                                            style: TextStyle(
+                                              color: Color.fromARGB(
+                                                255,
+                                                17,
+                                                17,
+                                                17,
+                                              ),
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 12,
+                                            ),
+                                            textAlign: TextAlign.right,
+                                          ),
+                                        ),
+                                        Container(
+                                          width: screenWidth * 0.47,
+                                          height: screenHeight * 0.05,
+                                          padding: const EdgeInsets.only(
+                                            left: 0,
+                                            top: 2,
+                                            right: 25,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            252,
+                                            251,
+                                            249,
+                                          ),
+                                          child: const Text(
+                                            'IPKP',
+                                            style: TextStyle(
+                                              color: Color.fromARGB(
+                                                255,
+                                                131,
+                                                66,
+                                                66,
+                                              ),
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 24,
+                                            ),
+                                            textAlign: TextAlign.right,
+                                          ),
+                                        ),
+                                        Container(
+                                          width: screenWidth * 0.47,
+                                          height: screenHeight * 0.04,
+                                          padding: const EdgeInsets.only(
+                                            left: 0,
+                                            top: 0,
+                                            right: 25,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            252,
+                                            251,
+                                            249,
+                                          ),
+                                          child: const Text(
+                                            '3,90',
+                                            style: TextStyle(
+                                              color: Color.fromARGB(
+                                                255,
+                                                131,
+                                                66,
+                                                66,
+                                              ),
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 20,
+                                            ),
+                                            textAlign: TextAlign.right,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Container(
+                              alignment: Alignment.bottomCenter,
+                              padding: const EdgeInsets.only(
+                                left: 5,
+                                top: 5,
+                                right: 5,
+                              ),
+                              width: screenWidth * 0.47,
+                              height: screenHeight * 0.19,
+                              child: Material(
+                                //color: const Color.fromARGB(255, 232, 240, 248),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                                elevation: 10,
+                                clipBehavior: Clip.antiAliasWithSaveLayer,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromARGB(
+                                      255,
+                                      180,
+                                      179,
+                                      175,
+                                    ),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: InkWell(
+                                    splashColor: Colors.blueGrey,
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return const jumlahPenduduk();
+                                          },
+                                        ),
+                                      );
+                                    },
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Container(
+                                          width: screenWidth * 0.47,
+                                          height: screenHeight * 0.09,
+                                          padding: const EdgeInsets.only(
+                                            left: 25,
+                                            top: 0,
+                                            right: 0,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            252,
+                                            251,
+                                            249,
+                                          ),
+                                          child: const Text(
+                                            'INDEKS\n'
+                                            'PERSEPSI\n'
+                                            'ANTI\n'
+                                            'KORUPSI',
+                                            style: TextStyle(
+                                              color: Color.fromARGB(
+                                                255,
+                                                17,
+                                                17,
+                                                17,
+                                              ),
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 12,
+                                            ),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ),
+                                        Container(
+                                          width: screenWidth * 0.47,
+                                          height: screenHeight * 0.05,
+                                          padding: const EdgeInsets.only(
+                                            left: 25,
+                                            top: 2,
+                                            right: 0,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            252,
+                                            251,
+                                            249,
+                                          ),
+                                          child: const Text(
+                                            'IPAK',
+                                            style: TextStyle(
+                                              color: Color.fromARGB(
+                                                255,
+                                                131,
+                                                66,
+                                                66,
+                                              ),
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 24,
+                                            ),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ),
+                                        Container(
+                                          width: screenWidth * 0.47,
+                                          height: screenHeight * 0.04,
+                                          padding: const EdgeInsets.only(
+                                            left: 25,
+                                            top: 0,
+                                            right: 0,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            255,
+                                            219,
+                                            153,
+                                            20,
+                                          ),
+                                          child: const Text(
+                                            '3,98',
+                                            style: TextStyle(
+                                              color: Color.fromARGB(
+                                                255,
+                                                252,
+                                                251,
+                                                251,
+                                              ),
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 20,
+                                            ),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+
                       //First Row
                       Container(
                         width: screenWidth * 0.94,
@@ -1157,7 +1440,7 @@ class _HomeContentState extends State<HomeContent> {
 
                       const SizedBox(height: 5),
 
-                      //Baris ke 5
+                      // Baris ke 5 hasil SP
                       Container(
                         width: screenWidth * 0.92,
                         height: screenHeight * 0.12,
