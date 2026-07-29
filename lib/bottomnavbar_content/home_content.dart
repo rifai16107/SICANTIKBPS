@@ -126,84 +126,290 @@ class _HomeContentState extends State<HomeContent> {
                   child: Column(
                     children: [
                       // IPKP dan IPAK
-                      GestureDetector(
-                        child: InkWell(
-                          onTap: () {
+                      Container(
+                        width: screenWidth * 0.94,
+                        height: screenHeight * 0.085,
+                        color: Colors.transparent,
+                        child: Row(
+                          children: [
+                            Container(
+                              alignment: Alignment.bottomCenter,
+                              padding: const EdgeInsets.only(
+                                left: 0,
+                                bottom: 0,
+                                right: 0,
+                              ),
+
+                              child: Material(
+                                //color: const Color.fromARGB(255, 232, 240, 248),
+                                color: Colors.transparent,
+                                borderRadius: BorderRadius.circular(0),
+                                elevation: 0,
+                                clipBehavior: Clip.antiAliasWithSaveLayer,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        242,
+                                        245,
+                                        248,
+                                      ),
+                                    ),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: InkWell(
+                                    splashColor: Colors.blueGrey,
+                                    onTap: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) {
-                                            return const kemiskinanContent();
+                                            return const jumlahPenduduk();
                                           },
                                         ),
                                       );
                                     },
-                        splashColor: Colors.blueGrey,
-                                   
-                      child: Container(
-                        width: screenWidth * 0.94,
-                        height: screenHeight * 0.15,
-                        //color: const Color.fromARGB(255, 214, 222, 228),
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: const Color.fromARGB(255, 121, 123, 126),
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        
-                        child: Row(
-                          children: [
-                            SizedBox(
-                              width: screenWidth * 0.465,
-                              child: Container(
-                                height: screenHeight * 0.12,
-                                padding: const EdgeInsets.only(
-                                  right: 10,
-                                  top: 10,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  'INDEKS\n'
-                                  'PERSEPSI\n'
-                                  'KUALITAS\n'
-                                  'PELAYANAN',
-                                  textAlign: TextAlign.right,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
-                                    color: Color.fromARGB(255, 32, 31, 31),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            
-                            SizedBox(
-                              width: screenWidth * 0.465,
-                              child: Container(
-                                height: screenHeight * 0.12,
-                                padding: const EdgeInsets.only(
-                                  left: 10,
-                                  right: 0,
-                                  top: 10,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  'INDEKS\n'
-                                  'PERSEPSI\n'
-                                  'KUALITAS\n'
-                                  'PELAYANAN',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
-                                    color: Color.fromARGB(255, 32, 31, 31),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Image.asset(
+                                          'assets/images/ipkp_ipak.png',
+                                          width: screenWidth * 0.90,
+                                          height: screenHeight * 0.08,
+                                          fit: BoxFit.cover,
+                                        ),
+                                        //const SizedBox(height:6),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
                           ],
                         ),
-                      ))),
+                      ),
+                      GestureDetector(
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return const kemiskinanContent();
+                                },
+                              ),
+                            );
+                          },
+                          splashColor: Colors.blueGrey,
+
+                          child: Container(
+                            width: screenWidth * 0.94,
+                            height: screenHeight * 0.10,
+                            alignment: Alignment.bottomCenter,
+                            padding: const EdgeInsets.only(
+                              left: 0,
+                              top: 0,
+                              right: 0,
+                            ),
+                            //color: const Color.fromARGB(255, 214, 222, 228),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: const Color.fromARGB(255, 121, 123, 126),
+                              ),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+
+                            child: Row(
+                              children: [
+                                Container(
+                                  alignment: Alignment.topCenter,
+                                  padding: const EdgeInsets.only(
+                                    right: 0,
+                                    top: 2,
+                                    bottom: 0,
+                                  ),
+                                  width: screenWidth * 0.46,
+                                  height: screenHeight * 0.09,
+                                  child: RichText(
+                                    textAlign: TextAlign.right,
+                                    text: TextSpan(
+                                      text:
+                                          'INDEKS PERSEPSI\n'
+                                          'KUALITAS PELAYANAN',
+                                      style: const TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12,
+                                      ),
+                                      children: <TextSpan>[
+                                        const TextSpan(
+                                          text:
+                                              '\n'
+                                              'IPKP = ',
+                                          style: TextStyle(
+                                            fontSize: 22,
+                                            fontFamily: 'Roboto',
+                                            color: Color.fromARGB(
+                                              255,
+                                              109,
+                                              59,
+                                              59,
+                                            ),
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        const TextSpan(
+                                          text: '3,49',
+                                          style: TextStyle(
+                                            fontSize: 25,
+                                            fontFamily: 'Roboto',
+                                            color: Color.fromARGB(
+                                              255,
+                                              4,
+                                              13,
+                                              131,
+                                            ),
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  alignment: Alignment.topCenter,
+                                  padding: const EdgeInsets.only(
+                                    left: 0,
+                                    top: 2,
+                                    bottom: 0,
+                                  ),
+                                  width: screenWidth * 0.46,
+                                  height: screenHeight * 0.09,
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      text:
+                                          'INDEKS PERSEPSI\n'
+                                          'ANTI KORUPSI',
+                                      style: const TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12,
+                                      ),
+                                      children: <TextSpan>[
+                                        const TextSpan(
+                                          text:
+                                              '\n'
+                                              'IPAK = ',
+                                          style: TextStyle(
+                                            fontSize: 22,
+                                            fontFamily: 'Roboto',
+                                            color: Color.fromARGB(
+                                              255,
+                                              109,
+                                              59,
+                                              59,
+                                            ),
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        const TextSpan(
+                                          text: '3,99',
+                                          style: TextStyle(
+                                            fontSize: 25,
+                                            fontFamily: 'Roboto',
+                                            color: Color.fromARGB(
+                                              255,
+                                              4,
+                                              13,
+                                              131,
+                                            ),
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      Container(
+                        width: screenWidth * 0.95,
+                        height: screenHeight * 0.025,
+                        color: Colors.transparent,
+                        child: Row(
+                          children: [
+                            Container(
+                              alignment: Alignment.bottomCenter,
+                              padding: const EdgeInsets.only(
+                                left: 1,
+                                top: 0,
+                                right: 0,
+                              ),
+
+                              child: Material(
+                                //color: const Color.fromARGB(255, 232, 240, 248),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(5),
+                                elevation: 10,
+                                clipBehavior: Clip.antiAliasWithSaveLayer,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        242,
+                                        245,
+                                        248,
+                                      ),
+                                    ),
+                                    borderRadius: BorderRadius.circular(2),
+                                  ),
+                                  child: InkWell(
+                                    splashColor: Colors.blueGrey,
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return const jumlahPenduduk();
+                                          },
+                                        ),
+                                      );
+                                    },
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        //const SizedBox(height:6),
+                                        Container(
+                                          width: screenWidth * 0.94,
+                                          color: Colors.orange,
+                                          child: const Text(
+                                            'Hasil Survei Kebutuhan Data Tahun 2026, Triwulan 2',
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 11,
+                                            ),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ),
+
+                                        //const SizedBox(height:10),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
 
                       //First Row
                       Container(

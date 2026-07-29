@@ -77,12 +77,14 @@ flutter:
     - assets/images/jumlah_penduduk.png
     - assets/images/hasil_st.png
     - assets/images/hasil_sp.png
+    - assets/images/ipkp_ipak.png
     - assets/images/logo_se2026.png
     - assets/images/logo.png
     - assets/images/gedung.jpg
     - assets/images/logo_berakhlak.png
     - assets/song/logo_lagu_se.png
     - assets/song/logo_lagu_mars.png
+    
       
     #  Drawer
     - assets/images/drawer/infografis_icon.png
