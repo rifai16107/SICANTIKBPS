@@ -126,7 +126,21 @@ class _HomeContentState extends State<HomeContent> {
                   child: Column(
                     children: [
                       // IPKP dan IPAK
-                      Container(
+                      GestureDetector(
+                        child: InkWell(
+                          onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return const kemiskinanContent();
+                                          },
+                                        ),
+                                      );
+                                    },
+                        splashColor: Colors.blueGrey,
+                                   
+                      child: Container(
                         width: screenWidth * 0.94,
                         height: screenHeight * 0.15,
                         //color: const Color.fromARGB(255, 214, 222, 228),
@@ -136,6 +150,7 @@ class _HomeContentState extends State<HomeContent> {
                           ),
                           borderRadius: BorderRadius.circular(10),
                         ),
+                        
                         child: Row(
                           children: [
                             SizedBox(
@@ -161,7 +176,7 @@ class _HomeContentState extends State<HomeContent> {
                                 ),
                               ),
                             ),
-
+                            
                             SizedBox(
                               width: screenWidth * 0.465,
                               child: Container(
@@ -188,7 +203,7 @@ class _HomeContentState extends State<HomeContent> {
                             ),
                           ],
                         ),
-                      ),
+                      ))),
 
                       //First Row
                       Container(
