@@ -128,35 +128,39 @@ class _HomeContentState extends State<HomeContent> {
                     children: [
                       // IPKP dan IPAK
                       SizedBox(
-                        height: 0.17 * screenHeight,
-                        //flex: 25,
-                        child: Container(
-                          margin: const EdgeInsets.only(top: 0, bottom: 0),
-                          //height: 0.15*screenHeight,
-                          height: screenHeight * 0.16,
-                          width: double.infinity,
-                          child: Column(
-                            children: [
-                              //Expanded(
-                              CarouselSlider(
-                                items: listSKD,
-                                //carouselController: _controller1,
-                                options: CarouselOptions(
-                                  autoPlay: false,
-                                  enlargeCenterPage: true,
-                                  //autoPlayCurve: Curves.decelerate,
-                                  //height:105,
-                                  height: screenHeight * 0.16,
-                                  //autoPlayInterval: const Duration(seconds: 5),
-                                  //autoPlayAnimationDuration: const Duration(milliseconds: 700),
-                                  disableCenter: true,
-                                ),
-                              ),
-                              //),
-                            ],
-                          ),
-                        ),
-                      ),
+            height: 0.17 * screenHeight,
+            //flex: 25,
+            child: Container(
+              margin: const EdgeInsets.only(top: 0, bottom: 0),
+              //height: 0.15*screenHeight,
+              height: screenHeight * 0.16,
+              width: screenWidth*0.95,
+              //width: double.infinity,
+              child: Column(
+                children: [
+                  //Expanded(
+                  CarouselSlider(
+                    items: listSKD,
+                    carouselController: _controller1,
+                    options: CarouselOptions(
+                      viewportFraction: 1.0,
+                      scrollPhysics: const NeverScrollableScrollPhysics(),
+                      //autoPlay: false,
+                      //enlargeCenterPage: true,
+                      //autoPlayCurve: Curves.decelerate,
+                      //height:105,
+                      height: screenHeight * 0.16,
+                      //autoPlayInterval: const Duration(seconds: 5),
+                      //autoPlayAnimationDuration: const Duration(milliseconds: 700),
+                      disableCenter: true,
+                    ),
+                  ),
+                  //),
+                ],
+              ),
+            ),
+          ),
+                     
                       //First Row
                       Container(
                         width: screenWidth * 0.94,
