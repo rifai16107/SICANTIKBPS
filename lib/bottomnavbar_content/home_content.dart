@@ -126,7 +126,7 @@ class _HomeContentState extends State<HomeContent> {
                       // IPKP dan IPAK
                       SizedBox(
                         width: screenWidth,
-                        height: 0.17 * screenHeight,
+                        height: 0.175 * screenHeight,
                         //flex: 25,
                         child: Container(
                           margin: const EdgeInsets.only(top: 0, bottom: 0),
