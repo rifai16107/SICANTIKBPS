@@ -18,7 +18,8 @@ class _SkdTahunanState extends State<SkdTahunan> {
         MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width;
+    final screenWidth = MediaQuery.of(context).size.width - MediaQuery.of(context).padding.left -
+        MediaQuery.of(context).padding.right;
 
     return Scaffold(
       appBar: AppBar(
@@ -96,11 +97,11 @@ class _SkdTahunanState extends State<SkdTahunan> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.45,
+                                width: screenWidth * 0.46,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(
                                   top: 10,
-                                  right: 5,
+                                  left: 0,
                                 ),
                                 child: Text(
                                   'TAHUN',
@@ -118,7 +119,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(top: 10),
                                 child: Text(
@@ -137,7 +138,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(top: 10),
                                 child: Text(
@@ -160,7 +161,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.99,
+                                width: screenWidth * 0.97,
                                 height: screenHeight * 0.02,
                               ),
                             ],
@@ -173,7 +174,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.45,
+                                width: screenWidth * 0.465,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   thn1,
@@ -190,7 +191,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   ikkn1,
@@ -208,7 +209,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   ipakn1,
@@ -232,7 +233,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.45,
+                                width: screenWidth * 0.465,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   thn2,
@@ -249,7 +250,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   ikkn2,
@@ -267,7 +268,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   ipakn2,
@@ -291,7 +292,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.45,
+                                width: screenWidth * 0.465,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   thn3,
@@ -308,7 +309,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   ikkn3,
@@ -326,7 +327,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   ipakn3,
@@ -350,7 +351,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.45,
+                                width: screenWidth * 0.465,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   thn4,
@@ -367,7 +368,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   ikkn4,
@@ -385,7 +386,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.05,
                                 child: Text(
                                   ipakn4,

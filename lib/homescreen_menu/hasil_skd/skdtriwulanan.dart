@@ -18,7 +18,8 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
         MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width;
+    final screenWidth = MediaQuery.of(context).size.width -  MediaQuery.of(context).padding.left -
+        MediaQuery.of(context).padding.right;
 
     return Scaffold(
       appBar: AppBar(
@@ -74,8 +75,8 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                         color: Colors.transparent,
                         child: Center(
                           child: Text(
-                            'Hasil Survei Kebutuhan Data (SKD) Triwulanan pada PST\n'
-                            'BPS Kabupaten $kabupaten Tahun $thn',
+                            'Hasil Survei Kebutuhan Data (SKD) Triwulanan\n' 
+                            'pada PST BPS Kabupaten $kabupaten Tahun $thn',
                             textAlign: TextAlign.center,
                             style: const TextStyle(
                               fontFamily: 'Robo',
@@ -93,7 +94,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(
                                   top: 10,
@@ -208,7 +209,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   'IPKP',
@@ -303,7 +304,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.27,
+                                width: screenWidth * 0.26,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   'IPAK',
@@ -417,7 +418,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                               SizedBox(
                                 width: screenWidth * 0.93,
                                 child: const Text(
-                                  "IPKP (Indeks Persepsi Kualitas Pelayanan) dan IPAK (Indeks Persepsi Anti Korupsi) Triwulanan didapat dari Survei Kebutuhan Data (SKD) Triwulan pada pengguna Layanan PST (Pelayanan Statistik Terpadu) di BPS Cilacap",
+                                  "IPKP (Indeks Persepsi Kualitas Pelayanan) dan IPAK (Indeks Persepsi Anti Korupsi) Triwulanan didapat dari Survei Kebutuhan Data (SKD) Triwulanan pada pengguna Layanan PST (Pelayanan Statistik Terpadu) di BPS Cilacap",
                                   style: TextStyle(
                                     fontWeight: FontWeight.normal,
                                     fontSize: 12,
