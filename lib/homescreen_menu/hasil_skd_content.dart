@@ -1,7 +1,6 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings, prefer_const_literals_to_create_immutables
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/ketimpangan/ketimpangan_bank_dunia.dart';
 import 'package:bps_cilacap/homescreen_menu/ketimpangan/ketimpangan_gini.dart';
 import 'package:bps_cilacap/homescreen_menu/hasil_skd/skdtahunan.dart';
 import 'package:bps_cilacap/homescreen_menu/hasil_skd/skdtriwulanan.dart';

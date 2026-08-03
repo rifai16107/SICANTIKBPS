@@ -427,7 +427,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                               SizedBox(
                                 width: screenWidth * 0.97,
                                 child: const Text(
-                                  "IKK (Indeks Kepuasaan Konsumen) dan IPAK (Indeks Persepsi Anti Korupsi) didapat dari Survei Kebutuhan Data (SKD) pada pengguna Layanan PST (Pelayanan Statistik terpadu) di BPS Cilacap",
+                                  "IKK (Indeks Kepuasaan Konsumen) dan IPAK (Indeks Persepsi Anti Korupsi) didapat dari Survei Kebutuhan Data (SKD) pada pengguna Layanan PST (Pelayanan Statistik Terpadu) di BPS Cilacap",
                                   style: TextStyle(
                                     fontWeight: FontWeight.normal,
                                     fontSize: 12,

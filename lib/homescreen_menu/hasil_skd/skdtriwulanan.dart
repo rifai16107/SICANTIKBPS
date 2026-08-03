@@ -93,11 +93,11 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.25,
+                                width: screenWidth * 0.27,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(
                                   top: 10,
-                                  right: 5,
+                                  right: 0,
                                 ),
                                 child: Text(
                                   'URAIAN',
@@ -115,7 +115,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(top: 10),
                                 child: Text(
@@ -134,7 +134,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(top: 10),
                                 child: Text(
@@ -153,7 +153,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(top: 10),
                                 child: Text(
@@ -172,7 +172,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(top: 10),
                                 child: Text(
@@ -195,7 +195,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth,
+                                width: screenWidth * 0.97,
                                 height: screenHeight * 0.02,
                               ),
                             ],
@@ -208,7 +208,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.25,
+                                width: screenWidth * 0.27,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   'IPKP',
@@ -225,8 +225,8 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.17,
-                                height: screenHeight * 0.10,
+                                width: screenWidth * 0.18,
+                                height: screenHeight * 0.08,
                                 child: Text(
                                   ipkpTrw1n1,
                                   style: const TextStyle(
@@ -243,7 +243,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   ipkpTrw2n1,
@@ -261,7 +261,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   ipkpTrw3n1,
@@ -279,7 +279,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   ipkpTrw4n1,
@@ -303,7 +303,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.25,
+                                width: screenWidth * 0.27,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   'IPAK',
@@ -320,7 +320,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   ipakTrw1n1,
@@ -338,7 +338,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   ipakTrw2n1,
@@ -356,7 +356,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   ipakTrw3n1,
@@ -374,7 +374,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.17,
+                                width: screenWidth * 0.18,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   ipakTrw4n1,
@@ -404,7 +404,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.97,
+                                width: screenWidth * 0.93,
                                 child: const Text(
                                   "Keterangan:",
                                   style: TextStyle(
@@ -415,9 +415,9 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                                 ),
                               ),
                               SizedBox(
-                                width: screenWidth * 0.97,
+                                width: screenWidth * 0.93,
                                 child: const Text(
-                                  "IKK (Indeks Kepuasaan Konsumen) dan IPAK (Indeks Persepsi Anti Korupsi) didapat dari Survei Kebutuhan Data (SKD) pada pengguna Layanan PST (Pelayanan Statistik terpadu) di BPS Cilacap",
+                                  "IPKP (Indeks Persepsi Kualitas Pelayanan) dan IPAK (Indeks Persepsi Anti Korupsi) Triwulanan didapat dari Survei Kebutuhan Data (SKD) Triwulan pada pengguna Layanan PST (Pelayanan Statistik Terpadu) di BPS Cilacap",
                                   style: TextStyle(
                                     fontWeight: FontWeight.normal,
                                     fontSize: 12,
