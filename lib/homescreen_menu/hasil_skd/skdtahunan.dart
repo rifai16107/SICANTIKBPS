@@ -92,6 +92,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
 
                       //Header Column
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [
@@ -170,6 +171,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
                       ),
                       //ikk dan ipak n1
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [
@@ -229,6 +231,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
 
                       //ikk dan ipak n2
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [
@@ -288,6 +291,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
 
                       //ikk dan ipak n3
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [
@@ -347,6 +351,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
 
                       //ikk dan ipak n4
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [

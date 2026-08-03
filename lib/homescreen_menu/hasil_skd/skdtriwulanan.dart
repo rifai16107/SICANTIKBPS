@@ -89,6 +89,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
 
                       //Header Column
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [
@@ -192,6 +193,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                       ),
 
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [
@@ -205,6 +207,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                       ),
                       //ikk dan ipak n1
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [
@@ -300,6 +303,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
 
                       //ikk dan ipak n2
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Column(
                             children: [
