@@ -10,7 +10,7 @@ class ModelKetimpanganGini {
   final String updated_at;
   final String tahun;
 
-ModelKetimpanganGini({
+  ModelKetimpanganGini({
     required this.id,
     required this.wilayah,
     required this.gini2021,
@@ -23,13 +23,14 @@ ModelKetimpanganGini({
 
   factory ModelKetimpanganGini.fromJson(Map<String, dynamic> json) {
     return ModelKetimpanganGini(
-        id: json['id'],
-        wilayah: json['wilayah'],
-        gini2021: json['gini2021'],
-        gini2022: json['gini2022'],
-        gini2023: json['gini2023'],
-        created_at: json['created_at'],
-        updated_at: json['updated_at'],
-        tahun: json['tahun']);
+      id: json['id'],
+      wilayah: json['wilayah'],
+      gini2021: json['gini2021'],
+      gini2022: json['gini2022'],
+      gini2023: json['gini2023'],
+      created_at: json['created_at'],
+      updated_at: json['updated_at'],
+      tahun: json['tahun'],
+    );
   }
 }

@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:bps_cilacap/format_angka.dart';
-import '../homescreen_menu/jumlah_penduduk.dart';
+import '../homescreen_menu/hasil_skd_content.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -16,8 +15,10 @@ class RepositoryIndikatorUtama {
       if (response.statusCode == 200) {
         var cokk = jsonDecode(response.body);
         return (cokk['data'] as List)
-            .map((isiindikatorutama) =>
-                ModelIndikatorUtama.fromJson(isiindikatorutama))
+            .map(
+              (isiindikatorutama) =>
+                  ModelIndikatorUtama.fromJson(isiindikatorutama),
+            )
             .toList();
       }
     } catch (isiindikatorutama) {
@@ -34,12 +35,13 @@ class ModelIndikatorUtama {
   final String bulan;
   final String tahun;
 
-  ModelIndikatorUtama(
-      {required this.id,
-      required this.indikator,
-      required this.nilai,
-      required this.bulan,
-      required this.tahun});
+  ModelIndikatorUtama({
+    required this.id,
+    required this.indikator,
+    required this.nilai,
+    required this.bulan,
+    required this.tahun,
+  });
 
   factory ModelIndikatorUtama.fromJson(Map<String, dynamic> json) {
     return ModelIndikatorUtama(
@@ -65,7 +67,8 @@ class _hasilSKDState extends State<hasilSKD> {
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
-    var screenHeight = MediaQuery.of(context).size.height -
+    var screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     return FutureBuilder(
@@ -77,12 +80,9 @@ class _hasilSKDState extends State<hasilSKD> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //String kab = "Cilacap";
-              String tahunIpkp = isiindikatorutama[index = 27].tahun;
-              String triwulanIpkp = isiindikatorutama[index = 27].bulan;
+              String tahun = isiindikatorutama[index = 27].tahun;
+              String triwulan = isiindikatorutama[index = 27].bulan;
               double ipkp = double.parse(isiindikatorutama[index = 27].nilai);
-
-              String tahunIpak = isiindikatorutama[index = 28].tahun;
-              String triwulanIpak = isiindikatorutama[index = 28].bulan;
               double ipak = double.parse(isiindikatorutama[index = 28].nilai);
               return Container(
                 decoration: BoxDecoration(
@@ -114,183 +114,185 @@ class _hasilSKDState extends State<hasilSKD> {
                           ),
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(context, MaterialPageRoute(
-                                builder: (context) {
-                                  return const jumlahPenduduk();
-                                },
-                              ));
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return const hasilSKDContent();
+                                  },
+                                ),
+                              );
                             },
                             splashColor: Colors.blueGrey,
                             child: Column(
                               //mainAxisSize: MainAxisSize.min,
                               children: [
                                 SizedBox(
-                                  child:Column (
-                                        children: [
-                                        const SizedBox(height:5),
-                                        Image.asset(
-                                          'assets/images/ipkp_ipak.png',
-                                          width: screenWidth * 0.65,
-                                          height: screenHeight * 0.05,
-                                          fit: BoxFit.cover,
-                                        ),
-                                        //const SizedBox(height:6),
-                                      ]
+                                  child: Column(
+                                    children: [
+                                      const SizedBox(height: 5),
+                                      Image.asset(
+                                        'assets/images/ipkp_ipak.png',
+                                        width: screenWidth * 0.65,
+                                        height: screenHeight * 0.05,
+                                        fit: BoxFit.cover,
                                       ),
+                                      //const SizedBox(height:6),
+                                    ],
+                                  ),
                                 ),
-                                
-                                
+
                                 Row(
                                   children: [
-                                Container(
-                                  alignment: Alignment.topCenter,
-                                  padding: const EdgeInsets.only(
-                                    right: 0,
-                                    top: 2,
-                                    bottom: 0,
-                                  ),
-                                  width: screenWidth * 0.46,
-                                  height: screenHeight * 0.08,
-                                  child: RichText(
-                                    textAlign: TextAlign.right,
-                                    text: TextSpan(
-                                      text:
-                                          'INDEKS PERSEPSI\n'
-                                          'KUALITAS PELAYANAN',
-                                      style: const TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 11,
+                                    Container(
+                                      alignment: Alignment.topCenter,
+                                      padding: const EdgeInsets.only(
+                                        right: 0,
+                                        top: 2,
+                                        bottom: 0,
                                       ),
-                                      children: <TextSpan>[
-                                        const TextSpan(
+                                      width: screenWidth * 0.46,
+                                      height: screenHeight * 0.08,
+                                      child: RichText(
+                                        textAlign: TextAlign.right,
+                                        text: TextSpan(
                                           text:
-                                              '\n'
-                                              'IPKP = ',
-                                          style: TextStyle(
-                                            fontSize: 20,
-                                            fontFamily: 'Roboto',
-                                            color: Color.fromARGB(
-                                              255,
-                                              109,
-                                              59,
-                                              59,
-                                            ),
+                                              'INDEKS PERSEPSI\n'
+                                              'KUALITAS PELAYANAN',
+                                          style: const TextStyle(
+                                            color: Colors.black,
                                             fontWeight: FontWeight.bold,
+                                            fontSize: 11,
                                           ),
-                                        ),
-                                        TextSpan(
-                                          text: '$ipkp',
-                                          style: TextStyle(
-                                            fontSize: 22,
-                                            fontFamily: 'Roboto',
-                                            color: Color.fromARGB(
-                                              255,
-                                              4,
-                                              13,
-                                              131,
+                                          children: <TextSpan>[
+                                            const TextSpan(
+                                              text:
+                                                  '\n'
+                                                  'IPKP = ',
+                                              style: TextStyle(
+                                                fontSize: 20,
+                                                fontFamily: 'Roboto',
+                                                color: Color.fromARGB(
+                                                  255,
+                                                  109,
+                                                  59,
+                                                  59,
+                                                ),
+                                                fontWeight: FontWeight.bold,
+                                              ),
                                             ),
-                                            fontWeight: FontWeight.bold,
-                                          ),
+                                            TextSpan(
+                                              text: '$ipkp',
+                                              style: TextStyle(
+                                                fontSize: 22,
+                                                fontFamily: 'Roboto',
+                                                color: Color.fromARGB(
+                                                  255,
+                                                  4,
+                                                  13,
+                                                  131,
+                                                ),
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  alignment: Alignment.topCenter,
-                                  padding: const EdgeInsets.only(
-                                    left: 0,
-                                    top: 2,
-                                    bottom: 0,
-                                  ),
-                                  width: screenWidth * 0.46,
-                                  height: screenHeight * 0.08,
-                                  child: RichText(
-                                    textAlign: TextAlign.justify,
-                                    text: TextSpan(
-                                      text:
-                                          'INDEKS PERSEPSI\n'
-                                          'ANTI KORUPSI',
-                                      style: const TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 11,
                                       ),
-                                      children: <TextSpan>[
-                                        const TextSpan(
-                                          text:
-                                              '\n'
-                                              'IPAK = ',
-                                          style: TextStyle(
-                                            fontSize: 20,
-                                            fontFamily: 'Roboto',
-                                            color: Color.fromARGB(
-                                              255,
-                                              109,
-                                              59,
-                                              59,
-                                            ),
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: '$ipak',
-                                          style: TextStyle(
-                                            fontSize: 22,
-                                            fontFamily: 'Roboto',
-                                            color: Color.fromARGB(
-                                              255,
-                                              4,
-                                              13,
-                                              131,
-                                            ),
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ],
                                     ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                        //const SizedBox(height:6),
-                                        Container(
-                                            decoration: BoxDecoration(
-                                            color: Colors.orange,
-                                            border: Border.all(
-                                              color: Colors.orange,
-                                            ),
-                                            borderRadius: BorderRadius.circular(5),
-                                           ),
-                                          width: screenWidth * 0.945,
-                                          height: 20,
-                                          child:  Text(
-                                            'Hasil Survei Kebutuhan Data Tahun+ $tahunIpkp Triwulan $triwulanIpkp',
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 11,
-                                            ),
-                                            textAlign: TextAlign.center,
+                                    Container(
+                                      alignment: Alignment.topCenter,
+                                      padding: const EdgeInsets.only(
+                                        left: 0,
+                                        top: 2,
+                                        bottom: 0,
+                                      ),
+                                      width: screenWidth * 0.46,
+                                      height: screenHeight * 0.08,
+                                      child: RichText(
+                                        textAlign: TextAlign.justify,
+                                        text: TextSpan(
+                                          text:
+                                              'INDEKS PERSEPSI\n'
+                                              'ANTI KORUPSI',
+                                          style: const TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 11,
                                           ),
+                                          children: <TextSpan>[
+                                            const TextSpan(
+                                              text:
+                                                  '\n'
+                                                  'IPAK = ',
+                                              style: TextStyle(
+                                                fontSize: 20,
+                                                fontFamily: 'Roboto',
+                                                color: Color.fromARGB(
+                                                  255,
+                                                  109,
+                                                  59,
+                                                  59,
+                                                ),
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: '$ipak',
+                                              style: TextStyle(
+                                                fontSize: 22,
+                                                fontFamily: 'Roboto',
+                                                color: Color.fromARGB(
+                                                  255,
+                                                  4,
+                                                  13,
+                                                  131,
+                                                ),
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
                                         ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    //const SizedBox(height:6),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        border: Border.all(
+                                          color: Colors.orange,
+                                        ),
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+                                      width: screenWidth * 0.945,
+                                      height: 20,
+                                      child: Text(
+                                        'Hasil Survei Kebutuhan Data Tahun+ $tahun Triwulan $triwulan',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 11,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
 
-                                        //const SizedBox(height:10),
-                                      ],)    
+                                    //const SizedBox(height:10),
+                                  ],
+                                ),
 
                                 //const SizedBox(height:10),
                               ],
-                           ),
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ],
                 ),
-                
               );
             },
           );
