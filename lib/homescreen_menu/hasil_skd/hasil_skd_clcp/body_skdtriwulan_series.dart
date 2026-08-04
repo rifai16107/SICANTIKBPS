@@ -1,6 +1,6 @@
-import 'package:bps_cilacap/homescreen_menu/hasil_skd/skdtriwulanan_a.dart';
-import 'package:bps_cilacap/homescreen_menu/hasil_skd/skdtriwulanan_b.dart';
-import 'package:bps_cilacap/homescreen_menu/hasil_skd/skdtriwulanan_c.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_clcp/skdtriwulanan_a.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_clcp/skdtriwulanan_b.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_clcp/skdtriwulanan_c.dart';
 import 'package:bps_cilacap/restAPI/repository_skd_triwulanan.dart';
 import 'package:flutter/material.dart';
 

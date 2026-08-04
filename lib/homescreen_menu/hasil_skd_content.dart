@@ -2,8 +2,8 @@
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/ketimpangan/ketimpangan_gini.dart';
-import 'package:bps_cilacap/homescreen_menu/hasil_skd/skdtahunan.dart';
-import 'package:bps_cilacap/homescreen_menu/hasil_skd/series_skdtriwulanan.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_clcp/skdtahunan.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_clcp/series_skdtriwulanan.dart';
 import 'package:flutter/material.dart';
 
 class hasilSKDContent extends StatefulWidget {
@@ -502,6 +502,58 @@ class _hasilSKDContentState extends State<hasilSKDContent> {
                   Navigator.push(
                     context,
                     CustomPageRoute(
+                      child: const SeriesSkdTriwulananCilacap(),
+                      direction: AxisDirection.left,
+                    ),
+                  );
+                },
+                splashColor: Colors.blueGrey,
+                child: IntrinsicHeight(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset(
+                          'assets/images/daerah/logo_cilacap.png',
+                          fit: BoxFit.cover,
+                          width: screenWidth * 0.12,
+                          height: screenHeight * 0.08,
+                        ),
+                        const SizedBox(width: 2),
+                        Container(
+                          alignment: Alignment.center,
+                          width: screenWidth * 0.80,
+                          height: screenHeight * 0.11,
+                          child: Text(
+                            'Hasil Survei Kebutuhan Data (SKD) Triwulanan\n'
+                            'di PST BPS Kabupaten Cilacap',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const Divider(height: 5, color: Colors.transparent),Card(
+              elevation: 20,
+              color: const Color.fromRGBO(236, 138, 20, 0.882),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+                side: BorderSide(color: Colors.grey),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CustomPageRoute(
                       child: const KetimpanganGini(),
                       direction: AxisDirection.left,
                     ),
@@ -543,59 +595,7 @@ class _hasilSKDContentState extends State<hasilSKDContent> {
               ),
             ),
             const Divider(height: 5, color: Colors.transparent),
-            Card(
-              elevation: 20,
-              color: const Color.fromRGBO(236, 138, 20, 0.882),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-                side: BorderSide(color: Colors.grey),
-              ),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    CustomPageRoute(
-                      child: const SeriesSkdTriwulananCilacap(),
-                      direction: AxisDirection.left,
-                    ),
-                  );
-                },
-                splashColor: Colors.blueGrey,
-                child: IntrinsicHeight(
-                  child: Padding(
-                    padding: const EdgeInsets.all(2.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Image.asset(
-                          'assets/images/daerah/logo_cilacap.png',
-                          fit: BoxFit.cover,
-                          width: screenWidth * 0.12,
-                          height: screenHeight * 0.08,
-                        ),
-                        const SizedBox(width: 2),
-                        Container(
-                          alignment: Alignment.center,
-                          width: screenWidth * 0.80,
-                          height: screenHeight * 0.11,
-                          child: Text(
-                            'Hasil Survei Kebutuhan Data (SKD) Triwulanan\n'
-                            'di PST BPS Kabupaten Cilacap',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 13.5,
-                              fontWeight: FontWeight.normal,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            const Divider(height: 5, color: Colors.transparent),
+            
             Card(
               elevation: 20,
               color: const Color.fromRGBO(236, 138, 20, 0.882),

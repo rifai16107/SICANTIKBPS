@@ -1,5 +1,5 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/hasil_skd/body_skdtriwulan_series.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_clcp/body_skdtriwulan_series.dart';
 import 'package:flutter/material.dart';
 
 class SeriesSkdTriwulananCilacap extends StatefulWidget {
