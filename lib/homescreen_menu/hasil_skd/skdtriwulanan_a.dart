@@ -274,7 +274,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                                 width: screenWidth * 0.25,
                                 height: screenHeight * 0.08,
                                 child: Text(
-                                  'IPAK',
+                                  'IPAAK',
                                   style: const TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
