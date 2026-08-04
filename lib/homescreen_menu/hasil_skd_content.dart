@@ -3,7 +3,7 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
 import 'package:bps_cilacap/homescreen_menu/ketimpangan/ketimpangan_gini.dart';
 import 'package:bps_cilacap/homescreen_menu/hasil_skd/skdtahunan.dart';
-import 'package:bps_cilacap/homescreen_menu/hasil_skd/skdtriwulanan.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/series_skdtriwulanan.dart';
 import 'package:flutter/material.dart';
 
 class hasilSKDContent extends StatefulWidget {
@@ -555,7 +555,7 @@ class _hasilSKDContentState extends State<hasilSKDContent> {
                   Navigator.push(
                     context,
                     CustomPageRoute(
-                      child: const SkdTriwulananA(),
+                      child: const SeriesSkdTriwulananCilacap(),
                       direction: AxisDirection.left,
                     ),
                   );

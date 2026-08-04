@@ -1,4 +1,5 @@
-import 'package:bps_cilacap/Icons/back_icons_icons.dart';
+// ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings, prefer_const_literals_to_create_immutables
+
 import 'package:bps_cilacap/restAPI/repository_skd_triwulanan.dart';
 import 'package:flutter/material.dart';
 
@@ -18,28 +19,12 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
         MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
-    final screenWidth = MediaQuery.of(context).size.width -  MediaQuery.of(context).padding.left -
+    final screenWidth =
+        MediaQuery.of(context).size.width -
+        MediaQuery.of(context).padding.left -
         MediaQuery.of(context).padding.right;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Hasil Survei Kebutuhan Data',
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-            color: Colors.white,
-          ),
-        ),
-        backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white),
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Center(child: Icon(BackIcons.circle_arrow, size: 40)),
-        ),
-      ),
       body: FutureBuilder(
         future: repositorySkdTriwulanan.getData(),
         builder: (context, snapshot) {
@@ -50,10 +35,6 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
               itemBuilder: (context, index) {
                 // isi data kabupaten cilacap
                 //String thn = isisensustani[index = 0].tahun;
-
-                String thn = isiSkdTriwulanan[index = 0].tahun.substring(0, 4);
-
-                String kabupaten = isiSkdTriwulanan[index = 0].wilayah;
 
                 String ipkpTrw1n1 = isiSkdTriwulanan[index = 0].trw1n1_ipkp;
                 String ipakTrw1n1 = isiSkdTriwulanan[index = 0].trw1n1_ipak;
@@ -69,24 +50,6 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                   margin: const EdgeInsets.all(2),
                   child: Column(
                     children: <Widget>[
-                      Container(
-                        height: screenHeight * 0.12,
-                        margin: const EdgeInsets.only(bottom: 5),
-                        color: Colors.transparent,
-                        child: Center(
-                          child: Text(
-                            'Hasil Survei Kebutuhan Data (SKD) Triwulanan\n' 
-                            'pada PST BPS Kabupaten $kabupaten Tahun $thn',
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                              fontFamily: 'Robo',
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
-                      ),
-
                       //Header Column
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
