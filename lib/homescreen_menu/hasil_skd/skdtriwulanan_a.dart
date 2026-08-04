@@ -58,7 +58,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                             children: [
                               Container(
                                 color: Colors.orange,
-                                width: screenWidth * 0.26,
+                                width: screenWidth * 0.25,
                                 height: screenHeight * 0.06,
                                 padding: const EdgeInsets.only(
                                   top: 10,
@@ -161,7 +161,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.97,
+                                width: screenWidth * 0.96,
                                 height: screenHeight * 0.02,
                               ),
                             ],
@@ -175,7 +175,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.26,
+                                width: screenWidth * 0.25,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   'IPKP',
@@ -271,7 +271,7 @@ class _SkdTriwulananAState extends State<SkdTriwulananA> {
                           Column(
                             children: [
                               SizedBox(
-                                width: screenWidth * 0.26,
+                                width: screenWidth * 0.25,
                                 height: screenHeight * 0.08,
                                 child: Text(
                                   'IPAK',
