@@ -363,7 +363,7 @@ class _SkdTriwulananCState extends State<SkdTriwulananC> {
                       const Divider(thickness: 1),
 
                       const Divider(
-                        color: Colors.white,
+                        color: Colors.transparent,
                         height: 10,
                         thickness: 10,
                       ),
