@@ -37,13 +37,14 @@ class ModelNakerKabkotLapus {
   final String lapus3_n1;
   final String tahun;
 
-  ModelNakerKabkotLapus(
-      {required this.id,
-      required this.wilayah,
-      required this.lapus1_n1,
-      required this.lapus2_n1,
-      required this.lapus3_n1,
-      required this.tahun});
+  ModelNakerKabkotLapus({
+    required this.id,
+    required this.wilayah,
+    required this.lapus1_n1,
+    required this.lapus2_n1,
+    required this.lapus3_n1,
+    required this.tahun,
+  });
 
   factory ModelNakerKabkotLapus.fromJson(Map<String, dynamic> json) {
     return ModelNakerKabkotLapus(
@@ -69,7 +70,8 @@ class _BodyNakerKabkotLapusState extends State<BodyNakerKabkotLapus> {
       RepositoryNakerKabkotLapus();
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height -
+    final screenHeight =
+        MediaQuery.of(context).size.height -
         MediaQuery.of(context).padding.top -
         MediaQuery.of(context).padding.bottom;
     // ignore: unused_local_variable
@@ -104,31 +106,23 @@ class _BodyNakerKabkotLapusState extends State<BodyNakerKabkotLapus> {
                       unselectedLabelColor: Colors.grey,
                       indicatorColor: Colors.white,
                       tabs: [
-                        Tab(
-                          text: thn1,
-                        ),
-                        Tab(
-                          text: thn2,
-                        ),
-                        Tab(
-                          text: thn3,
-                        ),
-                        Tab(
-                          text: thn4,
-                        ),
-                        Tab(
-                          text: thn5,
-                        ),
+                        Tab(text: thn1),
+                        Tab(text: thn2),
+                        Tab(text: thn3),
+                        Tab(text: thn4),
+                        Tab(text: thn5),
                       ],
                     ),
                   ),
-                  body: const TabBarView(children: [
-                    NakerkabkotLapusA(),
-                    NakerkabkotLapusB(),
-                    NakerkabkotLapusC(),
-                    NakerkabkotLapusD(),
-                    NakerkabkotLapusE(),
-                  ]),
+                  body: const TabBarView(
+                    children: [
+                      NakerkabkotLapusA(),
+                      NakerkabkotLapusB(),
+                      NakerkabkotLapusC(),
+                      NakerkabkotLapusD(),
+                      NakerkabkotLapusE(),
+                    ],
+                  ),
                 ),
               );
             },
@@ -137,11 +131,7 @@ class _BodyNakerKabkotLapusState extends State<BodyNakerKabkotLapus> {
         if (snapshot.hasError) {
           return const Text('error');
         } else {
-          return const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-            ),
-          );
+          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
       },
     );
