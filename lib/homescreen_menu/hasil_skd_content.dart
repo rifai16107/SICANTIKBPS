@@ -1,9 +1,10 @@
 // ignore_for_file: camel_case_types, prefer_interpolation_to_compose_strings, prefer_const_literals_to_create_immutables
 
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/homescreen_menu/ketimpangan/ketimpangan_gini.dart';
 import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_clcp/skdtahunan.dart';
 import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_clcp/series_skdtriwulanan.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_kabkottrw/series_skdkabkottrw.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_kabkottahunan/series_skdkabkottahunan.dart';
 import 'package:flutter/material.dart';
 
 class hasilSKDContent extends StatefulWidget {
@@ -542,7 +543,8 @@ class _hasilSKDContentState extends State<hasilSKDContent> {
                 ),
               ),
             ),
-            const Divider(height: 5, color: Colors.transparent),Card(
+            const Divider(height: 5, color: Colors.transparent),
+            Card(
               elevation: 20,
               color: const Color.fromRGBO(236, 138, 20, 0.882),
               shape: RoundedRectangleBorder(
@@ -554,7 +556,7 @@ class _hasilSKDContentState extends State<hasilSKDContent> {
                   Navigator.push(
                     context,
                     CustomPageRoute(
-                      child: const KetimpanganGini(),
+                      child: const SeriesSKDKabkotTahunan(),
                       direction: AxisDirection.left,
                     ),
                   );
@@ -595,7 +597,7 @@ class _hasilSKDContentState extends State<hasilSKDContent> {
               ),
             ),
             const Divider(height: 5, color: Colors.transparent),
-            
+
             Card(
               elevation: 20,
               color: const Color.fromRGBO(236, 138, 20, 0.882),
@@ -608,7 +610,7 @@ class _hasilSKDContentState extends State<hasilSKDContent> {
                   Navigator.push(
                     context,
                     CustomPageRoute(
-                      child: const KetimpanganGini(),
+                      child: const SeriesSKDKabkotTrw(),
                       direction: AxisDirection.left,
                     ),
                   );

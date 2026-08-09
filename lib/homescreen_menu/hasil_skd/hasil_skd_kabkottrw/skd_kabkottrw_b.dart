@@ -1,13 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:bps_cilacap/format_angka.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const NakerkabkotLapusB());
+void main() => runApp(const SkdkabkotTrwB());
 
-class NakerkabkotLapusB extends StatelessWidget {
-  const NakerkabkotLapusB({super.key});
+class SkdkabkotTrwB extends StatelessWidget {
+  const SkdkabkotTrwB({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +28,7 @@ class NakerkabkotLapusB extends StatelessWidget {
 }
 
 Future<List<Data>> fetchData() async {
-  var url = Uri.parse('https://bps-3301-asap.my.id/api/nakerkabkot-lapus');
+  var url = Uri.parse('https://bps-3301-asap.my.id/api/skd-hasil');
   final response = await http.get(url);
   if (response.statusCode == 200) {
     var cokk = jsonDecode(response.body);
@@ -43,28 +42,97 @@ Future<List<Data>> fetchData() async {
 class Data {
   final int id;
   final String wilayah;
-  final String lapus1_n2;
-  final String lapus2_n2;
-  final String lapus3_n2;
+  final String trw1n1_ipkp;
+  final String trw1n1_ipak;
+  final String trw2n1_ipkp;
+  final String trw2n1_ipak;
+  final String trw3n1_ipkp;
+  final String trw3n1_ipak;
+  final String trw4n1_ipkp;
+  final String trw4n1_ipak;
+  final String trw1n2_ipkp;
+  final String trw1n2_ipak;
+  final String trw2n2_ipkp;
+  final String trw2n2_ipak;
+  final String trw3n2_ipkp;
+  final String trw3n2_ipak;
+  final String trw4n2_ipkp;
+  final String trw4n2_ipak;
+  final String trw1n3_ipkp;
+  final String trw1n3_ipak;
+  final String trw2n3_ipkp;
+  final String trw2n3_ipak;
+  final String trw3n3_ipkp;
+  final String trw3n3_ipak;
+  final String trw4n3_ipkp;
+  final String trw4n3_ipak;
   final String tahun;
+  final String created_at;
+  final String updated_at;
 
   Data({
     required this.id,
     required this.wilayah,
-    required this.lapus1_n2,
-    required this.lapus2_n2,
-    required this.lapus3_n2,
+    required this.trw1n1_ipkp,
+    required this.trw1n1_ipak,
+    required this.trw2n1_ipkp,
+    required this.trw2n1_ipak,
+    required this.trw3n1_ipkp,
+    required this.trw3n1_ipak,
+    required this.trw4n1_ipkp,
+    required this.trw4n1_ipak,
+    required this.trw1n2_ipkp,
+    required this.trw1n2_ipak,
+    required this.trw2n2_ipkp,
+    required this.trw2n2_ipak,
+    required this.trw3n2_ipkp,
+    required this.trw3n2_ipak,
+    required this.trw4n2_ipkp,
+    required this.trw4n2_ipak,
+    required this.trw1n3_ipkp,
+    required this.trw1n3_ipak,
+    required this.trw2n3_ipkp,
+    required this.trw2n3_ipak,
+    required this.trw3n3_ipkp,
+    required this.trw3n3_ipak,
+    required this.trw4n3_ipkp,
+    required this.trw4n3_ipak,
     required this.tahun,
+    required this.created_at,
+    required this.updated_at,
   });
 
   factory Data.fromJson(Map<String, dynamic> json) {
     return Data(
       id: json['id'],
       wilayah: json['wilayah'],
-      lapus1_n2: json['lapus1_n2'],
-      lapus2_n2: json['lapus2_n2'],
-      lapus3_n2: json['lapus3_n2'],
+      trw1n1_ipkp: json['trw1n1_ipkp'],
+      trw1n1_ipak: json['trw1n1_ipak'],
+      trw2n1_ipkp: json['trw2n1_ipkp'],
+      trw2n1_ipak: json['trw2n1_ipak'],
+      trw3n1_ipkp: json['trw3n1_ipkp'],
+      trw3n1_ipak: json['trw3n1_ipak'],
+      trw4n1_ipkp: json['trw4n1_ipkp'],
+      trw4n1_ipak: json['trw4n1_ipak'],
+      trw1n2_ipkp: json['trw1n2_ipkp'],
+      trw1n2_ipak: json['trw1n2_ipak'],
+      trw2n2_ipkp: json['trw2n2_ipkp'],
+      trw2n2_ipak: json['trw2n2_ipak'],
+      trw3n2_ipkp: json['trw3n2_ipkp'],
+      trw3n2_ipak: json['trw3n2_ipak'],
+      trw4n2_ipkp: json['trw4n2_ipkp'],
+      trw4n2_ipak: json['trw4n2_ipak'],
+      trw1n3_ipkp: json['trw1n3_ipkp'],
+      trw1n3_ipak: json['trw1n3_ipak'],
+      trw2n3_ipkp: json['trw2n3_ipkp'],
+      trw2n3_ipak: json['trw2n3_ipak'],
+      trw3n3_ipkp: json['trw3n3_ipkp'],
+      trw3n3_ipak: json['trw3n3_ipak'],
+      trw4n3_ipkp: json['trw4n3_ipkp'],
+      trw4n3_ipak: json['trw4n3_ipak'],
       tahun: json['tahun'],
+      created_at: json['created_at'],
+      updated_at: json['updated_at'],
     );
   }
 }
@@ -527,11 +595,13 @@ class ScrollableColumnWidget extends StatelessWidget {
                     (states) => const Color.fromRGBO(243, 145, 34, 1),
                   ),
                   columns: [
+                    //Triwulan 1
                     DataColumn(
                       label: SizedBox(
-                        width: screenWidth * 0.20,
+                        width: screenWidth * 0.17,
                         child: const Text(
-                          'Lap. Pekerjaan Utama A',
+                          'Triwulan I\n'
+                          'IPKP',
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
@@ -545,9 +615,29 @@ class ScrollableColumnWidget extends StatelessWidget {
                     ),
                     DataColumn(
                       label: SizedBox(
-                        width: screenWidth * 0.20,
+                        width: screenWidth * 0.17,
                         child: const Text(
-                          'Lap. Pekerjaan Utama B',
+                          'Triwulan I\n'
+                          'IPAK',
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
+                          ),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+
+                    //Triwulan 2
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.17,
+                        child: const Text(
+                          'Triwulan II\n'
+                          'IPKP',
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
@@ -561,9 +651,10 @@ class ScrollableColumnWidget extends StatelessWidget {
                     ),
                     DataColumn(
                       label: SizedBox(
-                        width: screenWidth * 0.20,
+                        width: screenWidth * 0.17,
                         child: const Text(
-                          'Lap. Pekerjaan Utama C',
+                          'Triwulan II\n'
+                          'IPAK',
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
@@ -571,30 +662,77 @@ class ScrollableColumnWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 13,
                           ),
-                          //style: TextStyle(
-                          //fontStyle: FontStyle.italic,
-                          //fontWeight: FontWeight.bold,
-                          //fontSize: 15),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+
+                    //Triwulan 3
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.17,
+                        child: const Text(
+                          'Triwulan III\n'
+                          'IPKP',
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
+                          ),
                         ),
                       ),
                       numeric: true,
                     ),
                     DataColumn(
                       label: SizedBox(
-                        width: screenWidth * 0.18,
+                        width: screenWidth * 0.17,
                         child: const Text(
-                          'Jumlah',
-                          //maxLines: 2,
-                          //overflow: TextOverflow.ellipsis,
+                          'Triwulan III\n'
+                          'IPAK',
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 13,
                           ),
-                          //style: TextStyle(
-                          //fontStyle: FontStyle.italic,
-                          //fontWeight: FontWeight.bold,
-                          //fontSize: 15),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+                    //Triwulan 4
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.17,
+                        child: const Text(
+                          'Triwulan IV\n'
+                          'IPKP',
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
+                          ),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.17,
+                        child: const Text(
+                          'Triwulan IV\n'
+                          'IPAK',
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
+                          ),
                         ),
                       ),
                       numeric: true,
@@ -611,10 +749,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                       cells: [
                         DataCell(
                           Text(
-                            (Format.convertTo(
-                              double.tryParse(data.lapus1_n2),
-                              0,
-                            )),
+                            data.trw1n2_ipkp,
                             style: const TextStyle(
                               color: Color.fromARGB(255, 17, 17, 17),
                               fontWeight: FontWeight.normal,
@@ -624,10 +759,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         ),
                         DataCell(
                           Text(
-                            (Format.convertTo(
-                              double.tryParse(data.lapus2_n2),
-                              0,
-                            )),
+                            data.trw1n2_ipak,
                             style: const TextStyle(
                               color: Color.fromARGB(255, 17, 17, 17),
                               fontWeight: FontWeight.normal,
@@ -638,10 +770,7 @@ class ScrollableColumnWidget extends StatelessWidget {
                         ),
                         DataCell(
                           Text(
-                            (Format.convertTo(
-                              double.tryParse(data.lapus3_n2),
-                              0,
-                            )),
+                            data.trw2n2_ipkp,
                             style: const TextStyle(
                               color: Color.fromARGB(255, 17, 17, 17),
                               fontWeight: FontWeight.normal,
@@ -651,12 +780,47 @@ class ScrollableColumnWidget extends StatelessWidget {
                         ),
                         DataCell(
                           Text(
-                            (Format.convertTo(
-                              (double.tryParse(data.lapus1_n2)! +
-                                  double.tryParse(data.lapus2_n2)! +
-                                  double.tryParse(data.lapus3_n2)!),
-                              0,
-                            )),
+                            data.trw2n2_ipak,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ),
+                        DataCell(
+                          Text(
+                            data.trw3n2_ipkp,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ),
+                        DataCell(
+                          Text(
+                            data.trw3n2_ipak,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ),
+                        DataCell(
+                          Text(
+                            data.trw4n2_ipkp,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ),
+                        DataCell(
+                          Text(
+                            data.trw4n2_ipak,
                             style: const TextStyle(
                               color: Color.fromARGB(255, 17, 17, 17),
                               fontWeight: FontWeight.normal,
@@ -709,7 +873,7 @@ class CatatanWidget extends StatelessWidget {
                     ),
                     children: <TextSpan>[
                       TextSpan(
-                        text: ' Survei Angkatan Kerja Nasional (Sakernas)',
+                        text: ' Survei Kebutuhan Data (SKD)',
                         style: TextStyle(
                           fontSize: 11,
                           fontFamily: 'Roboto',
@@ -734,12 +898,12 @@ class CatatanWidget extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(1),
+                padding: const EdgeInsets.all(3),
                 alignment: Alignment.centerLeft,
                 child: RichText(
                   textAlign: TextAlign.left,
                   text: const TextSpan(
-                    text: 'Lap. Pekerjaan Utama A:',
+                    text: 'IPKP:',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -747,7 +911,8 @@ class CatatanWidget extends StatelessWidget {
                     ),
                     children: <TextSpan>[
                       TextSpan(
-                        text: ' Pertanian, Kehutanan, Perikanan.',
+                        text:
+                            ' Indeks Persepsi Kualitas Pelayanan, diperoleh dari SKD triwulanan yang dilakukan terhadap pengguna layanan PST (pelayanan Statistik Terpadu)',
                         style: TextStyle(
                           fontSize: 12,
                           fontFamily: 'Roboto',
@@ -760,12 +925,12 @@ class CatatanWidget extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(1),
+                padding: const EdgeInsets.all(3),
                 alignment: Alignment.centerLeft,
                 child: RichText(
                   textAlign: TextAlign.left,
                   text: const TextSpan(
-                    text: 'Lap. Pekerjaan Utama B:',
+                    text: 'IPAK:',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -774,34 +939,7 @@ class CatatanWidget extends StatelessWidget {
                     children: <TextSpan>[
                       TextSpan(
                         text:
-                            'Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi.',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontFamily: 'Roboto',
-                          color: Colors.black,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(1),
-                alignment: Alignment.centerLeft,
-                child: RichText(
-                  textAlign: TextAlign.justify,
-                  text: const TextSpan(
-                    text: 'Lap. Pekerjaan Utama C:',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 13,
-                    ),
-                    children: <TextSpan>[
-                      TextSpan(
-                        text:
-                            'Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya',
+                            'Indeks Persepsi Anti Korupsi, diperoleh dari SKD triwulanan yang dilakukan terhadap pengguna layanan PST (pelayanan Statistik Terpadu)',
                         style: TextStyle(
                           fontSize: 12,
                           fontFamily: 'Roboto',

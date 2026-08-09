@@ -1,15 +1,15 @@
 import 'package:bps_cilacap/Icons/back_icons_icons.dart';
-import 'package:bps_cilacap/ketenagakerjaan/kabkot_lapus/body_nakerlapus_kabkot.dart';
+import 'package:bps_cilacap/homescreen_menu/hasil_skd/hasil_skd_kabkottrw/body_skdkabkottrw.dart';
 import 'package:flutter/material.dart';
 
-class SeriesNakerLapusKabkot extends StatefulWidget {
-  const SeriesNakerLapusKabkot({super.key});
+class SeriesSKDKabkotTrw extends StatefulWidget {
+  const SeriesSKDKabkotTrw({super.key});
 
   @override
-  State<SeriesNakerLapusKabkot> createState() => _SeriesNakerLapusKabkot();
+  State<SeriesSKDKabkotTrw> createState() => _SeriesSKDKabkotTrw();
 }
 
-class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
+class _SeriesSKDKabkotTrw extends State<SeriesSKDKabkotTrw> {
   @override
   Widget build(BuildContext context) {
     final screenHeight =
@@ -19,7 +19,10 @@ class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text("PENDUDUK BEKERJA", style: TextStyle(fontSize: 16, color: Colors.white)),
+        title: const Text(
+          "PENDUDUK BEKERJA",
+          style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
         backgroundColor: Colors.black,
         iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
@@ -33,12 +36,14 @@ class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
         padding: const EdgeInsets.all(0),
         children: [
           Container(
-            height: 70,
+            height: 80,
             color: Colors.black,
             child: const Column(
               children: [
                 Text(
-                  ' Penduduk Usia 15+ yang Bekerja Menurut Kabupaten/Kota dan Lapangan Pekerjaan Utama di Provinsi Jawa Tengah ',
+                  ' Hasil Survei Kebutuhan Data (SKD) Triwulanan\n'
+                  'Pada Pelayanan Statistik Terpadu (PST)\n'
+                  ' Di Kabupaten Cilacap (Metode Kemenpan)',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -66,7 +71,7 @@ class _SeriesNakerLapusKabkot extends State<SeriesNakerLapusKabkot> {
                 Flexible(
                   fit: FlexFit.tight,
                   flex: 24,
-                  child: BodyNakerKabkotLapus(),
+                  child: BodySkdKabkotTrw(),
                 ),
               ],
             ),

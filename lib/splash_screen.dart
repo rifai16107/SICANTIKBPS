@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
             flex: 20,
             child: Container(
               alignment: Alignment.center,
-              color: Colors.transparent,
+              color: Colors.white,
               child: Image.asset(
                 './assets/images/SplashscreenSiCANTIK.png',
                 fit: BoxFit.fitHeight,
@@ -41,11 +41,11 @@ class _SplashScreenState extends State<SplashScreen> {
             flex: 1,
             child: CircularProgressIndicator(strokeWidth: 1),
           ),
-          const Divider(color: Colors.transparent),
+          const Divider(color: Colors.white),
           Expanded(
             flex: 1,
             child: Container(
-              color: Colors.transparent,
+              color: Colors.white,
               child: const Text("versi 8.3.0"),
             ),
           ),
