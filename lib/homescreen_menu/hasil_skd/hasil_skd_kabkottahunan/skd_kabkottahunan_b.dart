@@ -689,7 +689,7 @@ class CatatanWidget extends StatelessWidget {
                 child: RichText(
                   textAlign: TextAlign.left,
                   text: const TextSpan(
-                    text: 'IKK:',
+                    text: 'IKK :',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -716,7 +716,7 @@ class CatatanWidget extends StatelessWidget {
                 child: RichText(
                   textAlign: TextAlign.left,
                   text: const TextSpan(
-                    text: 'IPAK:',
+                    text: 'IPAK :',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
