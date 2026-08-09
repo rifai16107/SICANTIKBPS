@@ -270,7 +270,7 @@ class _hasilSKDState extends State<hasilSKD> {
                                       width: screenWidth * 0.945,
                                       height: 20,
                                       child: Text(
-                                        'Hasil Survei Kebutuhan Data Tahun+ $tahun Triwulan $triwulan',
+                                        'Hasil Survei Kebutuhan Data Tahun $tahun Triwulan $triwulan',
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,

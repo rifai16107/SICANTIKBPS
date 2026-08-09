@@ -66,7 +66,7 @@ class _HomeContentState extends State<HomeContent> {
   ];
   final CarouselSliderController _controller = CarouselSliderController();
 
-@override
+  @override
   Widget build(BuildContext context) {
     var screenWidth =
         MediaQuery.of(context).size.width -
@@ -132,15 +132,13 @@ class _HomeContentState extends State<HomeContent> {
                           margin: const EdgeInsets.only(top: 0, bottom: 0),
                           //height: 0.15*screenHeight,
                           height: screenHeight * 0.16,
-                          width: screenWidth*0.97,
+                          width: screenWidth * 0.97,
                           //width: double.infinity,
                           child: hasilSKD(),
                         ),
-                      
                       ),
-                     
+
                       //First Row
-                      
                       Container(
                         width: screenWidth * 0.94,
                         height: screenHeight * 0.16,
