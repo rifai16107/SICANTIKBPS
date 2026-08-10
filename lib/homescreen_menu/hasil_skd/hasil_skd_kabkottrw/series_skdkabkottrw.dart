@@ -20,7 +20,7 @@ class _SeriesSKDKabkotTrw extends State<SeriesSKDKabkotTrw> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "PENDUDUK BEKERJA",
+          "Hasil SKD Tahunan Kab/Kota Jateng",
           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,

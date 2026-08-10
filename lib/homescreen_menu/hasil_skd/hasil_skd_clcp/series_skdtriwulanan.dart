@@ -20,7 +20,7 @@ class _SeriesSkdTriwulananCilacap extends State<SeriesSkdTriwulananCilacap> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "HASIL SKD TRIWULANAN",
+          "Hasil SKD Triwulanan Kab. Cilacap",
           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,

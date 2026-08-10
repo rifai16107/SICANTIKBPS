@@ -24,7 +24,7 @@ class _SkdTahunanState extends State<SkdTahunan> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Hasil Survei Kebutuhan Data',
+          'Hasil SKD Tahunan Kab. Cilacap',
           style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.w600,
