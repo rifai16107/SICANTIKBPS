@@ -41,9 +41,9 @@ class _SeriesSKDKabkotTahunanState extends State<SeriesSKDKabkotTahunan> {
             child: const Column(
               children: [
                 Text(
-                  ' Hasil Survei Kebutuhan Data (SKD) Tahunan\n'
+                  'Hasil Survei Kebutuhan Data (SKD) Tahunan\n'
                   'Pada Pelayanan Statistik Terpadu (PST)\n'
-                  ' Di Kabupaten Cilacapan',
+                  'BPS Kabupaten/Kota di Jawa Tengah',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,

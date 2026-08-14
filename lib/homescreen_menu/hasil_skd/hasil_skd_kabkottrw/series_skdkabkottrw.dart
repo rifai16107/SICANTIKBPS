@@ -20,7 +20,7 @@ class _SeriesSKDKabkotTrw extends State<SeriesSKDKabkotTrw> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Hasil SKD Tahunan Kab/Kota Jateng",
+          "Hasil SKD Triwulanan Kab/Kota Jateng",
           style: TextStyle(fontSize: 16, color: Colors.white),
         ),
         backgroundColor: Colors.black,
@@ -41,9 +41,9 @@ class _SeriesSKDKabkotTrw extends State<SeriesSKDKabkotTrw> {
             child: const Column(
               children: [
                 Text(
-                  ' Hasil Survei Kebutuhan Data (SKD) Triwulanan\n'
+                  'Hasil Survei Kebutuhan Data (SKD) Triwulanan\n'
                   'Pada Pelayanan Statistik Terpadu (PST)\n'
-                  ' Di Kabupaten Cilacap (Metode Kemenpan)',
+                  'BPS Kabupaten/Kota di Jawa Tengah',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
