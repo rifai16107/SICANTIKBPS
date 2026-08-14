@@ -34,8 +34,8 @@ android {
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
-        versionCode = 18
-        versionName = "8.3.0"
+        versionCode = 19
+        versionName = "8.5.0"
 
         externalNativeBuild {
             cmake {
