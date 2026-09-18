@@ -105,38 +105,38 @@ class _PdrbadhbLuTrwAState extends State<PdrbadhbLuTrwA> {
             return PageView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String komponen1 = isipdrb[index = 12].komponen;
-                String komponen2 = isipdrb[index = 13].komponen;
-                String komponen3 = isipdrb[index = 14].komponen;
-                String komponen4 = isipdrb[index = 15].komponen;
+                String komponen1 = isipdrb[index = 16].komponen;
+                String komponen2 = isipdrb[index = 17].komponen;
+                String komponen3 = isipdrb[index = 18].komponen;
+                String komponen4 = isipdrb[index = 19].komponen;
 
                 //pdrb trw
-                String primer_trw1 = isipdrb[index = 12].trw1;
-                String sekunder_trw1 = isipdrb[index = 13].trw1;
-                String tersier_trw1 = isipdrb[index = 14].trw1;
-                String total_trw1 = isipdrb[index = 15].trw1;
+                String primer_trw1 = isipdrb[index = 16].trw1;
+                String sekunder_trw1 = isipdrb[index = 17].trw1;
+                String tersier_trw1 = isipdrb[index = 18].trw1;
+                String total_trw1 = isipdrb[index = 19].trw1;
 
-                String primer_trw2 = isipdrb[index = 12].trw2;
-                String sekunder_trw2 = isipdrb[index = 13].trw2;
-                String tersier_trw2 = isipdrb[index = 14].trw2;
-                String total_trw2 = isipdrb[index = 15].trw2;
+                String primer_trw2 = isipdrb[index = 16].trw2;
+                String sekunder_trw2 = isipdrb[index = 17].trw2;
+                String tersier_trw2 = isipdrb[index = 18].trw2;
+                String total_trw2 = isipdrb[index = 19].trw2;
 
-                String primer_trw3 = isipdrb[index = 12].trw3;
-                String sekunder_trw3 = isipdrb[index = 13].trw3;
-                String tersier_trw3 = isipdrb[index = 14].trw3;
-                String total_trw3 = isipdrb[index = 15].trw3;
+                String primer_trw3 = isipdrb[index = 16].trw3;
+                String sekunder_trw3 = isipdrb[index = 17].trw3;
+                String tersier_trw3 = isipdrb[index = 18].trw3;
+                String total_trw3 = isipdrb[index = 19].trw3;
 
-                String primer_trw4 = isipdrb[index = 12].trw4;
-                String sekunder_trw4 = isipdrb[index = 13].trw4;
-                String tersier_trw4 = isipdrb[index = 14].trw4;
-                String total_trw4 = isipdrb[index = 15].trw4;
+                String primer_trw4 = isipdrb[index = 16].trw4;
+                String sekunder_trw4 = isipdrb[index = 17].trw4;
+                String tersier_trw4 = isipdrb[index = 18].trw4;
+                String total_trw4 = isipdrb[index = 19].trw4;
 
-                String primer_total = isipdrb[index = 12].total;
-                String sekunder_total = isipdrb[index = 13].total;
-                String tersier_total = isipdrb[index = 14].total;
-                String total_total = isipdrb[index = 15].total;
+                String primer_total = isipdrb[index = 16].total;
+                String sekunder_total = isipdrb[index = 17].total;
+                String tersier_total = isipdrb[index = 18].total;
+                String total_total = isipdrb[index = 19].total;
 
-                //String thn1 = isipdrb[index = 12].tahun;
+                //String thn1 = isipdrb[index = 16].tahun;
 
                 return Scaffold(
                   body: Column(
@@ -219,7 +219,7 @@ class _PdrbadhbLuTrwAState extends State<PdrbadhbLuTrwA> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 11.5,
+                                    fontSize: 12.5,
                                     color: Colors.white,
                                   ),
                                 ),
@@ -240,7 +240,7 @@ class _PdrbadhbLuTrwAState extends State<PdrbadhbLuTrwA> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontWeight: FontWeight.normal,
-                                    fontSize: 11.5,
+                                    fontSize: 12.5,
                                     color: Colors.white,
                                   ),
                                 ),
@@ -900,25 +900,63 @@ class _PdrbadhbLuTrwAState extends State<PdrbadhbLuTrwA> {
                               const Divider(height: 5, color: Colors.black),
 
                               Container(
+                                padding: const EdgeInsets.all(3),
+                                alignment: Alignment.centerLeft,
+                                child: const Text(
+                                  "Keterangan:",
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    color: Colors.blue,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              Container(
                                 padding: const EdgeInsets.all(1),
                                 alignment: Alignment.centerLeft,
                                 child: RichText(
                                   textAlign: TextAlign.left,
                                   text: const TextSpan(
-                                    text: 'Keterangan:',
+                                    text: '*     :',
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 11.5,
+                                      fontSize: 14,
                                     ),
                                     children: <TextSpan>[
                                       TextSpan(
-                                        text: ' - ',
+                                        text: ' Angka Sementara.',
                                         style: TextStyle(
-                                          fontSize: 11,
+                                          fontSize: 12,
                                           fontFamily: 'Roboto',
                                           color: Colors.black,
-                                          fontWeight: FontWeight.bold,
+                                          fontWeight: FontWeight.normal,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(1),
+                                alignment: Alignment.centerLeft,
+                                child: RichText(
+                                  textAlign: TextAlign.left,
+                                  text: const TextSpan(
+                                    text: '**   :',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14,
+                                    ),
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: ' Angka Sangat Sementara.',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          fontFamily: 'Roboto',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal,
                                         ),
                                       ),
                                     ],

@@ -85,9 +85,9 @@ class FixedColumnWidget extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return DataTable(
-      columnSpacing: 10,
-      dataRowMinHeight: screenHeight * 0.040,
-      dataRowMaxHeight: screenHeight * 0.040,
+      columnSpacing: 5,
+      dataRowMinHeight: screenHeight * 0.056,
+      dataRowMaxHeight: screenHeight * 0.056,
       headingRowColor: WidgetStateProperty.all(
         const Color.fromARGB(255, 255, 165, 0),
       ),
@@ -97,7 +97,7 @@ class FixedColumnWidget extends StatelessWidget {
       columns: [
         DataColumn(
           label: SizedBox(
-            width: screenWidth * 0.10,
+            width: screenWidth * 0.25,
             child: const Text(
               textAlign: TextAlign.center,
               'Sektor',
@@ -115,11 +115,11 @@ class FixedColumnWidget extends StatelessWidget {
         DataRow(
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'A',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Pertanian, Kehutanan dan Perikanan',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -128,11 +128,11 @@ class FixedColumnWidget extends StatelessWidget {
           color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'B',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Pertambangan dan Penggalian',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -140,36 +140,11 @@ class FixedColumnWidget extends StatelessWidget {
         DataRow(
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'C',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
-              ),
-            ),
-          ],
-        ),
-        DataRow(
-          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
-          cells: [
-            DataCell(
-              Center(
-                child: Text(
-                  'D',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
-              ),
-            ),
-          ],
-        ),
-        DataRow(
-          cells: [
-            DataCell(
-              Center(
-                child: Text(
-                  'E',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Industr iPengolahan',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -178,11 +153,11 @@ class FixedColumnWidget extends StatelessWidget {
           color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'F',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Pengadaan Listrik dan Gas',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -190,36 +165,11 @@ class FixedColumnWidget extends StatelessWidget {
         DataRow(
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'G',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
-              ),
-            ),
-          ],
-        ),
-        DataRow(
-          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
-          cells: [
-            DataCell(
-              Center(
-                child: Text(
-                  'H',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
-              ),
-            ),
-          ],
-        ),
-        DataRow(
-          cells: [
-            DataCell(
-              Center(
-                child: Text(
-                  'I',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -228,11 +178,11 @@ class FixedColumnWidget extends StatelessWidget {
           color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'J',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Konstruksi',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -240,36 +190,11 @@ class FixedColumnWidget extends StatelessWidget {
         DataRow(
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'K',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
-              ),
-            ),
-          ],
-        ),
-        DataRow(
-          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
-          cells: [
-            DataCell(
-              Center(
-                child: Text(
-                  'L',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
-              ),
-            ),
-          ],
-        ),
-        DataRow(
-          cells: [
-            DataCell(
-              Center(
-                child: Text(
-                  'M, N',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Perdagangan Besar dan Eceran, Reparasi Mobil dan Sepeda Motor',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -278,11 +203,11 @@ class FixedColumnWidget extends StatelessWidget {
           color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'O',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Transportasi dan Pergudangan',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -290,36 +215,10 @@ class FixedColumnWidget extends StatelessWidget {
         DataRow(
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'P',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
-              ),
-            ),
-          ],
-        ),
-        DataRow(
-          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
-          cells: [
-            DataCell(
-              Center(
-                child: Text(
-                  'Q',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
-              ),
-            ),
-          ],
-        ),
-        DataRow(
-          cells: [
-            DataCell(
-              Center(
-                child: Text(
-                  'R, S, T, U',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Penyediaan Akomodasi\n'
+                'dan Makan Minum',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -328,11 +227,97 @@ class FixedColumnWidget extends StatelessWidget {
           color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
           cells: [
             DataCell(
-              Center(
-                child: Text(
-                  'PDRB',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                ),
+              Text(
+                'Informasi dan\n'
+                'Komunikasi',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Text(
+                'Jasa Keuangan\n'
+                'dan Asuransi',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Text(
+                'Real Estate',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Text(
+                'Jasa Perusahaan',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Text(
+                'Administrasi Pemerintahan, Pertahanan,\n'
+                'dan Jaminan Sosial Wajib',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Text(
+                'Jasa Pendidikan',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Text(
+                'Jasa Kesehatan dan\n'
+                'Kegiatan Sosial',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Text(
+                'Jasa Lainnya',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Text(
+                'PDRB',
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 13),
               ),
             ),
           ],
@@ -370,8 +355,8 @@ class ScrollableColumnWidget extends StatelessWidget {
                     ),
                   ),
                   columnSpacing: 5,
-                  dataRowMinHeight: screenHeight * 0.040,
-                  dataRowMaxHeight: screenHeight * 0.040,
+                  dataRowMinHeight: screenHeight * 0.056,
+                  dataRowMaxHeight: screenHeight * 0.056,
                   headingTextStyle: const TextStyle(
                     //fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
@@ -488,72 +473,69 @@ class ScrollableColumnWidget extends StatelessWidget {
                       numeric: true,
                     ),
                   ],
-                  rows: List<DataRow>.generate(
-                    snapshot.data!.sublist(1, 19).length,
-                    (index) {
-                      var data = snapshot.data![index + 0]; //next tahun 18
-                      return DataRow(
-                        color: WidgetStateColor.resolveWith(
-                          (states) => index % 2 == 1
-                              ? const Color.fromRGBO(34, 150, 243, 0.2)
-                              : const Color.fromARGB(0, 140, 233, 148),
+                  rows: List<DataRow>.generate(snapshot.data!.length, (index) {
+                    var data = snapshot.data![index];
+                    return DataRow(
+                      color: WidgetStateColor.resolveWith(
+                        (states) => index % 2 == 1
+                            ? const Color.fromRGBO(34, 150, 243, 0.2)
+                            : const Color.fromARGB(0, 140, 233, 148),
+                      ),
+                      cells: [
+                        DataCell(
+                          Text(
+                            data.trw1,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
+                            ),
+                          ),
                         ),
-                        cells: [
-                          DataCell(
-                            Text(
-                              data.trw1,
-                              style: const TextStyle(
-                                color: Color.fromARGB(255, 17, 17, 17),
-                                fontWeight: FontWeight.normal,
-                                fontSize: 12,
-                              ),
+                        DataCell(
+                          Text(
+                            data.trw2,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
                             ),
                           ),
-                          DataCell(
-                            Text(
-                              data.trw2,
-                              style: const TextStyle(
-                                color: Color.fromARGB(255, 17, 17, 17),
-                                fontWeight: FontWeight.normal,
-                                fontSize: 12,
-                              ),
-                            ),
-                            //textAlign: TextAlign.right,
-                          ),
-                          DataCell(
-                            Text(
-                              data.trw3,
-                              style: const TextStyle(
-                                color: Color.fromARGB(255, 17, 17, 17),
-                                fontWeight: FontWeight.normal,
-                                fontSize: 12,
-                              ),
+                          //textAlign: TextAlign.right,
+                        ),
+                        DataCell(
+                          Text(
+                            data.trw3,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
                             ),
                           ),
-                          DataCell(
-                            Text(
-                              data.trw4,
-                              style: const TextStyle(
-                                color: Color.fromARGB(255, 17, 17, 17),
-                                fontWeight: FontWeight.normal,
-                                fontSize: 12,
-                              ),
+                        ),
+                        DataCell(
+                          Text(
+                            data.trw4,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
                             ),
                           ),
-                          DataCell(
-                            Text(
-                              data.total,
-                              style: const TextStyle(
-                                color: Color.fromARGB(255, 17, 17, 17),
-                                fontWeight: FontWeight.normal,
-                                fontSize: 12,
-                              ),
+                        ),
+                        DataCell(
+                          Text(
+                            data.total,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 17, 17, 17),
+                              fontWeight: FontWeight.normal,
+                              fontSize: 12,
                             ),
                           ),
-                        ],
-                      );
-                    },
-                  ).toList(),
+                        ),
+                      ],
+                    );
+                  }).toList(),
                   showBottomBorder: true,
                 ),
               ),

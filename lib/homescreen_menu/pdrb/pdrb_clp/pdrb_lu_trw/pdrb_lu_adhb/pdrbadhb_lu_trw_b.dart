@@ -105,38 +105,38 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
             return PageView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String komponen1 = isipdrb[index = 16].komponen;
-                String komponen2 = isipdrb[index = 17].komponen;
-                String komponen3 = isipdrb[index = 18].komponen;
-                String komponen4 = isipdrb[index = 19].komponen;
+                String komponen1 = isipdrb[index = 20].komponen;
+                String komponen2 = isipdrb[index = 21].komponen;
+                String komponen3 = isipdrb[index = 22].komponen;
+                String komponen4 = isipdrb[index = 23].komponen;
 
                 //pdrb trw
-                String primer_trw1 = isipdrb[index = 16].trw1;
-                String sekunder_trw1 = isipdrb[index = 17].trw1;
-                String tersier_trw1 = isipdrb[index = 18].trw1;
-                String total_trw1 = isipdrb[index = 19].trw1;
+                String primer_trw1 = isipdrb[index = 20].trw1;
+                String sekunder_trw1 = isipdrb[index = 21].trw1;
+                String tersier_trw1 = isipdrb[index = 22].trw1;
+                String total_trw1 = isipdrb[index = 23].trw1;
 
-                String primer_trw2 = isipdrb[index = 16].trw2;
-                String sekunder_trw2 = isipdrb[index = 17].trw2;
-                String tersier_trw2 = isipdrb[index = 18].trw2;
-                String total_trw2 = isipdrb[index = 19].trw2;
+                String primer_trw2 = isipdrb[index = 20].trw2;
+                String sekunder_trw2 = isipdrb[index = 21].trw2;
+                String tersier_trw2 = isipdrb[index = 22].trw2;
+                String total_trw2 = isipdrb[index = 23].trw2;
 
-                String primer_trw3 = isipdrb[index = 16].trw3;
-                String sekunder_trw3 = isipdrb[index = 17].trw3;
-                String tersier_trw3 = isipdrb[index = 18].trw3;
-                String total_trw3 = isipdrb[index = 19].trw3;
+                String primer_trw3 = isipdrb[index = 20].trw3;
+                String sekunder_trw3 = isipdrb[index = 21].trw3;
+                String tersier_trw3 = isipdrb[index = 22].trw3;
+                String total_trw3 = isipdrb[index = 23].trw3;
 
-                String primer_trw4 = isipdrb[index = 16].trw4;
-                String sekunder_trw4 = isipdrb[index = 17].trw4;
-                String tersier_trw4 = isipdrb[index = 18].trw4;
-                String total_trw4 = isipdrb[index = 19].trw4;
+                String primer_trw4 = isipdrb[index = 20].trw4;
+                String sekunder_trw4 = isipdrb[index = 21].trw4;
+                String tersier_trw4 = isipdrb[index = 22].trw4;
+                String total_trw4 = isipdrb[index = 23].trw4;
 
-                String primer_total = isipdrb[index = 16].total;
-                String sekunder_total = isipdrb[index = 17].total;
-                String tersier_total = isipdrb[index = 18].total;
-                String total_total = isipdrb[index = 19].total;
+                String primer_total = isipdrb[index = 20].total;
+                String sekunder_total = isipdrb[index = 21].total;
+                String tersier_total = isipdrb[index = 22].total;
+                String total_total = isipdrb[index = 23].total;
 
-                String thn1 = isipdrb[index = 16].tahun;
+                //String thn1 = isipdrb[index = 20].tahun;
 
                 return Scaffold(
                   body: Column(
@@ -283,7 +283,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                 height: screenHeight * 0.04,
                                 color: Colors.orange,
                                 padding: const EdgeInsets.only(
-                                  right: 15,
+                                  right: 5,
                                   top: 0,
                                   bottom: 0,
                                 ),
@@ -304,7 +304,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                 height: screenHeight * 0.04,
                                 color: Colors.orange,
                                 padding: const EdgeInsets.only(
-                                  right: 15,
+                                  right: 5,
                                   top: 0,
                                   bottom: 0,
                                 ),
@@ -325,7 +325,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                 height: screenHeight * 0.04,
                                 color: Colors.orange,
                                 padding: const EdgeInsets.only(
-                                  right: 10,
+                                  right: 5,
                                   top: 0,
                                   bottom: 0,
                                 ),
@@ -346,7 +346,7 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                                 height: screenHeight * 0.04,
                                 color: Colors.orange,
                                 padding: const EdgeInsets.only(
-                                  right: 10,
+                                  right: 5,
                                   top: 0,
                                   bottom: 0,
                                 ),
@@ -900,28 +900,63 @@ class _PdrbadhbLuTrwBState extends State<PdrbadhbLuTrwB> {
                               const Divider(height: 5, color: Colors.black),
 
                               Container(
+                                padding: const EdgeInsets.all(3),
+                                alignment: Alignment.centerLeft,
+                                child: const Text(
+                                  "Keterangan:",
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    color: Colors.blue,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              Container(
                                 padding: const EdgeInsets.all(1),
                                 alignment: Alignment.centerLeft,
                                 child: RichText(
                                   textAlign: TextAlign.left,
-                                  text: TextSpan(
-                                    text: 'Keterangan:',
-                                    style: const TextStyle(
+                                  text: const TextSpan(
+                                    text: '*     :',
+                                    style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 11.5,
+                                      fontSize: 14,
                                     ),
                                     children: <TextSpan>[
                                       TextSpan(
-                                        text:
-                                            " Tahun " +
-                                            thn1 +
-                                            ' Angka Sementara',
-                                        style: const TextStyle(
-                                          fontSize: 11,
+                                        text: ' Angka Sementara.',
+                                        style: TextStyle(
+                                          fontSize: 12,
                                           fontFamily: 'Roboto',
                                           color: Colors.black,
-                                          fontWeight: FontWeight.bold,
+                                          fontWeight: FontWeight.normal,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(1),
+                                alignment: Alignment.centerLeft,
+                                child: RichText(
+                                  textAlign: TextAlign.left,
+                                  text: const TextSpan(
+                                    text: '**   :',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14,
+                                    ),
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: ' Angka Sangat Sementara.',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          fontFamily: 'Roboto',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.normal,
                                         ),
                                       ),
                                     ],
