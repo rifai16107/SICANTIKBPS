@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class RepositoryPdrbLuTrw {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-lapu';
+  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-lapu17-adhk';
 
   Future getData() async {
     try {
@@ -29,19 +29,15 @@ class RepositoryPdrbLuTrw {
 // ignore_for_file: non_constant_identifier_names
 class ModelPdrbLuTrw {
   final int id;
-  final String komponen;
+  final String sektor;
   final String tahun;
 
-  ModelPdrbLuTrw({
-    required this.id,
-    required this.komponen,
-    required this.tahun,
-  });
+  ModelPdrbLuTrw({required this.id, required this.sektor, required this.tahun});
 
   factory ModelPdrbLuTrw.fromJson(Map<String, dynamic> json) {
     return ModelPdrbLuTrw(
       id: json['id'],
-      komponen: json['komponen'],
+      sektor: json['sektor'],
       tahun: json['tahun'],
     );
   }
@@ -73,9 +69,16 @@ class _BodyPdrbLuTrwState extends State<BodyPdrbLuTrw> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              String thn1 = isipdrb[index = 0].tahun;
-              String thn2 = isipdrb[index = 4].tahun;
-              String thn3 = isipdrb[index = 8].tahun;
+              int tahun1 = int.parse(isipdrb[index = 0].tahun) - 3;
+              String thn1 = tahun1.toString();
+              int tahun2 = int.parse(isipdrb[index = 18].tahun) - 2;
+              String thn2 = '$tahun2*';
+
+              int tahun3 = int.parse(isipdrb[index = 36].tahun) - 2;
+              String thn3 = '$tahun3**';
+              //String thn1 = isipdrb[index = 0].tahun;
+              //String thn2 = isipdrb[index = 4].tahun;
+              //String thn3 = isipdrb[index = 8].tahun;
 
               return DefaultTabController(
                 length: 3,
