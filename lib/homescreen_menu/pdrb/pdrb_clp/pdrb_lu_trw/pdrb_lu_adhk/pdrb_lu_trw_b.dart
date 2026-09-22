@@ -105,38 +105,38 @@ class _PdrbLuTrwBState extends State<PdrbLuTrwB> {
             return PageView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String komponen1 = isipdrb[index = 4].komponen;
-                String komponen2 = isipdrb[index = 5].komponen;
-                String komponen3 = isipdrb[index = 6].komponen;
-                String komponen4 = isipdrb[index = 7].komponen;
+                String komponen1 = isipdrb[index = 8].komponen;
+                String komponen2 = isipdrb[index = 9].komponen;
+                String komponen3 = isipdrb[index = 10].komponen;
+                String komponen4 = isipdrb[index = 11].komponen;
 
                 //pdrb trw
-                String primer_trw1 = isipdrb[index = 4].trw1;
-                String sekunder_trw1 = isipdrb[index = 5].trw1;
-                String tersier_trw1 = isipdrb[index = 6].trw1;
-                String total_trw1 = isipdrb[index = 7].trw1;
+                String primer_trw1 = isipdrb[index = 8].trw1;
+                String sekunder_trw1 = isipdrb[index = 9].trw1;
+                String tersier_trw1 = isipdrb[index = 10].trw1;
+                String total_trw1 = isipdrb[index = 11].trw1;
 
-                String primer_trw2 = isipdrb[index = 4].trw2;
-                String sekunder_trw2 = isipdrb[index = 5].trw2;
-                String tersier_trw2 = isipdrb[index = 6].trw2;
-                String total_trw2 = isipdrb[index = 7].trw2;
+                String primer_trw2 = isipdrb[index = 8].trw2;
+                String sekunder_trw2 = isipdrb[index = 9].trw2;
+                String tersier_trw2 = isipdrb[index = 10].trw2;
+                String total_trw2 = isipdrb[index = 11].trw2;
 
-                String primer_trw3 = isipdrb[index = 4].trw3;
-                String sekunder_trw3 = isipdrb[index = 5].trw3;
-                String tersier_trw3 = isipdrb[index = 6].trw3;
-                String total_trw3 = isipdrb[index = 7].trw3;
+                String primer_trw3 = isipdrb[index = 8].trw3;
+                String sekunder_trw3 = isipdrb[index = 9].trw3;
+                String tersier_trw3 = isipdrb[index = 10].trw3;
+                String total_trw3 = isipdrb[index = 11].trw3;
 
-                String primer_trw4 = isipdrb[index = 4].trw4;
-                String sekunder_trw4 = isipdrb[index = 5].trw4;
-                String tersier_trw4 = isipdrb[index = 6].trw4;
-                String total_trw4 = isipdrb[index = 7].trw4;
+                String primer_trw4 = isipdrb[index = 8].trw4;
+                String sekunder_trw4 = isipdrb[index = 9].trw4;
+                String tersier_trw4 = isipdrb[index = 10].trw4;
+                String total_trw4 = isipdrb[index = 11].trw4;
 
-                String primer_total = isipdrb[index = 4].total;
-                String sekunder_total = isipdrb[index = 5].total;
-                String tersier_total = isipdrb[index = 6].total;
-                String total_total = isipdrb[index = 7].total;
+                String primer_total = isipdrb[index = 8].total;
+                String sekunder_total = isipdrb[index = 9].total;
+                String tersier_total = isipdrb[index = 10].total;
+                String total_total = isipdrb[index = 11].total;
 
-                String thn1 = isipdrb[index = 4].tahun;
+                String thn1 = isipdrb[index = 8].tahun;
 
                 return Scaffold(
                   body: Column(
@@ -916,7 +916,7 @@ class _PdrbLuTrwBState extends State<PdrbLuTrwB> {
                                         text:
                                             " Tahun " +
                                             thn1 +
-                                            ' Angka Sementara',
+                                            ' Angka Sangat Sementara',
                                         style: const TextStyle(
                                           fontSize: 11,
                                           fontFamily: 'Roboto',

@@ -6,946 +6,649 @@ import 'package:flutter/material.dart';
 //import 'package:bps_cilacap/format_angka.dart';
 import 'package:http/http.dart' as http;
 
-//PDRB ADHK 2022-2024
+//PDRB ADHB 2022-2024
 
-class RepositoryPdrbLuTrw {
-  final _baseURL = 'https://bps-3301-asap.my.id/api/pdrb-trw-lapu';
+void main() => runApp(const PdrbLuTrwC());
 
-  Future getData() async {
-    try {
-      final response = await http.get(Uri.parse(_baseURL));
+class PdrbLuTrwC extends StatelessWidget {
+  const PdrbLuTrwC({super.key});
 
-      if (response.statusCode == 200) {
-        var cokk = jsonDecode(response.body);
-        return (cokk['data'] as List)
-            .map((isipdrb) => ModelPdrbTrwLu.fromJson(isipdrb))
-            .toList();
-      }
-    } catch (isipdrb) {
-      // ignore: avoid_print
-      print(isipdrb.toString());
-    }
+  @override
+  Widget build(BuildContext context) {
+    //double screenHeight = MediaQuery.of(context).size.height;
+    //double screenWidth = MediaQuery.of(context).size.width;
+    return Scaffold(
+      body: ListView(
+        children: [
+          SingleChildScrollView(
+            child: Row(
+              children: const [FixedColumnWidget(), ScrollableColumnWidget()],
+            ),
+          ),
+          const CatatanWidget(),
+        ],
+      ),
+    );
   }
 }
 
-class ModelPdrbTrwLu {
+Future<List<Data>> fetchData() async {
+  var url = Uri.parse('https://bps-3301-asap.my.id/api/pdrb-trw-lapu17-adhk');
+  final response = await http.get(url);
+  if (response.statusCode == 200) {
+    var cokk = jsonDecode(response.body);
+    return (cokk['data'] as List).map((data) => Data.fromJson(data)).toList();
+  } else {
+    throw Exception('Unexpected error occured!');
+  }
+}
+
+class Data {
   final int id;
-  final String komponen;
+  final String sektor;
   final String trw1;
   final String trw2;
   final String trw3;
   final String trw4;
   final String total;
-  final String dis_trw1;
-  final String dis_trw2;
-  final String dis_trw3;
-  final String dis_trw4;
-  final String dis_total;
   final String tahun;
 
-  ModelPdrbTrwLu({
+  Data({
     required this.id,
-    required this.komponen,
+    required this.sektor,
     required this.trw1,
     required this.trw2,
     required this.trw3,
     required this.trw4,
     required this.total,
-    required this.dis_trw1,
-    required this.dis_trw2,
-    required this.dis_trw3,
-    required this.dis_trw4,
-    required this.dis_total,
     required this.tahun,
   });
 
-  factory ModelPdrbTrwLu.fromJson(Map<String, dynamic> json) {
-    return ModelPdrbTrwLu(
+  factory Data.fromJson(Map<String, dynamic> json) {
+    return Data(
       id: json['id'],
-      komponen: json['komponen'],
+      sektor: json['sektor'],
       trw1: json['trw1'],
       trw2: json['trw2'],
       trw3: json['trw3'],
       trw4: json['trw4'],
       total: json['total'],
-      dis_trw1: json['dis_trw1'],
-      dis_trw2: json['dis_trw2'],
-      dis_trw3: json['dis_trw3'],
-      dis_trw4: json['dis_trw4'],
-      dis_total: json['dis_total'],
       tahun: json['tahun'],
     );
   }
 }
 
-class PdrbLuTrwC extends StatefulWidget {
-  const PdrbLuTrwC({Key? key}) : super(key: key);
-
-  @override
-  State<PdrbLuTrwC> createState() => _PdrbLuTrwCState();
-}
-
-RepositoryPdrbLuTrw repositorypdrb = RepositoryPdrbLuTrw();
-
-class _PdrbLuTrwCState extends State<PdrbLuTrwC> {
+class FixedColumnWidget extends StatelessWidget {
+  const FixedColumnWidget({super.key});
   @override
   Widget build(BuildContext context) {
-    final screenHeight =
-        MediaQuery.of(context).size.height -
-        MediaQuery.of(context).padding.top -
-        MediaQuery.of(context).padding.bottom;
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+    return DataTable(
+      columnSpacing: 10,
+      dataRowMinHeight: screenHeight * 0.040,
+      dataRowMaxHeight: screenHeight * 0.040,
+      headingRowColor: WidgetStateProperty.all(
+        const Color.fromARGB(255, 255, 165, 0),
+      ),
+      decoration: const BoxDecoration(
+        border: Border(right: BorderSide(color: Colors.grey, width: 1)),
+      ),
+      columns: [
+        DataColumn(
+          label: SizedBox(
+            width: screenWidth * 0.10,
+            child: const Text(
+              textAlign: TextAlign.center,
+              'Sektor',
+              //maxLines: 2,
+              //overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ),
+      ],
+      rows: const [
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'A',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'B',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'C',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'D',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'E',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'F',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'G',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'H',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'I',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'J',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'K',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'L',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'M, N',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'O',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'P',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'Q',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'R, S, T, U',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+        DataRow(
+          color: WidgetStatePropertyAll(Color.fromRGBO(34, 150, 243, 0.2)),
+          cells: [
+            DataCell(
+              Center(
+                child: Text(
+                  'PDRB',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ],
+      showBottomBorder: true,
+    );
+  }
+}
+
+class ScrollableColumnWidget extends StatelessWidget {
+  const ScrollableColumnWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     // ignore: unused_local_variable
-    final screenWidth = MediaQuery.of(context).size.width;
-    return Scaffold(
-      body: FutureBuilder(
-        future: repositorypdrb.getData(),
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+    return Expanded(
+      child: FutureBuilder<List<Data>>(
+        future: fetchData(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            List isipdrb = snapshot.data as List;
-            return PageView.builder(
-              itemCount: 1,
-              itemBuilder: (context, index) {
-                String komponen1 = isipdrb[index = 8].komponen;
-                String komponen2 = isipdrb[index = 9].komponen;
-                String komponen3 = isipdrb[index = 10].komponen;
-                String komponen4 = isipdrb[index = 11].komponen;
-
-                //pdrb trw
-                String primer_trw1 = isipdrb[index = 8].trw1;
-                String sekunder_trw1 = isipdrb[index = 9].trw1;
-                String tersier_trw1 = isipdrb[index = 10].trw1;
-                String total_trw1 = isipdrb[index = 11].trw1;
-
-                String primer_trw2 = isipdrb[index = 8].trw2;
-                String sekunder_trw2 = isipdrb[index = 9].trw2;
-                String tersier_trw2 = isipdrb[index = 10].trw2;
-                String total_trw2 = isipdrb[index = 11].trw2;
-
-                String primer_trw3 = isipdrb[index = 8].trw3;
-                String sekunder_trw3 = isipdrb[index = 9].trw3;
-                String tersier_trw3 = isipdrb[index = 10].trw3;
-                String total_trw3 = isipdrb[index = 11].trw3;
-
-                String primer_trw4 = isipdrb[index = 8].trw4;
-                String sekunder_trw4 = isipdrb[index = 9].trw4;
-                String tersier_trw4 = isipdrb[index = 10].trw4;
-                String total_trw4 = isipdrb[index = 11].trw4;
-
-                String primer_total = isipdrb[index = 8].total;
-                String sekunder_total = isipdrb[index = 9].total;
-                String tersier_total = isipdrb[index = 10].total;
-                String total_total = isipdrb[index = 11].total;
-
-                String thn1 = isipdrb[index = 8].tahun;
-
-                return Scaffold(
-                  body: Column(
-                    children: <Widget>[
-                      //Flexible(
-                      //fit: FlexFit.tight,
-                      //flex: 5,
-                      Container(
-                        width: screenWidth * 1.0,
-                        height: screenHeight * 0.04,
-                        color: Colors.orange,
-                        child: Row(
-                          children: [
-                            SizedBox(
-                              width: screenWidth * 0.20,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  right: 0,
-                                  top: 10,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "Lapangan/",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.78,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  left: 0,
-                                  top: 5,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "PDRB ADHK dengan Migas",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            const Divider(thickness: 2, color: Colors.black),
-                          ],
-                        ),
-                      ),
-
-                      //separator
-                      Container(
-                        width: screenWidth * 1.0,
-                        height: screenHeight * 0.005,
-                        color: Colors.orange,
-                        child: Row(
-                          children: [
-                            SizedBox(
-                              width: screenWidth * 0.22,
-                              child: Container(
-                                height: screenHeight * 0.005,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  right: 0,
-                                  top: 0,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.76,
-                              child: Container(
-                                height: screenHeight * 0.002,
-                                color: Colors.white,
-                                padding: const EdgeInsets.only(
-                                  left: 0,
-                                  top: 0,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "__",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.normal,
-                                    fontSize: 12.5,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-
-                      Container(
-                        width: screenWidth * 1.0,
-                        height: screenHeight * 0.04,
-                        color: Colors.orange,
-                        child: Row(
-                          children: [
-                            SizedBox(
-                              width: screenWidth * 0.20,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  right: 0,
-                                  top: 0,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "Usaha",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12.5,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.15,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  right: 15,
-                                  top: 0,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "Trw 1",
-                                  textAlign: TextAlign.right,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.15,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  right: 15,
-                                  top: 0,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "Trw 2",
-                                  textAlign: TextAlign.right,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.15,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  right: 10,
-                                  top: 0,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "Trw 3",
-                                  textAlign: TextAlign.right,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.16,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  right: 10,
-                                  top: 0,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "Trw 4",
-                                  textAlign: TextAlign.right,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: screenWidth * 0.16,
-                              child: Container(
-                                height: screenHeight * 0.04,
-                                color: Colors.orange,
-                                padding: const EdgeInsets.only(
-                                  right: 5,
-                                  top: 0,
-                                  bottom: 0,
-                                ),
-                                child: const Text(
-                                  "Total",
-                                  textAlign: TextAlign.right,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      //),
-                      Expanded(
-                        //flex:16,
-                        child: SingleChildScrollView(
-                          //child: Flexible(
-                          //flex: 20,
-                          //fit: FlexFit.tight,
-                          //child: SizedBox(
-                          //width: screenWidth,
-                          //height: screenHeight,
-                          child: Column(
-                            children: [
-                              // Sektor Primer
-                              Container(
-                                width: screenWidth * 1.0,
-                                height: screenHeight * 0.07,
-                                color: Colors.transparent,
-                                child: Row(
-                                  children: [
-                                    SizedBox(
-                                      width: 0.15 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          "Sektor " + komponen1,
-                                          textAlign: TextAlign.left,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          primer_trw1,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          primer_trw2,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.16 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          primer_trw3,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          primer_trw4,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.18 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          primer_total,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-
-                              // Sekunder
-                              Container(
-                                width: screenWidth * 1.0,
-                                height: screenHeight * 0.07,
-                                color: Colors.grey.shade200,
-                                child: Row(
-                                  children: [
-                                    SizedBox(
-                                      width: 0.15 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          "Sektor " + komponen2,
-                                          textAlign: TextAlign.left,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          sekunder_trw1,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          sekunder_trw2,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.16 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          sekunder_trw3,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          sekunder_trw4,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.18 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          sekunder_total,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-
-                              // Tersier
-                              Container(
-                                width: screenWidth * 1.0,
-                                height: screenHeight * 0.07,
-                                color: Colors.transparent,
-                                child: Row(
-                                  children: [
-                                    SizedBox(
-                                      width: 0.15 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          "Sektor " + komponen3,
-                                          textAlign: TextAlign.left,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          tersier_trw1,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          tersier_trw2,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.16 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          tersier_trw3,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          tersier_trw4,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.18 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          tersier_total,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-
-                              // TOTAL
-                              Container(
-                                width: screenWidth * 1.0,
-                                height: screenHeight * 0.07,
-                                color: Colors.grey.shade200,
-                                child: Row(
-                                  children: [
-                                    SizedBox(
-                                      width: 0.15 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          komponen4,
-                                          textAlign: TextAlign.left,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          total_trw1,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          total_trw2,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.16 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          total_trw3,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.165 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          total_trw4,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 0.18 * screenWidth,
-                                      child: Container(
-                                        color: Colors.transparent,
-                                        padding: const EdgeInsets.only(
-                                          right: 0,
-                                          top: 1,
-                                          bottom: 1,
-                                        ),
-                                        child: Text(
-                                          total_total,
-                                          textAlign: TextAlign.right,
-                                          style: const TextStyle(
-                                            fontSize: 11.5,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-
-                              const Divider(height: 5, color: Colors.black),
-
-                              Container(
-                                padding: const EdgeInsets.all(1),
-                                alignment: Alignment.centerLeft,
-                                child: RichText(
-                                  textAlign: TextAlign.left,
-                                  text: TextSpan(
-                                    text: 'Keterangan:',
-                                    style: const TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 11.5,
-                                    ),
-                                    children: <TextSpan>[
-                                      TextSpan(
-                                        text:
-                                            " Tahun " +
-                                            thn1 +
-                                            ' Angka Sangat Sementara',
-                                        style: const TextStyle(
-                                          fontSize: 11,
-                                          fontFamily: 'Roboto',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ],
+            return SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: SingleChildScrollView(
+                child: DataTable(
+                  sortColumnIndex: 0,
+                  sortAscending: true,
+                  border: const TableBorder(
+                    horizontalInside: BorderSide(
+                      width: 0,
+                      color: Color.fromARGB(255, 224, 230, 235),
+                      style: BorderStyle.solid,
+                    ),
+                  ),
+                  columnSpacing: 5,
+                  dataRowMinHeight: screenHeight * 0.040,
+                  dataRowMaxHeight: screenHeight * 0.040,
+                  headingTextStyle: const TextStyle(
+                    //fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 13.0,
+                    letterSpacing: 0.0,
+                    color: Colors.white,
+                  ),
+                  headingRowColor: WidgetStateColor.resolveWith(
+                    (states) => const Color.fromARGB(255, 255, 165, 0),
+                  ),
+                  columns: [
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.12,
+                        //width: screenWidth * 0.225,
+                        child: const Text(
+                          'Trw 1',
+                          //maxLines: 2,
+                          //overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
                           ),
+                          //style: TextStyle(
+                          //fontStyle: FontStyle.italic,
+                          //fontWeight: FontWeight.bold,
+                          //fontSize: 15),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.12,
+                        //width: screenWidth * 0.225,
+                        child: const Text(
+                          'Trw 2',
+                          //maxLines: 2,
+                          //overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
+                          ),
+                          //style: TextStyle(
+                          //fontStyle: FontStyle.italic,
+                          //fontWeight: FontWeight.bold,
+                          //fontSize: 15),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.12,
+                        //width: screenWidth * 0.225,
+                        child: const Text(
+                          'Trw 3',
+                          //maxLines: 2,
+                          //overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
+                          ),
+                          //style: TextStyle(
+                          //fontStyle: FontStyle.italic,
+                          //fontWeight: FontWeight.bold,
+                          //fontSize: 15),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.12,
+                        //width: screenWidth * 0.225,
+                        child: const Text(
+                          'Trw 4',
+                          //maxLines: 2,
+                          //overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
+                          ),
+                          //style: TextStyle(
+                          //fontStyle: FontStyle.italic,
+                          //fontWeight: FontWeight.bold,
+                          //fontSize: 15),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+                    DataColumn(
+                      label: SizedBox(
+                        width: screenWidth * 0.12,
+                        child: const Text(
+                          'Total',
+                          //maxLines: 2,
+                          //overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13,
+                          ),
+                          //style: TextStyle(
+                          //fontStyle: FontStyle.italic,
+                          //fontWeight: FontWeight.bold,
+                          //fontSize: 15),
+                        ),
+                      ),
+                      numeric: true,
+                    ),
+                  ],
+                  rows: List<DataRow>.generate(
+                    snapshot.data!.sublist(1, 19).length,
+                    (index) {
+                      var data = snapshot.data![index + 0]; //next tahun 18
+                      return DataRow(
+                        color: WidgetStateColor.resolveWith(
+                          (states) => index % 2 == 1
+                              ? const Color.fromRGBO(34, 150, 243, 0.2)
+                              : const Color.fromARGB(0, 140, 233, 148),
+                        ),
+                        cells: [
+                          DataCell(
+                            Text(
+                              data.trw1,
+                              style: const TextStyle(
+                                color: Color.fromARGB(255, 17, 17, 17),
+                                fontWeight: FontWeight.normal,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ),
+                          DataCell(
+                            Text(
+                              data.trw2,
+                              style: const TextStyle(
+                                color: Color.fromARGB(255, 17, 17, 17),
+                                fontWeight: FontWeight.normal,
+                                fontSize: 12,
+                              ),
+                            ),
+                            //textAlign: TextAlign.right,
+                          ),
+                          DataCell(
+                            Text(
+                              data.trw3,
+                              style: const TextStyle(
+                                color: Color.fromARGB(255, 17, 17, 17),
+                                fontWeight: FontWeight.normal,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ),
+                          DataCell(
+                            Text(
+                              data.trw4,
+                              style: const TextStyle(
+                                color: Color.fromARGB(255, 17, 17, 17),
+                                fontWeight: FontWeight.normal,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ),
+                          DataCell(
+                            Text(
+                              data.total,
+                              style: const TextStyle(
+                                color: Color.fromARGB(255, 17, 17, 17),
+                                fontWeight: FontWeight.normal,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ),
+                        ],
+                      );
+                    },
+                  ).toList(),
+                  showBottomBorder: true,
+                ),
+              ),
+            );
+          } else if (snapshot.hasError) {
+            return Text(snapshot.error.toString());
+          }
+          // By default show a loading spinner.
+          return const Center(child: CircularProgressIndicator());
+        },
+      ),
+    );
+  }
+}
+
+class CatatanWidget extends StatelessWidget {
+  const CatatanWidget({super.key});
+  @override
+  Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+    return SizedBox(
+      width: screenWidth,
+      height: 0.28 * screenHeight,
+      child: Column(
+        children: [
+          Column(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(3),
+                alignment: Alignment.centerLeft,
+                child: const Text(
+                  "Keterangan:",
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(1),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: const TextSpan(
+                    text: '*     :',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(
+                        text: ' Angka Sementara.',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontFamily: 'Roboto',
+                          color: Colors.black,
+                          fontWeight: FontWeight.normal,
                         ),
                       ),
                     ],
                   ),
-                );
-              },
-            );
-          }
-          if (snapshot.hasError) {
-            return const Text('Database Error');
-          } else {
-            return const Center(
-              child: CircularProgressIndicator(strokeWidth: 3),
-            );
-          }
-        },
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(1),
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: const TextSpan(
+                    text: '**   :',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(
+                        text: ' Angka Sangat Sementara.',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontFamily: 'Roboto',
+                          color: Colors.black,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

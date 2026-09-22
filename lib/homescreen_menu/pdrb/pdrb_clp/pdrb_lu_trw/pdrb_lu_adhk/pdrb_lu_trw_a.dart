@@ -105,38 +105,38 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
             return PageView.builder(
               itemCount: 1,
               itemBuilder: (context, index) {
-                String komponen1 = isipdrb[index = 0].komponen;
-                String komponen2 = isipdrb[index = 1].komponen;
-                String komponen3 = isipdrb[index = 2].komponen;
-                String komponen4 = isipdrb[index = 3].komponen;
+                String komponen1 = isipdrb[index = 4].komponen;
+                String komponen2 = isipdrb[index = 5].komponen;
+                String komponen3 = isipdrb[index = 6].komponen;
+                String komponen4 = isipdrb[index = 7].komponen;
 
                 //pdrb trw
-                String primer_trw1 = isipdrb[index = 0].trw1;
-                String sekunder_trw1 = isipdrb[index = 1].trw1;
-                String tersier_trw1 = isipdrb[index = 2].trw1;
-                String total_trw1 = isipdrb[index = 3].trw1;
+                String primer_trw1 = isipdrb[index = 4].trw1;
+                String sekunder_trw1 = isipdrb[index = 5].trw1;
+                String tersier_trw1 = isipdrb[index = 6].trw1;
+                String total_trw1 = isipdrb[index = 7].trw1;
 
-                String primer_trw2 = isipdrb[index = 0].trw2;
-                String sekunder_trw2 = isipdrb[index = 1].trw2;
-                String tersier_trw2 = isipdrb[index = 2].trw2;
-                String total_trw2 = isipdrb[index = 3].trw2;
+                String primer_trw2 = isipdrb[index = 4].trw2;
+                String sekunder_trw2 = isipdrb[index = 5].trw2;
+                String tersier_trw2 = isipdrb[index = 6].trw2;
+                String total_trw2 = isipdrb[index = 7].trw2;
 
-                String primer_trw3 = isipdrb[index = 0].trw3;
-                String sekunder_trw3 = isipdrb[index = 1].trw3;
-                String tersier_trw3 = isipdrb[index = 2].trw3;
-                String total_trw3 = isipdrb[index = 3].trw3;
+                String primer_trw3 = isipdrb[index = 4].trw3;
+                String sekunder_trw3 = isipdrb[index = 5].trw3;
+                String tersier_trw3 = isipdrb[index = 6].trw3;
+                String total_trw3 = isipdrb[index = 7].trw3;
 
-                String primer_trw4 = isipdrb[index = 0].trw4;
-                String sekunder_trw4 = isipdrb[index = 1].trw4;
-                String tersier_trw4 = isipdrb[index = 2].trw4;
-                String total_trw4 = isipdrb[index = 3].trw4;
+                String primer_trw4 = isipdrb[index = 4].trw4;
+                String sekunder_trw4 = isipdrb[index = 5].trw4;
+                String tersier_trw4 = isipdrb[index = 6].trw4;
+                String total_trw4 = isipdrb[index = 7].trw4;
 
-                String primer_total = isipdrb[index = 0].total;
-                String sekunder_total = isipdrb[index = 1].total;
-                String tersier_total = isipdrb[index = 2].total;
-                String total_total = isipdrb[index = 3].total;
+                String primer_total = isipdrb[index = 4].total;
+                String sekunder_total = isipdrb[index = 5].total;
+                String tersier_total = isipdrb[index = 6].total;
+                String total_total = isipdrb[index = 7].total;
 
-                //String thn1 = isipdrb[index = 0].tahun;
+                String thn1 = isipdrb[index = 4].tahun;
 
                 return Scaffold(
                   body: Column(
@@ -904,17 +904,20 @@ class _PdrbLuTrwAState extends State<PdrbLuTrwA> {
                                 alignment: Alignment.centerLeft,
                                 child: RichText(
                                   textAlign: TextAlign.left,
-                                  text: const TextSpan(
+                                  text: TextSpan(
                                     text: 'Keterangan:',
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 11.5,
                                     ),
                                     children: <TextSpan>[
                                       TextSpan(
-                                        text: '-',
-                                        style: TextStyle(
+                                        text:
+                                            " Tahun " +
+                                            thn1 +
+                                            ' Angka Sementara',
+                                        style: const TextStyle(
                                           fontSize: 11,
                                           fontFamily: 'Roboto',
                                           color: Colors.black,

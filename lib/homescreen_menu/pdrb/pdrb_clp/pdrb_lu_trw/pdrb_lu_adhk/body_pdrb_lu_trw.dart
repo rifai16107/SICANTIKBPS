@@ -69,7 +69,7 @@ class _BodyPdrbLuTrwState extends State<BodyPdrbLuTrw> {
             itemCount: 1,
             itemBuilder: (context, index) {
               //tahun 2019-2023
-              int tahun1 = int.parse(isipdrb[index = 0].tahun) - 3;
+              int tahun1 = int.parse(isipdrb[index = 0].tahun) - 2;
               String thn1 = tahun1.toString();
               int tahun2 = int.parse(isipdrb[index = 18].tahun) - 2;
               String thn2 = '$tahun2*';
