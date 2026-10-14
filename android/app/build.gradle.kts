@@ -35,7 +35,7 @@ android {
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = 19
-        versionName = "8.5.0"
+        versionName = "8.7.0"
 
         externalNativeBuild {
             cmake {
